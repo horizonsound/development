@@ -10,10 +10,13 @@
     {% for item in include.items %}
       {% assign s = site.data.music.songs | where: "song_id", item.id | first %}
       {% if s and s.videostatus == "Public" %}
+
+        {% assign thumb = site.baseurl | append: "/assets/thumbnails/" | append: s.slug | append: ".jpeg" %}
+
         {% assign resolved = resolved | push:
-          item | merge: 
+          item | merge:
             title: s.title,
-            image: s.image,
+            image: thumb,
             url: s.url,
             published_at: s.published_at
         %}
@@ -25,7 +28,7 @@
     <div class="tile-grid">
       {% for item in sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ item.url }}">
-          <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.title }}">
+          <img src="{{ item.image }}" alt="{{ item.title }}">
           <h3 class="tile-title">{{ item.title }}</h3>
         </a>
       {% endfor %}
@@ -42,10 +45,13 @@
     {% for item in include.items %}
       {% assign s = site.data.music.songs | where: "song_id", item.id | first %}
       {% if s and s.videostatus == "Public" %}
+
+        {% assign thumb = site.baseurl | append: "/assets/thumbnails/" | append: s.slug | append: ".jpeg" %}
+
         {% assign resolved = resolved | push:
           item | merge:
             title: s.title,
-            image: s.image,
+            image: thumb,
             url: s.url,
             view_count: s.metadata.statistics.view_count
         %}
@@ -57,7 +63,7 @@
     <div class="tile-grid">
       {% for item in sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ item.url }}">
-          <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.title }}">
+          <img src="{{ item.image }}" alt="{{ item.title }}">
           <h3 class="tile-title">{{ item.title }}</h3>
         </a>
       {% endfor %}
@@ -96,10 +102,13 @@
           {% endif %}
         {% endfor %}
 
+        {% assign playlist_thumb = site.baseurl | append: "/assets/thumbnails/playlist-" | append: pl.playlist_id | append: ".jpeg" %}
+
         {% assign pl = pl | merge:
           has_public: has_public,
           newest_public_date: newest_public_date,
-          soonest_scheduled_date: soonest_scheduled_date
+          soonest_scheduled_date: soonest_scheduled_date,
+          image: playlist_thumb
         %}
 
         {% if has_public %}
@@ -117,17 +126,15 @@
     <div class="tile-grid">
 
       {% for pl in active_playlists %}
-        {% assign playlist_image = site.baseurl | append: "/assets/thumbnails/playlist-" | append: pl.playlist_id | append: ".jpeg" %}
         <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
-          <img src="{{ playlist_image }}" alt="{{ pl.title }}">
+          <img src="{{ pl.image }}" alt="{{ pl.title }}">
           <h3 class="tile-title">{{ pl.title }}</h3>
         </a>
       {% endfor %}
 
       {% for pl in inactive_playlists %}
-        {% assign playlist_image = site.baseurl | append: "/assets/thumbnails/playlist-" | append: pl.playlist_id | append: ".jpeg" %}
         <div class="tile coming-soon">
-          <img src="{{ playlist_image }}" alt="{{ pl.title }}">
+          <img src="{{ pl.image }}" alt="{{ pl.title }}">
           <div class="tile-overlay">Coming Soon</div>
           <h3 class="tile-title">{{ pl.title }}</h3>
         </div>
