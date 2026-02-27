@@ -26,3 +26,46 @@
         Render tiles
       {%- endcomment -%}
       {% for s in items_sorted %}
+        <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
+          <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
+          <h3 class="tile-title">{{ s.title }}</h3>
+        </a>
+      {% endfor %}
+
+    {% elsif include.section == "spotlight" %}
+
+      {%- comment -%}
+        No sorting — simple direct rendering
+      {%- endcomment -%}
+
+      {% for item in include.items %}
+        {% assign s = site.data.music.songs | where: "song_id", item.id | first %}
+        {% if s %}
+          <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
+            <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
+            <h3 class="tile-title">{{ s.title }}</h3>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+    {% elsif include.section == "collections" %}
+
+      {%- comment -%}
+        No sorting — simple direct rendering
+      {%- endcomment -%}
+
+      {% for item in include.items %}
+        {% assign pl = site.data.playlists | where: "playlist_id", item.id | first %}
+        {% if pl %}
+          <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
+            <img src="{{ site.baseurl }}/assets/thumbnails/playlist-{{ pl.playlist_id }}.jpeg" alt="{{ pl.title }}">
+            <h3 class="tile-title">{{ pl.title }}</h3>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+    {% endif %}
+
+  </div>
+
+</section>
