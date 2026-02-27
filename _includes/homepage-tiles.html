@@ -16,7 +16,7 @@
 
       {% for s in items_sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
-          <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
+          <img src="{{ site.baseurl }}{{ s.thumbnail }}" alt="{{ s.title }}">
           {% assign override = site.data.music_overrides.overrides | where: "song_id", s.song_id | first %}
           {% if override and override.title %}
             {% assign display_title = override.title %}
@@ -46,7 +46,7 @@
 
       {% for s in items_sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
-          <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
+          <img src="{{ site.baseurl }}{{ s.thumbnail }}" alt="{{ s.title }}">
           {% assign override = site.data.music_overrides.overrides | where: "song_id", s.song_id | first %}
           {% if override and override.title %}
             {% assign display_title = override.title %}
