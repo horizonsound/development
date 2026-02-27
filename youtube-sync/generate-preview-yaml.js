@@ -7,45 +7,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 /* -------------------------------------------------------
-   HTML FORMATTER
-------------------------------------------------------- */
-function formatHtmlBlock(text) {
-  if (!text || text.trim() === "") return "";
-
-  text = text.replace(/\r\n/g, "\n");
-
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
-  text = text.replace(urlRegex, url => `<a href="${url}">${url}</a>`);
-
-  const hashtagRegex = /(^|\s)#([A-Za-z0-9_]+)/g;
-  text = text.replace(hashtagRegex, (match, space, tag) => {
-    const lower = tag.toLowerCase();
-    return `${space}<a href="https://www.youtube.com/hashtag/${lower}">#${tag}</a>`;
-  });
-
-  const paragraphs = text
-    .split(/\n{2,}/)
-    .map(p => p.trim())
-    .filter(Boolean);
-
-  return paragraphs.map(p => `<p>${p}</p>`).join("\n");
-}
-
-/* -------------------------------------------------------
-   YAML BLOCK BUILDER
-------------------------------------------------------- */
-function buildYamlBlock(html) {
-  if (!html || html.trim() === "") return "|\n";
-
-  const indented = html
-    .split("\n")
-    .map(line => "      " + line)
-    .join("\n");
-
-  return "|\n" + indented + "\n";
-}
-
-/* -------------------------------------------------------
    DOWNLOAD IMAGE
 ------------------------------------------------------- */
 function downloadImage(url, filepath) {
@@ -73,26 +34,9 @@ function downloadImage(url, filepath) {
 }
 
 /* -------------------------------------------------------
-   INCREMENTING FILENAME
-------------------------------------------------------- */
-function getIncrementedFilename(baseName, folder = "_data") {
-  const ext = path.extname(baseName);
-  const name = path.basename(baseName, ext);
-  let candidate = baseName;
-  let counter = 1;
-
-  while (fs.existsSync(path.join(folder, candidate))) {
-    candidate = `${name} (${counter})${ext}`;
-    counter++;
-  }
-
-  return path.join(folder, candidate);
-}
-
-/* -------------------------------------------------------
    MAIN GENERATOR
 ------------------------------------------------------- */
-async function generatePreviewYAML() {
+async function generateYouTubeFeed() {
   try {
     const videos = await fetchAllVideos();
 
@@ -107,40 +51,21 @@ async function generatePreviewYAML() {
       const video = videos[i];
       console.log(`Downloading thumbnail ${i + 1} of ${videos.length}: ${video.slug}`);
 
-      if (video.thumbnailUrl) {
+      if (video.thumbnail) {
         const thumbnailPath = path.join(thumbnailFolder, `${video.slug}.jpeg`);
-        await downloadImage(video.thumbnailUrl, thumbnailPath);
+        await downloadImage(video.thumbnail, thumbnailPath);
       }
-    }
-
-    const songsFolder = "_songs";
-    if (!fs.existsSync(songsFolder)) {
-      fs.mkdirSync(songsFolder, { recursive: true });
-    }
-
-    for (let i = 0; i < videos.length; i++) {
-      const video = videos[i];
-      const songFilePath = path.join(songsFolder, `${video.slug}.md`);
-      const content = `---\nlayout: song\nsong_id: ${video.slug}\n---\n`;
-      fs.writeFileSync(songFilePath, content, "utf8");
-      console.log(`Created song file: ${songFilePath}`);
     }
 
     let yamlOutput = "songs:\n";
 
     videos.forEach(video => {
-      const descriptionHtml = formatHtmlBlock(video.description);
-      const lyricsHtml = formatHtmlBlock(video.lyrics);
-
       yamlOutput += `  - song_id: "${video.slug}"\n`;
       yamlOutput += `    title: "${video.title}"\n`;
-      yamlOutput += `    subtitle: ""\n`;
       yamlOutput += `    youtube_id: "${video.id}"\n`;
       yamlOutput += `    url: "/music/${video.slug}/"\n`;
-      yamlOutput += `    image: "/assets/thumbnails/${video.slug}.jpeg"\n`;
+      yamlOutput += `    thumbnail: "/assets/thumbnails/${video.slug}.jpeg"\n`;
       yamlOutput += `    videostatus: "${video.status}"\n`;
-      yamlOutput += `    primary_playlist: "${video.primaryPlaylist}"\n`;
-      yamlOutput += `    sequence: "${video.sequence}"\n`;
       yamlOutput += `    scheduled_at: "${video.scheduledAt}"\n`;
 
       yamlOutput += `    metadata:\n`;
@@ -202,18 +127,15 @@ async function generatePreviewYAML() {
           yamlOutput += `        - "${url}"\n`;
         });
       }
-
-      yamlOutput += `    description_html: ${buildYamlBlock(descriptionHtml)}`;
-      yamlOutput += `    lyrics_html: ${buildYamlBlock(lyricsHtml)}\n`;
     });
 
-    const outputFile = getIncrementedFilename("music_preview.yml");
+    const outputFile = path.join("_data", "youtube_feed.yml");
     fs.writeFileSync(outputFile, yamlOutput, "utf8");
 
-    console.log("Preview YAML written to:", outputFile);
+    console.log("YouTube feed written to:", outputFile);
   } catch (err) {
-    console.error("Error generating preview YAML:", err);
+    console.error("Error generating YouTube feed:", err);
   }
 }
 
-generatePreviewYAML();
+generateYouTubeFeed();
