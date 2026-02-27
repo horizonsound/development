@@ -38,7 +38,7 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           cd youtube-sync
-          node generate.js
+          node generate-preview-yaml.js
 
       - name: Commit and push changes (if any)
         run: |
