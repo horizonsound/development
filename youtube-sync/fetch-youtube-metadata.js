@@ -76,7 +76,7 @@ export async function fetchAllVideos() {
 
       const thumbs = snippet.thumbnails || {};
 
-      const thumbnailUrl =
+      const thumbnail =
         thumbs.maxres?.url ||
         thumbs.standard?.url ||
         thumbs.high?.url ||
@@ -92,7 +92,7 @@ export async function fetchAllVideos() {
         slug: slugify(snippet.title || ""),
         status: normalizeStatus(snippet, status),
         scheduledAt: status.publishAt || "",
-        thumbnailUrl,
+        thumbnail,
 
         metadata: {
           published_at: snippet.publishedAt || "",
@@ -114,11 +114,7 @@ export async function fetchAllVideos() {
           made_for_kids: status.madeForKids ?? false,
           self_declared_made_for_kids: status.selfDeclaredMadeForKids ?? false,
           topic_categories: topics.topicCategories || []
-        },
-
-        primaryPlaylist: "",
-        sequence: "",
-        lyrics: ""
+        }
       };
     });
 
