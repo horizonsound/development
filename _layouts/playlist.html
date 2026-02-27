@@ -44,7 +44,7 @@ layout: default
   {% assign playlist_songs = "" | split: "" %}
 
   {% for sid in playlist.songs %}
-    {% assign expected_song = site.data.music.songs | where: "song_id", sid | first %}
+    {% assign expected_song = site.data.youtube_feed.songs | where: "song_id", sid | first %}
     {% assign song_page = site.pages | where: "song_id", sid | first %}
   
     {% if expected_song %}

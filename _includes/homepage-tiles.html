@@ -6,7 +6,7 @@
       {% assign items_sorted = "" | split: "" %}
 
       {% for item in include.items %}
-        {% assign s = site.data.music.songs | where: "song_id", item.id | first %}
+        {% assign s = site.data.youtube_feed.songs | where: "song_id", item.id | first %}
         {% if s %}
           {% assign items_sorted = items_sorted | push: s %}
         {% endif %}
@@ -17,7 +17,7 @@
       {% for s in items_sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
           <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
-          {% assign override = site.data.music_overrides.overrides | where: "song_id", s.song_id | first %}
+          {% assign override = site.data.youtube_feed_overrides.overrides | where: "song_id", s.song_id | first %}
           {% if override and override.title %}
             {% assign display_title = override.title %}
           {% else %}
@@ -34,7 +34,7 @@
       {% assign items_sorted = "" | split: "" %}
 
       {% for item in include.items %}
-        {% assign s = site.data.music.songs | where: "song_id", item.id | first %}
+        {% assign s = site.data.youtube_feed.songs | where: "song_id", item.id | first %}
         {% if s %}
           {% assign view = s.metadata.statistics.view_count | plus: 0 %}
           {% assign merged = s | merge: {"view": view} %}
@@ -47,7 +47,7 @@
       {% for s in items_sorted %}
         <a class="tile" href="{{ site.baseurl }}{{ s.url }}">
           <img src="{{ site.baseurl }}{{ s.image }}" alt="{{ s.title }}">
-          {% assign override = site.data.music_overrides.overrides | where: "song_id", s.song_id | first %}
+          {% assign override = site.data.youtube_feed_overrides.overrides | where: "song_id", s.song_id | first %}
           {% if override and override.title %}
             {% assign display_title = override.title %}
           {% else %}
@@ -73,7 +73,7 @@
           {% assign soonest_scheduled_date = nil %}
 
           {% for sid in pl.songs %}
-            {% assign s = site.data.music.songs | where: "song_id", sid | first %}
+            {% assign s = site.data.youtube_feed.songs | where: "song_id", sid | first %}
             {% if s %}
               {% if s.videostatus == "Public" %}
                 {% assign has_public = true %}

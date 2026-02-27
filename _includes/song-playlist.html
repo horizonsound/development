@@ -4,7 +4,7 @@
 
   {% assign playlist_name = current_song.primary_playlist %}
 
-  {% assign related = site.data.music.songs | where: "primary_playlist", playlist_name %}
+  {% assign related = site.data.youtube_feed.songs | where: "primary_playlist", playlist_name %}
   {% assign related = related | where: "videostatus", "Public" %}
 
   {% assign sorted_by_sequence = related | sort: "sequence" %}
