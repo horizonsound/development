@@ -23,6 +23,9 @@
       <script>
         console.log("TILES: matched song =", {{ s | jsonify }});
       </script>
+      <script>
+        console.log("TILES: song keys =", Object.keys({{ s | jsonify }}));
+      </script>
 
       {% if s and s.videostatus == "Public" %}
 
