@@ -26,6 +26,8 @@
         </a>
       {% endfor %}
 
+
+
     {% elsif include.section == "spotlight" %}
 
       {%- comment -%}
@@ -52,19 +54,25 @@
         </a>
       {% endfor %}
 
+
+
     {% elsif include.section == "collections" %}
-    
+
+      {%- comment -%}
+        COLLECTIONS — active vs coming soon with sorting
+      {%- endcomment -%}
+
       {% assign active = "" | split: "" %}
       {% assign coming_soon = "" | split: "" %}
-    
+
       {% for item in include.items %}
         {% assign pl = site.data.playlists | where: "playlist_id", item.id | first %}
         {% if pl %}
-    
+
           {% assign has_public = false %}
           {% assign newest_public_date = nil %}
           {% assign soonest_scheduled_date = nil %}
-    
+
           {% for sid in pl.songs %}
             {% assign s = site.data.music.songs | where: "song_id", sid | first %}
             {% if s %}
@@ -80,9 +88,9 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-    
+
           {% assign playlist_image = site.baseurl | append: "/assets/thumbnails/playlist-" | append: pl.playlist_id | append: ".jpeg" %}
-    
+
           {% if has_public %}
             {% assign merged = pl | merge: {"image": playlist_image, "sort_date": newest_public_date} %}
             {% assign active = active | push: merged %}
@@ -90,36 +98,39 @@
             {% assign merged = pl | merge: {"image": playlist_image, "sort_date": soonest_scheduled_date} %}
             {% assign coming_soon = coming_soon | push: merged %}
           {% endif %}
-    
+
         {% endif %}
       {% endfor %}
-    
-      {# ACTIVE: newest → oldest #}
+
+      {%- comment -%}
+        ACTIVE: newest → oldest
+      {%- endcomment -%}
       {% assign active = active | sort: "sort_date" | reverse %}
-    
-      {# COMING SOON: soonest → latest #}
+
+      {%- comment -%}
+        COMING SOON: soonest → latest
+      {%- endcomment -%}
       {% assign coming_soon = coming_soon | sort: "sort_date" %}
-    
-      <div class="tile-grid">
-    
-        {# ACTIVE COLLECTIONS #}
-        {% for pl in active %}
-          <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
-            <img src="{{ pl.image }}" alt="{{ pl.title }}">
-            <h3 class="tile-title">{{ pl.title }}</h3>
-          </a>
-        {% endfor %}
-    
-        {# COMING SOON COLLECTIONS #}
-        {% for pl in coming_soon %}
-          <div class="tile coming-soon">
-            <img src="{{ pl.image }}" alt="{{ pl.title }}">
-            <div class="tile-overlay">Coming Soon</div>
-            <h3 class="tile-title">{{ pl.title }}</h3>
-          </div>
-        {% endfor %}
-    
-      </div>    
+
+      {# ACTIVE COLLECTIONS #}
+      {% for pl in active %}
+        <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
+          <img src="{{ pl.image }}" alt="{{ pl.title }}">
+          <h3 class="tile-title">{{ pl.title }}</h3>
+        </a>
+      {% endfor %}
+
+      {# COMING SOON COLLECTIONS #}
+      {% for pl in coming_soon %}
+        <div class="tile coming-soon">
+          <img src="{{ pl.image }}" alt="{{ pl.title }}">
+          <div class="tile-overlay">Coming Soon</div>
+          <h3 class="tile-title">{{ pl.title }}</h3>
+        </div>
+      {% endfor %}
+
     {% endif %}
+
   </div>
+
 </section>
