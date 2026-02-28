@@ -52,7 +52,7 @@ Now extract playlist_ids in sorted order.
 
   {% for pid in sorted_playlist_ids %}
     {% assign pl = playlists | where: "playlist_id", pid | first %}
-    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
+    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.song_ids contains item.id" %}
     {% assign playlist_songs = playlist_songs | default: empty %}
 
     {% if playlist_songs.size > 0 %}
@@ -136,7 +136,7 @@ Now extract playlist_ids in sorted order.
 
   {% for pid in sorted_playlist_ids %}
     {% assign pl = playlists | where: "playlist_id", pid | first %}
-    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
+    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.song_ids contains item.id" %}
     {% assign playlist_songs = playlist_songs | default: empty %}
 
     {% if playlist_songs.size > 0 %}
