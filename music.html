@@ -4,6 +4,18 @@ title: Music – Horizon Sound
 ---
 
 {% assign all_songs = site.data.youtube_feed.songs %}
+{% assign overrides = site.data.playlist_overrides.overrides %}
+{% assign playlists = site.data.youtube_playlists %}
+
+{% assign playlists_with_order = "" | split: "" %}
+{% for pl in playlists %}
+  {% assign ov = overrides | where: "slug", pl.playlist_id | first %}
+  {% assign order_value = ov.order | default: 9999 %}
+  {% assign merged = pl | merge: {"order": order_value} %}
+  {% assign playlists_with_order = playlists_with_order | push: merged %}
+{% endfor %}
+
+{% assign playlists_sorted = playlists_with_order | sort: "order" %}
 
 <div class="music-page">
   <div class="view-toggle">
@@ -17,26 +29,19 @@ title: Music – Horizon Sound
     <div class="view-toggle-spacer"></div>
   </div>
 
-<!-- ============================================================
-     GROUPED BY PLAYLIST (NEW YOUTUBE-DRIVEN ARCHITECTURE)
-============================================================ -->
 <section id="music-view-grouped">
 
-  {% assign playlists = site.data.youtube_playlists | sort: "order" %}
-
-  {% for pl in playlists %}
+  {% for pl in playlists_sorted %}
     {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
     {% assign playlist_songs = playlist_songs | default: empty %}
 
     {% if playlist_songs.size > 0 %}
-      {% assign playlist_songs = playlist_songs | default: empty %}
-      {% assign playlist_sorted = playlist_songs | sort: "order" %}
+      {% assign playlist_sorted = playlist_songs %}
 
       <section class="playlist-section">
         <h2 class="section-header">{{ pl.title }}</h2>
         <div class="tile-grid">
 
-          {% comment %} PUBLIC SONGS FIRST {% endcomment %}
           {% for song in playlist_sorted %}
             {% if song.videostatus == "Public" %}
               <a class="tile" href="{{ site.baseurl }}{{ song.url }}">
@@ -48,7 +53,6 @@ title: Music – Horizon Sound
             {% endif %}
           {% endfor %}
 
-          {% comment %} COMING SOON SONGS SECOND {% endcomment %}
           {% for song in playlist_sorted %}
             {% unless song.videostatus == "Public" %}
               <div class="tile coming-soon">
@@ -68,9 +72,6 @@ title: Music – Horizon Sound
 
 </section>
 
-<!-- ============================================================
-     ALL SONGS
-============================================================ -->
 <section id="music-view-all" style="display:none;">
   <section class="playlist-section">
     <h2 class="section-header">All Songs</h2>
@@ -105,31 +106,26 @@ title: Music – Horizon Sound
   </section>
 </section>
 
-<!-- ============================================================
-     CAROUSEL VIEW (UPDATED TO NEW PLAYLIST SYSTEM)
-============================================================ -->
-  <section id="music-view-carousel" style="display:none;">
-  
-    {% assign playlists = site.data.youtube_playlists | sort: "order" %}
-  
-    {% for pl in playlists %}
-      {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
-      {% assign playlist_songs = playlist_songs | default: empty %}
-  
-      {% if playlist_songs.size > 0 %}
-        {% assign playlist_songs = playlist_songs | default: empty %}
-        {% assign playlist_sorted = playlist_songs | sort: "order" %}
-  
-        <section class="playlist-section">
-          <h2 class="section-header">{{ pl.title }}</h2>
-  
-          {% include carousel.html songs=playlist_sorted %}
-  
-        </section>
-      {% endif %}
-    {% endfor %}
-  
-  </section>
+<section id="music-view-carousel" style="display:none;">
+
+  {% for pl in playlists_sorted %}
+    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
+    {% assign playlist_songs = playlist_songs | default: empty %}
+
+    {% if playlist_songs.size > 0 %}
+      {% assign playlist_sorted = playlist_songs %}
+
+      <section class="playlist-section">
+        <h2 class="section-header">{{ pl.title }}</h2>
+
+        {% include carousel.html songs=playlist_sorted %}
+
+      </section>
+    {% endif %}
+  {% endfor %}
+
+</section>
+
 </div>
 
 <script>
