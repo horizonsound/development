@@ -7,18 +7,32 @@ layout: default
 {% assign meta = site.data.youtube_feed.songs | where: "url", url | first %}
 
 {%- comment -%}
-BUILD PLAYLIST FOR CAROUSEL (old system)
+BUILD PLAYLIST FOR CAROUSEL (new YouTube-driven system)
 {%- endcomment -%}
 
-{% assign related = site.data.youtube_feed.songs | where_exp: "item", "item.primary_playlist == meta.primary_playlist" %}
-{% assign sorted_by_sequence = related | sort: "sequence" %}
-{% assign first_item = sorted_by_sequence | first %}
+{%- assign playlist_id = meta.playlists | first -%}
 
-{% if first_item.sequence %}
-  {% assign playlist_sorted = sorted_by_sequence %}
-{% else %}
-  {% assign playlist_sorted = related | sort: "title" %}
-{% endif %}
+{%- if playlist_id -%}
+  {%- assign playlist = site.data.youtube_playlists | where: "playlist_id", playlist_id | first -%}
+
+  {%- if playlist -%}
+    {%- assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "playlist.video_ids contains item.id" -%}
+
+    {%- assign playlist_songs = playlist_songs | default: empty -%}
+
+    {%- if playlist.order -%}
+      {%- assign playlist_sorted = playlist_songs | sort: "order" -%}
+    {%- else -%}
+      {%- assign playlist_sorted = playlist_songs -%}
+    {%- endif -%}
+
+  {%- else -%}
+    {%- assign playlist_sorted = empty -%}
+  {%- endif -%}
+
+{%- else -%}
+  {%- assign playlist_sorted = empty -%}
+{%- endif -%}
 
 <main>
   <script>
