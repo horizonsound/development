@@ -35,6 +35,55 @@ function writeYaml(filepath, data) {
 }
 
 /* -------------------------------------------------------
+   NORMALIZE VIDEO OBJECT
+------------------------------------------------------- */
+function normalizeVideo(video) {
+  const song_id = video.slug; // SLUG-BASED ID
+
+  return {
+    song_id,
+    title: video.title,
+    slug: video.slug,
+    url: `/music/songs/${song_id}/`,
+
+    // Local thumbnail path uses slug
+    thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
+
+    videostatus:
+      video.status === "public" || video.status === "Public"
+        ? "Public"
+        : video.status === "scheduled" || video.status === "Scheduled"
+        ? "Scheduled"
+        : "Private",
+
+    playlists: video.playlists || [],
+
+    metadata: {
+      published_at: video.publishedAt || null,
+      scheduled_at: video.scheduledAt || null,
+      channel_id: video.metadata?.channel_id || null,
+      channel_title: video.metadata?.channel_title || null,
+      category_id: video.metadata?.category_id || null,
+      tags: video.metadata?.tags || [],
+      duration: video.metadata?.duration || null,
+      definition: video.metadata?.definition || null,
+      region_allowed: video.metadata?.region_allowed || [],
+      region_blocked: video.metadata?.region_blocked || [],
+      content_rating: video.metadata?.content_rating || "",
+      statistics: video.metadata?.statistics || {
+        view_count: 0,
+        like_count: 0,
+        favorite_count: 0,
+        comment_count: 0
+      },
+      made_for_kids: video.metadata?.made_for_kids || false,
+      self_declared_made_for_kids: video.metadata?.self_declared_made_for_kids || false,
+      topic_categories: video.metadata?.topic_categories || []
+    }
+  };
+}
+
+/* -------------------------------------------------------
    MAIN GENERATOR
 ------------------------------------------------------- */
 async function generate() {
@@ -60,8 +109,27 @@ async function generate() {
     video.playlists = playlistMap[video.id] || [];
   });
 
+  console.log("Normalizing videos...");
+  const normalizedVideos = videos.map(normalizeVideo);
+
   console.log("Writing youtube_feed.yml...");
-  writeYaml(VIDEO_FEED_PATH, videos);
+  writeYaml(VIDEO_FEED_PATH, { songs: normalizedVideos });
+
+  /* -------------------------------------------------------
+     BUILD SLUG LOOKUP FOR PLAYLIST SONG IDS
+  ------------------------------------------------------- */
+  const slugLookup = {};
+  normalizedVideos.forEach(v => {
+    slugLookup[v.song_id] = v.song_id; // slug → slug
+    slugLookup[v.slug] = v.song_id;    // slug → slug
+    slugLookup[v.song_id] = v.song_id; // ensure consistency
+    slugLookup[v.song_id] = v.song_id;
+  });
+
+  // Also map YouTube IDs → slug
+  videos.forEach(v => {
+    slugLookup[v.id] = v.slug;
+  });
 
   console.log("Writing youtube_playlists.yml...");
   writeYaml(
@@ -73,7 +141,11 @@ async function generate() {
       description: pl.description,
       published_at: pl.publishedAt,
       thumbnail: pl.thumbnail,
+
+      // Convert YouTube IDs → slugs
       song_ids: pl.videoIds
+        .map(id => slugLookup[id])
+        .filter(Boolean)
     }))
   );
 
