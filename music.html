@@ -108,28 +108,28 @@ title: Music – Horizon Sound
 <!-- ============================================================
      CAROUSEL VIEW (UPDATED TO NEW PLAYLIST SYSTEM)
 ============================================================ -->
-<section id="music-view-carousel" style="display:none;">
-
-  {% assign playlists = site.data.youtube_playlists | sort: "order" %}
-
-  {% for pl in playlists %}
-    {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
-    {% assign playlist_songs = playlist_songs | default: empty %}
-
-    {% if playlist_songs.size > 0 %}
-      {% assign playlist_sorted = playlist_songs | sort: "order" %}
-
-      <section class="playlist-section">
-        <h2 class="section-header">{{ pl.title }}</h2>
-
-        {% include carousel.html songs=playlist_sorted %}
-
-      </section>
-    {% endif %}
-  {% endfor %}
-
-</section>
-
+  <section id="music-view-carousel" style="display:none;">
+  
+    {% assign playlists = site.data.youtube_playlists | sort: "order" %}
+  
+    {% for pl in playlists %}
+      {% assign playlist_songs = site.data.youtube_feed.songs | where_exp: "item", "pl.video_ids contains item.id" %}
+      {% assign playlist_songs = playlist_songs | default: empty %}
+  
+      {% if playlist_songs.size > 0 %}
+        {% assign playlist_songs = playlist_songs | default: empty %}
+        {% assign playlist_sorted = playlist_songs | sort: "order" %}
+  
+        <section class="playlist-section">
+          <h2 class="section-header">{{ pl.title }}</h2>
+  
+          {% include carousel.html songs=playlist_sorted %}
+  
+        </section>
+      {% endif %}
+    {% endfor %}
+  
+  </section>
 </div>
 
 <script>
