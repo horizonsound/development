@@ -51,15 +51,13 @@ title: Horizon Sound
     <h2 class="section-header">Spotlight Music</h2>
 
     {%- comment -%}
-      Sort by view_count descending.
+      Sort by view_count_num descending.
       Liquid sorts strings, so we cast to integer using "plus: 0".
     {%- endcomment -%}
     {% assign spotlight = songs 
-        | where: "videostatus", "public"
-        | sort: "youtube_metadata.statistics.view_count" 
-        | reverse 
-    %}
-
+         | where: "videostatus", "public"
+         | sort: "view_count_num"
+         | reverse %}
     {% include homepage-tiles.html 
          items=spotlight 
          section="spotlight" 
