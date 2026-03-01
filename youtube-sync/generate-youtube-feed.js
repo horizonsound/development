@@ -8,79 +8,34 @@ import {
   processPlaylistThumbnails
 } from "./fetch-youtube-metadata.js";
 
-/* -------------------------------------------------------
-   HORIZON SOUND — YOUTUBE → YAML DATA PIPELINE
-   -------------------------------------------------------
-   SONG MODEL (youtube_feed.yml):
-     - song_id = slug (canonical ID)
-     - youtube_id = raw YouTube video ID
-     - url = /music/<song_id>/
-     - thumbnail = /assets/thumbnails/<song_id>.jpeg
-     - videostatus = lowercase canonical status
-     - playlists = array of YouTube playlist IDs
-     - youtube_metadata = raw YouTube fields (no transformations)
-
-   PLAYLIST MODEL (youtube_playlists.yml):
-     playlists:
-       - playlist_id = YouTube playlist ID (canonical)
-       - slug = URL identity
-       - title, description, published_at
-       - thumbnail = /assets/thumbnails/playlist-<slug>.jpeg
-       - song_ids = array of YouTube video IDs (raw)
-
-   OVERRIDES:
-     - Music overrides keyed by song_id
-     - Playlist overrides keyed by slug
-------------------------------------------------------- */
-
-/* -------------------------------------------------------
-   PATHS
-------------------------------------------------------- */
 const DATA_DIR = "./_data";
 const THUMBNAIL_DIR = "./assets/thumbnails";
 
 const VIDEO_FEED_PATH = path.join(DATA_DIR, "youtube_feed.yml");
 const PLAYLIST_FEED_PATH = path.join(DATA_DIR, "youtube_playlists.yml");
 
-/* -------------------------------------------------------
-   ENSURE DIRECTORIES
-------------------------------------------------------- */
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
 }
 
-/* -------------------------------------------------------
-   WRITE YAML
-------------------------------------------------------- */
 function writeYaml(filepath, data) {
   ensureDir(path.dirname(filepath));
   fs.writeFileSync(filepath, yaml.dump(data), "utf8");
 }
 
-/* -------------------------------------------------------
-   BUILD SONG OBJECT (FINAL SONG MODEL)
-------------------------------------------------------- */
 function buildSongObject(video) {
-  const song_id = video.slug; // canonical ID = slug
+  const song_id = video.slug;
 
   return {
     song_id,
     youtube_id: video.id,
     title: video.title,
-
-    // URL + thumbnail use song_id
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
-
-    // canonical lowercase status
     videostatus: video.videostatus_raw,
-
-    // playlist membership = array of YouTube playlist IDs
     playlists: video.playlists || [],
-
-    // raw YouTube metadata (no transformations)
     youtube_metadata: {
       published_at: video.publishedAt || null,
       scheduled_at: video.scheduledAt || null,
@@ -102,8 +57,6 @@ function buildSongObject(video) {
       made_for_kids: video.youtube_metadata?.made_for_kids || false,
       self_declared_made_for_kids: video.youtube_metadata?.self_declared_made_for_kids || false,
       topic_categories: video.youtube_metadata?.topic_categories || [],
-
-      // raw YouTube status fields
       privacy_status: video.privacyStatus || null,
       upload_status: video.uploadStatus || null,
       publish_at: video.publishAt || null
@@ -111,25 +64,52 @@ function buildSongObject(video) {
   };
 }
 
-/* -------------------------------------------------------
-   MAIN GENERATOR
-------------------------------------------------------- */
 async function generate() {
   console.log("Fetching videos...");
   const videos = await fetchAllVideos();
 
+  if (!videos || videos.length === 0) {
+    console.error("ERROR: No videos returned from YouTube. Aborting.");
+    process.exit(1);
+  }
+
+  console.log(`VIDEO COUNT: ${videos.length}`);
+
   console.log("Fetching playlists + membership...");
   const playlists = await fetchPlaylistsWithMembership();
 
+  if (!playlists) {
+    console.error("ERROR: fetchPlaylistsWithMembership() returned undefined.");
+    process.exit(1);
+  }
+
+  console.log(`PLAYLIST COUNT: ${playlists.length}`);
+
   console.log("Downloading playlist thumbnails...");
   await processPlaylistThumbnails(playlists, THUMBNAIL_DIR);
-  
-  console.log("PLAYLIST COUNT:", playlists.length);
 
-  /* -------------------------------------------------------
-     ATTACH PLAYLIST MEMBERSHIP TO VIDEOS
-     playlistMap = { youtubeVideoId: [playlistId, playlistId] }
-  ------------------------------------------------------- */
+  console.log("Downloading song thumbnails...");
+  ensureDir(THUMBNAIL_DIR);
+
+  for (const video of videos) {
+    const filename = `${video.slug}.jpeg`;
+    const filepath = path.join(THUMBNAIL_DIR, filename);
+
+    if (!video.thumbnail) {
+      console.warn(`WARNING: No thumbnail URL for video "${video.title}"`);
+      continue;
+    }
+
+    try {
+      console.log(`  → ${filename}`);
+      const res = await fetch(video.thumbnail);
+      const buf = Buffer.from(await res.arrayBuffer());
+      fs.writeFileSync(filepath, buf);
+    } catch (err) {
+      console.error(`ERROR downloading thumbnail for "${video.title}": ${err.message}`);
+    }
+  }
+
   console.log("Attaching playlist membership to videos...");
   const playlistMap = {};
   playlists.forEach(pl => {
@@ -143,45 +123,29 @@ async function generate() {
     video.playlists = playlistMap[video.id] || [];
   });
 
-  /* -------------------------------------------------------
-     NORMALIZE VIDEOS INTO FINAL SONG MODEL
-  ------------------------------------------------------- */
   console.log("Building song objects...");
   const normalizedVideos = videos.map(buildSongObject);
 
-  /* -------------------------------------------------------
-     WRITE SONG FEED
-  ------------------------------------------------------- */
   console.log("Writing youtube_feed.yml...");
   writeYaml(VIDEO_FEED_PATH, { songs: normalizedVideos });
 
-  /* -------------------------------------------------------
-     WRITE PLAYLIST FEED
-     - Wrapped in top-level "playlists:"
-     - playlist_id = YouTube ID
-     - slug = URL identity
-     - song_ids = raw YouTube video IDs
-  ------------------------------------------------------- */
   console.log("Writing youtube_playlists.yml...");
-  writeYaml(
-    PLAYLIST_FEED_PATH,
-    {
-      playlists: playlists.map(pl => ({
-        playlist_id: pl.id,
-        title: pl.title,
-        slug: pl.slug,
-        description: pl.description,
-        published_at: pl.publishedAt,
-        thumbnail: pl.thumbnail,
-        song_ids: pl.videoIds // raw YouTube IDs (correct)
-      }))
-    }
-  );
+  writeYaml(PLAYLIST_FEED_PATH, {
+    playlists: playlists.map(pl => ({
+      playlist_id: pl.id,
+      title: pl.title,
+      slug: pl.slug,
+      description: pl.description,
+      published_at: pl.publishedAt,
+      thumbnail: pl.thumbnail,
+      song_ids: pl.videoIds
+    }))
+  });
 
   console.log("Done.");
 }
 
 generate().catch(err => {
-  console.error(err);
+  console.error("FATAL ERROR:", err);
   process.exit(1);
 });
