@@ -35,11 +35,6 @@ title: Horizon Sound
          | where_exp: "s", "s.youtube_metadata.published_at | date: '%s' >= cutoff"
          | sort: "youtube_metadata.published_at"
          | reverse %}
-    {% assign new_releases = songs 
-        | where: "videostatus", "public"
-        | sort: "youtube_metadata.published_at"
-        | reverse 
-    %}
 
     {% include homepage-tiles.html 
          items=new_releases 
