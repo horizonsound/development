@@ -23,23 +23,26 @@ title: Horizon Sound
   ============================================================ -->
   <section class="homepage-section">
     <h2 class="section-header">New Releases...</h2>
-
-    {%- comment -%}
-      Sort all songs by published_at descending.
-      Filter to public videos only.
-    {%- endcomment -%}
-    {% assign cutoff = "now" | date: "%s" | minus: 2592000 %}  {# 30 days in seconds #}
-    
-    {% assign new_releases = songs 
-         | where: "videostatus", "public"
-         | where_exp: "s", "s.youtube_metadata.published_at | date: '%s' >= cutoff"
+  
+    {% assign cutoff = "now" | date: "%s" | minus: 2592000 %}
+    {% assign new_releases = "" | split: "" %}
+  
+    {% for s in songs %}
+      {% if s.videostatus == "public" %}
+        {% assign published_ts = s.youtube_metadata.published_at | date: "%s" %}
+        {% if published_ts >= cutoff %}
+          {% assign new_releases = new_releases | push: s %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  
+    {% assign new_releases = new_releases 
          | sort: "youtube_metadata.published_at"
          | reverse %}
-
+  
     {% include homepage-tiles.html 
          items=new_releases 
-         section="new_releases" 
-    %}
+         section="new_releases" %}
   </section>
 
 
