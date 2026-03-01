@@ -1,271 +1,185 @@
-import { google } from "googleapis";
-import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import axios from "axios";
 import yaml from "js-yaml";
 
-dotenv.config();
+import {
+  fetchAllVideos,
+  fetchPlaylistsWithMembership,
+  processPlaylistThumbnails
+} from "./fetch-youtube-metadata.js";
 
 /* -------------------------------------------------------
-   HELPERS
+   HORIZON SOUND — YOUTUBE → YAML DATA PIPELINE
+   -------------------------------------------------------
+   SONG MODEL (youtube_feed.yml):
+     - song_id = slug (canonical ID)
+     - youtube_id = raw YouTube video ID
+     - url = /music/<song_id>/
+     - thumbnail = /assets/thumbnails/<song_id>.jpeg
+     - videostatus = lowercase canonical status
+     - playlists = array of YouTube playlist IDs
+     - youtube_metadata = raw YouTube fields (no transformations)
+
+   PLAYLIST MODEL (youtube_playlists.yml):
+     playlists:
+       - playlist_id = YouTube playlist ID (canonical)
+       - slug = URL identity
+       - title, description, published_at
+       - thumbnail = /assets/thumbnails/playlist-<slug>.jpeg
+       - song_ids = array of YouTube video IDs (raw)
+
+   OVERRIDES:
+     - Music overrides keyed by song_id
+     - Playlist overrides keyed by slug
 ------------------------------------------------------- */
-function slugify(title) {
-  return title
-    .toLowerCase()
-    .replace(/['’]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
-function normalizeStatus(snippet, status) {
-  const publishAt = status.publishAt || null;
-  const privacy = status.privacyStatus || "";
-  const upload = status.uploadStatus || "";
+/* -------------------------------------------------------
+   PATHS
+------------------------------------------------------- */
+const DATA_DIR = "./_data";
+const THUMBNAIL_DIR = "./assets/thumbnails";
 
-  if (publishAt && new Date(publishAt) > new Date()) return "Scheduled";
-  if (privacy === "public") return "Public";
-  if (privacy === "unlisted") return "Unlisted";
-  if (privacy === "private") return "Private";
-  if (upload === "processed") return "Public";
-  if (upload) return upload.charAt(0).toUpperCase() + upload.slice(1);
+const VIDEO_FEED_PATH = path.join(DATA_DIR, "youtube_feed.yml");
+const PLAYLIST_FEED_PATH = path.join(DATA_DIR, "youtube_playlists.yml");
 
-  return "";
-}
-
-async function downloadImage(url, filepath) {
-  if (!url) return;
-  const response = await axios.get(url, { responseType: "arraybuffer" });
-  fs.writeFileSync(filepath, response.data);
-}
-
-function pickBestThumbnail(thumbs) {
-  return (
-    thumbs?.maxres?.url ||
-    thumbs?.standard?.url ||
-    thumbs?.high?.url ||
-    thumbs?.medium?.url ||
-    thumbs?.default?.url ||
-    ""
-  );
+/* -------------------------------------------------------
+   ENSURE DIRECTORIES
+------------------------------------------------------- */
+function ensureDir(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
 }
 
 /* -------------------------------------------------------
-   AUTH
+   WRITE YAML
 ------------------------------------------------------- */
-function getOAuthClient() {
-  const oauth2Client = new google.auth.OAuth2(
-    process.env.GOOGLE_CLIENT_ID,
-    process.env.GOOGLE_CLIENT_SECRET,
-    process.env.REDIRECT_URI
-  );
+function writeYaml(filepath, data) {
+  ensureDir(path.dirname(filepath));
+  fs.writeFileSync(filepath, yaml.dump(data), "utf8");
+}
 
-  oauth2Client.setCredentials({
-    refresh_token: process.env.GOOGLE_REFRESH_TOKEN
+/* -------------------------------------------------------
+   BUILD SONG OBJECT (FINAL SONG MODEL)
+------------------------------------------------------- */
+function buildSongObject(video) {
+  const song_id = video.slug; // canonical ID = slug
+
+  return {
+    song_id,
+    youtube_id: video.id,
+    title: video.title,
+
+    // URL + thumbnail use song_id
+    url: `/music/${song_id}/`,
+    thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
+
+    // canonical lowercase status
+    videostatus: video.videostatus_raw,
+
+    // playlist membership = array of YouTube playlist IDs
+    playlists: video.playlists || [],
+
+    // raw YouTube metadata (no transformations)
+    youtube_metadata: {
+      published_at: video.publishedAt || null,
+      scheduled_at: video.scheduledAt || null,
+      channel_id: video.youtube_metadata?.channel_id || null,
+      channel_title: video.youtube_metadata?.channel_title || null,
+      category_id: video.youtube_metadata?.category_id || null,
+      tags: video.youtube_metadata?.tags || [],
+      duration: video.youtube_metadata?.duration || null,
+      definition: video.youtube_metadata?.definition || null,
+      region_allowed: video.youtube_metadata?.region_allowed || [],
+      region_blocked: video.youtube_metadata?.region_blocked || [],
+      content_rating: video.youtube_metadata?.content_rating || "",
+      statistics: video.youtube_metadata?.statistics || {
+        view_count: 0,
+        like_count: 0,
+        favorite_count: 0,
+        comment_count: 0
+      },
+      made_for_kids: video.youtube_metadata?.made_for_kids || false,
+      self_declared_made_for_kids: video.youtube_metadata?.self_declared_made_for_kids || false,
+      topic_categories: video.youtube_metadata?.topic_categories || [],
+
+      // raw YouTube status fields
+      privacy_status: video.privacyStatus || null,
+      upload_status: video.uploadStatus || null,
+      publish_at: video.publishAt || null
+    }
+  };
+}
+
+/* -------------------------------------------------------
+   MAIN GENERATOR
+------------------------------------------------------- */
+async function generate() {
+  console.log("Fetching videos...");
+  const videos = await fetchAllVideos();
+
+  console.log("Fetching playlists + membership...");
+  const playlists = await fetchPlaylistsWithMembership();
+
+  console.log("Downloading playlist thumbnails...");
+  await processPlaylistThumbnails(playlists, THUMBNAIL_DIR);
+
+  /* -------------------------------------------------------
+     ATTACH PLAYLIST MEMBERSHIP TO VIDEOS
+     playlistMap = { youtubeVideoId: [playlistId, playlistId] }
+  ------------------------------------------------------- */
+  console.log("Attaching playlist membership to videos...");
+  const playlistMap = {};
+  playlists.forEach(pl => {
+    pl.videoIds.forEach(id => {
+      if (!playlistMap[id]) playlistMap[id] = [];
+      playlistMap[id].push(pl.id);
+    });
   });
 
-  return oauth2Client;
-}
+  videos.forEach(video => {
+    video.playlists = playlistMap[video.id] || [];
+  });
 
-/* -------------------------------------------------------
-   FETCH ALL VIDEOS
-------------------------------------------------------- */
-export async function fetchAllVideos() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
+  /* -------------------------------------------------------
+     NORMALIZE VIDEOS INTO FINAL SONG MODEL
+  ------------------------------------------------------- */
+  console.log("Building song objects...");
+  const normalizedVideos = videos.map(buildSongObject);
 
-  let allVideos = [];
-  let nextPageToken = null;
+  /* -------------------------------------------------------
+     WRITE SONG FEED
+  ------------------------------------------------------- */
+  console.log("Writing youtube_feed.yml...");
+  writeYaml(VIDEO_FEED_PATH, { songs: normalizedVideos });
 
-  do {
-    const searchRes = await youtube.search.list({
-      part: ["id", "snippet"],
-      forMine: true,
-      maxResults: 50,
-      pageToken: nextPageToken,
-      type: "video"
-    });
-
-    const ids = searchRes.data.items.map(item => item.id.videoId).join(",");
-
-    const details = await youtube.videos.list({
-      part: ["snippet", "status", "contentDetails", "statistics", "topicDetails"],
-      id: ids
-    });
-
-    const normalized = details.data.items.map(item => {
-      const snippet = item.snippet || {};
-      const status = item.status || {};
-      const content = item.contentDetails || {};
-      const stats = item.statistics || {};
-      const topics = item.topicDetails || {};
-      const thumbs = snippet.thumbnails || {};
-
-      const thumbnail =
-        thumbs.maxres?.url ||
-        thumbs.standard?.url ||
-        thumbs.high?.url ||
-        thumbs.medium?.url ||
-        thumbs.default?.url ||
-        "";
-
-      return {
-        id: item.id,
-        title: snippet.title || "",
-        description: snippet.description || "",
-        publishedAt: snippet.publishedAt || "",
-        slug: slugify(snippet.title || ""),
-        status: normalizeStatus(snippet, status),
-        scheduledAt: status.publishAt || "",
-        thumbnail,
-        playlists: [],
-
-        metadata: {
-          published_at: snippet.publishedAt || "",
-          channel_id: snippet.channelId || "",
-          channel_title: snippet.channelTitle || "",
-          category_id: snippet.categoryId || "",
-          tags: snippet.tags || [],
-          duration: content.duration || "",
-          definition: content.definition || "",
-          region_allowed: content.regionRestriction?.allowed || [],
-          region_blocked: content.regionRestriction?.blocked || [],
-          content_rating: content.contentRating?.ytRating || "",
-          statistics: {
-            view_count: stats.viewCount || "",
-            like_count: stats.likeCount || "",
-            favorite_count: stats.favoriteCount || "",
-            comment_count: stats.commentCount || ""
-          },
-          made_for_kids: status.madeForKids ?? false,
-          self_declared_made_for_kids: status.selfDeclaredMadeForKids ?? false,
-          topic_categories: topics.topicCategories || []
-        }
-      };
-    });
-
-    allVideos.push(...normalized);
-    nextPageToken = searchRes.data.nextPageToken;
-  } while (nextPageToken);
-
-  return allVideos;
-}
-
-/* -------------------------------------------------------
-   FETCH ALL PLAYLISTS (FULL METADATA)
-------------------------------------------------------- */
-export async function fetchAllPlaylists() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
-
-  let playlists = [];
-  let nextPageToken = null;
-
-  do {
-    const res = await youtube.playlists.list({
-      part: ["id", "snippet"],
-      channelId: process.env.YOUTUBE_CHANNEL_ID,
-      maxResults: 50,
-      pageToken: nextPageToken
-    });
-
-    res.data.items.forEach(item => {
-      const snippet = item.snippet || {};
-      const thumbs = snippet.thumbnails || {};
-
-      playlists.push({
-        id: item.id,
-        title: snippet.title || "",
-        slug: slugify(snippet.title || ""),
-        description: snippet.description || "",
-        publishedAt: snippet.publishedAt || "",
-        thumbnailUrl: pickBestThumbnail(thumbs),
-        videoIds: []
-      });
-    });
-
-    nextPageToken = res.data.nextPageToken;
-  } while (nextPageToken);
-
-  return playlists;
-}
-
-/* -------------------------------------------------------
-   FETCH PLAYLIST MEMBERSHIP (ATTACH VIDEO IDS)
-------------------------------------------------------- */
-export async function fetchPlaylistMembership() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
-
-  const playlists = await fetchAllPlaylists();
-
-  for (const pl of playlists) {
-    let nextPageToken = null;
-
-    do {
-      const res = await youtube.playlistItems.list({
-        part: ["contentDetails"],
-        playlistId: pl.id,
-        maxResults: 50,
-        pageToken: nextPageToken
-      });
-
-      res.data.items.forEach(item => {
-        const videoId = item.contentDetails.videoId;
-        if (videoId) pl.videoIds.push(videoId);
-      });
-
-      nextPageToken = res.data.nextPageToken;
-    } while (nextPageToken);
-  }
-
-  return playlists;
-}
-
-/* -------------------------------------------------------
-   PROCESS PLAYLIST THUMBNAILS (ALWAYS OVERWRITE)
-------------------------------------------------------- */
-export async function processPlaylistThumbnails(playlists, thumbnailDir) {
-  if (!fs.existsSync(thumbnailDir)) {
-    fs.mkdirSync(thumbnailDir, { recursive: true });
-  }
-
-  for (const pl of playlists) {
-    if (!pl.thumbnailUrl || pl.thumbnailUrl.includes("no_thumbnail")) {
-      console.warn(`Skipping thumbnail for playlist "${pl.title}" — no thumbnail available.`);
-      pl.thumbnail = null;
-      continue;
+  /* -------------------------------------------------------
+     WRITE PLAYLIST FEED
+     - Wrapped in top-level "playlists:"
+     - playlist_id = YouTube ID
+     - slug = URL identity
+     - song_ids = raw YouTube video IDs
+  ------------------------------------------------------- */
+  console.log("Writing youtube_playlists.yml...");
+  writeYaml(
+    PLAYLIST_FEED_PATH,
+    {
+      playlists: playlists.map(pl => ({
+        playlist_id: pl.id,
+        title: pl.title,
+        slug: pl.slug,
+        description: pl.description,
+        published_at: pl.publishedAt,
+        thumbnail: pl.thumbnail,
+        song_ids: pl.videoIds // raw YouTube IDs (correct)
+      }))
     }
+  );
 
-    const filename = `playlist-${pl.slug}.jpeg`;
-    const filepath = path.join(thumbnailDir, filename);
-
-    try {
-      await downloadImage(pl.thumbnailUrl, filepath);
-      pl.thumbnail = `/assets/thumbnails/${filename}`;
-    } catch (err) {
-      console.error(`Failed to download thumbnail for playlist "${pl.title}":`, err.message);
-      pl.thumbnail = null;
-    }
-  }
-
-  return playlists;
+  console.log("Done.");
 }
 
-/* -------------------------------------------------------
-   WRITE PLAYLIST YAML
-------------------------------------------------------- */
-export function writePlaylistYaml(playlists, outputPath) {
-  const data = playlists.map(pl => ({
-    playlist_id: pl.id,
-    title: pl.title,
-    slug: pl.slug,
-    description: pl.description,
-    published_at: pl.publishedAt,
-    thumbnail: pl.thumbnail,
-    song_ids: pl.videoIds
-  }));
-
-  fs.writeFileSync(outputPath, yaml.dump(data), "utf8");
-}
+generate().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
