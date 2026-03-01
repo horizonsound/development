@@ -1,11 +1,22 @@
 import { google } from "googleapis";
 import dotenv from "dotenv";
-import fs from "fs";
-import path from "path";
-import axios from "axios";
-import yaml from "js-yaml";
 
 dotenv.config();
+
+/* -------------------------------------------------------
+   LOG HELPERS
+------------------------------------------------------- */
+function log(msg) {
+  console.log(msg);
+}
+
+function warn(msg) {
+  console.warn(`WARNING: ${msg}`);
+}
+
+function error(msg) {
+  console.error(`ERROR: ${msg}`);
+}
 
 /* -------------------------------------------------------
    HELPERS
@@ -13,27 +24,12 @@ dotenv.config();
 function slugify(title) {
   return title
     .toLowerCase()
-    .replace(/['’]/g, "")
+    .replace(/['â€™]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
 
-/* -------------------------------------------------------
-   CANONICAL VIDEO STATUS (LOWERCASE)
-   -------------------------------------------------------
-   YouTube provides:
-     - privacyStatus
-     - uploadStatus
-     - publishAt (future = scheduled)
-
-   We derive ONE canonical lowercase status:
-     - "scheduled"
-     - "public"
-     - "unlisted"
-     - "private"
-     - or raw uploadStatus fallback
-------------------------------------------------------- */
 function normalizeVideoStatus(snippet, status) {
   const publishAt = status.publishAt || null;
   const privacy = status.privacyStatus || "";
@@ -43,31 +39,17 @@ function normalizeVideoStatus(snippet, status) {
   if (privacy === "public") return "public";
   if (privacy === "unlisted") return "unlisted";
   if (privacy === "private") return "private";
+  if (upload === "processed") return "public";
 
   return upload || "";
 }
 
-async function downloadImage(url, filepath) {
-  if (!url) return;
-  const response = await axios.get(url, { responseType: "arraybuffer" });
-  fs.writeFileSync(filepath, response.data);
-}
-
-function pickBestThumbnail(thumbs) {
-  return (
-    thumbs?.maxres?.url ||
-    thumbs?.standard?.url ||
-    thumbs?.high?.url ||
-    thumbs?.medium?.url ||
-    thumbs?.default?.url ||
-    ""
-  );
-}
-
 /* -------------------------------------------------------
-   AUTH
+   FETCH ALL VIDEOS (FULL METADATA)
 ------------------------------------------------------- */
-function getOAuthClient() {
+export async function fetchAllVideos() {
+  log("Initializing YouTube client...");
+
   const oauth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_CLIENT_ID,
     process.env.GOOGLE_CLIENT_SECRET,
@@ -78,33 +60,17 @@ function getOAuthClient() {
     refresh_token: process.env.GOOGLE_REFRESH_TOKEN
   });
 
-  return oauth2Client;
-}
-
-/* -------------------------------------------------------
-   FETCH ALL VIDEOS (FULL METADATA)
-   -------------------------------------------------------
-   Returns objects shaped for the generator:
-     {
-       id: <YouTube video ID>,
-       title,
-       slug,
-       videostatus_raw,
-       publishedAt,
-       scheduledAt,
-       thumbnail,
-       playlists: [],
-       youtube_metadata: { raw fields }
-     }
-------------------------------------------------------- */
-export async function fetchAllVideos() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
+  const youtube = google.youtube({ version: "v3", auth: oauth2Client });
 
   let allVideos = [];
   let nextPageToken = null;
+  let page = 1;
+
+  log("Fetching videos from YouTube...");
 
   do {
+    log(`VIDEO PAGE ${page}...`);
+
     const searchRes = await youtube.search.list({
       part: ["id", "snippet"],
       forMine: true,
@@ -113,12 +79,32 @@ export async function fetchAllVideos() {
       type: "video"
     });
 
+    if (!searchRes.data.items) {
+      error("YouTube returned no items for video search.");
+      break;
+    }
+
+    searchRes.data.items.forEach(item => {
+      log(`  VIDEO FOUND: ${item.id.videoId} — ${item.snippet?.title || "(no title)"}`);
+    });
+
     const ids = searchRes.data.items.map(item => item.id.videoId).join(",");
 
     const details = await youtube.videos.list({
-      part: ["snippet", "status", "contentDetails", "statistics", "topicDetails"],
+      part: [
+        "snippet",
+        "status",
+        "contentDetails",
+        "statistics",
+        "topicDetails"
+      ],
       id: ids
     });
+
+    if (!details.data.items) {
+      error("YouTube returned no details for video list.");
+      break;
+    }
 
     const normalized = details.data.items.map(item => {
       const snippet = item.snippet || {};
@@ -128,24 +114,35 @@ export async function fetchAllVideos() {
       const topics = item.topicDetails || {};
       const thumbs = snippet.thumbnails || {};
 
-      const thumbnail = pickBestThumbnail(thumbs);
+      const thumbnail =
+        thumbs.maxres?.url ||
+        thumbs.standard?.url ||
+        thumbs.high?.url ||
+        thumbs.medium?.url ||
+        thumbs.default?.url ||
+        "";
+
+      if (!thumbnail) {
+        warn(`No thumbnail found for video "${snippet.title}" (${item.id})`);
+      } else {
+        log(`  THUMBNAIL SELECTED for ${item.id}: ${thumbnail}`);
+      }
 
       return {
         id: item.id,
         title: snippet.title || "",
         slug: slugify(snippet.title || ""),
 
-        // canonical lowercase status
+        // NEW MODEL FIELDS
         videostatus_raw: normalizeVideoStatus(snippet, status),
-
-        // raw YouTube scheduling fields
         publishedAt: snippet.publishedAt || "",
         scheduledAt: status.publishAt || "",
-
         thumbnail,
+
+        // playlist membership added later in generator
         playlists: [],
 
-        // raw YouTube metadata (no transformations)
+        // NEW MODEL: youtube_metadata (renamed from metadata)
         youtube_metadata: {
           published_at: snippet.publishedAt || "",
           channel_id: snippet.channelId || "",
@@ -177,7 +174,14 @@ export async function fetchAllVideos() {
 
     allVideos.push(...normalized);
     nextPageToken = searchRes.data.nextPageToken;
+    page++;
   } while (nextPageToken);
+
+  log(`TOTAL VIDEOS FETCHED: ${allVideos.length}`);
+
+  if (allVideos.length === 0) {
+    error("No videos returned from YouTube. Aborting.");
+  }
 
   return allVideos;
 }
@@ -186,13 +190,27 @@ export async function fetchAllVideos() {
    FETCH ALL PLAYLISTS (FULL METADATA)
 ------------------------------------------------------- */
 export async function fetchAllPlaylists() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
+  console.log("Fetching playlists...");
+
+  const oauth2Client = new google.auth.OAuth2(
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+    process.env.REDIRECT_URI
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: process.env.GOOGLE_REFRESH_TOKEN
+  });
+
+  const youtube = google.youtube({ version: "v3", auth: oauth2Client });
 
   let playlists = [];
   let nextPageToken = null;
+  let page = 1;
 
   do {
+    console.log(`PLAYLIST PAGE ${page}...`);
+
     const res = await youtube.playlists.list({
       part: ["id", "snippet"],
       channelId: process.env.YOUTUBE_CHANNEL_ID,
@@ -200,9 +218,32 @@ export async function fetchAllPlaylists() {
       pageToken: nextPageToken
     });
 
+    if (!res.data.items) {
+      console.error("ERROR: YouTube returned no playlist items.");
+      break;
+    }
+
+    res.data.items.forEach(item => {
+      console.log(`  PLAYLIST FOUND: ${item.id} — ${item.snippet?.title || "(no title)"}`);
+    });
+
     res.data.items.forEach(item => {
       const snippet = item.snippet || {};
       const thumbs = snippet.thumbnails || {};
+
+      const thumbnailUrl =
+        thumbs.maxres?.url ||
+        thumbs.standard?.url ||
+        thumbs.high?.url ||
+        thumbs.medium?.url ||
+        thumbs.default?.url ||
+        "";
+
+      if (!thumbnailUrl) {
+        console.warn(`WARNING: No thumbnail found for playlist "${snippet.title}" (${item.id})`);
+      } else {
+        console.log(`  THUMBNAIL SELECTED for playlist ${item.id}: ${thumbnailUrl}`);
+      }
 
       playlists.push({
         id: item.id,
@@ -210,32 +251,42 @@ export async function fetchAllPlaylists() {
         slug: slugify(snippet.title || ""),
         description: snippet.description || "",
         publishedAt: snippet.publishedAt || "",
-        thumbnailUrl: pickBestThumbnail(thumbs),
+        thumbnailUrl,
         videoIds: []
       });
     });
 
     nextPageToken = res.data.nextPageToken;
+    page++;
   } while (nextPageToken);
 
+  console.log(`TOTAL PLAYLISTS FETCHED: ${playlists.length}`);
   return playlists;
 }
 
 /* -------------------------------------------------------
-   FETCH PLAYLISTS + MEMBERSHIP (RENAMED)
-   -------------------------------------------------------
-   fetchPlaylistsWithMembership()
-   - fetches playlists
-   - fetches membership
-   - attaches videoIds
+   FETCH PLAYLIST MEMBERSHIP
 ------------------------------------------------------- */
 export async function fetchPlaylistsWithMembership() {
-  const auth = getOAuthClient();
-  const youtube = google.youtube({ version: "v3", auth });
-
   const playlists = await fetchAllPlaylists();
 
+  console.log("Fetching playlist membership...");
+
+  const oauth2Client = new google.auth.OAuth2(
+    process.env.GOOGLE_CLIENT_ID,
+    process.env.GOOGLE_CLIENT_SECRET,
+    process.env.REDIRECT_URI
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: process.env.GOOGLE_REFRESH_TOKEN
+  });
+
+  const youtube = google.youtube({ version: "v3", auth: oauth2Client });
+
   for (const pl of playlists) {
+    console.log(`  MEMBERSHIP: ${pl.title}`);
+
     let nextPageToken = null;
 
     do {
@@ -246,29 +297,44 @@ export async function fetchPlaylistsWithMembership() {
         pageToken: nextPageToken
       });
 
+      if (!res.data.items) {
+        console.warn(`WARNING: Playlist ${pl.id} returned no items.`);
+        break;
+      }
+
       res.data.items.forEach(item => {
         const videoId = item.contentDetails.videoId;
-        if (videoId) pl.videoIds.push(videoId);
+        if (!videoId) {
+          console.warn(`WARNING: Playlist ${pl.id} item missing videoId`);
+        } else {
+          pl.videoIds.push(videoId);
+        }
       });
 
       nextPageToken = res.data.nextPageToken;
     } while (nextPageToken);
+
+    console.log(`    → ${pl.videoIds.length} videos`);
   }
 
   return playlists;
 }
 
 /* -------------------------------------------------------
-   PROCESS PLAYLIST THUMBNAILS
+   DOWNLOAD PLAYLIST THUMBNAILS
 ------------------------------------------------------- */
 export async function processPlaylistThumbnails(playlists, thumbnailDir) {
+  const fs = await import("fs");
+  const path = await import("path");
+  const axios = await import("axios");
+
   if (!fs.existsSync(thumbnailDir)) {
     fs.mkdirSync(thumbnailDir, { recursive: true });
   }
 
   for (const pl of playlists) {
-    if (!pl.thumbnailUrl || pl.thumbnailUrl.includes("no_thumbnail")) {
-      console.warn(`Skipping thumbnail for playlist "${pl.title}" — no thumbnail available.`);
+    if (!pl.thumbnailUrl) {
+      console.warn(`Skipping thumbnail for playlist "${pl.title}" — no thumbnail URL.`);
       pl.thumbnail = null;
       continue;
     }
@@ -277,10 +343,12 @@ export async function processPlaylistThumbnails(playlists, thumbnailDir) {
     const filepath = path.join(thumbnailDir, filename);
 
     try {
-      await downloadImage(pl.thumbnailUrl, filepath);
+      console.log(`  DOWNLOADING PLAYLIST THUMBNAIL: ${filename}`);
+      const response = await axios.default.get(pl.thumbnailUrl, { responseType: "arraybuffer" });
+      fs.writeFileSync(filepath, response.data);
       pl.thumbnail = `/assets/thumbnails/${filename}`;
     } catch (err) {
-      console.error(`Failed to download thumbnail for playlist "${pl.title}":`, err.message);
+      console.error(`ERROR downloading playlist thumbnail for "${pl.title}": ${err.message}`);
       pl.thumbnail = null;
     }
   }
@@ -288,19 +356,3 @@ export async function processPlaylistThumbnails(playlists, thumbnailDir) {
   return playlists;
 }
 
-/* -------------------------------------------------------
-   WRITE PLAYLIST YAML (LEGACY — GENERATOR NOW HANDLES THIS)
-------------------------------------------------------- */
-export function writePlaylistYaml(playlists, outputPath) {
-  const data = playlists.map(pl => ({
-    playlist_id: pl.id,
-    title: pl.title,
-    slug: pl.slug,
-    description: pl.description,
-    published_at: pl.publishedAt,
-    thumbnail: pl.thumbnail,
-    song_ids: pl.videoIds
-  }));
-
-  fs.writeFileSync(outputPath, yaml.dump(data), "utf8");
-}
