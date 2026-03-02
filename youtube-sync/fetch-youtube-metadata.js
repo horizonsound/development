@@ -173,6 +173,7 @@ export async function fetchAllVideos() {
 
         // Full raw metadata block used by the site
         youtube_metadata: {
+          description: item.snippet.description || "",
           published_at: snippet.publishedAt || "",
           channel_id: snippet.channelId || "",
           channel_title: snippet.channelTitle || "",
