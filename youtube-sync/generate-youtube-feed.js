@@ -1,3 +1,47 @@
+v/**
+ * -------------------------------------------------------------
+ *  YOUTUBE → LOCAL DATA INGESTION LAYER (CANONICAL + STABLE)
+ * -------------------------------------------------------------
+ *
+ *  PURPOSE:
+ *    This script fetches all YouTube videos and playlists from the
+ *    Horizon Sound channel, downloads thumbnails, normalizes metadata,
+ *    formats descriptions, attaches playlist membership, and writes
+ *    two canonical YAML data files used by the website:
+ *
+ *      • _data/youtube_feed.yml       (all songs)
+ *      • _data/youtube_playlists.yml  (all playlists)
+ *
+ *  This is the **single source of truth** for all YouTube-derived
+ *  metadata. It must remain stable, complete, and append‑only.
+ *
+ *  NOTHING in this file should ever be removed because it is “unused.”
+ *  The ingestion layer must preserve ALL useful upstream metadata
+ *  for future features, analytics, debugging, and site evolution.
+ *
+ * -------------------------------------------------------------
+ *  INPUTS:
+ *    • YouTube API (via fetchAllVideos + fetchPlaylistsWithMembership)
+ *    • Local overrides (merged later in the site build)
+ *    • Local filesystem for thumbnails
+ *
+ *  OUTPUTS:
+ *    • youtube_feed.yml       → list of normalized song objects
+ *    • youtube_playlists.yml  → list of normalized playlist objects
+ *    • /assets/thumbnails/    → downloaded JPEG thumbnails
+ *
+ * -------------------------------------------------------------
+ *  GUARANTEES:
+ *    • Never drops upstream metadata fields
+ *    • Always produces deterministic YAML
+ *    • Always formats descriptions into <p> blocks
+ *    • Always downloads thumbnails
+ *    • Always attaches playlist membership
+ *    • Always safe to run repeatedly
+ *
+ * -------------------------------------------------------------
+ */
+
 import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
@@ -8,22 +52,47 @@ import {
   processPlaylistThumbnails
 } from "./fetch-youtube-metadata.js";
 
+/* -------------------------------------------------------------
+   CONSTANTS & PATHS
+------------------------------------------------------------- */
+
 const DATA_DIR = "./_data";
 const THUMBNAIL_DIR = "./assets/thumbnails";
 
 const VIDEO_FEED_PATH = path.join(DATA_DIR, "youtube_feed.yml");
 const PLAYLIST_FEED_PATH = path.join(DATA_DIR, "youtube_playlists.yml");
 
+/* -------------------------------------------------------------
+   FILESYSTEM HELPERS
+------------------------------------------------------------- */
+
+/**
+ * ensureDir(dir)
+ * Creates a directory if it doesn't exist.
+ * Used for thumbnails and YAML output directories.
+ */
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
 }
 
+/**
+ * writeYaml(filepath, data)
+ * Writes YAML to disk with safe directory creation.
+ */
 function writeYaml(filepath, data) {
   ensureDir(path.dirname(filepath));
   fs.writeFileSync(filepath, yaml.dump(data), "utf8");
 }
+
+/* -------------------------------------------------------------
+   DESCRIPTION FORMATTER
+   Converts raw YouTube description text into compact <p> blocks.
+   - Removes blank lines
+   - Collapses internal newlines
+   - Produces deterministic HTML
+------------------------------------------------------------- */
 
 function formatDescriptionToHtml(desc) {
   if (!desc) return "";
@@ -40,6 +109,12 @@ function formatDescriptionToHtml(desc) {
     .join("\n");                    // no blank lines between paragraphs
 }
 
+/* -------------------------------------------------------------
+   SONG OBJECT NORMALIZATION
+   Converts raw YouTube API video objects into stable, normalized
+   song objects used by the site. This is the canonical schema.
+------------------------------------------------------------- */
+
 function buildSongObject(video) {
   const song_id = video.slug;
 
@@ -47,18 +122,22 @@ function buildSongObject(video) {
     song_id,
     youtube_id: video.id,
     title: video.title,
+
+    // Formatted HTML description (canonical)
     description_html: formatDescriptionToHtml(video.youtube_metadata?.description || ""),
+
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
     videostatus: video.videostatus_raw,
     playlists: video.playlists || [],
 
-    // ✅ FIXED: numeric view count
+    // Numeric view count (normalized)
     view_count_num: parseInt(
       video.youtube_metadata?.statistics?.view_count || "0",
       10
     ),
 
+    // Full upstream YouTube metadata (append‑only)
     youtube_metadata: {
       published_at: video.publishedAt || null,
       scheduled_at: video.scheduledAt || null,
@@ -87,6 +166,11 @@ function buildSongObject(video) {
   };
 }
 
+/* -------------------------------------------------------------
+   MAIN GENERATION PIPELINE
+   Fetch → Thumbnails → Membership → Normalize → YAML
+------------------------------------------------------------- */
+
 async function generate() {
   console.log("Fetching videos...");
   const videos = await fetchAllVideos();
@@ -108,9 +192,15 @@ async function generate() {
 
   console.log(`PLAYLIST COUNT: ${playlists.length}`);
 
+  /* -------------------------------------------------------------
+     PLAYLIST THUMBNAILS
+  ------------------------------------------------------------- */
   console.log("Downloading playlist thumbnails...");
   await processPlaylistThumbnails(playlists, THUMBNAIL_DIR);
 
+  /* -------------------------------------------------------------
+     SONG THUMBNAILS
+  ------------------------------------------------------------- */
   console.log("Downloading song thumbnails...");
   ensureDir(THUMBNAIL_DIR);
 
@@ -133,6 +223,9 @@ async function generate() {
     }
   }
 
+  /* -------------------------------------------------------------
+     ATTACH PLAYLIST MEMBERSHIP
+  ------------------------------------------------------------- */
   console.log("Attaching playlist membership to videos...");
   const playlistMap = {};
   playlists.forEach(pl => {
@@ -146,12 +239,21 @@ async function generate() {
     video.playlists = playlistMap[video.id] || [];
   });
 
+  /* -------------------------------------------------------------
+     NORMALIZE SONG OBJECTS
+  ------------------------------------------------------------- */
   console.log("Building song objects...");
   const Videos = videos.map(buildSongObject);
 
+  /* -------------------------------------------------------------
+     WRITE SONG FEED
+  ------------------------------------------------------------- */
   console.log("Writing youtube_feed.yml...");
   writeYaml(VIDEO_FEED_PATH, { songs: Videos });
 
+  /* -------------------------------------------------------------
+     WRITE PLAYLIST FEED
+  ------------------------------------------------------------- */
   console.log("Writing youtube_playlists.yml...");
   writeYaml(PLAYLIST_FEED_PATH, {
     playlists: playlists.map(pl => ({
@@ -164,9 +266,10 @@ async function generate() {
       song_ids: pl.videoIds
     }))
   });
-/* -------------------------------------------------------
-   SUMMARY
-------------------------------------------------------- */
+
+  /* -------------------------------------------------------------
+     SUMMARY
+  ------------------------------------------------------------- */
   console.log("\nSUMMARY:");
   console.log(`  Videos fetched: ${videos.length}`);
   console.log(`  Playlists fetched: ${playlists.length}`);
@@ -178,6 +281,10 @@ async function generate() {
 
   console.log("Done.");
 }
+
+/* -------------------------------------------------------------
+   EXECUTE
+------------------------------------------------------------- */
 
 generate().catch(err => {
   console.error("FATAL ERROR:", err);
