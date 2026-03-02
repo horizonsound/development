@@ -23,7 +23,7 @@ layout: default
 
   {% if current_song %}
     {# SONG PAGE MODE: find playlist containing this song #}
-    {% assign playlist = site.data.youtube_playlists.playlists | where_exp: "pl", "pl.song_ids contains page.playlist_id" | first %}
+    {% assign playlist = site.data.youtube_playlists.playlists | where_exp: "pl", "pl.songs contains page.playlist_id" | first %}
   {% else %}
     {# PLAYLIST PAGE MODE: match playlist by slug #}
     {% assign playlist = site.data.youtube_playlists.playlists | where: "slug", page.playlist_id | first %}
@@ -72,7 +72,7 @@ layout: default
   {% endcomment %}
   {% assign playlist_songs = "" | split: "" %}
 
-  {% for sid in playlist.song_ids %}
+  {% for sid in playlist.songs %}
     {% assign s = site.data.youtube_feed.songs | where: "song_id", sid | first %}
     {% assign override = site.data.music_overrides.overrides | where: "song_id", sid | first %}
 
