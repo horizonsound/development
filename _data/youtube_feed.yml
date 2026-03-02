@@ -2,6 +2,7 @@ songs:
   - song_id: she-s-so-into-me-modern-country-love-song-horizon-sound
     youtube_id: 81IXyVEd7PQ
     title: She’s So Into Me (Modern Country Love Song) – Horizon Sound
+    description_html: ''
     url: /music/she-s-so-into-me-modern-country-love-song-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/she-s-so-into-me-modern-country-love-song-horizon-sound.jpeg
@@ -35,6 +36,7 @@ songs:
   - song_id: vegas-in-the-sky-country-pop-party-anthem-horizon-sound
     youtube_id: n87_yKJTcUw
     title: Vegas in the Sky (Country‑Pop Party Anthem) – Horizon Sound
+    description_html: ''
     url: /music/vegas-in-the-sky-country-pop-party-anthem-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/vegas-in-the-sky-country-pop-party-anthem-horizon-sound.jpeg
@@ -70,6 +72,7 @@ songs:
     title: >-
       6. Half of Me – Performed by Lydia Ellington (After the Silence) | Horizon
       Sound
+    description_html: ''
     url: >-
       /music/6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -109,6 +112,7 @@ songs:
     title: >-
       8. Ghostlight – Performed by Lydia Ellington (After the Silence) | Horizon
       Sound
+    description_html: ''
     url: >-
       /music/8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -148,6 +152,7 @@ songs:
     title: >-
       13. Rise Again – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -182,6 +187,7 @@ songs:
   - song_id: wildfire-modern-country-power-anthem-horizon-sound
     youtube_id: Tc0wt00clNM
     title: Wildfire (Modern Country Power Anthem) – Horizon Sound
+    description_html: ''
     url: /music/wildfire-modern-country-power-anthem-horizon-sound/
     thumbnail: /assets/thumbnails/wildfire-modern-country-power-anthem-horizon-sound.jpeg
     videostatus: scheduled
@@ -214,6 +220,7 @@ songs:
   - song_id: the-way-water-moves-cinematic-instrumental-horizon-sound
     youtube_id: kIv8cx7JgRM
     title: The Way Water Moves (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/the-way-water-moves-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/the-way-water-moves-cinematic-instrumental-horizon-sound.jpeg
@@ -247,13 +254,14 @@ songs:
   - song_id: lines-of-light-cinematic-instrumental-horizon-sound
     youtube_id: hT_epxC2G5c
     title: Lines of Light (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/lines-of-light-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/lines-of-light-cinematic-instrumental-horizon-sound.jpeg
     videostatus: public
     playlists:
       - PLcKs1ONZE1PyTxIEXEolv_F5r7xqRr8TU
-    view_count_num: 5
+    view_count_num: 7
     youtube_metadata:
       published_at: '2026-02-28T13:01:20Z'
       scheduled_at: null
@@ -267,7 +275,7 @@ songs:
       region_blocked: []
       content_rating: ''
       statistics:
-        view_count: '5'
+        view_count: '7'
         like_count: '0'
         favorite_count: '0'
         comment_count: '0'
@@ -282,6 +290,7 @@ songs:
   - song_id: a-touch-of-light-cinematic-instrumental-horizon-sound
     youtube_id: 5bfNeRr2UHI
     title: A Touch of Light (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/a-touch-of-light-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/a-touch-of-light-cinematic-instrumental-horizon-sound.jpeg
@@ -317,6 +326,7 @@ songs:
   - song_id: held-in-the-moment-cinematic-instrumental-horizon-sound
     youtube_id: vjdOSn3ZuaI
     title: Held in the Moment (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/held-in-the-moment-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/held-in-the-moment-cinematic-instrumental-horizon-sound.jpeg
@@ -350,6 +360,7 @@ songs:
   - song_id: forever-in-a-moment-cinematic-instrumental-horizon-sound
     youtube_id: 906ItpYuLuQ
     title: Forever in a Moment (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/forever-in-a-moment-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/forever-in-a-moment-cinematic-instrumental-horizon-sound.jpeg
@@ -385,6 +396,7 @@ songs:
   - song_id: the-moment-you-breathe-cinematic-instrumental-horizon-sound
     youtube_id: YNrpz2S--Yk
     title: The Moment You Breathe (Cinematic Instrumental) – Horizon Sound
+    description_html: ''
     url: /music/the-moment-you-breathe-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/the-moment-you-breathe-cinematic-instrumental-horizon-sound.jpeg
@@ -419,6 +431,7 @@ songs:
   - song_id: sheriff-for-a-night-50s-western-tall-tale-horizon-sound
     youtube_id: oMSIQ5Gv2ZI
     title: Sheriff for a Night (50s Western Tall‑Tale) – Horizon Sound
+    description_html: ''
     url: /music/sheriff-for-a-night-50s-western-tall-tale-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/sheriff-for-a-night-50s-western-tall-tale-horizon-sound.jpeg
@@ -452,6 +465,7 @@ songs:
   - song_id: back-to-amarillo-50s-country-western-romance-horizon-sound
     youtube_id: H-_2aKmiFc0
     title: Back to Amarillo (50s Country‑Western Romance) – Horizon Sound
+    description_html: ''
     url: /music/back-to-amarillo-50s-country-western-romance-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/back-to-amarillo-50s-country-western-romance-horizon-sound.jpeg
@@ -485,6 +499,7 @@ songs:
   - song_id: venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
     youtube_id: LzfM1PRxpVU
     title: Venice Waters (Upbeat Acoustic‑Pop Adventure) – Horizon Sound
+    description_html: ''
     url: /music/venice-waters-upbeat-acoustic-pop-adventure-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/venice-waters-upbeat-acoustic-pop-adventure-horizon-sound.jpeg
@@ -518,6 +533,7 @@ songs:
   - song_id: missing-stamp-emotional-acoustic-pop-horizon-sound
     youtube_id: fbBWIohiOwI
     title: Missing Stamp (Emotional Acoustic Pop) – Horizon Sound
+    description_html: ''
     url: /music/missing-stamp-emotional-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/missing-stamp-emotional-acoustic-pop-horizon-sound.jpeg
     videostatus: scheduled
@@ -550,6 +566,7 @@ songs:
   - song_id: someday-acoustic-pop-storytelling-horizon-sound
     youtube_id: 2cv-H5tTygs
     title: Someday (Acoustic Pop Storytelling) – Horizon Sound
+    description_html: ''
     url: /music/someday-acoustic-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/someday-acoustic-pop-storytelling-horizon-sound.jpeg
     videostatus: scheduled
@@ -585,6 +602,7 @@ songs:
     title: >-
       4. The Way We Lied – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -624,6 +642,7 @@ songs:
     title: >-
       1. The Quiet After – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -661,6 +680,7 @@ songs:
   - song_id: nineteen-summers-emotional-ballad-horizon-sound
     youtube_id: r16qSkxEcI4
     title: Nineteen Summers (Emotional Ballad) - Horizon Sound
+    description_html: ''
     url: /music/nineteen-summers-emotional-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/nineteen-summers-emotional-ballad-horizon-sound.jpeg
     videostatus: scheduled
@@ -693,6 +713,7 @@ songs:
   - song_id: nineteen-summers-emotional-acoustic-pop-short-horizon-sound
     youtube_id: LyfIQW5FMKw
     title: Nineteen Summers - Emotional Acoustic Pop (Short) Horizon Sound
+    description_html: ''
     url: /music/nineteen-summers-emotional-acoustic-pop-short-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/nineteen-summers-emotional-acoustic-pop-short-horizon-sound.jpeg
@@ -726,6 +747,7 @@ songs:
   - song_id: rise-like-thunder-80s-rock-anthem-short-horizon-sound
     youtube_id: P4VGMd5Kk8Q
     title: Rise Like Thunder - 80s Rock Anthem (Short) Horizon Sound
+    description_html: ''
     url: /music/rise-like-thunder-80s-rock-anthem-short-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rise-like-thunder-80s-rock-anthem-short-horizon-sound.jpeg
@@ -765,6 +787,7 @@ songs:
     title: >-
       12. Unsent Letters – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -802,6 +825,7 @@ songs:
     title: >-
       11. The Dress I Never Wore – Performed by Lydia Ellington (After the
       Silence) | Horizon Sound
+    description_html: ''
     url: >-
       /music/11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -838,6 +862,7 @@ songs:
     title: >-
       10. Saltwater – Performed by Lydia Ellington (After the Silence) | Horizon
       Sound
+    description_html: ''
     url: >-
       /music/10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -875,6 +900,7 @@ songs:
     title: >-
       9. After the Silence – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -912,6 +938,7 @@ songs:
     title: >-
       7. If You’d Asked – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -919,7 +946,7 @@ songs:
     videostatus: public
     playlists:
       - PLcKs1ONZE1Pz6NzlQFL-96c_9VIgXwuVh
-    view_count_num: 54
+    view_count_num: 55
     youtube_metadata:
       published_at: '2026-02-24T17:00:59Z'
       scheduled_at: null
@@ -933,7 +960,7 @@ songs:
       region_blocked: []
       content_rating: ''
       statistics:
-        view_count: '54'
+        view_count: '55'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -951,6 +978,7 @@ songs:
     title: >-
       5. Paper Walls – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -991,6 +1019,7 @@ songs:
     title: >-
       3. Homesick for You – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -1031,6 +1060,7 @@ songs:
     title: >-
       2. Borrowed Time – Performed by Lydia Ellington (After the Silence) |
       Horizon Sound
+    description_html: ''
     url: >-
       /music/2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -1069,6 +1099,7 @@ songs:
   - song_id: after-midnight-the-midnight-saga-chapter-4-horizon-sound
     youtube_id: iGt2wtH6orc
     title: After Midnight (The Midnight Saga – Chapter 4) – Horizon Sound
+    description_html: ''
     url: /music/after-midnight-the-midnight-saga-chapter-4-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/after-midnight-the-midnight-saga-chapter-4-horizon-sound.jpeg
@@ -1102,13 +1133,14 @@ songs:
   - song_id: midnight-madness-the-midnight-saga-chapter-3-horizon-sound
     youtube_id: HeD2WbErCKg
     title: Midnight Madness (The Midnight Saga – Chapter 3) – Horizon Sound
+    description_html: ''
     url: /music/midnight-madness-the-midnight-saga-chapter-3-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/midnight-madness-the-midnight-saga-chapter-3-horizon-sound.jpeg
     videostatus: public
     playlists:
       - PLcKs1ONZE1PzhwIF1yE_gEUS1kZoW6oiH
-    view_count_num: 18
+    view_count_num: 19
     youtube_metadata:
       published_at: '2026-02-27T17:00:26Z'
       scheduled_at: null
@@ -1122,7 +1154,7 @@ songs:
       region_blocked: []
       content_rating: ''
       statistics:
-        view_count: '18'
+        view_count: '19'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -1138,6 +1170,7 @@ songs:
   - song_id: midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
     youtube_id: Z6AGhE0K-Ro
     title: Midnight Mayhem (The Midnight Saga – Chapter 2) – Horizon Sound
+    description_html: ''
     url: /music/midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound.jpeg
@@ -1174,6 +1207,7 @@ songs:
   - song_id: before-midnight-the-midnight-saga-chapter-1-horizon-sound
     youtube_id: VXQKpK56MCI
     title: Before Midnight (The Midnight Saga – Chapter 1) – Horizon Sound
+    description_html: ''
     url: /music/before-midnight-the-midnight-saga-chapter-1-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/before-midnight-the-midnight-saga-chapter-1-horizon-sound.jpeg
@@ -1210,6 +1244,7 @@ songs:
   - song_id: choosing-me-his-version-pop-horizon-sound
     youtube_id: nudUc7DezM0
     title: Choosing Me - His Version (Pop) – Horizon Sound
+    description_html: ''
     url: /music/choosing-me-his-version-pop-horizon-sound/
     thumbnail: /assets/thumbnails/choosing-me-his-version-pop-horizon-sound.jpeg
     videostatus: public
@@ -1245,6 +1280,7 @@ songs:
   - song_id: keep-the-light-on-90s-pop-revival-horizon-sound
     youtube_id: f25XTQKjq7Q
     title: Keep the Light On (90s Pop Revival) – Horizon Sound
+    description_html: ''
     url: /music/keep-the-light-on-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/keep-the-light-on-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -1279,6 +1315,7 @@ songs:
   - song_id: hold-on-revised-horizon-sound
     youtube_id: uFxPkq2B0D0
     title: Hold On (Revised) – Horizon Sound
+    description_html: ''
     url: /music/hold-on-revised-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-revised-horizon-sound.jpeg
     videostatus: public
@@ -1314,6 +1351,7 @@ songs:
   - song_id: choosing-me-her-version-acoustic-pop-horizon-sound
     youtube_id: ddDkZl0GrWU
     title: Choosing Me - Her Version (Acoustic Pop) – Horizon Sound
+    description_html: ''
     url: /music/choosing-me-her-version-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/choosing-me-her-version-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -1349,6 +1387,7 @@ songs:
   - song_id: lost-in-silence-from-a-way-back-horizon-sound
     youtube_id: 59teEpeHah8
     title: Lost in Silence (From A Way Back) – Horizon Sound
+    description_html: ''
     url: /music/lost-in-silence-from-a-way-back-horizon-sound/
     thumbnail: /assets/thumbnails/lost-in-silence-from-a-way-back-horizon-sound.jpeg
     videostatus: public
@@ -1384,6 +1423,7 @@ songs:
   - song_id: rusty-80s-emotional-pop-ballad-horizon-sound
     youtube_id: Z8VipNxTybQ
     title: Rusty (80s Emotional Pop Ballad) – Horizon Sound
+    description_html: ''
     url: /music/rusty-80s-emotional-pop-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/rusty-80s-emotional-pop-ballad-horizon-sound.jpeg
     videostatus: public
@@ -1418,6 +1458,7 @@ songs:
   - song_id: kaleidoscope-emotional-acoustic-pop-horizon-sound
     youtube_id: YpUFnf6Ke_A
     title: Kaleidoscope (Emotional Acoustic‑Pop) – Horizon Sound
+    description_html: ''
     url: /music/kaleidoscope-emotional-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/kaleidoscope-emotional-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -1452,6 +1493,7 @@ songs:
   - song_id: barroom-brawl-southern-rock-grit-horizon-sound
     youtube_id: 2gZPJnFPQZs
     title: Barroom Brawl (Southern Rock Grit) – Horizon Sound
+    description_html: ''
     url: /music/barroom-brawl-southern-rock-grit-horizon-sound/
     thumbnail: /assets/thumbnails/barroom-brawl-southern-rock-grit-horizon-sound.jpeg
     videostatus: public
@@ -1488,6 +1530,7 @@ songs:
   - song_id: the-man-behind-the-bar-90s-country-horizon-sound
     youtube_id: 3EOLlL-P120
     title: The Man Behind the Bar (90s Country) - Horizon Sound
+    description_html: ''
     url: /music/the-man-behind-the-bar-90s-country-horizon-sound/
     thumbnail: /assets/thumbnails/the-man-behind-the-bar-90s-country-horizon-sound.jpeg
     videostatus: public
@@ -1522,6 +1565,7 @@ songs:
   - song_id: not-so-smart-home-folk-country-comedy-horizon-sound
     youtube_id: ii7gqcUMto4
     title: Not so Smart Home (Folk‑Country Comedy) - Horizon Sound
+    description_html: ''
     url: /music/not-so-smart-home-folk-country-comedy-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/not-so-smart-home-folk-country-comedy-horizon-sound.jpeg
@@ -1557,6 +1601,7 @@ songs:
   - song_id: time-capsule-emotional-country-nostalgic-storytelling-horizon-sound
     youtube_id: '-zbAWN1M_qo'
     title: Time Capsule (Emotional Country / Nostalgic Storytelling) – Horizon Sound
+    description_html: ''
     url: >-
       /music/time-capsule-emotional-country-nostalgic-storytelling-horizon-sound/
     thumbnail: >-
@@ -1594,6 +1639,7 @@ songs:
   - song_id: fixed-it-mostly-right-country-comedy-horizon-sound
     youtube_id: KaEMFaNR40M
     title: Fixed it Mostly Right (Country Comedy) - Horizon Sound
+    description_html: ''
     url: /music/fixed-it-mostly-right-country-comedy-horizon-sound/
     thumbnail: /assets/thumbnails/fixed-it-mostly-right-country-comedy-horizon-sound.jpeg
     videostatus: public
@@ -1630,6 +1676,7 @@ songs:
   - song_id: bottle-on-the-table-country-western-horizon-sound
     youtube_id: lUa9SbvKg_4
     title: Bottle on the Table (Country-Western) - Horizon Sound
+    description_html: ''
     url: /music/bottle-on-the-table-country-western-horizon-sound/
     thumbnail: /assets/thumbnails/bottle-on-the-table-country-western-horizon-sound.jpeg
     videostatus: public
@@ -1664,6 +1711,7 @@ songs:
   - song_id: makin-our-way-to-california-pop-folk-horizon-sound
     youtube_id: cU4c2_3ITP8
     title: Makin’ Our Way to California (Pop-Folk) – Horizon Sound
+    description_html: ''
     url: /music/makin-our-way-to-california-pop-folk-horizon-sound/
     thumbnail: /assets/thumbnails/makin-our-way-to-california-pop-folk-horizon-sound.jpeg
     videostatus: public
@@ -1698,6 +1746,7 @@ songs:
   - song_id: learning-to-live-again-pop-horizon-sound
     youtube_id: NVG_qw_51RQ
     title: Learning to Live Again (Pop) - Horizon Sound
+    description_html: ''
     url: /music/learning-to-live-again-pop-horizon-sound/
     thumbnail: /assets/thumbnails/learning-to-live-again-pop-horizon-sound.jpeg
     videostatus: public
@@ -1732,6 +1781,7 @@ songs:
   - song_id: never-let-each-other-down-80s-synth-rock-horizon-sound
     youtube_id: 2uKHo8dtINQ
     title: Never Let Each Other Down (80s Synth-Rock) - Horizon Sound
+    description_html: ''
     url: /music/never-let-each-other-down-80s-synth-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/never-let-each-other-down-80s-synth-rock-horizon-sound.jpeg
@@ -1768,6 +1818,7 @@ songs:
   - song_id: new-again-90s-pop-revival-horizon-sound
     youtube_id: y4pym_HVGJA
     title: New Again (90s Pop Revival) - Horizon Sound
+    description_html: ''
     url: /music/new-again-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/new-again-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -1802,6 +1853,7 @@ songs:
   - song_id: oh-amber-emotional-pop-storytelling-horizon-sound
     youtube_id: J2AuQsiPz34
     title: Oh Amber (Emotional Pop Storytelling) - Horizon Sound
+    description_html: ''
     url: /music/oh-amber-emotional-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/oh-amber-emotional-pop-storytelling-horizon-sound.jpeg
     videostatus: public
@@ -1836,6 +1888,7 @@ songs:
   - song_id: heres-to-us-90s-rock-anthem-horizon-sound
     youtube_id: aY8-o0Scmjg
     title: Here's To Us (90s Rock Anthem) - Horizon Sound
+    description_html: ''
     url: /music/heres-to-us-90s-rock-anthem-horizon-sound/
     thumbnail: /assets/thumbnails/heres-to-us-90s-rock-anthem-horizon-sound.jpeg
     videostatus: public
@@ -1871,6 +1924,7 @@ songs:
   - song_id: put-you-down-electro-pop-dance-pop-horizon-sound
     youtube_id: niNtLrtDcBs
     title: Put You Down (Electro-Pop / Dance-Pop) - Horizon Sound
+    description_html: ''
     url: /music/put-you-down-electro-pop-dance-pop-horizon-sound/
     thumbnail: /assets/thumbnails/put-you-down-electro-pop-dance-pop-horizon-sound.jpeg
     videostatus: public
@@ -1906,6 +1960,7 @@ songs:
   - song_id: gimme-three-steps-and-im-gone-southern-rock-horizon-sound
     youtube_id: YVOzEcUdS9E
     title: Gimme Three Steps and I'm Gone (Southern Rock) - Horizon Sound
+    description_html: ''
     url: /music/gimme-three-steps-and-im-gone-southern-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/gimme-three-steps-and-im-gone-southern-rock-horizon-sound.jpeg
@@ -1942,6 +1997,7 @@ songs:
   - song_id: all-around-the-world-acoustic-pop-horizon-sound
     youtube_id: kIth3U12KeI
     title: All Around the World (Acoustic Pop) - Horizon Sound
+    description_html: ''
     url: /music/all-around-the-world-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/all-around-the-world-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -1976,6 +2032,7 @@ songs:
   - song_id: already-out-the-door-modern-country-horizon-sound
     youtube_id: EfXB-Yv_XSY
     title: Already Out the Door (Modern Country) - Horizon Sound
+    description_html: ''
     url: /music/already-out-the-door-modern-country-horizon-sound/
     thumbnail: /assets/thumbnails/already-out-the-door-modern-country-horizon-sound.jpeg
     videostatus: public
@@ -2010,6 +2067,7 @@ songs:
   - song_id: midnight-mayhem-electro-pop-horizon-sound
     youtube_id: 1B1nGWaWgD0
     title: Midnight Mayhem (Electro Pop) - Horizon Sound
+    description_html: ''
     url: /music/midnight-mayhem-electro-pop-horizon-sound/
     thumbnail: /assets/thumbnails/midnight-mayhem-electro-pop-horizon-sound.jpeg
     videostatus: public
@@ -2045,6 +2103,7 @@ songs:
   - song_id: dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound
     youtube_id: g61655Q2_mw
     title: Don't Let the Summer End (Upbeat 1990s style Pop) - Horizon Sound
+    description_html: ''
     url: /music/dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound.jpeg
@@ -2080,6 +2139,7 @@ songs:
   - song_id: rising-up-energetic-pop-rock-horizon-sound
     youtube_id: miFZlNNAriw
     title: Rising Up (Energetic Pop-Rock) - Horizon Sound
+    description_html: ''
     url: /music/rising-up-energetic-pop-rock-horizon-sound/
     thumbnail: /assets/thumbnails/rising-up-energetic-pop-rock-horizon-sound.jpeg
     videostatus: public
@@ -2115,6 +2175,7 @@ songs:
   - song_id: rise-like-thunder-80s-arena-rock-anthem-horizon-sound
     youtube_id: g_AZ5B9ssFQ
     title: Rise Like Thunder (80s Arena Rock Anthem) - Horizon Sound
+    description_html: ''
     url: /music/rise-like-thunder-80s-arena-rock-anthem-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rise-like-thunder-80s-arena-rock-anthem-horizon-sound.jpeg
@@ -2151,6 +2212,7 @@ songs:
   - song_id: im-holding-on-emotional-piano-ballad-horizon-sound
     youtube_id: Y97CNIAaBIA
     title: I'm Holding On (Emotional Piano Ballad) - Horizon Sound
+    description_html: ''
     url: /music/im-holding-on-emotional-piano-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/im-holding-on-emotional-piano-ballad-horizon-sound.jpeg
     videostatus: public
@@ -2186,6 +2248,7 @@ songs:
   - song_id: hold-on-pop-nostalgic-90s-energy-horizon-sound
     youtube_id: RpuAQzywuWM
     title: Hold On (Pop / Nostalgic 90s energy) - Horizon Sound
+    description_html: ''
     url: /music/hold-on-pop-nostalgic-90s-energy-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-pop-nostalgic-90s-energy-horizon-sound.jpeg
     videostatus: public
@@ -2220,6 +2283,7 @@ songs:
   - song_id: total-eclipse-years-later-80s-piano-power-ballad-horizon-sound
     youtube_id: vlB58WPvjns
     title: Total Eclipse - Years Later (80s Piano Power Ballad) - Horizon Sound
+    description_html: ''
     url: /music/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound.jpeg
@@ -2255,6 +2319,7 @@ songs:
   - song_id: one-hell-of-a-ride-gritty-southern-rock-horizon-sound
     youtube_id: 3iAmG5GLC7k
     title: One Hell of a Ride (Gritty Southern Rock) - Horizon Sound
+    description_html: ''
     url: /music/one-hell-of-a-ride-gritty-southern-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/one-hell-of-a-ride-gritty-southern-rock-horizon-sound.jpeg
@@ -2292,6 +2357,7 @@ songs:
   - song_id: nineteen-summers-emotional-acoustic-pop-horizon-sound
     youtube_id: HuGf30ChZkI
     title: Nineteen Summers (Emotional Acoustic Pop) - Horizon Sound
+    description_html: ''
     url: /music/nineteen-summers-emotional-acoustic-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/nineteen-summers-emotional-acoustic-pop-horizon-sound.jpeg
@@ -2328,6 +2394,7 @@ songs:
   - song_id: a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound
     youtube_id: _YvJOMi6lP0
     title: A quiet Little Voice (Emotional Pop / Empowering Pop) - Horizon Sound
+    description_html: ''
     url: /music/a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound.jpeg
@@ -2363,6 +2430,7 @@ songs:
   - song_id: becoming-me-emotional-pop-upbeat-love-song-horizon-sound
     youtube_id: hIh_5AX4Gek
     title: Becoming Me (Emotional Pop / Upbeat Love Song) - Horizon Sound
+    description_html: ''
     url: /music/becoming-me-emotional-pop-upbeat-love-song-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/becoming-me-emotional-pop-upbeat-love-song-horizon-sound.jpeg
@@ -2401,6 +2469,7 @@ songs:
     title: >-
       Until the Nightmare Ends (Epic 80s Synthwave, Stranger Things Inspired) -
       Horizon Sound
+    description_html: ''
     url: >-
       /music/until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound/
     thumbnail: >-
