@@ -32,6 +32,7 @@ function buildSongObject(video) {
     song_id,
     youtube_id: video.id,
     title: video.title,
+    description: video.youtube_metadata?.description || "",
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
     videostatus: video.videostatus_raw,
