@@ -66,32 +66,40 @@ layout: default
 
 {% for sid in playlist.songs %}
   {% assign base = site.data.youtube_feed.songs | where: "song_id", sid | first %}
-  {% assign s = base | jsonify | from_json %}
   {% assign override = site.data.music_overrides.overrides | where: "song_id", sid | first %}
-
-  <!-- DEBUG: show every field in the override -->
+  
+  {% assign final = "" | split: "" %}
+  
+  {% assign final = final | push: base.song_id %}
+  {% assign final = final | push: base.youtube_id %}
+  {% assign final = final | push: base.title %}
+  {% assign final = final | push: base.description_html %}
+  {% assign final = final | push: base.thumbnail %}
+  {% assign final = final | push: base.url %}
+  {% assign final = final | push: base.videostatus %}
+  {% assign final = final | push: base.youtube_metadata %}
+  
   {% if override %}
-    <div style="background:#222; color:#0ff; padding:0.5rem; margin:0.5rem 0; white-space:pre-wrap;">
-      <strong>OVERRIDE DEBUG for {{ sid }}:</strong>
-      {% for field in override %}
-        {{ field[0] }}: {{ field[1] }}
-      {% endfor %}
-    </div>
+    {% assign final = final | push: override.subtitle %}
+    {% assign final = final | push: override.collection %}
+    {% assign final = final | push: override.order %}
+    {% assign final = final | push: override.extra_title %}
+    {% assign final = final | push: override.extra_html %}
+    {% assign final = final | push: override.lyrics_html %}
   {% else %}
-    <div style="background:#400; color:#fff; padding:0.5rem; margin:0.5rem 0;">
-      <strong>NO OVERRIDE FOUND for {{ sid }}</strong>
-    </div>
+    {% assign final = final | push: "" %}
+    {% assign final = final | push: "" %}
+    {% assign final = final | push: "" %}
+    {% assign final = final | push: "" %}
+    {% assign final = final | push: "" %}
+    {% assign final = final | push: "" %}
   {% endif %}
-
-  {% if override %}
-    {% assign s = s | merge: override %}
-  {% endif %}
-
-  {% if s %}
-    {% assign playlist_songs = playlist_songs | push: s %}
-  {% endif %}
+  
+  {% assign playlist_songs = playlist_songs | push: final %}
 {% endfor %}
 
+
+  
 <!-- ============================================================
      SONG RESOLUTION DEBUG
 <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
@@ -178,19 +186,19 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("DEBUG: waiting for allSongs...");
       return requestAnimationFrame(loadInitialSong);
     }
-
-const first = window.allSongs[0];
-
-// Log the whole object (what you already have)
-console.log("DEBUG: first song =", first);
-
-// Log each field individually
-Object.keys(first).forEach(key => {
-  console.log(`DEBUG: first[${key}] =`, first[key]);
-});
-
-aboutEl.innerHTML = first.description_html || "(no description_html)";
-lyricsEl.innerHTML = first.lyrics_html || "(no lyrics_html)";
+    
+    const first = window.allSongs[0];
+    
+    // Log the whole object (what you already have)
+    console.log("DEBUG: first song =", first);
+    
+    // Log each field individually
+    Object.keys(first).forEach(key => {
+      console.log(`DEBUG: first[${key}] =`, first[key]);
+    });
+    
+    aboutEl.innerHTML = first[3] || "(no description_html)";
+    lyricsEl.innerHTML = first[13] || "(no lyrics_html)";
   }
 
   loadInitialSong();
@@ -201,17 +209,10 @@ lyricsEl.innerHTML = first.lyrics_html || "(no lyrics_html)";
       console.log("DEBUG: tile clicked", tile.dataset.song);
 
       const id = tile.dataset.song;
-      const song = window.allSongs.find(s => s.song_id === id);
-
-      console.log("DEBUG: resolved song =", song);
-
-      if (!song) {
-        console.warn("DEBUG: NO SONG FOUND FOR ID:", id);
-        return;
-      }
-
-      aboutEl.innerHTML = song.description_html || "(no description_html)";
-      lyricsEl.innerHTML = song.lyrics_html || "(no lyrics_html)";
+      const song = window.allSongs.find(s => s[0] === id);
+      
+      aboutEl.innerHTML = song[3] || "(no description_html)";
+      lyricsEl.innerHTML = song[13] || "(no lyrics_html)";
     });
   });
 });
