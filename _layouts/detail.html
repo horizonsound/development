@@ -35,9 +35,8 @@ layout: default
 
 <!-- ============================================================
      TOP‑LEVEL DEBUG
-============================================================ -->
-<!-- ============================================================
-<div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
+
+  <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
   <strong>DETAILS PAGE DEBUG</strong>
 
   page.playlist_id:
@@ -80,13 +79,13 @@ layout: default
 
 <!-- ============================================================
      SONG RESOLUTION DEBUG
-============================================================ -->
 <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
   <strong>SONG RESOLUTION DEBUG</strong>
 
   playlist_songs (raw):
   {{ playlist_songs | jsonify }}
 </div>
+============================================================ -->
 
 {% assign sorted = playlist_songs %}
 
@@ -122,10 +121,12 @@ layout: default
     window.allSongs = {{ sorted | jsonify }};
   </script>
 
+<!-- ============================================================
   <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
     <strong>window.allSongs DEBUG</strong>
     {{ sorted | jsonify }}
   </div>
+============================================================ -->
 
   {% include carousel.html playlist=sorted %}
 </div>
