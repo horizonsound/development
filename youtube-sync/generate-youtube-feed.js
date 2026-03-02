@@ -29,11 +29,15 @@ function formatDescriptionToHtml(desc) {
   if (!desc) return "";
 
   return desc
-    .split(/\n{2,}/)              // split on blank lines
-    .map(p => p.trim())           // trim whitespace
-    .filter(p => p.length > 0)    // remove empty paragraphs
-    .map(p => `<p>${p}</p>`)      // wrap in <p> tags
-    .join("\n");                  // no blank lines between <p> blocks
+    .split(/\n\s*\n/)               // split on blank lines (any amount of whitespace)
+    .map(p => p.trim())             // trim whitespace
+    .filter(p => p.length > 0)      // remove empty paragraphs
+    .map(p => {
+      // collapse internal newlines into spaces
+      const collapsed = p.replace(/\n+/g, " ").trim();
+      return `<p>${collapsed}</p>`;
+    })
+    .join("\n");                    // no blank lines between paragraphs
 }
 
 function buildSongObject(video) {
