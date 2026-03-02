@@ -25,7 +25,7 @@ layout: default
     Find the playlist this song belongs to in youtube_playlists.yml
     (playlist.songs is an array of song_ids)
   {%- endcomment -%}
-  {% assign playlist = site.data.youtube_playlists.playlists | where_exp: "pl", "pl.songs contains page.playlist_id" | first %}
+  {% assign playlist = site.data.youtube_playlists.playlists | where_exp: "pl", "pl.song_ids contains page.playlist_id" | first %}
 {% endif %}
 
 <main class="playlist-page">
@@ -70,7 +70,7 @@ layout: default
   {% endcomment %}
   {% assign playlist_songs = "" | split: "" %}
 
-  {% for sid in playlist.songs %}
+  {% for sid in playlist.song_ids %}
     {% assign s = site.data.youtube_feed.songs | where: "song_id", sid | first %}
     {% assign override = site.data.music_overrides.overrides | where: "song_id", sid | first %}
 
