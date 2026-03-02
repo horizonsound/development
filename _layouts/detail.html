@@ -1,203 +1,146 @@
----
-layout: default
----
-
-{% comment %}
-===============================================================
-  PLAYLIST PAGE DEBUG VERSION
-===============================================================
-{% endcomment %}
-
-{% assign collection = site.data.collections.collections | where: "playlist_id", page.playlist_id | first %}
-
-{% if collection %}
-  {% assign mode = "collection" %}
-  {% assign playlist = collection %}
-{% else %}
-  {% assign mode = "playlist" %}
-  {% assign current_song = site.data.youtube_feed.songs | where: "song_id", page.playlist_id | first %}
-
-  {% if current_song %}
-    {% assign playlist = site.data.youtube_playlists.playlists | where_exp: "pl", "pl.songs contains page.playlist_id" | first %}
-  {% else %}
-    {% assign playlist = site.data.youtube_playlists.playlists | where: "slug", page.playlist_id | first %}
-  {% endif %}
-{% endif %}
-
 <!-- ============================================================
-<div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-  <strong>OVERRIDES DEBUG</strong>
-  {{ site.data.music_overrides.overrides | jsonify }}
-</div>
+     DATA: Liquid outputs only the playlist songs array
 ============================================================ -->
-
-<main class="playlist-page">
+<script>
+  window.allSongs = {{ playlist_songs | jsonify }};
+</script>
 
 <!-- ============================================================
-     TOP‑LEVEL DEBUG
-
-  <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-  <strong>DETAILS PAGE DEBUG</strong>
-
-  page.playlist_id:
-  {{ page.playlist_id }}
-
-  mode:
-  {{ mode }}
-
-  collection:
-  {{ collection | jsonify }}
-
-  playlist (resolved):
-  {{ playlist | jsonify }}
-
-  playlist.songs:
-  {{ playlist.songs | jsonify }}
-
-  playlist.song_ids:
-  {{ playlist.song_ids | jsonify }}
-</div>
+     VIEWER
 ============================================================ -->
-
-<!-- ============================================================
-     BUILD PLAYLIST SONGS
-============================================================ -->
-{% assign playlist_songs = "" | split: "" %}
-
-{% for sid in playlist.songs %}
-  {% assign base = site.data.youtube_feed.songs | where: "song_id", sid | first %}
-  {% assign override = site.data.music_overrides.overrides | where: "song_id", sid | first %}
-
-  {% assign final = base | jsonify | from_json %}
-
-  {% if override %}
-    {% for pair in override %}
-      {% assign key = pair[0] %}
-      {% assign value = pair[1] %}
-      {% assign final = final | merge: key: value %}
-    {% endfor %}
-  {% endif %}
-
-  {% assign playlist_songs = playlist_songs | push: final %}
-{% endfor %}
-  
-<!-- ============================================================
-     SONG RESOLUTION DEBUG
-<div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-  <strong>SONG RESOLUTION DEBUG</strong>
-
-  playlist_songs (raw):
-  {{ playlist_songs | jsonify }}
-</div>
-============================================================ -->
-
-{% assign sorted = playlist_songs %}
-
-{% if mode == "collection" %}
-  {% assign first_song = sorted | first %}
-{% else %}
-  {% assign first_song = sorted | where: "song_id", page.playlist_id | first %}
-  {% if first_song == nil %}
-    {% assign first_song = sorted | first %}
-  {% endif %}
-{% endif %}
-
-<!-- ============================================================
-     FIRST SONG DEBUG
-<div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-  <strong>FIRST SONG DEBUG</strong>
-
-  first_song:
-  {{ first_song | jsonify }}
-</div>
-============================================================ -->
-
-<!-- ============================================================
-     PLAYER FRAME
-============================================================ -->  
-  <div class="player-frame player-frame--purple">
-
-  {% if first_song %}
-    {% include embed.html youtube_id=base.youtube_id %}
-  {% endif %}
-
-  <script>
-    window.allSongs = {{ sorted | jsonify }};
-  </script>
-
-<!-- ============================================================
-  <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-    <strong>window.allSongs DEBUG</strong>
-    {{ sorted | jsonify }}
-  </div>
-============================================================ -->
-
-  <div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
-    {% include carousel.html playlist=sorted %}
-  </div>
+<div id="viewer"></div>
 
 <!-- ============================================================
      ABOUT + LYRICS
 ============================================================ -->
-<section class="playlist-about">
-  <div class="centered-column">
-    <h2 class="section-header">About the Song</h2>
-    <div id="playlist-about" class="playlist-about-text"></div>
-  </div>
-</section>
-
-<section class="playlist-lyrics">
-  <div class="lyrics-block">
-    <h2 class="section-header">Lyrics</h2>
-    <div id="playlist-lyrics" class="playlist-lyrics-text"></div>
-  </div>
-</section>
+<div id="playlist-about"></div>
+<div id="playlist-lyrics"></div>
 
 <!-- ============================================================
-     JS DEBUG BLOCK
+     CAROUSEL
+============================================================ -->
+<div id="carousel"></div>
+
+<!-- ============================================================
+     JS: VIEWER (YouTube iframe)
 ============================================================ -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const aboutEl = document.getElementById("playlist-about");
-  const lyricsEl = document.getElementById("playlist-lyrics");
+function loadViewer(song) {
+  const viewer = document.getElementById('viewer');
+  viewer.innerHTML = `
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/${song.youtube_id}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  `;
+}
+</script>
 
-  console.log("DEBUG: window.allSongs =", window.allSongs);
+<!-- ============================================================
+     JS: DESCRIPTION + LYRICS
+============================================================ -->
+<script>
+function loadText(song) {
+  document.getElementById('playlist-about').innerHTML = song.description_html || "";
+  document.getElementById('playlist-lyrics').innerHTML = song.lyrics_html || "";
+}
+</script>
 
-  function loadInitialSong() {
-    if (!window.allSongs || !window.allSongs.length) {
-      console.log("DEBUG: waiting for allSongs...");
-      return requestAnimationFrame(loadInitialSong);
+<!-- ============================================================
+     JS: CAROUSEL (with Coming Soon overlay)
+============================================================ -->
+<script>
+function buildCarousel(songs) {
+  const container = document.getElementById('carousel');
+  container.innerHTML = "";
+
+  songs.forEach(song => {
+    const tile = document.createElement('div');
+    tile.className = "carousel-tile";
+    tile.dataset.songId = song.song_id;
+
+    const isComingSoon = song.videostatus !== "public";
+
+    tile.innerHTML = `
+      <div class="carousel-thumb-wrapper">
+        <img class="carousel-thumb" src="${song.thumbnail}" alt="${song.title}">
+        ${isComingSoon ? `<div class="coming-soon-overlay">Coming Soon</div>` : ""}
+      </div>
+      <div class="tile-title">${song.title}</div>
+    `;
+
+    if (!isComingSoon) {
+      tile.addEventListener('click', () => {
+        loadViewer(song);
+        loadText(song);
+      });
     }
-    
-    const first = window.allSongs[0];
-    
-    // Log the whole object (what you already have)
-    console.log("DEBUG: first song =", first);
-    
-    // Log each field individually
-    Object.keys(first).forEach(key => {
-      console.log(`DEBUG: first[${key}] =`, first[key]);
-    });
-    
-    aboutEl.innerHTML = first[3] || "(no description_html)";
-    lyricsEl.innerHTML = first[13] || "(no lyrics_html)";
-  }
 
-  loadInitialSong();
-
-  // TILE CLICK DEBUG
-  document.querySelectorAll(".carousel-tile").forEach(tile => {
-    tile.addEventListener("click", () => {
-      console.log("DEBUG: tile clicked", tile.dataset.song);
-
-      const id = tile.dataset.song;
-      const song = window.allSongs.find(s => s[0] === id);
-      
-      aboutEl.innerHTML = song[3] || "(no description_html)";
-      lyricsEl.innerHTML = song[13] || "(no lyrics_html)";
-    });
+    container.appendChild(tile);
   });
+}
+</script>
+
+<!-- ============================================================
+     JS: INITIALIZE PAGE
+============================================================ -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const songs = window.allSongs;
+  if (!songs || songs.length === 0) return;
+
+  const first = songs[0];
+
+  loadViewer(first);
+  loadText(first);
+  buildCarousel(songs);
 });
 </script>
 
-</main>
+<!-- ============================================================
+     CSS: MINIMAL CAROUSEL + OVERLAY
+============================================================ -->
+<style>
+.carousel-tile {
+  width: 160px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.carousel-thumb-wrapper {
+  position: relative;
+}
+
+.carousel-thumb {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tile-title {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #fff;
+}
+</style>
