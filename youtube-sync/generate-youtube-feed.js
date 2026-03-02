@@ -274,11 +274,13 @@ async function generate() {
       slug: pl.slug,
       description: pl.description,
       published_at: pl.publishedAt,
+      channel_id: pl.channel_id,        // ⭐ NEW
+      channel_title: pl.channel_title,  // ⭐ NEW
       thumbnail: pl.thumbnail,
       song_ids: pl.videoIds
     }))
   });
-
+  
   /* -------------------------------------------------------------
      SUMMARY
   ------------------------------------------------------------- */
