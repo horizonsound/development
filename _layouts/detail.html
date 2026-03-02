@@ -190,7 +190,7 @@ Object.keys(first).forEach(key => {
 });
 
 aboutEl.innerHTML = first.description_html || "(no description_html)";
-lyricsEl.innerHTML = overrides.lyrics_html || "(no lyrics_html)";
+lyricsEl.innerHTML = first.lyrics_html || "(no lyrics_html)";
   }
 
   loadInitialSong();
