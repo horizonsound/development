@@ -145,23 +145,35 @@ function buildSongObject(video) {
       channel_title: video.youtube_metadata?.channel_title || null,
       category_id: video.youtube_metadata?.category_id || null,
       tags: video.youtube_metadata?.tags || [],
+
+      // contentDetails
       duration: video.youtube_metadata?.duration || null,
       definition: video.youtube_metadata?.definition || null,
+      dimension: video.youtube_metadata?.dimension || null,                 // ⭐ NEW
+      caption: video.youtube_metadata?.caption || null,                     // ⭐ NEW
+      licensed_content: video.youtube_metadata?.licensed_content || false,  // ⭐ NEW
       region_allowed: video.youtube_metadata?.region_allowed || [],
       region_blocked: video.youtube_metadata?.region_blocked || [],
-      content_rating: video.youtube_metadata?.content_rating || "",
+      content_rating: video.youtube_metadata?.content_rating || {},         // ⭐ upgraded
+
+      // statistics
       statistics: video.youtube_metadata?.statistics || {
         view_count: 0,
         like_count: 0,
         favorite_count: 0,
         comment_count: 0
       },
+
+      // status
       made_for_kids: video.youtube_metadata?.made_for_kids || false,
       self_declared_made_for_kids: video.youtube_metadata?.self_declared_made_for_kids || false,
       topic_categories: video.youtube_metadata?.topic_categories || [],
       privacy_status: video.privacyStatus || null,
       upload_status: video.uploadStatus || null,
-      publish_at: video.publishAt || null
+      publish_at: video.publishAt || null,
+      license: video.youtube_metadata?.license || "",                              // ⭐ NEW
+      embeddable: video.youtube_metadata?.embeddable ?? true,                      // ⭐ NEW
+      public_stats_viewable: video.youtube_metadata?.public_stats_viewable ?? true // ⭐ NEW
     }
   };
 }
