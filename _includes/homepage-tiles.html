@@ -44,19 +44,20 @@
 
     {%- comment -%}
       ============================================================
-      COLLECTIONS — playlists
-      Uses playlist.slug for URLs
+      COLLECTIONS — curated playlists from _data/collections.yml
+      Uses playlist_id for URLs
+      Uses thumbnail field you added
       ============================================================
     {%- endcomment -%}
     {% elsif include.section == "collections" %}
-
+    
       {% for pl in include.items %}
-        <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.slug }}/">
+        <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
           <img src="{{ site.baseurl }}{{ pl.thumbnail }}" alt="{{ pl.title }}">
           <h3 class="tile-title">{{ pl.title }}</h3>
         </a>
       {% endfor %}
-
+    
     {% endif %}
 
   </div>
