@@ -3,6 +3,25 @@ layout: default
 title: Horizon Sound
 ---
 
+{% assign playlist_songs = "" | split: "" %}
+
+{% for sid in playlist.songs %}
+  {% assign base = site.data.youtube_feed.songs | where: "song_id", sid | first %}
+  {% assign override = site.data.music_overrides.overrides | where: "song_id", sid | first %}
+
+  {% assign final = base | jsonify | from_json %}
+
+  {% if override %}
+    {% for pair in override %}
+      {% assign key = pair[0] %}
+      {% assign value = pair[1] %}
+      {% assign final = final | merge: key: value %}
+    {% endfor %}
+  {% endif %}
+
+  {% assign playlist_songs = playlist_songs | push: final %}
+{% endfor %}
+
 <!-- ============================================================
      DATA: Liquid outputs only the playlist songs array
 ============================================================ -->
