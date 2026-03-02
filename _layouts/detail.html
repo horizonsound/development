@@ -32,6 +32,22 @@ title: Horizon Sound
   {% assign playlist_songs = playlist_songs | push: final %}
 {% endfor %}
 
+<div style="background:#111; color:#0ff; padding:1rem; margin:1rem 0; white-space:pre-wrap;">
+  <strong>YOUTUBE FEED — ALL SONGS</strong><br><br>
+
+  {% for s in site.data.youtube_feed.songs %}
+    TITLE: {{ s.title }}<br>
+    SONG ID: {{ s.song_id }}<br>
+    YOUTUBE ID: {{ s.youtube_id }}<br>
+    ------------------------------<br>
+  {% endfor %}
+</div>
+
+
+
+
+
+
 <script>
   window.allSongs = {{ playlist_songs | jsonify }};
 </script>
