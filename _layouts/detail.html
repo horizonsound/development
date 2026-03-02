@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("DEBUG: first song =", first);
 
     aboutEl.innerHTML = first.description_html || "(no description_html)";
-    lyricsEl.innerHTML = first.lyrics || "(no lyrics)";
+    lyricsEl.innerHTML = first.lyrics_html || "(no lyrics_html)";
   }
 
   loadInitialSong();
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       aboutEl.innerHTML = song.description_html || "(no description_html)";
-      lyricsEl.innerHTML = song.lyrics || "(no lyrics)";
+      lyricsEl.innerHTML = song.lyrics_html || "(no lyrics_html)";
     });
   });
 });
