@@ -3,11 +3,11 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-/* -------------------------------------------------------
+/* ========================================================================
    LOG HELPERS
-   Small wrappers around console logging to keep output
-   consistent and easy to scan during GitHub Actions runs.
-------------------------------------------------------- */
+   Lightweight wrappers around console logging to keep output consistent.
+   These make GitHub Actions logs easier to scan and help isolate warnings.
+   ======================================================================== */
 function log(msg) {
   console.log(msg);
 }
@@ -20,56 +20,67 @@ function error(msg) {
   console.error(`ERROR: ${msg}`);
 }
 
-/* -------------------------------------------------------
-   HELPERS
-   Utility functions used across video + playlist fetchers.
-------------------------------------------------------- */
+/* ========================================================================
+   GENERAL HELPERS
+   Shared utilities used across video + playlist fetchers.
+   ======================================================================== */
 
 /**
- * Convert a YouTube title into a clean, URL‑safe slug.
- * This slug becomes the canonical identity for songs
- * and playlists across the entire Horizon Sound site.
+ * slugify(title)
+ * Converts a YouTube title into a clean, URL‑safe slug.
+ *
+ * This slug becomes the canonical identity for songs and playlists
+ * across the entire Horizon Sound site. It must remain stable forever.
  */
 function slugify(title) {
   return title
     .toLowerCase()
-    .replace(/['â€™]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-+|-+$/g, "");
+    .replace(/['â€™]/g, "")       // remove apostrophes and smart quotes
+    .replace(/[^a-z0-9]+/g, "-") // replace non-alphanumerics with hyphens
+    .replace(/-+/g, "-")         // collapse multiple hyphens
+    .replace(/^-+|-+$/g, "");    // trim leading/trailing hyphens
 }
 
 /**
- * Normalize YouTube's status fields into a single,
- * lowercase canonical value used by the site.
+ * normalizeVideoStatus(snippet, status)
  *
- * Possible outputs:
- *   - "scheduled"
- *   - "public"
- *   - "unlisted"
- *   - "private"
- *   - raw uploadStatus fallback
+ * YouTube exposes multiple overlapping fields that describe visibility:
+ *   - snippet.publishedAt
+ *   - status.publishAt
+ *   - status.privacyStatus
+ *   - status.uploadStatus
+ *
+ * This function collapses all of that into a single canonical value:
+ *   "scheduled", "public", "unlisted", "private", or raw uploadStatus.
+ *
+ * This ensures the site has a stable, predictable status field.
  */
 function normalizeVideoStatus(snippet, status) {
   const publishAt = status.publishAt || null;
   const privacy = status.privacyStatus || "";
   const upload = status.uploadStatus || "";
 
+  // Future publish date → scheduled
   if (publishAt && new Date(publishAt) > new Date()) return "scheduled";
+
+  // Standard privacy states
   if (privacy === "public") return "public";
   if (privacy === "unlisted") return "unlisted";
   if (privacy === "private") return "private";
+
+  // Some videos report "processed" instead of privacyStatus
   if (upload === "processed") return "public";
 
+  // Fallback to raw uploadStatus
   return upload || "";
 }
 
-/* -------------------------------------------------------
+/* ========================================================================
    FETCH ALL VIDEOS (FULL METADATA)
-   Retrieves every video on the channel, then fetches
-   full metadata for each one. This is the backbone of
-   the song feed and the source of all song thumbnails.
-------------------------------------------------------- */
+   Retrieves every video on the channel, then fetches full metadata for
+   each one. This is the backbone of the song feed and the source of all
+   thumbnails, descriptions, durations, tags, and statistics.
+   ======================================================================== */
 export async function fetchAllVideos() {
   log("Initializing YouTube client...");
 
@@ -119,11 +130,11 @@ export async function fetchAllVideos() {
 
     const details = await youtube.videos.list({
       part: [
-        "snippet",
-        "status",
-        "contentDetails",
-        "statistics",
-        "topicDetails"
+        "snippet",        // title, description, tags, thumbnails
+        "status",         // privacy, publishAt, uploadStatus
+        "contentDetails", // duration, definition, region restrictions
+        "statistics",     // views, likes, comments
+        "topicDetails"    // topic categories
       ],
       id: ids
     });
@@ -142,7 +153,7 @@ export async function fetchAllVideos() {
       const topics = item.topicDetails || {};
       const thumbs = snippet.thumbnails || {};
 
-      // Thumbnail selection priority
+      // Thumbnail selection priority (highest → lowest)
       const thumbnail =
         thumbs.maxres?.url ||
         thumbs.standard?.url ||
@@ -171,7 +182,10 @@ export async function fetchAllVideos() {
         // Filled later by playlist membership
         playlists: [],
 
-        // Full raw metadata block used by the site
+        /**
+         * Full raw metadata block used by the site.
+         * This MUST remain append‑only. Never remove fields.
+         */
         youtube_metadata: {
           description: item.snippet.description || "",
           published_at: snippet.publishedAt || "",
@@ -216,12 +230,15 @@ export async function fetchAllVideos() {
   return allVideos;
 }
 
-/* -------------------------------------------------------
+/* ========================================================================
    FETCH ALL PLAYLISTS (FULL METADATA)
-   Retrieves every playlist on the channel, including
-   title, description, slug, published date, and the
-   best available thumbnail URL.
-------------------------------------------------------- */
+   Retrieves every playlist on the channel, including:
+     - title
+     - description
+     - slug
+     - published date
+     - best available thumbnail
+   ======================================================================== */
 export async function fetchAllPlaylists() {
   console.log("Fetching playlists...");
 
@@ -302,11 +319,11 @@ export async function fetchAllPlaylists() {
   return playlists;
 }
 
-/* -------------------------------------------------------
+/* ========================================================================
    FETCH PLAYLIST MEMBERSHIP
    For each playlist, fetch all video IDs it contains.
-   This is what powers playlist → song relationships.
-------------------------------------------------------- */
+   This powers playlist → song relationships on the site.
+   ======================================================================== */
 export async function fetchPlaylistsWithMembership() {
   const playlists = await fetchAllPlaylists();
 
@@ -362,11 +379,11 @@ export async function fetchPlaylistsWithMembership() {
   return playlists;
 }
 
-/* -------------------------------------------------------
+/* ========================================================================
    DOWNLOAD PLAYLIST THUMBNAILS
-   Saves playlist thumbnails locally and attaches the
-   final site path to each playlist object.
-------------------------------------------------------- */
+   Saves playlist thumbnails locally and attaches the final site path
+   to each playlist object. This ensures thumbnails are served locally.
+   ======================================================================== */
 export async function processPlaylistThumbnails(playlists, thumbnailDir) {
   const fs = await import("fs");
   const path = await import("path");
