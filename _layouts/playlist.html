@@ -80,12 +80,14 @@ DISPLAY VARIABLES — always defined, override wins, YouTube fills gaps
   {% endif %}
 
   <div class="playlist-header">
-    <h1 class="playlist-title">{{ display_title }}</h1>
+    <h1 class="playlist-title" id="dynamic-title">{{ display_title }}</h1>
   
     {% if display_subtitle %}
-      <h2 class="playlist-subtitle">{{ display_subtitle }}</h2>
+      <h2 class="playlist-subtitle" id="dynamic-subtitle">{{ display_subtitle }}</h2>
     {% endif %}
   
+    <div class="playlist-song-description" id="dynamic-description"></div>
+
     {% if display_description %}
       <p class="playlist-description">{{ display_description }}</p>
     {% endif %}
@@ -112,27 +114,34 @@ DISPLAY VARIABLES — always defined, override wins, YouTube fills gaps
         {
           id: "{{ s.song_id }}",
           title: "{{ s.title | escape }}",
-          subtitle: "{{ s.subtitle | escape }}"
+          subtitle: "{{ s.subtitle | escape }}",
+          description: {{ s.description_html | jsonify }}
         }
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
 
-    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
       const params = new URLSearchParams(window.location.search);
       const songId = params.get("song_id");
-      const span = document.getElementById("song-name");
-
-      if (!span || !window.playlistSongs.length) return;
-
+    
+      const titleEl = document.getElementById("dynamic-title");
+      const subtitleEl = document.getElementById("dynamic-subtitle");
+      const descEl = document.getElementById("dynamic-description");
+    
+      if (!window.playlistSongs.length) return;
+    
       let current = window.playlistSongs[0];
-
+    
       if (songId) {
         const match = window.playlistSongs.find(s => s.id === songId);
         if (match) current = match;
       }
-
-      span.textContent = current.title;
+    
+      // Update title + subtitle + description
+      titleEl.textContent = current.title;
+      subtitleEl.textContent = current.subtitle || "";
+      descEl.innerHTML = current.description || "";
     });
   </script>
 
