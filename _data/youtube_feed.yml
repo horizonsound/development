@@ -2049,7 +2049,7 @@ songs:
       /assets/thumbnails/7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
     playlists: []
-    view_count_num: 61
+    view_count_num: 62
     youtube_metadata:
       published_at: '2026-02-24T17:00:59Z'
       scheduled_at: null
@@ -2066,7 +2066,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '61'
+        view_count: '62'
         like_count: '2'
         favorite_count: '0'
         comment_count: '0'
@@ -2125,7 +2125,7 @@ songs:
       /assets/thumbnails/5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
     playlists: []
-    view_count_num: 73
+    view_count_num: 74
     youtube_metadata:
       published_at: '2026-02-17T17:01:06Z'
       scheduled_at: null
@@ -2142,7 +2142,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '73'
+        view_count: '74'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
