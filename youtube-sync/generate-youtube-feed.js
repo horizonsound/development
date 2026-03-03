@@ -304,14 +304,14 @@ for (const pl of playlists) {
     ensureDir(PLAYLIST_PAGES_DIR);
   
     // Minimal front matter matching your working files
-    const frontMatter =
-  `---
-  layout: playlist
-  playlist_id: ${pl.slug}
-  title: "${pl.title.replace(/"/g, '\\"')}"
-  permalink: /music/playlists/${pl.slug}/
-  ---
-  `;
+const frontMatter =
+`---
+layout: playlist
+playlist_id: ${pl.slug}
+title: "${pl.title.replace(/"/g, '\\"')}"
+permalink: /music/playlists/${pl.slug}/
+---
+`;
   
     fs.writeFileSync(filepath, frontMatter, "utf8");
   
