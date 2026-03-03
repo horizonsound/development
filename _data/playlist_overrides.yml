@@ -69,7 +69,9 @@ overrides:
       heartbreak — the healing, the reckoning, and the rediscovery of hope.
       These songs live in the space between what was lost and what comes next.
     thumbnail: /assets/thumbnails/playlist-after-the-silence-performed-by-lydia-ellington.jpeg
-    hero:
+    hero: >-
+      /assets/thumbnails/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
+
     songs:
       - 1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
       - 2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
