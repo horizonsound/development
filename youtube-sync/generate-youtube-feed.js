@@ -266,7 +266,7 @@ for (const pl of playlists) {
   });
 
   videos.forEach(video => {
-    video.playlists = playlistMap[video.id] || [];
+    video.playlists = playlistMap[video.slug] || [];
   });
 
   /* -------------------------------------------------------------
