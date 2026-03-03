@@ -41,7 +41,9 @@
 
 <body>
   {% include header.html %}
-  {% include hero.html %}
+  {% unless page.is_playlist_page %}
+    {% include hero.html %}
+  {% endunless %}
 
   <main>
     {{ content }}
