@@ -2,18 +2,55 @@
 layout: default
 ---
 
+
 {% comment %}
-Use the playlist_id from the page front matter
-to find the matching playlist in collections data.
+Load base playlist from YouTube feed
 {% endcomment %}
-{% assign playlist = site.data.collections.collections
+{% assign base = site.data.youtube_playlists.playlists
   | where: "playlist_id", page.playlist_id
   | first %}
 
-{% if playlist == nil %}
-  {% assign playlist = site.data.youtube_playlists.playlists
-    | where: "playlist_id", page.playlist_id
-    | first %}
+{% comment %}
+Load override from playlist_overrides.yml
+{% endcomment %}
+{% assign override = site.data.playlist_overrides.overrides
+  | where: "slug", page.playlist_id
+  | first %}
+
+{% assign playlist = base %}
+
+{% if override %}
+
+  {%- comment -%} Title override {%- endcomment -%}
+  {% if override.title and override.title != "" %}
+    {% assign playlist = playlist | merge: { "title": override.title } %}
+  {% endif %}
+
+  {%- comment -%} Description override {%- endcomment -%}
+  {% if override.description and override.description != "" %}
+    {% assign playlist = playlist | merge: { "description": override.description } %}
+  {% endif %}
+
+  {%- comment -%} Thumbnail override {%- endcomment -%}
+  {% if override.thumbnail and override.thumbnail != "" %}
+    {% assign playlist = playlist | merge: { "thumbnail": override.thumbnail } %}
+  {% endif %}
+
+  {%- comment -%} Song list override (Option B: always override when present) {%- endcomment -%}
+  {% if override.songs and override.songs.size > 0 %}
+    {% assign playlist = playlist | merge: { "song_ids": override.songs } %}
+  {% endif %}
+
+  {%- comment -%} Order override {%- endcomment -%}
+  {% if override.order %}
+    {% assign playlist = playlist | merge: { "order": override.order } %}
+  {% endif %}
+
+  {%- comment -%} is_collection override {%- endcomment -%}
+  {% if override.is_collection != nil %}
+    {% assign playlist = playlist | merge: { "is_collection": override.is_collection } %}
+  {% endif %}
+
 {% endif %}
 
 {% if playlist %}
@@ -33,7 +70,7 @@ to find the matching playlist in collections data.
   {% assign all_songs = site.data.youtube_feed.songs %}
   {% assign playlist_songs = "" | split: "" %}
 
-  {% assign song_ids = playlist.songs | default: playlist.song_ids %}
+  {% assign song_ids = playlist.song_ids %}
 
   {% for sid in song_ids %}
     {% assign s = all_songs | where: "song_id", sid | first %}
