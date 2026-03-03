@@ -53,7 +53,8 @@ overrides:
       emotional turbulence — from the moment before midnight, into mayhem and
       madness, and finally into the clarity that comes after the storm breaks.
     thumbnail: /assets/thumbnails/playlist-midnight-saga.jpeg
-    hero:
+    hero: >-
+      /assets/thumbnails/midnight-madness-the-midnight-saga-chapter-3-horizon-sound.jpeg
     songs:
       - before-midnight-the-midnight-saga-chapter-1-horizon-sound
       - midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
@@ -71,7 +72,6 @@ overrides:
     thumbnail: /assets/thumbnails/playlist-after-the-silence-performed-by-lydia-ellington.jpeg
     hero: >-
       /assets/thumbnails/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
-
     songs:
       - 1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
       - 2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
