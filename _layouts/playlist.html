@@ -10,6 +10,12 @@ to find the matching playlist in collections data.
   | where: "playlist_id", page.playlist_id
   | first %}
 
+{% if playlist == nil %}
+  {% assign playlist = site.data.youtube_playlists.playlists
+    | where: "playlist_id", page.playlist_id
+    | first %}
+{% endif %}
+
 {% if playlist %}
 
   <h1>
