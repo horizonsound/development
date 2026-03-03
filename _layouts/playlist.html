@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 {% comment %}
 Load base playlist from YouTube feed
 {% endcomment %}
@@ -26,6 +25,11 @@ Load override from playlist_overrides.yml
     {% assign playlist = playlist | merge: { "title": override.title } %}
   {% endif %}
 
+  {%- comment -%} Subtitle override {%- endcomment -%}
+  {% if override.subtitle and override.subtitle != "" %}
+    {% assign playlist = playlist | merge: { "subtitle": override.subtitle } %}
+  {% endif %}
+
   {%- comment -%} Description override {%- endcomment -%}
   {% if override.description and override.description != "" %}
     {% assign playlist = playlist | merge: { "description": override.description } %}
@@ -36,7 +40,12 @@ Load override from playlist_overrides.yml
     {% assign playlist = playlist | merge: { "thumbnail": override.thumbnail } %}
   {% endif %}
 
-  {%- comment -%} Song list override (Option B: always override when present) {%- endcomment -%}
+  {%- comment -%} Hero override {%- endcomment -%}
+  {% if override.hero and override.hero != "" %}
+    {% assign playlist = playlist | merge: { "hero": override.hero } %}
+  {% endif %}
+
+  {%- comment -%} Song list override (Option B) {%- endcomment -%}
   {% if override.songs and override.songs.size > 0 %}
     {% assign playlist = playlist | merge: { "song_ids": override.songs } %}
   {% endif %}
@@ -55,13 +64,20 @@ Load override from playlist_overrides.yml
 
 {% if playlist %}
 
-  <h1>
-    {{ playlist.title }}
-    (<span id="song-name">Loading…</span>)
-  </h1>
+  {% if playlist.hero %}
+    <div class="playlist-hero">
+      <img src="{{ site.baseurl }}{{ playlist.hero }}" alt="{{ playlist.title }}">
+    </div>
+  {% endif %}
+
+  <h1 class="playlist-title">{{ playlist.title }}</h1>
+
+  {% if playlist.subtitle %}
+    <h2 class="playlist-subtitle">{{ playlist.subtitle }}</h2>
+  {% endif %}
 
   {% if playlist.description %}
-    <p>{{ playlist.description }}</p>
+    <p class="playlist-description">{{ playlist.description }}</p>
   {% endif %}
 
   {% comment %}
@@ -93,7 +109,7 @@ Load override from playlist_overrides.yml
 
       if (!span || !window.playlistSongs.length) return;
 
-      let current = window.playlistSongs[0]; // default: first song
+      let current = window.playlistSongs[0];
 
       if (songId) {
         const match = window.playlistSongs.find(s => s.id === songId);
