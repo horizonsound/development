@@ -2000,13 +2000,13 @@ songs:
       /music/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
-    videostatus: scheduled
+    videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
     view_count_num: 1
     youtube_metadata:
-      published_at: '2026-02-01T12:04:20Z'
-      scheduled_at: '2026-03-03T17:00:00Z'
+      published_at: '2026-03-03T17:01:12Z'
+      scheduled_at: null
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -2026,7 +2026,10 @@ songs:
         comment_count: '0'
       made_for_kids: false
       self_declared_made_for_kids: false
-      topic_categories: []
+      topic_categories:
+        - https://en.wikipedia.org/wiki/Independent_music
+        - https://en.wikipedia.org/wiki/Music
+        - https://en.wikipedia.org/wiki/Pop_music
       privacy_status: null
       upload_status: null
       publish_at: null
