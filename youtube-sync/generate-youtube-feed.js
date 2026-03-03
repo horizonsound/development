@@ -202,11 +202,11 @@ async function generate() {
     process.exit(1);
   }
 
-  // Build a lookup: { youtubePlaylistId: slug }
-  const playlistSlugMap = {};
-  for (const pl of youtubePlaylists) {
-    playlistSlugMap[pl.youtube_id] = pl.playlist_id; // slug
-  }
+// Build a lookup: { YouTube playlist ID → slug }
+const playlistSlugMap = {};
+for (const pl of playlists) {
+  playlistSlugMap[pl.id] = pl.slug;   // pl.id = YouTube playlist ID, pl.slug = your slug
+}
 
   console.log(`PLAYLIST COUNT: ${playlists.length}`);
 
