@@ -128,17 +128,26 @@ Expose raw data to JS — no merging, no conditionals
     // Find override
     const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
 
-    // Resolve title
+    // Resolve title + subtitle
     const title = override?.title || song?.title || "";
-
-    // Resolve subtitle
     const subtitle = override?.subtitle || "";
 
-    // Render
-    const container = document.getElementById("selected-song-header");
-    container.innerHTML = `
+    // Resolve extra fields
+    const extraTitle = override?.extra_title || "";
+    const extraHTML = override?.extra_html || "";
+
+    // Render main header
+    const header = document.getElementById("selected-song-header");
+    header.innerHTML = `
       ${title ? `<h2 class="selected-song-title">${title}</h2>` : ""}
       ${subtitle ? `<h3 class="selected-song-subtitle">${subtitle}</h3>` : ""}
+    `;
+
+    // Render extra fields
+    const extra = document.getElementById("selected-song-extra");
+    extra.innerHTML = `
+      ${extraTitle ? `<h4 class="selected-song-extra-title">${extraTitle}</h4>` : ""}
+      ${extraHTML ? `<div class="selected-song-extra-html">${extraHTML}</div>` : ""}
     `;
   }
 </script>
