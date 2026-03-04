@@ -21,7 +21,10 @@ layout: default
   <script>
     window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
   </script>
-  
+  <script>
+    window.BASEURL = "{{ site.baseurl }}";
+  </script>
+
   <!-- Set up the hero image - Default is the Horizon Sound banner, but show override image if available -->
   {% assign hero_image = playlist_override.hero | default: playlist.hero %}
   {% if hero_image %}
@@ -108,29 +111,31 @@ layout: default
           </div>
         `
       : "";
-    
+      
     // Build the carousel tiles
     const carouselTiles = window.PLAYLIST.song_ids
-      .map(id => {
-        const s = window.YOUTUBE_SONGS.find(x => x.song_id === id);
-        const o = window.MUSIC_OVERRIDES.find(x => x.song_id === id);
-    
-        const thumb = o?.thumbnail || s?.thumbnail || "";
-        const title = o?.title || s?.title || "";
-        const isActive = id === songId;
-    
-        return `
-          <div 
-            class="carousel-tile ${isActive ? "active" : ""}" 
-            data-song-id="${id}"
-          >
-            <img src="${thumb}" alt="${title}">
-            <div class="tile-title">${title}</div>
-          </div>
-        `;
-      })
-      .join("");
-    
+    .map(id => {
+      const s = window.YOUTUBE_SONGS.find(x => x.song_id === id);
+      const o = window.MUSIC_OVERRIDES.find(x => x.song_id === id);
+  
+      const thumb = window.BASEURL + (o?.thumbnail || s?.thumbnail || "");
+      const title = o?.title || s?.title || "";
+      const isActive = id === songId;
+      const isComingSoon = s?.videostatus === "scheduled";
+  
+      return `
+        <div 
+          class="carousel-tile ${isActive ? "active" : ""} ${isComingSoon ? "coming-soon" : ""}" 
+          data-song-id="${id}"
+        >
+          <img src="${thumb}" alt="${title}">
+          ${isComingSoon ? `<div class="tile-overlay">Coming Soon</div>` : ""}
+          <div class="tile-title">${title}</div>
+        </div>
+      `;
+    })
+    .join("");
+      
     // Wrap carousel in the correct structure
     const carouselHTML = `
       <div class="carousel">
