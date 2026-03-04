@@ -53,10 +53,12 @@ layout: default
   {% endif %}
   
   <!-- Fill out all the rest of the sections in the playlist page -->
-  <div id="selected-song-header" class="song-header"></div>
+  <div id="selected-song-header" class="centered-column"></div>
   <div id="selected-song-player" class="player-frame player-frame--purple"></div>
   <div id="selected-song-extra" class="about-block"></div>
-  <div id="selected-song-about" class="about-block"></div>
+  <div class="centered-column">
+    <div id="selected-song-about" class="about-block"></div>
+  </div>
   <div id="selected-song-lyrics" class="lyrics-block"></div>
   
   {% assign song_ids = playlist_override.songs | default: playlist.song_ids %}
