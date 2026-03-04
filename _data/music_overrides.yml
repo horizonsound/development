@@ -1883,8 +1883,10 @@ overrides:
     subtitle: 'Revised'
     collection: null
     order: null
-    extra_title: null
-    extra_html: null
+    extra_title: "Song Inspiration"
+    extra_html: |
+      <p>This will be several lines of text
+      talking about the song inspiration.</p>
     lyrics_html: |
       <p>[Intro]
       Hold on
@@ -2675,8 +2677,10 @@ overrides:
     subtitle: Midnight Saga | Part 1
     collection: midnight-saga
     order: 1
-    extra_title: null
-    extra_html: null
+    extra_title: "Song Inspiration"
+    extra_html: |
+      <p>This will be several lines of text
+      talking about the song inspiration.</p>
     lyrics_html: |
       <p>[Intro]
       My phone’s blowing up, I can barely hear,
