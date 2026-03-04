@@ -2,105 +2,69 @@
 layout: default
 ---
 
-{% comment %}
-Load base playlist from YouTube feed
-{% endcomment %}
-{% assign playlist = site.data.youtube_playlists.playlists
-  | where: "playlist_id", page.playlist_id
-  | first %}
-
-{% comment %}
-Load playlist-level override (not applied yet)
-{% endcomment %}
-{% assign playlist_override = site.data.playlist_overrides.overrides
-  | where: "playlist_id", page.playlist_id
-  | first %}
-
-{% comment %}
-Playlist Hero — override wins, fallback to global hero include.
-No merging, no mutation.
-{% endcomment %}
-
-<script>
-  window.YOUTUBE_SONGS = {{ site.data.youtube_feed.songs | jsonify }};
-</script>
-
-<script>
-  const params = new URLSearchParams(window.location.search);
-  window.SELECTED_SONG_ID = params.get("song_id") || null;
-</script>
-
-<!-- ADD THIS -->
-<script>
-  window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
-</script>
-
-{% assign hero_image = playlist_override.hero | default: playlist.hero %}
-
-{% if hero_image %}
-  <div class="hero-banner">
-    <img class="hero-image" src="{{ site.baseurl }}{{ hero_image }}" alt="{{ playlist.title }}">
-  </div>
-{% else %}
-  {% include hero.html %}
-{% endif %}
-
-{% comment %}
-Playlist Title + Subtitle
-- Title: override first, fallback to playlist feed
-- Subtitle: override only, hide if blank
-{% endcomment %}
-
-{% assign header_title = playlist_override.title | default: playlist.title %}
-{% assign header_subtitle = playlist_override.subtitle %}
-
-<div class="playlist-header">
-  {% if header_title %}
-    <h1 class="playlist-title">{{ header_title }}</h1>
+  <!-- Load the playlist and override data -->
+  {% assign playlist = site.data.youtube_playlists.playlists
+    | where: "playlist_id", page.playlist_id
+    | first %}
+  {% assign playlist_override = site.data.playlist_overrides.overrides
+    | where: "playlist_id", page.playlist_id
+    | first %}
+  
+  <!-- Make the data visible to JavaScript -->
+  <script>
+    window.YOUTUBE_SONGS = {{ site.data.youtube_feed.songs | jsonify }};
+  </script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    window.SELECTED_SONG_ID = params.get("song_id") || null;
+  </script>
+  <script>
+    window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
+  </script>
+  
+  <!-- Set up the hero image - Default is the Horizon Sound banner, but show override image if available -->
+  {% assign hero_image = playlist_override.hero | default: playlist.hero %}
+  {% if hero_image %}
+    <div class="hero-banner">
+      <img class="hero-image" src="{{ site.baseurl }}{{ hero_image }}" alt="{{ playlist.title }}">
+    </div>
+  {% else %}
+    {% include hero.html %}
   {% endif %}
-
-  {% if header_subtitle %}
-    <h2 class="playlist-title">{{ header_subtitle }}</h2>
-  {% endif %}
-</div>
-
-{% comment %}
-Playlist Description — override only, hide if blank
-{% endcomment %}
-
-{% assign playlist_description = playlist_override.description %}
-
-{% if playlist_description %}
-  <div class="playlist-description">
-    {{ playlist_description }}
+  
+  <!-- Populate the playlist title and subtitle if they exist -->
+  {% assign header_title = playlist_override.title | default: playlist.title %}
+  {% assign header_subtitle = playlist_override.subtitle %}
+  <div class="playlist-header">
+    {% if header_title %}
+      <h1 class="playlist-title">{{ header_title }}</h1>
+    {% endif %}
+    {% if header_subtitle %}
+      <h2 class="playlist-title">{{ header_subtitle }}</h2>
+    {% endif %}
   </div>
-{% endif %}
-
-<div id="selected-song-header" class="song-header"></div>
-
-<div id="selected-song-player" class="player-frame player-frame--purple"></div>
-
-<div id="selected-song-extra" class="about-block"></div>
-
-<div id="selected-song-about" class="about-block"></div>
-
-<div id="selected-song-lyrics" class="lyrics-block"></div>
-
-{% assign song_ids = playlist_override.songs | default: playlist.song_ids %}
-
-{% comment %}
-Expose raw data to JS — no merging, no conditionals
-{% endcomment %}
+  
+  <!-- Playlist Description — override only, hide if blank -->
+  {% assign playlist_description = playlist_override.description %}
+  {% if playlist_description %}
+    <div class="playlist-description">
+      {{ playlist_description }}
+    </div>
+  {% endif %}
+  
+  <!-- Fill out all the rest of the sections in the playlist page -->
+  <div id="selected-song-header" class="song-header"></div>
+  <div id="selected-song-player" class="player-frame player-frame--purple"></div>
+  <div id="selected-song-extra" class="about-block"></div>
+  <div id="selected-song-about" class="about-block"></div>
+  <div id="selected-song-lyrics" class="lyrics-block"></div>
+  
+  {% assign song_ids = playlist_override.songs | default: playlist.song_ids %}
 
 <script>
   window.PLAYLIST = {{ playlist | jsonify }};
   window.PLAYLIST_OVERRIDE = {{ playlist_override | jsonify }};
 </script>
-
-<div style="padding:40px; color:white;">
-  <h1>Playlist Page Loaded</h1>
-  <p>Data objects are available in JS as <code>window.PLAYLIST</code> and <code>window.PLAYLIST_OVERRIDE</code>.</p>
-</div>
 
 <script>
   if (window.SELECTED_SONG_ID && window.YOUTUBE_SONGS && window.MUSIC_OVERRIDES) {
@@ -118,7 +82,7 @@ Expose raw data to JS — no merging, no conditionals
     const about = song?.description_html || "";
     const lyricsHTML = override?.lyrics_html || "";
 
-    // Song header (no lifted styling on playlist page)
+    // Song header 
     const header = document.getElementById("selected-song-header");
     header.innerHTML = `
       ${title ? `<h2 class="section-header">${title}</h2>` : ""}
@@ -132,14 +96,14 @@ Expose raw data to JS — no merging, no conditionals
       ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
     `;
 
-    // About
+    // About Description
     const aboutContainer = document.getElementById("selected-song-about");
     aboutContainer.innerHTML = `
       ${about ? `<h3 class="section-header">About</h3>` : ""}
       ${about ? `<div class="about-text">${about}</div>` : ""}
     `;
 
-    // Lyrics (container already has .lyrics-block)
+    // Song Lyrics 
     const lyricsContainer = document.getElementById("selected-song-lyrics");
     lyricsContainer.innerHTML = lyricsHTML || "";
   }
