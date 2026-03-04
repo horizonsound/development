@@ -70,10 +70,7 @@ Playlist Description — override only, hide if blank
     {{ playlist_description }}
   </div>
 {% endif %}
-
-<div style="color:yellow; padding:10px;">
-  DEBUG: page.song_id = "{{ page.song_id }}"
-</div>
+<div id="selected-song-header" style="padding: 20px 20px; color: white;"></div>
 
 {% comment %}
 Resolve the selected song (passed via ?song_id=)
@@ -116,17 +113,15 @@ Expose raw data to JS — no merging, no conditionals
   <p>Data objects are available in JS as <code>window.PLAYLIST</code> and <code>window.PLAYLIST_OVERRIDE</code>.</p>
 </div>
 
-<div id="selected-song-header" style="padding: 20px 20px; color: white;"></div>
-
 <script>
-  if (window.SELECTED_SONG_ID && window.PLAYLIST && window.PLAYLIST_OVERRIDE) {
+  if (window.SELECTED_SONG_ID && window.YOUTUBE_SONGS && window.MUSIC_OVERRIDES) {
     const songId = window.SELECTED_SONG_ID;
 
     // Find song in feed
     const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
 
     // Find override
-    const override = (window.PLAYLIST_OVERRIDE.songs || []).find(s => s.song_id === songId);
+    const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
 
     // Resolve title
     const title = override?.title || song?.title || "";
