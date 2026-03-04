@@ -30,6 +30,11 @@ No merging, no mutation.
   window.SELECTED_SONG_ID = params.get("song_id") || null;
 </script>
 
+<!-- ADD THIS -->
+<script>
+  window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
+</script>
+
 {% assign hero_image = playlist_override.hero | default: playlist.hero %}
 
 {% if hero_image %}
