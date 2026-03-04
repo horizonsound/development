@@ -79,19 +79,45 @@ DISPLAY VARIABLES — always defined, override wins, YouTube fills gaps
     {% include hero.html %}
   {% endif %}
 
-  <div class="playlist-header">
-    <h1 class="playlist-title" id="dynamic-title">{{ display_title }}</h1>
-  
-    {% if display_subtitle %}
-      <h2 class="playlist-subtitle" id="dynamic-subtitle">{{ display_subtitle }}</h2>
-    {% endif %}
-  
-    <div class="playlist-song-description" id="dynamic-description"></div>
+<div class="playlist-header">
 
-    {% if display_description %}
-      <p class="playlist-description">{{ display_description }}</p>
+  {%- comment -%}
+  PLAYLIST TITLE (collections only)
+  {%- endcomment -%}
+  {% if playlist.is_collection %}
+    {% if playlist.title %}
+      <h1 class="playlist-title">{{ playlist.title }}</h1>
     {% endif %}
-  </div>
+
+    {% if playlist.subtitle %}
+      <h2 class="playlist-subtitle">{{ playlist.subtitle }}</h2>
+    {% endif %}
+  {% endif %}
+
+  {%- comment -%}
+  SONG TITLE (always shown)
+  Comes from music_overrides if present, otherwise YouTube title.
+  JS will update this dynamically when a song is selected.
+  {%- endcomment -%}
+  <h1 class="song-title" id="song-title"></h1>
+
+  {%- comment -%}
+  SONG SUBTITLE (music_overrides only)
+  Hidden if empty.
+  JS will update this dynamically.
+  {%- endcomment -%}
+  <h2 class="song-subtitle" id="song-subtitle"></h2>
+
+  {%- comment -%}
+  PLAYLIST DESCRIPTION (playlist_overrides only)
+  Hidden if empty.
+  This is NOT the song description.
+  {%- endcomment -%}
+  {% if playlist.description %}
+    <p class="playlist-description">{{ playlist.description }}</p>
+  {% endif %}
+
+</div>
   
   {% comment %}
   Build a list of this playlist's songs so JS can map song_id -> title.
