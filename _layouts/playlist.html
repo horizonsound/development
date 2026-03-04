@@ -32,6 +32,25 @@ No merging, no mutation.
 {% endif %}
 
 {% comment %}
+Playlist Title + Subtitle
+- Title: override first, fallback to playlist feed
+- Subtitle: override only, hide if blank
+{% endcomment %}
+
+{% assign header_title = playlist_override.title | default: playlist.title %}
+{% assign header_subtitle = playlist_override.subtitle %}
+
+<div class="playlist-header" style="padding: 40px 20px; color: white;">
+  {% if header_title %}
+    <h1 class="playlist-title">{{ header_title }}</h1>
+  {% endif %}
+
+  {% if header_subtitle %}
+    <h2 class="playlist-subtitle">{{ header_subtitle }}</h2>
+  {% endif %}
+</div>
+
+{% comment %}
 Expose raw data to JS — no merging, no conditionals
 {% endcomment %}
 <script>
