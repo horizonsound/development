@@ -132,8 +132,8 @@ Expose raw data to JS — no merging, no conditionals
     // Render main header
     const header = document.getElementById("selected-song-header");
     header.innerHTML = `
-      ${title ? `<h2 class="selected-song-title">{{ }}</h2>` : ""}
-      ${subtitle ? `<h3 class="selected-song-subtitle">${subtitle}</h3>` : ""}
+      ${title ? `<h2 class="section-header">${title}</h2>` : ""}
+      ${subtitle ? `<h3 class="song-subtitle">${subtitle}</h3>` : ""}
     `;
 
     // Render extra fields
