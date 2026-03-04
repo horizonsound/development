@@ -21,7 +21,7 @@ Playlist Hero — override wins, fallback to global hero include.
 No merging, no mutation.
 {% endcomment %}
 
-{% assign hero_image = playlist_override.hero | default: playlist.thumbnail %}
+{% assign hero_image = playlist_override.hero | default: playlist.hero %}
 
 {% if hero_image %}
   <div class="hero-banner">
