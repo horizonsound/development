@@ -54,13 +54,13 @@ Playlist Title + Subtitle
 {% assign header_title = playlist_override.title | default: playlist.title %}
 {% assign header_subtitle = playlist_override.subtitle %}
 
-<div class="playlist-header" style="padding: 40px 20px; color: white;">
+<div class="playlist-header">
   {% if header_title %}
     <h1 class="playlist-title">{{ header_title }}</h1>
   {% endif %}
 
   {% if header_subtitle %}
-    <h2 class="playlist-subtitle">{{ header_subtitle }}</h2>
+    <h2 class="playlist-title">{{ header_subtitle }}</h2>
   {% endif %}
 </div>
 
@@ -71,21 +71,20 @@ Playlist Description — override only, hide if blank
 {% assign playlist_description = playlist_override.description %}
 
 {% if playlist_description %}
-  <div class="playlist-description" style="padding: 20px 20px 40px; color: white;">
+  <div class="playlist-description">
     {{ playlist_description }}
   </div>
 {% endif %}
-<div id="selected-song-header" style="padding: 20px 20px; color: white;"></div>
 
-{% comment %}
-This is where the YouTube Player and Carousel will go
-{% endcomment %}
+<div id="selected-song-header" class="song-header"></div>
 
-<div id="selected-song-extra" style="padding: 10px 20px; color: white;"></div>
+<div id="selected-song-player" class="player-frame player-frame--purple"></div>
 
-<div id="selected-song-about" style="padding: 20px 20px; color: white;"></div>
+<div id="selected-song-extra" class="about-block"></div>
 
-<div id="selected-song-lyrics" style="padding: 20px 20px; color: white;"></div>
+<div id="selected-song-about" class="about-block"></div>
+
+<div id="selected-song-lyrics" class="lyrics-block"></div>
 
 {% assign song_ids = playlist_override.songs | default: playlist.song_ids %}
 
@@ -121,6 +120,9 @@ Expose raw data to JS — no merging, no conditionals
     const extraTitle = override?.extra_title || "";
     const extraHTML = override?.extra_html || "";
 
+
+
+    
     // Resolve About (from description_html)
     const about = song?.description_html || "";
     
@@ -137,20 +139,20 @@ Expose raw data to JS — no merging, no conditionals
     // Render extra fields
     const extra = document.getElementById("selected-song-extra");
     extra.innerHTML = `
-      ${extraTitle ? `<h4 class="selected-song-extra-title">${extraTitle}</h4>` : ""}
-      ${extraHTML ? `<div class="selected-song-extra-html">${extraHTML}</div>` : ""}
+      ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
+      ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
     `;
 
     // Render About
     const aboutContainer = document.getElementById("selected-song-about");
     aboutContainer.innerHTML = `
-      ${about ? `<div class="selected-song-about">${about}</div>` : ""}
+      ${about ? `<div class="about-text">${about}</div>` : ""}
     `;
 
     // Render Lyrics
     const lyricsContainer = document.getElementById("selected-song-lyrics");
     lyricsContainer.innerHTML = `
-      ${lyricsHTML ? `<div class="selected-song-lyrics">${lyricsHTML}</div>` : ""}
+      ${lyricsHTML ? `<div class="lyrics-block">${lyricsHTML}</div>` : ""}
     `;
   }
 </script>
