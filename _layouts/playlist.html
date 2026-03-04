@@ -20,136 +20,41 @@ Load override from playlist_overrides.yml
 
 {% if override %}
 
-  {%- comment -%} Title override {%- endcomment -%}
   {% if override.title and override.title != "" %}
     {% assign playlist = playlist | merge: { "title": override.title } %}
   {% endif %}
 
-  {%- comment -%} Subtitle override {%- endcomment -%}
   {% if override.subtitle and override.subtitle != "" %}
     {% assign playlist = playlist | merge: { "subtitle": override.subtitle } %}
   {% endif %}
 
-  {%- comment -%} Description override {%- endcomment -%}
   {% if override.description and override.description != "" %}
     {% assign playlist = playlist | merge: { "description": override.description } %}
   {% endif %}
 
-  {%- comment -%} Thumbnail override {%- endcomment -%}
   {% if override.thumbnail and override.thumbnail != "" %}
     {% assign playlist = playlist | merge: { "thumbnail": override.thumbnail } %}
   {% endif %}
 
-  {%- comment -%} Hero override {%- endcomment -%}
   {% if override.hero and override.hero != "" %}
     {% assign playlist = playlist | merge: { "hero": override.hero } %}
   {% endif %}
 
-  {%- comment -%} Song list override (Option B) {%- endcomment -%}
   {% if override.songs and override.songs.size > 0 %}
     {% assign playlist = playlist | merge: { "song_ids": override.songs } %}
   {% endif %}
 
-  {%- comment -%} Order override {%- endcomment -%}
   {% if override.order %}
     {% assign playlist = playlist | merge: { "order": override.order } %}
   {% endif %}
 
-  {%- comment -%} is_collection override {%- endcomment -%}
   {% if override.is_collection != nil %}
     {% assign playlist = playlist | merge: { "is_collection": override.is_collection } %}
   {% endif %}
 
 {% endif %}
 
-{% assign display_hero = override.hero %}
-
-{% if playlist %}
-  {% if display_hero %}
-    <div class="hero-banner">
-      <img class="hero-image" src="{{ site.baseurl }}{{ display_hero }}" alt="{{ playlist.title }}">
-    </div>
-  {% else %}
-    {% include hero.html %}
-  {% endif %}
-
-<div class="playlist-header">
-
-  {%- comment -%}
-  PLAYLIST TITLE + SUBTITLE (collections only)
-  {%- endcomment -%}
-  {% if playlist.is_collection %}
-    {% if playlist.title %}
-      <h1 class="playlist-title">{{ playlist.title }}</h1>
-    {% endif %}
-
-    {% if playlist.subtitle %}
-      <h2 class="playlist-subtitle">{{ playlist.subtitle }}</h2>
-    {% endif %}
-  {% endif %}
-
-  {%- comment -%}
-  SONG TITLE (always shown, filled by JS)
-  {%- endcomment -%}
-  <h1 class="song-title" id="song-title"></h1>
-
-  {%- comment -%}
-  SONG SUBTITLE (from music_overrides only, filled by JS)
-  {%- endcomment -%}
-  <h2 class="song-subtitle" id="song-subtitle"></h2>
-
-  {%- comment -%}
-  PLAYLIST DESCRIPTION (playlist_overrides only)
-  {%- endcomment -%}
-  {% if playlist.description %}
-    <p class="playlist-description">{{ playlist.description }}</p>
-  {% endif %}
-
-</div>
-
 {% comment %}
-Build a list of this playlist's songs with merged overrides
+STOP HERE — PAGE IS INTENTIONALLY EMPTY
+We will add fields back one at a time.
 {% endcomment %}
-{% assign all_songs = site.data.youtube_feed.songs %}
-{% assign playlist_songs = "" | split: "" %}
-{% assign overrides = site.data.music_overrides.overrides %}
-
-{% assign song_ids = playlist.song_ids %}
-
-{% for sid in song_ids %}
-  {% assign s = all_songs | where: "song_id", sid | first %}
-  {% if s %}
-    {% assign o = overrides | where: "song_id", s.song_id | first %}
-    {% if o %}
-      {% assign s = s | merge: o %}
-    {% endif %}
-    {% assign playlist_songs = playlist_songs | push: s %}
-  {% endif %}
-{% endfor %}
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const params = new URLSearchParams(window.location.search);
-    const songId = params.get("song_id");
-
-    const titleEl = document.getElementById("song-title");
-    const subtitleEl = document.getElementById("song-subtitle");
-
-    if (!window.playlistSongs.length) return;
-
-    let current = window.playlistSongs[0];
-
-    if (songId) {
-      const match = window.playlistSongs.find(s => s.id === songId);
-      if (match) current = match;
-    }
-
-    titleEl.textContent = current.title;
-    subtitleEl.textContent = current.subtitle || "";
-  });
-</script>
-{% else %}
-
-  <h1>Playlist not found</h1>
-
-{% endif %}
