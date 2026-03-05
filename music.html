@@ -59,7 +59,7 @@ title: Music – Horizon Sound
     <section id="music-view-grouped">
     
       {% assign playlist_data = site.data.youtube_playlists.playlists %}
-      {% if playlist_data.size > 0 %}
+      {% if pl.song_ids.size > 0 %}
     
       <section class="playlist-section music-collections">
         <h2 class="section-header">Collections</h2>
@@ -115,11 +115,6 @@ title: Music – Horizon Sound
       </section>
       {% endif %}
     
-      {%- comment -%}
-        PLAYLIST SECTIONS
-        Fix: use youtube_id instead of song_id
-        Fix: remove sequence logic (no longer exists)
-      {%- endcomment -%}
       {% for pl in site.data.youtube_playlists.playlists %}
         {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.youtube_id" %}
         {% assign playlist_sorted = songs_in_list | sort: "title" %}
