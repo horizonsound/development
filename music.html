@@ -231,3 +231,25 @@ title: Music – Horizon Sound
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const viewButtons = document.querySelectorAll(".view-toggle-button");
+  const groupedView = document.getElementById("music-view-grouped");
+  const allSongsView = document.getElementById("music-view-all");
+  const carouselView = document.getElementById("music-view-carousel");
+
+  viewButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      viewButtons.forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+
+      const view = button.dataset.view;
+
+      groupedView.style.display = (view === "grouped") ? "block" : "none";
+      allSongsView.style.display = (view === "all") ? "block" : "none";
+      carouselView.style.display = (view === "carousel") ? "block" : "none";
+    });
+  });
+});
+</script>
+
