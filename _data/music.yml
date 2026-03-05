@@ -2286,7 +2286,7 @@ songs:
    youtube_id: "vjdOSn3ZuaI"
    url: "/music/instrumental-held-in-the-moment/"
    image: "/assets/Held in the Moment.jpeg"
-   videostatus: "Public"
+   videostatus: "Private"
    primary_playlist: "Instrumentals"
    description_html: |
      <p><strong>Official audio for “Held in the Moment” by Horizon Sound.</strong></p>
@@ -2331,7 +2331,7 @@ songs:
    youtube_id: "kIv8cx7JgRM"
    url: "/music/instrumental-the-way-water-moves/"
    image: "/assets/The Way Water Moves.jpeg"
-   videostatus: "Public"
+   videostatus: "Private"
    primary_playlist: "Instrumentals"
    description_html: |
      <p><strong>Official audio for “The Way Water Moves” by Horizon Sound.</strong></p>
