@@ -75,7 +75,7 @@ title: Music – Horizon Sound
           {% assign has_public = false %}
     
           {% for vid in pl.song_ids %}
-            {% assign song = all_songs | where: "youtube_id", vid | first %}
+            {% assign song = all_songs | where: "song_id", vid | first %}
             {% if song and song.videostatus == "public" %}
               {% assign has_public = true %}
             {% endif %}
@@ -116,7 +116,7 @@ title: Music – Horizon Sound
       {% endif %}
     
       {% for pl in site.data.youtube_playlists.playlists %}
-        {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.youtube_id" %}
+        {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.song_id" %}
         {% assign playlist_sorted = songs_in_list | sort: "title" %}
     
    <pre style="color:#0ff; background:#111; padding:0.5rem; white-space:pre-wrap;">
@@ -124,7 +124,7 @@ DEBUG PLAYLIST
 playlist_id: {{ pl.playlist_id }}
 song_ids: {{ pl.song_ids | jsonify }}
 songs_in_list size: {{ songs_in_list | size }}
-first song youtube_id: {% if songs_in_list.first %}{{ songs_in_list.first.youtube_id }}{% else %}(none){% endif %}
+first song song_id: {% if songs_in_list.first %}{{ songs_in_list.first.song_id }}{% else %}(none){% endif %}
   </pre>
 
       
@@ -191,7 +191,7 @@ first song youtube_id: {% if songs_in_list.first %}{{ songs_in_list.first.youtub
     ============================================================ -->
     <section id="music-view-carousel" style="display:none;">
       {% for pl in site.data.youtube_playlists.playlists %}
-        {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.youtube_id" %}
+        {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.song_id" %}
         {% assign playlist_sorted = songs_in_list | sort: "title" %}
     
         {% if playlist_sorted.size > 0 %}
