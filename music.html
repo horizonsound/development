@@ -6,14 +6,7 @@ title: Music – Horizon Sound
 {% assign all_songs = site.data.youtube_feed.songs %}
 
 <div class="music-page">
-
   <div class="view-toggle">
-     <div class="view-toggle-buttons">
-       <button class="view-toggle-button active" data-view="grouped">Grouped by Playlist</button>
-       <button class="view-toggle-button" data-view="all">All Songs</button>
-       <button class="view-toggle-button" data-view="carousel">Carousel View</button>
-     </div>
-
      <h2 class="page-title">Music Catalog</h2>
  
      <div class="mode-toggle">
@@ -28,6 +21,11 @@ title: Music – Horizon Sound
        Premium 3:1 playlist tiles
   ============================================================ -->
   <section id="music-view-playlists">
+     <div class="view-toggle-buttons">
+       <button class="view-toggle-button active" data-view="grouped">Grouped by Playlist</button>
+       <button class="view-toggle-button" data-view="all">All Songs</button>
+       <button class="view-toggle-button" data-view="carousel">Carousel View</button>
+     </div>
   
     <h2 class="section-header">Playlists</h2>
   
@@ -95,7 +93,7 @@ title: Music – Horizon Sound
             ACTIVE playlists
           {%- endcomment -%}
           {% for pl in active_playlists %}
-            <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.slug }}/">
+            <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
               <img src="{{ site.baseurl }}{{ pl.thumbnail }}" alt="{{ pl.title }}">
               <h3 class="tile-title">{{ pl.title }}</h3>
             </a>
