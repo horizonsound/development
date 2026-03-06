@@ -68,7 +68,7 @@ title: Music – Horizon Sound
         {%- comment -%}
           Load only playlists marked as collections in playlist_overrides.yml
         {%- endcomment -%}
-        {% assign collection_overrides = site.data.playlist_overrides | where: "is_collection", true %}
+        {% assign collection_overrides = site.data.playlist_overrides.overrides | where: "is_collection", true %}
       
         {%- comment -%}
           For each override entry, find the matching playlist in youtube_playlists.yml
