@@ -10,8 +10,6 @@
     {% for song in items %}
       {% assign override = site.data.music_overrides.overrides | where: "song_id", song.song_id | first %}
       {% assign display_title = override.title | default: song.title %}
-      {% assign is_public = song.videostatus == "public" %}
-      {% assign is_coming = song.videostatus != "public" %}
 
       {% if song.videostatus == "public" %}
         <a class="carousel-tile"
@@ -25,8 +23,6 @@
     {% for song in items %}
       {% assign override = site.data.music_overrides.overrides | where: "song_id", song.song_id | first %}
       {% assign display_title = override.title | default: song.title %}
-      {% assign is_public = song.videostatus == "public" %}
-      {% assign is_coming = song.videostatus != "public" %}
 
       {% if song.videostatus != "public" %}
         <div class="carousel-tile coming-soon" data-song-id="{{ song.song_id }}">
