@@ -31,7 +31,7 @@ playlists:
     published_at: '2026-02-06T12:31:02.78813Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
-    thumbnail: null
+    thumbnail: /assets/thumbnails/playlist-venice-trilogy-missing-stamp.jpeg
     song_ids:
       - venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
       - someday-acoustic-pop-storytelling-horizon-sound
