@@ -234,32 +234,100 @@ title: Music – Horizon Sound
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const playlistView = document.getElementById("music-view-playlists");
-    const catalogView = document.getElementById("music-view-catalog");
-    const buttons = document.querySelectorAll(".mode-toggle-button");
-  
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-  
-        const mode = btn.dataset.mode;
-  
-        if (mode === "playlists") {
-          playlistView.style.display = "block";
-          catalogView.style.display = "none";
-        } else {
-          playlistView.style.display = "none";
-          catalogView.style.display = "block";
-        }
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  /* -----------------------------
+     TOP-LEVEL MODE RESTORE
+     (Playlist vs Catalog)
+  ----------------------------- */
+  const playlistView = document.getElementById("music-view-playlists");
+  const catalogView = document.getElementById("music-view-catalog");
+  const modeButtons = document.querySelectorAll(".mode-toggle-button");
+
+  const savedMode = localStorage.getItem("music_mode") || "playlists";
+
+  if (savedMode === "catalog") {
+    playlistView.style.display = "none";
+    catalogView.style.display = "block";
+    modeButtons.forEach(b => b.classList.remove("active"));
+    document.querySelector('[data-mode="catalog"]').classList.add("active");
+  } else {
+    playlistView.style.display = "block";
+    catalogView.style.display = "none";
+    modeButtons.forEach(b => b.classList.remove("active"));
+    document.querySelector('[data-mode="playlists"]').classList.add("active");
+  }
+
+  /* -----------------------------
+     TOP-LEVEL MODE CLICK HANDLER
+  ----------------------------- */
+  modeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      modeButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const mode = btn.dataset.mode;
+
+      if (mode === "playlists") {
+        playlistView.style.display = "block";
+        catalogView.style.display = "none";
+      } else {
+        playlistView.style.display = "none";
+        catalogView.style.display = "block";
+      }
+
+      localStorage.setItem("music_mode", mode);
     });
   });
+
+  /* -----------------------------
+     CATALOG SUB-VIEW RESTORE
+     (Grouped / All / Carousel)
+  ----------------------------- */
+  const groupedView = document.getElementById("music-view-grouped");
+  const allSongsView = document.getElementById("music-view-all");
+  const carouselView = document.getElementById("music-view-carousel");
+  const viewButtons = document.querySelectorAll(".view-toggle-button");
+
+  const savedCatalogView = localStorage.getItem("catalog_view") || "grouped";
+
+  groupedView.style.display = (savedCatalogView === "grouped") ? "block" : "none";
+  allSongsView.style.display = (savedCatalogView === "all") ? "block" : "none";
+  carouselView.style.display = (savedCatalogView === "carousel") ? "block" : "none";
+
+  viewButtons.forEach(b => b.classList.remove("active"));
+  document.querySelector(`[data-view="${savedCatalogView}"]`).classList.add("active");
+
+  /* -----------------------------
+     CATALOG SUB-VIEW CLICK HANDLER
+  ----------------------------- */
+  viewButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      viewButtons.forEach(b => b.classList.remove("active"));
+      button.classList.add("active");
+
+      const view = button.dataset.view;
+
+      groupedView.style.display = (view === "grouped") ? "block" : "none";
+      allSongsView.style.display = (view === "all") ? "block" : "none";
+      carouselView.style.display = (view === "carousel") ? "block" : "none";
+
+      localStorage.setItem("catalog_view", view);
+    });
+  });
+});
 </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  const savedCatalogView = localStorage.getItem("catalog_view") || "grouped";
+  
+  groupedView.style.display = (savedCatalogView === "grouped") ? "block" : "none";
+  allSongsView.style.display = (savedCatalogView === "all") ? "block" : "none";
+  carouselView.style.display = (savedCatalogView === "carousel") ? "block" : "none";
+  
+  viewButtons.forEach(b => b.classList.remove("active"));
+  document.querySelector(`[data-view="${savedCatalogView}"]`).classList.add("active");
+
   const viewButtons = document.querySelectorAll(".view-toggle-button");
   const groupedView = document.getElementById("music-view-grouped");
   const allSongsView = document.getElementById("music-view-all");
@@ -275,6 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
       groupedView.style.display = (view === "grouped") ? "block" : "none";
       allSongsView.style.display = (view === "all") ? "block" : "none";
       carouselView.style.display = (view === "carousel") ? "block" : "none";
+      localStorage.setItem("catalog_view", view);
     });
   });
 });
