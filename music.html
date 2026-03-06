@@ -59,50 +59,37 @@ title: Music – Horizon Sound
     <section id="music-view-grouped">
     
       {% assign playlist_data = site.data.youtube_playlists.playlists %}
-      {% if pl.song_ids.size > 0 %}
-    
       <section class="playlist-section music-collections">
         <h2 class="section-header">Collections</h2>
-    
+      
         {% assign active_playlists = "" | split: "" %}
         {% assign coming_soon_playlists = "" | split: "" %}
-    
-        {%- comment -%}
-          Determine which playlists have at least one PUBLIC video
-          New model uses videostatus: "public"
-        {%- endcomment -%}
+      
         {% for pl in site.data.youtube_playlists.playlists %}
           {% assign has_public = false %}
-    
+      
           {% for vid in pl.song_ids %}
             {% assign song = all_songs | where: "song_id", vid | first %}
             {% if song and song.videostatus == "public" %}
               {% assign has_public = true %}
             {% endif %}
           {% endfor %}
-    
+      
           {% if has_public %}
             {% assign active_playlists = active_playlists | push: pl %}
           {% else %}
             {% assign coming_soon_playlists = coming_soon_playlists | push: pl %}
           {% endif %}
         {% endfor %}
-    
+      
         <div class="tile-grid">
-    
-          {%- comment -%}
-            ACTIVE playlists
-          {%- endcomment -%}
           {% for pl in active_playlists %}
             <a class="tile" href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/">
               <img src="{{ site.baseurl }}{{ pl.thumbnail }}" alt="{{ pl.title }}">
               <h3 class="tile-title">{{ pl.title }}</h3>
             </a>
           {% endfor %}
-    
-          {%- comment -%}
-            COMING SOON playlists
-          {%- endcomment -%}
+      
           {% for pl in coming_soon_playlists %}
             <div class="tile coming-soon">
               <img src="{{ site.baseurl }}{{ pl.thumbnail }}" alt="{{ pl.title }}">
@@ -110,11 +97,9 @@ title: Music – Horizon Sound
               <h3 class="tile-title">{{ pl.title }}</h3>
             </div>
           {% endfor %}
-    
         </div>
       </section>
-      {% endif %}
-    
+      
       {% for pl in site.data.youtube_playlists.playlists %}
         {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.song_id" %}
         {% assign playlist_sorted = songs_in_list | sort: "title" %}
