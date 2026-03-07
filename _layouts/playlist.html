@@ -161,11 +161,13 @@ layout: default
     const autoplayParam = "1";
     const muteParam = "1";
   
+    const cacheBuster = Date.now();
+    
     const playerHTML = `
       <div class="video-wrapper">
         <iframe
           id="yt-player"
-          src="https://www.youtube.com/embed/${youtubeId}?autoplay=${autoplayParam}&mute=${muteParam}&enablejsapi=1&origin=${window.location.origin}"
+          src="https://www.youtube.com/embed/${youtubeId}?autoplay=${autoplayParam}&mute=${muteParam}&enablejsapi=1&origin=${window.location.origin}&cb=${cacheBuster}"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
