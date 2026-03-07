@@ -44,16 +44,11 @@ layout: default
     <!-- Make the data visible to JavaScript -->
     <script>
       window.YOUTUBE_SONGS = {{ site.data.youtube_feed.songs | jsonify }};
-    </script>
-    <script>
+      window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
+      window.BASEURL = "{{ site.baseurl }}";
+    
       const params = new URLSearchParams(window.location.search);
       window.SELECTED_SONG_ID = params.get("song_id") || null;
-    </script>
-    <script>
-      window.MUSIC_OVERRIDES = {{ site.data.music_overrides.overrides | jsonify }};
-    </script>
-    <script>
-      window.BASEURL = "{{ site.baseurl }}";
     </script>
   
     <!-- Set up the hero image - Default is the Horizon Sound banner, but show override image if available -->
