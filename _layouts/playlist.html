@@ -90,6 +90,26 @@ layout: default
 
 <script>
   if (window.SELECTED_SONG_ID && window.YOUTUBE_SONGS && window.MUSIC_OVERRIDES) {
+    
+    
+    
+    console.log("=== PLAYLIST DEBUG START ===");
+
+console.log("window.autoplay:", window.autoplay);
+console.log("autoplay.enabled:", window.autoplay?.enabled);
+
+console.log("SELECTED_SONG_ID:", window.SELECTED_SONG_ID);
+
+console.log("Song object:", song);
+console.log("Override object:", override);
+
+console.log("YouTube ID:", song?.youtube_id);
+
+console.log("About to build embed...");
+
+    
+    
+    
     const songId = window.SELECTED_SONG_ID;
 
     const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
@@ -131,6 +151,15 @@ layout: default
         </iframe>
       </div>
     `;
+
+
+
+console.log("Embed URL:", `https://www.youtube.com/embed/${youtubeId}?autoplay=${autoplayParam}&mute=${muteParam}`);
+console.log("autoplayParam:", autoplayParam);
+console.log("muteParam:", muteParam);
+
+
+
     
     // Render player + carousel
     playerContainer.innerHTML = playerHTML;
