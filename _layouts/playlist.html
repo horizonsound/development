@@ -155,8 +155,10 @@ layout: default
     const playerContainer = document.getElementById("selected-song-player");
     const youtubeId = song?.youtube_id || "";
   
-    const autoplayParam = window.autoplay?.enabled ? "1" : "0";
-    const muteParam = window.autoplay?.enabled ? "0" : "1";
+    // const autoplayParam = window.autoplay?.enabled ? "1" : "0";
+    // const muteParam = window.autoplay?.enabled ? "0" : "1";
+    const autoplayParam = "1";
+    const muteParam = "1";
   
     const playerHTML = `
       <div class="video-wrapper">
