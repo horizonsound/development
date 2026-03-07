@@ -122,6 +122,7 @@ layout: default
 <script>
   function loadSong(songId) {
     window.SELECTED_SONG_ID = songId;
+    console.log("LOADSONG EXECUTED FROM PLAYLIST PAGE");
 
     const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
     const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
