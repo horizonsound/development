@@ -3,6 +3,13 @@ layout: default
 ---
 
 <main>
+<script>
+  // GLOBAL DEBUG: Log every postMessage from the YouTube iframe
+  window.addEventListener("message", (event) => {
+    console.log("YT RAW MESSAGE:", event.data);
+  });
+</script>
+
     <script>
       // Ensure the handler exists before removing it
       if (window._ytMessageHandler) {
