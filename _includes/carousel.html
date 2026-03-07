@@ -13,8 +13,7 @@
 
       {% if song.videostatus == "public" %}
         <a class="carousel-tile"
-           data-song-id="{{ song.song_id }}"
-           href="{{ site.baseurl }}/music/playlists/{{ include.playlist_id }}/?song_id={{ song.song_id }}">
+           data-song-id="{{ song.song_id }}">
           <img src="{{ site.baseurl }}{{ song.thumbnail }}" alt="{{ display_title }}">
           <h3 class="tile-title">{{ display_title }}</h3>
         </a>
