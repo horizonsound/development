@@ -3,6 +3,29 @@ layout: default
 ---
 
 <main>
+    <script>
+      // Ensure the handler exists before removing it
+      if (window._ytMessageHandler) {
+        window.removeEventListener("message", window._ytMessageHandler);
+      }
+    
+      // Define the handler
+      window._ytMessageHandler = function(event) {
+        if (!event.data || typeof event.data !== "string") return;
+    
+        try {
+          const data = JSON.parse(event.data);
+    
+          if (data.event === "onStateChange" && data.info === 0) {
+            advanceToNextSong(window.SELECTED_SONG_ID);
+          }
+        } catch (e) {}
+      };
+    
+      // Attach the handler
+      window.addEventListener("message", window._ytMessageHandler);
+    </script>
+
     <!-- Load the playlist and override data -->
     {% assign playlist = site.data.youtube_playlists.playlists
       | where: "playlist_id", page.playlist_id
@@ -88,30 +111,7 @@ layout: default
     window.PLAYLIST = {{ playlist | jsonify }};
     window.PLAYLIST_OVERRIDE = {{ playlist_override | jsonify }};
   </script>
-  
-<script>
-  // Ensure the handler exists before removing it
-  if (window._ytMessageHandler) {
-    window.removeEventListener("message", window._ytMessageHandler);
-  }
-
-  // Define the handler
-  window._ytMessageHandler = function(event) {
-    if (!event.data || typeof event.data !== "string") return;
-
-    try {
-      const data = JSON.parse(event.data);
-
-      if (data.event === "onStateChange" && data.info === 0) {
-        advanceToNextSong(window.SELECTED_SONG_ID);
-      }
-    } catch (e) {}
-  };
-
-  // Attach the handler
-  window.addEventListener("message", window._ytMessageHandler);
-</script>
-    
+      
 <script>
   function loadSong(songId) {
     window.SELECTED_SONG_ID = songId;
