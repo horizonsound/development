@@ -231,6 +231,68 @@ title: Music – Horizon Sound
     /* JS unchanged */
     </script>
   </section>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const main = document.querySelector("main");
+  
+    // Intercept all playlist links on the Music page
+    document.querySelectorAll('a[href*="/music/playlists/"]').forEach(link => {
+      link.addEventListener("click", async (event) => {
+        event.preventDefault();
+  
+        const url = link.href;
+  
+        // Fetch the playlist page HTML
+        const response = await fetch(url, { credentials: "same-origin" });
+        const text = await response.text();
+  
+        // Parse the HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+  
+        // Extract the new <main> content
+        const newMain = doc.querySelector("main");
+        if (!newMain) {
+          window.location.href = url; // fallback
+          return;
+        }
+  
+        // Replace the current <main>
+        main.replaceWith(newMain);
+  
+        // Update the URL
+        history.pushState({}, "", url);
+  
+        // Re-run the playlist JS
+        const script = newMain.querySelector("script");
+        if (script) {
+          eval(script.innerText);
+        }
+      });
+    });
+  
+    // Handle back/forward navigation
+    window.addEventListener("popstate", async () => {
+      const url = window.location.href;
+      const response = await fetch(url, { credentials: "same-origin" });
+      const text = await response.text();
+  
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, "text/html");
+      const newMain = doc.querySelector("main");
+  
+      if (newMain) {
+        document.querySelector("main").replaceWith(newMain);
+  
+        const script = newMain.querySelector("script");
+        if (script) {
+          eval(script.innerText);
+        }
+      }
+    });
+  });
+  </script>
 </div>
 
 <script>
