@@ -6,49 +6,38 @@
 
 <div id="player"></div>
 
+<!-- Load the real YouTube IFrame API -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
 <script>
   const videos = [
-    "906ItpYuLuQ", // Forever in a Moment
-    "BrZ1VWJ2lso"  // Borrowed Time
+    "906ItpYuLuQ",
+    "BrZ1VWJ2lso"
   ];
 
   let index = 0;
+  let player;
 
-  function loadVideo(id) {
-    const cacheBuster = Date.now();
-    document.getElementById("player").innerHTML = `
-      <iframe
-        id="yt"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1&enablejsapi=1&cb=${cacheBuster}"
-        frameborder="0"
-        allow="autoplay"
-      ></iframe>
-    `;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: videos[index],
+      playerVars: { autoplay: 1, mute: 1 },
+      events: {
+        'onStateChange': onStateChange
+      }
+    });
   }
 
-  // YouTube event listener
-  window.addEventListener("message", (event) => {
-    try {
-      const data = JSON.parse(event.data);
+  function onStateChange(event) {
+    console.log("STATE:", event.data);
 
-      if (data.event === "onStateChange") {
-        console.log("STATE:", data.info);
-
-        // 0 = ended
-        if (data.info === 0) {
-          index++;
-          if (index < videos.length) {
-            loadVideo(videos[index]);
-          }
-        }
+    if (event.data === YT.PlayerState.ENDED) {
+      index++;
+      if (index < videos.length) {
+        player.loadVideoById(videos[index]);
       }
-    } catch (e) {}
-  });
-
-  // Load first video
-  loadVideo(videos[index]);
+    }
+  }
 </script>
 
 </body>
