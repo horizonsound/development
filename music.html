@@ -416,3 +416,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+document.querySelectorAll('.playlist-premium-tile, .tile').forEach(tile => {
+  tile.addEventListener('click', async (e) => {
+    if (tile.classList.contains('coming-soon')) return;
+
+    e.preventDefault(); // stop full page reload
+
+    const url = tile.getAttribute('href');
+
+    // Fetch the playlist page HTML
+    const response = await fetch(url, { credentials: 'same-origin' });
+    const html = await response.text();
+
+    // Replace the entire <main> content with the new page
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const newMain = doc.querySelector('main');
+
+    document.querySelector('main').replaceWith(newMain);
+
+    // Update the URL without reloading
+    history.pushState({}, "", url);
+
+    // Re-run the playlist page scripts
+    const scripts = newMain.querySelectorAll("script");
+    scripts.forEach(oldScript => {
+      const s = document.createElement("script");
+      if (oldScript.src) {
+        s.src = oldScript.src;
+      } else {
+        s.textContent = oldScript.textContent;
+      }
+      document.body.appendChild(s);
+    });
+  });
+});
+</script>
