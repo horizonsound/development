@@ -216,7 +216,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 58
+    view_count_num: 60
     youtube_metadata:
       published_at: '2026-02-18T17:00:21Z'
       scheduled_at: null
@@ -233,7 +233,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '58'
+        view_count: '60'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -558,7 +558,7 @@ songs:
     videostatus: public
     playlists:
       - calm-cinematic-horizon-sound-instrumentals
-    view_count_num: 2
+    view_count_num: 3
     youtube_metadata:
       published_at: '2026-03-07T13:01:18Z'
       scheduled_at: null
@@ -575,7 +575,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '2'
+        view_count: '3'
         like_count: '0'
         favorite_count: '0'
         comment_count: '0'
@@ -720,7 +720,7 @@ songs:
     videostatus: public
     playlists:
       - calm-cinematic-horizon-sound-instrumentals
-    view_count_num: 90
+    view_count_num: 91
     youtube_metadata:
       published_at: '2026-02-14T15:28:51Z'
       scheduled_at: null
@@ -737,7 +737,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '90'
+        view_count: '91'
         like_count: '3'
         favorite_count: '0'
         comment_count: '0'
@@ -963,7 +963,7 @@ songs:
     videostatus: public
     playlists:
       - calm-cinematic-horizon-sound-instrumentals
-    view_count_num: 59
+    view_count_num: 60
     youtube_metadata:
       published_at: '2026-02-07T13:03:59Z'
       scheduled_at: null
@@ -980,7 +980,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '59'
+        view_count: '60'
         like_count: '2'
         favorite_count: '0'
         comment_count: '1'
@@ -1540,7 +1540,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 108
+    view_count_num: 109
     youtube_metadata:
       published_at: '2026-02-03T17:00:01Z'
       scheduled_at: null
@@ -1557,7 +1557,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '108'
+        view_count: '109'
         like_count: '1'
         favorite_count: '0'
         comment_count: '1'
@@ -2081,7 +2081,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 92
+    view_count_num: 93
     youtube_metadata:
       published_at: '2026-02-24T17:00:59Z'
       scheduled_at: null
@@ -2098,7 +2098,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '92'
+        view_count: '93'
         like_count: '2'
         favorite_count: '0'
         comment_count: '0'
