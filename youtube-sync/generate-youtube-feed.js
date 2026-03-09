@@ -132,7 +132,7 @@ function linkify(text, playlistTitleMap) {
    song objects used by the site. This is the canonical schema.
 ------------------------------------------------------------- */
 
-function buildSongObject(video) {
+function buildSongObject(video, playlistTitleMap) {
   const song_id = video.slug;
 
   return {
@@ -141,7 +141,7 @@ function buildSongObject(video) {
     title: video.title,
 
     // Formatted HTML description (canonical)
-    description_html: formatDescriptionToHtml(video.youtube_metadata?.description || ""),
+    description_html: formatDescriptionToHtml(video.youtube_metadata?.description || "", playlistTitleMap),
 
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
@@ -293,7 +293,8 @@ for (const pl of playlists) {
      NORMALIZE SONG OBJECTS
   ------------------------------------------------------------- */
   console.log("Building song objects...");
-  const Videos = videos.map(buildSongObject);
+  const Videos = videos.map(v => buildSongObject(v, playlistTitleMap));
+
 
   /* -------------------------------------------------------------
      WRITE SONG FEED
