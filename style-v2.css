@@ -1227,3 +1227,10 @@ body::before {
   overflow: visible !important;
 }
 
+/* PLAYER: full-width cinematic sizing */
+#player-container {
+  width: 100% !important;
+  height: 60vh !important;   /* adjust later if needed */
+  max-width: none !important;
+}
+
