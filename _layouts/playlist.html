@@ -72,6 +72,8 @@ layout: default
     {% endif %}
 
     <div id="selected-song-player" class="player-frame player-frame--purple">
+        <div id="player-container"></div>
+    
         {% include carousel.html songs=ordered_songs playlist_id=playlist.playlist_id %}
     </div>
 
@@ -95,9 +97,9 @@ layout: default
           setTimeout(() => buildPlayer(youtubeId), 100);
           return;
         }
-
+          
         if (!YT_PLAYER) {
-          YT_PLAYER = new YT.Player('selected-song-player', {
+          YT_PLAYER = new YT.Player('player-container', {
             videoId: youtubeId,
             playerVars: {
               autoplay: 1,
