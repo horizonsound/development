@@ -1338,3 +1338,32 @@ body::before {
   padding: 0 40px;
   text-align: center;
 }
+
+/* ============================================
+   PLAYLIST PAGE — FIX PLAYER HEIGHT CONSTRAINT
+============================================ */
+
+/* Remove the fixed 16:9 padding-bottom ratio */
+.playlist-page .player-frame .video-wrapper {
+  padding-bottom: 0 !important;
+  height: auto !important;
+}
+
+/* Let the iframe define its own height */
+.playlist-page #selected-song-player iframe {
+  height: 60vh !important;   /* cinematic height */
+  max-height: none !important;
+  width: 100% !important;
+  border: none;
+}
+
+/* Ensure the player frame expands with the iframe */
+.playlist-page #selected-song-player {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Optional: even more cinematic (Apple TV uses 65–75vh) */
+.playlist-page #selected-song-player iframe {
+  height: 70vh !important;
+}
