@@ -99,15 +99,34 @@ function formatDescriptionToHtml(desc) {
   if (!desc) return "";
 
   return desc
-    .split(/\n\s*\n/)               // split on blank lines (any amount of whitespace)
-    .map(p => p.trim())             // trim whitespace
-    .filter(p => p.length > 0)      // remove empty paragraphs
+    .split(/\n\s*\n/)
+    .map(p => p.trim())
+    .filter(p => p.length > 0)
     .map(p => {
-      // collapse internal newlines into spaces
       const collapsed = p.replace(/\n+/g, " ").trim();
-      return `<p>${collapsed}</p>`;
+      const linked = linkify(collapsed);
+      return `<p>${linked}</p>`;
     })
-    .join("");                    // no blank lines between paragraphs
+    .join("");
+}
+
+function linkify(text) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  return text.replace(urlRegex, url => {
+    // Detect YouTube playlist links
+    const match = url.match(/[?&]list=([^&]+)/);
+    if (match) {
+      const playlistId = match[1];
+      const title = playlistTitleMap[playlistId];
+      if (title) {
+        return `<a href="${url}" target="_blank" rel="noopener">${title}</a>`;
+      }
+    }
+
+    // Fallback: show raw URL
+    return `<a href="${url}" target="_blank" rel="noopener">${url}</a>`;
+  });
 }
 
 /* -------------------------------------------------------------
