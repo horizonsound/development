@@ -103,6 +103,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     .filter(Boolean);
 
   const output = [];
+  let pendingFormatBItems = [];
 
   for (let i = 0; i < rawParagraphs.length; i++) {
     const p = rawParagraphs[i];
@@ -110,33 +111,49 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     const linked = linkify(collapsed, playlistTitleMap);
 
     const playlistUrls = (linked.match(/playlist\?list=/g) || []).length;
-    const containsBullet = linked.includes(" • ");
+    const containsInlineBullets = linked.includes(" • ");
     const containsVibeEmoji = /🎧|🎤|🎛️|⚡/.test(collapsed);
 
-    // --- PLAYLIST BLOCK ---
-    if (playlistUrls >= 2 && containsBullet) {
-      // Extract header (everything before first URL)
+    // --- FORMAT A: One-paragraph playlist block ---
+    if (playlistUrls >= 2 && containsInlineBullets) {
       const firstUrlIndex = linked.search(/https?:\/\//);
       const headerText = linked.slice(0, firstUrlIndex).trim();
       const playlistPortion = linked.slice(firstUrlIndex).trim();
-      
+
       const items = playlistPortion
         .split(" • ")
         .map(item => {
           const match = item.match(/<a [^>]+>(.*?)<\/a>/);
           if (!match) return null;
-      
+
           const url = match[0].match(/href="([^"]+)"/)[1];
-          const title = match[1]; // playlist name
-      
+          const title = match[1];
+
           return `<li>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></li>`;
         })
         .filter(Boolean)
         .join("");
-      
+
       output.push(`<p class="playlist-header">${headerText}</p>`);
       output.push(`<ul class="playlist-links">${items}</ul>`);
       continue;
+    }
+
+    // --- FORMAT B: Multi-paragraph playlist block ---
+    if (collapsed.startsWith("•") && playlistUrls === 1) {
+      const match = linked.match(/<a [^>]+>(.*?)<\/a>/);
+      if (match) {
+        const url = match[0].match(/href="([^"]+)"/)[1];
+        const title = match[1];
+        pendingFormatBItems.push(`<li>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></li>`);
+        continue;
+      }
+    }
+
+    // If we hit a non-playlist paragraph and we have pending Format B items, flush them
+    if (pendingFormatBItems.length > 0) {
+      output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
+      pendingFormatBItems = [];
     }
 
     // --- VIBE BLOCK ---
@@ -149,6 +166,11 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
 
     // --- NORMAL PARAGRAPH ---
     output.push(`<p>${linked}</p>`);
+  }
+
+  // Flush any remaining Format B items
+  if (pendingFormatBItems.length > 0) {
+    output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
   }
 
   return output.join("");
