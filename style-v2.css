@@ -1241,3 +1241,7 @@ body::before {
   max-width: none !important;
 }
 
+#page-root {
+  display: block;
+  width: 100%;
+}
