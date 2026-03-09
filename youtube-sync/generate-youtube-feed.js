@@ -119,16 +119,21 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
       const firstUrlIndex = linked.search(/https?:\/\//);
       const headerText = linked.slice(0, firstUrlIndex).trim();
       const playlistPortion = linked.slice(firstUrlIndex).trim();
-
+      
       const items = playlistPortion
         .split(" • ")
         .map(item => {
-          const match = item.match(/<a [^>]+>.*?<\/a>/);
-          return match ? `<li>${match[0]}</li>` : null;
+          const match = item.match(/<a [^>]+>(.*?)<\/a>/);
+          if (!match) return null;
+      
+          const url = match[0].match(/href="([^"]+)"/)[1];
+          const title = match[1]; // playlist name
+      
+          return `<li>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></li>`;
         })
         .filter(Boolean)
         .join("");
-
+      
       output.push(`<p class="playlist-header">${headerText}</p>`);
       output.push(`<ul class="playlist-links">${items}</ul>`);
       continue;
