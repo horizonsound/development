@@ -239,6 +239,35 @@ footer {
   height: 10px;
 }
 
+.carousel-tile {
+  flex: 0 0 180px;
+  transition: transform 0.2s ease;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+/* Ensure tiles always have a baseline border so active state persists */
+.carousel-tile,
+.playlist-tile {
+  border: 3px solid transparent;
+}
+
+.carousel-tile .tile-title {
+  box-sizing: border-box;
+}
+
+.carousel-tile img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-tile.active {
+  border: 3px solid rgba(180, 120, 220, 0.65);
+  box-shadow: 0 0 12px rgba(180, 120, 220, 0.45);
+}
+
 .carousel-arrow {
   background: #ffffff;
   border: none;
@@ -269,6 +298,27 @@ footer {
 
 .right-arrow {
   margin-left: 12px;
+}
+
+/* ============================================
+   COMPONENTS — EMBED / VIDEO
+============================================ */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px; /* optional, looks great inside the frame */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ============================================
@@ -647,6 +697,72 @@ footer {
 }
 
 /* ============================================
+   COMPONENT — PLAYER FRAME (Embed + Carousel)
+============================================ */
+.player-frame {
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+  margin: 32px 40px; /* matches song page spacing */
+  background: rgba(0,0,0,0.35); /* default fallback */
+}
+
+/* Dark theme (Song Page) */
+.player-frame--dark {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.player-frame--dark .tile-title {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  padding: 8px 10px;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+  height: 70px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Purple theme (Playlist Page, Collections aesthetic) */
+.player-frame--purple {
+  background: rgba(47, 18, 61, 0.35);
+}
+
+.player-frame .carousel {
+  margin-top: 16px; /* tighter, intentional */
+}
+.player-frame .carousel-arrow {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.player-frame .carousel-arrow:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.player-frame .tile-title {
+  background: rgba(180, 120, 220, 0.28);
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 10px 10px;
+}
+
+.player-frame .video-wrapper {
+  border-radius: 10px;
+}
+
+.player-frame .carousel-tile.active {
+  border: 3px solid rgba(180, 120, 220, 0.65);
+  box-shadow: 0 0 12px rgba(180, 120, 220, 0.45);
+}
+
+/* ============================================
    SONG PAGE — FINAL TYPOGRAPHY OVERRIDES
    (Placed at the bottom so they always win)
 ============================================ */
@@ -789,6 +905,35 @@ footer {
   max-width: 900px;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* ============================================
+   MOBILE — CAROUSEL TILE RESIZE (FINAL)
+============================================ */
+@media (max-width: 450px) {
+  .player-frame .carousel-tile {
+    flex: 0 0 32vw !important;
+  }
+
+  .player-frame .carousel-tile img {
+    height: 22vw !important;
+  }
+
+  .player-frame .carousel-tile .tile-title {
+    height: 42px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .player-frame .carousel-arrow {
+    height: 100px !important;
+  }
+}
+
+/* Playlist page + Song page carousel tiles */
+.player-frame .carousel-tile {
+  flex: 0 0 180px !important;
+  width: 180px !important;
+  height: auto !important;
 }
 
 .tile img,
@@ -1083,128 +1228,15 @@ body::before {
   user-select: none;
 }
 
-
-
-
-/* ============================================
-   PLAYLIST PAGE — FULL-WIDTH APPLE TV OVERRIDES
-============================================ */
-
-/* Full-width page */
-.playlist-page {
+#selected-song-player iframe {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 56.25vw; /* 16:9 ratio */
+  max-height: 480px;
+  border: none;
 }
 
-/* Full-bleed hero */
-.playlist-page .hero-banner img.hero-image {
+.player-frame {
   width: 100%;
-  height: 480px !important;
-  object-fit: cover;
-  border-radius: 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
-
-/* Header */
-.playlist-page .playlist-header {
-  width: 100%;
-  max-width: 1400px;
-  margin: -160px auto 40px;
-  padding: 0 40px;
-  text-align: center;
-}
-
-.playlist-page .playlist-header .playlist-title {
-  font-size: 3.2rem !important;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-/* ============================================
-   PLAYER FRAME — FULL WIDTH + CAROUSEL INSIDE
-============================================ */
-
-.playlist-page .player-frame {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 60px 0 !important;
-  border-radius: 0 !important;
-
-  background: rgba(255,255,255,0.06) !important;
-  backdrop-filter: blur(14px) !important;
-  box-shadow: inset 0 0 60px rgba(0,0,0,0.35);
-
-  /* DEBUG */
-  border: 4px solid red !important;
-}
-
-/* Center all children inside the full-width frame */
-.playlist-page .player-frame > * {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-/* ============================================
-   VIDEO — REMOVE ALL HEIGHT CONSTRAINTS
-============================================ */
-
-/* Remove old 16:9 padding-bottom */
-.playlist-page .player-frame .video-wrapper {
-  padding-bottom: 0 !important;
-  height: auto !important;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-/* Remove iframe max-height and allow cinematic height */
-.playlist-page .player-frame iframe {
-  width: 100% !important;
-  height: 70vh !important;
-  max-height: none !important;
-  border: none !important;
-}
-
-/* Ensure container grows with iframe */
-.playlist-page #selected-song-player {
-  width: 100% !important;
-  height: auto !important;
-}
-
-/* ============================================
-   CAROUSEL — SHRINK TO CORRECT SIZE
-============================================ */
-
-.playlist-page .player-frame .carousel-tile {
-  flex: 0 0 160px !important;
-  width: 160px !important;
-}
-
-.playlist-page .player-frame .carousel-tile img {
-  height: 160px !important;
-  border-radius: 10px;
-}
-
-/* Carousel container */
-.playlist-page .player-frame .carousel {
-  max-width: 1400px;
-  margin: 40px auto 0 !important;
-  padding: 0 40px;
-}
-
-/* ============================================
-   TEXT SECTIONS
-============================================ */
-
-.playlist-page .playlist-description,
-.playlist-page .about-block,
-.playlist-page .lyrics-block {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 40px;
-  text-align: center;
-}
-
