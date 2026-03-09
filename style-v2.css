@@ -1234,3 +1234,10 @@ body::before {
   max-width: none !important;
 }
 
+/* PLAYER FRAME — break out of centered grid */
+#selected-song-player {
+  grid-column: 1 / -1 !important;   /* span full width */
+  width: 100% !important;
+  max-width: none !important;
+}
+
