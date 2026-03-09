@@ -40,16 +40,18 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/style-v2.css?v=1" />
 </head>
 
-<body>
-  {% include header.html %}
-  {% unless page.is_playlist_page %}
-    {% include hero.html %}
-  {% endunless %}
-
-  <main>
-    {{ content }}
-  </main>
-
-  {% include footer.html %}
-</body>
+  <body>
+    {% include header.html %}
+    {% unless page.is_playlist_page %}
+      {% include hero.html %}
+    {% endunless %}
+  
+    <div id="page-root">
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    
+    {% include footer.html %}
+  </body>
 </html>
