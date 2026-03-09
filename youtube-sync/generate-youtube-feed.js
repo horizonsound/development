@@ -111,36 +111,31 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     const linked = linkify(collapsed, playlistTitleMap);
 
     const playlistUrls = (linked.match(/playlist\?list=/g) || []).length;
+    const containsBullet = linked.includes("•");
     const containsVibeEmoji = /🎧|🎤|🎛️|⚡/.test(collapsed);
 
-    // --- FORMAT A: One-paragraph playlist block ---
-    const containsInlineBullets = linked.includes("•");
+    // --- FORMAT A: One-paragraph playlist block (header + items inline) ---
+    if (playlistUrls >= 2 && containsBullet) {
+      const segments = linked.split("•").map(s => s.trim()).filter(Boolean);
 
-    if (playlistUrls >= 2 && containsInlineBullets) {
-      const firstUrlIndex = linked.search(/https?:\/\//);
-      const headerText = linked.slice(0, firstUrlIndex).trim();
-      const playlistPortion = linked.slice(firstUrlIndex).trim();
-    
-      const items = playlistPortion
-        .split("•")
-        .map(item => {
-          const match = item.match(/<a [^>]+>(.*?)<\/a>/);
-          if (!match) return null;
-    
-          const url = match[0].match(/href="([^"]+)"/)[1];
-          const title = match[1];
-    
-          return `<li>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></li>`;
-        })
-        .filter(Boolean)
-        .join("");
-    
+      const headerText = segments[0];
+
+      const items = segments.slice(1).map(seg => {
+        const match = seg.match(/<a [^>]+>(.*?)<\/a>/);
+        if (!match) return null;
+
+        const url = match[0].match(/href="([^"]+)"/)[1];
+        const title = match[1];
+
+        return `<li>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></li>`;
+      }).filter(Boolean).join("");
+
       output.push(`<p class="playlist-header">${headerText}</p>`);
       output.push(`<ul class="playlist-links">${items}</ul>`);
       continue;
     }
-    
-    // --- FORMAT B: Multi-paragraph playlist block ---
+
+    // --- FORMAT B: Multi-paragraph playlist block (each bullet separate) ---
     if (collapsed.startsWith("•") && playlistUrls === 1) {
       const match = linked.match(/<a [^>]+>(.*?)<\/a>/);
       if (match) {
@@ -151,7 +146,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
       }
     }
 
-    // If we hit a non-playlist paragraph and we have pending Format B items, flush them
+    // Flush Format B items when we hit a non-playlist paragraph
     if (pendingFormatBItems.length > 0) {
       output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
       pendingFormatBItems = [];
@@ -169,7 +164,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     output.push(`<p>${linked}</p>`);
   }
 
-  // Flush any remaining Format B items
+  // Flush any remaining Format B playlist items
   if (pendingFormatBItems.length > 0) {
     output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
   }
