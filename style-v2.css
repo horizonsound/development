@@ -1338,3 +1338,99 @@ body::before {
   margin-top: 60px !important;
   margin-bottom: 60px !important;
 }
+/* ============================================
+   PLAYLIST PAGE — APPLE TV STYLE OVERRIDES
+============================================ */
+
+.playlist-page {
+  --page-max-width: 1200px;
+  --page-padding: 40px;
+}
+
+/* Cinematic hero */
+.playlist-page .hero-banner img.hero-image {
+  height: 420px !important;
+  object-fit: cover !important;
+  border-radius: 0 0 24px 24px;
+}
+
+/* Header */
+.playlist-page .playlist-header {
+  max-width: var(--page-max-width);
+  margin: -140px auto 40px;
+  padding: 0 var(--page-padding);
+  text-align: center;
+}
+
+.playlist-page .playlist-header .playlist-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.playlist-page .playlist-header h2 {
+  font-size: 1.4rem !important;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* Description */
+.playlist-page .playlist-description {
+  max-width: 900px !important;
+  margin: 0 auto 48px !important;
+  padding: 0 var(--page-padding);
+  font-size: 1.4rem !important;
+  line-height: 1.65 !important;
+  opacity: 0.92;
+  text-align: center !important;
+}
+
+/* Player Frame */
+.playlist-page .player-frame {
+  max-width: var(--page-max-width);
+  margin: 48px auto;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06) !important;
+  backdrop-filter: blur(14px) !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+
+/* Larger video */
+.playlist-page .player-frame .video-wrapper {
+  padding-bottom: 48% !important; /* taller than 16:9 */
+  border-radius: 16px !important;
+}
+
+/* Carousel */
+.playlist-page .player-frame .carousel {
+  margin-top: 32px !important;
+}
+
+.playlist-page .player-frame .carousel-tile {
+  flex: 0 0 200px !important;
+  width: 200px !important;
+}
+
+.playlist-page .player-frame .carousel-tile img {
+  height: 200px !important;
+  border-radius: 12px !important;
+}
+
+/* About + Lyrics */
+.playlist-page .about-block,
+.playlist-page .lyrics-block {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 var(--page-padding);
+}
+
+.playlist-page .about-block .section-header,
+.playlist-page .lyrics-block .section-header {
+  font-size: 2.2rem !important;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
+}
+
