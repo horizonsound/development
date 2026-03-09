@@ -97,37 +97,60 @@ function writeYaml(filepath, data) {
 function formatDescriptionToHtml(desc, playlistTitleMap) {
   if (!desc) return "";
 
-  const paragraphs = desc
+  const rawParagraphs = desc
     .split(/\n\s*\n/)
     .map(p => p.trim())
-    .filter(p => p.length > 0)
-    .flatMap(p => {
-      const collapsed = p.replace(/\n+/g, " ").trim();
-      const linked = linkify(collapsed, playlistTitleMap);
+    .filter(Boolean);
 
-      // Detect playlist line (contains multiple " • " separators)
-      if (linked.includes(" • ")) {
-        return linked
-          .split(" • ")
-          .map(item => {
-            // Extract the <a>...</a> part
-            const match = item.match(/<a [^>]+>.*?<\/a>/);
-            if (match) return `<li>${match[0]}</li>`;
-            return null;
-          })
-          .filter(Boolean);
-      }
+  const output = [];
 
-      return `<p>${linked}</p>`;
-    });
+  for (let i = 0; i < rawParagraphs.length; i++) {
+    const p = rawParagraphs[i];
+    const collapsed = p.replace(/\n+/g, " ").trim();
+    const linked = linkify(collapsed, playlistTitleMap);
 
-  const html = paragraphs.join("");
+    const containsUrl = /https?:\/\//.test(linked);
+    const playlistUrlCount = (linked.match(/playlist\?list=/g) || []).length;
+    const containsVibeEmoji = /🎧|🎤|🎛️|⚡/.test(collapsed);
 
-  if (html.includes("<li>")) {
-    return `<ul class="playlist-links">${html}</ul>`;
+    // Detect playlist header (structural)
+    const next = rawParagraphs[i + 1] || "";
+    const nextLinked = linkify(next, playlistTitleMap);
+    const nextIsPlaylist = (nextLinked.match(/playlist\?list=/g) || []).length >= 2;
+
+    if (!containsUrl && !containsVibeEmoji && nextIsPlaylist) {
+      output.push(`<p class="playlist-header">${linked}</p>`);
+      continue;
+    }
+
+    // Playlist block
+    if (playlistUrlCount >= 2) {
+      const items = linked
+        .split(" • ")
+        .map(item => {
+          const match = item.match(/<a [^>]+>.*?<\/a>/);
+          return match ? `<li>${match[0]}</li>` : null;
+        })
+        .filter(Boolean)
+        .join("");
+
+      output.push(`<ul class="playlist-links">${items}</ul>`);
+      continue;
+    }
+
+    // Vibe block
+    if (containsVibeEmoji && collapsed.includes(":")) {
+      const parts = collapsed.split(/ (?=🎤|🎛️|⚡)/);
+      const items = parts.map(part => `<li>${part}</li>`).join("");
+      output.push(`<ul class="vibe-list">${items}</ul>`);
+      continue;
+    }
+
+    // Normal paragraph
+    output.push(`<p>${linked}</p>`);
   }
 
-  return html;
+  return output.join("");
 }
 
 function linkify(text, playlistTitleMap) {
