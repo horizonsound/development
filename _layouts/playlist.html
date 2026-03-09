@@ -146,10 +146,8 @@ layout: default
         const lyricsHTML = override?.lyrics_html || "";
         const youtubeId = song?.youtube_id || "";
 
-        document.getElementById("selected-song-header").innerHTML = `
-          ${title ? `<h2 class="section-header">${title}</h2>` : ""}
-          ${subtitle ? `<h3 class="song-subtitle">${subtitle}</h3>` : ""}
-        `;
+        document.querySelector(".player-title").textContent = title;
+        document.querySelector(".player-subtitle").textContent = subtitle;
 
         buildPlayer(youtubeId);
 
