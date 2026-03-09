@@ -791,35 +791,6 @@ footer {
   margin-right: auto !important;
 }
 
-/* ============================================
-   MOBILE — CAROUSEL TILE RESIZE (FINAL)
-============================================ */
-@media (max-width: 450px) {
-  .player-frame .carousel-tile {
-    flex: 0 0 32vw !important;
-  }
-
-  .player-frame .carousel-tile img {
-    height: 22vw !important;
-  }
-
-  .player-frame .carousel-tile .tile-title {
-    height: 42px !important;
-    font-size: 0.8rem !important;
-  }
-
-  .player-frame .carousel-arrow {
-    height: 100px !important;
-  }
-}
-
-/* Playlist page + Song page carousel tiles */
-.player-frame .carousel-tile {
-  flex: 0 0 180px !important;
-  width: 180px !important;
-  height: auto !important;
-}
-
 .tile img,
 .carousel-tile img,
 .playlist-tile img {
@@ -1110,19 +1081,6 @@ body::before {
   font-size: 1.75rem;      /* make it visible */
   line-height: 1;
   user-select: none;
-}
-
-#selected-song-player iframe {
-  width: 100%;
-  height: 56.25vw; /* 16:9 ratio */
-  max-height: 480px;
-  border: none;
-}
-
-.player-frame {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 
