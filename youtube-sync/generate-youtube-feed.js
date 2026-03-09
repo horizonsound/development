@@ -97,8 +97,17 @@ function writeYaml(filepath, data) {
 function formatDescriptionToHtml(desc, playlistTitleMap) {
   if (!desc) return "";
 
+  // Normalize bullets and spacing BEFORE splitting into paragraphs
+  desc = desc
+    .replace(/\r/g, "")
+    .replace(/\n+/g, "\n")               // collapse multiple newlines
+    .replace(/•\s*/g, "• ")              // ensure space after bullet
+    .replace(/\s*•/g, " •")              // ensure space before bullet
+    .replace(/•\s+/g, "• ")              // normalize bullet spacing
+    .replace(/\s+https:\/\//g, " https://"); // ensure space before URLs
+
   const rawParagraphs = desc
-    .split(/\n\s*\n/)
+    .split(/\n\s*\n/)                    // split on blank lines
     .map(p => p.trim())
     .filter(Boolean);
 
@@ -107,6 +116,8 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
 
   for (let i = 0; i < rawParagraphs.length; i++) {
     const p = rawParagraphs[i];
+
+    // Collapse internal newlines inside a paragraph
     const collapsed = p.replace(/\n+/g, " ").trim();
     const linked = linkify(collapsed, playlistTitleMap);
 
@@ -114,7 +125,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     const containsBullet = linked.includes("•");
     const containsVibeEmoji = /🎧|🎤|🎛️|⚡/.test(collapsed);
 
-    // --- FORMAT A: One-paragraph playlist block (header + items inline) ---
+    // --- FORMAT A: One-paragraph playlist block ---
     if (playlistUrls >= 2 && containsBullet) {
       const segments = linked.split("•").map(s => s.trim()).filter(Boolean);
 
@@ -135,7 +146,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
       continue;
     }
 
-    // --- FORMAT B: Multi-paragraph playlist block (each bullet separate) ---
+    // --- FORMAT B: Multi-paragraph playlist block ---
     if (collapsed.startsWith("•") && playlistUrls === 1) {
       const match = linked.match(/<a [^>]+>(.*?)<\/a>/);
       if (match) {
@@ -146,7 +157,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
       }
     }
 
-    // Flush Format B items when we hit a non-playlist paragraph
+    // Flush Format B items
     if (pendingFormatBItems.length > 0) {
       output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
       pendingFormatBItems = [];
@@ -164,7 +175,7 @@ function formatDescriptionToHtml(desc, playlistTitleMap) {
     output.push(`<p>${linked}</p>`);
   }
 
-  // Flush any remaining Format B playlist items
+  // Flush any remaining Format B items
   if (pendingFormatBItems.length > 0) {
     output.push(`<ul class="playlist-links">${pendingFormatBItems.join("")}</ul>`);
   }
