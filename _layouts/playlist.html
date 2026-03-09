@@ -250,6 +250,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         document.body.appendChild(s);
       });
+    
+      // 🔥 FIX: Re-trigger YouTube API after <main> is replaced
+      if (typeof onYouTubeIframeAPIReady === "function") {
+        onYouTubeIframeAPIReady();
+      }
     });
   });
 });
