@@ -620,53 +620,6 @@ footer {
 }
 
 /* ============================================
-   PAGE: PLAYLIST PAGE
-============================================ */
-.playlist-list {
-  padding: 0 40px;
-  margin: 32px 0;
-}
-
-.playlist-items {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0;
-}
-
-.playlist-item {
-  margin: 8px 0;
-}
-
-.playlist-item a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.playlist-item a:hover {
-  text-decoration: underline;
-}
-
-.playlist-section .tile-grid {
-  justify-items: start;
-  justify-content: start;
-}
-
-/* Make playlist tiles show the active state */
-.playlist-tile.active,
-.carousel-tile.active {
-  border: 3px solid rgba(180, 120, 220, 0.65);
-  box-shadow: 0 0 12px rgba(180, 120, 220, 0.45);
-}
-
-.playlist-about .section-header,
-.playlist-lyrics .section-header {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 12px;
-}
-
-/* ============================================
    PAGE: ABOUT PAGE
 ============================================ */
 .about-page {
