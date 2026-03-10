@@ -89,6 +89,14 @@ is_playlist_page: true
     </div>
     <div id="selected-song-lyrics" class="lyrics-block"></div>
 
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+      }
+
+      window.scrollTo(0, 0);
+  </script>
+
     <!-- Player Logic (clean, final, working) -->
     <script>
       let YT_PLAYER = null;
