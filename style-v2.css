@@ -979,11 +979,6 @@ footer {
   display: flex !important;
 }
 
-/* FINAL — restore tight paragraph spacing for About + Lyrics */
-.song-description p {
-  margin-bottom: 10px !important;
-}
-
 .lyrics-block p {
   margin-bottom: 6px !important;
   line-height: 1.35 !important;
@@ -1325,4 +1320,8 @@ body::before {
 
 .vibe-list li {
   margin: 4px 0;
+}
+
+.description p {
+  margin-bottom: 8px;
 }
