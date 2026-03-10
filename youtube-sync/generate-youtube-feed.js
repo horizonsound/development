@@ -98,6 +98,8 @@ function writeYaml(filepath, data) {
 function formatDescriptionToHtml(desc) {
   if (!desc) return "";
 
+  desc = desc.replace(/(?<!\n)•/g, "\n•");
+
   return desc
     .split(/\n\s*\n/)               // split on blank lines (any amount of whitespace)
     .map(p => p.trim())             // trim whitespace
