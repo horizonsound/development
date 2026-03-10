@@ -163,13 +163,10 @@ is_playlist_page: true
 
         document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
 
-        document.querySelectorAll('.carousel-tile').forEach(tile => {
-          tile.classList.remove('active');
-          if (tile.getAttribute('data-song-id') === songId) {
-            tile.classList.add('active');
-            tile.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-          }
-        });
+
+      
+      
+      
       }
     </script>
 
