@@ -105,9 +105,18 @@ function formatDescriptionToHtml(desc) {
     .map(p => p.trim())             // trim whitespace
     .filter(p => p.length > 0)      // remove empty paragraphs
     .map(p => {
-      // collapse internal newlines into spaces
-      const collapsed = p//.replace(/\n+/g, " ").trim();
-      return `<p>${collapsed}</p>`;
+      // FORMAT A: bullet + URL → bullet + linked arrow
+      if (p.startsWith("•")) {
+        const urlMatch = p.match(/https?:\/\/\S+/);
+        if (urlMatch) {
+          const url = urlMatch[0];
+          const title = p.replace(url, "").trim();
+          return `<p>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></p>`;
+        }
+      }
+    
+      // Normal paragraph
+      return `<p>${p}</p>`;
     })
     .join("");                    // no blank lines between paragraphs
 }
