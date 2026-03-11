@@ -83,11 +83,25 @@ body::before {
   );
   backdrop-filter: blur(10px);
   color: white;
-  padding: 20px 40px;
+  padding: 20px 0;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;   /* NEW */
+  flex-direction: column;   /* stack rows vertically */
+  gap: 12px;
+}
+
+.site-header-top {
+  display: flex;
+  justify-content: space-between;   /* branding left, speaker right */
+  align-items: center;
+  width: 100%;
+}
+
+.site-header > .branding,
+.site-header > .autoplay-toggle {
+  width: auto;
 }
 
 .branding {
