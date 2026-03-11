@@ -1345,4 +1345,21 @@ footer {
   cursor: pointer;
   user-select: none;
 }
+.tile {
+  position: relative;
+  width: 260px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.tile-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  z-index: 10;
+}
 
