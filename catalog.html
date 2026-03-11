@@ -6,18 +6,40 @@ title: Music – Horizon Sound
 {% assign all_songs = site.data.youtube_feed.songs %}
 {% include hero.html %}
 
+
+
+
+
+
+
+
+
+
 <div class="music-page">
   <div class="catalog-panel">
 
     <!-- HEADER -->
     <div class="catalog-header">
-
-      <div class="catalog-toggle">
-        <button class="mode-toggle-button active" data-mode="playlists">Playlist View</button>
-        <button class="mode-toggle-button" data-mode="catalog">Catalog Explorer</button>
+    
+      <!-- ROW 1 -->
+      <div class="catalog-header-row">
+        <div class="catalog-toggle">
+          <button class="mode-toggle-button active" data-mode="playlists">Playlist View</button>
+          <button class="mode-toggle-button" data-mode="catalog">Catalog Explorer</button>
+        </div>
+    
+        <h2 class="page-title">Playlist Explorer</h2>
+    
+        <div class="catalog-header-spacer"></div>
       </div>
-      <h2 class="page-title">Catalog Explorer</h2>
-      <div class="catalog-header-spacer"></div>
+    
+      <!-- ROW 2 -->
+      <div class="catalog-subtoggle">
+        <button class="view-toggle-button active" data-view="grouped">Grouped by Playlist</button>
+        <button class="view-toggle-button" data-view="all">All Songs</button>
+        <button class="view-toggle-button" data-view="carousel">Carousel View</button>
+      </div>
+    
     </div>
 
     <!-- MAIN CONTENT -->
@@ -28,14 +50,6 @@ title: Music – Horizon Sound
       </section>
 
       <section id="music-view-catalog" style="display:none;">
-
-        <div class="view-toggle">
-          <div class="catalog-subtoggle">
-            <button class="view-toggle-button active" data-view="grouped">Grouped by Playlist</button>
-            <button class="view-toggle-button" data-view="all">All Songs</button>
-            <button class="view-toggle-button" data-view="carousel">Carousel View</button>
-          </div>
-        </div>
 
         <section id="music-view-grouped"></section>
         <section id="music-view-all" style="display:none;"></section>
