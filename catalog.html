@@ -5,26 +5,29 @@ title: Music – Horizon Sound
 
 {% assign all_songs = site.data.youtube_feed.songs %}
 {% include hero.html %}
+
 <div class="music-page">
   <div class="catalog-panel">
+
+    <!-- HEADER -->
     <div class="catalog-header">
+      <h2 class="page-title">Catalog Explorer</h2>
+
       <div class="catalog-toggle">
         <button class="mode-toggle-button active" data-mode="playlists">Playlist View</button>
         <button class="mode-toggle-button" data-mode="catalog">Catalog Explorer</button>
       </div>
-      <h2 class="page-title">Catalog Explorer</h2>
     </div>
+
+    <!-- MAIN CONTENT -->
     <div class="catalog-content">
-      <!-- ============================================================
-           PLAYLIST VIEW (NEW DEFAULT MODE)
-           Premium 3:1 playlist tiles
-      ============================================================ -->
-      <section id="music-view-playlists">  
+
+      <section id="music-view-playlists">
         <h2 class="section-header">Playlists</h2>
-      
       </section>
-      
+
       <section id="music-view-catalog" style="display:none;">
+
         <div class="view-toggle">
           <div class="view-toggle-buttons">
             <button class="view-toggle-button active" data-view="grouped">Grouped by Playlist</button>
@@ -32,34 +35,21 @@ title: Music – Horizon Sound
             <button class="view-toggle-button" data-view="carousel">Carousel View</button>
           </div>
         </div>
-        <!-- ============================================================
-             GROUPED VIEW
-        ============================================================ -->
-        <section id="music-view-grouped">
-        
-        </section>
-        
-        <!-- ============================================================
-             ALL SONGS VIEW
-        ============================================================ -->
-        <section id="music-view-all" style="display:none;">
 
-        </section>
-        
-        <!-- ============================================================
-             CAROUSEL VIEW
-        ============================================================ -->
-        <section id="music-view-carousel" style="display:none;">
-        </section>
-      
+        <section id="music-view-grouped"></section>
+        <section id="music-view-all" style="display:none;"></section>
+        <section id="music-view-carousel" style="display:none;"></section>
+
         <script>
         /* JS unchanged */
         </script>
 
       </section>
-    </div>
-  </div>
-</div>
+
+    </div><!-- catalog-content -->
+
+  </div><!-- catalog-panel -->
+</div><!-- music-page -->
 
   <script>
   document.addEventListener("DOMContentLoaded", () => {
