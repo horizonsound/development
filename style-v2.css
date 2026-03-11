@@ -1416,3 +1416,14 @@ footer {
   z-index: 10;
 }
 
+.carousel-tile h3.tile-title {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  flex: 0 0 auto !important;
+  margin-top: 6px !important;
+  text-align: left !important;
+}
+
