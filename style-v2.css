@@ -83,7 +83,7 @@ body::before {
   );
   backdrop-filter: blur(10px);
   color: white;
-  padding: 20px 0;
+  padding: 20px 30px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@ body::before {
 
 .branding h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.24rem;
   font-weight: 700;
 }
 
