@@ -406,30 +406,17 @@ title: Catalog – Horizon Sound
     const groupedView    = document.getElementById("catalog-view-grouped");
     const allView        = document.getElementById("catalog-view-all");
     const carouselView   = document.getElementById("catalog-view-carousel");
-
-    // -----------------------------
-    // RESTORE STATE ON PAGE LOAD
-    // -----------------------------
-    const savedMode = localStorage.getItem("music_mode") || "collection";
-    const savedView = localStorage.getItem("catalog_view") || "grouped";
   
-
-    function setMode(mode, { save = true } = {}) {
+    function setMode(mode) {
       modeButtons.forEach(b => b.classList.remove("active"));
-      document.querySelector(`[data-mode="${mode}"]`).classList.add("active");
+      const btn = document.querySelector(`[data-mode="${mode}"]`);
+      if (btn) btn.classList.add("active");
   
       if (mode === "catalog") {
         collectionView.style.display = "none";
         catalogView.style.display = "block";
         pageTitle.textContent = "Catalog Explorer";
         subToggleRow.style.display = "flex";
-
-        if (save === false) {
-          setCatalogView(savedView, { save: false });
-        } else {
-          setCatalogView("grouped");
-        }
-
       } else {
         collectionView.style.display = "block";
         catalogView.style.display = "none";
@@ -437,38 +424,41 @@ title: Catalog – Horizon Sound
         subToggleRow.style.display = "none";
       }
 
-      if (save) localStorage.setItem("music_mode", mode);
+      localStorage.setItem("music_mode", mode);
     }
   
-    function setCatalogView(view, { save = true } = {}) {
+    function setCatalogView(view) {
       groupedView.style.display  = (view === "grouped")  ? "block" : "none";
       allView.style.display      = (view === "all")      ? "block" : "none";
       carouselView.style.display = (view === "carousel") ? "block" : "none";
   
       viewButtons.forEach(b => b.classList.remove("active"));
-      document.querySelector(`[data-view="${view}"]`).classList.add("active");
+      const btn = document.querySelector(`[data-view="${view}"]`);
+      if (btn) btn.classList.add("active");
 
-      if (save) localStorage.setItem("catalog_view", view);
+      localStorage.setItem("catalog_view", view);
     }
 
     // -----------------------------
-    // INITIAL RESTORE
+    // RESTORE STATE
     // -----------------------------
-    setMode(savedMode, { save: false });
+    const savedMode = localStorage.getItem("music_mode") || "collection";
+    const savedView = localStorage.getItem("catalog_view") || "grouped";
+
+    setMode(savedMode);
+    if (savedMode === "catalog") {
+      setCatalogView(savedView);
+    }
 
     // -----------------------------
-    // USER INTERACTION (FIXED)
+    // USER INTERACTION
     // -----------------------------
     modeButtons.forEach(btn =>
-      btn.addEventListener("click", () =>
-        setMode(btn.dataset.mode, { save: true })
-      )
+      btn.addEventListener("click", () => setMode(btn.dataset.mode))
     );
 
     viewButtons.forEach(btn =>
-      btn.addEventListener("click", () =>
-        setCatalogView(btn.dataset.view, { save: true })
-      )
+      btn.addEventListener("click", () => setCatalogView(btn.dataset.view))
     );
   });
 </script>
