@@ -1,4 +1,5 @@
-<div class="catalog-group-panel">
+
+<div class="catalog-group-panel collection-premium-panel">
   <h2 class="catalog-group-title">Collections</h2>
 
   <div class="catalog-group-tiles">
@@ -25,25 +26,24 @@
       {% endif %}
     {% endfor %}
 
-    <div class="catalog-group-panel collection-premium-panel">
-      {% for pl in active_playlists %}
-        <a class="shared-tile collection-premium"
-           href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/?song_id={{ pl.song_ids | first }}">
-          <img src="{{ site.baseurl }}{{ pl.thumbnail }}">
-          <div class="shared-tile-title">{{ pl.title }}</div>
-        </a>
-      {% endfor %}
-  
-      {% for pl in coming_soon_playlists %}
-        <div class="shared-tile collection-premium coming-soon">
-          <img src="{{ site.baseurl }}{{ pl.thumbnail }}">
-          <div class="tile-overlay">Coming Soon</div>
-          <div class="shared-tile-title">{{ pl.title }}</div>
-        </div>
-      {% endfor %}
-    </div>
+    {% for pl in active_playlists %}
+      <a class="shared-tile collection-premium"
+         href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/?song_id={{ pl.song_ids | first }}">
+        <img src="{{ site.baseurl }}{{ pl.thumbnail }}">
+        <div class="shared-tile-title">{{ pl.title }}</div>
+      </a>
+    {% endfor %}
+
+    {% for pl in coming_soon_playlists %}
+      <div class="shared-tile collection-premium coming-soon">
+        <img src="{{ site.baseurl }}{{ pl.thumbnail }}">
+        <div class="tile-overlay">Coming Soon</div>
+        <div class="shared-tile-title">{{ pl.title }}</div>
+      </div>
+    {% endfor %}
   </div>
 </div>
+
 {% for pl in site.data.youtube_playlists.playlists %}
   {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.song_id" %}
   {% assign playlist_sorted = songs_in_list | sort: "title" %}
