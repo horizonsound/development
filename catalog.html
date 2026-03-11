@@ -12,52 +12,59 @@ title: Music – Horizon Sound
     <!-- HEADER -->
     <div class="catalog-header">
     
-      <!-- ROW 1 -->
+      <!-- ROW 1: Mode toggle + centered title + spacer -->
       <div class="catalog-header-row">
         <div class="catalog-toggle">
           <button class="mode-toggle-button active" data-mode="playlists">Collection Explorer</button>
           <button class="mode-toggle-button" data-mode="catalog">Catalog Explorer</button>
         </div>
-        
+    
         <h2 class="page-title">Collection Explorer</h2>
-        
+    
         <div class="catalog-header-spacer"></div>
-        
-        <div class="catalog-subtoggle">
-          <button class="view-toggle-button active" data-view="grouped">Grouped by View</button>
-          <button class="view-toggle-button" data-view="all">All Music View</button>
-          <button class="view-toggle-button" data-view="carousel">Carousel View</button>
-        </div>      
       </div>
+    
+      <!-- ROW 2: Sub-view toggle (hidden in playlists mode) -->
+      <div class="catalog-subtoggle" style="display:none;">
+        <button class="view-toggle-button active" data-view="grouped">Grouped by View</button>
+        <button class="view-toggle-button" data-view="all">All Music View</button>
+        <button class="view-toggle-button" data-view="carousel">Carousel View</button>
+      </div>
+    
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="catalog-content">
-
-      <section id="music-view-catalog" style="display:none;">
-
-        <section id="music-view-grouped"></section>
-          <section id="music-view-playlists">
-            <h2 class="section-header">Catalog Grouped View</h2>
-          </section>
-        
-        <section id="music-view-all" style="display:none;"></section>
-          <section id="music-view-playlists">
-            <h2 class="section-header">Catalog All Music View</h2>
-          </section>
     
-        <section id="music-view-carousel" style="display:none;"></section>
-          <section id="music-view-playlists">
-            <h2 class="section-header">Catalog Carousel View</h2>
-          </section>
-
-        <script>
-        /* JS unchanged */
-        </script>
-
+      <!-- COLLECTION EXPLORER -->
+      <section id="catalog-view-playlists">
+        <!-- (Leave empty for now — your saved content will go here) -->
       </section>
-
-    </div><!-- catalog-content -->
+    
+      <!-- CATALOG EXPLORER -->
+      <section id="catalog-view-catalog" style="display:none;">
+    
+        <!-- GROUPED VIEW -->
+        <section id="catalog-view-grouped">
+          <h2 class="section-header">Catalog Grouped View</h2>
+          <!-- (empty placeholder) -->
+        </section>
+    
+        <!-- ALL MUSIC VIEW -->
+        <section id="catalog-view-all" style="display:none;">
+          <h2 class="section-header">Catalog All Music View</h2>
+          <!-- (empty placeholder) -->
+        </section>
+    
+        <!-- CAROUSEL VIEW -->
+        <section id="catalog-view-carousel" style="display:none;">
+          <h2 class="section-header">Catalog Carousel View</h2>
+          <!-- (empty placeholder) -->
+        </section>
+    
+      </section>
+    
+    </div>
 
   </div><!-- catalog-panel -->
 </div><!-- music-page -->
