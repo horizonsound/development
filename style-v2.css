@@ -959,6 +959,27 @@ footer {
   width: 120px; /* matches approximate width of toggle area */
 }
 
+.catalog-subtoggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.view-toggle-button {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view-toggle-button.active {
+  background: rgba(255,255,255,0.18);
+}
+
 
 
 
