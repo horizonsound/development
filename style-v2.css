@@ -238,7 +238,7 @@ footer {
 
 /* Tile title (shared with carousel tiles) */
 .tile .tile-title,
-.carousel-tile .tile-title {
+.tile .tile-title {
   width: 100%;
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
@@ -274,7 +274,7 @@ footer {
 
 /* Coming Soon tiles */
 .tile.coming-soon,
-.carousel-tile.coming-soon {
+.tile.coming-soon {
   position: relative;
   opacity: 0.6;
   pointer-events: none;
@@ -282,7 +282,7 @@ footer {
 }
 
 .tile.coming-soon .tile-overlay,
-.carousel-tile.coming-soon .tile-overlay {
+.tile.coming-soon .tile-overlay {
   position: absolute;
   inset: 0;
   display: flex;
@@ -1257,6 +1257,13 @@ footer {
   white-space: normal;
   overflow-wrap: break-word;
   margin-top: 6px;
+}
+
+.horizontal-strip[data-strip] {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
 }
 
 .carousel-tile,
