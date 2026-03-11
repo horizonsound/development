@@ -125,6 +125,11 @@ body::before {
   margin-top: 20px;
   border-top: 1px solid #333;
   padding-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;   /* left-align the menu */
+  font-size: 1.125rem;   /* 18px — clean, readable */
+  font-weight: 500;
 }
 
 .main-nav ul {
@@ -133,6 +138,8 @@ body::before {
   gap: 24px;
   margin: 0;
   padding: 0;
+  justify-content: flex-start;   /* left-align items */
+  padding-left: 0;               /* remove browser default indent */
 }
 
 .main-nav a {
