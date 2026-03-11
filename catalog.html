@@ -3,9 +3,7 @@ layout: default
 title: Catalog – Horizon Sound
 ---
 
-<main class="site-main">
-
-<div class="catalog-page">
+<section id="catalog-page">
   <div class="catalog-panel">
 
     <div class="catalog-header">
@@ -58,55 +56,5 @@ title: Catalog – Horizon Sound
     </div>
 
   </div>
-</div>
+</section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const modeButtons = document.querySelectorAll(".mode-toggle-button");
-  const viewButtons = document.querySelectorAll(".view-toggle-button");
-
-  const pageTitle      = document.querySelector(".catalog-page-title");
-  const subToggleRow   = document.querySelector(".catalog-subtoggle");
-
-  const collectionView = document.getElementById("catalog-view-collection");
-  const catalogView    = document.getElementById("catalog-view-catalog");
-
-  const groupedView    = document.getElementById("catalog-view-grouped");
-  const allView        = document.getElementById("catalog-view-all");
-  const carouselView   = document.getElementById("catalog-view-carousel");
-
-  function setMode(mode) {
-    modeButtons.forEach(b => b.classList.remove("active"));
-    document.querySelector(`[data-mode="${mode}"]`).classList.add("active");
-
-    if (mode === "catalog") {
-      collectionView.style.display = "none";
-      catalogView.style.display = "block";
-      pageTitle.textContent = "Catalog Explorer";
-      subToggleRow.style.display = "flex";
-      setCatalogView("grouped");
-    } else {
-      collectionView.style.display = "block";
-      catalogView.style.display = "none";
-      pageTitle.textContent = "Collection Explorer";
-      subToggleRow.style.display = "none";
-    }
-  }
-
-  function setCatalogView(view) {
-    groupedView.style.display  = (view === "grouped")  ? "block" : "none";
-    allView.style.display      = (view === "all")      ? "block" : "none";
-    carouselView.style.display = (view === "carousel") ? "block" : "none";
-
-    viewButtons.forEach(b => b.classList.remove("active"));
-    document.querySelector(`[data-view="${view}"]`).classList.add("active");
-  }
-
-  setMode("collection");
-
-  modeButtons.forEach(btn => btn.addEventListener("click", () => setMode(btn.dataset.mode)));
-  viewButtons.forEach(btn => btn.addEventListener("click", () => setCatalogView(btn.dataset.view)));
-});
-</script>
-
-</main>
