@@ -920,11 +920,11 @@ footer {
 
 
 .catalog-toggle {
-  display: inline-flex;
+  display: flex;
   background: rgba(255,155,155,0.08);
   border-radius: 8px;
   padding: 4px;
-  gap: 4px;
+  gap: 8px;
 }
 
 .catalog-toggle button {
@@ -940,6 +940,24 @@ footer {
   background: rgba(255,255,255,0.18);
 }
 
+.catalog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* creates left / center / right zones */
+  width: 100%;
+  position: relative;
+}
+
+.page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.catalog-header-spacer {
+  width: 120px; /* matches approximate width of toggle area */
+}
 
 
 
