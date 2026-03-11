@@ -42,3 +42,43 @@
     {% endfor %}
   </div>
 </div>
+{% for pl in site.data.youtube_playlists.playlists %}
+  {% assign songs_in_list = all_songs | where_exp: "s", "pl.song_ids contains s.song_id" %}
+  {% assign playlist_sorted = songs_in_list | sort: "title" %}
+
+  {% if playlist_sorted.size > 0 %}
+    <div class="catalog-group-panel">
+      <h2 class="catalog-group-title">{{ pl.title }}</h2>
+
+      <div class="catalog-group-tiles">
+
+        {% for song in playlist_sorted %}
+          {% assign override = site.data.music_overrides.overrides | where: "song_id", song.song_id | first %}
+          {% assign display_title = override.title | default: song.title %}
+
+          {% if song.videostatus == "public" %}
+            <a class="shared-tile"
+               href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/?song_id={{ song.song_id }}">
+              <img src="{{ site.baseurl }}{{ song.thumbnail }}">
+              <div class="shared-tile-title">{{ display_title }}</div>
+            </a>
+          {% endif %}
+        {% endfor %}
+
+        {% for song in playlist_sorted %}
+          {% assign override = site.data.music_overrides.overrides | where: "song_id", song.song_id | first %}
+          {% assign display_title = override.title | default: song.title %}
+
+          {% if song.videostatus != "public" %}
+            <div class="shared-tile coming-soon">
+              <img src="{{ site.baseurl }}{{ song.thumbnail }}">
+              <div class="tile-overlay">Coming Soon</div>
+              <div class="shared-tile-title">{{ display_title }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
