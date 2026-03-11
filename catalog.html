@@ -157,15 +157,19 @@ document.addEventListener("DOMContentLoaded", function () {
       if (mode === "playlists") {
         playlistView.style.display = "block";
         catalogView.style.display = "none";
+        // UPDATE TITLE
+        document.querySelector(".page-title").textContent = "Playlist Explorer";
       } else {
         playlistView.style.display = "none";
         catalogView.style.display = "block";
+        // UPDATE TITLE
+        document.querySelector(".page-title").textContent = "Catalog Explorer";
       }
 
       localStorage.setItem("music_mode", mode);
     });
   });
-
+  
   /* -----------------------------
      CATALOG SUB-VIEW RESTORE
      (Grouped / All / Carousel)
