@@ -455,6 +455,32 @@ title: Catalog – Horizon Sound
 .content-arrow {
   flex: 0 0 auto;
 }
+
+/* Horizontal strip behavior */
+.content-strip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* Prevent tile shrinking */
+.content-strip .shared-tile {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 180px; /* match your tile width */
+  margin-right: 16px;
+}
+
+/* Carousel container */
+.content-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
   
 </style>
 
