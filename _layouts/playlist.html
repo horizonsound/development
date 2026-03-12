@@ -671,6 +671,11 @@ tile.addEventListener('click', () => {
 
   loadSong(id);
 
+setTimeout(() => {
+  const stillActive = document.querySelector('.shared-tile.active');
+  console.log("After loadSong, active tile still exists:", stillActive);
+}, 200);
+
   const carousel = tile.closest('.horizontal-strip');
   if (carousel) {
     carousel.scrollTo({
