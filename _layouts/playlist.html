@@ -565,208 +565,146 @@ is_playlist_page: true
     </div>
     <div id="selected-song-lyrics" class="lyrics-block"></div>
 
-    <!-- Player Logic (clean, final, working) -->
-    <script>
-      let YT_PLAYER = null;
-      let YT_READY = false;
-
-      function onYouTubeIframeAPIReady() {
-        YT_READY = true;
-      }
-
-        function buildPlayer(youtubeId) {
-          if (!YT_READY || !ensurePlayerContainer()) {
-            setTimeout(() => buildPlayer(youtubeId), 50);
-            return;
-          }
-        
-          if (!YT_PLAYER) {
-            YT_PLAYER = new YT.Player('player-container', {
-              videoId: youtubeId,
-              playerVars: {
-                autoplay: 1,
-                mute: 0,
-                controls: 1,
-                rel: 0
-              },
-              events: {
-                'onStateChange': onPlayerStateChange
-              }
-            });
-          } else {
-            YT_PLAYER.loadVideoById(youtubeId);
-          }
-        }
-
-      function ensurePlayerContainer() {
-        return document.getElementById("player-container") !== null;
-      }
-
-      function onPlayerStateChange(event) {
-        if (event.data === YT.PlayerState.ENDED) {
-          advanceToNextSong(window.SELECTED_SONG_ID);
-        }
-      }
-
-      function loadSong(songId) {
-        window.SELECTED_SONG_ID = songId;
-
-        const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
-        const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
-
-        const title = override?.title || song?.title || "";
-        const subtitle = override?.subtitle || "";
-        const extraTitle = override?.extra_title || "";
-        const extraHTML = override?.extra_html || "";
-        const about = song?.description_html || "";
-        const lyricsHTML = override?.lyrics_html || "";
-        const youtubeId = song?.youtube_id || "";
-
-        document.querySelector(".player-title").textContent = title;
-        document.querySelector(".player-subtitle").textContent = subtitle;
-
-        buildPlayer(youtubeId);
-
-        document.getElementById("selected-song-extra").innerHTML = `
-          ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
-          ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
-        `;
-
-        document.getElementById("selected-song-about").innerHTML = `
-          ${about ? `<h3 class="section-header">About</h3>` : ""}
-          ${about ? `<div class="about-text">${about}</div>` : ""}
-        `;
-
-        document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
-        highlightTile(songId);
-      }
-      function highlightTile(songId) {
-        const tiles = document.querySelectorAll('.content-strip .shared-tile');
-      
-        tiles.forEach(t => t.classList.remove('active'));
-      
-        const activeTile = document.querySelector(`.content-strip .shared-tile[data-song-id="${songId}"]`);
-        if (!activeTile) return;
-      
-        activeTile.classList.add('active');
-      
-        // Center it in the carousel
-        const strip = activeTile.closest('.content-strip');
-        if (strip) {
-          strip.scrollTo({
-            left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
-            behavior: 'smooth'
-          });
-        }
-      }
-    </script>
-
-    <script>        
-        document.querySelectorAll('.shared-tile').forEach(tile => {
-tile.addEventListener('click', () => {
-  if (tile.classList.contains('coming-soon')) return;
-
-  // DEBUG: remove the image on the selected tile
-  const img = tile.querySelector("img");
-  if (img) {
-    img.style.display = "none";
-    console.log("DEBUG: removed image for tile:", tile.getAttribute("data-song-id"));
-  }
-
-  const id = tile.getAttribute('data-song-id');
-
-  const url = new URL(window.location.href);
-  url.searchParams.set("song_id", id);
-  history.pushState({}, "", url.toString());
-
-  loadSong(id);
-
-setTimeout(() => {
-  const stillActive = document.querySelector('.shared-tile.active');
-  console.log("After loadSong, active tile still exists:", stillActive);
-}, 200);
-
-  const carousel = tile.closest('.horizontal-strip');
-  if (carousel) {
-    carousel.scrollTo({
-      left: tile.offsetLeft - carousel.offsetWidth / 2 + tile.offsetWidth / 2,
-      behavior: 'smooth'
-    });
-  }
-});
-        });
-
-        function advanceToNextSong(currentId) {
-          const tiles = Array.from(document.querySelectorAll('.shared-tile:not(.coming-soon)'));
-          const index = tiles.findIndex(t => t.getAttribute('data-song-id') === currentId);
-        
-          if (index === -1) return;
-        
-          const nextTile = tiles[index + 1];
-          if (!nextTile) return;
-        
-          const nextId = nextTile.getAttribute('data-song-id');
-        
-          const url = new URL(window.location.href);
-          url.searchParams.set("song_id", nextId);
-          history.pushState({}, "", url.toString());
-        
-          loadSong(nextId);
-        }
-    </script>
-    <script>
-        if (window.SELECTED_SONG_ID) {
-          loadSong(window.SELECTED_SONG_ID);
-        }
-    </script>
-
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".content-carousel").forEach(carousel => {
-    const strip = carousel.querySelector(".content-strip");
-    const leftArrow = carousel.querySelector(".content-arrow-left");
-    const rightArrow = carousel.querySelector(".content-arrow-right");
-
-    if (!strip || !leftArrow || !rightArrow) return;
-
-    const SCROLL_AMOUNT = 260; // tile width + gap
-
-    leftArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
-    });
-
-    rightArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
-    });
-  });
-});
-</script>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("=== PLAYLIST DEBUG START ===");
+  let YT_PLAYER = null;
+  let YT_READY = false;
 
-  // 1. What does the URL say?
-  console.log("URL SELECTED_SONG_ID:", window.SELECTED_SONG_ID);
+  function onYouTubeIframeAPIReady() {
+    YT_READY = true;
+  }
 
-  // 2. What tiles exist in the playlist carousel?
-  const tiles = document.querySelectorAll(".content-strip .shared-tile");
-  console.log("Found tiles:", tiles.length);
+  function buildPlayer(youtubeId) {
+    if (!YT_READY || !ensurePlayerContainer()) {
+      setTimeout(() => buildPlayer(youtubeId), 50);
+      return;
+    }
 
-  tiles.forEach((t, i) => {
-    console.log(
-      `Tile ${i}:`,
-      "data-song-id =", t.getAttribute("data-song-id"),
-      "title =", t.querySelector(".shared-tile-title")?.textContent.trim()
-    );
-  });
+    if (!YT_PLAYER) {
+      YT_PLAYER = new YT.Player('player-container', {
+        videoId: youtubeId,
+        playerVars: {
+          autoplay: 1,
+          mute: 0,
+          controls: 1,
+          rel: 0
+        },
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    } else {
+      YT_PLAYER.loadVideoById(youtubeId);
+    }
+  }
 
-  // 3. Does the page think it can find the selected tile?
-  const match = document.querySelector(
-    `.content-strip .shared-tile[data-song-id="${window.SELECTED_SONG_ID}"]`
-  );
-  console.log("Matching tile:", match);
-  console.log("=== PLAYLIST DEBUG END ===");
-});
+  function ensurePlayerContainer() {
+    return document.getElementById("player-container") !== null;
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.ENDED) {
+      advanceToNextSong(window.SELECTED_SONG_ID);
+    }
+  }
+
+  function loadSong(songId) {
+    window.SELECTED_SONG_ID = songId;
+
+    const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
+    const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
+
+    const title = override?.title || song?.title || "";
+    const subtitle = override?.subtitle || "";
+    const extraTitle = override?.extra_title || "";
+    const extraHTML = override?.extra_html || "";
+    const about = song?.description_html || "";
+    const lyricsHTML = override?.lyrics_html || "";
+    const youtubeId = song?.youtube_id || "";
+
+    document.querySelector(".player-title").textContent = title;
+    document.querySelector(".player-subtitle").textContent = subtitle;
+
+    buildPlayer(youtubeId);
+
+    document.getElementById("selected-song-extra").innerHTML = `
+      ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
+      ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
+    `;
+
+    document.getElementById("selected-song-about").innerHTML = `
+      ${about ? `<h3 class="section-header">About</h3>` : ""}
+      ${about ? `<div class="about-text">${about}</div>` : ""}
+    `;
+
+    document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
+
+    highlightTile(songId);
+  }
+
+  function highlightTile(songId) {
+    const tiles = document.querySelectorAll('.shared-tile');
+    tiles.forEach(t => t.classList.remove('active'));
+
+    const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
+    if (!activeTile) return;
+
+    activeTile.classList.add('active');
+
+    const strip = activeTile.closest('.content-strip, .horizontal-strip');
+    if (strip) {
+      strip.scrollTo({
+        left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
+        behavior: 'smooth'
+      });
+    }
+  }
 </script>
 
+<script>
+  document.addEventListener("click", (e) => {
+    const tile = e.target.closest(".shared-tile");
+    if (!tile) return;
+    if (tile.classList.contains("coming-soon")) return;
+
+    const id = tile.getAttribute("data-song-id");
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("song_id", id);
+    history.pushState({}, "", url.toString());
+
+    loadSong(id);
+
+    const strip = tile.closest('.content-strip, .horizontal-strip');
+    if (strip) {
+      strip.scrollTo({
+        left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  function advanceToNextSong(currentId) {
+    const tiles = Array.from(document.querySelectorAll('.shared-tile:not(.coming-soon)'));
+    const index = tiles.findIndex(t => t.getAttribute('data-song-id') === currentId);
+
+    if (index === -1) return;
+
+    const nextTile = tiles[index + 1];
+    if (!nextTile) return;
+
+    const nextId = nextTile.getAttribute('data-song-id');
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("song_id", nextId);
+    history.pushState({}, "", url.toString());
+
+    loadSong(nextId);
+  }
+</script>
+
+<script>
+  if (window.SELECTED_SONG_ID) {
+    loadSong(window.SELECTED_SONG_ID);
+  }
+</script>
 </main>
