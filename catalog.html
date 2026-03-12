@@ -561,77 +561,7 @@ title: Catalog – Horizon Sound
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const modeButtons = document.querySelectorAll(".mode-toggle-button");
-    const viewButtons = document.querySelectorAll(".view-toggle-button");
-  
-    const pageTitle      = document.querySelector(".catalog-page-title");
-    const subToggleRow   = document.querySelector(".catalog-subtoggle");
-  
-    const collectionView = document.getElementById("catalog-view-collection");
-    const catalogView    = document.getElementById("catalog-view-catalog");
-  
-    const groupedView    = document.getElementById("catalog-view-grouped");
-    const allView        = document.getElementById("catalog-view-all");
-    const carouselView   = document.getElementById("catalog-view-carousel");
-  
-    function setMode(mode) {
-      modeButtons.forEach(b => b.classList.remove("active"));
-      const btn = document.querySelector(`[data-mode="${mode}"]`);
-      if (btn) btn.classList.add("active");
-  
-      if (mode === "catalog") {
-        collectionView.style.display = "none";
-        catalogView.style.display = "block";
-        pageTitle.textContent = "Catalog Explorer";
-        subToggleRow.style.display = "flex";
-      } else {
-        collectionView.style.display = "block";
-        catalogView.style.display = "none";
-        pageTitle.textContent = "Collection Explorer";
-        subToggleRow.style.display = "none";
-      }
-
-      localStorage.setItem("music_mode", mode);
-    }
-  
-    function setCatalogView(view) {
-      groupedView.style.display  = (view === "grouped")  ? "block" : "none";
-      allView.style.display      = (view === "all")      ? "block" : "none";
-      carouselView.style.display = (view === "carousel") ? "block" : "none";
-  
-      viewButtons.forEach(b => b.classList.remove("active"));
-      const btn = document.querySelector(`[data-view="${view}"]`);
-      if (btn) btn.classList.add("active");
-
-      localStorage.setItem("catalog_view", view);
-    }
-
-    // -----------------------------
-    // RESTORE STATE
-    // -----------------------------
-    const savedMode = localStorage.getItem("music_mode") || "collection";
-    const savedView = localStorage.getItem("catalog_view") || "grouped";
-
-    setMode(savedMode);
-    if (savedMode === "catalog") {
-      setCatalogView(savedView);
-    }
-
-    // -----------------------------
-    // USER INTERACTION
-    // -----------------------------
-    modeButtons.forEach(btn =>
-      btn.addEventListener("click", () => setMode(btn.dataset.mode))
-    );
-
-    viewButtons.forEach(btn =>
-      btn.addEventListener("click", () => setCatalogView(btn.dataset.view))
-    );
-  });
-</script>
-
-<script>
+document.addEventListener("DOMContentLoaded", initCatalogPage);
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ============================================================
@@ -718,6 +648,70 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 });
+
+  function initCatalogPage() {
+  const modeButtons = document.querySelectorAll(".mode-toggle-button");
+  const viewButtons = document.querySelectorAll(".view-toggle-button");
+
+  const pageTitle      = document.querySelector(".catalog-page-title");
+  const subToggleRow   = document.querySelector(".catalog-subtoggle");
+
+  const collectionView = document.getElementById("catalog-view-collection");
+  const catalogView    = document.getElementById("catalog-view-catalog");
+
+  const groupedView    = document.getElementById("catalog-view-grouped");
+  const allView        = document.getElementById("catalog-view-all");
+  const carouselView   = document.getElementById("catalog-view-carousel");
+
+  function setMode(mode) {
+    modeButtons.forEach(b => b.classList.remove("active"));
+    const btn = document.querySelector(`[data-mode="${mode}"]`);
+    if (btn) btn.classList.add("active");
+
+    if (mode === "catalog") {
+      collectionView.style.display = "none";
+      catalogView.style.display = "block";
+      pageTitle.textContent = "Catalog Explorer";
+      subToggleRow.style.display = "flex";
+    } else {
+      collectionView.style.display = "block";
+      catalogView.style.display = "none";
+      pageTitle.textContent = "Collection Explorer";
+      subToggleRow.style.display = "none";
+    }
+
+    localStorage.setItem("music_mode", mode);
+  }
+
+  function setCatalogView(view) {
+    groupedView.style.display  = (view === "grouped")  ? "block" : "none";
+    allView.style.display      = (view === "all")      ? "block" : "none";
+    carouselView.style.display = (view === "carousel") ? "block" : "none";
+
+    viewButtons.forEach(b => b.classList.remove("active"));
+    const btn = document.querySelector(`[data-view="${view}"]`);
+    if (btn) btn.classList.add("active");
+
+    localStorage.setItem("catalog_view", view);
+  }
+
+  const savedMode = localStorage.getItem("music_mode") || "collection";
+  const savedView = localStorage.getItem("catalog_view") || "grouped";
+
+  setMode(savedMode);
+  if (savedMode === "catalog") {
+    setCatalogView(savedView);
+  }
+
+  modeButtons.forEach(btn =>
+    btn.addEventListener("click", () => setMode(btn.dataset.mode))
+  );
+
+  viewButtons.forEach(btn =>
+    btn.addEventListener("click", () => setCatalogView(btn.dataset.view))
+  );
+}
+
 </script>
 
 <script>
