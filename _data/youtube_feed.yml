@@ -238,7 +238,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 85
+    view_count_num: 86
     youtube_metadata:
       published_at: '2026-02-18T17:00:21Z'
       scheduled_at: null
@@ -255,7 +255,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '85'
+        view_count: '86'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -2772,7 +2772,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 209
+    view_count_num: 210
     youtube_metadata:
       published_at: '2026-02-20T17:00:56Z'
       scheduled_at: null
@@ -2789,7 +2789,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '209'
+        view_count: '210'
         like_count: '4'
         favorite_count: '0'
         comment_count: '0'
@@ -2864,7 +2864,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 191
+    view_count_num: 192
     youtube_metadata:
       published_at: '2026-02-13T17:00:50Z'
       scheduled_at: null
@@ -2881,7 +2881,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '191'
+        view_count: '192'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -3304,7 +3304,7 @@ songs:
     videostatus: public
     playlists:
       - a-way-back-trilogy
-    view_count_num: 139
+    view_count_num: 140
     youtube_metadata:
       published_at: '2026-01-23T18:17:49Z'
       scheduled_at: null
@@ -3321,7 +3321,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '139'
+        view_count: '140'
         like_count: '2'
         favorite_count: '0'
         comment_count: '1'
