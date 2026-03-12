@@ -163,7 +163,7 @@ is_playlist_page: true
     </script>
 
     <script>        
-        document.querySelectorAll('.carousel-tile').forEach(tile => {
+        document.querySelectorAll('.shared-tile').forEach(tile => {
             tile.addEventListener('click', () => {
               if (tile.classList.contains('coming-soon')) return;
             
@@ -187,7 +187,7 @@ is_playlist_page: true
         });
 
         function advanceToNextSong(currentId) {
-          const tiles = Array.from(document.querySelectorAll('.carousel-tile:not(.coming-soon)'));
+          const tiles = Array.from(document.querySelectorAll('.shared-tile:not(.coming-soon)'));
           const index = tiles.findIndex(t => t.getAttribute('data-song-id') === currentId);
         
           if (index === -1) return;
@@ -222,8 +222,8 @@ document.addEventListener("DOMContentLoaded", () => {
       href === '{{ site.baseurl }}/' ||
       href === '{{ site.baseurl }}' ||
       href === '/' ||
-      href === '/music.html'; ||
-      href === '/about.html'; ||
+      href === '/catalog.html'; ||
+      href === '/origins.html'; ||
       href === '/index.html';
 
     if (!isInternal) return;
