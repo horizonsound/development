@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(s);
       });
 
+      if (typeof initCatalogPage === "function") {
+        initCatalogPage();
+      }
+
       // Re-trigger YouTube API if needed
       if (typeof onYouTubeIframeAPIReady === "function") {
         onYouTubeIframeAPIReady();
