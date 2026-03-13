@@ -1,28 +1,30 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-scope.querySelectorAll("a").forEach(link => {
-  console.log("SPA CHECK:", link, "href:", link.getAttribute("href"));
+  function bindInternalLinks(scope = document) {
+    scope.querySelectorAll("a").forEach(link => {
+      console.log("SPA CHECK:", link, "href:", link.getAttribute("href"));
 
-  if (link.dataset.spaBound === "true") return;
+      if (link.dataset.spaBound === "true") return;
 
-  const href = link.getAttribute("href");
-  if (!href) return;
+      const href = link.getAttribute("href");
+      if (!href) return;
 
-  if (href.startsWith("mailto:") || href.startsWith("tel:")) return;
-  if (href.startsWith("#")) return;
+      if (href.startsWith("mailto:") || href.startsWith("tel:")) return;
+      if (href.startsWith("#")) return;
 
-  const url = new URL(link.href);
-  if (url.origin !== window.location.origin) {
-    console.log("SPA SKIP (external):", link.href);
-    return;
-  }
+      const url = new URL(link.href);
+      if (url.origin !== window.location.origin) {
+        console.log("SPA SKIP (external):", link.href);
+        return;
+      }
 
-  console.log("SPA BIND:", link.href);
-  link.dataset.spaBound = "true";
+      console.log("SPA BIND:", link.href);
+      link.dataset.spaBound = "true";
 
-  link.addEventListener("click", async (e) => {
-    e.preventDefault();
+      link.addEventListener("click", async (e) => {
+        e.preventDefault();
+
         const response = await fetch(url, { credentials: "same-origin" });
         const html = await response.text();
 
@@ -45,6 +47,7 @@ scope.querySelectorAll("a").forEach(link => {
           document.body.appendChild(s);
         });
 
+        // Re-bind links globally
         bindInternalLinks(document);
 
         if (typeof initCatalogPage === "function") initCatalogPage();
@@ -53,6 +56,7 @@ scope.querySelectorAll("a").forEach(link => {
     });
   }
 
+  // Initial bind
   bindInternalLinks(document);
 });
 </script>
