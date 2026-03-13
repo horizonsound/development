@@ -482,7 +482,6 @@ is_playlist_page: true
 </style>
 
 <main>
-  {% include spa-router.html %}
   <!-- Load the playlist and override data -->
   {% assign playlist = site.data.youtube_playlists.playlists
     | where: "playlist_id", page.playlist_id
@@ -495,6 +494,7 @@ is_playlist_page: true
     <!-- Load YouTube IFrame API ONCE -->
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="{{ site.baseurl }}/assets/js/player.js"> </script>
+    {% include spa-router.html %}
 
     <!-- Make the data visible to JavaScript (ONLY ONCE) -->
     <script>
