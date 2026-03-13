@@ -83,3 +83,26 @@
   }
 
 </script>
+
+<script>
+
+
+  function highlightTile(songId) {
+    const tiles = document.querySelectorAll('.shared-tile');
+    tiles.forEach(t => t.classList.remove('active'));
+
+    const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
+    if (!activeTile) return;
+
+    activeTile.classList.add('active');
+
+    const strip = activeTile.closest('.content-strip, .horizontal-strip');
+    if (strip) {
+      strip.scrollTo({
+        left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
+        behavior: 'smooth'
+      });
+    }
+  }
+</script>
+
