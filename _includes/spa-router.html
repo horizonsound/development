@@ -1,24 +1,28 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  function bindInternalLinks(scope = document) {
-    scope.querySelectorAll("a").forEach(link => {
-      if (link.dataset.spaBound === "true") return;
+scope.querySelectorAll("a").forEach(link => {
+  console.log("SPA CHECK:", link, "href:", link.getAttribute("href"));
 
-      const href = link.getAttribute("href");
-      if (!href) return;
+  if (link.dataset.spaBound === "true") return;
 
-      if (href.startsWith("mailto:") || href.startsWith("tel:")) return;
-      if (href.startsWith("#")) return;
+  const href = link.getAttribute("href");
+  if (!href) return;
 
-      const url = new URL(link.href);
-      if (url.origin !== window.location.origin) return;
+  if (href.startsWith("mailto:") || href.startsWith("tel:")) return;
+  if (href.startsWith("#")) return;
 
-      link.dataset.spaBound = "true";
+  const url = new URL(link.href);
+  if (url.origin !== window.location.origin) {
+    console.log("SPA SKIP (external):", link.href);
+    return;
+  }
 
-      link.addEventListener("click", async (e) => {
-        e.preventDefault();
+  console.log("SPA BIND:", link.href);
+  link.dataset.spaBound = "true";
 
+  link.addEventListener("click", async (e) => {
+    e.preventDefault();
         const response = await fetch(url, { credentials: "same-origin" });
         const html = await response.text();
 
