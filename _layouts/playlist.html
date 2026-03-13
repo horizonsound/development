@@ -566,29 +566,7 @@ is_playlist_page: true
     </div>
     <div id="selected-song-lyrics" class="lyrics-block"></div>
 
-
 <script>
-  document.addEventListener("click", (e) => {
-    const tile = e.target.closest(".shared-tile");
-    if (!tile) return;
-    if (tile.classList.contains("coming-soon")) return;
-
-    const id = tile.getAttribute("data-song-id");
-
-    const url = new URL(window.location.href);
-    url.searchParams.set("song_id", id);
-    history.pushState({}, "", url.toString());
-
-    safeLoadSong(id);
-
-    const strip = tile.closest('.content-strip, .horizontal-strip');
-    if (strip) {
-      strip.scrollTo({
-        left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
-        behavior: 'smooth'
-      });
-    }
-  });
 
   function advanceToNextSong(currentId) {
     const tiles = Array.from(document.querySelectorAll('.shared-tile:not(.coming-soon)'));
@@ -606,11 +584,5 @@ is_playlist_page: true
     history.pushState({}, "", url.toString());
 
     safeLoadSong(nextId);
-  }
-</script>
-
-<script>
-  if (window.SELECTED_SONG_ID) {
-    safeLoadSong(window.SELECTED_SONG_ID);
   }
 </script>
