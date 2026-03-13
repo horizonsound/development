@@ -774,7 +774,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Intercept nav links
   document.querySelectorAll("a").forEach(link => {
     const href = link.getAttribute("href");
     if (!href) return;
@@ -782,18 +781,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     link.addEventListener("click", async (e) => {
       e.preventDefault();
+
       const response = await fetch(href);
       const html = await response.text();
       const doc = new DOMParser().parseFromString(html, "text/html");
       const newMain = doc.querySelector("main");
       document.querySelector("main").replaceWith(newMain);
 
-      // Re-run playlist script
-      if (typeof safeLoadSong === "function") safeLoadSong();
+      // Delay playlist initialization until DOM + scripts are ready
+      setTimeout(() => {
+        if (typeof safeLoadSong === "function") safeLoadSong();
+      }, 50);
     });
   });
 
-  // Initial playlist load
-  if (typeof safeLoadSong === "function") safeLoadSong();
+  // Initial load
+  setTimeout(() => {
+    if (typeof safeLoadSong === "function") safeLoadSong();
+  }, 50);
 });
 </script>
