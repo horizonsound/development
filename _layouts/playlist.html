@@ -568,6 +568,7 @@ is_playlist_page: true
   let YT_READY = false;
 
   function onYouTubeIframeAPIReady() {
+    console.log("YOUTUBE API READY");
     YT_READY = true;
   }
 
@@ -586,6 +587,7 @@ is_playlist_page: true
     }
 
     if (!YT_PLAYER) {
+      console.log("PLAYLIST SCRIPT RUNNING");
       YT_PLAYER = new YT.Player('player-container', {
         videoId: youtubeId,
         playerVars: {
