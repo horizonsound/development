@@ -36,18 +36,35 @@ document.addEventListener("DOMContentLoaded", () => {
         oldMain.replaceWith(newMain);
         history.pushState({}, "", url);
 
+        // --- SAFE SCRIPT RE-EXECUTION ---
         const scripts = newMain.querySelectorAll("script");
         scripts.forEach(oldScript => {
-          if (oldScript.src) return; // Skip external scripts
-        
+
+          // Skip external scripts (YouTube API, etc.)
+          if (oldScript.src) return;
+
+          const code = oldScript.textContent;
+
+          // Skip catalog scripts (avoid running on playlist page)
+          if (code.includes("initCatalogPage")) return;
+
+          // Skip scripts that declare global variables (avoid duplicate variable errors)
+          if (code.includes("let params") ||
+              code.includes("let YT_READY") ||
+              code.includes("var params") ||
+              code.includes("var YT_READY")) return;
+
+          // Only re-run safe inline scripts (playlist init, etc.)
           const s = document.createElement("script");
-          s.textContent = oldScript.textContent;
+          s.textContent = code;
           document.body.appendChild(s);
         });
+        // --- END SAFE SCRIPT RE-EXECUTION ---
 
         // Re-bind links globally
         bindInternalLinks(document);
 
+        // Re-run page initializers if present
         if (typeof initCatalogPage === "function") initCatalogPage();
         if (typeof onYouTubeIframeAPIReady === "function") onYouTubeIframeAPIReady();
       });
