@@ -8,11 +8,7 @@
           
     {% for pl in playlist_data %}
       {% assign override = overrides | where: "playlist_id", pl.playlist_id | first %}
-
       {% if override %}
-        {%- comment -%}
-          Convert override Drop → real hash so merge works correctly
-        {%- endcomment -%}
         {% assign override_hash = override | jsonify | parse_json %}
         {% assign merged = pl | merge: override_hash %}
         {% assign merged_playlists = merged_playlists | push: merged %}
