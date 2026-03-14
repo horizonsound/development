@@ -8,6 +8,7 @@
           
     {% for pl in playlist_data %}
       {% assign override = overrides | where: "playlist_id", pl.playlist_id | first %}
+
       {% if override %}
         {% assign override_hash = override | jsonify | parse_json %}
         {% assign merged = pl | merge: override_hash %}
@@ -19,27 +20,52 @@
 
     {% for pl in merged_playlists %}
 
-      {% assign first_song_id = pl.song_ids | first %}
+      {%- comment -%}
+      Determine if playlist has ANY public songs
+      {%- endcomment -%}
+      {% assign has_public = false %}
+      {% for vid in pl.song_ids %}
+        {% assign song = all_songs | where: "song_id", vid | first %}
+        {% if song and song.videostatus == "public" %}
+          {% assign has_public = true %}
+        {% endif %}
+      {% endfor %}
 
       {% assign override = overrides | where: "playlist_id", pl.playlist_id | first %}
       {% assign override_thumbnail = override.thumbnail | default: override.hero %}
-      
       {% assign display_thumbnail = override_thumbnail | default: pl.thumbnail | default: pl.hero | default: pl.youtube_thumbnail %}
 
-      <a 
-        class="playlist-premium-tile" 
-        href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/?song_id={{ first_song_id }}"
-      >
-        <div class="playlist-premium-image-wrapper">
-          <img 
-            src="{{ site.baseurl }}{{ display_thumbnail }}"
-            alt="{{ pl.title }}"
-            class="playlist-premium-image"
-          />
-          <div class="playlist-premium-gradient"></div>
-          <div class="playlist-premium-title">{{ pl.title }}</div>
+      {% assign first_song_id = pl.song_ids | first %}
+
+      {% if has_public %}
+        <a 
+          class="playlist-premium-tile" 
+          href="{{ site.baseurl }}/music/playlists/{{ pl.playlist_id }}/?song_id={{ first_song_id }}"
+        >
+          <div class="playlist-premium-image-wrapper">
+            <img 
+              src="{{ site.baseurl }}{{ display_thumbnail }}" 
+              alt="{{ pl.title }}" 
+              class="playlist-premium-image"
+            >
+            <div class="playlist-premium-gradient"></div>
+            <div class="playlist-premium-title">{{ pl.title }}</div>
+          </div>
+        </a>
+      {% else %}
+        <div class="playlist-premium-tile coming-soon">
+          <div class="playlist-premium-image-wrapper">
+            <img 
+              src="{{ site.baseurl }}{{ display_thumbnail }}" 
+              alt="{{ pl.title }}" 
+              class="playlist-premium-image"
+            >
+            <div class="playlist-premium-overlay">Coming Soon</div>
+            <div class="playlist-premium-gradient"></div>
+            <div class="playlist-premium-title">{{ pl.title }}</div>
+          </div>
         </div>
-      </a>
+      {% endif %}
 
     {% endfor %}
   </div>
