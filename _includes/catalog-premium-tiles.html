@@ -34,21 +34,9 @@
       {% assign override_thumbnail = override.thumbnail | default: override.hero %}
       {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
       {% assign first_song_id = playlist_song_ids | first %}
+      {% assign display_title = override.title | default: playlist.title %}
 
       {% if has_public %}
-{% if playlist.playlist_id == "after-the-silence-performed-by-lydia-ellington" %}
-  <pre style="background:#111;color:#0f0;padding:1rem;font-size:0.8rem;white-space:pre-wrap;">
-  DEBUG: MERGED PLAYLIST OBJECT
-  playlist_id: {{ playlist.playlist_id }}
-  title: {{ playlist.title }}
-  subtitle: {{ playlist.subtitle }}
-  description: {{ playlist.description | truncate: 120 }}
-  thumbnail: {{ playlist.thumbnail }}
-  hero: {{ playlist.hero }}
-  override_found: {% if override %}YES{% else %}NO{% endif %}
-  override_title: {{ override.title }}
-  </pre>
-{% endif %}
         <a 
           class="playlist-premium-tile" 
           href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}"
@@ -56,7 +44,7 @@
           <div class="playlist-premium-image-wrapper">
             <img 
               src="{{ site.baseurl }}{{ display_thumbnail }}" 
-              alt="{{ playlist.title }}" 
+              alt="{{ display_title }}" 
               class="playlist-premium-image"
             >
             <div class="playlist-premium-gradient"></div>
@@ -68,7 +56,7 @@
           <div class="playlist-premium-image-wrapper">
             <img 
               src="{{ site.baseurl }}{{ display_thumbnail }}" 
-              alt="{{ playlist.title }}" 
+              alt="{{ display_title }}" 
               class="playlist-premium-image"
             >
             <div class="playlist-premium-overlay">Coming Soon</div>
