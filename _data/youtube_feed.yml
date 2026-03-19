@@ -1,4 +1,134 @@
 songs:
+  - song_id: letters-in-the-wind
+    youtube_id: AoDjVpggHMw
+    title: Letters in the Wind
+    description_html: >-
+      <p>A soft, emotional acoustic instrumental built around intimate
+      fingerstyle guitar. Warm, reflective, and perfect for quiet moments.
+
+      Horizon Sound · Acoustic Instrumentals</p>
+    url: /music/letters-in-the-wind/
+    thumbnail: /assets/thumbnails/letters-in-the-wind.jpeg
+    videostatus: scheduled
+    playlists:
+      - calm-cinematic-horizon-sound-instrumentals
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-19T20:09:18Z'
+      scheduled_at: '2026-07-01T12:00:00Z'
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT3M46S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: the-way-home
+    youtube_id: yT76mtYjJOs
+    title: The Way Home
+    description_html: >-
+      <p>A soft, emotional acoustic instrumental built around intimate
+      fingerstyle guitar. Warm, reflective, and perfect for quiet moments.
+
+      Horizon Sound · Acoustic Instrumentals</p>
+    url: /music/the-way-home/
+    thumbnail: /assets/thumbnails/the-way-home.jpeg
+    videostatus: scheduled
+    playlists:
+      - calm-cinematic-horizon-sound-instrumentals
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-19T19:56:28Z'
+      scheduled_at: '2026-07-01T12:00:00Z'
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT2M50S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: running-toward-the-sun
+    youtube_id: _QvFtcVBaLE
+    title: Running Toward the Sun
+    description_html: >-
+      <p>An uplifting acoustic instrumental with bright strumming and light
+      percussion. Feel-good, sunny, and perfect for road trips or background
+      listening.
+
+      Horizon Sound · Acoustic Instrumentals</p>
+    url: /music/running-toward-the-sun/
+    thumbnail: /assets/thumbnails/running-toward-the-sun.jpeg
+    videostatus: scheduled
+    playlists:
+      - calm-cinematic-horizon-sound-instrumentals
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-19T19:47:07Z'
+      scheduled_at: '2026-07-01T12:00:00Z'
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT2M32S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
   - song_id: chasing-the-daylight
     youtube_id: PLCoYxY_glg
     title: Chasing the Daylight
@@ -10,13 +140,13 @@ songs:
       Horizon Sound · Acoustic Instrumentals</p>
     url: /music/chasing-the-daylight/
     thumbnail: /assets/thumbnails/chasing-the-daylight.jpeg
-    videostatus: private
+    videostatus: scheduled
     playlists:
       - calm-cinematic-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T19:37:46Z'
-      scheduled_at: null
+      scheduled_at: '2026-07-01T12:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -1765,7 +1895,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 196
+    view_count_num: 197
     youtube_metadata:
       published_at: '2026-02-11T17:00:56Z'
       scheduled_at: null
@@ -1782,7 +1912,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '196'
+        view_count: '197'
         like_count: '4'
         favorite_count: '0'
         comment_count: '3'
@@ -2191,7 +2321,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 17
+    view_count_num: 16
     youtube_metadata:
       published_at: '2026-03-17T16:00:43Z'
       scheduled_at: null
@@ -2208,7 +2338,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '17'
+        view_count: '16'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -2271,7 +2401,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 26
+    view_count_num: 25
     youtube_metadata:
       published_at: '2026-03-10T16:00:01Z'
       scheduled_at: null
@@ -2288,7 +2418,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '26'
+        view_count: '25'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -2352,7 +2482,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 28
+    view_count_num: 27
     youtube_metadata:
       published_at: '2026-03-03T17:01:12Z'
       scheduled_at: null
@@ -2369,7 +2499,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '28'
+        view_count: '27'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
