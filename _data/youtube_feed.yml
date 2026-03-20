@@ -2,15 +2,20 @@ songs:
   - song_id: quiet-horizons
     youtube_id: gEJDri-ViGE
     title: Quiet Horizons
-    description_html: ''
+    description_html: >-
+      <p>A minimalist cinematic track built around soft piano and airy pads.
+      Calm, uplifting, and designed for focus, reflection, or peaceful ambience.
+
+      Horizon Sound · Cinematic Ambient Series</p>
     url: /music/quiet-horizons/
     thumbnail: /assets/thumbnails/quiet-horizons.jpeg
-    videostatus: private
-    playlists: []
+    videostatus: scheduled
+    playlists:
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T23:09:21Z'
-      scheduled_at: null
+      scheduled_at: '2026-12-26T13:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -37,18 +42,23 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-  - song_id: breathig-in-color
+  - song_id: breathing-in-color
     youtube_id: 1knWGkLAZCw
-    title: Breathig in Color
-    description_html: ''
-    url: /music/breathig-in-color/
-    thumbnail: /assets/thumbnails/breathig-in-color.jpeg
-    videostatus: private
-    playlists: []
+    title: Breathing in Color
+    description_html: >-
+      <p>A minimalist cinematic track built around soft piano and airy pads.
+      Calm, uplifting, and designed for focus, reflection, or peaceful ambience.
+
+      Horizon Sound · Cinematic Ambient Series</p>
+    url: /music/breathing-in-color/
+    thumbnail: /assets/thumbnails/breathing-in-color.jpeg
+    videostatus: scheduled
+    playlists:
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T23:05:27Z'
-      scheduled_at: null
+      scheduled_at: '2026-10-31T12:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -78,15 +88,21 @@ songs:
   - song_id: the-space-we-keep
     youtube_id: CDhwkAn_rNA
     title: The Space We Keep
-    description_html: ''
+    description_html: >-
+      <p>A dreamy ambient piece with shimmering textures and slow orchestral
+      swells. Soft, emotional, and perfect for quiet moments or background
+      listening.
+
+      Horizon Sound · Cinematic Ambient Series</p>
     url: /music/the-space-we-keep/
     thumbnail: /assets/thumbnails/the-space-we-keep.jpeg
-    videostatus: private
-    playlists: []
+    videostatus: scheduled
+    playlists:
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T23:01:02Z'
-      scheduled_at: null
+      scheduled_at: '2026-09-05T12:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -116,15 +132,21 @@ songs:
   - song_id: echos-of-tomorrow
     youtube_id: fq_8Zhtknzs
     title: Echos of Tomorrow
-    description_html: ''
+    description_html: >-
+      <p>A dreamy ambient piece with shimmering textures and slow orchestral
+      swells. Soft, emotional, and perfect for quiet moments or background
+      listening.
+
+      Horizon Sound · Cinematic Ambient Series</p>
     url: /music/echos-of-tomorrow/
     thumbnail: /assets/thumbnails/echos-of-tomorrow.jpeg
-    videostatus: private
-    playlists: []
+    videostatus: scheduled
+    playlists:
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T22:54:14Z'
-      scheduled_at: null
+      scheduled_at: '2026-07-11T12:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -162,13 +184,13 @@ songs:
       Horizon Sound · Cinematic Ambient Series</p>
     url: /music/where-the-air-glows/
     thumbnail: /assets/thumbnails/where-the-air-glows.jpeg
-    videostatus: private
+    videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T22:45:36Z'
-      scheduled_at: null
+      scheduled_at: '2026-05-16T12:00:00Z'
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -207,7 +229,7 @@ songs:
     thumbnail: /assets/thumbnails/letters-in-the-wind.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T20:09:18Z'
@@ -250,7 +272,7 @@ songs:
     thumbnail: /assets/thumbnails/the-way-home.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T19:56:28Z'
@@ -294,7 +316,7 @@ songs:
     thumbnail: /assets/thumbnails/running-toward-the-sun.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T19:47:07Z'
@@ -338,7 +360,7 @@ songs:
     thumbnail: /assets/thumbnails/chasing-the-daylight.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T19:37:46Z'
@@ -381,7 +403,7 @@ songs:
     thumbnail: /assets/thumbnails/wanderers-heart.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T19:26:09Z'
@@ -424,7 +446,7 @@ songs:
     thumbnail: /assets/thumbnails/sunlight-on-the-strings.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - acoustic-guitar-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T18:49:31Z'
@@ -468,7 +490,7 @@ songs:
     thumbnail: /assets/thumbnails/moments-between-moments.jpeg
     videostatus: scheduled
     playlists:
-      - calm-cinematic-horizon-sound-instrumentals
+      - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
       published_at: '2026-03-19T16:36:01Z'
@@ -1742,7 +1764,7 @@ songs:
     videostatus: public
     playlists:
       - classic-country
-    view_count_num: 38
+    view_count_num: 40
     youtube_metadata:
       published_at: '2026-03-13T16:00:27Z'
       scheduled_at: null
@@ -1759,7 +1781,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '38'
+        view_count: '40'
         like_count: '2'
         favorite_count: '0'
         comment_count: '0'
@@ -3371,7 +3393,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 200
+    view_count_num: 201
     youtube_metadata:
       published_at: '2026-02-13T17:00:50Z'
       scheduled_at: null
@@ -3388,7 +3410,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '200'
+        view_count: '201'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -5715,7 +5737,7 @@ songs:
     videostatus: public
     playlists:
       - pop
-    view_count_num: 48
+    view_count_num: 49
     youtube_metadata:
       published_at: '2026-01-10T12:30:51Z'
       scheduled_at: null
@@ -5732,7 +5754,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '48'
+        view_count: '49'
         like_count: '3'
         favorite_count: '0'
         comment_count: '1'
