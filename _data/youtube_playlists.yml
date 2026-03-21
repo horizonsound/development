@@ -79,7 +79,8 @@ playlists:
     published_at: '2026-03-20T00:10:44.520832Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
-    thumbnail: null
+    thumbnail: >-
+      /assets/thumbnails/playlist-cinematic-ambient-horizon-sound-instrumentals.jpeg
     song_ids:
       - moments-between-moments
       - where-the-air-glows

@@ -1008,13 +1008,13 @@ songs:
       Horizon Sound · Cinematic Ambient Series</p>
     url: /music/moments-between-moments/
     thumbnail: /assets/thumbnails/moments-between-moments.jpeg
-    videostatus: scheduled
+    videostatus: public
     playlists:
       - cinematic-ambient-horizon-sound-instrumentals
     view_count_num: 0
     youtube_metadata:
-      published_at: '2026-03-19T16:36:01Z'
-      scheduled_at: '2026-03-21T12:00:00Z'
+      published_at: '2026-03-21T12:01:30Z'
+      scheduled_at: null
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
@@ -1034,7 +1034,9 @@ songs:
         comment_count: '0'
       made_for_kids: false
       self_declared_made_for_kids: false
-      topic_categories: []
+      topic_categories:
+        - https://en.wikipedia.org/wiki/Electronic_music
+        - https://en.wikipedia.org/wiki/Music
       privacy_status: null
       upload_status: null
       publish_at: null
@@ -1742,7 +1744,7 @@ songs:
     videostatus: public
     playlists:
       - calm-cinematic-horizon-sound-instrumentals
-    view_count_num: 103
+    view_count_num: 102
     youtube_metadata:
       published_at: '2026-02-28T13:01:20Z'
       scheduled_at: null
@@ -1759,7 +1761,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '103'
+        view_count: '102'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -6714,7 +6716,7 @@ songs:
     videostatus: public
     playlists:
       - southern-rock
-    view_count_num: 306
+    view_count_num: 307
     youtube_metadata:
       published_at: '2026-01-06T18:34:11Z'
       scheduled_at: null
@@ -6731,7 +6733,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '306'
+        view_count: '307'
         like_count: '6'
         favorite_count: '0'
         comment_count: '1'
