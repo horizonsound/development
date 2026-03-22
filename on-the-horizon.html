@@ -121,12 +121,6 @@ permalink: /on-the-horizon.html
   }
 </style>
 
-<div class="catalog-page catalog-grouped-view horizon-page">
-  {% assign horizon_days = site.data.site.settings.horizon_window_days %}
-  {% assign horizon_seconds = horizon_days | times: 86400 %}
-  {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
-  {% assign horizon_cutoff = now_ts | plus: horizon_seconds %}
-  
   <div class="page-header">
     <h1>On the Horizon</h1>
     <p class="page-subtitle">
@@ -134,6 +128,12 @@ permalink: /on-the-horizon.html
       These tracks and collections are already in motion — here’s what’s on the horizon.
     </p>
   </div>
+  
+<div class="catalog-page catalog-grouped-view horizon-page">
+  {% assign horizon_days = site.data.site.settings.horizon_window_days %}
+  {% assign horizon_seconds = horizon_days | times: 86400 %}
+  {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
+  {% assign horizon_cutoff = now_ts | plus: horizon_seconds %}
   
   {% assign all_songs = site.data.youtube_feed.songs %}
   
