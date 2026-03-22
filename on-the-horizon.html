@@ -121,6 +121,7 @@ permalink: /on-the-horizon.html
   }
 </style>
 
+<div class="catalog-page catalog-grouped-view horizon-page">
   <div class="page-header">
     <h1>On the Horizon</h1>
     <p class="page-subtitle">
@@ -129,7 +130,6 @@ permalink: /on-the-horizon.html
     </p>
   </div>
   
-<div class="catalog-page catalog-grouped-view horizon-page">
   {% assign horizon_days = site.data.site.settings.horizon_window_days %}
   {% assign horizon_seconds = horizon_days | times: 86400 %}
   {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
