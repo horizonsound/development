@@ -15,8 +15,8 @@ songs:
       channel_title: Horizon Sound
       category_id: '22'
       tags: []
-      duration: P0D
-      definition: sd
+      duration: PT4M41S
+      definition: hd
       dimension: null
       caption: null
       licensed_content: false
@@ -6976,7 +6976,7 @@ songs:
     videostatus: public
     playlists:
       - pop
-    view_count_num: 62
+    view_count_num: 63
     youtube_metadata:
       published_at: '2026-01-10T12:30:51Z'
       scheduled_at: null
@@ -6993,7 +6993,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '62'
+        view_count: '63'
         like_count: '3'
         favorite_count: '0'
         comment_count: '1'
