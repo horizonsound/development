@@ -23,9 +23,19 @@
       {% assign display_title = override.title | default: song.title %}
 
       {% if song.videostatus != "public" %}
+        {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+      
         <div class="shared-tile coming-soon" data-song-id="{{ song.song_id }}">
           <img src="{{ site.baseurl }}{{ song.thumbnail }}">
-          <div class="shared-tile-overlay">Coming Soon</div>
+      
+          {% if scheduled_ts and scheduled_ts <= coming_soon_cutoff %}
+            <div class="shared-tile-overlay">
+              Coming {{ song.youtube_metadata.scheduled_at | date: "%b %-d" }}
+            </div>
+          {% else %}
+            <div class="shared-tile-overlay">Coming Soon</div>
+          {% endif %}
+      
           <div class="shared-tile-title">{{ display_title }}</div>
         </div>
       {% endif %}
