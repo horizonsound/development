@@ -1,4 +1,17 @@
+{% assign window_days = site.data.site.settings.coming_soon_window_days %}
+{% assign window_seconds = window_days | times: 86400 %}
+{% assign now_ts = 'now' | date: "%s" | plus: 0 %}
+{% assign coming_soon_cutoff = now_ts | plus: window_seconds %}
+
 {% for pl in site.data.youtube_playlists.playlists %}
+
+  {%- comment -%}
+    Determine if this playlist should be shown at all.
+    A playlist is visible if ANY song is:
+      - public
+      - scheduled AND within the Coming Soon window
+    Private songs are ignored entirely.
+  {%- endcomment -%}
 
   {% assign show_playlist = false %}
 
@@ -6,17 +19,29 @@
     {% assign song = all_songs | where: "song_id", sid | first %}
 
     {% if song %}
+
+      {# PUBLIC SONG — always show playlist #}
       {% if song.videostatus == "public" %}
         {% assign show_playlist = true %}
+
+      {# SCHEDULED SONG — only show if within window #}
       {% elsif song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
         {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
         {% if scheduled_ts >= now_ts and scheduled_ts <= coming_soon_cutoff %}
           {% assign show_playlist = true %}
         {% endif %}
+
+      {# PRIVATE / UNLISTED / UNKNOWN — ignore #}
+      {% else %}
+        {% continue %}
       {% endif %}
+
     {% endif %}
   {% endfor %}
 
+  {%- comment -%}
+    If no valid songs found, skip this playlist entirely.
+  {%- endcomment -%}
   {% if show_playlist %}
 
     {% assign playlist_override = site.data.playlist_overrides.overrides
