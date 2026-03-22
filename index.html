@@ -3,10 +3,16 @@ layout: default
 title: Horizon Sound
 ---
 
+
 {% assign songs = site.data.youtube_feed.songs %}
 {% assign raw_playlists = site.data.playlist_overrides.overrides 
      | where: "is_collection", true
      | sort: "order" %}
+
+{% assign window_days = site.data.site.settings.coming_soon_window_days %}
+{% assign window_seconds = window_days | times: 86400 %}
+{% assign now_ts = 'now' | date: "%s" | plus: 0 %}
+{% assign coming_soon_cutoff = now_ts | plus: window_seconds %}
 
 {% assign playlists = "" | split: "" %}
 
