@@ -4222,7 +4222,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 35
+    view_count_num: 36
     youtube_metadata:
       published_at: '2026-02-27T17:00:26Z'
       scheduled_at: null
@@ -4239,7 +4239,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '35'
+        view_count: '36'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -4312,7 +4312,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 224
+    view_count_num: 226
     youtube_metadata:
       published_at: '2026-02-20T17:00:56Z'
       scheduled_at: null
@@ -4329,7 +4329,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '224'
+        view_count: '226'
         like_count: '4'
         favorite_count: '0'
         comment_count: '0'
