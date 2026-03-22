@@ -176,7 +176,9 @@ permalink: /on-the-horizon.html
       {% endif %}
     {% endfor %}
     
-    {# ⭐ Sort by scheduled date #}
+    {%- comment -%}
+      ⭐ Sort by scheduled date
+    {%- endcomment -%}
     {% assign ordered_songs = ordered_songs | sort: "youtube_metadata.scheduled_at" %}
   
     {% if has_upcoming %}
