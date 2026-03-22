@@ -61,6 +61,32 @@
     {% endfor %}
 
     {%- comment -%}
+      Build parallel arrays for sorting COMING SOON by earliest date
+    {%- endcomment -%}
+    {% assign cs_pairs = "" | split: "" %}
+
+    {% for playlist in coming_soon_playlists %}
+      {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
+      {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
+
+      {% assign earliest_ts = 9999999999 %}
+      {% for vid in playlist_song_ids %}
+        {% assign song = all_songs | where: "song_id", vid | first %}
+        {% if song and song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+          {% assign ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+          {% if ts < earliest_ts %}
+            {% assign earliest_ts = ts %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign pair = earliest_ts | append: "||" | append: playlist.playlist_id %}
+      {% assign cs_pairs = cs_pairs | push: pair %}
+    {% endfor %}
+
+    {% assign cs_pairs = cs_pairs | sort %}
+
+    {%- comment -%}
       RENDER ACTIVE PLAYLISTS FIRST
     {%- endcomment -%}
     {% for playlist in active_playlists %}
@@ -76,11 +102,7 @@
         href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}"
       >
         <div class="playlist-premium-image-wrapper">
-          <img 
-            src="{{ site.baseurl }}{{ display_thumbnail }}" 
-            alt="{{ display_title }}" 
-            class="playlist-premium-image"
-          >
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
           <div class="playlist-premium-gradient"></div>
           <div class="playlist-premium-title">{{ display_title }}</div>
         </div>
@@ -88,38 +110,25 @@
     {% endfor %}
 
     {%- comment -%}
-      RENDER COMING SOON PLAYLISTS AFTER, WITH DATE LOGIC
+      RENDER COMING SOON PLAYLISTS IN SORTED ORDER
     {%- endcomment -%}
-    {% for playlist in coming_soon_playlists %}
-      {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
+    {% for pair in cs_pairs %}
+      {% assign parts = pair | split: "||" %}
+      {% assign earliest_ts = parts[0] | plus: 0 %}
+      {% assign pid = parts[1] %}
+
+      {% assign playlist = coming_soon_playlists | where: "playlist_id", pid | first %}
+      {% assign override = overrides | where: "playlist_id", pid | first %}
       {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
       {% assign display_title = override.title | default: playlist.title %}
       {% assign override_thumbnail = override.thumbnail | default: override.hero %}
       {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
 
-      {% comment %}
-        Find earliest scheduled date
-      {% endcomment %}
-      {% assign earliest_ts = nil %}
-      {% for vid in playlist_song_ids %}
-        {% assign song = all_songs | where: "song_id", vid | first %}
-        {% if song and song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
-          {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
-          {% if earliest_ts == nil or scheduled_ts < earliest_ts %}
-            {% assign earliest_ts = scheduled_ts %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
       <div class="playlist-premium-tile coming-soon">
         <div class="playlist-premium-image-wrapper">
-          <img 
-            src="{{ site.baseurl }}{{ display_thumbnail }}" 
-            alt="{{ display_title }}" 
-            class="playlist-premium-image"
-          >
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
 
-          {% if earliest_ts and earliest_ts <= coming_soon_cutoff %}
+          {% if earliest_ts <= coming_soon_cutoff %}
             <div class="playlist-premium-overlay">
               Coming {{ earliest_ts | date: "%b %-d" }}
             </div>
