@@ -70,8 +70,23 @@
             <div class="playlist-premium-title">{{ display_title }}</div>
           </div>
         </a>
-
+      
       {% elsif show_coming_soon %}
+      
+        {% comment %}
+          Find earliest scheduled date for this playlist
+        {% endcomment %}
+        {% assign earliest_ts = nil %}
+        {% for vid in playlist_song_ids %}
+          {% assign song = all_songs | where: "song_id", vid | first %}
+          {% if song and song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+            {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+            {% if earliest_ts == nil or scheduled_ts < earliest_ts %}
+              {% assign earliest_ts = scheduled_ts %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      
         <div class="playlist-premium-tile coming-soon">
           <div class="playlist-premium-image-wrapper">
             <img 
@@ -79,11 +94,20 @@
               alt="{{ display_title }}" 
               class="playlist-premium-image"
             >
-            <div class="playlist-premium-overlay">Coming Soon</div>
+      
+            {% if earliest_ts and earliest_ts <= coming_soon_cutoff %}
+              <div class="playlist-premium-overlay">
+                Coming {{ earliest_ts | date: "%b %-d" }}
+              </div>
+            {% else %}
+              <div class="playlist-premium-overlay">Coming Soon</div>
+            {% endif %}
+      
             <div class="playlist-premium-gradient"></div>
             <div class="playlist-premium-title">{{ display_title }}</div>
           </div>
         </div>
+      
       {% endif %}
 
     {% endfor %}
