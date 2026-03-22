@@ -1,4 +1,232 @@
 songs:
+  - song_id: nightfall-circuit
+    youtube_id: 1vHd2pwa6DU
+    title: Nightfall Circuit
+    description_html: ''
+    url: /music/nightfall-circuit/
+    thumbnail: /assets/thumbnails/nightfall-circuit.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:24:20Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: P0D
+      definition: sd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: retrodrive
+    youtube_id: Eps1ed1Fir8
+    title: Retrodrive
+    description_html: ''
+    url: /music/retrodrive/
+    thumbnail: /assets/thumbnails/retrodrive.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:20:57Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT3M53S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: memory-loop
+    youtube_id: a1YoVCEApPo
+    title: Memory Loop
+    description_html: ''
+    url: /music/memory-loop/
+    thumbnail: /assets/thumbnails/memory-loop.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:18:27Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT2M50S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: midnight-ascension
+    youtube_id: LWIjisnuC3w
+    title: Midnight Ascension
+    description_html: ''
+    url: /music/midnight-ascension/
+    thumbnail: /assets/thumbnails/midnight-ascension.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:14:36Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT4M26S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: dreamwave-avenue
+    youtube_id: So0bW7D38Zw
+    title: Dreamwave Avenue
+    description_html: ''
+    url: /music/dreamwave-avenue/
+    thumbnail: /assets/thumbnails/dreamwave-avenue.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:11:30Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT3M35S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
+  - song_id: neon-vanguard
+    youtube_id: 4f584gG7U14
+    title: Neon Vanguard
+    description_html: ''
+    url: /music/neon-vanguard/
+    thumbnail: /assets/thumbnails/neon-vanguard.jpeg
+    videostatus: private
+    playlists: []
+    view_count_num: 0
+    youtube_metadata:
+      published_at: '2026-03-22T18:08:08Z'
+      scheduled_at: null
+      channel_id: UCiko-zjojbsoXrsEuBOPbSw
+      channel_title: Horizon Sound
+      category_id: '22'
+      tags: []
+      duration: PT3M44S
+      definition: hd
+      dimension: null
+      caption: null
+      licensed_content: false
+      region_allowed: []
+      region_blocked: []
+      content_rating: {}
+      statistics:
+        view_count: '0'
+        like_count: '0'
+        favorite_count: '0'
+        comment_count: '0'
+      made_for_kids: false
+      self_declared_made_for_kids: false
+      topic_categories: []
+      privacy_status: null
+      upload_status: null
+      publish_at: null
+      license: ''
+      embeddable: true
+      public_stats_viewable: true
   - song_id: the-frozen-overture
     youtube_id: b0cnzGgpSZ8
     title: The Frozen Overture
@@ -3124,7 +3352,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 198
+    view_count_num: 199
     youtube_metadata:
       published_at: '2026-02-11T17:00:56Z'
       scheduled_at: null
@@ -3141,7 +3369,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '198'
+        view_count: '199'
         like_count: '4'
         favorite_count: '0'
         comment_count: '3'
@@ -3208,7 +3436,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 125
+    view_count_num: 126
     youtube_metadata:
       published_at: '2026-02-03T17:00:01Z'
       scheduled_at: null
@@ -3225,7 +3453,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '125'
+        view_count: '126'
         like_count: '1'
         favorite_count: '0'
         comment_count: '1'
@@ -3630,7 +3858,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 29
+    view_count_num: 30
     youtube_metadata:
       published_at: '2026-03-10T16:00:01Z'
       scheduled_at: null
@@ -3647,7 +3875,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '29'
+        view_count: '30'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
