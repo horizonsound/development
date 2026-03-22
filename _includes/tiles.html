@@ -45,15 +45,25 @@
       ============================================================
     {%- endcomment -%}
     {% elsif include.section == "collections" %}
-          
+              
       {% for pl in include.items %}
           
         {% assign has_public = false %}
+        {% assign earliest_ts = nil %}
           
         {% for sid in pl.songs %}
           {% assign song = site.data.youtube_feed.songs | where: "song_id", sid | first %}
-          {% if song and song.videostatus == "public" %}
-            {% assign has_public = true %}
+    
+          {% if song %}
+            {% if song.videostatus == "public" %}
+              {% assign has_public = true %}
+            {% elsif song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+              {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+    
+              {% if earliest_ts == nil or scheduled_ts < earliest_ts %}
+                {% assign earliest_ts = scheduled_ts %}
+              {% endif %}
+            {% endif %}
           {% endif %}
         {% endfor %}
           
@@ -65,7 +75,15 @@
         {% else %}
           <div class="tile coming-soon">
             <img src="{{ site.baseurl }}{{ pl.thumbnail }}" alt="{{ pl.title }}">
-            <div class="tile-overlay">Coming Soon</div>
+    
+            {% if earliest_ts and earliest_ts <= coming_soon_cutoff %}
+              <div class="tile-overlay">
+                Coming {{ earliest_ts | date: "%b %-d" }}
+              </div>
+            {% else %}
+              <div class="tile-overlay">Coming Soon</div>
+            {% endif %}
+    
             <h3 class="tile-title">{{ pl.title }}</h3>
           </div>
         {% endif %}

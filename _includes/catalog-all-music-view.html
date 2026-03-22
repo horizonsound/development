@@ -2,6 +2,19 @@
 
   {% assign all_sorted = all_songs | sort: "title" %}
 
+  {% assign coming_soon_songs = "" | split: "" %}
+
+  {% for song in all_songs %}
+    {% if song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+      {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+      {% if scheduled_ts >= now_ts and scheduled_ts <= coming_soon_cutoff %}
+        {% assign coming_soon_songs = coming_soon_songs | push: song %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign coming_soon_songs = coming_soon_songs | sort: "youtube_metadata.scheduled_at" %}
+
   {% assign window_days = site.data.site.settings.coming_soon_window_days %}
   {% assign window_seconds = window_days | times: 86400 %}
   {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
@@ -31,23 +44,19 @@
       {% endfor %}
 
       {%- comment -%}
-      COMING SOON SONGS (within window only)
+      COMING SOON SONGS (within window only, ordered by scheduled date)
       {%- endcomment -%}
-      {% for song in all_sorted %}
+      {% for song in coming_soon_songs %}
         {% assign override = site.data.music_overrides.overrides | where: "song_id", song.song_id | first %}
         {% assign display_title = override.title | default: song.title %}
       
-        {% if song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
-          {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
-      
-          {% if scheduled_ts >= now_ts and scheduled_ts <= coming_soon_cutoff %}
-            <div class="shared-tile coming-soon">
-              <img src="{{ site.baseurl }}{{ song.thumbnail }}" alt="{{ display_title }}">
-              <div class="shared-tile-overlay">Coming Soon</div>
-              <div class="shared-tile-title">{{ display_title }}</div>
-            </div>
-          {% endif %}
-        {% endif %}
+        <div class="shared-tile coming-soon">
+          <img src="{{ site.baseurl }}{{ song.thumbnail }}" alt="{{ display_title }}">
+          <div class="shared-tile-overlay">
+            Coming {{ song.youtube_metadata.scheduled_at | date: "%b %-d" }}
+          </div>
+          <div class="shared-tile-title">{{ display_title }}</div>
+        </div>
       {% endfor %}
 
     </div>
