@@ -163,10 +163,10 @@ permalink: /on-the-horizon.html
   
     {% assign ordered_songs = "" | split: "" %}
     {% assign has_upcoming = false %}
-  
+    
     {% for sid in ordered_ids %}
       {% assign s = all_songs | where: "song_id", sid | first %}
-  
+    
       {% if s and s.videostatus == "scheduled" and s.youtube_metadata.scheduled_at %}
         {% assign scheduled_ts = s.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
         {% if scheduled_ts >= now_ts and scheduled_ts <= horizon_cutoff %}
@@ -175,6 +175,9 @@ permalink: /on-the-horizon.html
         {% endif %}
       {% endif %}
     {% endfor %}
+    
+    {# ⭐ Sort by scheduled date #}
+    {% assign ordered_songs = ordered_songs | sort: "youtube_metadata.scheduled_at" %}
   
     {% if has_upcoming %}
       <div class="catalog-group-panel">
