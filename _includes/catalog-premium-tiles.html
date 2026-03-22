@@ -16,10 +16,10 @@
 
       {% if override %}
         {% assign override_hash = override | jsonify | parse_json %}
-        {% assign merged = pl | merge: override_hash %}
+        {% assign merged = pl | jsonify | parse_json | merge: override_hash %}
         {% assign merged_playlists = merged_playlists | push: merged %}
       {% else %}
-        {% assign merged_playlists = merged_playlists | push: pl %}
+        {% assign merged_playlists = merged_playlists | push: pl | jsonify | parse_json %}
       {% endif %}
     {% endfor %}
 
@@ -80,8 +80,12 @@
         {% endif %}
       {% endfor %}
 
-      {% assign playlist = playlist | merge: {"_earliest_ts": earliest_ts} %}
-      {% assign coming_soon_sorted = coming_soon_sorted | push: playlist %}
+      {%- comment -%}
+        Wrap playlist in a hash so merge works
+      {%- endcomment -%}
+      {% assign playlist_hash = playlist | jsonify | parse_json %}
+      {% assign playlist_hash = playlist_hash | merge: {"_earliest_ts": earliest_ts} %}
+      {% assign coming_soon_sorted = coming_soon_sorted | push: playlist_hash %}
     {% endfor %}
 
     {% assign coming_soon_sorted = coming_soon_sorted | sort: "_earliest_ts" %}
@@ -102,11 +106,7 @@
         href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}"
       >
         <div class="playlist-premium-image-wrapper">
-          <img 
-            src="{{ site.baseurl }}{{ display_thumbnail }}" 
-            alt="{{ display_title }}" 
-            class="playlist-premium-image"
-          >
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
           <div class="playlist-premium-gradient"></div>
           <div class="playlist-premium-title">{{ display_title }}</div>
         </div>
@@ -125,11 +125,7 @@
 
       <div class="playlist-premium-tile coming-soon">
         <div class="playlist-premium-image-wrapper">
-          <img 
-            src="{{ site.baseurl }}{{ display_thumbnail }}" 
-            alt="{{ display_title }}" 
-            class="playlist-premium-image"
-          >
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
 
           {% if playlist._earliest_ts and playlist._earliest_ts <= coming_soon_cutoff %}
             <div class="playlist-premium-overlay">
