@@ -649,10 +649,11 @@ title: Catalog – Horizon Sound
   aspect-ratio: 16 / 10;
 }
 
-@media (max-width: 1100px) {
-  .catalog-group-tiles {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Force 3-across grouped tiles on mobile */
+.catalog-group-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 
 </style>
