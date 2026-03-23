@@ -1372,3 +1372,7 @@ footer {
   text-align: center;
   pointer-events: none;
 }
+
+.hero-banner .hero-image {
+  z-index: 1;        /* <-- ensures the image stays behind the title */
+}
