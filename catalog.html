@@ -671,7 +671,20 @@ title: Catalog – Horizon Sound
   width: 100%;
   box-sizing: border-box;
 }
-  
+
+  /* Make the carousel fill the panel */
+.content-carousel {
+  width: 100%;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
+/* Make the horizontal strip fill the carousel */
+.content-strip {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+}
 </style>
 
 {% assign all_songs = site.data.youtube_feed.songs %}
