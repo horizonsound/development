@@ -643,19 +643,18 @@ title: Catalog – Horizon Sound
     left: 12px !important;
     right: 12px !important;
   }
+
+  /* Force 3-across grouped tiles on mobile */
+  .catalog-group-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
 }
 
 .catalog-group-tiles .shared-tile {
   aspect-ratio: 16 / 10;
 }
-
-/* Force 3-across grouped tiles on mobile */
-.catalog-group-tiles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-
 </style>
 
 {% assign all_songs = site.data.youtube_feed.songs %}
