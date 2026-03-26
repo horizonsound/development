@@ -4,7 +4,7 @@ overrides:
     title: Pop Instrumental – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - pop instrumental.jpg
     hero:
     songs: []
     order: 
@@ -14,7 +14,7 @@ overrides:
     title: Synthwave & Retrowave – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - synthwave & retrowave instrumental.jpg
     hero:
     songs: []
     order: 
@@ -24,7 +24,7 @@ overrides:
     title: Orchestral Rock (TSO‑Style) – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - orchestral rock (tso-style).jpg
     hero:
     songs: []
     order: 
@@ -44,7 +44,7 @@ overrides:
     title: Workout & EDM – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - workout & edm - intrumental.jpg
     hero:
     songs: []
     order: 
@@ -70,7 +70,7 @@ overrides:
     title: Electric Guitar Rock – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - electric guitar rock.jpg
     hero:
     songs:
       - neon-skyline
@@ -86,7 +86,7 @@ overrides:
     title: Acoustic Guitar – Horizon Sound Instrumentals
     subtitle: 
     description: ''
-    thumbnail: 
+    thumbnail: /assets/playlist thumbnails/playlist - acoustic guitar - instrumental.jpg
     hero:
     songs:
       - sunlight-on-the-strings
@@ -112,7 +112,7 @@ overrides:
     title: 
     subtitle: 
     description: 
-    thumbnail:
+    thumbnail: /assets/playlist thumbnails/playlist - calm & cinematic.jpg
     hero:
     songs:
     order: 2
@@ -141,7 +141,7 @@ overrides:
     title: 
     subtitle: 
     description: 
-    thumbnail:
+    thumbnail: /assets/playlist thumbnails/playlist - shorts.jpg
     hero:
     songs:
     order: 4
