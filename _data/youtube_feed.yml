@@ -3402,7 +3402,7 @@ songs:
     videostatus: public
     playlists:
       - midnight-saga
-    view_count_num: 229
+    view_count_num: 230
     youtube_metadata:
       published_at: '2026-02-20T17:00:56Z'
       scheduled_at: null
@@ -3419,7 +3419,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '229'
+        view_count: '230'
         like_count: '5'
         favorite_count: '0'
         comment_count: '0'
