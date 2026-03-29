@@ -5300,7 +5300,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 19
+    view_count_num: 20
     youtube_metadata:
       published_at: '2026-03-24T16:00:34Z'
       scheduled_at: null
@@ -5317,7 +5317,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '19'
+        view_count: '20'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -6202,7 +6202,7 @@ songs:
     videostatus: public
     playlists:
       - emotional-ballads
-    view_count_num: 141
+    view_count_num: 140
     youtube_metadata:
       published_at: '2026-01-09T16:05:03Z'
       scheduled_at: null
@@ -6219,7 +6219,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '141'
+        view_count: '140'
         like_count: '3'
         favorite_count: '0'
         comment_count: '1'
@@ -6661,7 +6661,7 @@ songs:
     videostatus: public
     playlists:
       - modern-country
-    view_count_num: 19
+    view_count_num: 20
     youtube_metadata:
       published_at: '2026-03-27T16:00:39Z'
       scheduled_at: null
@@ -6678,7 +6678,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '19'
+        view_count: '20'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
