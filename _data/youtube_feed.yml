@@ -517,7 +517,7 @@ songs:
     videostatus: scheduled
     playlists:
       - rum-soaked-paradise-cody-sails
-    view_count_num: 0
+    view_count_num: 3
     youtube_metadata:
       published_at: '2026-03-29T12:49:23Z'
       scheduled_at: '2026-05-29T16:00:00Z'
@@ -534,8 +534,8 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '0'
-        like_count: '0'
+        view_count: '3'
+        like_count: '1'
         favorite_count: '0'
         comment_count: '0'
       made_for_kids: false
@@ -699,7 +699,7 @@ songs:
     videostatus: scheduled
     playlists:
       - rum-soaked-paradise-cody-sails
-    view_count_num: 0
+    view_count_num: 2
     youtube_metadata:
       published_at: '2026-03-29T13:53:42Z'
       scheduled_at: '2026-06-12T16:00:00Z'
@@ -716,8 +716,8 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '0'
-        like_count: '0'
+        view_count: '2'
+        like_count: '1'
         favorite_count: '0'
         comment_count: '0'
       made_for_kids: false
@@ -6661,7 +6661,7 @@ songs:
     videostatus: public
     playlists:
       - modern-country
-    view_count_num: 20
+    view_count_num: 25
     youtube_metadata:
       published_at: '2026-03-27T16:00:39Z'
       scheduled_at: null
@@ -6678,7 +6678,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '20'
+        view_count: '25'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
