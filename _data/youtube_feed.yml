@@ -772,16 +772,16 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-  - song_id: beter-days-ahead
+  - song_id: better-days-ahead
     youtube_id: c8o5_OGXUiM
-    title: Beter Days Ahead
+    title: Better Days Ahead
     description_html: >-
       <p>A bright, uplifting pop instrumental with modern production and catchy
       melodies. Energetic and feel-good.
 
       Horizon Sound · Pop Instrumentals</p>
-    url: /music/beter-days-ahead/
-    thumbnail: /assets/thumbnails/beter-days-ahead.jpeg
+    url: /music/better-days-ahead/
+    thumbnail: /assets/thumbnails/better-days-ahead.jpeg
     videostatus: scheduled
     playlists:
       - pop-instrumental-horizon-sound-instrumentals
@@ -2634,17 +2634,17 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-  - song_id: echos-of-tomorrow
+  - song_id: echoes-of-tomorrow
     youtube_id: fq_8Zhtknzs
-    title: Echos of Tomorrow
+    title: Echoes of Tomorrow
     description_html: >-
       <p>A dreamy ambient piece with shimmering textures and slow orchestral
       swells. Soft, emotional, and perfect for quiet moments or background
       listening.
 
       Horizon Sound · Cinematic Ambient Series</p>
-    url: /music/echos-of-tomorrow/
-    thumbnail: /assets/thumbnails/echos-of-tomorrow.jpeg
+    url: /music/echoes-of-tomorrow/
+    thumbnail: /assets/thumbnails/echoes-of-tomorrow.jpeg
     videostatus: scheduled
     playlists:
       - cinematic-ambient-horizon-sound-instrumentals
@@ -6661,7 +6661,7 @@ songs:
     videostatus: public
     playlists:
       - modern-country
-    view_count_num: 31
+    view_count_num: 32
     youtube_metadata:
       published_at: '2026-03-27T16:00:39Z'
       scheduled_at: null
@@ -6678,7 +6678,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '31'
+        view_count: '32'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
