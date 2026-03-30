@@ -1,7 +1,11 @@
 playlists:
   - playlist_id: rum-soaked-paradise-cody-sails
     title: Rum Soaked Paradise - Cody Sails
-    description: ''
+    description: >-
+      A sun‑drenched mix of coastal country storytelling, warm guitars, and
+      easygoing island energy. These tracks capture the carefree spirit of salt
+      air, late nights, and the kind of memories that linger long after the tide
+      rolls out.
     published_at: '2026-03-29T13:39:57.869637Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -17,21 +21,27 @@ playlists:
       - wind-in-your-sails-cody-sails-horizon-sound
   - playlist_id: pop-instrumental-horizon-sound-instrumentals
     title: Pop Instrumental – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      Bright, modern pop instrumentals built around uplifting melodies, clean
+      production, and feel‑good energy. Perfect for creators, storytelling, or
+      anyone looking for a polished pop backdrop with emotional clarity.
     published_at: '2026-03-20T00:16:16.393704Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
     thumbnail: null
     song_ids:
       - color-the-sky
-      - beter-days-ahead
+      - better-days-ahead
       - golden-hour-groove
       - soft-light
       - open-heart-city
       - brightest-part-of-you
   - playlist_id: synthwave-retrowave-horizon-sound-instrumentals
     title: Synthwave & Retrowave – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      A neon‑lit blend of retro synths, pulsing basslines, and cinematic
+      nostalgia. These instrumentals channel the glow of 80s futurism with a
+      modern edge, perfect for night‑drive vibes and atmospheric storytelling.
     published_at: '2026-03-20T00:15:42.448911Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -45,7 +55,10 @@ playlists:
       - neon-vanguard
   - playlist_id: orchestral-rock-tso-style-horizon-sound-instrumentals
     title: Orchestral Rock (TSO‑Style) – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      Epic, high‑drama instrumentals blending rock power with orchestral scale.
+      Sweeping strings, bold percussion, and electric energy come together in a
+      cinematic fusion inspired by the intensity of TSO‑style arrangements.
     published_at: '2026-03-20T00:15:16.91963Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -59,7 +72,11 @@ playlists:
       - the-winter-requiem
   - playlist_id: piano-emotional-horizon-sound-instrumentals
     title: Piano Emotional – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      Intimate, reflective piano pieces shaped around warmth, space, and
+      emotional depth. These tracks create a quiet world of stillness and
+      clarity, perfect for storytelling, focus, or moments that call for gentle
+      resonance.
     published_at: '2026-03-20T00:13:53.365353Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -73,7 +90,10 @@ playlists:
       - falling-toward-the-light
   - playlist_id: workout-edm-horizon-sound-instrumentals
     title: Workout & EDM – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      High‑energy electronic instrumentals built for movement, motivation, and
+      momentum. Driving beats, bright synths, and dynamic drops deliver a clean,
+      modern EDM pulse that keeps the pace strong.
     published_at: '2026-03-20T00:13:15.979204Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -87,7 +107,10 @@ playlists:
       - neon-runner
   - playlist_id: electric-guitar-rock-horizon-sound-instrumentals
     title: Electric Guitar Rock – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      A collection of electric‑driven rock instrumentals filled with grit,
+      atmosphere, and cinematic edge. From soaring leads to moody riffs, these
+      tracks bring modern rock energy to any scene or creative project.
     published_at: '2026-03-20T00:12:32.714184Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -101,7 +124,10 @@ playlists:
       - after-the-static
   - playlist_id: acoustic-guitar-horizon-sound-instrumentals
     title: Acoustic Guitar – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      Warm, organic acoustic instrumentals shaped by gentle strumming, heartfelt
+      melodies, and a sense of open‑air simplicity. Perfect for storytelling,
+      travel moments, and anything that calls for natural, grounded emotion.
     published_at: '2026-03-20T00:11:49.597984Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -116,7 +142,10 @@ playlists:
       - letters-in-the-wind
   - playlist_id: cinematic-ambient-horizon-sound-instrumentals
     title: Cinematic & Ambient – Horizon Sound Instrumentals
-    description: ''
+    description: >-
+      Atmospheric, spacious instrumentals designed to evoke mood, movement, and
+      quiet wonder. These tracks blend soft textures, evolving soundscapes, and
+      cinematic depth for moments that feel expansive and reflective.
     published_at: '2026-03-20T00:10:44.520832Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -125,13 +154,16 @@ playlists:
     song_ids:
       - moments-between-moments
       - where-the-air-glows
-      - echos-of-tomorrow
+      - echoes-of-tomorrow
       - the-space-we-keep
       - breathing-in-color
       - quiet-horizons
   - playlist_id: classic-country
     title: Classic Country
-    description: ''
+    description: >-
+      A timeless mix of classic country storytelling, twangy guitars, and warm
+      vintage charm. These tracks capture the heart of old‑school country —
+      honest, melodic, and rooted in tradition.
     published_at: '2026-02-28T12:46:34.396745Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -157,7 +189,10 @@ playlists:
       - the-way-water-moves-cinematic-instrumental-horizon-sound
   - playlist_id: missing-stamp-venice-trilogy
     title: Missing Stamp - Venice Trilogy
-    description: ''
+    description: >-
+      A three‑part acoustic journey inspired by the romance, mystery, and quiet
+      magic of Venice. Each track reveals a different chapter of the story,
+      blending gentle melodies with cinematic, travel‑inspired emotion.
     published_at: '2026-02-06T12:31:02.78813Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -168,7 +203,10 @@ playlists:
       - missing-stamp-emotional-acoustic-pop-horizon-sound
   - playlist_id: shorts
     title: Shorts
-    description: A collection of Horizon Sound shorts
+    description: >-
+      A curated collection of short‑form Horizon Sound moments — quick bursts of
+      energy, emotion, and storytelling designed for reels, shorts, and
+      fast‑moving creative ideas.
     published_at: '2026-02-01T15:16:08.531871Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -178,7 +216,10 @@ playlists:
       - nineteen-summers-emotional-acoustic-pop-short-horizon-sound
   - playlist_id: midnight-saga
     title: Midnight Saga
-    description: ''
+    description: >-
+      A four‑chapter musical story unfolding across late‑night energy, mystery,
+      and cinematic tension. Each track builds on the last, creating a cohesive
+      arc that moves from dusk to chaos to clarity.
     published_at: '2026-01-27T20:06:20.884413Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -303,9 +344,9 @@ playlists:
   - playlist_id: electro-pop-dance-pop
     title: Electro-Pop & Dance-Pop
     description: >-
-      A neon‑lit mix of energetic electro‑pop featuring glossy synths, punchy
-      beats, attitude‑driven vocals, and dance‑ready hooks. Futuristic textures
-      and high‑voltage pop energy for fans of bold, modern electronic pop.
+      A high‑voltage mix of glossy synths, punchy beats, and modern pop
+      attitude. These tracks deliver bright hooks and dance‑ready energy with a
+      futuristic edge.
     published_at: '2026-01-10T16:14:27.752221Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -316,8 +357,9 @@ playlists:
   - playlist_id: 90s-pop-pop-rock
     title: 90s Pop & Pop-Rock
     description: >-
-      Feel‑good 90s‑inspired pop and pop‑rock featuring bright guitar hooks,
-      heartfelt lyrics, and a warm wave of nostalgic energy.
+      Feel‑good 90s‑inspired instrumentals filled with bright guitars, nostalgic
+      melodies, and warm pop‑rock charm. A throwback to the era of big choruses
+      and timeless hooks.
     published_at: '2026-01-09T14:11:00.03425Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -328,10 +370,9 @@ playlists:
   - playlist_id: southern-rock
     title: Southern Rock
     description: >-
-      A collection of gritty, high‑energy Southern rock featuring swaggering
-      guitars, barroom storytelling, and rowdy, good‑time grooves.
-      Blues‑drenched riffs, driving drums, and cinematic outlaw energy define
-      this playlist of modern and classic‑inspired Southern‑fried anthems.
+      Gritty, swagger‑filled Southern rock instrumentals built on bluesy riffs,
+      driving drums, and cinematic outlaw energy. Loud, rowdy, and
+      unapologetically bold.
     published_at: '2026-01-08T13:09:44.820846Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -343,9 +384,9 @@ playlists:
   - playlist_id: pop
     title: Pop
     description: >-
-      Bright, modern pop featuring emotional hooks, catchy melodies, and
-      feel‑good energy. A blend of acoustic‑leaning, 90s‑inspired, and
-      contemporary pop tracks.
+      A vibrant mix of modern pop instrumentals featuring emotional hooks,
+      catchy melodies, and polished production. Bright, uplifting, and built for
+      feel‑good storytelling.
     published_at: '2026-01-08T13:05:02.080533Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -361,9 +402,9 @@ playlists:
   - playlist_id: 80s-rock-pop
     title: 80's Rock & Pop
     description: >-
-      A tribute to the electrifying sound of the 80s, featuring big drums,
-      soaring vocals, shimmering synths, and the nostalgic energy of classic 80s
-      rock and pop.
+      A nostalgic blend of shimmering synths, soaring vocals, and big 80s drums
+      — reimagined through a modern cinematic lens. These tracks capture the
+      electrifying spirit of classic 80s rock and pop.
     published_at: '2026-01-08T13:00:48.268465Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
