@@ -128,6 +128,9 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     .map(p => p.trim())
     .filter(p => p.length > 0)
     .map(p => {
+
+      console.log("PARAGRAPHS >>>", html);
+
       // Bullet + URL → bullet + linked arrow
       if (p.startsWith("•")) {
         const urlMatch = p.match(/https?:\/\/\S+/);
