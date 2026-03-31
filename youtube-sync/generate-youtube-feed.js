@@ -155,6 +155,11 @@ function formatDescriptionToHtml(desc) {
     (match) => `<a href="${match}" target="_blank" rel="noopener">${match}</a>`
   );
 
+  // Convert all raw URLs into clickable links
+  html = html.replace(
+    /(https?:\/\/[^\s<]+)/g,
+    (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
+  );
   return html;
 }
 
