@@ -159,7 +159,10 @@ html = html.replace(
 
     if (!slug) return title; // fallback
 
-    return `<a href="/music/playlists/${slug}/" data-playlist-id="${playlistId}" class="internal-playlist-link">▶️</a> ${title}`;
+    return `
+      <a href="/music/playlists/${slug}/" 
+         class="internal-playlist-link">▶️</a> ${title}
+    `;
   }
 );
   
