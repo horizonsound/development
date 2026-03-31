@@ -130,6 +130,9 @@ let html = desc
   .map(p => `<p>${p}</p>`)
   .join("");
 
+      // ADD IT HERE — after html is defined
+    console.log("PARAGRAPHS >>>", html);
+
   /* -------------------------------------------------------------
      3. CONVERT VIBE PARAGRAPHS INTO <ul>
   ------------------------------------------------------------- */
