@@ -100,13 +100,29 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
 
   console.log("RAW DESC >>>", JSON.stringify(desc));
 
+  /* -------------------------------------------------------------
+     1. MODIFY DESC BEFORE ANY <p> PROCESSING
+  ------------------------------------------------------------- */
+
   // Force newline before every bullet
   desc = desc.replace(/•/g, "\n•");
 
   // Force blank line before each vibe marker
   desc = desc.replace(/(🎧|🎤|🎛️|⚡|🎼|✨)/g, "\n\n$1");
 
-  // First pass: turn paragraphs into <p> blocks
+  // Split multiple playlist URLs on the same line into separate lines
+  desc = desc.replace(
+    /(https?:\/\/www\.youtube\.com\/playlist\?list=[A-Za-z0-9_-]+)\s+(https?:\/\/www\.youtube\.com\/playlist\?list=[A-Za-z0-9_-]+)/g,
+    "$1\n$2"
+  );
+
+  // Force playlist headers onto their own line
+  desc = desc.replace(/🎵 ([^\n]+)/g, "🎵 $1\n");
+
+  /* -------------------------------------------------------------
+     2. BUILD <p> BLOCKS FROM DESC
+  ------------------------------------------------------------- */
+
   let html = desc
     .split(/\n\s*\n/)
     .map(p => p.trim())
@@ -125,7 +141,10 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     })
     .join("");
 
-  // Convert vibe paragraphs into a UL
+  /* -------------------------------------------------------------
+     3. CONVERT VIBE PARAGRAPHS INTO <ul>
+  ------------------------------------------------------------- */
+
   html = html.replace(
     /((?:<p>(?:🎧|🎤|🎛️|⚡|🎼|✨).*?<\/p>)+)/,
     (match) => {
@@ -137,34 +156,34 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     }
   );
 
-  // Force playlist headers onto their own line
-  desc = desc.replace(/🎵 ([^\n]+)/g, "🎵 $1\n");
+  /* -------------------------------------------------------------
+     4. CONVERT PLAYLIST URLS → INTERNAL LINKS + SPLIT INTO <p>
+  ------------------------------------------------------------- */
 
-  // Convert remaining raw URLs into clickable links (ignore ones already linked)
-  // Convert playlist URLs into INTERNAL playlist links + split into <p> blocks
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
     (match, fullUrl, playlistId) => {
       const title = playlistTitleLookup[playlistId] || fullUrl;
       const slug = playlistSlugMap[playlistId];
-  
+
       if (!slug) return `<p>${title}</p>`;
-  
+
       return `<p><a href="${baseurl}/music/playlists/${slug}/" class="internal-playlist-link">▶️</a> ${title}</p>`;
     }
   );
 
-  // ⭐ Convert playlist sections into 2-column tables
+  /* -------------------------------------------------------------
+     5. CONVERT PLAYLIST SECTIONS INTO 2-COLUMN TABLES
+  ------------------------------------------------------------- */
+
   html = html.replace(
     /<p>🎵 ([^<]+)<\/p>((?:<p>.*?<\/p>)+)/g,
     (match, header, itemsBlock) => {
-      // Extract each playlist line
       const items = itemsBlock
         .match(/<p>.*?<\/p>/g)
         .map(p => p.replace(/^<p>/, "").replace(/<\/p>$/, "").trim())
         .filter(x => x.length > 0);
 
-      // Build rows of 2 columns
       let rows = "";
       for (let i = 0; i < items.length; i += 2) {
         const left = items[i] || "";
