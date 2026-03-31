@@ -1380,6 +1380,8 @@ footer {
 .playlist-cell {
   vertical-align: top;
   padding: 0.4rem 0.2rem;
+  min-width: 0;
+  word-break: break-word;
 }
 
 /* Add breathing room above each playlist section */
@@ -1395,8 +1397,9 @@ footer {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
-  margin-top: 0.5rem;
   border-spacing: 0 0.5rem;
+  display: block;
+  margin-top: 2rem;
 }
 
 /* Optional: spacing between description and vibe list */
@@ -1407,4 +1410,14 @@ footer {
 /* Optional: spacing after the last paragraph before playlists */
 p {
   margin-bottom: 1rem;
+}
+
+.playlist-table tr {
+  display: flex;
+  width: 100%;
+}
+
+.playlist-table td {
+  flex: 1;
+  padding: 0.4rem 0.2rem;
 }
