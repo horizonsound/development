@@ -149,12 +149,6 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
       return `<ul class="vibe-list">${items}</ul>`;
     }
   );
-  // Convert raw URLs into clickable links, but ignore ones already inside <a>
-  html = html.replace(
-    /(?<!href=")(https?:\/\/[^\s<"]+)/g,
-    (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
-  );
-
   // Convert raw playlist URLs into clickable links with playlist titles
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
@@ -163,6 +157,13 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
       return `<a href="${fullUrl}" target="_blank" rel="noopener">${title}</a>`;
     }
   );
+
+  // Convert raw URLs into clickable links, but ignore ones already inside <a>
+  html = html.replace(
+    /(?<!href=")(https?:\/\/[^\s<"]+)/g,
+    (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
+  );
+
 return html;
 }
 
@@ -172,7 +173,7 @@ return html;
    song objects used by the site. This is the canonical schema.
 ------------------------------------------------------------- */
 
-function buildSongObject(video) {
+function buildSongObject(video, playlistTitleLookup) {
   const song_id = video.slug;
 
   return {
@@ -338,7 +339,7 @@ for (const pl of playlists) {
      NORMALIZE SONG OBJECTS
   ------------------------------------------------------------- */
   console.log("Building song objects...");
-  const Videos = videos.map(buildSongObject);
+  const Videos = videos.map(video => buildSongObject(video, playlistTitleLookup));
 
   /* -------------------------------------------------------------
      WRITE SONG FEED
