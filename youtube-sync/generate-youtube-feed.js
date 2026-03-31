@@ -174,39 +174,39 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     }
   );
   
-/* -------------------------------------------------------------
-   5. CONVERT PLAYLIST SECTIONS INTO 2-COLUMN TABLES
-------------------------------------------------------------- */
-
-html = html.replace(
-  /<p>🎵 ([^<]+)<\/p>((?:<p>(?!🎵 ).*?<\/p>)+)/g,
-  (match, header, itemsBlock) => {
-    const items = itemsBlock
-      .match(/<p>.*?<\/p>/g)
-      .map(p => p.replace(/^<p>/, "").replace(/<\/p>$/, "").trim())
-      .filter(x => x.length > 0);
-
-    let rows = "";
-    for (let i = 0; i < items.length; i += 2) {
-      const left = items[i] || "";
-      const right = items[i + 1] || "";
-
-      rows += `
-        <tr>
-          <td class="playlist-cell">${left}</td>
-          <td class="playlist-cell">${right}</td>
-        </tr>
+  /* -------------------------------------------------------------
+     5. CONVERT PLAYLIST SECTIONS INTO 2-COLUMN TABLES
+  ------------------------------------------------------------- */
+  
+  html = html.replace(
+    /<p>🎵 ([^<]+)<\/p>((?:<p>(?!🎵 ).*?<\/p>)+)/g,
+    (match, header, itemsBlock) => {
+      const items = itemsBlock
+        .match(/<p>.*?<\/p>/g)
+        .map(p => p.replace(/^<p>/, "").replace(/<\/p>$/, "").trim())
+        .filter(x => x.length > 0);
+  
+      let rows = "";
+      for (let i = 0; i < items.length; i += 2) {
+        const left = items[i] || "";
+        const right = items[i + 1] || "";
+  
+        rows += `
+          <tr>
+            <td class="playlist-cell">${left}</td>
+            <td class="playlist-cell">${right}</td>
+          </tr>
+        `;
+      }
+  
+      return `
+        <p class="playlist-header">🎵 ${header}</p>
+        <table class="playlist-table">
+          ${rows}
+        </table>
       `;
     }
-
-    return `
-      <p class="playlist-header">🎵 ${header}</p>
-      <table class="playlist-table">
-        ${rows}
-      </table>
-    `;
-  }
-);
+  );
 
   return html;
 }
