@@ -135,6 +135,9 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     }
   );
 
+  // Force playlist headers onto their own line
+  desc = desc.replace(/🎵 ([^\n]+)/g, "🎵 $1\n");
+
   // Convert remaining raw URLs into clickable links (ignore ones already linked)
   // Convert playlist URLs into INTERNAL playlist links + split into <p> blocks
   html = html.replace(
