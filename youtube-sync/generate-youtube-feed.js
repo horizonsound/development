@@ -160,17 +160,19 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
      4. CONVERT PLAYLIST URLS → INTERNAL LINKS + SPLIT INTO <p>
   ------------------------------------------------------------- */
 
-  html = html.replace(
-    /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
-    (match, fullUrl, playlistId) => {
-      const title = playlistTitleLookup[playlistId] || fullUrl;
-      const slug = playlistSlugMap[playlistId];
+html = html.replace(
+  /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
+  (match, fullUrl, playlistId) => {
+    console.log("MATCHED PLAYLIST URL:", fullUrl);   // <— ADD THIS
 
-      if (!slug) return `<p>${title}</p>`;
+    const title = playlistTitleLookup[playlistId] || fullUrl;
+    const slug = playlistSlugMap[playlistId];
 
-      return `<p><a href="${baseurl}/music/playlists/${slug}/" class="internal-playlist-link">▶️</a> ${title}</p>`;
-    }
-  );
+    if (!slug) return `<p>${title}</p>`;
+
+    return `<p><a href="${baseurl}/music/playlists/${slug}/" class="internal-playlist-link">▶️</a> ${title}</p>`;
+  }
+);
 
   /* -------------------------------------------------------------
      5. CONVERT PLAYLIST SECTIONS INTO 2-COLUMN TABLES
