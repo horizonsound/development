@@ -150,44 +150,16 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
     }
   );
   
-// Convert playlist sections into 2‑column tables with ▶️ links
+// Convert playlist URLs into INTERNAL playlist links
 html = html.replace(
-  /<p>🎵 ([^<]+?) (.*?)<\/p>/g,
-  (match, header, items) => {
-    // Split playlist titles (already replaced by lookup)
-    const titles = items
-      .trim()
-      .split(/\s{2,}|\s(?=[A-Z][a-z]+(?:\s|$))/g)
-      .filter(x => x.trim().length > 0);
+  /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
+  (match, fullUrl, playlistId) => {
+    const title = playlistTitleLookup[playlistId] || fullUrl;
+    const slug = playlistSlugMap[playlistId];
 
-    // Build rows of 2 columns
-    let rows = "";
-    for (let i = 0; i < titles.length; i += 2) {
-      const left = titles[i];
-      const right = titles[i + 1] || "";
+    if (!slug) return title; // fallback
 
-      rows += `
-        <tr>
-          <td>
-            <ul class="playlist-links">
-              <li>▶️ ${left}</li>
-            </ul>
-          </td>
-          <td>
-            ${right
-              ? `<ul class="playlist-links"><li>▶️ ${right}</li></ul>`
-              : ""}
-          </td>
-        </tr>
-      `;
-    }
-
-    return `
-      <p class="playlist-header">🎵 ${header.trim()}</p>
-      <table class="playlist-table">
-        ${rows}
-      </table>
-    `;
+    return `<a href="/music/playlists/${slug}/" data-playlist-id="${playlistId}" class="internal-playlist-link">▶️</a> ${title}`;
   }
 );
   
