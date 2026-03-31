@@ -135,19 +135,6 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
     }
   );
 
-  // ⭐ INTERNAL PLAYLIST LINKS
-  html = html.replace(
-    /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
-    (match, fullUrl, playlistId) => {
-      const title = playlistTitleLookup[playlistId] || fullUrl;
-      const slug = playlistSlugMap[playlistId];
-
-      if (!slug) return title;
-
-      return `<a href="/music/playlists/${slug}/" class="internal-playlist-link">▶️</a> ${title}`;
-    }
-  );
-
   // Convert remaining raw URLs into clickable links (ignore ones already linked)
   // Convert playlist URLs into INTERNAL playlist links + split into <p> blocks
   html = html.replace(
