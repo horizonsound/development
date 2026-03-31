@@ -95,7 +95,7 @@ function writeYaml(filepath, data) {
    - Produces deterministic HTML
 ------------------------------------------------------------- */
 
-function formatDescriptionToHtml(desc, playlistTitleLookup) {
+function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap) {
   if (!desc) return "";
 
   // Force newline before every bullet
@@ -106,11 +106,11 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
 
   // First pass: turn paragraphs into <p> blocks
   let html = desc
-    .split(/\n\s*\n/)               // split on blank lines
-    .map(p => p.trim())             // trim whitespace
-    .filter(p => p.length > 0)      // remove empty paragraphs
+    .split(/\n\s*\n/)
+    .map(p => p.trim())
+    .filter(p => p.length > 0)
     .map(p => {
-      // FORMAT A: bullet + URL → bullet + linked arrow
+      // Bullet + URL → bullet + linked arrow
       if (p.startsWith("•")) {
         const urlMatch = p.match(/https?:\/\/\S+/);
         if (urlMatch) {
@@ -119,25 +119,11 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
           return `<p>${title} <a href="${url}" target="_blank" rel="noopener">▶️</a></p>`;
         }
       }
-
       return `<p>${p}</p>`;
     })
     .join("");
 
-  // Convert playlist header + bullet paragraphs into a UL
-  html = html.replace(
-    /<p>🎵 More from Horizon Sound<\/p>((?:<p>•.*?<\/p>)+)/,
-    (match, bullets) => {
-      const items = bullets
-        .match(/<p>•.*?<\/p>/g)
-        .map(p => p.replace(/^<p>•\s*/, "<li>").replace(/<\/p>$/, "</li>"))
-        .join("");
-
-      return `<p class="playlist-header">🎵 More from Horizon Sound</p><ul class="playlist-links">${items}</ul>`;
-    }
-  );
-
-  // Convert consecutive vibe paragraphs into a UL
+  // Convert vibe paragraphs into a UL
   html = html.replace(
     /((?:<p>(?:🎧|🎤|🎛️|⚡|🎼|✨).*?<\/p>)+)/,
     (match) => {
@@ -145,43 +131,30 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
         .match(/<p>.*?<\/p>/g)
         .map(p => p.replace(/^<p>/, "<li>").replace(/<\/p>$/, "</li>"))
         .join("");
-
       return `<ul class="vibe-list">${items}</ul>`;
     }
   );
-  
-// Convert playlist URLs into INTERNAL playlist links
-html = html.replace(
-  /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
-  (match, fullUrl, playlistId) => {
-    const title = playlistTitleLookup[playlistId] || fullUrl;
-    const slug = playlistSlugMap[playlistId];
 
-    if (!slug) return title; // fallback
-
-    return `
-      <a href="/music/playlists/${slug}/" 
-         class="internal-playlist-link">▶️</a> ${title}
-    `;
-  }
-);
-  
-  // Convert raw playlist URLs into clickable links with playlist titles
+  // ⭐ INTERNAL PLAYLIST LINKS (correct + final)
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
     (match, fullUrl, playlistId) => {
       const title = playlistTitleLookup[playlistId] || fullUrl;
-      return `<a href="${fullUrl}" target="_blank" rel="noopener">${title}</a>`;
+      const slug = playlistSlugMap[playlistId];
+
+      if (!slug) return title;
+
+      return `<a href="/music/playlists/${slug}/" class="internal-playlist-link">▶️</a> ${title}`;
     }
   );
 
-  // Convert raw URLs into clickable links, but ignore ones already inside <a>
+  // Convert remaining raw URLs into clickable links (ignore ones already linked)
   html = html.replace(
     /(?<!href=")(https?:\/\/[^\s<"]+)/g,
     (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
   );
 
-return html;
+  return html;
 }
 
 /* -------------------------------------------------------------
@@ -190,7 +163,7 @@ return html;
    song objects used by the site. This is the canonical schema.
 ------------------------------------------------------------- */
 
-function buildSongObject(video, playlistTitleLookup) {
+function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
   const song_id = video.slug;
 
   return {
@@ -198,10 +171,11 @@ function buildSongObject(video, playlistTitleLookup) {
     youtube_id: video.id,
     title: video.title,
 
-    // Formatted HTML description (canonical)
+    // ⭐ Correct: pass playlistSlugMap into formatter
     description_html: formatDescriptionToHtml(
       video.youtube_metadata?.description || "",
-      playlistTitleLookup
+      playlistTitleLookup,
+      playlistSlugMap
     ),
 
     url: `/music/${song_id}/`,
@@ -209,13 +183,11 @@ function buildSongObject(video, playlistTitleLookup) {
     videostatus: video.videostatus_raw,
     playlists: video.playlists || [],
 
-    // Numeric view count (normalized)
     view_count_num: parseInt(
       video.youtube_metadata?.statistics?.view_count || "0",
       10
     ),
 
-    // Full upstream YouTube metadata (append‑only)
     youtube_metadata: {
       published_at: video.publishedAt || null,
       scheduled_at: video.scheduledAt || null,
@@ -224,17 +196,15 @@ function buildSongObject(video, playlistTitleLookup) {
       category_id: video.youtube_metadata?.category_id || null,
       tags: video.youtube_metadata?.tags || [],
 
-      // contentDetails
       duration: video.youtube_metadata?.duration || null,
       definition: video.youtube_metadata?.definition || null,
-      dimension: video.youtube_metadata?.dimension || null,                 // ⭐ NEW
-      caption: video.youtube_metadata?.caption || null,                     // ⭐ NEW
-      licensed_content: video.youtube_metadata?.licensed_content || false,  // ⭐ NEW
+      dimension: video.youtube_metadata?.dimension || null,
+      caption: video.youtube_metadata?.caption || null,
+      licensed_content: video.youtube_metadata?.licensed_content || false,
       region_allowed: video.youtube_metadata?.region_allowed || [],
       region_blocked: video.youtube_metadata?.region_blocked || [],
-      content_rating: video.youtube_metadata?.content_rating || {},         // ⭐ upgraded
+      content_rating: video.youtube_metadata?.content_rating || {},
 
-      // statistics
       statistics: video.youtube_metadata?.statistics || {
         view_count: 0,
         like_count: 0,
@@ -242,16 +212,15 @@ function buildSongObject(video, playlistTitleLookup) {
         comment_count: 0
       },
 
-      // status
       made_for_kids: video.youtube_metadata?.made_for_kids || false,
       self_declared_made_for_kids: video.youtube_metadata?.self_declared_made_for_kids || false,
       topic_categories: video.youtube_metadata?.topic_categories || [],
       privacy_status: video.privacyStatus || null,
       upload_status: video.uploadStatus || null,
       publish_at: video.publishAt || null,
-      license: video.youtube_metadata?.license || "",                              // ⭐ NEW
-      embeddable: video.youtube_metadata?.embeddable ?? true,                      // ⭐ NEW
-      public_stats_viewable: video.youtube_metadata?.public_stats_viewable ?? true // ⭐ NEW
+      license: video.youtube_metadata?.license || "",
+      embeddable: video.youtube_metadata?.embeddable ?? true,
+      public_stats_viewable: video.youtube_metadata?.public_stats_viewable ?? true
     }
   };
 }
@@ -356,7 +325,7 @@ for (const pl of playlists) {
      NORMALIZE SONG OBJECTS
   ------------------------------------------------------------- */
   console.log("Building song objects...");
-  const Videos = videos.map(video => buildSongObject(video, playlistTitleLookup));
+  const Videos = videos.map(video => buildSongObject(video, playlistTitleLookup, playlistSlugMap));
 
   /* -------------------------------------------------------------
      WRITE SONG FEED
