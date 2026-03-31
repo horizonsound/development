@@ -149,6 +149,30 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
       return `<ul class="vibe-list">${items}</ul>`;
     }
   );
+
+  // Convert playlist sections into YouTube‑style vertical lists
+  html = html.replace(
+    /<p>🎵 ([^<]+?) (.*?)<\/p>/g,
+    (match, header, items) => {
+      // Split playlist titles by two or more spaces
+      const list = items
+        .trim()
+        .split(/\s{2,}|\s(?=[A-Z][a-z]+(?:\s|$))/g) // heuristic split
+        .filter(x => x.trim().length > 0)
+        .map(title => {
+          return `<li>▶️ • ${title.trim()}</li>`;
+        })
+        .join("");
+  
+      return `
+        <p class="playlist-header">🎵 ${header.trim()}</p>
+        <ul class="playlist-links">
+          ${list}
+        </ul>
+      `;
+    }
+  );
+  
   // Convert raw playlist URLs into clickable links with playlist titles
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
