@@ -123,13 +123,15 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, bas
      2. BUILD <p> BLOCKS FROM DESC
   ------------------------------------------------------------- */
 
-  let html = desc
-    .split(/\n+/)
-    .map(p => p.trim())
-    .filter(p => p.length > 0)
-    .map(p => {
+let html = desc
+  .split(/\n+/)
+  .map(p => p.trim())
+  .filter(p => p.length > 0)
+  .map(p => `<p>${p}</p>`)
+  .join("");
 
-      console.log("PARAGRAPHS >>>", html);
+    // ADD IT HERE — after html is defined
+    console.log("PARAGRAPHS >>>", html);
 
       // Bullet + URL → bullet + linked arrow
       if (p.startsWith("•")) {
