@@ -135,7 +135,7 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap) {
     }
   );
 
-  // ⭐ INTERNAL PLAYLIST LINKS (correct + final)
+  // ⭐ INTERNAL PLAYLIST LINKS
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
     (match, fullUrl, playlistId) => {
@@ -152,6 +152,39 @@ function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap) {
   html = html.replace(
     /(?<!href=")(https?:\/\/[^\s<"]+)/g,
     (url) => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`
+  );
+
+  // ⭐ Convert playlist sections into 2-column tables
+  html = html.replace(
+    /<p>🎵 ([^<]+)<\/p>((?:<p>.*?<\/p>)+)/g,
+    (match, header, itemsBlock) => {
+      // Extract each playlist line
+      const items = itemsBlock
+        .match(/<p>.*?<\/p>/g)
+        .map(p => p.replace(/^<p>/, "").replace(/<\/p>$/, "").trim())
+        .filter(x => x.length > 0);
+
+      // Build rows of 2 columns
+      let rows = "";
+      for (let i = 0; i < items.length; i += 2) {
+        const left = items[i] || "";
+        const right = items[i + 1] || "";
+
+        rows += `
+          <tr>
+            <td class="playlist-cell">${left}</td>
+            <td class="playlist-cell">${right}</td>
+          </tr>
+        `;
+      }
+
+      return `
+        <p class="playlist-header">🎵 ${header}</p>
+        <table class="playlist-table">
+          ${rows}
+        </table>
+      `;
+    }
   );
 
   return html;
