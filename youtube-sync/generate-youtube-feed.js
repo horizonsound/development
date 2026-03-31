@@ -168,39 +168,84 @@ let html = desc
 
   console.log("PARAGRAPHS BEFORE TABLE >>>", html);
 
-  /* -------------------------------------------------------------
-     5. CONVERT PLAYLIST SECTIONS INTO 2-COLUMN TABLES
-  ------------------------------------------------------------- */
-  
-  html = html.replace(
-    /<p>🎵 ([^<]+)<\/p>((?:<p>(?!🎵 ).*?<\/p>)+)/g,
-    (match, header, itemsBlock) => {
-      const items = itemsBlock
-        .match(/<p>.*?<\/p>/g)
-        .map(p => p.replace(/^<p>/, "").replace(/<\/p>$/, "").trim())
-        .filter(x => x.length > 0);
-  
-      let rows = "";
-      for (let i = 0; i < items.length; i += 2) {
-        const left = items[i] || "";
-        const right = items[i + 1] || "";
-  
-        rows += `
-          <tr>
-            <td class="playlist-cell">${left}</td>
-            <td class="playlist-cell">${right}</td>
-          </tr>
-        `;
-      }
-  
-      return `
-        <p class="playlist-header">🎵 ${header}</p>
-        <table class="playlist-table">
-          ${rows}
-        </table>
-      `;
+/* -------------------------------------------------------------
+   5. BUILD PLAYLIST TABLES USING A CLEAN STATE MACHINE
+------------------------------------------------------------- */
+
+{
+  // Split into blocks (<p> and <ul> stay intact)
+  const blocks = html.match(/<p>.*?<\/p>|<ul[\s\S]*?<\/ul>/g) || [];
+
+  let output = [];
+  let inTable = false;
+  let currentHeader = "";
+  let currentRows = [];
+
+  const isHeader = p => /^<p>🎵 /.test(p);
+  const isPlaylistItem = p => /internal-playlist-link/.test(p);
+  const isDivider = p => /^<p>---/.test(p);
+  const isAbout = p => /^<p>💬/.test(p);
+  const isCopyright = p => /^<p>©/.test(p);
+  const isHashtags = p => /^<p>#/.test(p);
+
+  const flushTable = () => {
+    if (!inTable) return;
+
+    let rowsHtml = "";
+    for (let i = 0; i < currentRows.length; i += 2) {
+      const left = currentRows[i] || "";
+      const right = currentRows[i + 1] || "";
+      rowsHtml += `
+        <tr>
+          <td class="playlist-cell">${left}</td>
+          <td class="playlist-cell">${right}</td>
+        </tr>`;
     }
-  );
+
+    output.push(`
+      <p class="playlist-header">${currentHeader}</p>
+      <table class="playlist-table">
+        ${rowsHtml}
+      </table>
+    `);
+
+    inTable = false;
+    currentHeader = "";
+    currentRows = [];
+  };
+
+  for (const block of blocks) {
+    if (isHeader(block)) {
+      flushTable();
+      inTable = true;
+      currentHeader = block.replace(/^<p>|<\/p>$/g, "");
+      continue;
+    }
+
+    if (inTable && isPlaylistItem(block)) {
+      const clean = block.replace(/^<p>|<\/p>$/g, "");
+      currentRows.push(clean);
+      continue;
+    }
+
+    if (inTable && (isDivider(block) || isAbout(block) || isCopyright(block) || isHashtags(block))) {
+      flushTable();
+      output.push(block);
+      continue;
+    }
+
+    if (inTable && !isPlaylistItem(block)) {
+      flushTable();
+      output.push(block);
+      continue;
+    }
+
+    output.push(block);
+  }
+
+  flushTable();
+  html = output.join("\n");
+}
 
   return html;
 }
