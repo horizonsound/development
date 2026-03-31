@@ -642,7 +642,10 @@ is_playlist_page: true
     </div>
     <div id="selected-song-lyrics" class="lyrics-block"></div>
 
-            <script>
+<script>
+  window.YOUTUBE_PLAYLISTS = {{ site.data.youtube_playlists.playlists | jsonify }};
+</script>
+<script>
 /* -------------------------------------------------------
    YOUTUBE PLAYER SETUP
 ------------------------------------------------------- */
