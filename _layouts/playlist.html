@@ -730,6 +730,8 @@ function loadSong(songId) {
     ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
   `;
 
+  document.getElementById("selected-song-description").innerHTML = about || "";
+
   document.getElementById("selected-song-about").innerHTML = `
     ${about ? `<h3 class="section-header">About</h3>` : ""}
     ${about ? `<div class="about-text">${about}</div>` : ""}
