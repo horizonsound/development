@@ -150,28 +150,28 @@ function formatDescriptionToHtml(desc, playlistTitleLookup) {
     }
   );
   
-  // Convert playlist sections into YouTube‑style vertical lists
-  html = html.replace(
-    /<p>🎵 ([^<]+?) (.*?)<\/p>/g,
-    (match, header, items) => {
-      // Split playlist titles by two or more spaces OR capital‑letter boundaries
-      const list = items
-        .trim()
-        .split(/\s{2,}|\s(?=[A-Z][a-z]+(?:\s|$))/g)
-        .filter(x => x.trim().length > 0)
-        .map(title => {
-          return `<li>▶️ • ${title.trim()}</li>`;
-        })
-        .join("");
-  
-      return `
-        <p class="playlist-header">🎵 ${header.trim()}</p>
-        <ul class="playlist-links">
-          ${list}
-        </ul>
-      `;
-    }
-  );
+// Convert playlist sections into YouTube‑style vertical lists
+html = html.replace(
+  /<p>🎵 ([^<]+?) (.*?)<\/p>/g,
+  (match, header, items) => {
+    // Split playlist titles by two or more spaces OR capital‑letter boundaries
+    const list = items
+      .trim()
+      .split(/\s{2,}|\s(?=[A-Z][a-z]+(?:\s|$))/g)
+      .filter(x => x.trim().length > 0)
+      .map(title => {
+        return `<li>▶️ • ${title.trim()}</li>`;
+      })
+      .join("");
+
+    return `
+      <p class="playlist-header">🎵 ${header.trim()}</p>
+      <ul class="playlist-links">
+        ${list}
+      </ul>
+    `;
+  }
+);
   
   // Convert raw playlist URLs into clickable links with playlist titles
   html = html.replace(
