@@ -374,11 +374,11 @@ async function generate() {
     process.exit(1);
   }
 
-// Build a lookup: { YouTube playlist ID → slug }
-playlistSlugMap = {};
-for (const pl of playlists) {
-  playlistSlugMap[pl.id] = pl.slug;   // pl.id = YouTube playlist ID, pl.slug = your slug
-}
+  // Build a lookup: { YouTube playlist ID → slug }
+  playlistSlugMap = {};
+  for (const pl of playlists) {
+    playlistSlugMap[pl.id] = pl.slug;   // pl.id = YouTube playlist ID, pl.slug = your slug
+  }
 
   console.log(`PLAYLIST COUNT: ${playlists.length}`);
 
@@ -451,27 +451,22 @@ for (const pl of playlists) {
   ------------------------------------------------------------- */
   console.log("Writing youtube_playlists.yml...");
   writeYaml(PLAYLIST_FEED_PATH, {
-    playlists: playlists.map(pl => ({
-      playlist_id: pl.slug,
-      title: pl.title,
-
+    playlists: playlists.map(pl => {
       // Extract playlist-level hashtags
       const { clean: cleanDesc, tags: playlistTags } = extractHashtags(pl.description || "");
-      
+  
       return {
         playlist_id: pl.slug,
         title: pl.title,
-        description: cleanDesc,       // ← cleaned description
-        tags: playlistTags,           // ← NEW FIELD
+        description: cleanDesc,       // cleaned description
+        tags: playlistTags,           // NEW FIELD
         published_at: pl.publishedAt,
         channel_id: pl.channel_id,
         channel_title: pl.channel_title,
         thumbnail: pl.thumbnail,
         song_ids: pl.videoIds.map(id => slugLookup[id]).filter(Boolean)
       };
-
-    }))
-    
+    })
   });
 
   /* -------------------------------------------------------------
@@ -490,15 +485,15 @@ for (const pl of playlists) {
     ensureDir(PLAYLIST_PAGES_DIR);
   
     // Minimal front matter matching your working files
-const frontMatter =
-`---
-layout: playlist
-playlist_id: ${pl.slug}
-title: "${pl.title.replace(/"/g, '\\"')}"
-is_playlist_page: true
-permalink: /music/playlists/${pl.slug}/
----
-`;
+  const frontMatter =
+  `---
+  layout: playlist
+  playlist_id: ${pl.slug}
+  title: "${pl.title.replace(/"/g, '\\"')}"
+  is_playlist_page: true
+  permalink: /music/playlists/${pl.slug}/
+  ---
+  `;
   
     fs.writeFileSync(filepath, frontMatter, "utf8");
   
