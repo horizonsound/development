@@ -155,7 +155,7 @@ let html = desc
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
     (match, fullUrl, playlistId) => {
-      console.log("MATCHED PLAYLIST URL: ", fullUrl);   // <— ADD THIS
+      //console.log("MATCHED PLAYLIST URL: ", fullUrl);   // <— ADD THIS
   
       const title = playlistTitleLookup[playlistId] || fullUrl;
       const slug = playlistSlugMap[playlistId];
@@ -166,7 +166,7 @@ let html = desc
     }
   );
 
-  console.log("PARAGRAPHS BEFORE TABLE >>>", html);
+  //console.log("PARAGRAPHS BEFORE TABLE >>>", html);
 
 /* -------------------------------------------------------------
    5. BUILD PLAYLIST TABLES USING A CLEAN STATE MACHINE
