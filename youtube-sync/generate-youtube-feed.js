@@ -482,7 +482,7 @@ async function generate() {
   const PLAYLIST_PAGES_DIR = "./_playlists";
   
   for (const pl of playlists) {
-    const filepath = path.join(PLAYLIST_PAGES_DIR, pl.slug);
+    const filepath = path.join(PLAYLIST_PAGES_DIR, `${pl.slug}.md`);
   
     // Ensure _playlists directory exists
     ensureDir(PLAYLIST_PAGES_DIR);
