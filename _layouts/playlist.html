@@ -920,7 +920,7 @@ document.addEventListener("click", (e) => {
 
     const url = playlistLink.getAttribute("href");
 
-    history.pushState({}, "", url);
+    history.pushState({}, "", window.BASEURL + url);
     loadInternalPlaylist(url);
 
     return;
@@ -934,7 +934,7 @@ document.addEventListener("click", (e) => {
 
   const newUrl = new URL(window.location.href);
   newUrl.searchParams.set("song_id", id);
-  history.pushState({}, "", newUrl.toString());
+  history.pushState( {}, "", window.BASEURL + newUrl.pathname + "?" + newUrl.searchParams.toString());
 
   safeLoadSong(id);
 
