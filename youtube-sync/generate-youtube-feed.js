@@ -87,6 +87,23 @@ function writeYaml(filepath, data) {
   fs.writeFileSync(filepath, yaml.dump(data), "utf8");
 }
 
+function extractHashtags(desc) {
+  if (!desc) return { clean: "", tags: [] };
+
+  const tagRegex = /#[A-Za-z0-9_-]+/g;
+  const tags = desc.match(tagRegex) || [];
+
+  let clean = desc.replace(tagRegex, "");
+  
+  // Remove leftover punctuation from hashtag removal (commas, slashes, pipes, extra spaces)
+  clean = clean.replace(/^[\s,;:|/-]+/gm, "").trim();
+  
+  // Normalize tags (strip #)
+  const normalized = tags.map(t => t.slice(1).toLowerCase());
+
+  return { clean, tags: normalized };
+}
+
 /* -------------------------------------------------------------
    DESCRIPTION FORMATTER
    Converts raw YouTube description text into compact <p> blocks.
@@ -98,7 +115,7 @@ function writeYaml(filepath, data) {
 function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, baseurl = "") {
   if (!desc) return "";
 
-  console.log("RAW DESC >>>", JSON.stringify(desc));
+  //console.log("RAW DESC >>>", JSON.stringify(desc));
 
   /* -------------------------------------------------------------
      1. MODIFY DESC BEFORE ANY <p> PROCESSING
@@ -131,7 +148,7 @@ let html = desc
   .join("");
 
       // ADD IT HERE — after html is defined
-    console.log("PARAGRAPHS >>>", html);
+    //console.log("PARAGRAPHS >>>", html);
 
   /* -------------------------------------------------------------
      3. CONVERT VIBE PARAGRAPHS INTO <ul>
@@ -155,7 +172,7 @@ let html = desc
   html = html.replace(
     /(https?:\/\/www\.youtube\.com\/playlist\?list=([A-Za-z0-9_-]+))/g,
     (match, fullUrl, playlistId) => {
-      console.log("MATCHED PLAYLIST URL: ", fullUrl);   // <— ADD THIS
+      //console.log("MATCHED PLAYLIST URL: ", fullUrl);   // <— ADD THIS
   
       const title = playlistTitleLookup[playlistId] || fullUrl;
       const slug = playlistSlugMap[playlistId];
@@ -166,7 +183,7 @@ let html = desc
     }
   );
 
-  console.log("PARAGRAPHS BEFORE TABLE >>>", html);
+  //console.log("PARAGRAPHS BEFORE TABLE >>>", html);
 
 /* -------------------------------------------------------------
    5. BUILD PLAYLIST TABLES USING A CLEAN STATE MACHINE
@@ -255,27 +272,31 @@ let html = desc
    Converts raw YouTube API video objects into stable, normalized
    song objects used by the site. This is the canonical schema.
 ------------------------------------------------------------- */
-
 function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
   const song_id = video.slug;
+
+  // Extract hashtags BEFORE formatting
+  const rawDesc = video.youtube_metadata?.description || "";
+  const { clean, tags } = extractHashtags(rawDesc);
 
   return {
     song_id,
     youtube_id: video.id,
     title: video.title,
 
-    // ⭐ Correct: pass playlistSlugMap into formatter
     description_html: formatDescriptionToHtml(
-      video.youtube_metadata?.description || "",
+      clean,                    // ← cleaned description
       playlistTitleLookup,
       playlistSlugMap,
-      process.env.BASEURL || ""   // e.g. "" or "/development"
+      process.env.BASEURL || ""
     ),
 
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
     videostatus: video.videostatus_raw,
     playlists: video.playlists || [],
+
+    tags,                       // ← NEW FIELD
 
     view_count_num: parseInt(
       video.youtube_metadata?.statistics?.view_count || "0",
@@ -355,11 +376,11 @@ async function generate() {
     process.exit(1);
   }
 
-// Build a lookup: { YouTube playlist ID → slug }
-playlistSlugMap = {};
-for (const pl of playlists) {
-  playlistSlugMap[pl.id] = pl.slug;   // pl.id = YouTube playlist ID, pl.slug = your slug
-}
+  // Build a lookup: { YouTube playlist ID → slug }
+  playlistSlugMap = {};
+  for (const pl of playlists) {
+    playlistSlugMap[pl.id] = pl.slug;   // pl.id = YouTube playlist ID, pl.slug = your slug
+  }
 
   console.log(`PLAYLIST COUNT: ${playlists.length}`);
 
@@ -432,17 +453,22 @@ for (const pl of playlists) {
   ------------------------------------------------------------- */
   console.log("Writing youtube_playlists.yml...");
   writeYaml(PLAYLIST_FEED_PATH, {
-    playlists: playlists.map(pl => ({
-      playlist_id: pl.slug,
-      title: pl.title,
-      description: pl.description,
-      published_at: pl.publishedAt,
-      channel_id: pl.channel_id,        // ⭐ NEW
-      channel_title: pl.channel_title,  // ⭐ NEW
-      thumbnail: pl.thumbnail,
-      song_ids: pl.videoIds.map(id => slugLookup[id])
-    }))
-    
+    playlists: playlists.map(pl => {
+      // Extract playlist-level hashtags
+      const { clean: cleanDesc, tags: playlistTags } = extractHashtags(pl.description || "");
+  
+      return {
+        playlist_id: pl.slug,
+        title: pl.title,
+        description: cleanDesc,       // cleaned description
+        tags: playlistTags,           // NEW FIELD
+        published_at: pl.publishedAt,
+        channel_id: pl.channel_id,
+        channel_title: pl.channel_title,
+        thumbnail: pl.thumbnail,
+        song_ids: pl.videoIds.map(id => slugLookup[id]).filter(Boolean)
+      };
+    })
   });
 
   /* -------------------------------------------------------------
@@ -455,13 +481,13 @@ for (const pl of playlists) {
   const PLAYLIST_PAGES_DIR = "./_playlists";
   
   for (const pl of playlists) {
-    const filepath = path.join(PLAYLIST_PAGES_DIR, pl.slug);
+    const filepath = path.join(PLAYLIST_PAGES_DIR, `${pl.slug}.md`);
   
     // Ensure _playlists directory exists
     ensureDir(PLAYLIST_PAGES_DIR);
   
     // Minimal front matter matching your working files
-const frontMatter =
+  const frontMatter =
 `---
 layout: playlist
 playlist_id: ${pl.slug}
