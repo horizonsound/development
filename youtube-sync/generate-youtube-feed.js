@@ -488,14 +488,14 @@ async function generate() {
   
     // Minimal front matter matching your working files
   const frontMatter =
-  `---
-  layout: playlist
-  playlist_id: ${pl.slug}
-  title: "${pl.title.replace(/"/g, '\\"')}"
-  is_playlist_page: true
-  permalink: /music/playlists/${pl.slug}/
-  ---
-  `;
+`---
+layout: playlist
+playlist_id: ${pl.slug}
+title: "${pl.title.replace(/"/g, '\\"')}"
+is_playlist_page: true
+permalink: /music/playlists/${pl.slug}/
+---
+`;
   
     fs.writeFileSync(filepath, frontMatter, "utf8");
   
