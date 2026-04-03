@@ -6,6 +6,7 @@ playlists:
       easygoing island energy. These tracks capture the carefree spirit of salt
       air, late nights, and the kind of memories that linger long after the tide
       rolls out.
+    tags: []
     published_at: '2026-03-29T13:39:57.869637Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -25,6 +26,7 @@ playlists:
       Bright, modern pop instrumentals built around uplifting melodies, clean
       production, and feel‑good energy. Perfect for creators, storytelling, or
       anyone looking for a polished pop backdrop with emotional clarity.
+    tags: []
     published_at: '2026-03-20T00:16:16.393704Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -42,6 +44,7 @@ playlists:
       A neon‑lit blend of retro synths, pulsing basslines, and cinematic
       nostalgia. These instrumentals channel the glow of 80s futurism with a
       modern edge, perfect for night‑drive vibes and atmospheric storytelling.
+    tags: []
     published_at: '2026-03-20T00:15:42.448911Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -59,6 +62,7 @@ playlists:
       Epic, high‑drama instrumentals blending rock power with orchestral scale.
       Sweeping strings, bold percussion, and electric energy come together in a
       cinematic fusion inspired by the intensity of TSO‑style arrangements.
+    tags: []
     published_at: '2026-03-20T00:15:16.91963Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -77,6 +81,7 @@ playlists:
       emotional depth. These tracks create a quiet world of stillness and
       clarity, perfect for storytelling, focus, or moments that call for gentle
       resonance.
+    tags: []
     published_at: '2026-03-20T00:13:53.365353Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -94,6 +99,7 @@ playlists:
       High‑energy electronic instrumentals built for movement, motivation, and
       momentum. Driving beats, bright synths, and dynamic drops deliver a clean,
       modern EDM pulse that keeps the pace strong.
+    tags: []
     published_at: '2026-03-20T00:13:15.979204Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -111,6 +117,7 @@ playlists:
       A collection of electric‑driven rock instrumentals filled with grit,
       atmosphere, and cinematic edge. From soaring leads to moody riffs, these
       tracks bring modern rock energy to any scene or creative project.
+    tags: []
     published_at: '2026-03-20T00:12:32.714184Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -128,6 +135,7 @@ playlists:
       Warm, organic acoustic instrumentals shaped by gentle strumming, heartfelt
       melodies, and a sense of open‑air simplicity. Perfect for storytelling,
       travel moments, and anything that calls for natural, grounded emotion.
+    tags: []
     published_at: '2026-03-20T00:11:49.597984Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -146,6 +154,7 @@ playlists:
       Atmospheric, spacious instrumentals designed to evoke mood, movement, and
       quiet wonder. These tracks blend soft textures, evolving soundscapes, and
       cinematic depth for moments that feel expansive and reflective.
+    tags: []
     published_at: '2026-03-20T00:10:44.520832Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -164,6 +173,7 @@ playlists:
       A timeless mix of classic country storytelling, twangy guitars, and warm
       vintage charm. These tracks capture the heart of old‑school country —
       honest, melodic, and rooted in tradition.
+    tags: []
     published_at: '2026-02-28T12:46:34.396745Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -175,6 +185,7 @@ playlists:
   - playlist_id: calm-cinematic-horizon-sound-instrumentals
     title: Calm & Cinematic - Horizon Sound Instrumentals
     description: ''
+    tags: []
     published_at: '2026-02-07T10:43:53.382218Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -193,10 +204,11 @@ playlists:
       A three‑part acoustic journey inspired by the romance, mystery, and quiet
       magic of Venice. Each track reveals a different chapter of the story,
       blending gentle melodies with cinematic, travel‑inspired emotion.
+    tags: []
     published_at: '2026-02-06T12:31:02.78813Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
-    thumbnail: null
+    thumbnail: /assets/thumbnails/playlist-missing-stamp-venice-trilogy.jpeg
     song_ids:
       - someday-acoustic-pop-storytelling-horizon-sound
       - missing-stamp-emotional-acoustic-pop-horizon-sound
@@ -207,6 +219,7 @@ playlists:
       A curated collection of short‑form Horizon Sound moments — quick bursts of
       energy, emotion, and storytelling designed for reels, shorts, and
       fast‑moving creative ideas.
+    tags: []
     published_at: '2026-02-01T15:16:08.531871Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -217,9 +230,15 @@ playlists:
   - playlist_id: midnight-saga
     title: Midnight Saga
     description: >-
+      ,  
+
       A four‑chapter musical story unfolding across late‑night energy, mystery,
       and cinematic tension. Each track builds on the last, creating a cohesive
       arc that moves from dusk to chaos to clarity.
+    tags:
+      - dancepop
+      - electronicdancemusic
+      - horizonsound
     published_at: '2026-01-27T20:06:20.884413Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -243,11 +262,22 @@ playlists:
       resolutions. This collection stands as a unified emotional arc —
       thoughtful, atmospheric, and deeply human — brought to life through
       Lydia’s unmistakable presence.
-
-
-      #LydiaEllington #AfterTheSilence #HorizonSound #CinematicPop #PopBallad
-      #EmotionalPop #IndiePop #NewMusic #Songwriter #PopAlbum #CinematicMusic
-      #FemaleVocalist #EmotionalBallad #AtmosphericPop #StorytellingMusic
+    tags:
+      - lydiaellington
+      - afterthesilence
+      - horizonsound
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - newmusic
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     published_at: '2026-01-16T14:08:54.234054Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -286,6 +316,7 @@ playlists:
       Three connected songs tracing the journey from heartbreak to
       self‑discovery. One story told through stillness, her voice, and his —
       each chapter revealing a different truth on the way back to yourself.
+    tags: []
     published_at: '2026-01-16T14:08:14.9513Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -299,6 +330,7 @@ playlists:
     description: >-
       Acoustic‑driven songs featuring honest storytelling, soft acoustic
       textures, and a warm, intimate singer‑songwriter sound.
+    tags: []
     published_at: '2026-01-16T14:07:28.874406Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -313,6 +345,7 @@ playlists:
     description: >-
       Emotional, heartfelt ballads featuring intimate vocals, reflective lyrics,
       and a warm, cinematic atmosphere.
+    tags: []
     published_at: '2026-01-16T14:06:39.030412Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -330,6 +363,7 @@ playlists:
       Modern country featuring big choruses, heartfelt vocals, and a blend of
       acoustic warmth and polished production. Songs that embody today’s country
       storytelling — love, loss, grit, and the moments that feel like home.
+    tags: []
     published_at: '2026-01-11T14:22:16.368308Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -347,6 +381,7 @@ playlists:
       A high‑voltage mix of glossy synths, punchy beats, and modern pop
       attitude. These tracks deliver bright hooks and dance‑ready energy with a
       futuristic edge.
+    tags: []
     published_at: '2026-01-10T16:14:27.752221Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -360,6 +395,7 @@ playlists:
       Feel‑good 90s‑inspired instrumentals filled with bright guitars, nostalgic
       melodies, and warm pop‑rock charm. A throwback to the era of big choruses
       and timeless hooks.
+    tags: []
     published_at: '2026-01-09T14:11:00.03425Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -373,6 +409,7 @@ playlists:
       Gritty, swagger‑filled Southern rock instrumentals built on bluesy riffs,
       driving drums, and cinematic outlaw energy. Loud, rowdy, and
       unapologetically bold.
+    tags: []
     published_at: '2026-01-08T13:09:44.820846Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -387,6 +424,7 @@ playlists:
       A vibrant mix of modern pop instrumentals featuring emotional hooks,
       catchy melodies, and polished production. Bright, uplifting, and built for
       feel‑good storytelling.
+    tags: []
     published_at: '2026-01-08T13:05:02.080533Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
@@ -405,6 +443,7 @@ playlists:
       A nostalgic blend of shimmering synths, soaring vocals, and big 80s drums
       — reimagined through a modern cinematic lens. These tracks capture the
       electrifying spirit of classic 80s rock and pop.
+    tags: []
     published_at: '2026-01-08T13:00:48.268465Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
