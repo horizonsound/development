@@ -98,7 +98,7 @@ function writeYaml(filepath, data) {
 function formatDescriptionToHtml(desc, playlistTitleLookup, playlistSlugMap, baseurl = "") {
   if (!desc) return "";
 
-  console.log("RAW DESC >>>", JSON.stringify(desc));
+  //console.log("RAW DESC >>>", JSON.stringify(desc));
 
   /* -------------------------------------------------------------
      1. MODIFY DESC BEFORE ANY <p> PROCESSING
@@ -131,7 +131,7 @@ let html = desc
   .join("");
 
       // ADD IT HERE — after html is defined
-    console.log("PARAGRAPHS >>>", html);
+    //console.log("PARAGRAPHS >>>", html);
 
   /* -------------------------------------------------------------
      3. CONVERT VIBE PARAGRAPHS INTO <ul>
