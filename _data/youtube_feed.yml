@@ -2966,7 +2966,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/winterfire/
     thumbnail: /assets/thumbnails/winterfire.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 1
@@ -3103,7 +3103,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/the-frozen-overture/
     thumbnail: /assets/thumbnails/the-frozen-overture.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 1
@@ -3240,7 +3240,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/the-rising-storm/
     thumbnail: /assets/thumbnails/the-rising-storm.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 1
@@ -3377,7 +3377,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/fire-in-the-choir/
     thumbnail: /assets/thumbnails/fire-in-the-choir.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 1
@@ -3515,7 +3515,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/glacierstorm/
     thumbnail: /assets/thumbnails/glacierstorm.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 1
@@ -3653,7 +3653,7 @@ songs:
       <p>#MusicVideo #IndieArtist #PopMusic #InstrumentalMusic #Songwriter</p>
     url: /music/the-winter-requiem/
     thumbnail: /assets/thumbnails/the-winter-requiem.jpeg
-    videostatus: public
+    videostatus: scheduled
     playlists:
       - orchestral-rock-tso-style-horizon-sound-instrumentals
     view_count_num: 2
@@ -14734,7 +14734,7 @@ songs:
     videostatus: public
     playlists:
       - modern-country
-    view_count_num: 68
+    view_count_num: 69
     youtube_metadata:
       published_at: '2026-03-27T16:00:39Z'
       scheduled_at: null
@@ -14751,7 +14751,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '68'
+        view_count: '69'
         like_count: '3'
         favorite_count: '0'
         comment_count: '0'
