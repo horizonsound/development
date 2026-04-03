@@ -693,7 +693,9 @@ p {
         <img class="hero-image" src="{{ site.baseurl }}{{ hero_image }}" alt="{{ playlist.title }}">
       </div>
     {% else %}
-      {% include hero.html %}
+      <div class="default-hero">
+        {% include hero.html %}
+      </div>
     {% endif %}
 
     <!-- Playlist Header -->
@@ -878,7 +880,7 @@ function highlightTile(songId) {
     });
   }
 }
-
+  
   function updateHeroForPlaylist(slug) {
     const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
     const override = window.MUSIC_OVERRIDES.find(o => o.playlist_id === slug);
@@ -886,7 +888,7 @@ function highlightTile(songId) {
     const hero = override?.hero || playlist?.hero || null;
   
     const heroContainer = document.querySelector(".hero-banner");
-    const defaultHero = document.querySelector(".default-hero"); // whatever your default hero wrapper is
+    const defaultHero = document.querySelector(".default-hero");
   
     if (hero) {
       // Show custom hero
@@ -901,37 +903,36 @@ function highlightTile(songId) {
       if (defaultHero) defaultHero.style.display = "block";
     }
   }
-
-/* -------------------------------------------------------
+  /* -------------------------------------------------------
    INTERNAL PLAYLIST LOADING
-------------------------------------------------------- */
-function loadInternalPlaylist(url) {
-  const slug = url.split("/").filter(Boolean).pop();
-  updateHeroForPlaylist(slug);
-
-  const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
-  if (!playlist) {
-    console.error("Playlist not found:", slug);
-    return;
+  ------------------------------------------------------- */
+  function loadInternalPlaylist(url) {
+    const slug = url.split("/").filter(Boolean).pop();
+    updateHeroForPlaylist(slug);
+  
+    const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
+    if (!playlist) {
+      console.error("Playlist not found:", slug);
+      return;
+    }
+  
+    const songIds = playlist.song_ids;
+  
+    const strip = document.querySelector(".content-strip");
+    strip.innerHTML = songIds.map(id => {
+      const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
+      return `
+        <div class="shared-tile" data-song-id="${song.song_id}">
+          <img src="/assets/thumbnails/${song.song_id}.jpeg" />
+          <div class="tile-title">${song.title}</div>
+        </div>
+      `;
+    }).join("");
+  
+    if (songIds.length > 0) {
+      safeLoadSong(songIds[0]);
+    }
   }
-
-  const songIds = playlist.song_ids;
-
-  const strip = document.querySelector(".content-strip");
-  strip.innerHTML = songIds.map(id => {
-    const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
-    return `
-      <div class="shared-tile" data-song-id="${song.song_id}">
-        <img src="/assets/thumbnails/${song.song_id}.jpeg" />
-        <div class="tile-title">${song.title}</div>
-      </div>
-    `;
-  }).join("");
-
-  if (songIds.length > 0) {
-    safeLoadSong(songIds[0]);
-  }
-}
 
 /* -------------------------------------------------------
    CLICK HANDLER (PLAYLISTS + SONG TILES)
