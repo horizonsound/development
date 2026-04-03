@@ -772,8 +772,10 @@ p {
 
 <script>
   window.YOUTUBE_PLAYLISTS = {{ site.data.youtube_playlists.playlists | jsonify }};
+  window.PLAYLIST_OVERRIDES = {{ site.data.playlist_overrides.overrides | jsonify }};
 </script>
-<script>
+
+            <script>
 /* -------------------------------------------------------
    YOUTUBE PLAYER SETUP
 ------------------------------------------------------- */
@@ -884,7 +886,7 @@ function highlightTile(songId) {
   
   function updateHeroForPlaylist(slug) {
     const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
-    const override = window.MUSIC_OVERRIDES.find(o => o.playlist_id === slug);
+    const override = window.PLAYLIST_OVERRIDES.find(o => o.playlist_id === slug);
   
     const hero = override?.hero || playlist?.hero || null;
   
