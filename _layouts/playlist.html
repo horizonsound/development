@@ -983,7 +983,18 @@ function hideEmptySections() {
     lyricsSection.style.display = "none";
   }
 }
+
+  document.addEventListener("click", e => {
+    const row = e.target.closest(".playlist-row");
+    if (!row) return;
   
+    const playlistId = row.getAttribute("data-playlist-id");
+    if (!playlistId) return;
+  
+    window.location.href = `${window.BASEURL}/playlist/${playlistId}/`;
+  });
+
+
   // IMPORTANT: Call this AFTER your existing JS populates the content
   document.addEventListener("songContentLoaded", hideEmptySections);
   
@@ -1205,16 +1216,6 @@ function onPlayerStateChange(event) {
     });
   
     lyricsEl.innerHTML = html;
-  });
-
-  document.addEventListener("click", e => {
-    const row = e.target.closest(".playlist-row");
-    if (!row) return;
-  
-    const playlistId = row.getAttribute("data-playlist-id");
-    if (!playlistId) return;
-  
-    window.location.href = `${window.BASEURL}/playlist/${playlistId}/`;
   });
 
   function highlightTile(songId) {
