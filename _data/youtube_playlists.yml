@@ -121,7 +121,8 @@ playlists:
     published_at: '2026-03-20T00:12:32.714184Z'
     channel_id: UCiko-zjojbsoXrsEuBOPbSw
     channel_title: Horizon Sound
-    thumbnail: null
+    thumbnail: >-
+      /assets/thumbnails/playlist-electric-guitar-rock-horizon-sound-instrumentals.jpeg
     song_ids:
       - neon-skyline
       - running-through-the-night
