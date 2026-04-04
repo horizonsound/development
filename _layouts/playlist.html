@@ -662,6 +662,44 @@ p {
   width: 1200px !important;
 }
 
+  .song-sections {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.section {
+  border-bottom: 1px solid #444;
+  padding: 10px 0;
+}
+
+.section-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-toggle.open {
+  color: #ffcc66;
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0;
+}
+
+.section-content.open {
+  max-height: 2000px; /* plenty of room */
+  padding: 10px 0 20px;
+}
+
 </style>
    
   <!-- Load the playlist and override data -->
@@ -762,20 +800,68 @@ p {
         </div>
     </div>
 
-    <div id="selected-song-extra" class="about-block"></div>
-    
-    <div class="centered-column">
-      <div id="selected-song-about" class="about-block"></div>
-    </div>
-    
-    <div id="selected-song-lyrics" class="lyrics-block"></div>
+<div class="song-sections">
 
+  <!-- DESCRIPTION (open by default) -->
+  <div class="section">
+    <button class="section-toggle open" data-target="desc-content">
+      Description
+    </button>
+    <div id="desc-content" class="section-content open">
+      <div id="selected-song-about"></div>
+      <div id="selected-song-vibes"></div>
+    </div>
+  </div>
+
+  <!-- INSPIRATION (collapsed) -->
+  <div class="section">
+    <button class="section-toggle" data-target="insp-content">
+      Inspiration
+    </button>
+    <div id="insp-content" class="section-content">
+      <div id="selected-song-extra"></div>
+    </div>
+  </div>
+
+  <!-- LYRICS (collapsed) -->
+  <div class="section">
+    <button class="section-toggle" data-target="lyrics-content">
+      Lyrics
+    </button>
+    <div id="lyrics-content" class="section-content">
+      <div id="selected-song-lyrics"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener("click", function(e) {
+    if (!e.target.classList.contains("section-toggle")) return;
+  
+    const targetId = e.target.getAttribute("data-target");
+    const content = document.getElementById(targetId);
+  
+    const isOpen = content.classList.contains("open");
+  
+    // Close all sections except the one clicked
+    document.querySelectorAll(".section-content").forEach(sec => sec.classList.remove("open"));
+    document.querySelectorAll(".section-toggle").forEach(btn => btn.classList.remove("open"));
+  
+    // If it was closed, open it
+    if (!isOpen) {
+      content.classList.add("open");
+      e.target.classList.add("open");
+    }
+  });
+</script>
+            
 <script>
   window.YOUTUBE_PLAYLISTS = {{ site.data.youtube_playlists.playlists | jsonify }};
   window.PLAYLIST_OVERRIDES = {{ site.data.playlist_overrides.overrides | jsonify }};
 </script>
 
-            <script>
+<script>
 /* -------------------------------------------------------
    YOUTUBE PLAYER SETUP
 ------------------------------------------------------- */
