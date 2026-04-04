@@ -103,48 +103,50 @@ function writeYaml(filepath, data) {
   
     return { clean, tags: normalized };
   }
-
+  
   function extractVibes(desc) {
     if (!desc) return { descriptionWithoutVibes: "", vibes: [] };
   
-    // Vibe markers
-    const vibeRegex = /(🎧|🎤|🎛️|⚡|🎼|✨)/;
+    const vibeMarker = /^(🎧|🎤|🎛️|⚡|🎼|✨)/;
   
-    // Find where vibes start
-    const vibeStart = desc.search(vibeRegex);
-    if (vibeStart === -1) {
-      // No vibes found → return untouched
+    const lines = desc.split("\n");
+  
+    let firstVibeIndex = -1;
+    let vibes = [];
+  
+    // Find first vibe line
+    for (let i = 0; i < lines.length; i++) {
+      if (vibeMarker.test(lines[i].trim())) {
+        firstVibeIndex = i;
+        break;
+      }
+    }
+  
+    // No vibes → return untouched
+    if (firstVibeIndex === -1) {
       return { descriptionWithoutVibes: desc.trim(), vibes: [] };
     }
   
-    // Split into lines
-    const lines = desc.split("\n");
-  
-    let vibes = [];
-    let inVibes = false;
-  
-    for (const line of lines) {
-      if (!inVibes && vibeRegex.test(line)) {
-        inVibes = true;
-      }
-  
-      if (inVibes) {
-        // Only collect lines that START with a vibe emoji
-        if (vibeRegex.test(line.trim().charAt(0))) {
-          vibes.push(line.trim());
-        }
+    // Collect consecutive vibe lines starting at firstVibeIndex
+    for (let i = firstVibeIndex; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (vibeMarker.test(line)) {
+        vibes.push(line);
+      } else {
+        // Stop at the first non‑vibe line
+        break;
       }
     }
   
-    // Everything ABOVE the first vibe line stays
+    // Everything above the first vibe line stays
     const descriptionWithoutVibes = lines
-      .slice(0, lines.findIndex(l => vibeRegex.test(l)))
+      .slice(0, firstVibeIndex)
       .join("\n")
       .trim();
   
     return { descriptionWithoutVibes, vibes };
   }
-
+    
 /* -------------------------------------------------------------
    DESCRIPTION FORMATTER
    Converts raw YouTube description text into compact <p> blocks.
