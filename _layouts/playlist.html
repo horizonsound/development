@@ -1031,17 +1031,22 @@ function onPlayerStateChange(event) {
   
   document.addEventListener("songContentLoaded", () => { console.log("EVENT: songContentLoaded fired"); });
 
-  document.addEventListener("songContentLoaded", () => {
-    const lyricsEl = document.getElementById("selected-song-lyrics");
-    if (!lyricsEl) return;
-  
-    let html = lyricsEl.innerHTML;
-  
-    // Convert [Verse 1] → <span class="lyric-section">Verse 1</span>
-html = html.replace(/
+document.addEventListener("songContentLoaded", () => {
+  const lyricsEl = document.getElementById("selected-song-lyrics");
+  if (!lyricsEl) return;
+
+  let html = lyricsEl.innerHTML;
+
+  // Convert [Verse 1] → <span class="lyric-section">Verse 1</span>
+  html = html.replace(/
+
 \[(.*?)\]
+
 /g, (match, p1) => {
-  return `<span class="lyric-section">${p1}</span>`;
+    return `<span class="lyric-section">${p1}</span>`;
+  });
+
+  lyricsEl.innerHTML = html;
 });
 
 function highlightTile(songId) {
