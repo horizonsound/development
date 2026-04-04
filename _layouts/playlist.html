@@ -802,7 +802,7 @@ p {
 
 <div class="song-sections">
 
-  <!-- DESCRIPTION (open by default) -->
+  <!-- DESCRIPTION (always shown) -->
   <div class="section">
     <button class="section-toggle open" data-target="desc-content">
       Description
@@ -813,7 +813,8 @@ p {
     </div>
   </div>
 
-  <!-- INSPIRATION (collapsed) -->
+  <!-- INSPIRATION (only if exists) -->
+  {% if selected_song.extra and selected_song.extra != "" %}
   <div class="section">
     <button class="section-toggle" data-target="insp-content">
       Inspiration
@@ -822,8 +823,10 @@ p {
       <div id="selected-song-extra"></div>
     </div>
   </div>
+  {% endif %}
 
-  <!-- LYRICS (collapsed) -->
+  <!-- LYRICS (only if exists) -->
+  {% if selected_song.lyrics and selected_song.lyrics != "" %}
   <div class="section">
     <button class="section-toggle" data-target="lyrics-content">
       Lyrics
@@ -832,6 +835,7 @@ p {
       <div id="selected-song-lyrics"></div>
     </div>
   </div>
+  {% endif %}
 
 </div>
 
