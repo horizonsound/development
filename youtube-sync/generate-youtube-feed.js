@@ -314,6 +314,7 @@ let html = desc
    song objects used by the site. This is the canonical schema.
 ------------------------------------------------------------- */
 function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
+  const song_id = video.slug;
 
   const rawDesc = video.youtube_metadata?.description || "";
 
