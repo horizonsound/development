@@ -55,7 +55,7 @@
       </main>
     </div>
     
-    {% if page.footer_type == "experience" %}
+    {% if page.is_playlist_page == TRUE %}
       {% include footer-experience.html %}
     {% else %}
       {% include footer.html %}
