@@ -973,6 +973,9 @@ function loadSong(songId) {
   document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
 
   highlightTile(songId);
+  
+  /* ⭐ ADD THIS LINE ⭐ */
+  document.dispatchEvent(new Event("songContentLoaded"));
 }
 
 function highlightTile(songId) {
