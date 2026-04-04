@@ -840,28 +840,34 @@ p {
 </div>
 
 <script>
-  function hideEmptySections() {
-    const inspSection = document.getElementById("section-inspiration");
-    const inspContent = document.getElementById("selected-song-extra");
-  
-    if (inspSection && inspContent && inspContent.textContent.trim() === "") {
-      inspSection.style.display = "none";
-    }
-  
-    const lyricsSection = document.getElementById("section-lyrics");
-    const lyricsContent = document.getElementById("selected-song-lyrics");
-  
-    if (lyricsSection && lyricsContent && lyricsContent.textContent.trim() === "") {
-      lyricsSection.style.display = "none";
-    }
+function hideEmptySections() {
+  const inspSection = document.getElementById("section-inspiration");
+  const inspContent = document.getElementById("selected-song-extra");
+
+  const lyricsSection = document.getElementById("section-lyrics");
+  const lyricsContent = document.getElementById("selected-song-lyrics");
+
+  console.log("HIDE CHECK:", {
+    inspText: inspContent?.textContent.trim(),
+    lyricsText: lyricsContent?.textContent.trim()
+  });
+
+  if (inspSection && inspContent && inspContent.textContent.trim() === "") {
+    inspSection.style.display = "none";
   }
+
+  if (lyricsSection && lyricsContent && lyricsContent.textContent.trim() === "") {
+    lyricsSection.style.display = "none";
+  }
+}
   
   // IMPORTANT: Call this AFTER your existing JS populates the content
   document.addEventListener("songContentLoaded", hideEmptySections);
   
   document.addEventListener("click", function(e) {
     if (!e.target.classList.contains("section-toggle")) return;
-  
+    console.log("TOGGLE CLICKED:", e.target.textContent);
+
     const targetId = e.target.getAttribute("data-target");
     const content = document.getElementById(targetId);
   
@@ -875,6 +881,7 @@ p {
     if (!isOpen) {
       content.classList.add("open");
       e.target.classList.add("open");
+      console.log("DESC OPEN?", document.getElementById("desc-content").classList.contains("open"));
     }
   });
 </script>
@@ -960,23 +967,33 @@ function loadSong(songId) {
 
   buildPlayer(youtubeId);
 
-  document.getElementById("selected-song-extra").innerHTML = `
-    ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
-    ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
-  `;
+document.getElementById("selected-song-extra").innerHTML = `
+  ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
+  ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
+`;
 
-  document.getElementById("selected-song-about").innerHTML = `
-    ${about ? `<h3 class="section-header">About</h3>` : ""}
-    ${about ? `<div class="about-text">${about}</div>` : ""}
-  `;
+document.getElementById("selected-song-about").innerHTML = `
+  ${about ? `<h3 class="section-header">About</h3>` : ""}
+  ${about ? `<div class="about-text">${about}</div>` : ""}
+`;
 
-  document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
+document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
+
+/* ⭐ DEBUG: confirm content injection */
+console.log("ABOUT HTML:", document.getElementById("selected-song-about").innerHTML);
+console.log("EXTRA HTML:", document.getElementById("selected-song-extra").innerHTML);
+console.log("LYRICS HTML:", document.getElementById("selected-song-lyrics").innerHTML);
+
+/* ⭐ FIRE EVENT */
+document.dispatchEvent(new Event("songContentLoaded"));
 
   highlightTile(songId);
   
   /* ⭐ ADD THIS LINE ⭐ */
-  document.dispatchEvent(new Event("songContentLoaded"));
-}
+  document.dispatchEvent(new Event("songContentLoaded"));}
+  document.addEventListener("songContentLoaded", () => {
+  console.log("EVENT: songContentLoaded fired");});
+
 
 function highlightTile(songId) {
   const tiles = document.querySelectorAll(".shared-tile");
