@@ -1031,42 +1031,45 @@ function onPlayerStateChange(event) {
   
   document.addEventListener("songContentLoaded", () => { console.log("EVENT: songContentLoaded fired"); });
 
-document.addEventListener("songContentLoaded", () => {
-  const lyricsEl = document.getElementById("selected-song-lyrics");
-  if (!lyricsEl) return;
-
-  let html = lyricsEl.innerHTML;
-
-  // Convert [Verse 1] → <span class="lyric-section">Verse 1</span>
-  html = html.replace(/
-
-\[(.*?)\]
-
-/g, (match, p1) => {
-    return `<span class="lyric-section">${p1}</span>`;
+  document.addEventListener("songContentLoaded", () => {
+    const lyricsEl = document.getElementById("selected-song-lyrics");
+    if (!lyricsEl) return;
+  
+    let html = lyricsEl.innerHTML;
+  
+    // Convert [Verse 1] → <span class="lyric-section">Verse 1</span>
+    html = html.replace(
+      /
+    
+    \[(.*?)\]
+    
+    /g,
+      (match, p1) => {
+        return `<span class="lyric-section">${p1}</span>`;
+      }
+    );
+    
+    lyricsEl.innerHTML = html;
   });
 
-  lyricsEl.innerHTML = html;
-});
-
-function highlightTile(songId) {
-  const tiles = document.querySelectorAll(".shared-tile");
-  tiles.forEach(t => t.classList.remove("active"));
-
-  const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
-  if (!activeTile) return;
-
-  activeTile.classList.add("active");
-
-  const strip = activeTile.closest(".content-strip, .horizontal-strip");
-  if (strip) {
-    strip.scrollTo({
-      left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
-      behavior: "smooth"
-    });
-  }
-}
+  function highlightTile(songId) {
+    const tiles = document.querySelectorAll(".shared-tile");
+    tiles.forEach(t => t.classList.remove("active"));
   
+    const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
+    if (!activeTile) return;
+  
+    activeTile.classList.add("active");
+  
+    const strip = activeTile.closest(".content-strip, .horizontal-strip");
+    if (strip) {
+      strip.scrollTo({
+        left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
+        behavior: "smooth"
+      });
+    }
+  }
+    
   function updateHeroForPlaylist(slug) {
     const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
     const override = window.PLAYLIST_OVERRIDES.find(o => o.playlist_id === slug);
