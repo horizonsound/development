@@ -146,8 +146,34 @@ function writeYaml(filepath, data) {
   
     return { descriptionWithoutVibes, vibes };
   }
-    
-/* -------------------------------------------------------------
+  
+  function stripHeaderBlock(desc) {
+    if (!desc) return desc;
+  
+    const lines = desc.split("\n");
+  
+    let i = 0;
+  
+    // 1. Remove "Official audio..." line
+    if (/^Official audio/i.test(lines[i]?.trim())) {
+      i++;
+    }
+  
+    // 2. Remove playlist line
+    if (/^Playlist:/i.test(lines[i]?.trim())) {
+      i++;
+    }
+  
+    // 3. Remove blank line after playlist
+    if (lines[i]?.trim() === "") {
+      i++;
+    }
+  
+    // Everything from i downward is the real description
+    return lines.slice(i).join("\n").trim();
+  }
+
+  /* -------------------------------------------------------------
    DESCRIPTION FORMATTER
    Converts raw YouTube description text into compact <p> blocks.
    - Removes blank lines
@@ -323,7 +349,10 @@ function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
   // Step 1: remove hashtags
   const { clean, tags } = extractHashtags(rawDesc);
   
-  // Step 2: extract vibes + trim description
+  // Step 2: remove header block
+  const descNoHeader = stripHeaderBlock(clean);
+
+  // Step 3: extract vibes + trim description
   const { descriptionWithoutVibes, vibes } = extractVibes(clean);
 
   return {
