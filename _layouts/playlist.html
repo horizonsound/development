@@ -779,20 +779,14 @@ p {
   gap: 0.5rem;
 }
 
-.playlist-pill {
-  padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  font-size: 0.9rem;
-  color: #f7d774; /* gold accent */
-  cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
+.playlist-row {
+  display: flex;
+  align-items: center;
 }
 
-.playlist-pill:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+.playlist-icon {
+  margin-right: 0.4rem; /* tweak to taste */
+  display: inline-flex;
 }
 
 </style>
@@ -1152,24 +1146,36 @@ function onPlayerStateChange(event) {
     if (premium.length) {
       explorerHTML += `<h4 class="playlist-group-header">Premium Collections</h4>`;
       explorerHTML += premium
-        .map(pl => `<div class="playlist-row" data-playlist-id="${pl.playlist_id}">📺 ${pl.title || pl.playlist_id}</div>`)
-        .join("");
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-icon">📺</span>
+            ${pl.title || pl.playlist_id}
+          </div>
+        `).join("");
     }
     
     // Horizon Sound Genre Playlists
     if (genre.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Genre Playlists</h4>`;
       explorerHTML += genre
-        .map(pl => `<div class="playlist-row" data-playlist-id="${pl.playlist_id}">📺 ${pl.title || pl.playlist_id}</div>`)
-        .join("");
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-icon">📺</span>
+            ${pl.title || pl.playlist_id}
+          </div>
+        `).join("");
     }
     
     // Horizon Sound Instrumentals
     if (instrumental.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Instrumentals</h4>`;
       explorerHTML += instrumental
-        .map(pl => `<div class="playlist-row" data-playlist-id="${pl.playlist_id}">📺 ${pl.title || pl.playlist_id}</div>`)
-        .join("");
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-icon">📺</span>
+            ${pl.title || pl.playlist_id}
+          </div>
+        `).join("");
     }
     
     document.getElementById("playlist-explorer").innerHTML = explorerHTML;
