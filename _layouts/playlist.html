@@ -846,6 +846,10 @@ p {
       {% endif %}
     </div>
 
+    <div class="default-hero" style="{% if hero_image %}display:none{% else %}display:block{% endif %}">
+      {% include hero.html %}
+    </div>
+
 
 
 
