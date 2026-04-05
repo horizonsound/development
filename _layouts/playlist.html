@@ -786,6 +786,7 @@ p {
   line-height: 1.35;       /* gives the text breathing room */
   font-weight: 400;        /* same weight as genre rows */
   font-size: 0.85rem;
+  width: fit-content;     /* ← the key */
 }
 
 .playlist-icon {
@@ -802,12 +803,15 @@ p {
   display: inline-block;
 }
 
-.playlist-grid {
+  .playlist-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* two equal columns */
-  column-gap: 1.25rem;              /* spacing between columns */
-  row-gap: 4px;                     /* vertical spacing between rows */
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  row-gap: 4px;
+}
+
+.playlist-link:hover {
+  cursor: pointer;
 }
 
 </style>
