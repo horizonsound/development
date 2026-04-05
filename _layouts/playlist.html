@@ -1302,7 +1302,7 @@ function onPlayerStateChange(event) {
     }
   }
   /* -------------------------------------------------------
-   INTERNAL PLAYLIST LOADING
+     INTERNAL PLAYLIST LOADING
   ------------------------------------------------------- */
   function loadInternalPlaylist(url) {
     const slug = url.split("/").filter(Boolean).pop();
@@ -1316,6 +1316,7 @@ function onPlayerStateChange(event) {
   
     const songIds = playlist.song_ids;
   
+    // Build the tiles
     const strip = document.querySelector(".content-strip");
     strip.innerHTML = songIds.map(id => {
       const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
@@ -1327,96 +1328,110 @@ function onPlayerStateChange(event) {
       `;
     }).join("");
   
-    if (songIds.length > 0) {
-      safeLoadSong(songIds[0]);
+    // ---------------------------------------------
+    // Determine which song should be selected
+    // ---------------------------------------------
+    const urlParams = new URLSearchParams(window.location.search);
+    let selectedSongId = urlParams.get("song_id");
+  
+    // Default to the first song if none was passed
+    if (!selectedSongId && songIds.length > 0) {
+      selectedSongId = songIds[0];
     }
+  
+    // ---------------------------------------------
+    // Highlight the correct tile
+    // ---------------------------------------------
+    const tiles = document.querySelectorAll(".shared-tile");
+    tiles.forEach(t => t.classList.remove("active"));
+  
+    const initialTile = [...tiles].find(t => t.dataset.songId === selectedSongId);
+    if (initialTile) {
+      initialTile.classList.add("active");
+      initialTile.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }
+  
+    // ---------------------------------------------
+    // Load the selected song
+    // ---------------------------------------------
+    safeLoadSong(selectedSongId);
   }
-  
-  document.addEventListener("click", e => {
-    if (!e.target.classList.contains("playlist-pill")) return;
-  
-    const playlistId = e.target.getAttribute("data-playlist-id");
-    if (!playlistId) return;
-  
-    // Navigate to the playlist page
-    window.location.href = `${window.BASEURL}/playlist/${playlistId}/`;
-  });
-  
-/* -------------------------------------------------------
+
+  /* -------------------------------------------------------
    CLICK HANDLER (PLAYLISTS + SONG TILES)
-------------------------------------------------------- */
-document.addEventListener("click", (e) => {
-  // Playlist link
-  const playlistLink = e.target.closest(".internal-playlist-link");
-  if (playlistLink) {
-    e.preventDefault();
-
-    const url = playlistLink.getAttribute("href");
-
-    history.pushState({}, "", window.BASEURL + url);
-    loadInternalPlaylist(url);
-
-    return;
+  ------------------------------------------------------- */
+  document.addEventListener("click", (e) => {
+    // Playlist link
+    const playlistLink = e.target.closest(".internal-playlist-link");
+    if (playlistLink) {
+      e.preventDefault();
+  
+      const url = playlistLink.getAttribute("href");
+  
+      history.pushState({}, "", window.BASEURL + url);
+      loadInternalPlaylist(url);
+  
+      return;
+    }
+  
+    // Song tile
+    const tile = e.target.closest(".shared-tile");
+    if (!tile || tile.classList.contains("coming-soon")) return;
+  
+    const id = tile.getAttribute("data-song-id");
+  
+    const newUrl = new URL(window.location.href);
+    newUrl.searchParams.set("song_id", id);
+    history.pushState( {}, "", window.BASEURL + newUrl.pathname + "?" + newUrl.searchParams.toString());
+  
+    safeLoadSong(id);
+  
+    const strip = tile.closest(".content-strip, .horizontal-strip");
+    if (strip) {
+      strip.scrollTo({
+        left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
+        behavior: "smooth"
+      });
+    }
+  });
+  
+  /* -------------------------------------------------------
+     AUTO-LOAD SONG IF URL HAS ?song_id
+  ------------------------------------------------------- */
+  if (window.SELECTED_SONG_ID) {
+    safeLoadSong(window.SELECTED_SONG_ID);
   }
-
-  // Song tile
-  const tile = e.target.closest(".shared-tile");
-  if (!tile || tile.classList.contains("coming-soon")) return;
-
-  const id = tile.getAttribute("data-song-id");
-
-  const newUrl = new URL(window.location.href);
-  newUrl.searchParams.set("song_id", id);
-  history.pushState( {}, "", window.BASEURL + newUrl.pathname + "?" + newUrl.searchParams.toString());
-
-  safeLoadSong(id);
-
-  const strip = tile.closest(".content-strip, .horizontal-strip");
-  if (strip) {
-    strip.scrollTo({
-      left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
-      behavior: "smooth"
-    });
-  }
-});
-
-/* -------------------------------------------------------
-   AUTO-LOAD SONG IF URL HAS ?song_id
-------------------------------------------------------- */
-if (window.SELECTED_SONG_ID) {
-  safeLoadSong(window.SELECTED_SONG_ID);
-}
-
-/* -------------------------------------------------------
-   CAROUSEL ARROWS
-------------------------------------------------------- */
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".content-carousel").forEach(carousel => {
-    const strip = carousel.querySelector(".content-strip");
-    const leftArrow = carousel.querySelector(".content-arrow-left");
-    const rightArrow = carousel.querySelector(".content-arrow-right");
-
-    if (!strip || !leftArrow || !rightArrow) return;
-
-    const updateArrows = () => {
-      const maxScroll = strip.scrollWidth - strip.clientWidth;
-
-      leftArrow.classList.toggle("disabled", strip.scrollLeft <= 0);
-      rightArrow.classList.toggle("disabled", strip.scrollLeft >= maxScroll - 1);
-    };
-
-    updateArrows();
-    strip.addEventListener("scroll", updateArrows);
-
-    const SCROLL_AMOUNT = 260;
-
-    leftArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
-    });
-
-    rightArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+  
+  /* -------------------------------------------------------
+     CAROUSEL ARROWS
+  ------------------------------------------------------- */
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".content-carousel").forEach(carousel => {
+      const strip = carousel.querySelector(".content-strip");
+      const leftArrow = carousel.querySelector(".content-arrow-left");
+      const rightArrow = carousel.querySelector(".content-arrow-right");
+  
+      if (!strip || !leftArrow || !rightArrow) return;
+  
+      const updateArrows = () => {
+        const maxScroll = strip.scrollWidth - strip.clientWidth;
+  
+        leftArrow.classList.toggle("disabled", strip.scrollLeft <= 0);
+        rightArrow.classList.toggle("disabled", strip.scrollLeft >= maxScroll - 1);
+      };
+  
+      updateArrows();
+      strip.addEventListener("scroll", updateArrows);
+  
+      const SCROLL_AMOUNT = 260;
+  
+      leftArrow.addEventListener("click", () => {
+        strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
+      });
+  
+      rightArrow.addEventListener("click", () => {
+        strip.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+      });
     });
   });
-});
 </script>
