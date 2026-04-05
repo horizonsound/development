@@ -662,6 +662,157 @@ p {
   width: 1200px !important;
 }
 
+  .song-sections {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.section {
+  border-bottom: 1px solid #444;
+  padding: 10px 0;
+}
+
+.section-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-toggle.open {
+  color: #ffcc66;
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+  .section-content.open {
+  max-height: 3000px; /* plenty of room */
+  padding: 10px 0 20px;
+}
+
+/* Lyric block container */
+.lyrics-block {
+  white-space: pre-wrap;      /* preserves line breaks */
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ddd;
+  padding: 0.5rem 0;
+}
+
+/* Section headers (after JS transforms them) */
+.lyrics-block .lyric-section {
+  display: block;
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #f7d774; /* your gold accent */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Section headers like [Verse 1], [Chorus], etc. */
+.lyrics-block strong,
+.lyrics-block b {
+  display: block;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #f7d774; /* your gold/yellow accent */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: add spacing between lyric paragraphs */
+.lyrics-block p {
+  margin: 0.6rem 0;
+}
+
+.vibe-list {
+  margin: 0.6rem 0 1rem;
+  padding-left: 1.2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.vibe-list li {
+  margin: 0.3rem 0;
+}
+
+  .tag-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #ddd;
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.tag-pill:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+  .playlist-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.playlist-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;   /* ← this is the magic */
+  line-height: 1.35;       /* gives the text breathing room */
+  font-weight: 400;        /* same weight as genre rows */
+  font-size: 0.85rem;
+  width: fit-content;     /* ← the key */
+}
+
+.playlist-icon {
+  margin-right: 0.45rem;
+  display: inline-flex;
+}
+  
+.playlist-title:hover {
+  cursor: pointer;
+}
+
+.playlist-title {
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+  .playlist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  row-gap: 4px;
+}
+
+.playlist-link:hover {
+  cursor: pointer;
+}
+
 </style>
    
   <!-- Load the playlist and override data -->
@@ -746,10 +897,6 @@ p {
       {% endif %}
     {% endfor %}
 
-    {% if playlist_override.is_collection != true %}
-      {% assign ordered_songs = ordered_songs | sort: "title" %}
-    {% endif %}
-
     <div id="selected-song-player" class="player-frame player-frame--purple">
         
         <div class="player-frame-inner">
@@ -762,20 +909,142 @@ p {
         </div>
     </div>
 
-    <div id="selected-song-extra" class="about-block"></div>
-    
-    <div class="centered-column">
-      <div id="selected-song-about" class="about-block"></div>
-    </div>
-    
-    <div id="selected-song-lyrics" class="lyrics-block"></div>
+<div class="song-sections">
 
+  <!-- DESCRIPTION (always shown) -->
+  <div class="section">
+    <button class="section-toggle open" data-target="desc-content">
+      Description
+    </button>
+    <div id="desc-content" class="section-content open">
+      <div id="selected-song-about"></div>
+      <div id="selected-song-vibes"></div>
+    </div>
+  </div>
+  
+  <!-- INSPIRATION (JS will hide if empty) -->
+  <div class="section" id="section-inspiration">
+    <button class="section-toggle" data-target="insp-content">
+      Inspiration
+    </button>
+    <div id="insp-content" class="section-content">
+      <div id="selected-song-extra"></div>
+    </div>
+  </div>
+  
+  <!-- LYRICS (JS will hide if empty) -->
+  <div class="section" id="section-lyrics">
+    <button class="section-toggle" data-target="lyrics-content">
+      Lyrics
+    </button>
+    <div id="lyrics-content" class="section-content">
+      <div id="selected-song-lyrics" class="lyrics-block"></div>
+    </div>
+  </div>
+    
+  <!-- PLAYLISTS (collapsible, only if multiple playlists exist) -->
+  <div class="section" id="section-playlists">
+    <button class="section-toggle" data-target="playlists-content">
+      Browse all playlists
+    </button>
+    <div id="playlists-content" class="section-content">
+      <div id="playlist-explorer"></div>
+    </div>
+  </div>
+
+  <!-- TAGS (collapsible, always shown if tags exist) -->
+  <div class="section" id="section-tags">
+    <button class="section-toggle" data-target="tags-content">
+      Tags
+    </button>
+    <div id="tags-content" class="section-content">
+      <div id="selected-song-tags"></div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+function hideEmptySections() {
+  const inspSection = document.getElementById("section-inspiration");
+  const inspContent = document.getElementById("selected-song-extra");
+
+  const lyricsSection = document.getElementById("section-lyrics");
+  const lyricsContent = document.getElementById("selected-song-lyrics");
+  const tagsSection = document.getElementById("section-tags");
+  const tagsContent = document.getElementById("selected-song-tags");
+  const playlistSection = document.getElementById("section-playlists");
+  const playlistContent = document.getElementById("playlist-explorer");
+  
+  if (playlistSection && playlistContent && playlistContent.textContent.trim() === "") {
+    playlistSection.style.display = "none";
+  }
+
+  if (tagsSection && tagsContent && tagsContent.textContent.trim() === "") {
+    tagsSection.style.display = "none";
+  }
+
+  console.log("HIDE CHECK:", {
+    inspText: inspContent?.textContent.trim(),
+    lyricsText: lyricsContent?.textContent.trim()
+  });
+
+  if (inspSection && inspContent && inspContent.textContent.trim() === "") {
+    inspSection.style.display = "none";
+  }
+
+  if (lyricsSection && lyricsContent && lyricsContent.textContent.trim() === "") {
+    lyricsSection.style.display = "none";
+  }
+}
+
+document.addEventListener("click", e => {
+  const row = e.target.closest(".playlist-row");
+  if (!row) return;
+
+  const playlistId = row.getAttribute("data-playlist-id");
+  if (!playlistId) return;
+
+  const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === playlistId);
+  if (!playlist || !playlist.song_ids.length) return;
+
+  const firstSongId = playlist.song_ids[0];
+
+  window.location.href = `${window.BASEURL}/music/playlists/${playlistId}/?song_id=${firstSongId}`;
+});
+
+
+  // IMPORTANT: Call this AFTER your existing JS populates the content
+  document.addEventListener("songContentLoaded", hideEmptySections);
+  
+  document.addEventListener("click", function(e) {
+    if (!e.target.classList.contains("section-toggle")) return;
+    console.log("TOGGLE CLICKED:", e.target.textContent);
+
+    const targetId = e.target.getAttribute("data-target");
+    const content = document.getElementById(targetId);
+  
+    const isOpen = content.classList.contains("open");
+  
+    // Close all sections except the one clicked
+    document.querySelectorAll(".section-content").forEach(sec => sec.classList.remove("open"));
+    document.querySelectorAll(".section-toggle").forEach(btn => btn.classList.remove("open"));
+  
+    // If it was closed, open it
+    if (!isOpen) {
+      content.classList.add("open");
+      e.target.classList.add("open");
+      console.log("DESC OPEN?", document.getElementById("desc-content").classList.contains("open"));
+    }
+  });
+</script>
+            
 <script>
   window.YOUTUBE_PLAYLISTS = {{ site.data.youtube_playlists.playlists | jsonify }};
   window.PLAYLIST_OVERRIDES = {{ site.data.playlist_overrides.overrides | jsonify }};
 </script>
 
-            <script>
+<script>
 /* -------------------------------------------------------
    YOUTUBE PLAYER SETUP
 ------------------------------------------------------- */
@@ -821,69 +1090,195 @@ function onPlayerStateChange(event) {
   }
 }
 
-/* -------------------------------------------------------
-   SONG LOADING
-------------------------------------------------------- */
-function safeLoadSong(songId) {
-  if (!YT_READY) {
-    setTimeout(() => safeLoadSong(songId), 50);
-    return;
-  }
-  loadSong(songId);
-}
-
-function loadSong(songId) {
-  window.SELECTED_SONG_ID = songId;
-
-  const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
-  const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
-
-  const title = override?.title || song?.title || "";
-  const subtitle = override?.subtitle || "";
-  const extraTitle = override?.extra_title || "";
-  const extraHTML = override?.extra_html || "";
-  const about = song?.description_html || "";
-  const lyricsHTML = override?.lyrics_html || "";
-  const youtubeId = song?.youtube_id || "";
-
-  document.querySelector(".player-title").textContent = title;
-  document.querySelector(".player-subtitle").textContent = subtitle;
-
-  buildPlayer(youtubeId);
-
-  document.getElementById("selected-song-extra").innerHTML = `
-    ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
-    ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
-  `;
-
-  document.getElementById("selected-song-about").innerHTML = `
-    ${about ? `<h3 class="section-header">About</h3>` : ""}
-    ${about ? `<div class="about-text">${about}</div>` : ""}
-  `;
-
-  document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
-
-  highlightTile(songId);
-}
-
-function highlightTile(songId) {
-  const tiles = document.querySelectorAll(".shared-tile");
-  tiles.forEach(t => t.classList.remove("active"));
-
-  const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
-  if (!activeTile) return;
-
-  activeTile.classList.add("active");
-
-  const strip = activeTile.closest(".content-strip, .horizontal-strip");
-  if (strip) {
-    strip.scrollTo({
-      left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
-      behavior: "smooth"
-    });
-  }
-}
+  function toggleSection(section) {
+    const content = document.getElementById(section);
   
+    if (content.classList.contains("open")) {
+      content.style.maxHeight = null;
+      content.classList.remove("open");
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.classList.add("open");
+    }
+  }
+
+  /* -------------------------------------------------------
+     SONG LOADING
+  ------------------------------------------------------- */
+  function safeLoadSong(songId) {
+    if (!YT_READY) {
+      setTimeout(() => safeLoadSong(songId), 50);
+      return;
+    }
+    loadSong(songId);
+  }
+
+  function loadSong(songId) {
+    window.SELECTED_SONG_ID = songId;
+  
+    const song = window.YOUTUBE_SONGS.find(s => s.song_id === songId);
+    const override = window.MUSIC_OVERRIDES.find(s => s.song_id === songId);
+  
+    const title = override?.title || song?.title || "";
+    const subtitle = override?.subtitle || "";
+    const extraTitle = override?.extra_title || "";
+    const extraHTML = override?.extra_html || "";
+    const about = song?.description_html || "";
+    const lyricsHTML = override?.lyrics_html || "";
+    const youtubeId = song?.youtube_id || "";
+  
+    // Update player header
+    document.querySelector(".player-title").textContent = title;
+    document.querySelector(".player-subtitle").textContent = subtitle;
+  
+    // Load YouTube player
+    buildPlayer(youtubeId);
+  
+    // Inject Inspiration / Extra
+    document.getElementById("selected-song-extra").innerHTML = `
+      ${extraTitle ? `<h3 class="section-header">${extraTitle}</h3>` : ""}
+      ${extraHTML ? `<div class="about-text">${extraHTML}</div>` : ""}
+    `;
+  
+    // Inject Description
+    document.getElementById("selected-song-about").innerHTML = `
+      ${about ? `<h3 class="section-header">About</h3>` : ""}
+      ${about ? `<div class="about-text">${about}</div>` : ""}
+    `;
+
+    // Inject Vibes (from youtube_feed.yml)
+    const vibes = song?.vibes || [];
+    document.getElementById("selected-song-vibes").innerHTML = 
+      vibes.length
+        ? `
+            <h3 class="section-header">Vibes</h3>
+            <ul class="vibe-list">
+              ${vibes.map(v => `<li>${v}</li>`).join("")}
+            </ul>
+          `
+        : "";
+
+    // PLAYLIST EXPLORER (global navigation using overrides)
+    const playlists = (window.PLAYLIST_OVERRIDES || []).filter(p => playlistHasPublicSongs(p.playlist_id));
+
+    const premium = playlists.filter(p => p.is_collection);
+    const instrumental = playlists.filter(p => p.is_instrumental && !p.is_collection);
+    const genre = playlists.filter(p => !p.is_collection && !p.is_instrumental);
+    
+    let explorerHTML = "";
+    
+    // Premium Collections
+    if (premium.length) {
+      explorerHTML += `<h4 class="playlist-group-header">Premium Collections</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
+      explorerHTML += premium
+        .slice()
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
+          </div>
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
+    }
+    
+    // Horizon Sound Genre Playlists
+    if (genre.length) {
+      explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Genre Playlists</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
+      explorerHTML += genre
+        .slice()
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
+          </div>
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
+    }
+    
+    // Horizon Sound Instrumentals
+    if (instrumental.length) {
+      explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Instrumentals</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
+      explorerHTML += instrumental
+        .slice()
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
+        .map(pl => `
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
+          </div>
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
+    }
+    
+    document.getElementById("playlist-explorer").innerHTML = explorerHTML;
+
+    // Inject Tags (from youtube_feed.yml)
+    const tags = song?.tags || [];
+    
+    document.getElementById("selected-song-tags").innerHTML =
+      tags.length
+        ? `
+            <div class="tag-list">
+              ${tags.map(t => `<span class="tag-pill">#${t}</span>`).join("")}
+            </div>
+          `
+        : "";
+
+    // Inject Lyrics
+    document.getElementById("selected-song-lyrics").innerHTML = lyricsHTML || "";
+  
+    /* ⭐ DEBUG: confirm content injection */
+    console.log("ABOUT HTML:", document.getElementById("selected-song-about").innerHTML);
+    console.log("EXTRA HTML:", document.getElementById("selected-song-extra").innerHTML);
+    console.log("LYRICS HTML:", document.getElementById("selected-song-lyrics").innerHTML);
+  
+    /* ⭐ FIRE EVENT so hideEmptySections() runs at the correct time */
+    document.dispatchEvent(new Event("songContentLoaded"));
+  
+    // Highlight the active tile
+    highlightTile(songId);
+  }
+  
+  document.addEventListener("songContentLoaded", () => { console.log("EVENT: songContentLoaded fired"); });
+
+  document.addEventListener("songContentLoaded", () => {
+    const lyricsEl = document.getElementById("selected-song-lyrics");
+    if (!lyricsEl) return;
+  
+    let html = lyricsEl.innerHTML;
+  
+    // Convert [Verse 1] → <span class="lyric-section">Verse 1</span>
+    const sectionRegex = new RegExp("\\[(.*?)\\]", "g");
+    html = html.replace(sectionRegex, (match, p1) => {
+      return `<span class="lyric-section">${p1}</span>`;
+    });
+  
+    lyricsEl.innerHTML = html;
+  });
+
+  function highlightTile(songId) {
+    const tiles = document.querySelectorAll(".shared-tile");
+    tiles.forEach(t => t.classList.remove("active"));
+  
+    const activeTile = document.querySelector(`.shared-tile[data-song-id="${songId}"]`);
+    if (!activeTile) return;
+  
+    activeTile.classList.add("active");
+  
+    const strip = activeTile.closest(".content-strip, .horizontal-strip");
+    if (strip) {
+      strip.scrollTo({
+        left: activeTile.offsetLeft - strip.offsetWidth / 2 + activeTile.offsetWidth / 2,
+        behavior: "smooth"
+      });
+    }
+  }
+    
   function updateHeroForPlaylist(slug) {
     const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
     const override = window.PLAYLIST_OVERRIDES.find(o => o.playlist_id === slug);
@@ -906,9 +1301,10 @@ function highlightTile(songId) {
       if (defaultHero) defaultHero.style.display = "block";
     }
   }
+
   /* -------------------------------------------------------
-   INTERNAL PLAYLIST LOADING
-  ------------------------------------------------------- */
+     INTERNAL PLAYLIST LOADING
+  ------------------------------------------------------- */    
   function loadInternalPlaylist(url) {
     const slug = url.split("/").filter(Boolean).pop();
     updateHeroForPlaylist(slug);
@@ -921,6 +1317,7 @@ function highlightTile(songId) {
   
     const songIds = playlist.song_ids;
   
+    // Build the tiles
     const strip = document.querySelector(".content-strip");
     strip.innerHTML = songIds.map(id => {
       const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
@@ -932,86 +1329,120 @@ function highlightTile(songId) {
       `;
     }).join("");
   
-    if (songIds.length > 0) {
-      safeLoadSong(songIds[0]);
+    // ---------------------------------------------
+    // Determine which song should be selected
+    // ---------------------------------------------
+    const urlParams = new URLSearchParams(window.location.search);
+    let selectedSongId = urlParams.get("song_id");
+  
+    // Default to the first song if none was passed
+    if (!selectedSongId && songIds.length > 0) {
+      selectedSongId = songIds[0];
     }
+  
+    // ---------------------------------------------
+    // Highlight the correct tile
+    // ---------------------------------------------
+    const tiles = document.querySelectorAll(".shared-tile");
+    tiles.forEach(t => t.classList.remove("active"));
+  
+    const initialTile = [...tiles].find(t => t.dataset.songId === selectedSongId);
+    if (initialTile) {
+      initialTile.classList.add("active");
+      initialTile.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }
+  
+    // ---------------------------------------------
+    // Load the selected song
+    // ---------------------------------------------
+    safeLoadSong(selectedSongId);
   }
 
-/* -------------------------------------------------------
+  function playlistHasPublicSongs(playlistId) {
+    const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === playlistId);
+    if (!playlist) return false;
+  
+    return playlist.song_ids.some(id => {
+      const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
+      return song && song.videostatus === "public";
+    });
+  }
+
+  /* -------------------------------------------------------
    CLICK HANDLER (PLAYLISTS + SONG TILES)
-------------------------------------------------------- */
-document.addEventListener("click", (e) => {
-  // Playlist link
-  const playlistLink = e.target.closest(".internal-playlist-link");
-  if (playlistLink) {
-    e.preventDefault();
-
-    const url = playlistLink.getAttribute("href");
-
-    history.pushState({}, "", window.BASEURL + url);
-    loadInternalPlaylist(url);
-
-    return;
+  ------------------------------------------------------- */
+  document.addEventListener("click", (e) => {
+    // Playlist link
+    const playlistLink = e.target.closest(".internal-playlist-link");
+    if (playlistLink) {
+      e.preventDefault();
+  
+      const url = playlistLink.getAttribute("href");
+  
+      history.pushState({}, "", window.BASEURL + url);
+      loadInternalPlaylist(url);
+  
+      return;
+    }
+  
+    // Song tile
+    const tile = e.target.closest(".shared-tile");
+    if (!tile || tile.classList.contains("coming-soon")) return;
+  
+    const id = tile.getAttribute("data-song-id");
+  
+    const newUrl = new URL(window.location.href);
+    newUrl.searchParams.set("song_id", id);
+    history.pushState( {}, "", window.BASEURL + newUrl.pathname + "?" + newUrl.searchParams.toString());
+  
+    safeLoadSong(id);
+  
+    const strip = tile.closest(".content-strip, .horizontal-strip");
+    if (strip) {
+      strip.scrollTo({
+        left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
+        behavior: "smooth"
+      });
+    }
+  });
+  
+  /* -------------------------------------------------------
+     AUTO-LOAD SONG IF URL HAS ?song_id
+  ------------------------------------------------------- */
+  if (window.SELECTED_SONG_ID) {
+    safeLoadSong(window.SELECTED_SONG_ID);
   }
-
-  // Song tile
-  const tile = e.target.closest(".shared-tile");
-  if (!tile || tile.classList.contains("coming-soon")) return;
-
-  const id = tile.getAttribute("data-song-id");
-
-  const newUrl = new URL(window.location.href);
-  newUrl.searchParams.set("song_id", id);
-  history.pushState( {}, "", window.BASEURL + newUrl.pathname + "?" + newUrl.searchParams.toString());
-
-  safeLoadSong(id);
-
-  const strip = tile.closest(".content-strip, .horizontal-strip");
-  if (strip) {
-    strip.scrollTo({
-      left: tile.offsetLeft - strip.offsetWidth / 2 + tile.offsetWidth / 2,
-      behavior: "smooth"
-    });
-  }
-});
-
-/* -------------------------------------------------------
-   AUTO-LOAD SONG IF URL HAS ?song_id
-------------------------------------------------------- */
-if (window.SELECTED_SONG_ID) {
-  safeLoadSong(window.SELECTED_SONG_ID);
-}
-
-/* -------------------------------------------------------
-   CAROUSEL ARROWS
-------------------------------------------------------- */
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".content-carousel").forEach(carousel => {
-    const strip = carousel.querySelector(".content-strip");
-    const leftArrow = carousel.querySelector(".content-arrow-left");
-    const rightArrow = carousel.querySelector(".content-arrow-right");
-
-    if (!strip || !leftArrow || !rightArrow) return;
-
-    const updateArrows = () => {
-      const maxScroll = strip.scrollWidth - strip.clientWidth;
-
-      leftArrow.classList.toggle("disabled", strip.scrollLeft <= 0);
-      rightArrow.classList.toggle("disabled", strip.scrollLeft >= maxScroll - 1);
-    };
-
-    updateArrows();
-    strip.addEventListener("scroll", updateArrows);
-
-    const SCROLL_AMOUNT = 260;
-
-    leftArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
-    });
-
-    rightArrow.addEventListener("click", () => {
-      strip.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+  
+  /* -------------------------------------------------------
+     CAROUSEL ARROWS
+  ------------------------------------------------------- */
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".content-carousel").forEach(carousel => {
+      const strip = carousel.querySelector(".content-strip");
+      const leftArrow = carousel.querySelector(".content-arrow-left");
+      const rightArrow = carousel.querySelector(".content-arrow-right");
+  
+      if (!strip || !leftArrow || !rightArrow) return;
+  
+      const updateArrows = () => {
+        const maxScroll = strip.scrollWidth - strip.clientWidth;
+  
+        leftArrow.classList.toggle("disabled", strip.scrollLeft <= 0);
+        rightArrow.classList.toggle("disabled", strip.scrollLeft >= maxScroll - 1);
+      };
+  
+      updateArrows();
+      strip.addEventListener("scroll", updateArrows);
+  
+      const SCROLL_AMOUNT = 260;
+  
+      leftArrow.addEventListener("click", () => {
+        strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
+      });
+  
+      rightArrow.addEventListener("click", () => {
+        strip.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+      });
     });
   });
-});
 </script>

@@ -86,25 +86,106 @@ function writeYaml(filepath, data) {
   ensureDir(path.dirname(filepath));
   fs.writeFileSync(filepath, yaml.dump(data), "utf8");
 }
-
-function extractHashtags(desc) {
-  if (!desc) return { clean: "", tags: [] };
-
-  const tagRegex = /#[A-Za-z0-9_-]+/g;
-  const tags = desc.match(tagRegex) || [];
-
-  let clean = desc.replace(tagRegex, "");
   
-  // Remove leftover punctuation from hashtag removal (commas, slashes, pipes, extra spaces)
-  clean = clean.replace(/^[\s,;:|/-]+/gm, "").trim();
+  function extractHashtags(desc) {
+    if (!desc) return { clean: "", tags: [] };
   
-  // Normalize tags (strip #)
-  const normalized = tags.map(t => t.slice(1).toLowerCase());
+    const tagRegex = /#[A-Za-z0-9_-]+/g;
+    const tags = desc.match(tagRegex) || [];
+  
+    let clean = desc.replace(tagRegex, "");
+    
+    // Remove leftover punctuation from hashtag removal (commas, slashes, pipes, extra spaces)
+    clean = clean.replace(/^[\s,;:|/-]+/gm, "").trim();
+    
+    // Normalize tags (strip #)
+    const normalized = tags.map(t => t.slice(1).toLowerCase());
+  
+    return { clean, tags: normalized };
+  }
+  
+function extractVibes(desc) {
+  if (!desc) return { descriptionWithoutVibes: "", vibes: [] };
 
-  return { clean, tags: normalized };
+  const vibeMarker = /^(🎧|🎤|🎛️|⚡|🎼|✨)/;
+  const lines = desc.split("\n");
+
+  let firstVibeIndex = -1;
+  let vibes = [];
+
+  // Find first vibe line
+  for (let i = 0; i < lines.length; i++) {
+    if (vibeMarker.test(lines[i].trim())) {
+      firstVibeIndex = i;
+      break;
+    }
+  }
+
+  // NEW: find playlist header fallback anchor
+  const playlistHeaderIndex = lines.findIndex(line =>
+    line.includes("playlist-header") || line.includes("🎵")
+  );
+
+  // CASE 1: No vibes found
+  if (firstVibeIndex === -1) {
+    // If playlist header exists → trim from there downward
+    if (playlistHeaderIndex !== -1) {
+      return {
+        descriptionWithoutVibes: lines.slice(0, playlistHeaderIndex).join("\n").trim(),
+        vibes: []
+      };
+    }
+
+    // No vibes, no playlist header → return untouched
+    return { descriptionWithoutVibes: desc.trim(), vibes: [] };
+  }
+
+  // CASE 2: Vibes exist → collect them
+  for (let i = firstVibeIndex; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (vibeMarker.test(line)) {
+      vibes.push(line);
+    } else {
+      break;
+    }
+  }
+
+  // Everything above the first vibe line stays
+  const descriptionWithoutVibes = lines
+    .slice(0, firstVibeIndex)
+    .join("\n")
+    .trim();
+
+  return { descriptionWithoutVibes, vibes };
 }
+  
+  function stripHeaderBlock(desc) {
+    if (!desc) return desc;
+  
+    const lines = desc.split("\n");
+  
+    let i = 0;
+  
+    // 1. Remove "Official audio..." line
+    if (/^Official audio/i.test(lines[i]?.trim())) {
+      i++;
+    }
+  
+    // 2. Remove playlist line
+    if (/^Playlist:/i.test(lines[i]?.trim())) {
+      i++;
+    }
+  
+    // 3. Remove blank line after playlist
+    if (lines[i]?.trim() === "") {
+      i++;
+    }
+  
+    // Everything from i downward is the real description
+    return lines.slice(i).join("\n").trim();
+  }
 
-/* -------------------------------------------------------------
+  /* -------------------------------------------------------------
    DESCRIPTION FORMATTER
    Converts raw YouTube description text into compact <p> blocks.
    - Removes blank lines
@@ -275,9 +356,16 @@ let html = desc
 function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
   const song_id = video.slug;
 
-  // Extract hashtags BEFORE formatting
   const rawDesc = video.youtube_metadata?.description || "";
+
+  // Step 1: remove hashtags
   const { clean, tags } = extractHashtags(rawDesc);
+  
+  // Step 2: remove header block
+  const descNoHeader = stripHeaderBlock(clean);
+  
+  // Step 3: extract vibes + trim description
+  const { descriptionWithoutVibes, vibes } = extractVibes(descNoHeader);
 
   return {
     song_id,
@@ -285,12 +373,15 @@ function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
     title: video.title,
 
     description_html: formatDescriptionToHtml(
-      clean,                    // ← cleaned description
+      descriptionWithoutVibes,
       playlistTitleLookup,
       playlistSlugMap,
       process.env.BASEURL || ""
     ),
-
+    
+    vibes,   // ← NEW FIELD
+    tags,    // ← already added
+    
     url: `/music/${song_id}/`,
     thumbnail: `/assets/thumbnails/${song_id}.jpeg`,
     videostatus: video.videostatus_raw,
@@ -344,7 +435,6 @@ function buildSongObject(video, playlistTitleLookup, playlistSlugMap) {
    MAIN GENERATION PIPELINE
    Fetch → Thumbnails → Membership → Normalize → YAML
 ------------------------------------------------------------- */
-
 async function generate() {
   console.log("Fetching videos...");
   const videos = await fetchAllVideos();
@@ -472,10 +562,70 @@ async function generate() {
   });
 
   /* -------------------------------------------------------------
+     ENSURE OVERRIDE COMPLETENESS
+     - Every song gets a music override
+     - Every playlist gets a playlist override
+  ------------------------------------------------------------- */
+  const musicOverridePath = "./_data/music_overrides.yml";
+  const playlistOverridePath = "./_data/playlist_overrides.yml";
+
+  let musicOverrides = [];
+  let playlistOverrides = [];
+
+  if (fs.existsSync(musicOverridePath)) {
+    const parsed = yaml.load(fs.readFileSync(musicOverridePath, "utf8")) || {};
+    musicOverrides = parsed.overrides || [];
+  }
+
+  if (fs.existsSync(playlistOverridePath)) {
+    const parsed = yaml.load(fs.readFileSync(playlistOverridePath, "utf8")) || {};
+    playlistOverrides = parsed.overrides || [];
+  }
+
+  const musicOverrideSet = new Set(musicOverrides.map(o => o.song_id));
+  const playlistOverrideSet = new Set(playlistOverrides.map(o => o.playlist_id));
+
+  // Add missing song overrides
+  for (const song of Videos) {
+    if (!musicOverrideSet.has(song.song_id)) {
+      musicOverrides.push({
+        title: "",
+        song_id: song.song_id,
+        subtitle: "",
+        collection: null,
+        order: null,
+        extra_title: null,
+        extra_html: null,
+        lyrics_html: ""
+      });
+    }
+  }
+
+  // Add missing playlist overrides
+  for (const pl of playlists) {
+    if (!playlistOverrideSet.has(pl.slug)) {
+      playlistOverrides.push({
+        playlist_id: pl.slug,
+        is_collection: false,
+        is_instrumental: false,
+        title: "",
+        subtitle: "",
+        description: "",
+        thumbnail: "",
+        hero: "",
+        songs: [],
+        order: null
+      });
+    }
+  }
+
+  writeYaml(musicOverridePath, { overrides: musicOverrides });
+  writeYaml(playlistOverridePath, { overrides: playlistOverrides });
+
+  /* -------------------------------------------------------------
      GENERATE PLAYLIST PAGE FILES
      Creates: _playlists/<slug>
   ------------------------------------------------------------- */
-  
   console.log("Generating playlist page files...");
   
   const PLAYLIST_PAGES_DIR = "./_playlists";
@@ -486,8 +636,7 @@ async function generate() {
     // Ensure _playlists directory exists
     ensureDir(PLAYLIST_PAGES_DIR);
   
-    // Minimal front matter matching your working files
-  const frontMatter =
+    const frontMatter =
 `---
 layout: playlist
 playlist_id: ${pl.slug}
@@ -512,8 +661,9 @@ permalink: /music/playlists/${pl.slug}/
   console.log(`  Playlist thumbnails downloaded: ${playlists.filter(pl => pl.thumbnail).length}/${playlists.length}`);
   console.log("  Feed written: _data/youtube_feed.yml");
   console.log("  Playlists written: _data/youtube_playlists.yml");
+  console.log("  Music overrides: ", musicOverrides.length);
+  console.log("  Playlist overrides: ", playlistOverrides.length);
   console.log("");
-
   console.log("Done.");
 }
 

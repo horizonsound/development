@@ -1377,3 +1377,19 @@ footer {
   z-index: 1;        /* <-- ensures the image stays behind the title */
 }
 
+/* ============================================
+   MOBILE FIX — collapse centered-column layout
+   ============================================ */
+@media (max-width: 1100px) {
+  .centered-column {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .centered-column > * {
+    grid-column: auto !important;
+  }
+}

@@ -37,7 +37,7 @@
     gtag('config', 'G-JFDRHKE5CW');
   </script>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/style-v2.css?v=1" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/style-v2.css?v=0" />
 </head>
 
   <body>
@@ -54,7 +54,11 @@
         {{ content }}
       </main>
     </div>
-    
-    {% include footer.html %}
+
+    {% if page.is_playlist_page == true %}
+      {% include footer-experience.html %}
+    {% else %}
+      {% include footer.html %}
+    {% endif %}
   </body>
 </html>
