@@ -1154,11 +1154,11 @@ function onPlayerStateChange(event) {
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-icon">📺</span>
-            ${pl.title || pl.playlist_id}
+            <span class="playlist-title">${pl.title || pl.playlist_id}</span>
           </div>
         `).join("");
     }
-    
+
     // Horizon Sound Genre Playlists
     if (genre.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Genre Playlists</h4>`;
