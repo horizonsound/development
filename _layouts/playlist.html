@@ -1159,6 +1159,8 @@ function onPlayerStateChange(event) {
     if (premium.length) {
       explorerHTML += `<h4 class="playlist-group-header">Premium Collections</h4>`;
       explorerHTML += premium
+        .slice()                 // defensive copy
+        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
@@ -1170,6 +1172,8 @@ function onPlayerStateChange(event) {
     if (genre.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Genre Playlists</h4>`;
       explorerHTML += genre
+        .slice()                 // defensive copy
+        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
@@ -1181,6 +1185,8 @@ function onPlayerStateChange(event) {
     if (instrumental.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Instrumentals</h4>`;
       explorerHTML += instrumental
+        .slice()                 // defensive copy
+        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
