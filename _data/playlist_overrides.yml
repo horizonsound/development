@@ -13,7 +13,7 @@ overrides:
   - playlist_id: synthwave-retrowave-horizon-sound-instrumentals
     is_collection: false
     is_instrumental: true
-    title: Synthwave & Retrowave – Instrumentals
+    title: Synth & Retrowave – Instrumentals
     subtitle: 
     description: ''
     thumbnail: /assets/playlist thumbnails/playlist - synthwave & retrowave instrumental.jpg
@@ -24,8 +24,8 @@ overrides:
   - playlist_id: orchestral-rock-tso-style-horizon-sound-instrumentals
     is_collection: false
     is_instrumental: true
-    title: Orchestral Rock (TSO‑Style) – Instrumentals
-    subtitle: 
+    title: Orchestral Rock – Instrumentals
+    subtitle: Trans Siberian Orchestra Style
     description: ''
     thumbnail: /assets/playlist thumbnails/playlist - orchestral rock (tso-style).jpg
     hero:
