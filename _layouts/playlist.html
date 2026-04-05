@@ -1173,7 +1173,7 @@ function onPlayerStateChange(event) {
       explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += premium
         .slice()
-        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
@@ -1189,7 +1189,7 @@ function onPlayerStateChange(event) {
       explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += genre
         .slice()
-        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
@@ -1205,7 +1205,7 @@ function onPlayerStateChange(event) {
       explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += instrumental
         .slice()
-        .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
+        .sort((a, b) => (a.title || a.playlist_id || "").localeCompare(b.title || b.playlist_id || ""))
         .map(pl => `
           <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
             <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
