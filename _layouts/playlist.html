@@ -1308,7 +1308,61 @@ function onPlayerStateChange(event) {
   /* -------------------------------------------------------
      INTERNAL PLAYLIST LOADING
   ------------------------------------------------------- */
-  function loadInternalPlaylist(url) {
+function loadInternalPlaylist(url) {
+  const slug = url.split("/").filter(Boolean).pop();
+  updateHeroForPlaylist(slug);
+
+  const playlist = window.YOUTUBE_PLAYLISTS.find(p => p.playlist_id === slug);
+  if (!playlist) {
+    console.error("Playlist not found:", slug);
+    return;
+  }
+
+  const override = window.PLAYLIST_OVERRIDES.find(p => p.playlist_id === slug);
+
+  // Single source of truth for order:
+  const orderedIds = (override && Array.isArray(override.songs) && override.songs.length > 0)
+    ? override.songs
+    : playlist.song_ids;   // ← your 80s list, in the order you showed
+
+  // Build tiles from orderedIds
+  const strip = document.querySelector(".content-strip");
+  strip.innerHTML = orderedIds.map(id => {
+    const song = window.YOUTUBE_SONGS.find(s => s.song_id === id);
+    return `
+      <div class="shared-tile" data-song-id="${song.song_id}">
+        <img src="/assets/thumbnails/${song.song_id}.jpeg" />
+        <div class="tile-title">${song.title}</div>
+      </div>
+    `;
+  }).join("");
+
+  // URL param
+  const urlParams = new URLSearchParams(window.location.search);
+  let selectedSongId = urlParams.get("song_id");
+
+  // Fallback: first in orderedIds
+  if (!selectedSongId && orderedIds.length > 0) {
+    selectedSongId = orderedIds[0];
+  }
+
+  // Highlight
+  const tiles = document.querySelectorAll(".shared-tile");
+  tiles.forEach(t => t.classList.remove("active"));
+
+  const initialTile = [...tiles].find(t => t.dataset.songId === selectedSongId);
+  if (initialTile) {
+    initialTile.classList.add("active");
+    initialTile.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  }
+
+  safeLoadSong(selectedSongId);
+}
+
+  
+  
+  
+  function xloadInternalPlaylist(url) {
     const slug = url.split("/").filter(Boolean).pop();
     updateHeroForPlaylist(slug);
   
