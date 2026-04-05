@@ -1170,46 +1170,49 @@ function onPlayerStateChange(event) {
     // Premium Collections
     if (premium.length) {
       explorerHTML += `<h4 class="playlist-group-header">Premium Collections</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += premium
-        .slice()                 // defensive copy
+        .slice()
         .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
-          <div class="playlist-grid">
-            <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
-              <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
-            </div>
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
           </div>
-        `).join("");
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
     }
-
+    
     // Horizon Sound Genre Playlists
     if (genre.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Genre Playlists</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += genre
-        .slice()                 // defensive copy
+        .slice()
         .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
-          <div class="playlist-grid">
-            <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
-              <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
-            </div>
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
           </div>
-        `).join("");
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
     }
     
     // Horizon Sound Instrumentals
     if (instrumental.length) {
       explorerHTML += `<h4 class="playlist-group-header">Horizon Sound Instrumentals</h4>`;
+      explorerHTML += `<div class="playlist-grid">`;   // OPEN GRID
       explorerHTML += instrumental
-        .slice()                 // defensive copy
+        .slice()
         .sort((a, b) => (a.title || "").localeCompare(b.title || ""))
         .map(pl => `
-          <div class="playlist-grid">
-            <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
-              <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
-            </div>
+          <div class="playlist-row" data-playlist-id="${pl.playlist_id}">
+            <span class="playlist-title">📺 ${pl.title || pl.playlist_id}</span>
           </div>
-        `).join("");
+        `)
+        .join("");
+      explorerHTML += `</div>`;   // CLOSE GRID
     }
     
     document.getElementById("playlist-explorer").innerHTML = explorerHTML;
