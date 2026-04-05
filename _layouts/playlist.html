@@ -843,7 +843,13 @@ p {
 
 
 
-
+    <!-- Playlist Description -->
+    {% assign playlist_description = playlist_override.description %}
+    {% if playlist_description %}
+      <div class="playlist-description">
+        {{ playlist_description }}
+      </div>
+    {% endif %}
     
     {% assign window_days = site.data.site.settings.coming_soon_window_days %}
     {% assign window_seconds = window_days | times: 86400 %}
