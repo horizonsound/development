@@ -857,14 +857,14 @@ p {
     <!-- Playlist Header -->
     {% assign header_title = playlist_override.title | default: playlist.title %}
     {% assign header_subtitle = playlist_override.subtitle %}
-    <div class="playlist-header">
+    <!-- <div class="playlist-header"> -->
       {% if header_title %}
         <h1 class="playlist-title">{{ header_title }}</h1>
       {% endif %}
       {% if header_subtitle %}
         <h2 class="playlist-title">{{ header_subtitle }}</h2>
       {% endif %}
-    </div>
+    <!-- </div> -->
 
 
 
