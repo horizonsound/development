@@ -44,7 +44,7 @@ export async function updateYoutubeTags(videoId, tags) {
     console.error("  [YouTube] ✗ ERROR during tag update");
     console.error("  [YouTube] Error message:", err.message);
     console.error("  [YouTube] Full error:", err);
-    throw err; // rethrow so orchestrator logs it too
+    throw err;
   }
 
   console.log(`  [YouTube] Finished update for ${videoId}`);
