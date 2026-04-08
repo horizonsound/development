@@ -1,7 +1,15 @@
 name: Update YouTube Metadata
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run in dev or prod mode"
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
 
 jobs:
   update:
