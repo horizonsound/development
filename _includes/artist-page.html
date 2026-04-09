@@ -1,3 +1,21 @@
+<style>
+  .artist-bio {
+    max-width: 900px;        /* keeps the column readable */
+    margin: 0 auto;          /* centers the column */
+    padding: 4rem 10vw;      /* breathing room on both sides */
+  }
+  
+  .artist-bio p {
+    text-align: left;        /* left‑aligned text */
+    font-size: 1.4rem;       /* premium readable size */
+    line-height: 1.75;       /* elegant spacing */
+    font-weight: 300;        /* modern, light, premium */
+    color: #222;             /* softer than pure black */
+    margin-bottom: 1.75rem;  /* space between paragraphs */
+    letter-spacing: 0.01em;  /* subtle polish */
+  }
+</style>
+
 <div class="artist-hero" style="background-image: url('.{{ artist.headshot }}')">
   <div class="artist-hero-overlay">
     <h1 class="artist-name">{{ artist.name.full }}</h1>
