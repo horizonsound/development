@@ -14,23 +14,23 @@ artists:
       - Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
       - Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
     photo_wall:
-      - src: ../assets/artists/lydia1.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia21.jpeg
         span: 1
-      - src: ../assets/artists/lydia2.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia24.jpeg
         span: 1
-      - src: ../assets/artists/lydia3.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia23.jpeg
         span: 1
-      - src: ../assets/artists/lydia4.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia15.jpeg
         span: 2
-      - src: ../assets/artists/lydia5.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia12.jpeg
         span: 1
-      - src: ../assets/artists/lydia6.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia11.jpeg
         span: 1
-      - src: ../assets/artists/lydia7.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia7.jpeg
         span: 1
-      - src: ../assets/artists/lydia8.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia5.jpeg
         span: 1
-      - src: ../assets/artists/lydia9.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia4.jpeg
         span: 1
   
     albums:
@@ -64,24 +64,25 @@ artists:
       - He sings about tides, friends, freedom, and the simple moments that make life feel lighter.
       - Within Horizon Sound, Cody anchors the Coastal Acoustic lane — warm, approachable, and emotionally grounded.
     photo_wall:
-      - src: ../assets/artists/cody1.jpeg
+      - src: ../assets/artists/cody-sails/cody19.jpeg
         span: 2
-      - src: ../assets/artists/cody2.jpeg
+      - src: ../assets/artists/cody-sails/cody18.jpeg
         span: 1
-      - src: ../assets/artists/cody3.jpeg
+      - src: ../assets/artists/cody-sails/cody17.jpeg
         span: 1
-      - src: ../assets/artists/cody4.jpeg
+      - src: ../assets/artists/cody-sails/cody13.jpeg
         span: 1
-      - src: ../assets/artists/cody5.jpeg
+      - src: ../assets/artists/cody-sails/cody16.jpeg
         span: 1
-      - src: ../assets/artists/cody9.jpeg
+      - src: ../assets/artists/cody-sails/cody3.jpeg
         span: 2
-      - src: ../assets/artists/cody6.jpeg
+      - src: ../assets/artists/cody-sails/cody1.jpeg
         span: 1
-      - src: ../assets/artists/cody7.jpeg
+      - src: ../assets/artists/cody-sails/cody12.jpeg
         span: 1
-      - src: ../assets/artists/cody8.jpeg
+      - src: ../assets/artists/cody-sails/cody7.jpeg
         span: 1
+
     albums:
       - title: Tides & Good Days
         year: 2025
