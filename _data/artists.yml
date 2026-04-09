@@ -21,7 +21,7 @@ artists:
       - src: ../assets/artists/lydia3.jpeg
         span: 1
       - src: ../assets/artists/lydia4.jpeg
-        span: 1
+        span: 2
       - src: ../assets/artists/lydia5.jpeg
         span: 1
       - src: ../assets/artists/lydia6.jpeg
@@ -66,13 +66,15 @@ artists:
     photo_wall:
     photo_wall:
       - src: ../assets/artists/cody1.jpeg
-        span: 1
+        span: 2
       - src: ../assets/artists/cody2.jpeg
         span: 1
       - src: ../assets/artists/cody3.jpeg
         span: 1
       - src: ../assets/artists/cody4.jpeg
         span: 1
+      - src: ../assets/artists/cody9.jpeg
+        span: 2
       - src: ../assets/artists/cody5.jpeg
         span: 1
       - src: ../assets/artists/cody6.jpeg
@@ -80,8 +82,6 @@ artists:
       - src: ../assets/artists/cody7.jpeg
         span: 1
       - src: ../assets/artists/cody8.jpeg
-        span: 1
-      - src: ../assets/artists/cody9.jpeg
         span: 1
     albums:
       - title: Tides & Good Days
