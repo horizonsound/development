@@ -192,13 +192,14 @@
       {% assign artwork = override.thumbnail | default: override.hero | default: pl.thumbnail | default: pl.hero | default: pl.youtube_thumbnail %}
       {% assign first_track = pl.song_ids | first %}
       {% assign title = override.title | default: pl.title %}
-      
+
+      {# --- COMING SOON LOGIC --- #}
+
       {% assign has_public = false %}
       {% assign earliest_ts = 9999999999 %}
-      
+
       {% for vid in pl.song_ids %}
         {% assign song = site.data.youtube_songs.songs | where: "song_id", vid | first %}
-      
         {% if song %}
           {% if song.videostatus == "public" %}
             {% assign has_public = true %}
@@ -210,19 +211,21 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      
+
       {% assign window_days = site.data.site.settings.coming_soon_window_days %}
       {% assign window_seconds = window_days | times: 86400 %}
       {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
       {% assign coming_soon_cutoff = now_ts | plus: window_seconds %}
-      
+
       {% assign show_coming_soon = false %}
       {% if has_public == false and earliest_ts < 9999999999 %}
         {% if earliest_ts >= now_ts and earliest_ts <= coming_soon_cutoff %}
           {% assign show_coming_soon = true %}
         {% endif %}
       {% endif %}
-          
+
+      {# --- TILE RENDERING --- #}
+
       {% if has_public %}
         {% include album-premium-tile.html 
             album=album 
@@ -238,5 +241,7 @@
             earliest_ts=earliest_ts 
         %}
       {% endif %}
+
+    {% endfor %}
   </div>
 </section>
