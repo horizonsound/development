@@ -73,32 +73,3 @@ artists:
       spotify: https://open.spotify.com/...
       youtube: https://youtube.com/...
 
-  - slug: ravyn
-    name:
-      full: Ravyn
-      first: ""
-      last: ""
-    tagline: ""
-    primary_color: ""
-    secondary_color: ""
-    headshot: ""
-    bio: []
-    photo_wall: []
-    albums: []
-    singles: []
-    links: {}
-
-  - slug: kids-choir
-    name:
-      full: Kids Choir
-      first: ""
-      last: ""
-    tagline: ""
-    primary_color: ""
-    secondary_color: ""
-    headshot: ""
-    bio: []
-    photo_wall: []
-    albums: []
-    singles: []
-    links: {}
