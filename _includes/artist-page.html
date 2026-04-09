@@ -184,150 +184,141 @@
 <section class="artist-albums">
   <h2>Albums</h2>
   
-  <section id="music-view-playlists">  
-    <div class="playlist-premium-grid">
-      
-      {% assign window_days = site.data.site.settings.coming_soon_window_days %}
-      {% assign window_seconds = window_days | times: 86400 %}
-      {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
-      {% assign coming_soon_cutoff = now_ts | plus: window_seconds %}
-  
-      {% assign playlist_data = site.data.youtube_playlists.playlists %}
-      {% assign overrides = site.data.playlist_overrides.overrides %}
-      
-      {% assign merged_playlists = "" | split: "" %}
-            
-      {% for pl in playlist_data %}
-        {% assign override = overrides | where: "playlist_id", pl.playlist_id | first %}
-  
-        {% if override %}
-          {% assign override_hash = override | jsonify | parse_json %}
-          {% assign merged = pl | merge: override_hash %}
-          {% assign merged_playlists = merged_playlists | push: merged %}
-        {% else %}
-          {% assign merged_playlists = merged_playlists | push: pl %}
-        {% endif %}
-      {% endfor %}
-  
-      {%- comment -%}
-        Build ACTIVE and COMING SOON arrays
-      {%- endcomment -%}
-      {% assign active_playlists = "" | split: "" %}
-      {% assign coming_soon_playlists = "" | split: "" %}
-  
-      {% for playlist in merged_playlists %}
-  
-        {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
-        {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
-  
-        {% assign show_active = false %}
-        {% assign show_coming_soon = false %}
-  
-        {% for vid in playlist_song_ids %}
-          {% assign song = all_songs | where: "song_id", vid | first %}
-  
-          {% if song %}
-            {% if song.videostatus == "public" %}
-              {% assign show_active = true %}
-            {% elsif song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
-              {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
-              {% if scheduled_ts >= now_ts and scheduled_ts <= coming_soon_cutoff %}
-                {% assign show_coming_soon = true %}
-              {% endif %}
+<section id="music-view-playlists">  
+  <div class="playlist-premium-grid">
+    
+    {% assign window_days = site.data.site.settings.coming_soon_window_days %}
+    {% assign window_seconds = window_days | times: 86400 %}
+    {% assign now_ts = 'now' | date: "%s" | plus: 0 %}
+    {% assign coming_soon_cutoff = now_ts | plus: window_seconds %}
+
+    {% assign overrides = site.data.playlist_overrides.overrides %}
+    {% assign all_songs = site.data.youtube_songs.songs %}
+
+    {# FILTER TO THIS ARTIST’S ALBUMS ONLY #}
+    {% assign playlist_data = site.data.youtube_playlists.playlists | where_exp: "pl", "artist.albums contains pl.playlist_id" %}
+    
+    {% assign merged_playlists = "" | split: "" %}
+          
+    {% for pl in playlist_data %}
+      {% assign override = overrides | where: "playlist_id", pl.playlist_id | first %}
+
+      {% if override %}
+        {% assign override_hash = override | jsonify | parse_json %}
+        {% assign merged = pl | merge: override_hash %}
+        {% assign merged_playlists = merged_playlists | push: merged %}
+      {% else %}
+        {% assign merged_playlists = merged_playlists | push: pl %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign active_playlists = "" | split: "" %}
+    {% assign coming_soon_playlists = "" | split: "" %}
+
+    {% for playlist in merged_playlists %}
+
+      {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
+      {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
+
+      {% assign show_active = false %}
+      {% assign show_coming_soon = false %}
+
+      {% for vid in playlist_song_ids %}
+        {% assign song = all_songs | where: "song_id", vid | first %}
+
+        {% if song %}
+          {% if song.videostatus == "public" %}
+            {% assign show_active = true %}
+          {% elsif song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+            {% assign scheduled_ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+            {% if scheduled_ts >= now_ts and scheduled_ts <= coming_soon_cutoff %}
+              {% assign show_coming_soon = true %}
             {% endif %}
           {% endif %}
-        {% endfor %}
-  
-        {% if show_active %}
-          {% assign active_playlists = active_playlists | push: playlist %}
-        {% elsif show_coming_soon %}
-          {% assign coming_soon_playlists = coming_soon_playlists | push: playlist %}
         {% endif %}
-  
       {% endfor %}
-  
-      {%- comment -%}
-        Build parallel arrays for sorting COMING SOON by earliest date
-      {%- endcomment -%}
-      {% assign cs_pairs = "" | split: "" %}
-  
-      {% for playlist in coming_soon_playlists %}
-        {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
-        {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
-  
-        {% assign earliest_ts = 9999999999 %}
-        {% for vid in playlist_song_ids %}
-          {% assign song = all_songs | where: "song_id", vid | first %}
-          {% if song and song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
-            {% assign ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
-            {% if ts < earliest_ts %}
-              {% assign earliest_ts = ts %}
-            {% endif %}
+
+      {% if show_active %}
+        {% assign active_playlists = active_playlists | push: playlist %}
+      {% elsif show_coming_soon %}
+        {% assign coming_soon_playlists = coming_soon_playlists | push: playlist %}
+      {% endif %}
+
+    {% endfor %}
+
+    {% assign cs_pairs = "" | split: "" %}
+
+    {% for playlist in coming_soon_playlists %}
+      {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
+      {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
+
+      {% assign earliest_ts = 9999999999 %}
+      {% for vid in playlist_song_ids %}
+        {% assign song = all_songs | where: "song_id", vid | first %}
+        {% if song and song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at %}
+          {% assign ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 %}
+          {% if ts < earliest_ts %}
+            {% assign earliest_ts = ts %}
           {% endif %}
-        {% endfor %}
-  
-        {% assign pair = earliest_ts | append: "||" | append: playlist.playlist_id %}
-        {% assign cs_pairs = cs_pairs | push: pair %}
+        {% endif %}
       {% endfor %}
-  
-      {% assign cs_pairs = cs_pairs | sort %}
-  
-      {%- comment -%}
-        RENDER ACTIVE PLAYLISTS FIRST
-      {%- endcomment -%}
-      {% for playlist in active_playlists %}
-        {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
-        {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
-        {% assign display_title = override.title | default: playlist.title %}
-        {% assign override_thumbnail = override.thumbnail | default: override.hero %}
-        {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
-        {% assign first_song_id = playlist_song_ids | first %}
-  
-        <a 
-          class="playlist-premium-tile" 
-          href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}"
-        >
-          <div class="playlist-premium-image-wrapper">
-            <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
-            <div class="playlist-premium-gradient"></div>
-            <div class="playlist-premium-title">{{ display_title }}</div>
-          </div>
-        </a>
-      {% endfor %}
-  
-      {%- comment -%}
-        RENDER COMING SOON PLAYLISTS IN SORTED ORDER
-      {%- endcomment -%}
-      {% for pair in cs_pairs %}
-        {% assign parts = pair | split: "||" %}
-        {% assign earliest_ts = parts[0] | plus: 0 %}
-        {% assign pid = parts[1] %}
-  
-        {% assign playlist = coming_soon_playlists | where: "playlist_id", pid | first %}
-        {% assign override = overrides | where: "playlist_id", pid | first %}
-        {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
-        {% assign display_title = override.title | default: playlist.title %}
-        {% assign override_thumbnail = override.thumbnail | default: override.hero %}
-        {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
-  
-        <div class="playlist-premium-tile coming-soon">
-          <div class="playlist-premium-image-wrapper">
-            <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
-  
-            {% if earliest_ts <= coming_soon_cutoff %}
-              <div class="playlist-premium-overlay">
-                Coming {{ earliest_ts | date: "%b %-d" }}
-              </div>
-            {% else %}
-              <div class="playlist-premium-overlay">Coming Soon</div>
-            {% endif %}
-  
-            <div class="playlist-premium-gradient"></div>
-            <div class="playlist-premium-title">{{ display_title }}</div>
-          </div>
+
+      {% assign pair = earliest_ts | append: "||" | append: playlist.playlist_id %}
+      {% assign cs_pairs = cs_pairs | push: pair %}
+    {% endfor %}
+
+    {% assign cs_pairs = cs_pairs | sort %}
+
+    {% for playlist in active_playlists %}
+      {% assign override = overrides | where: "playlist_id", playlist.playlist_id | first %}
+      {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
+      {% assign display_title = override.title | default: playlist.title %}
+      {% assign override_thumbnail = override.thumbnail | default: override.hero %}
+      {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
+      {% assign first_song_id = playlist_song_ids | first %}
+
+      <a 
+        class="playlist-premium-tile" 
+        href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}"
+      >
+        <div class="playlist-premium-image-wrapper">
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
+          <div class="playlist-premium-gradient"></div>
+          <div class="playlist-premium-title">{{ display_title }}</div>
         </div>
-      {% endfor %}
-  
-    </div>
-  </section>
+      </a>
+    {% endfor %}
+
+    {% for pair in cs_pairs %}
+      {% assign parts = pair | split: "||" %}
+      {% assign earliest_ts = parts[0] | plus: 0 %}
+      {% assign pid = parts[1] %}
+
+      {% assign playlist = coming_soon_playlists | where: "playlist_id", pid | first %}
+      {% assign override = overrides | where: "playlist_id", pid | first %}
+      {% assign playlist_song_ids = override.songs | default: playlist.song_ids %}
+      {% assign display_title = override.title | default: playlist.title %}
+      {% assign override_thumbnail = override.thumbnail | default: override.hero %}
+      {% assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail %}
+
+      <div class="playlist-premium-tile coming-soon">
+        <div class="playlist-premium-image-wrapper">
+          <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
+
+          {% if earliest_ts <= coming_soon_cutoff %}
+            <div class="playlist-premium-overlay">
+              Coming {{ earliest_ts | date: "%b %-d" }}
+            </div>
+          {% else %}
+            <div class="playlist-premium-overlay">Coming Soon</div>
+          {% endif %}
+
+          <div class="playlist-premium-gradient"></div>
+          <div class="playlist-premium-title">{{ display_title }}</div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
 </section>
