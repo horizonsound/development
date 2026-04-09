@@ -200,24 +200,29 @@
 </section>
 {% endif %}
 
-<section class="artist-albums">
-  <h2>Albums</h2>
 
-  <div class="playlist-premium-grid">
-    {% for album in artist.albums %}
-      {% assign pl = site.data.youtube_playlists.playlists | where: "playlist_id", album.slug | first %}
-      {% assign override = site.data.playlist_overrides.overrides | where: "playlist_id", album.slug | first %}
 
-      {% assign artwork = override.thumbnail | default: override.hero | default: pl.thumbnail | default: pl.hero | default: pl.youtube_thumbnail %}
-      {% assign first_track = pl.song_ids | first %}
-      {% assign title = override.title | default: pl.title %}
+{% if active_playlists.size > 0 %}
+  <section class="artist-albums">
+    <h2>Albums</h2>
+  
+    <div class="playlist-premium-grid">
+      {% for album in artist.albums %}
+        {% assign pl = site.data.youtube_playlists.playlists | where: "playlist_id", album.slug | first %}
+        {% assign override = site.data.playlist_overrides.overrides | where: "playlist_id", album.slug | first %}
+  
+        {% assign artwork = override.thumbnail | default: override.hero | default: pl.thumbnail | default: pl.hero | default: pl.youtube_thumbnail %}
+        {% assign first_track = pl.song_ids | first %}
+        {% assign title = override.title | default: pl.title %}
+  
+        {% include album-premium-tile.html 
+            album=album 
+            title=title 
+            artwork=artwork 
+            first_track=first_track 
+        %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
-      {% include album-premium-tile.html 
-          album=album 
-          title=title 
-          artwork=artwork 
-          first_track=first_track 
-      %}
-    {% endfor %}
-  </div>
-</section>
