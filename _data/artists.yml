@@ -76,11 +76,13 @@ artists:
         span: 1
       - src: ../assets/artists/cody-sails/cody3.jpeg
         span: 2
-      - src: ../assets/artists/cody-sails/cody1.jpeg
+      - src: ../assets/artists/cody-sails/cody6.jpeg
         span: 1
       - src: ../assets/artists/cody-sails/cody12.jpeg
         span: 1
       - src: ../assets/artists/cody-sails/cody7.jpeg
+        span: 1
+      - src: ../assets/artists/cody-sails/cody1.jpeg
         span: 1
 
     albums:
