@@ -14,9 +14,10 @@ artists:
       - Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
       - Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
     photo_wall:
-      - ./assets/artists/lydia1.jpeg
+      - assets/artists/lydia1.jpeg
+      - /assets/artists/lydia1.jpeg
       - ./assets/artists/lydia2.jpeg
-      - ./assets/artists/lydia3.jpeg
+      - ../assets/artists/lydia3.jpeg
       - ./assets/artists/lydia4.jpeg
       - ./assets/artists/lydia5.jpeg
       - ./assets/artists/lydia6.jpeg
