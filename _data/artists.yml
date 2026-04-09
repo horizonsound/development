@@ -91,15 +91,10 @@ artists:
       - src: ../assets/artists/cody-sails/cody1.jpeg
         span: 1
 
-    albums:
-      - slug: rum-soaked-paradise-cody-sails
-        year: 2025
-        description: Sunset acoustic songs for easy nights and long weekends.
-        links:
-          apple_music: https://music.apple.com/us/album/rum-soaked-paradise/1890779746
-          spotify: https://open.spotify.com/album/3uhsHVcKirhL0njJpkF2Nt?si=tkqnPIDAQ6aJ0jRbh8STtw
-          youtube_music: https://www.youtube.com/watch?v=e1i-B7IRMxE&list=OLAK5uy_kXBmtBn7PKGJu1K8CmC4u2plbGE3Gs0W8
+    albums: []
+    
     singles: []
+
     links:
       website: https://www.horizonsound.org/development/artists/cody-sails.html
       apple_music: https://music.apple.com/us/artist/cody-sails/1890255704
