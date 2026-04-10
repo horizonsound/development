@@ -245,6 +245,7 @@
 
 {% if artist.photo_wall %}
   <section class="artist-photo-wall">
+    <h2>Behind the Scenes</h2>
     {% for photo in artist.photo_wall %}
       {% assign span = photo.span | default: 1 %}
       <img 
