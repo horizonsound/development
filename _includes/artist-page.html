@@ -172,6 +172,21 @@
     color: white;
     margin: 0 0 2rem 0;
   }
+
+  .wall-title h2 {
+    padding-left: 10vw;
+    margin-bottom: 1rem;
+  }
+
+  .wall-title h2 {
+    padding-left: 10vw;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: white;
+    margin: 0 0 2rem 0;
+  }
+
   .icon {
     width: 28px;
     height: 28px;
@@ -244,7 +259,9 @@
 </section>
 
 {% if artist.photo_wall %}
-  <h2>Behind the Scenes</h2>
+  <section class="wall-title">
+    <h2>Behind the Scenes</h2>
+  </section>
   <section class="artist-photo-wall">
     {% for photo in artist.photo_wall %}
       {% assign span = photo.span | default: 1 %}
