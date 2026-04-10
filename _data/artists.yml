@@ -98,14 +98,14 @@ artists:
     tagline: A wild heart with a taste for the edge
     primary_color: "#F6B35A"
     secondary_color: "#1C6E8C"
-    headshot: ./assets/artists/ravyn/Ravyn Headshot 3000x3000.jpg
+    headshot: ../assets/artists/ravyn/Ravyn Headshot 3000x3000.jpg
     bio:
       - Ravyn is an unpredictable pop artist with a wild heart and a taste for the edge.
       - Her sound blends emotional pop, rebellious energy, and a spark of beautiful chaos — always bold, always alive.
       - She writes about risk, desire, impulsive choices, and the moments where confidence and vulnerability collide.
       - Within Horizon Sound, Ravyn stands as the fearless experimenter — equally at home in dark, cinematic eras like Midnight Saga or in bright, high‑energy pop built for movement and release.
     photo_wall:
-      - src: ../assets/artists/ravyn/ravyn26.jpeg
+      - src: ./assets/artists/ravyn/ravyn26.jpeg
         span: 2
       - src: ../assets/artists/ravyn/ravyn14.jpeg
         span: 1
