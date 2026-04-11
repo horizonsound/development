@@ -3895,7 +3895,7 @@ songs:
     videostatus: public
     playlists:
       - missing-stamp-venice-trilogy
-    view_count_num: 70
+    view_count_num: 69
     youtube_metadata:
       published_at: '2026-04-03T16:00:03Z'
       scheduled_at: null
@@ -3912,7 +3912,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '70'
+        view_count: '69'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -5555,7 +5555,7 @@ songs:
     videostatus: public
     playlists:
       - after-the-silence-performed-by-lydia-ellington
-    view_count_num: 32
+    view_count_num: 31
     youtube_metadata:
       published_at: '2026-03-31T16:00:39Z'
       scheduled_at: null
@@ -5572,7 +5572,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '32'
+        view_count: '31'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -6536,7 +6536,7 @@ songs:
     videostatus: public
     playlists:
       - modern-country
-    view_count_num: 118
+    view_count_num: 119
     youtube_metadata:
       published_at: '2026-03-27T16:00:39Z'
       scheduled_at: null
@@ -6553,7 +6553,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '118'
+        view_count: '119'
         like_count: '5'
         favorite_count: '0'
         comment_count: '0'
