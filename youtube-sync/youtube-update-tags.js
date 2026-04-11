@@ -12,6 +12,7 @@ export async function updateYoutubeTags(videoId, tags) {
       process.env.GOOGLE_CLIENT_SECRET
       // intentionally leaving redirectUri OUT for diagnostic
     );
+    console.log("  [YouTube] Using CLIENT ID:", process.env.GOOGLE_CLIENT_ID);
     console.log("  [YouTube] OAuth2 client created.");
 
     console.log("  [YouTube] Setting credentials...");
