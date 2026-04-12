@@ -88,7 +88,20 @@
     {% capture playlist_status %}hidden{% endcapture %}
   {%- endif -%}
 
-  {% capture playlist_display_title %}{{ override.title | default: merged.title }}{% endcapture %}
-  {% capture playlist_display_thumbnail %}{{ override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail }}{% endcapture %}
-  {% capture playlist_first_song_id %}{{ playlist_song_ids | first }}{% endcapture %}
-  {% capture playlist_earliest_ts %}{{ earliest
+  {% capture playlist_display_title %}
+    {{ override.title | default: merged.title }}
+  {% endcapture %}
+
+  {% capture playlist_display_thumbnail %}
+    {{ override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail }}
+  {% endcapture %}
+
+  {% capture playlist_first_song_id %}
+    {{ playlist_song_ids | first }}
+  {% endcapture %}
+
+  {% capture playlist_earliest_ts %}
+    {{ earliest_ts }}
+  {% endcapture %}
+
+{%- endif -%}
