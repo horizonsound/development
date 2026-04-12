@@ -313,6 +313,18 @@
             artwork=include.playlist_display_thumbnail
             first_track=include.playlist_first_song_id
         %}
+
+        {% include playlist-status.html playlist_id=album.slug %}
+  
+        <!-- DEBUG -->
+        <p style="color:white;">
+          Album: {{ album.slug }}<br>
+          Status: {{ include.playlist_status }}<br>
+          Title: {{ include.playlist_display_title }}<br>
+          Thumb: {{ include.playlist_display_thumbnail }}<br>
+          First Song: {{ include.playlist_first_song_id }}<br>
+          Earliest TS: {{ include.playlist_earliest_ts }}
+        </p>
       {% endfor %}
 
       {# Sort coming soon by earliest date #}
