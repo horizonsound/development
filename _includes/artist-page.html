@@ -53,6 +53,16 @@
   line-height: 1.85;
 }
 
+.artist-albums h2,
+.wall-title h2 {
+  padding-left: 10vw;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: white;
+  margin: 0 0 2rem 0;
+}
+
 /* -----------------------------------------------------
    PHOTO WALL
 ----------------------------------------------------- */
@@ -147,6 +157,7 @@
   mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 2;
+  opacity: 0.12; /* was 0.08 */
 }
 
 /* Vinyl ring-wear */
@@ -156,10 +167,10 @@
   inset: 0;
   background: radial-gradient(
     circle at center,
-    rgba(255,255,255,0.08) 0%,
-    rgba(255,255,255,0.02) 40%,
-    rgba(0,0,0,0.15) 75%,
-    rgba(0,0,0,0.25) 100%
+    rgba(255,255,255,0.12) 0%,
+    rgba(255,255,255,0.04) 40%,
+    rgba(0,0,0,0.22) 75%,
+    rgba(0,0,0,0.32) 100%
   );
   pointer-events: none;
   z-index: 3;
@@ -224,18 +235,21 @@
 
 .playlist-premium-overlay {
   position: absolute;
-  bottom: 18px;
-  left: 18px;
-  right: 18px;
-  padding: 0.4rem 0.75rem;
-  background: rgba(0,0,0,0.65);
+  top: 14px;               /* move to top-left */
+  left: 14px;
+  right: auto;
+  bottom: auto;
+
+  padding: 0.55rem 1rem;
+  background: rgba(0,0,0,0.75);
   color: white;
-  font-size: 1.4rem;
-  font-weight: 600;
-  border-radius: 6px;
-  z-index: 20;
-  text-align: center;
+  font-size: 1.6rem;       /* larger */
+  font-weight: 700;        /* stronger */
+  border-radius: 8px;
+  z-index: 25;
+  text-align: left;
   pointer-events: none;
+  letter-spacing: 0.3px;
 }
 
 /* -----------------------------------------------------
