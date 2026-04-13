@@ -228,6 +228,29 @@
     color: white;
     opacity: 0.85;
   }
+
+  /* Dim the entire tile when coming soon */
+  .playlist-premium-tile.coming-soon .playlist-premium-image-wrapper {
+    filter: brightness(0.55);
+  }
+  
+  /* Coming Soon overlay styling */
+  .playlist-premium-overlay {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+    padding: 0.4rem 0.75rem;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 6px;
+    z-index: 20;
+    text-align: center;
+    pointer-events: none;
+  }
+
 </style>
 
 <div class="artist-hero" style="background-image: url('.{{ artist.headshot }}')">
