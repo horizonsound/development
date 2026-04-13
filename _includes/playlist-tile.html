@@ -52,6 +52,14 @@
   {%- assign tile_title = override.title | default: merged.title -%}
   {%- assign tile_thumb = override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail -%}
 
+
+ DEBUG playlist-tile 
+ album.slug: {{ album.slug }} 
+ playlist_song_ids size: {{ playlist_song_ids | size }} 
+ show_active: {{ show_active }} 
+ show_coming_soon: {{ show_coming_soon }} 
+ earliest_ts: {{ earliest_ts }} 
+
   <a href="{{ site.baseurl }}/music/playlists/{{ merged.playlist_id }}/?song_id={{ first_song_id }}">
     <div class="playlist-premium-tile {% if show_coming_soon and show_active == false %}coming-soon{% endif %}">
       <div class="playlist-premium-image-wrapper">
