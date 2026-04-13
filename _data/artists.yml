@@ -82,7 +82,14 @@ artists:
         span: 1
       - src: ../assets/artists/cody-sails/cody1.jpeg
         span: 1
-    albums: []    
+    albums:
+      - slug: rum-soaked-paradise-cody-sails
+        year: 2025
+        description: 
+        links:
+          apple_music: 
+          spotify: 
+          youtube_music:     
     singles: []
     links:
       website: https://www.horizonsound.org/development/artists/cody-sails.html
