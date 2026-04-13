@@ -1,6 +1,6 @@
 {%- assign playlist_data = site.data.youtube_playlists.playlists -%}
 {%- assign overrides = site.data.playlist_overrides.overrides -%}
-{%- assign all_songs = site.data.youtube_songs.songs -%}
+{%- assign all_songs = site.data.youtube_feed.songs -%}
 {%- assign window_days = site.data.site.settings.coming_soon_window_days -%}
 {%- assign window_seconds = window_days | times: 86400 -%}
 {%- assign now_ts = 'now' | date: "%s" | plus: 0 -%}
