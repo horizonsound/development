@@ -1,22 +1,15 @@
+{%- assign playlist_data = site.data.youtube_playlists.playlists -%}
+{%- assign overrides = site.data.playlist_overrides.overrides -%}
 {%- assign window_days = site.data.site.settings.coming_soon_window_days -%}
 {%- assign window_seconds = window_days | times: 86400 -%}
 {%- assign now_ts = 'now' | date: "%s" | plus: 0 -%}
 {%- assign coming_soon_cutoff = now_ts | plus: window_seconds -%}
 
-{%- assign playlist_data = site.data.youtube_playlists.playlists -%}
-{%- assign overrides = site.data.playlist_overrides.overrides -%}
-
-{%- assign pl = playlist_data | where: "playlist_id", include.playlist_id | first -%}
-{%- assign override = overrides | where: "playlist_id", include.playlist_id | first -%}
+{%- assign pl = playlist_data | where: "playlist_id", album.slug | first -%}
+{%- assign override = overrides | where: "playlist_id", album.slug | first -%}
 
 {%- if pl == nil -%}
-
-  {% capture playlist_status %}hidden{% endcapture %}
-  {% capture playlist_display_title %}{% endcapture %}
-  {% capture playlist_display_thumbnail %}{% endcapture %}
-  {% capture playlist_first_song_id %}{% endcapture %}
-  {% capture playlist_earliest_ts %}{% endcapture %}
-
+  <!-- No playlist found, render nothing -->
 {%- else -%}
 
   {%- if override -%}
@@ -43,7 +36,6 @@
         {%- if ts < earliest_ts -%}
           {%- assign earliest_ts = ts -%}
         {%- endif -%}
-
         {%- if ts >= now_ts and ts <= coming_soon_cutoff -%}
           {%- assign show_coming_soon = true -%}
         {%- endif -%}
@@ -51,28 +43,26 @@
     {%- endif -%}
   {%- endfor -%}
 
-  {%- if show_active -%}
-    {% capture playlist_status %}active{% endcapture %}
-  {%- elsif show_coming_soon -%}
-    {% capture playlist_status %}coming_soon{% endcapture %}
-  {%- else -%}
-    {% capture playlist_status %}hidden{% endcapture %}
-  {%- endif -%}
+  {%- assign tile_title = override.title | default: merged.title -%}
+  {%- assign tile_thumb = override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail -%}
 
-  {% capture playlist_display_title %}
-    {{ override.title | default: merged.title }}
-  {% endcapture %}
+  <div class="playlist-premium-tile {% if show_coming_soon and show_active == false %}coming-soon{% endif %}">
+    <div class="playlist-premium-image-wrapper">
+      <img src="{{ site.baseurl }}{{ tile_thumb }}" class="playlist-premium-image">
 
-  {% capture playlist_display_thumbnail %}
-    {{ override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail }}
-  {% endcapture %}
+      {% if show_active %}
+        <!-- No overlay for active -->
+      {% elsif show_coming_soon %}
+        <div class="playlist-premium-overlay">
+          Coming {{ earliest_ts | date: "%b %-d" }}
+        </div>
+      {% else %}
+        <div class="playlist-premium-overlay">Coming Soon</div>
+      {% endif %}
 
-  {% capture playlist_first_song_id %}
-    {{ playlist_song_ids | first }}
-  {% endcapture %}
-
-  {% capture playlist_earliest_ts %}
-    {{ earliest_ts }}
-  {% endcapture %}
+      <div class="playlist-premium-gradient"></div>
+      <div class="playlist-premium-title">{{ tile_title }}</div>
+    </div>
+  </div>
 
 {%- endif -%}
