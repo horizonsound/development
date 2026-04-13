@@ -1,32 +1,3 @@
-<!-- INCLUDE DEBUG -->
-<div style="color:magenta; font-size:1.2rem; padding:0.5rem; border:1px solid magenta; margin:0.5rem 0;">
-  <strong>INCLUDE DEBUG</strong><br>
-
-  playlist_id passed in: {{ include.playlist_id }}<br><br>
-
-  {% assign debug_pl = site.data.youtube_playlists.playlists | where: "playlist_id", include.playlist_id | first %}
-  playlist found? {% if debug_pl %}YES{% else %}NO{% endif %}<br>
-
-  {% if debug_pl %}
-    <div style="margin-left:1rem;">
-      playlist.title: {{ debug_pl.title }}<br>
-      playlist.thumbnail: {{ debug_pl.thumbnail }}<br>
-      playlist.song_ids: {{ debug_pl.song_ids | join: ", " }}<br>
-    </div>
-  {% endif %}
-
-  {% assign debug_override = site.data.playlist_overrides.overrides | where: "playlist_id", include.playlist_id | first %}
-  override found? {% if debug_override %}YES{% else %}NO{% endif %}<br>
-
-  {% if debug_override %}
-    <div style="margin-left:1rem;">
-      override.title: {{ debug_override.title }}<br>
-      override.thumbnail: {{ debug_override.thumbnail }}<br>
-      override.songs: {{ debug_override.songs | join: ", " }}<br>
-    </div>
-  {% endif %}
-</div>
-
 {%- assign window_days = site.data.site.settings.coming_soon_window_days -%}
 {%- assign window_seconds = window_days | times: 86400 -%}
 {%- assign now_ts = 'now' | date: "%s" | plus: 0 -%}
