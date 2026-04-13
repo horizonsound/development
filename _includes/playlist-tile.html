@@ -31,14 +31,18 @@
     {%- if song -%}
       {%- if song.videostatus == "public" -%}
         {%- assign show_active = true -%}
+
       {%- elsif song.videostatus == "scheduled" and song.youtube_metadata.scheduled_at -%}
         {%- assign ts = song.youtube_metadata.scheduled_at | date: "%s" | plus: 0 -%}
+
         {%- if ts < earliest_ts -%}
           {%- assign earliest_ts = ts -%}
         {%- endif -%}
+
         {%- if ts >= now_ts and ts <= coming_soon_cutoff -%}
           {%- assign show_coming_soon = true -%}
         {%- endif -%}
+
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
@@ -46,23 +50,27 @@
   {%- assign tile_title = override.title | default: merged.title -%}
   {%- assign tile_thumb = override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail -%}
 
-  <div class="playlist-premium-tile {% if show_coming_soon and show_active == false %}coming-soon{% endif %}">
-    <div class="playlist-premium-image-wrapper">
-      <img src="{{ site.baseurl }}{{ tile_thumb }}" class="playlist-premium-image">
+  <a href="{{ site.baseurl }}{{ album.url }}">
+    <div class="playlist-premium-tile {% if show_coming_soon and show_active == false %}coming-soon{% endif %}">
+      <div class="playlist-premium-image-wrapper">
+        <img src="{{ site.baseurl }}{{ tile_thumb }}" class="playlist-premium-image">
 
-      {% if show_active %}
-        <!-- No overlay for active -->
-      {% elsif show_coming_soon %}
-        <div class="playlist-premium-overlay">
-          Coming {{ earliest_ts | date: "%b %-d" }}
-        </div>
-      {% else %}
-        <div class="playlist-premium-overlay">Coming Soon</div>
-      {% endif %}
+        {% if show_active %}
+          <!-- No overlay for active -->
 
-      <div class="playlist-premium-gradient"></div>
-      <div class="playlist-premium-title">{{ tile_title }}</div>
+        {% elsif show_coming_soon %}
+          <div class="playlist-premium-overlay">
+            Coming {{ earliest_ts | date: "%b %-d" }}
+          </div>
+
+        {% else %}
+          <div class="playlist-premium-overlay">Coming Soon</div>
+        {% endif %}
+
+        <div class="playlist-premium-gradient"></div>
+        <div class="playlist-premium-title">{{ tile_title }}</div>
+      </div>
     </div>
-  </div>
+  </a>
 
 {%- endif -%}
