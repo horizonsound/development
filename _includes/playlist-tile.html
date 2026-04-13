@@ -20,6 +20,7 @@
   {%- endif -%}
 
   {%- assign playlist_song_ids = override.songs | default: merged.song_ids -%}
+  {%- assign first_song_id = playlist_song_ids | first -%}
 
   {%- assign show_active = false -%}
   {%- assign show_coming_soon = false -%}
@@ -50,7 +51,7 @@
   {%- assign tile_title = override.title | default: merged.title -%}
   {%- assign tile_thumb = override.thumbnail | default: override.hero | default: merged.thumbnail | default: merged.hero | default: merged.youtube_thumbnail -%}
 
-  <a href="{{ site.baseurl }}{{ album.url }}">
+  <a href="{{ site.baseurl }}/music/playlists/{{ merged.playlist_id }}/?song_id={{ first_song_id }}">
     <div class="playlist-premium-tile {% if show_coming_soon and show_active == false %}coming-soon{% endif %}">
       <div class="playlist-premium-image-wrapper">
         <img src="{{ site.baseurl }}{{ tile_thumb }}" class="playlist-premium-image">
