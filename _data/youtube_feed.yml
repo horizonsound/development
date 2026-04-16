@@ -5032,6 +5032,7 @@ songs:
       made_for_kids: false
       self_declared_made_for_kids: false
       topic_categories:
+        - https://en.wikipedia.org/wiki/Independent_music
         - https://en.wikipedia.org/wiki/Music
         - https://en.wikipedia.org/wiki/Pop_music
       privacy_status: null
