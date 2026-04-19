@@ -104,11 +104,16 @@ artists:
       full: Ellie Hale
       first: Ellie
       last: Hale
-    tagline: 
-    primary_color: 
-    secondary_color: 
+    tagline: Dream‑lit indie pop with a soft, shimmering edge
+    primary_color: "#D8A7FF"
+    secondary_color: "#4A3C8C"
     headshot: ./assets/artists/ellie-hale/ellie-hale.jpg
     bio:
+      - Ellie Hale is a heartfelt indie‑pop storyteller with a dreamy, shimmering vocal style and a quietly powerful emotional core.
+      - Her music blends soft synth‑pop, intimate acoustic textures, and warm, cinematic production — always honest, melodic, and deeply human.
+      - She writes about longing, healing, late‑night thoughts, and the fragile moments that shape who we become.
+      - Within Horizon Sound, Ellie anchors the Dream‑Pop / Indie‑Pop lane — atmospheric, vulnerable, and emotionally resonant.
+      - Contact Ellie at Ellie.Hale@HorizonSound.org
     photo_wall:
       - src: ../assets/artists/ellie-hale/ellie-hale13.jpeg
         span: 2
