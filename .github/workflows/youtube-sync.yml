@@ -1,12 +1,9 @@
 name: YouTube Sync
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-  schedule:
-    - cron: "0 * * * *"
+# on:
+#   workflow_dispatch:
+#   schedule:
+#    - cron: "0 * * * *"
 
 permissions:
   contents: write

@@ -1,4 +1,4 @@
-// youtube-update-tags.js (DIAGNOSTIC VERSION)
+// youtube-update-tags.js (FIXED VERSION)
 import { google } from "googleapis";
 
 export async function updateYoutubeTags(videoId, tags) {
@@ -10,8 +10,9 @@ export async function updateYoutubeTags(videoId, tags) {
     const oauth2Client = new google.auth.OAuth2(
       process.env.GOOGLE_CLIENT_ID,
       process.env.GOOGLE_CLIENT_SECRET
-      // intentionally leaving redirectUri OUT for diagnostic
+      // redirectUri intentionally omitted for server-side use
     );
+    console.log("  [YouTube] Using CLIENT ID:", process.env.GOOGLE_CLIENT_ID);
     console.log("  [YouTube] OAuth2 client created.");
 
     console.log("  [YouTube] Setting credentials...");
@@ -27,12 +28,34 @@ export async function updateYoutubeTags(videoId, tags) {
     });
     console.log("  [YouTube] YouTube API client ready.");
 
-    console.log("  [YouTube] Sending update request to YouTube...");
+    // ⭐ STEP 1: Fetch existing snippet
+    console.log("  [YouTube] Fetching existing video snippet...");
+    const existing = await youtube.videos.list({
+      part: "snippet",
+      id: videoId
+    });
+
+    if (!existing.data.items || existing.data.items.length === 0) {
+      throw new Error("Video not found or no snippet returned.");
+    }
+
+    const snippet = existing.data.items[0].snippet;
+
+    console.log("  [YouTube] Existing snippet retrieved:");
+    console.log(`    Title: ${snippet.title}`);
+    console.log(`    Description length: ${snippet.description?.length || 0}`);
+    console.log(`    Category: ${snippet.categoryId}`);
+
+    // ⭐ STEP 2: Merge new tags into existing snippet
+    snippet.tags = tags;
+
+    // ⭐ STEP 3: Send full snippet back to YouTube
+    console.log("  [YouTube] Sending full snippet update...");
     const response = await youtube.videos.update({
       part: "snippet",
       requestBody: {
         id: videoId,
-        snippet: { tags }
+        snippet
       }
     });
 

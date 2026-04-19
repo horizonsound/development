@@ -30,12 +30,12 @@ async function main() {
   // -----------------------------
   // DEV MODE: Skip YouTube updates
   // -----------------------------
-  if (mode === "dev") {
-    console.log("DEV MODE: Skipping YouTube tag updates entirely.");
-    console.log("DEV MODE: No API calls were made.\n");
-    console.log("=== Pipeline Complete (DEV MODE) ===");
-    return;
-  }
+  // if (mode === "dev") {
+  //   console.log("DEV MODE: Skipping YouTube tag updates entirely.");
+  //   console.log("DEV MODE: No API calls were made.\n");
+  //   console.log("=== Pipeline Complete (DEV MODE) ===");
+  //   return;
+  // }
 
   // -----------------------------
   // PROD MODE: Update YouTube
