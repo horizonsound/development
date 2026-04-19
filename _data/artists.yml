@@ -61,9 +61,13 @@ artists:
     photo_wall:
       - src: ../assets/artists/ellie-hale/ellie-hale1.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale2.jpg
+      - src: ../assets/artists/ellie-hale/ellie-hale4.jpg
+        span: 1
+      - src: ../assets/artists/ellie-hale/ellie-hale5.jpg
         span: 1
       - src: ../assets/artists/ellie-hale/ellie-hale3.jpg
+        span: 1
+      - src: ../assets/artists/ellie-hale/ellie-hale2.jpg
         span: 1
     albums:
     singles: []
