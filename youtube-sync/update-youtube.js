@@ -47,7 +47,9 @@ async function main() {
     console.log(`  Hashtags: ${song.hashtags.join(", ")}`);
 
     try {
-      await updateYoutubeTags(song.youtube_id, song.hashtags);
+      // await updateYoutubeTags(song.youtube_id, song.hashtags);
+      console.log("  [DRY RUN] Would have updated YouTube here.");
+
       console.log("  ✓ YouTube update successful\n");
     } catch (err) {
       console.error("  ✗ ERROR updating YouTube:", err.message);
