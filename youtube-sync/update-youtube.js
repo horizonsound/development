@@ -1,13 +1,17 @@
-// update-youtube.js
 import { loadSongsYaml, writeSongsYaml } from "./utils/loadYaml.js";
+import { loadSiteYaml } from "./utils/loadSiteYaml.js";
 import { generateHashtags } from "./generate-hashtags.js";
-import { updateYoutubeTags } from "./youtube-update-tags.js";
+import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
 
-const mode = process.env.MODE || "prod"; // default to prod if not set
+const DRY_RUN = true; // Safety lock — no real updates until you flip this
 
 async function main() {
-  console.log("=== Horizon Sound Metadata Pipeline ===");
-  console.log(`Running in MODE: ${mode.toUpperCase()}\n`);
+  console.log("=== Horizon Sound Metadata Pipeline ===\n");
+
+  // -----------------------------
+  // Load YAML
+  // -----------------------------
+  const siteConfig = loadSiteYaml().settings.youtube_update;
 
   console.log("Loading songs from YAML...");
   let songs = loadSongsYaml();
@@ -18,50 +22,99 @@ async function main() {
   console.log("Hashtag generation complete.\n");
 
   console.log("Writing updated YAML...");
-  try {
-    writeSongsYaml(songs);
-    console.log("YAML write complete.\n");
-  } catch (err) {
-    console.error("ERROR WRITING YAML:", err.message);
-    console.error(err.stack);
-    throw err; // stop execution so we see the failure
-  }
+  writeSongsYaml(songs);
+  console.log("YAML write complete.\n");
 
   // -----------------------------
-  // DEV MODE: Skip YouTube updates
+  // Select target songs
   // -----------------------------
-  // if (mode === "dev") {
-  //   console.log("DEV MODE: Skipping YouTube tag updates entirely.");
-  //   console.log("DEV MODE: No API calls were made.\n");
-  //   console.log("=== Pipeline Complete (DEV MODE) ===");
-  //   return;
-  // }
+  const targetSongs = getTargetSongs(songs, siteConfig);
+
+  console.log(`Mode: ${siteConfig.mode}`);
+  console.log(`Target songs: ${targetSongs.length}\n`);
 
   // -----------------------------
-  // PROD MODE: Update YouTube
+  // Process each target video
   // -----------------------------
-  console.log("Updating YouTube tags...\n");
+  for (const song of targetSongs) {
+    console.log(`Checking: ${song.title} (${song.youtube_id})`);
 
-  for (const song of songs) {
-    console.log(`→ Updating video: ${song.title} (${song.youtube_id})`);
-    console.log(`  Hashtags: ${song.hashtags.join(", ")}`);
+    // Fetch current YouTube metadata (cheap call)
+    const current = await fetchYoutubeMetadata(song.youtube_id);
 
-    try {
-      // await updateYoutubeTags(song.youtube_id, song.hashtags);
-      console.log("  [DRY RUN] Would have updated YouTube here.");
-
-      console.log("  ✓ YouTube update successful\n");
-    } catch (err) {
-      console.error("  ✗ ERROR updating YouTube:", err.message);
-      console.error(err.stack);
+    if (!current) {
+      console.log(`  ERROR: Could not fetch metadata for ${song.youtube_id}`);
+      continue;
     }
+
+    const intended = {
+      tags: song.hashtags
+    };
+
+    const diff = diffHashtags(current.tags, intended.tags);
+
+    if (!diff.changed) {
+      console.log(`SKIP   | ${song.title} (${song.youtube_id}) — no changes detected\n`);
+      continue;
+    }
+
+    // Log the differences
+    console.log(`UPDATE | ${song.title} (${song.youtube_id})`);
+    console.log(`  - Tags changed`);
+    console.log(`  Current:  ${current.tags.join(", ")}`);
+    console.log(`  Intended: ${intended.tags.join(", ")}`);
+
+    if (DRY_RUN) {
+      console.log("  [DRY RUN] Would update YouTube here\n");
+      continue;
+    }
+
+    // Real update (still commented out for safety)
+    // await updateYoutubeTags(song.youtube_id, intended.tags);
+    console.log("  ✓ YouTube update successful\n");
   }
 
-  console.log("=== Pipeline Complete (PROD MODE) ===");
+  console.log("=== Pipeline Complete ===");
+}
+
+// --------------------------------------------------
+// MODE SELECTOR
+// --------------------------------------------------
+function getTargetSongs(songs, config) {
+  switch (config.mode) {
+    case "single":
+      return songs.filter(s => s.youtube_id === config.single.youtube_id);
+
+    case "multiple":
+      return songs.filter(s => config.multiple.youtube_ids.includes(s.youtube_id));
+
+    case "playlist":
+      return songs.filter(s => s.playlists?.includes(config.playlist.playlist_id));
+
+    case "all":
+      return songs;
+
+    default:
+      console.error("Invalid mode in site.yml");
+      return [];
+  }
+}
+
+// --------------------------------------------------
+// HASHTAG DIFF ENGINE
+// --------------------------------------------------
+function diffHashtags(currentTags, intendedTags) {
+  const current = currentTags || [];
+  const intended = intendedTags || [];
+
+  const changed =
+    current.length !== intended.length ||
+    current.some((tag, i) => tag !== intended[i]);
+
+  return { changed };
 }
 
 main().catch(err => {
   console.error("FATAL ERROR:", err);
-  console.error(err.stack);
   process.exit(1);
 });
