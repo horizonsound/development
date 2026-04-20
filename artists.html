@@ -89,20 +89,28 @@ permalink: /artists.html
     0 0 24px rgba(0,0,0,0.45);
 }
 
-  @media (max-width: 1100px) {
-    .artist-name-overlay {
-      font-size: clamp(2rem, 6vw, 3.5rem); /* mobile-friendly */
-      letter-spacing: 0.05em; /* tighter tracking */
-      padding-bottom: 6%;     /* moves it up slightly */
+  /* Default: mobile (2 across) */
+  .artists-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 4rem 8vw;
+  }
+  
+  /* Medium screens: 3 across */
+  @media (min-width: 800px) {
+    .artists-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
-
-  @media (min-width: 1100px) {
+  
+  /* Large screens: 4 across */
+  @media (min-width: 1200px) {
     .artists-grid {
       grid-template-columns: repeat(4, 1fr);
     }
   }
-
+  
   .page-header {
     padding: 0 8vw;
     margin-bottom: 48px;
