@@ -7,7 +7,7 @@ artists:
     tagline: Voices rising with purpose, unity, and heart
     primary_color: "#2A4C8F"
     secondary_color: "#E8EAF3"
-    headshot: ./assets/artists/ascension-youth-choir/AYC6.jpeg
+    headshot: ./assets/artists/ascension-youth-choir/AYC6.jpg
     bio: 
       - Ascension Youth Choir is a vibrant ensemble of young singers ages eight to fifteen, united by a shared love of music and a spirit of encouragement. Because of this age range, the choir is always evolving, wonderful singers grow up and move on, and new voices step in to carry the sound forward. Together, they keep the spirit of Ascension Youth Choir alive from season to season.
       - Known for their warm harmonies, expressive performances, and genuine connection with one another, the choir brings an uplifting energy to every stage they step onto. Whether they are rehearsing in a sunlit room, laughing between takes, or delivering a heartfelt performance, the members of Ascension Youth Choir embody the joy and authenticity of youth. Their sound blends innocence with emerging confidence, creating a unique musical identity that feels both grounded and full of possibility.
@@ -202,7 +202,7 @@ artists:
     tagline: Modern country heart with a storyteller’s edge
     primary_color: "#C48A4A"
     secondary_color: "#3A2A1A"
-    headshot: ./assets/artists/lucas-allen/lucas-allen.jpeg
+    headshot: ./assets/artists/lucas-allen/lucas-allen.jpg
     bio:
       - Lucas Allen is a modern country storyteller with a warm, lived‑in voice and a grounded, everyman charm.
       - His music blends contemporary country, Americana grit, and cinematic small‑town imagery — honest, melodic, and deeply human.
