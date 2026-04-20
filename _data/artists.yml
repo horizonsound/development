@@ -234,7 +234,7 @@ artists:
         span: 1
       - src: ../assets/artists/lucas-allen/lucas-allen18.jpeg
         span: 1
-albums:
+    albums:
     singles: []
     links:
       website: https://www.horizonsound.org/development/artists/lucas-allen.html
