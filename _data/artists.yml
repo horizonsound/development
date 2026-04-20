@@ -1,52 +1,44 @@
 artists:
-  - slug: lydia-ellington
+  - slug: ascension-youth-choir
     name:
-      full: Lydia Ellington
-      first: Lydia
-      last: Ellington
-    tagline: Cinematic pop with a glowing, emotional core
-    primary_color: "#F4B5D8"
-    secondary_color: "#5C3B8C"
-    headshot: ./assets/artists/lydia-ellington/lydia-ellington.jpg
-    bio:
-      - Lydia Ellington is a cinematic pop vocalist with a glowing emotional core and a voice that feels like light breaking through clouds.
-      - Her music blends modern pop, orchestral textures, and heartfelt storytelling, creating songs that feel both intimate and widescreen.
-      - Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
-      - Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
-      - Contact Lydia at Lydia.Ellington@HorizonSound.org
+      full: Ascension Youth Choir
+      first:
+      last:
+    tagline: Voices rising with purpose, unity, and heart
+    primary_color: "#2A4C8F"
+    secondary_color: "#E8EAF3"
+    headshot: ./assets/artists/ascension-youth-choir/AYC6.jpeg
+    bio: 
+      - Ascension Youth Choir is a vibrant ensemble of young singers ages eight to fifteen, united by a shared love of music and a spirit of encouragement. Because of this age range, the choir is always evolving: wonderful singers grow up and move on, and new voices step in to carry the sound forward. Together, they keep the spirit of Ascension Youth Choir alive from season to season.
+      - Known for their warm harmonies, expressive performances, and genuine connection with one another, the choir brings an uplifting energy to every stage they step onto. Whether they are rehearsing in a sunlit room, laughing between takes, or delivering a heartfelt performance, the members of Ascension Youth Choir embody the joy and authenticity of youth. Their sound blends innocence with emerging confidence, creating a unique musical identity that feels both grounded and full of possibility.
+      - As part of the Horizon Sound family, the choir represents growth, community, and the belief that every young voice has something meaningful to offer. Their performances celebrate unity, diversity, and the simple power of singing together.
+      - Contact Ascension Youth Choir at AYC@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/lydia-ellington/lydia2.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC19.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC16.jpeg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia21.jpeg
-        span: 1
-      - src: ../assets/artists/lydia-ellington/lydia19.jpeg
-        span: 1
-      - src: ../assets/artists/lydia-ellington/lydia11a.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC11.jpeg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia15.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC17.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC12.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC13.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC20.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC1.jpeg
+        span: 1
+      - src: ../assets/artists/ascension-youth-choir/AYC14.jpeg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia12.jpeg
-        span: 1
-      - src: ../assets/artists/lydia-ellington/lydia22.jpeg
-        span: 1
-      - src: ../assets/artists/lydia-ellington/lydia7.jpeg
-        span: 1
-      - src: ../assets/artists/lydia-ellington/lydia5.jpeg
-        span: 1  
-    albums:
-      - slug: after-the-silence-performed-by-lydia-ellington
-        year: 2025
-        description: Cinematic pop moments about growth, hope, and emotional clarity.
-        links:
-          apple_music: https://music.apple.com/us/album/after-the-silence/1889528896
-          spotify: https://open.spotify.com/album/2mP8NXfE8Uhp68raM2iNM1?si=eVZAzRckQ6inVch5bjJNfw
-          youtube_music: https://www.youtube.com/watch?v=GtGKAZdE0Do&list=OLAK5uy_mgHIFz_S2uiQ40O_uey8gXUTG8NmVeh3k
+    albums: []
     singles: []
     links:
-      website: https://www.horizonsound.org/development/artists/lydia-ellington.html
-      apple_music: https://music.apple.com/us/artist/lydia-ellington/1889073260
-      spotify: https://open.spotify.com/artist/6NmeEuax1ZPpDmSLfjSS7V?si=4E8XlQEYSW2jiGg8nVySbw
-      youtube: https://www.youtube.com/@LydiaEllington-hs
+      website:
+      apple_music:
+      spotify:
+      youtube:
 
   - slug: cody-sails
     name:
@@ -104,11 +96,16 @@ artists:
       full: Ellie Hale
       first: Ellie
       last: Hale
-    tagline: 
-    primary_color: 
-    secondary_color: 
+    tagline: Dream‑lit indie pop with a soft, shimmering edge
+    primary_color: "#D8A7FF"
+    secondary_color: "#4A3C8C"
     headshot: ./assets/artists/ellie-hale/ellie-hale.jpg
     bio:
+      - Ellie Hale is a heartfelt indie‑pop storyteller with a dreamy, shimmering vocal style and a quietly powerful emotional core.
+      - Her music blends soft synth‑pop, intimate acoustic textures, and warm, cinematic production — always honest, melodic, and deeply human.
+      - She writes about longing, healing, late‑night thoughts, and the fragile moments that shape who we become.
+      - Within Horizon Sound, Ellie anchors the Dream‑Pop / Indie‑Pop lane — atmospheric, vulnerable, and emotionally resonant.
+      - Contact Ellie at Ellie.Hale@HorizonSound.org
     photo_wall:
       - src: ../assets/artists/ellie-hale/ellie-hale13.jpeg
         span: 2
@@ -132,14 +129,115 @@ artists:
         span: 1
       - src: ../assets/artists/ellie-hale/ellie-hale6.jpeg
         span: 1
+      - src: ../assets/artists/ellie-hale/ellie-hale38.jpeg
+        span: 2
       - src: ../assets/artists/ellie-hale/ellie-hale21.jpeg
         span: 1
       - src: ../assets/artists/ellie-hale/ellie-hale29.jpeg
         span: 1
+      - src: ../assets/artists/ellie-hale/ellie-hale37.jpeg
+        span: 1
     albums:
     singles: []
     links:
-      website: 
+      website: https://www.horizonsound.org/development/artists/ellie-hale.html
+      apple_music: 
+      spotify: 
+      youtube: 
+
+  - slug: lydia-ellington
+    name:
+      full: Lydia Ellington
+      first: Lydia
+      last: Ellington
+    tagline: Cinematic pop with a glowing, emotional core
+    primary_color: "#F4B5D8"
+    secondary_color: "#5C3B8C"
+    headshot: ./assets/artists/lydia-ellington/lydia-ellington.jpg
+    bio:
+      - Lydia Ellington is a cinematic pop vocalist with a glowing emotional core and a voice that feels like light breaking through clouds.
+      - Her music blends modern pop, orchestral textures, and heartfelt storytelling, creating songs that feel both intimate and widescreen.
+      - Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
+      - Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
+      - Contact Lydia at Lydia.Ellington@HorizonSound.org
+    photo_wall:
+      - src: ../assets/artists/lydia-ellington/lydia2.jpeg
+        span: 2
+      - src: ../assets/artists/lydia-ellington/lydia21.jpeg
+        span: 1
+      - src: ../assets/artists/lydia-ellington/lydia19.jpeg
+        span: 1
+      - src: ../assets/artists/lydia-ellington/lydia11a.jpeg
+        span: 2
+      - src: ../assets/artists/lydia-ellington/lydia15.jpeg
+        span: 2
+      - src: ../assets/artists/lydia-ellington/lydia12.jpeg
+        span: 1
+      - src: ../assets/artists/lydia-ellington/lydia22.jpeg
+        span: 1
+      - src: ../assets/artists/lydia-ellington/lydia7.jpeg
+        span: 1
+      - src: ../assets/artists/lydia-ellington/lydia5.jpeg
+        span: 1  
+    albums:
+      - slug: after-the-silence-performed-by-lydia-ellington
+        year: 2025
+        description: Cinematic pop moments about growth, hope, and emotional clarity.
+        links:
+          apple_music: https://music.apple.com/us/album/after-the-silence/1889528896
+          spotify: https://open.spotify.com/album/2mP8NXfE8Uhp68raM2iNM1?si=eVZAzRckQ6inVch5bjJNfw
+          youtube_music: https://www.youtube.com/watch?v=GtGKAZdE0Do&list=OLAK5uy_mgHIFz_S2uiQ40O_uey8gXUTG8NmVeh3k
+    singles: []
+    links:
+      website: https://www.horizonsound.org/development/artists/lydia-ellington.html
+      apple_music: https://music.apple.com/us/artist/lydia-ellington/1889073260
+      spotify: https://open.spotify.com/artist/6NmeEuax1ZPpDmSLfjSS7V?si=4E8XlQEYSW2jiGg8nVySbw
+      youtube: https://www.youtube.com/@LydiaEllington-hs
+
+  - slug: lucas-allen
+    name:
+      full: Lucas Allen
+      first: Lucas
+      last: Allen
+    tagline: Modern country heart with a storyteller’s edge
+    primary_color: "#C48A4A"
+    secondary_color: "#3A2A1A"
+    headshot: ./assets/artists/lucas-allen/lucas-allen.jpeg
+    bio:
+      - Lucas Allen is a modern country storyteller with a warm, lived‑in voice and a grounded, everyman charm.
+      - His music blends contemporary country, Americana grit, and cinematic small‑town imagery — honest, melodic, and deeply human.
+      - He writes about long drives, late nights, heartbreak, hope, and the moments that shape who we become.
+      - Within Horizon Sound, Lucas anchors the Modern Country lane — heartfelt, relatable, and rich with narrative detail.
+      - Contact Lucas at Lucas.Allen@HorizonSound.org
+    photo_wall:
+      - src: ../assets/artists/lucas-allen/lucas-allen30.jpeg
+        span: 2
+      - src: ../assets/artists/lucas-allen/lucas-allen5.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen22.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen24.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen26.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen21.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen11.jpeg
+        span: 2
+      - src: ../assets/artists/lucas-allen/lucas-allen6.jpeg
+        span: 2
+      - src: ../assets/artists/lucas-allen/lucas-allen16.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen15.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen17.jpeg
+        span: 1
+      - src: ../assets/artists/lucas-allen/lucas-allen18.jpeg
+        span: 1
+    albums:
+    singles: []
+    links:
+      website: https://www.horizonsound.org/development/artists/lucas-allen.html
       apple_music: 
       spotify: 
       youtube: 
@@ -199,43 +297,3 @@ artists:
       spotify: https://open.spotify.com/artist/36A7eQseX0fkXYyAuzG79r?si=eul5z_4sSH2HqHJet4ohuw
       youtube: https://music.youtube.com/playlist?list=PLcKs1ONZE1PzhwIF1yE_gEUS1kZoW6oiH&si=DrzIeGgcZXb-7C12
   
-  - slug: ascension-youth-choir
-    name:
-      full: Ascension Youth Choir
-      first:
-      last:
-    tagline: Voices rising with purpose, unity, and heart
-    primary_color: "#2A4C8F"
-    secondary_color: "#E8EAF3"
-    headshot: ./assets/artists/ascension-youth-choir/AYC6.jpeg
-    bio: 
-      - Ascension Youth Choir is a vibrant ensemble of young singers ages eight to fifteen, united by a shared love of music and a spirit of encouragement. Because of this age range, the choir is always evolving: wonderful singers grow up and move on, and new voices step in to carry the sound forward. Together, they keep the spirit of Ascension Youth Choir alive from season to season.
-      - Known for their warm harmonies, expressive performances, and genuine connection with one another, the choir brings an uplifting energy to every stage they step onto. Whether they are rehearsing in a sunlit room, laughing between takes, or delivering a heartfelt performance, the members of Ascension Youth Choir embody the joy and authenticity of youth. Their sound blends innocence with emerging confidence, creating a unique musical identity that feels both grounded and full of possibility.
-      - As part of the Horizon Sound family, the choir represents growth, community, and the belief that every young voice has something meaningful to offer. Their performances celebrate unity, diversity, and the simple power of singing together.
-      - Contact Ascension Youth Choir at AYC@HorizonSound.org
-    photo_wall:
-      - src: ../assets/artists/ascension-youth-choir/AYC19.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC16.jpeg
-        span: 2
-      - src: ../assets/artists/ascension-youth-choir/AYC11.jpeg
-        span: 2
-      - src: ../assets/artists/ascension-youth-choir/AYC17.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC12.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC13.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC20.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC1.jpeg
-        span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC14.jpeg
-        span: 2
-    albums: []
-    singles: []
-    links:
-      website:
-      apple_music:
-      spotify:
-      youtube:
