@@ -48,7 +48,7 @@ artists:
     tagline: Sun‑soaked coastal storyteller with a barefoot spirit
     primary_color: "#F6B35A"
     secondary_color: "#1C6E8C"
-    headshot: ./assets/artists/cody-sails/cody-sails.jpg
+    headshot: ./assets/artists/cody-sails/Cody Sails 3000x3000.jpg
     bio:
       - Cody Sails is a warm‑hearted coastal storyteller with a sun‑soaked voice and a barefoot, easygoing spirit.
       - His music blends beach‑folk, mellow pop, and golden‑hour acoustic grooves — always relaxed and inviting.
@@ -153,7 +153,7 @@ artists:
     tagline: Cinematic pop with a glowing, emotional core
     primary_color: "#F4B5D8"
     secondary_color: "#5C3B8C"
-    headshot: ./assets/artists/lydia-ellington/lydia-ellington.jpg
+    headshot: ./assets/artists/lydia-ellington/Lydia Ellington 3000x3000.jpg
     bio:
       - Lydia Ellington is a cinematic pop vocalist with a glowing emotional core and a voice that feels like light breaking through clouds.
       - Her music blends modern pop, orchestral textures, and heartfelt storytelling, creating songs that feel both intimate and widescreen.
@@ -250,7 +250,7 @@ artists:
     tagline: A wild heart with a taste for the edge
     primary_color: "#F6B35A"
     secondary_color: "#1C6E8C"
-    headshot: ./assets/artists/ravyn/Ravyn Headshot 3000x3000.jpg
+    headshot: ./assets/artists/ravyn/Ravyn Headshot 1024x1024.jpg
     bio:
       - Ravyn is an unpredictable pop artist with a wild heart and a taste for the edge.
       - Her sound blends emotional pop, rebellious energy, and a spark of beautiful chaos — always bold, always alive.
