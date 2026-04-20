@@ -14,23 +14,23 @@ artists:
       - As part of the Horizon Sound family, the choir represents growth, community, and the belief that every young voice has something meaningful to offer. Their performances celebrate unity, diversity, and the simple power of singing together.
       - Contact Ascension Youth Choir at AYC@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/ascension-youth-choir/AYC19.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC19.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC16.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC16.jpg
         span: 2
-      - src: ../assets/artists/ascension-youth-choir/AYC11.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC11.jpg
         span: 2
-      - src: ../assets/artists/ascension-youth-choir/AYC17.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC17.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC12.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC12.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC13.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC13.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC20.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC20.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC1.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC1.jpg
         span: 1
-      - src: ../assets/artists/ascension-youth-choir/AYC14.jpeg
+      - src: ../assets/artists/ascension-youth-choir/AYC14.jpg
         span: 2
     albums: []
     singles: []
@@ -56,25 +56,25 @@ artists:
       - Within Horizon Sound, Cody anchors the Coastal Acoustic lane — warm, approachable, and emotionally grounded.
       - Contact Cody at Cody.Sails@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/cody-sails/cody19.jpeg
+      - src: ../assets/artists/cody-sails/cody19.jpg
         span: 2
-      - src: ../assets/artists/cody-sails/cody18.jpeg
+      - src: ../assets/artists/cody-sails/cody18.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody17.jpeg
+      - src: ../assets/artists/cody-sails/cody17.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody13.jpeg
+      - src: ../assets/artists/cody-sails/cody13.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody16.jpeg
+      - src: ../assets/artists/cody-sails/cody16.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody3.jpeg
+      - src: ../assets/artists/cody-sails/cody3.jpg
         span: 2
-      - src: ../assets/artists/cody-sails/cody6.jpeg
+      - src: ../assets/artists/cody-sails/cody6.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody12.jpeg
+      - src: ../assets/artists/cody-sails/cody12.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody7a.jpeg
+      - src: ../assets/artists/cody-sails/cody7a.jpg
         span: 1
-      - src: ../assets/artists/cody-sails/cody1.jpeg
+      - src: ../assets/artists/cody-sails/cody1.jpg
         span: 1
     albums:
       - slug: rum-soaked-paradise-cody-sails
@@ -107,35 +107,35 @@ artists:
       - Within Horizon Sound, Ellie anchors the Dream‑Pop / Indie‑Pop lane — atmospheric, vulnerable, and emotionally resonant.
       - Contact Ellie at Ellie.Hale@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/ellie-hale/ellie-hale13.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale13.jpg
         span: 2
-      - src: ../assets/artists/ellie-hale/ellie-hale15.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale15.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale19.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale19.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale22.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale22.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale20.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale20.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale31.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale31.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale11.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale11.jpg
         span: 2
-      - src: ../assets/artists/ellie-hale/ellie-hale12.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale12.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale34.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale34.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale32.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale32.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale6.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale6.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale38.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale38.jpg
         span: 2
-      - src: ../assets/artists/ellie-hale/ellie-hale21.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale21.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale29.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale29.jpg
         span: 1
-      - src: ../assets/artists/ellie-hale/ellie-hale37.jpeg
+      - src: ../assets/artists/ellie-hale/ellie-hale37.jpg
         span: 1
     albums:
     singles: []
@@ -161,23 +161,23 @@ artists:
       - Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
       - Contact Lydia at Lydia.Ellington@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/lydia-ellington/lydia2.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia2.jpg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia21.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia21.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia19.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia19.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia11a.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia11a.jpg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia15.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia15.jpg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia12.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia12.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia22.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia22.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia7.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia7.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia5.jpeg
+      - src: ../assets/artists/lydia-ellington/lydia5.jpg
         span: 1  
     albums:
       - slug: after-the-silence-performed-by-lydia-ellington
@@ -210,29 +210,29 @@ artists:
       - Within Horizon Sound, Lucas anchors the Modern Country lane — heartfelt, relatable, and rich with narrative detail.
       - Contact Lucas at Lucas.Allen@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/lucas-allen/lucas-allen30.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen30.jpg
         span: 2
-      - src: ../assets/artists/lucas-allen/lucas-allen5.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen5.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen22.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen22.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen24.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen24.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen26.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen26.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen21.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen21.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen11.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen11.jpg
         span: 2
-      - src: ../assets/artists/lucas-allen/lucas-allen6.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen6.jpg
         span: 2
-      - src: ../assets/artists/lucas-allen/lucas-allen16.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen16.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen15.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen15.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen17.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen17.jpg
         span: 1
-      - src: ../assets/artists/lucas-allen/lucas-allen18.jpeg
+      - src: ../assets/artists/lucas-allen/lucas-allen18.jpg
         span: 1
     albums:
     singles: []
@@ -258,29 +258,29 @@ artists:
       - Within Horizon Sound, Ravyn stands as the fearless experimenter — equally at home in dark, cinematic eras like Midnight Saga or in bright, high‑energy pop built for movement and release.
       - Contact Ravyn at Ravyn@HorizonSound.org
     photo_wall:
-      - src: ../assets/artists/ravyn/ravyn26.jpeg
+      - src: ../assets/artists/ravyn/ravyn26.jpg
         span: 2
-      - src: ../assets/artists/ravyn/ravyn14.jpeg
+      - src: ../assets/artists/ravyn/ravyn14.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn24.jpeg
+      - src: ../assets/artists/ravyn/ravyn24.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn5.jpeg
+      - src: ../assets/artists/ravyn/ravyn5.jpg
         span: 2
-      - src: ../assets/artists/ravyn/ravyn17.jpeg
+      - src: ../assets/artists/ravyn/ravyn17.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn1.jpeg
+      - src: ../assets/artists/ravyn/ravyn1.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn7.jpeg
+      - src: ../assets/artists/ravyn/ravyn7.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn23.jpeg
+      - src: ../assets/artists/ravyn/ravyn23.jpg
         span: 2
-      - src: ../assets/artists/ravyn/ravyn3.jpeg
+      - src: ../assets/artists/ravyn/ravyn3.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn19.jpeg
+      - src: ../assets/artists/ravyn/ravyn19.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn4.jpeg
+      - src: ../assets/artists/ravyn/ravyn4.jpg
         span: 1
-      - src: ../assets/artists/ravyn/ravyn25.jpeg
+      - src: ../assets/artists/ravyn/ravyn25.jpg
         span: 1  
     albums: 
       - slug: midnight-saga
