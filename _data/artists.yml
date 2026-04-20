@@ -163,21 +163,21 @@ artists:
     photo_wall:
       - src: ../assets/artists/lydia-ellington/lydia2.jpg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia21.jpg
+      - src: ../assets/artists/lydia-ellington/lydia40.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia19.jpg
+      - src: ../assets/artists/lydia-ellington/lydia26.jpg
         span: 1
       - src: ../assets/artists/lydia-ellington/lydia11a.jpg
         span: 2
       - src: ../assets/artists/lydia-ellington/lydia15.jpg
         span: 2
-      - src: ../assets/artists/lydia-ellington/lydia12.jpg
+      - src: ../assets/artists/lydia-ellington/lydia45.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia22.jpg
+      - src: ../assets/artists/lydia-ellington/lydia37.jpg
         span: 1
       - src: ../assets/artists/lydia-ellington/lydia7.jpg
         span: 1
-      - src: ../assets/artists/lydia-ellington/lydia5.jpg
+      - src: ../assets/artists/lydia-ellington/lydia39.jpg
         span: 1  
     albums:
       - slug: after-the-silence-performed-by-lydia-ellington
