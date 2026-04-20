@@ -66,33 +66,24 @@ permalink: /artists.html
     position: relative;
   }
   
-  /* This is the big, premium name overlay */
-/* This is the big, premium name overlay */
 .artist-name-overlay {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: left;
+  left: 12px;
+  bottom: 12px;
 
-  background: rgba(0,0,0,0);
+  transform: none;      /* remove centering */
+  text-align: left;     /* left‑justify the text */
 
-  font-size: clamp(4rem, 3vw, 3rem);
+  font-size: clamp(4rem, 2.8vw, 3rem);
   font-weight: 800;
   letter-spacing: 0.08em;
 
-  padding-bottom: 10%;
-
-  /* subtle glow so it stays readable */
   text-shadow:
     0 0 12px rgba(0,0,0,0.65),
     0 0 24px rgba(0,0,0,0.45);
 
-    left: 50%;
-    bottom: 12px; /* fixed anchor */
-    transform: translateX(-50%);
-    text-align: left;
-  }
+  white-space: nowrap;  /* optional: keeps names on one line */
+}
 
   /* Default: mobile (2 across) */
   .artists-grid {
