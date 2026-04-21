@@ -101,6 +101,30 @@ function getTargetSongs(songs, config) {
   }
 }
 
+// ===============================================================
+// TAG NORMALIZATION + UNORDERED COMPARISON
+// YouTube alphabetizes tags, so we compare as SETS, not sequences.
+// ===============================================================
+function normalizeTag(tag) {
+  return tag
+    .toLowerCase()
+    .normalize("NFKC")
+    .trim();
+}
+
+function tagsAreEqual(current, intended) {
+  const a = current.map(normalizeTag).sort();
+  const b = intended.map(normalizeTag).sort();
+
+  if (a.length !== b.length) return false;
+
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return false;
+  }
+
+  return true;
+}
+
 // --------------------------------------------------
 // HASHTAG DIFF ENGINE
 // --------------------------------------------------
@@ -108,9 +132,7 @@ function diffHashtags(currentTags, intendedTags) {
   const current = currentTags || [];
   const intended = intendedTags || [];
 
-  const changed =
-    current.length !== intended.length ||
-    current.some((tag, i) => tag !== intended[i]);
+  const changed = !tagsAreEqual(current, intended);
 
   return { changed };
 }
