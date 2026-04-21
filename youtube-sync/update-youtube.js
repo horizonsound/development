@@ -1,7 +1,7 @@
 import { loadSongsYaml, writeSongsYaml } from "./utils/loadYaml.js";
 import { loadSiteYaml } from "./utils/loadSiteYaml.js";
 import { generateHashtags } from "./generate-hashtags.js";
-// import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
+import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
 
 const DRY_RUN = true; // Safety lock — no real updates until you flip this
 
