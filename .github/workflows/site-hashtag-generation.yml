@@ -1,7 +1,7 @@
 name: Site Hashtag Generation
 
 on:
-  workflow_dispatch:   # run manually anytime
+  workflow_dispatch:
   push:
     paths:
       - "_data/youtube_feed.yml"
@@ -23,9 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: youtube-sync
 
       - name: Generate hashtags
         run: npm run generate-hashtags
+        working-directory: youtube-sync
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
