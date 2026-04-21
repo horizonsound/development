@@ -1,18 +1,17 @@
 import fs from "fs";
 import yaml from "js-yaml";
 
-// Choose YAML file based on mode
-const FEED_PATH = "../_data/youtube_feed.yml";
+const SONGS_PATH = "../_data/youtube_feed.yml";
+const SITE_PATH = "../_data/site.yml";
 
 export function loadSongsYaml() {
-  console.log(`Reading YAML from ${FEED_PATH}`);
-  const raw = fs.readFileSync(FEED_PATH, "utf8");
-  const parsed = yaml.load(raw);
-  return parsed.songs || [];
+  const file = fs.readFileSync(SONGS_PATH, "utf8");
+  const data = yaml.load(file);
+  return data.songs || [];
 }
 
-export function writeSongsYaml(songs) {
-  console.log(`Writing YAML to ${FEED_PATH}`);
-  const yamlStr = yaml.dump({ songs });
-  fs.writeFileSync(FEED_PATH, yamlStr, "utf8");
+export function loadSiteYaml() {
+  const file = fs.readFileSync(SITE_PATH, "utf8");
+  const data = yaml.load(file);
+  return data;
 }
