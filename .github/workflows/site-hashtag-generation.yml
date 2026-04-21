@@ -1,0 +1,34 @@
+name: Site Hashtag Generation
+
+on:
+  workflow_dispatch:   # run manually anytime
+  push:
+    paths:
+      - "_data/youtube_feed.yml"
+      - "youtube-sync/site-hashtag-generation.js"
+      - "youtube-sync/utils/**"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate hashtags
+        run: npm run generate-hashtags
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Auto-update: regenerated hashtags"
+          file_pattern: "_data/youtube_feed.yml"
