@@ -1,4 +1,4 @@
-import { loadSongsYaml, writeSongsYaml } from "./utils/loadYaml.js";
+import { loadSongsYaml /* writeSongsYaml */ } from "./utils/loadYaml.js";
 import { loadSiteYaml } from "./utils/loadSiteYaml.js";
 import { generateHashtags } from "./generate-hashtags.js";
 import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
@@ -9,7 +9,7 @@ async function main() {
   console.log("=== Horizon Sound Metadata Pipeline ===\n");
 
   // -----------------------------
-  // Load YAML
+  // Load YAML (READ-ONLY)
   // -----------------------------
   const siteConfig = loadSiteYaml().settings.youtube_update;
 
@@ -21,9 +21,10 @@ async function main() {
   songs = generateHashtags(songs);
   console.log("Hashtag generation complete.\n");
 
-  console.log("Writing updated YAML...");
-  writeSongsYaml(songs);
-  console.log("YAML write complete.\n");
+  // ❌ WRITE DISABLED — catalog is read-only
+  // console.log("Writing updated YAML...");
+  // writeSongsYaml(songs);
+  // console.log("YAML write complete.\n");
 
   // -----------------------------
   // Select target songs
@@ -37,45 +38,43 @@ async function main() {
   // Process each target video
   // -----------------------------
   for (const song of targetSongs) {
-    console.log(`Checking: ${song.title} (${song.youtube_id})`);
+    console.log(`\n=== ${song.title} (${song.youtube_id}) ===`);
 
     // Fetch current YouTube metadata (cheap call)
     const current = await fetchYoutubeMetadata(song.youtube_id);
-    //const current = { tags: [] }; // TEMP STUB
 
     if (!current) {
       console.log(`  ERROR: Could not fetch metadata for ${song.youtube_id}`);
       continue;
     }
 
-    const intended = {
-      tags: song.hashtags
-    };
+    const intended = { tags: song.hashtags };
+
+    // Essential logging only
+    console.log(`  YouTube tags:   ${current.tags.join(", ") || "(none)"}`);
+    console.log(`  Intended tags:  ${intended.tags.join(", ")}`);
 
     const diff = diffHashtags(current.tags, intended.tags);
 
+    console.log(`  Tags match?     ${diff.changed ? "NO" : "YES"}`);
+
     if (!diff.changed) {
-      console.log(`SKIP   | ${song.title} (${song.youtube_id}) — no changes detected\n`);
+      console.log(`  → SKIPPED (no changes needed)`);
       continue;
     }
 
-    // Log the differences
-    console.log(`UPDATE | ${song.title} (${song.youtube_id})`);
-    console.log(`  - Tags changed`);
-    console.log(`  Current:  ${current.tags.join(", ")}`);
-    console.log(`  Intended: ${intended.tags.join(", ")}`);
+    console.log(`  → UPDATE REQUIRED`);
 
     if (DRY_RUN) {
-      console.log("  [DRY RUN] Would update YouTube here\n");
+      console.log("  [DRY RUN] Would update YouTube here");
       continue;
     }
 
-    // Real update (still commented out for safety)
-    // await updateYoutubeTags(song.youtube_id, intended.tags);
-    console.log("  ✓ YouTube update successful\n");
+    await updateYoutubeTags(song.youtube_id, intended.tags);
+    console.log("  ✓ YouTube update successful");
   }
 
-  console.log("=== Pipeline Complete ===");
+  console.log("\n=== Pipeline Complete ===");
 }
 
 // --------------------------------------------------
@@ -103,13 +102,9 @@ function getTargetSongs(songs, config) {
 
 // ===============================================================
 // TAG NORMALIZATION + UNORDERED COMPARISON
-// YouTube alphabetizes tags, so we compare as SETS, not sequences.
 // ===============================================================
 function normalizeTag(tag) {
-  return tag
-    .toLowerCase()
-    .normalize("NFKC")
-    .trim();
+  return tag.toLowerCase().normalize("NFKC").trim();
 }
 
 function tagsAreEqual(current, intended) {
@@ -131,10 +126,7 @@ function tagsAreEqual(current, intended) {
 function diffHashtags(currentTags, intendedTags) {
   const current = currentTags || [];
   const intended = intendedTags || [];
-
-  const changed = !tagsAreEqual(current, intended);
-
-  return { changed };
+  return { changed: !tagsAreEqual(current, intended) };
 }
 
 main().catch(err => {
