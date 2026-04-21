@@ -37,19 +37,22 @@ function extractFromVibes(vibesArray) {
 function extractFromTitle(title) {
   if (!title) return [];
 
-  return title
+  const normalized = title
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")   // remove punctuation
-    .split(/[\s-]+/)                // split on spaces/hyphens
-    .filter(w => w.length > 2);
+    .replace(/[^a-z0-9]+/g, ""); // remove all non-alphanumerics
+
+  return normalized.length > 2 ? [normalized] : [];
 }
 
 function extractFromPlaylists(playlists) {
   if (!Array.isArray(playlists)) return [];
 
   return playlists
-    .flatMap(slug => slug.split(/[-]/))  // split slug into words
-    .map(w => w.toLowerCase())
+    .map(slug =>
+      slug
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "") // remove hyphens and punctuation
+    )
     .filter(w => w.length > 2);
 }
 
