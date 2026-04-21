@@ -17,4 +17,9 @@
     "axios": "^1.6.0"
   },
   "devDependencies": {}
+  "scripts": {
+    "generate-hashtags": "node youtube-sync/site-hashtag-generation.js"
+  }
 }
+
+
