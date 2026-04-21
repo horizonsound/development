@@ -3,7 +3,7 @@ import { loadSiteYaml } from "./utils/loadSiteYaml.js";
 import { generateHashtags } from "./generate-hashtags.js";
 import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
 
-const DRY_RUN = false; // Safety lock — no real updates until you flip this
+const DRY_RUN = true; // Safety lock — no real updates until you flip this
 
 async function main() {
   console.log("=== Horizon Sound Metadata Pipeline ===\n");
