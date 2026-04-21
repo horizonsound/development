@@ -16,14 +16,18 @@ songs:
       - '🎤 Vocals: Big harmonies, vibrant energy'
       - '🎛️ Production: Hand Claps, acoustic guitars, light drums'
       - '⚡ Mood: nostalgic, uplifting, feel‑good, celebratory'
-    tags: &ref_0
-      - '#horizonsound'
-      - '#kaleidoscope-ascensionyouthchoir'
-      - '#vibecolorchoirstyleupbeatvibrantpop'
-      - '#vocalsbigharmoniesvibrantenergy'
-      - '#productionhandclapsacousticguitarslightdrums'
-      - '#moodnostalgicupliftingfeelgoodcelebratory'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - kaleidoscope
+      - colorchoir
     url: /music/kaleidoscope-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/kaleidoscope-ascension-youth-choir-official-video-horizon-sound.jpeg
@@ -62,7 +66,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_0
   - song_id: all-around-the-world-ascension-youth-choir-official-video-horizon-sound
     youtube_id: 8TjpfMgqrco
     title: >-
@@ -82,19 +85,18 @@ songs:
       - '🎤 Vocals: Layered harmonies, energetic group vocals'
       - '🎛️ Production: Acoustic guitars, hand percussion, upbeat drums'
       - '⚡ Mood: joyful, adventurous, uplifting, connected'
-    tags: &ref_1
-      - '#horizonsound'
-      - '#allaroundtheworld-ascensionyouthchoir'
-      - '#vibecolorchoirstylebrightglobalpop'
-      - '#vocalslayeredharmoniesenergeticgroupvocals'
-      - '#productionacousticguitarshandpercussionupbeatdrums'
-      - '#moodjoyfuladventurousupliftingconnected'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - allaroundtheworld
+      - colorchoir
     url: >-
       /music/all-around-the-world-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -132,7 +134,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_1
   - song_id: rusty-ascension-youth-choir-official-video-horizon-sound
     youtube_id: O7ey_Xy-b3M
     title: Rusty - Ascension Youth Choir (Official Video) | Horizon Sound
@@ -150,19 +151,18 @@ songs:
       - '🎤 Vocals: Gentle harmonies, heartfelt delivery'
       - '🎛️ Production: Acoustic guitars, soft percussion, warm pads'
       - '⚡ Mood: sentimental, comforting, reflective, hopeful'
-    tags: &ref_2
-      - '#horizonsound'
-      - '#rusty-ascensionyouthchoir'
-      - '#vibecolorchoirstylenostalgicpop'
-      - '#vocalsgentleharmoniesheartfeltdelivery'
-      - '#productionacousticguitarssoftpercussionwarmpads'
-      - '#moodsentimentalcomfortingreflectivehopeful'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - rusty
+      - colorchoir
     url: /music/rusty-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rusty-ascension-youth-choir-official-video-horizon-sound.jpeg
@@ -199,7 +199,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_2
   - song_id: rising-up-ascension-youth-choir-official-video-horizon-sound
     youtube_id: HtQ-SWHvX1E
     title: Rising Up - Ascension Youth Choir (Official Video) | Horizon Sound
@@ -217,19 +216,18 @@ songs:
       - '🎤 Vocals: Strong group vocals, uplifting harmonies'
       - '🎛️ Production: Steady drums, bright keys, layered claps'
       - '⚡ Mood: determined, hopeful, bold, triumphant'
-    tags: &ref_3
-      - '#horizonsound'
-      - '#risingup-ascensionyouthchoir'
-      - '#vibecolorchoirstyleinspirationalpop'
-      - '#vocalsstronggroupvocalsupliftingharmonies'
-      - '#productionsteadydrumsbrightkeyslayeredclaps'
-      - '#mooddeterminedhopefulboldtriumphant'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - risingup
+      - colorchoir
     url: /music/rising-up-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rising-up-ascension-youth-choir-official-video-horizon-sound.jpeg
@@ -266,7 +264,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_3
   - song_id: hold-on-ascension-youth-choir-official-video-horizon-sound
     youtube_id: Vv-FP9ZjtE0
     title: Hold On - Ascension Youth Choir (Official Video) | Horizon Sound
@@ -284,19 +281,18 @@ songs:
       - '🎤 Vocals: Supportive harmonies, hopeful tone'
       - '🎛️ Production: Acoustic guitar, soft drums, warm pads'
       - '⚡ Mood: reassuring, heartfelt, steady, optimistic'
-    tags: &ref_4
-      - '#horizonsound'
-      - '#holdon-ascensionyouthchoir'
-      - '#vibecolorchoirstyleupliftingpop'
-      - '#vocalssupportiveharmonieshopefultone'
-      - '#productionacousticguitarsoftdrumswarmpads'
-      - '#moodreassuringheartfeltsteadyoptimistic'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - holdon
+      - colorchoir
     url: /music/hold-on-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/hold-on-ascension-youth-choir-official-video-horizon-sound.jpeg
@@ -333,7 +329,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_4
   - song_id: keep-the-light-on-ascension-youth-choir-official-video-horizon-sound
     youtube_id: PeSDuBXDrtw
     title: Keep the Light On - Ascension Youth Choir (Official Video) | Horizon Sound
@@ -351,19 +346,18 @@ songs:
       - '🎤 Vocals: Soft harmonies, comforting tone'
       - '🎛️ Production: Piano, light percussion, airy synths'
       - '⚡ Mood: warm, reassuring, gentle, hopeful'
-    tags: &ref_5
-      - '#horizonsound'
-      - '#keepthelighton-ascensionyouthchoir'
-      - '#vibecolorchoirstyleemotionalpop'
-      - '#vocalssoftharmoniescomfortingtone'
-      - '#productionpianolightpercussionairysynths'
-      - '#moodwarmreassuringgentlehopeful'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - keepthelighton
+      - colorchoir
     url: >-
       /music/keep-the-light-on-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -401,7 +395,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_5
   - song_id: better-than-before-ascension-youth-choir-official-video-horizon-sound
     youtube_id: XE41-sK5R6A
     title: >-
@@ -421,19 +414,18 @@ songs:
       - '🎤 Vocals: Bright harmonies, energetic delivery'
       - '🎛️ Production: Acoustic guitar, upbeat drums, shimmering pads'
       - '⚡ Mood: renewed, joyful, optimistic, forward‑looking'
-    tags: &ref_6
-      - '#horizonsound'
-      - '#betterthanbefore-ascensionyouthchoir'
-      - '#vibecolorchoirstyleupliftingpop'
-      - '#vocalsbrightharmoniesenergeticdelivery'
-      - '#productionacousticguitarupbeatdrumsshimmeringpads'
-      - '#moodrenewedjoyfuloptimisticforwardlooking'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - betterthanbefore
+      - colorchoir
     url: >-
       /music/better-than-before-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -471,7 +463,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_6
   - song_id: >-
       the-things-that-stayed-with-me-ascension-youth-choir-official-video-horizon-sound
     youtube_id: f6KkdIDs-HI
@@ -492,19 +483,18 @@ songs:
       - '🎤 Vocals: Soft harmonies, reflective tone'
       - '🎛️ Production: Acoustic guitar, warm pads, gentle percussion'
       - '⚡ Mood: nostalgic, heartfelt, thoughtful, emotional'
-    tags: &ref_7
-      - '#horizonsound'
-      - '#thethingsthatstayedwithme-ascensionyouthchoir'
-      - '#vibecolorchoirstyleemotionalstorytellingpop'
-      - '#vocalssoftharmoniesreflectivetone'
-      - '#productionacousticguitarwarmpadsgentlepercussion'
-      - '#moodnostalgicheartfeltthoughtfulemotional'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - thethingsthatstayedwithme
+      - colorchoir
     url: >-
       /music/the-things-that-stayed-with-me-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -542,7 +532,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_7
   - song_id: >-
       total-eclipse-years-later-ascension-youth-choir-official-video-horizon-sound
     youtube_id: WAj5vAZ9tEc
@@ -563,19 +552,18 @@ songs:
       - '🎤 Vocals: Expansive harmonies, soaring energy'
       - '🎛️ Production: Big drums, atmospheric synths, glowing textures'
       - '⚡ Mood: epic, awe‑struck, powerful, emotional'
-    tags: &ref_8
-      - '#horizonsound'
-      - '#totaleclipse'
-      - '#vibecolorchoirstylecinematicpop'
-      - '#vocalsexpansiveharmoniessoaringenergy'
-      - '#productionbigdrumsatmosphericsynthsglowingtextures'
-      - '#moodepicawestruckpowerfulemotional'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - totaleclipse
+      - colorchoir
     url: >-
       /music/total-eclipse-years-later-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -613,7 +601,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_8
   - song_id: wind-in-your-sails-ascension-youth-choir-official-video-horizon-sound
     youtube_id: p-ghTMr0L6I
     title: >-
@@ -633,19 +620,18 @@ songs:
       - '🎤 Vocals: Breezy harmonies, joyful tone'
       - '🎛️ Production: Acoustic guitar, light drums, airy textures'
       - '⚡ Mood: free‑spirited, adventurous, uplifting, hopeful'
-    tags: &ref_9
-      - '#horizonsound'
-      - '#windinyoursails-ascensionyouthchoir'
-      - '#vibecolorchoirstylecoastalinspiredpop'
-      - '#vocalsbreezyharmoniesjoyfultone'
-      - '#productionacousticguitarlightdrumsairytextures'
-      - '#moodfreespiritedadventurousupliftinghopeful'
-      - '#lifes-a-kaleidoscope-ascension-youth-choir'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - ascensionyouthchoir
+      - windinyoursails
+      - colorchoir
     url: >-
       /music/wind-in-your-sails-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: >-
@@ -683,7 +669,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_9
   - song_id: across-the-emerald-coast
     youtube_id: hpVXUedTV1I
     title: Across the Emerald Coast
@@ -695,17 +680,15 @@ songs:
       movement. Perfect for storytelling, travel, festivals, or anyone who loves
       the spirited sound of Celtic tradition.</p>
     vibes: []
-    tags: &ref_10
-      - '#horizonsound'
-      - '#acrosstheemeraldcoast'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/across-the-emerald-coast/
     thumbnail: /assets/thumbnails/across-the-emerald-coast.jpeg
     videostatus: scheduled
@@ -741,7 +724,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_10
   - song_id: fire-in-the-fiddle
     youtube_id: 3zemHQQc4So
     title: Fire in the Fiddle
@@ -751,17 +733,15 @@ songs:
       workouts, celebrations, or anyone who loves the Riverdance‑style
       sound.</p>
     vibes: []
-    tags: &ref_11
-      - '#horizonsound'
-      - '#fireinthefiddle'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/fire-in-the-fiddle/
     thumbnail: /assets/thumbnails/fire-in-the-fiddle.jpeg
     videostatus: scheduled
@@ -774,7 +754,17 @@ songs:
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
-      tags: []
+      tags:
+        - '#fireinthefiddle'
+        - '#horizonsound'
+        - '#indieartist'
+        - '#instrumentalmusic'
+        - '#irish-celtic-horizon-sound-instrumentals'
+        - '#musicvideo'
+        - '#newmusic'
+        - '#originalmusic'
+        - '#popmusic'
+        - '#songwriter'
       duration: PT2M28S
       definition: hd
       dimension: null
@@ -797,7 +787,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_11
   - song_id: the-chase-through-galway
     youtube_id: Sn19AxM3YMk
     title: The Chase through Galway
@@ -806,17 +795,15 @@ songs:
       spirited Irish rhythms. This track captures the heart of traditional folk
       sessions — energetic, joyful, and full of storytelling.</p>
     vibes: []
-    tags: &ref_12
-      - '#horizonsound'
-      - '#thechasethroughgalway'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-chase-through-galway/
     thumbnail: /assets/thumbnails/the-chase-through-galway.jpeg
     videostatus: scheduled
@@ -852,7 +839,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_12
   - song_id: the-path-to-dunmore-head
     youtube_id: 9AweE6Lo68M
     title: The Path to Dunmore Head
@@ -864,17 +850,15 @@ songs:
       movement. Perfect for storytelling, travel, festivals, or anyone who loves
       the spirited sound of Celtic tradition.</p>
     vibes: []
-    tags: &ref_13
-      - '#horizonsound'
-      - '#thepathtodunmorehead'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-path-to-dunmore-head/
     thumbnail: /assets/thumbnails/the-path-to-dunmore-head.jpeg
     videostatus: scheduled
@@ -910,7 +894,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_13
   - song_id: journey-to-skellig-bay
     youtube_id: 8I-lbI5se1s
     title: Journey to Skellig Bay
@@ -919,17 +902,15 @@ songs:
       gentle percussion. Perfect for travel, storytelling, or anyone who loves
       the uplifting side of Irish folk music.</p>
     vibes: []
-    tags: &ref_14
-      - '#horizonsound'
-      - '#journeytoskelligbay'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/journey-to-skellig-bay/
     thumbnail: /assets/thumbnails/journey-to-skellig-bay.jpeg
     videostatus: scheduled
@@ -965,7 +946,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_14
   - song_id: fiddlers-at-dawn
     youtube_id: cf1m2D00mPU
     title: Fiddlers at Dawn
@@ -974,17 +954,15 @@ songs:
       spirited Irish rhythms. This track captures the heart of traditional folk
       sessions — energetic, joyful, and full of storytelling.</p>
     vibes: []
-    tags: &ref_15
-      - '#horizonsound'
-      - '#fiddlersatdawn'
-      - '#irish-celtic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/fiddlers-at-dawn/
     thumbnail: /assets/thumbnails/fiddlers-at-dawn.jpeg
     videostatus: scheduled
@@ -1023,7 +1001,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_15
   - song_id: rum-soaked-paradise-cody-sails-horizon-sound
     youtube_id: VQDzKI401eI
     title: Rum Soaked Paradise – Cody Sails | Horizon Sound
@@ -1043,19 +1020,39 @@ songs:
       - '🎤 Vocals: smooth, relaxed, coastal'
       - '🎛️ Production: warm guitar, island percussion, soft ambience'
       - '⚡ Mood: calm, dreamy, escapist'
-    tags: &ref_16
-      - '#horizonsound'
-      - '#rumsoakedparadisecodysailshorizonsound'
-      - '#vibetropicalpopmellowsunsetwarm'
-      - '#vocalssmoothrelaxedcoastal'
-      - '#productionwarmguitarislandpercussionsoftambience'
-      - '#moodcalmdreamyescapist'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/rum-soaked-paradise-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/rum-soaked-paradise-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1103,7 +1100,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_16
   - song_id: salt-on-the-rim-cody-sails-horizon-sound
     youtube_id: IH7CqfuUMKw
     title: Salt on the Rim – Cody Sails | Horizon Sound
@@ -1125,19 +1121,39 @@ songs:
       - '🎤 Vocals: relaxed, smooth, sun‑worn'
       - '🎛️ Production: acoustic guitar, light percussion, gentle groove'
       - '⚡ Mood: unwound, easy, content'
-    tags: &ref_17
-      - '#horizonsound'
-      - '#saltontherimcodysailshorizonsound'
-      - '#vibecoastalpopmellowbeachbar'
-      - '#vocalsrelaxedsmoothsunworn'
-      - '#productionacousticguitarlightpercussiongentlegroove'
-      - '#moodunwoundeasycontent'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/salt-on-the-rim-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/salt-on-the-rim-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1185,7 +1201,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_17
   - song_id: barefoot-and-buzzed-cody-sails-horizon-sound
     youtube_id: lAzuJvGrYKk
     title: Barefoot and Buzzed – Cody Sails | Horizon Sound
@@ -1209,19 +1224,39 @@ songs:
       - '🎤 Vocals: relaxed, intimate, sun‑soft delivery'
       - '🎛️ Production: acoustic guitar, soft percussion, gentle lift'
       - '⚡ Mood: carefree, nostalgic, peaceful'
-    tags: &ref_18
-      - '#horizonsound'
-      - '#barefootandbuzzedcodysailshorizonsound'
-      - '#vibecoastalpopwarmbreezygoldenhour'
-      - '#vocalsrelaxedintimatesunsoftdelivery'
-      - '#productionacousticguitarsoftpercussiongentlelift'
-      - '#moodcarefreenostalgicpeaceful'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/barefoot-and-buzzed-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/barefoot-and-buzzed-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1269,7 +1304,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_18
   - song_id: island-girl-trouble-cody-sails-horizon-sound
     youtube_id: y2tXl_D-gzo
     title: Island Girl Trouble – Cody Sails | Horizon Sound
@@ -1293,19 +1327,39 @@ songs:
       - '🎤 Vocals: playful, warm, relaxed'
       - '🎛️ Production: bright guitars, rhythmic percussion, coastal bounce'
       - '⚡ Mood: fun, chaotic, romantic'
-    tags: &ref_19
-      - '#horizonsound'
-      - '#islandgirltroublecodysailshorizonsound'
-      - '#vibetropicalpopupbeatflirtysunsoaked'
-      - '#vocalsplayfulwarmrelaxed'
-      - '#productionbrightguitarsrhythmicpercussioncoastalbounce'
-      - '#moodfunchaoticromantic'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/island-girl-trouble-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/island-girl-trouble-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1353,7 +1407,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_19
   - song_id: leilani-cody-sails-horizon-sound
     youtube_id: GQHIzwq0H3M
     title: Leilani – Cody Sails | Horizon Sound
@@ -1374,19 +1427,39 @@ songs:
       - '🎤 Vocals: tender, sincere, intimate'
       - '🎛️ Production: acoustic layers, gentle percussion, warm harmonies'
       - '⚡ Mood: nostalgic, romantic, reflective'
-    tags: &ref_20
-      - '#horizonsound'
-      - '#leilanicodysailshorizonsound'
-      - '#vibecoastalballadsoftemotionalwarm'
-      - '#vocalstendersincereintimate'
-      - '#productionacousticlayersgentlepercussionwarmharmonies'
-      - '#moodnostalgicromanticreflective'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/leilani-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/leilani-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1434,7 +1507,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_20
   - song_id: high-tide-cody-sails-horizon-sound
     youtube_id: n8lAWPStbVA
     title: High Tide – Cody Sails | Horizon Sound
@@ -1455,19 +1527,39 @@ songs:
       - '🎤 Vocals: soft, intimate, heartfelt'
       - '🎛️ Production: mellow guitar, gentle percussion, glowing ambience'
       - '⚡ Mood: peaceful, romantic, reflective'
-    tags: &ref_21
-      - '#horizonsound'
-      - '#hightidecodysailshorizonsound'
-      - '#vibenighttimecoastalpopwarmslowromantic'
-      - '#vocalssoftintimateheartfelt'
-      - '#productionmellowguitargentlepercussionglowingambience'
-      - '#moodpeacefulromanticreflective'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/high-tide-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/high-tide-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1515,7 +1607,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_21
   - song_id: sunburned-and-smiling-cody-sails-horizon-sound
     youtube_id: SxHxIm_uh_k
     title: Sunburned and Smiling – Cody Sails | Horizon Sound
@@ -1536,19 +1627,39 @@ songs:
       - '🎤 Vocals: bright, warm, relaxed'
       - '🎛️ Production: acoustic guitar, light percussion, breezy lift'
       - '⚡ Mood: happy, carefree, radiant'
-    tags: &ref_22
-      - '#horizonsound'
-      - '#sunburnedandsmilingcodysailshorizonsound'
-      - '#vibeupbeatcoastalpopsunnyjoyful'
-      - '#vocalsbrightwarmrelaxed'
-      - '#productionacousticguitarlightpercussionbreezylift'
-      - '#moodhappycarefreeradiant'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/sunburned-and-smiling-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/sunburned-and-smiling-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1596,7 +1707,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_22
   - song_id: wind-in-your-sails-cody-sails-horizon-sound
     youtube_id: qKkdfSI6i8I
     title: Wind in Your Sails – Cody Sails | Horizon Sound
@@ -1616,19 +1726,39 @@ songs:
       - '🎤 Vocals: sincere, comforting, steady'
       - '🎛️ Production: acoustic guitar, soft percussion, emotional lift'
       - '⚡ Mood: hopeful, supportive, heartfelt'
-    tags: &ref_23
-      - '#horizonsound'
-      - '#windinyoursailscodysailshorizonsound'
-      - '#vibecoastalfolkpopwarmuplifting'
-      - '#vocalssincerecomfortingsteady'
-      - '#productionacousticguitarsoftpercussionemotionallift'
-      - '#moodhopefulsupportiveheartfelt'
-      - '#rum-soaked-paradise-cody-sails'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - codysails
+      - coastalpop
+      - beachfolk
+      - acousticpop
+      - americanapop
+      - coastalcountry
+      - singersongwriter
+      - beachmusic
+      - sunsetvibes
+      - oceaninspired
+      - coastalvibes
+      - feelgoodmusic
+      - summersoundtrack
+      - chillpop
+      - indiepop
+      - indieartist
+      - popmusic
+      - folkpop
+      - softrock
+      - acousticmusic
+      - storytellingmusic
+      - feelgoodpop
+      - upliftingmusic
+      - oceanfolk
     url: /music/wind-in-your-sails-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/wind-in-your-sails-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1676,7 +1806,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_23
   - song_id: color-the-sky
     youtube_id: JpqqScaAiy8
     title: Color the Sky
@@ -1686,17 +1815,15 @@ songs:
 
       <p>Horizon Sound · Pop Instrumentals</p>
     vibes: []
-    tags: &ref_24
-      - '#horizonsound'
-      - '#colorthesky'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/color-the-sky/
     thumbnail: /assets/thumbnails/color-the-sky.jpeg
     videostatus: scheduled
@@ -1742,7 +1869,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_24
   - song_id: better-days-ahead
     youtube_id: c8o5_OGXUiM
     title: Better Days Ahead
@@ -1752,17 +1878,15 @@ songs:
 
       <p>Horizon Sound · Pop Instrumentals</p>
     vibes: []
-    tags: &ref_25
-      - '#horizonsound'
-      - '#betterdaysahead'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/better-days-ahead/
     thumbnail: /assets/thumbnails/better-days-ahead.jpeg
     videostatus: scheduled
@@ -1808,7 +1932,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_25
   - song_id: golden-hour-groove
     youtube_id: zmkfLtlIJlk
     title: Golden Hour Groove
@@ -1818,17 +1941,15 @@ songs:
 
       <p>Horizon Sound · Pop Instrumentals</p>
     vibes: []
-    tags: &ref_26
-      - '#horizonsound'
-      - '#goldenhourgroove'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/golden-hour-groove/
     thumbnail: /assets/thumbnails/golden-hour-groove.jpeg
     videostatus: scheduled
@@ -1874,7 +1995,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_26
   - song_id: soft-light
     youtube_id: Mrvm4Xwl7U0
     title: Soft Light
@@ -1884,17 +2004,15 @@ songs:
 
       <p>Horizon Sound · Pop Instrumentals</p>
     vibes: []
-    tags: &ref_27
-      - '#horizonsound'
-      - '#softlight'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/soft-light/
     thumbnail: /assets/thumbnails/soft-light.jpeg
     videostatus: scheduled
@@ -1940,7 +2058,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_27
   - song_id: open-heart-city
     youtube_id: N8Q7e4tAlX8
     title: Open Heart City
@@ -1950,17 +2067,15 @@ songs:
 
       <p>Horizon Sound · Pop Instrumentals</p>
     vibes: []
-    tags: &ref_28
-      - '#horizonsound'
-      - '#openheartcity'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/open-heart-city/
     thumbnail: /assets/thumbnails/open-heart-city.jpeg
     videostatus: scheduled
@@ -2006,7 +2121,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_28
   - song_id: brightest-part-of-you
     youtube_id: Oyw2l53T9do
     title: Brightest Part of You
@@ -2014,17 +2128,15 @@ songs:
       <p>An emotional pop instrumental with atmospheric pads and clean guitar
       accents. Warm, modern, and cinematic.</p>
     vibes: []
-    tags: &ref_29
-      - '#horizonsound'
-      - '#brightestpartofyou'
-      - '#pop-instrumental-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/brightest-part-of-you/
     thumbnail: /assets/thumbnails/brightest-part-of-you.jpeg
     videostatus: scheduled
@@ -2070,7 +2182,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_29
   - song_id: retrodrive
     youtube_id: Eps1ed1Fir8
     title: Retrodrive
@@ -2080,17 +2191,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_30
-      - '#horizonsound'
-      - '#retrodrive'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/retrodrive/
     thumbnail: /assets/thumbnails/retrodrive.jpeg
     videostatus: scheduled
@@ -2136,7 +2245,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_30
   - song_id: nightfall-circuit
     youtube_id: 1vHd2pwa6DU
     title: Nightfall Circuit
@@ -2146,17 +2254,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_31
-      - '#horizonsound'
-      - '#nightfallcircuit'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/nightfall-circuit/
     thumbnail: /assets/thumbnails/nightfall-circuit.jpeg
     videostatus: scheduled
@@ -2202,7 +2308,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_31
   - song_id: dreamwave-avenue
     youtube_id: So0bW7D38Zw
     title: Dreamwave Avenue
@@ -2212,17 +2317,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_32
-      - '#horizonsound'
-      - '#dreamwaveavenue'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/dreamwave-avenue/
     thumbnail: /assets/thumbnails/dreamwave-avenue.jpeg
     videostatus: scheduled
@@ -2268,7 +2371,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_32
   - song_id: memory-loop
     youtube_id: a1YoVCEApPo
     title: Memory Loop
@@ -2278,17 +2380,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_33
-      - '#horizonsound'
-      - '#memoryloop'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/memory-loop/
     thumbnail: /assets/thumbnails/memory-loop.jpeg
     videostatus: scheduled
@@ -2334,7 +2434,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_33
   - song_id: midnight-ascension
     youtube_id: LWIjisnuC3w
     title: Midnight Ascension
@@ -2344,17 +2443,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_34
-      - '#horizonsound'
-      - '#midnightascension'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/midnight-ascension/
     thumbnail: /assets/thumbnails/midnight-ascension.jpeg
     videostatus: scheduled
@@ -2400,7 +2497,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_34
   - song_id: neon-vanguard
     youtube_id: 4f584gG7U14
     title: Neon Vanguard
@@ -2410,17 +2506,15 @@ songs:
 
       <p>Horizon Sound · Synthwave Series</p>
     vibes: []
-    tags: &ref_35
-      - '#horizonsound'
-      - '#neonvanguard'
-      - '#synthwave-retrowave-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/neon-vanguard/
     thumbnail: /assets/thumbnails/neon-vanguard.jpeg
     videostatus: scheduled
@@ -2466,7 +2560,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_35
   - song_id: winterfire
     youtube_id: FJFPlmz-S_4
     title: Winterfire
@@ -2476,17 +2569,15 @@ songs:
 
       <p>Horizon Sound · Orchestral Rock Series</p>
     vibes: []
-    tags: &ref_36
-      - '#horizonsound'
-      - '#winterfire'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/winterfire/
     thumbnail: /assets/thumbnails/winterfire.jpeg
     videostatus: scheduled
@@ -2532,7 +2623,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_36
   - song_id: the-frozen-overture
     youtube_id: b0cnzGgpSZ8
     title: The Frozen Overture
@@ -2542,17 +2632,15 @@ songs:
 
       <p>Horizon Sound · Orchestral Rock Series</p>
     vibes: []
-    tags: &ref_37
-      - '#horizonsound'
-      - '#thefrozenoverture'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-frozen-overture/
     thumbnail: /assets/thumbnails/the-frozen-overture.jpeg
     videostatus: scheduled
@@ -2598,7 +2686,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_37
   - song_id: the-rising-storm
     youtube_id: GWvSxleB-BY
     title: The Rising Storm
@@ -2608,17 +2695,15 @@ songs:
 
       <p>Horizon Sound</p>
     vibes: []
-    tags: &ref_38
-      - '#horizonsound'
-      - '#therisingstorm'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-rising-storm/
     thumbnail: /assets/thumbnails/the-rising-storm.jpeg
     videostatus: scheduled
@@ -2664,7 +2749,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_38
   - song_id: fire-in-the-choir
     youtube_id: 0w-6Vk-KMyA
     title: Fire in the Choir
@@ -2674,17 +2758,15 @@ songs:
 
       <p>Horizon Sound</p>
     vibes: []
-    tags: &ref_39
-      - '#horizonsound'
-      - '#fireinthechoir'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/fire-in-the-choir/
     thumbnail: /assets/thumbnails/fire-in-the-choir.jpeg
     videostatus: scheduled
@@ -2730,7 +2812,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_39
   - song_id: glacierstorm
     youtube_id: eG4S9bwsRTw
     title: Glacierstorm
@@ -2741,17 +2822,15 @@ songs:
 
       <p>Horizon Sound · Orchestral Rock Series</p>
     vibes: []
-    tags: &ref_40
-      - '#horizonsound'
-      - '#glacierstorm'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/glacierstorm/
     thumbnail: /assets/thumbnails/glacierstorm.jpeg
     videostatus: scheduled
@@ -2797,7 +2876,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_40
   - song_id: the-winter-requiem
     youtube_id: hw6yYYE8fYc
     title: The Winter Requiem
@@ -2808,17 +2886,15 @@ songs:
 
       <p>Horizon Sound · Orchestral Rock Series</p>
     vibes: []
-    tags: &ref_41
-      - '#horizonsound'
-      - '#thewinterrequiem'
-      - '#orchestral-rock-tso-style-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-winter-requiem/
     thumbnail: /assets/thumbnails/the-winter-requiem.jpeg
     videostatus: scheduled
@@ -2864,7 +2940,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_41
   - song_id: holding-the-light
     youtube_id: o5kh0ILxXD8
     title: Holding the Light
@@ -2874,17 +2949,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_42
-      - '#horizonsound'
-      - '#holdingthelight'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/holding-the-light/
     thumbnail: /assets/thumbnails/holding-the-light.jpeg
     videostatus: public
@@ -2931,7 +3004,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_42
   - song_id: the-quiet-between-us
     youtube_id: X_617p-yOF4
     title: The Quiet Between Us
@@ -2941,17 +3013,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_43
-      - '#horizonsound'
-      - '#thequietbetweenus'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-quiet-between-us/
     thumbnail: /assets/thumbnails/the-quiet-between-us.jpeg
     videostatus: scheduled
@@ -2997,7 +3067,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_43
   - song_id: still-waters
     youtube_id: Uzs-yWGwowg
     title: Still Waters
@@ -3007,17 +3076,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_44
-      - '#horizonsound'
-      - '#stillwaters'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/still-waters/
     thumbnail: /assets/thumbnails/still-waters.jpeg
     videostatus: scheduled
@@ -3063,7 +3130,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_44
   - song_id: breathing-slow
     youtube_id: v28-c9gsbnw
     title: Breathing Slow
@@ -3073,17 +3139,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_45
-      - '#horizonsound'
-      - '#breathingslow'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/breathing-slow/
     thumbnail: /assets/thumbnails/breathing-slow.jpeg
     videostatus: scheduled
@@ -3129,7 +3193,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_45
   - song_id: a-place-to-rest
     youtube_id: WSrLEbGeXfQ
     title: A Place To Rest
@@ -3139,17 +3202,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_46
-      - '#horizonsound'
-      - '#aplacetorest'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/a-place-to-rest/
     thumbnail: /assets/thumbnails/a-place-to-rest.jpeg
     videostatus: scheduled
@@ -3195,7 +3256,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_46
   - song_id: falling-toward-the-light
     youtube_id: kyNVmUkFmXQ
     title: Falling Toward the Light
@@ -3205,17 +3265,15 @@ songs:
 
       <p>Horizon Sound · Piano Series</p>
     vibes: []
-    tags: &ref_47
-      - '#horizonsound'
-      - '#fallingtowardthelight'
-      - '#piano-emotional-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/falling-toward-the-light/
     thumbnail: /assets/thumbnails/falling-toward-the-light.jpeg
     videostatus: scheduled
@@ -3261,7 +3319,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_47
   - song_id: electric-pulse
     youtube_id: pWQk0g0b6QI
     title: Electric Pulse
@@ -3272,23 +3329,21 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_48
-      - '#horizonsound'
-      - '#electricpulse'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/electric-pulse/
     thumbnail: /assets/thumbnails/electric-pulse.jpeg
     videostatus: public
     playlists:
       - workout-edm-horizon-sound-instrumentals
-    view_count_num: 6
+    view_count_num: 7
     youtube_metadata:
       published_at: '2026-04-11T12:01:26Z'
       scheduled_at: null
@@ -3315,7 +3370,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '6'
+        view_count: '7'
         like_count: '0'
         favorite_count: '0'
         comment_count: '0'
@@ -3330,7 +3385,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_48
   - song_id: break-the-gravity
     youtube_id: wbsa_dyQRHg
     title: Break the Gravity
@@ -3341,17 +3395,15 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_49
-      - '#horizonsound'
-      - '#breakthegravity'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/break-the-gravity/
     thumbnail: /assets/thumbnails/break-the-gravity.jpeg
     videostatus: scheduled
@@ -3397,7 +3449,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_49
   - song_id: shine-through
     youtube_id: fcWz14vuQMU
     title: Shine Through
@@ -3407,17 +3458,15 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_50
-      - '#horizonsound'
-      - '#shinethrough'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/shine-through/
     thumbnail: /assets/thumbnails/shine-through.jpeg
     videostatus: scheduled
@@ -3463,7 +3512,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_50
   - song_id: light-up-the-runway
     youtube_id: EonzomlQOSc
     title: Light Up the Runway
@@ -3473,17 +3521,15 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_51
-      - '#horizonsound'
-      - '#lightuptherunway'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/light-up-the-runway/
     thumbnail: /assets/thumbnails/light-up-the-runway.jpeg
     videostatus: scheduled
@@ -3529,7 +3575,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_51
   - song_id: midnight-velocity
     youtube_id: G5bL37NzpD4
     title: Midnight Velocity
@@ -3539,17 +3584,15 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_52
-      - '#horizonsound'
-      - '#midnightvelocity'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/midnight-velocity/
     thumbnail: /assets/thumbnails/midnight-velocity.jpeg
     videostatus: scheduled
@@ -3595,7 +3638,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_52
   - song_id: neon-runner
     youtube_id: Ifj0Siju8P0
     title: Neon Runner
@@ -3605,17 +3647,15 @@ songs:
 
       <p>Horizon Sound · Workout Series</p>
     vibes: []
-    tags: &ref_53
-      - '#horizonsound'
-      - '#neonrunner'
-      - '#workout-edm-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/neon-runner/
     thumbnail: /assets/thumbnails/neon-runner.jpeg
     videostatus: scheduled
@@ -3661,7 +3701,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_53
   - song_id: neon-skyline
     youtube_id: cRkc1TVX9Ww
     title: Neon Skyline
@@ -3672,17 +3711,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_54
-      - '#horizonsound'
-      - '#neonskyline'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/neon-skyline/
     thumbnail: /assets/thumbnails/neon-skyline.jpeg
     videostatus: public
@@ -3730,7 +3767,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_54
   - song_id: running-through-the-night
     youtube_id: Fg9Ad5YhjvE
     title: Running Through the Night
@@ -3741,17 +3777,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_55
-      - '#horizonsound'
-      - '#runningthroughthenight'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/running-through-the-night/
     thumbnail: /assets/thumbnails/running-through-the-night.jpeg
     videostatus: scheduled
@@ -3797,7 +3831,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_55
   - song_id: fire-in-the-wires
     youtube_id: EMyCVf_X9nI
     title: Fire in the Wires
@@ -3807,17 +3840,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_56
-      - '#horizonsound'
-      - '#fireinthewires'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/fire-in-the-wires/
     thumbnail: /assets/thumbnails/fire-in-the-wires.jpeg
     videostatus: scheduled
@@ -3863,7 +3894,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_56
   - song_id: chasing-the-sparks
     youtube_id: nRtKsW9xDno
     title: Chasing the Sparks
@@ -3873,17 +3903,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_57
-      - '#horizonsound'
-      - '#chasingthesparks'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/chasing-the-sparks/
     thumbnail: /assets/thumbnails/chasing-the-sparks.jpeg
     videostatus: scheduled
@@ -3929,7 +3957,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_57
   - song_id: waves-of-blue
     youtube_id: MdbY8H1BUlg
     title: Waves of Blue
@@ -3939,17 +3966,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_58
-      - '#horizonsound'
-      - '#wavesofblue'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/waves-of-blue/
     thumbnail: /assets/thumbnails/waves-of-blue.jpeg
     videostatus: scheduled
@@ -3995,7 +4020,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_58
   - song_id: after-the-static
     youtube_id: EAhVmhgtbnY
     title: After the Static
@@ -4005,17 +4029,15 @@ songs:
 
       <p>Horizon Sound · Guitar Instrumentals</p>
     vibes: []
-    tags: &ref_59
-      - '#horizonsound'
-      - '#afterthestatic'
-      - '#electric-guitar-rock-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/after-the-static/
     thumbnail: /assets/thumbnails/after-the-static.jpeg
     videostatus: scheduled
@@ -4061,7 +4083,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_59
   - song_id: sunlight-on-the-strings
     youtube_id: Lc9oRg71YSw
     title: Sunlight on the Strings
@@ -4071,17 +4092,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_60
-      - '#horizonsound'
-      - '#sunlightonthestrings'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/sunlight-on-the-strings/
     thumbnail: /assets/thumbnails/sunlight-on-the-strings.jpeg
     videostatus: public
@@ -4129,7 +4148,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_60
   - song_id: wanderers-heart
     youtube_id: D39pfXMF2lE
     title: Wanderer's Heart
@@ -4139,17 +4157,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_61
-      - '#horizonsound'
-      - '#wanderersheart'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/wanderers-heart/
     thumbnail: /assets/thumbnails/wanderers-heart.jpeg
     videostatus: scheduled
@@ -4195,7 +4211,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_61
   - song_id: running-toward-the-sun
     youtube_id: _QvFtcVBaLE
     title: Running Toward the Sun
@@ -4206,17 +4221,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_62
-      - '#horizonsound'
-      - '#runningtowardthesun'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/running-toward-the-sun/
     thumbnail: /assets/thumbnails/running-toward-the-sun.jpeg
     videostatus: scheduled
@@ -4262,7 +4275,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_62
   - song_id: the-way-home
     youtube_id: yT76mtYjJOs
     title: The Way Home
@@ -4272,17 +4284,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_63
-      - '#horizonsound'
-      - '#thewayhome'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-way-home/
     thumbnail: /assets/thumbnails/the-way-home.jpeg
     videostatus: scheduled
@@ -4328,7 +4338,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_63
   - song_id: letters-in-the-wind
     youtube_id: AoDjVpggHMw
     title: Letters in the Wind
@@ -4338,17 +4347,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_64
-      - '#horizonsound'
-      - '#lettersinthewind'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/letters-in-the-wind/
     thumbnail: /assets/thumbnails/letters-in-the-wind.jpeg
     videostatus: scheduled
@@ -4394,7 +4401,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_64
   - song_id: chasing-the-daylight
     youtube_id: PLCoYxY_glg
     title: Chasing the Daylight
@@ -4405,17 +4411,15 @@ songs:
 
       <p>Horizon Sound · Acoustic Instrumentals</p>
     vibes: []
-    tags: &ref_65
-      - '#horizonsound'
-      - '#chasingthedaylight'
-      - '#acoustic-guitar-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/chasing-the-daylight/
     thumbnail: /assets/thumbnails/chasing-the-daylight.jpeg
     videostatus: scheduled
@@ -4461,7 +4465,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_65
   - song_id: moments-between-moments
     youtube_id: pniZGrpocpo
     title: Moments Between Moments
@@ -4472,17 +4475,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_66
-      - '#horizonsound'
-      - '#momentsbetweenmoments'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/moments-between-moments/
     thumbnail: /assets/thumbnails/moments-between-moments.jpeg
     videostatus: public
@@ -4528,7 +4529,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_66
   - song_id: where-the-air-glows
     youtube_id: W4MO2E6VBBc
     title: Where the Air Glows
@@ -4539,17 +4539,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_67
-      - '#horizonsound'
-      - '#wheretheairglows'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/where-the-air-glows/
     thumbnail: /assets/thumbnails/where-the-air-glows.jpeg
     videostatus: scheduled
@@ -4595,7 +4593,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_67
   - song_id: echoes-of-tomorrow
     youtube_id: fq_8Zhtknzs
     title: Echoes of Tomorrow
@@ -4606,17 +4603,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_68
-      - '#horizonsound'
-      - '#echoesoftomorrow'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/echoes-of-tomorrow/
     thumbnail: /assets/thumbnails/echoes-of-tomorrow.jpeg
     videostatus: scheduled
@@ -4662,7 +4657,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_68
   - song_id: the-space-we-keep
     youtube_id: CDhwkAn_rNA
     title: The Space We Keep
@@ -4673,17 +4667,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_69
-      - '#horizonsound'
-      - '#thespacewekeep'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-space-we-keep/
     thumbnail: /assets/thumbnails/the-space-we-keep.jpeg
     videostatus: scheduled
@@ -4729,7 +4721,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_69
   - song_id: breathing-in-color
     youtube_id: 1knWGkLAZCw
     title: Breathing in Color
@@ -4740,17 +4731,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_70
-      - '#horizonsound'
-      - '#breathingincolor'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/breathing-in-color/
     thumbnail: /assets/thumbnails/breathing-in-color.jpeg
     videostatus: scheduled
@@ -4796,7 +4785,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_70
   - song_id: quiet-horizons
     youtube_id: gEJDri-ViGE
     title: Quiet Horizons
@@ -4807,17 +4795,15 @@ songs:
 
       <p>Horizon Sound · Cinematic Ambient Series</p>
     vibes: []
-    tags: &ref_71
-      - '#horizonsound'
-      - '#quiethorizons'
-      - '#cinematic-ambient-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/quiet-horizons/
     thumbnail: /assets/thumbnails/quiet-horizons.jpeg
     videostatus: scheduled
@@ -4863,7 +4849,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_71
   - song_id: sheriff-for-a-night-50s-western-tall-tale-horizon-sound
     youtube_id: oMSIQ5Gv2ZI
     title: Sheriff for a Night (50s Western Tall‑Tale) – Horizon Sound
@@ -4891,19 +4876,15 @@ songs:
         🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage
         reverb
       - '⚡ Mood: humorous, dusty‑trail, tall‑tale, cinematic'
-    tags: &ref_72
-      - '#horizonsound'
-      - '#sheriffforanight'
-      - '#vibe1950swesternswingwarmnostalgiccomedic'
-      - '#vocalssmoothmalebaritoneclassicphrasingstorytellingdelivery'
-      - '#productionacousticguitaruprightbassbrusheddrumsvintagereverb'
-      - '#moodhumorousdustytrailtalltalecinematic'
-      - '#classic-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/sheriff-for-a-night-50s-western-tall-tale-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/sheriff-for-a-night-50s-western-tall-tale-horizon-sound.jpeg
@@ -4927,7 +4908,7 @@ songs:
         - '#originalmusic'
         - '#popmusic'
         - '#productionacousticguitaruprightbassbrusheddrumsvintagereverb'
-        - '#sheriffforanight(50swesterntall‑tale)–horizonsound'
+        - '#sheriffforanight'
         - '#vibe1950swesternswingwarmnostalgiccomedic'
         - '#vocalssmoothmalebaritoneclassicphrasingstorytellingdelivery'
       duration: PT2M39S
@@ -4957,7 +4938,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_72
   - song_id: back-to-amarillo-50s-country-western-romance-horizon-sound
     youtube_id: H-_2aKmiFc0
     title: Back to Amarillo (50s Country‑Western Romance) – Horizon Sound
@@ -4982,19 +4962,15 @@ songs:
         🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage
         reverb
       - '⚡ Mood: romantic, dusty‑trail, heartfelt, cinematic'
-    tags: &ref_73
-      - '#horizonsound'
-      - '#backtoamarillo'
-      - '#vibe1950swesternballadwarmnostalgic'
-      - '#vocalssmoothmalebaritonegentlevibratoclassicphrasing'
-      - '#productionacousticguitaruprightbassbrusheddrumsvintagereverb'
-      - '#moodromanticdustytrailheartfeltcinematic'
-      - '#classic-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/back-to-amarillo-50s-country-western-romance-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/back-to-amarillo-50s-country-western-romance-horizon-sound.jpeg
@@ -5045,7 +5021,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_73
   - song_id: bottle-on-the-table-country-western-horizon-sound
     youtube_id: lUa9SbvKg_4
     title: Bottle on the Table (Country-Western) - Horizon Sound
@@ -5073,20 +5048,15 @@ songs:
         🎛️ Production: mono recording, tube mic warmth, light tape hiss, steel
         guitar, upright bass, gentle western swing rhythm
       - '⚡ Mood: heartbroken, reflective, lonely, timeless'
-    tags: &ref_74
-      - '#horizonsound'
-      - '#bottleonthetable'
-      - '#vibevintagecountrywesternslowdustyemotional'
-      - '#vocalswarmbaritonemaleclassicearlycountrydelivery'
-      - >-
-        #productionmonorecordingtubemicwarmthlighttapehisssteelguitaruprightbassgentlewesternswingrhythm
-      - '#moodheartbrokenreflectivelonelytimeless'
-      - '#classic-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/bottle-on-the-table-country-western-horizon-sound/
     thumbnail: /assets/thumbnails/bottle-on-the-table-country-western-horizon-sound.jpeg
     videostatus: public
@@ -5137,7 +5107,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_74
   - song_id: a-touch-of-light-cinematic-instrumental-horizon-sound
     youtube_id: 5bfNeRr2UHI
     title: A Touch of Light (Cinematic Instrumental) – Horizon Sound
@@ -5152,19 +5121,15 @@ songs:
       - '🎼 Style: ambient instrumental, emotional score'
       - '🎛️ Production: glowing pads, soft textures, gentle lift'
       - '✨ Mood: hopeful, comforting, serene'
-    tags: &ref_75
-      - '#horizonsound'
-      - '#atouchoflight'
-      - '#vibewarmupliftingcinematic'
-      - '#styleambientinstrumentalemotionalscore'
-      - '#productionglowingpadssofttexturesgentlelift'
-      - '#moodhopefulcomfortingserene'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/a-touch-of-light-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/a-touch-of-light-cinematic-instrumental-horizon-sound.jpeg
@@ -5215,7 +5180,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_75
   - song_id: forever-in-a-moment-cinematic-instrumental-horizon-sound
     youtube_id: 906ItpYuLuQ
     title: Forever in a Moment (Cinematic Instrumental) – Horizon Sound
@@ -5230,19 +5194,15 @@ songs:
       - '🎼 Style: ambient instrumental, emotional score'
       - '🎛️ Production: soft pads, glowing textures, slow movement'
       - '✨ Mood: nostalgic, peaceful, timeless'
-    tags: &ref_76
-      - '#horizonsound'
-      - '#foreverinamoment'
-      - '#vibedreamywarmcinematic'
-      - '#styleambientinstrumentalemotionalscore'
-      - '#productionsoftpadsglowingtexturesslowmovement'
-      - '#moodnostalgicpeacefultimeless'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/forever-in-a-moment-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/forever-in-a-moment-cinematic-instrumental-horizon-sound.jpeg
@@ -5293,7 +5253,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_76
   - song_id: held-in-the-moment-cinematic-instrumental-horizon-sound
     youtube_id: vjdOSn3ZuaI
     title: Held in the Moment (Cinematic Instrumental) – Horizon Sound
@@ -5308,19 +5267,15 @@ songs:
       - '🎼 Style: ambient instrumental, cinematic minimalism'
       - '🎛️ Production: soft textures, warm pads, subtle movement'
       - '✨ Mood: reflective, grounding, serene'
-    tags: &ref_77
-      - '#horizonsound'
-      - '#heldinthemoment'
-      - '#vibeintimatecalmatmospheric'
-      - '#styleambientinstrumentalcinematicminimalism'
-      - '#productionsofttextureswarmpadssubtlemovement'
-      - '#moodreflectivegroundingserene'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/held-in-the-moment-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/held-in-the-moment-cinematic-instrumental-horizon-sound.jpeg
@@ -5371,7 +5326,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_77
   - song_id: lines-of-light-cinematic-instrumental-horizon-sound
     youtube_id: hT_epxC2G5c
     title: Lines of Light (Cinematic Instrumental) – Horizon Sound
@@ -5386,19 +5340,15 @@ songs:
       - '🎼 Style: ambient instrumental, cinematic texture'
       - '🎛️ Production: light pulses, airy pads, soft contrast'
       - '✨ Mood: hopeful, spacious, uplifting'
-    tags: &ref_78
-      - '#horizonsound'
-      - '#linesoflight'
-      - '#vibeluminousmodernatmospheric'
-      - '#styleambientinstrumentalcinematictexture'
-      - '#productionlightpulsesairypadssoftcontrast'
-      - '#moodhopefulspaciousuplifting'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/lines-of-light-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/lines-of-light-cinematic-instrumental-horizon-sound.jpeg
@@ -5449,7 +5399,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_78
   - song_id: the-moment-you-breathe-cinematic-instrumental-horizon-sound
     youtube_id: YNrpz2S--Yk
     title: The Moment You Breathe (Cinematic Instrumental) – Horizon Sound
@@ -5468,19 +5417,15 @@ songs:
         🎛️ Production: soft pads, airy textures, subtle motion, warm tonal
         palette
       - '✨ Mood: peaceful, introspective, luminous, grounding'
-    tags: &ref_79
-      - '#horizonsound'
-      - '#themomentyoubreathe'
-      - '#vibecalmreflectivecinematic'
-      - '#styleambientinstrumentalatmosphericmodernscore'
-      - '#productionsoftpadsairytexturessubtlemotionwarmtonalpalette'
-      - '#moodpeacefulintrospectiveluminousgrounding'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-moment-you-breathe-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/the-moment-you-breathe-cinematic-instrumental-horizon-sound.jpeg
@@ -5531,7 +5476,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_79
   - song_id: the-way-water-moves-cinematic-instrumental-horizon-sound
     youtube_id: kIv8cx7JgRM
     title: The Way Water Moves (Cinematic Instrumental) – Horizon Sound
@@ -5547,19 +5491,15 @@ songs:
       - '🎼 Style: ambient instrumental, cinematic, reflective'
       - '🎛️ Production: soft pads, gentle motion, warm tonal palette'
       - '✨ Mood: peaceful, meditative, soothing'
-    tags: &ref_80
-      - '#horizonsound'
-      - '#thewaywatermoves'
-      - '#vibecalmfluidatmospheric'
-      - '#styleambientinstrumentalcinematicreflective'
-      - '#productionsoftpadsgentlemotionwarmtonalpalette'
-      - '#moodpeacefulmeditativesoothing'
-      - '#calm-cinematic-horizon-sound-instrumentals'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-way-water-moves-cinematic-instrumental-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/the-way-water-moves-cinematic-instrumental-horizon-sound.jpeg
@@ -5610,7 +5550,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_80
   - song_id: someday-acoustic-pop-storytelling-horizon-sound
     youtube_id: 2cv-H5tTygs
     title: Someday (Acoustic Pop Storytelling) – Horizon Sound
@@ -5635,19 +5574,15 @@ songs:
         🎛️ Production: acoustic guitars, light percussion, gentle lift,
         cinematic warmth
       - '⚡ Mood: innocent, dreamy, heartfelt, reflective'
-    tags: &ref_81
-      - '#horizonsound'
-      - '#someday'
-      - '#vibewarmacousticpopnostalgichopeful'
-      - '#vocalsbrightfemaleleadsoftharmoniesexpressivephrasing'
-      - '#productionacousticguitarslightpercussiongentleliftcinematicwarmth'
-      - '#moodinnocentdreamyheartfeltreflective'
-      - '#missing-stamp-venice-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/someday-acoustic-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/someday-acoustic-pop-storytelling-horizon-sound.jpeg
     videostatus: public
@@ -5698,7 +5633,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_81
   - song_id: missing-stamp-emotional-acoustic-pop-horizon-sound
     youtube_id: fbBWIohiOwI
     title: Missing Stamp (Emotional Acoustic Pop) – Horizon Sound
@@ -5722,25 +5656,21 @@ songs:
         🎛️ Production: piano, acoustic guitar, soft strings, cinematic
         melancholy
       - '⚡ Mood: nostalgic, aching, honest, bittersweet'
-    tags: &ref_82
-      - '#horizonsound'
-      - '#missingstamp'
-      - '#vibeemotionalacousticpopsoftreflective'
-      - '#vocalswarmfemaleleadintimatedeliveryheartfeltphrasing'
-      - '#productionpianoacousticguitarsoftstringscinematicmelancholy'
-      - '#moodnostalgicachinghonestbittersweet'
-      - '#missing-stamp-venice-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/missing-stamp-emotional-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/missing-stamp-emotional-acoustic-pop-horizon-sound.jpeg
     videostatus: public
     playlists:
       - missing-stamp-venice-trilogy
-    view_count_num: 37
+    view_count_num: 38
     youtube_metadata:
       published_at: '2026-04-10T16:01:15Z'
       scheduled_at: null
@@ -5769,7 +5699,7 @@ songs:
       region_blocked: []
       content_rating: {}
       statistics:
-        view_count: '37'
+        view_count: '38'
         like_count: '1'
         favorite_count: '0'
         comment_count: '0'
@@ -5785,7 +5715,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_82
   - song_id: venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
     youtube_id: LzfM1PRxpVU
     title: Venice Waters (Upbeat Acoustic‑Pop Adventure) – Horizon Sound
@@ -5808,19 +5737,15 @@ songs:
       - '🎤 Vocals: bright female lead, expressive, joyful'
       - '🎛️ Production: acoustic guitars, light drums, piano, cinematic strings'
       - '⚡ Mood: nostalgic, uplifting, feel‑good, celebratory'
-    tags: &ref_83
-      - '#horizonsound'
-      - '#venicewaters'
-      - '#vibeupbeatacousticpopwarmadventurous'
-      - '#vocalsbrightfemaleleadexpressivejoyful'
-      - '#productionacousticguitarslightdrumspianocinematicstrings'
-      - '#moodnostalgicupliftingfeelgoodcelebratory'
-      - '#missing-stamp-venice-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/venice-waters-upbeat-acoustic-pop-adventure-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/venice-waters-upbeat-acoustic-pop-adventure-horizon-sound.jpeg
@@ -5871,7 +5796,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_83
   - song_id: rise-like-thunder-80s-rock-anthem-short-horizon-sound
     youtube_id: P4VGMd5Kk8Q
     title: Rise Like Thunder - 80s Rock Anthem (Short) Horizon Sound
@@ -5880,19 +5804,17 @@ songs:
       energy and emotional lift.</p>
     vibes:
       - '🎧 Full track: https://youtu.be/g_AZ5B9ssFQ'
-    tags: &ref_84
-      - '#horizonsound'
-      - '#riselikethunder-80srockanthem'
-      - '#fulltrackhttpsyoutubegaz5b9ssfq'
-      - '#shorts'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
-      - '#80srock'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - 80srock
+      - shorts
     url: /music/rise-like-thunder-80s-rock-anthem-short-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rise-like-thunder-80s-rock-anthem-short-horizon-sound.jpeg
@@ -5945,26 +5867,23 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_84
   - song_id: nineteen-summers-emotional-acoustic-pop-short-horizon-sound
     youtube_id: LyfIQW5FMKw
     title: Nineteen Summers - Emotional Acoustic Pop (Short) Horizon Sound
     description_html: <p>A 14-second moment from Nineteen Summers - Emotional Acoustic Pop.</p>
     vibes:
       - '🎧 Full track: https://youtu.be/r16qSkxEcI4'
-    tags: &ref_85
-      - '#horizonsound'
-      - '#nineteensummers-emotionalacousticpop'
-      - '#fulltrackhttpsyoutuber16qskxeci4'
-      - '#shorts'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
-      - '#emotionalpop'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - emotionalpop
+      - shorts
     url: /music/nineteen-summers-emotional-acoustic-pop-short-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/nineteen-summers-emotional-acoustic-pop-short-horizon-sound.jpeg
@@ -6013,7 +5932,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_85
   - song_id: before-midnight-the-midnight-saga-chapter-1-horizon-sound
     youtube_id: VXQKpK56MCI
     title: Before Midnight (The Midnight Saga – Chapter 1) – Horizon Sound
@@ -6036,19 +5954,15 @@ songs:
       - '🎤 Vocals: smooth female lead, soft intensity, late‑night tone'
       - '🎛️ Production: warm synths, steady drums, glowing textures'
       - '⚡ Mood: curious, electric, suspended, ready‑to‑ignite'
-    tags: &ref_86
-      - '#horizonsound'
-      - '#beforemidnight'
-      - '#vibecinematicpopneonlitatmosphericanticipatory'
-      - '#vocalssmoothfemaleleadsoftintensitylatenighttone'
-      - '#productionwarmsynthssteadydrumsglowingtextures'
-      - '#moodcuriouselectricsuspendedreadytoignite'
-      - '#midnight-saga'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/before-midnight-the-midnight-saga-chapter-1-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/before-midnight-the-midnight-saga-chapter-1-horizon-sound.jpeg
@@ -6101,7 +6015,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_86
   - song_id: midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
     youtube_id: Z6AGhE0K-Ro
     title: Midnight Mayhem (The Midnight Saga – Chapter 2) – Horizon Sound
@@ -6124,19 +6037,15 @@ songs:
       - '🎤 Vocals: bold female lead, energetic phrasing, electric delivery'
       - '🎛️ Production: bright synths, sharp drums, rhythmic drive'
       - '⚡ Mood: wild, reckless, euphoric, fast‑moving'
-    tags: &ref_87
-      - '#horizonsound'
-      - '#midnightmayhem'
-      - '#vibehighenergypopneonchaoslatenightadrenaline'
-      - '#vocalsboldfemaleleadenergeticphrasingelectricdelivery'
-      - '#productionbrightsynthssharpdrumsrhythmicdrive'
-      - '#moodwildrecklesseuphoricfastmoving'
-      - '#midnight-saga'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound.jpeg
@@ -6189,7 +6098,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_87
   - song_id: midnight-madness-the-midnight-saga-chapter-3-horizon-sound
     youtube_id: HeD2WbErCKg
     title: Midnight Madness (The Midnight Saga – Chapter 3) – Horizon Sound
@@ -6211,19 +6119,15 @@ songs:
       - '🎤 Vocals: expressive female lead, drifting and powerful'
       - '🎛️ Production: glowing synths, pulsing drums, immersive textures'
       - '⚡ Mood: dizzy, electric, surreal, all‑consuming'
-    tags: &ref_88
-      - '#horizonsound'
-      - '#midnightmadness'
-      - '#vibehypnoticpopneonswirldreamlikeintensity'
-      - '#vocalsexpressivefemaleleaddriftingandpowerful'
-      - '#productionglowingsynthspulsingdrumsimmersivetextures'
-      - '#mooddizzyelectricsurrealallconsuming'
-      - '#midnight-saga'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/midnight-madness-the-midnight-saga-chapter-3-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/midnight-madness-the-midnight-saga-chapter-3-horizon-sound.jpeg
@@ -6276,7 +6180,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_88
   - song_id: after-midnight-the-midnight-saga-chapter-4-horizon-sound
     youtube_id: iGt2wtH6orc
     title: After Midnight (The Midnight Saga – Chapter 4) – Horizon Sound
@@ -6297,19 +6200,15 @@ songs:
       - '🎤 Vocals: heartfelt female lead, soft and steady'
       - '🎛️ Production: warm pads, soft synths, steady drums'
       - '⚡ Mood: peaceful, introspective, resolved, sunrise‑ready'
-    tags: &ref_89
-      - '#horizonsound'
-      - '#aftermidnight'
-      - '#vibecinematicpopreflectivewarmlatenightcalm'
-      - '#vocalsheartfeltfemaleleadsoftandsteady'
-      - '#productionwarmpadssoftsynthssteadydrums'
-      - '#moodpeacefulintrospectiveresolvedsunriseready'
-      - '#midnight-saga'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/after-midnight-the-midnight-saga-chapter-4-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/after-midnight-the-midnight-saga-chapter-4-horizon-sound.jpeg
@@ -6362,7 +6261,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_89
   - song_id: >-
       1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: '-Yxig5Mq9u4'
@@ -6394,19 +6292,28 @@ songs:
       - >-
         ⚡ Mood: heartbreak‑after‑the‑storm, heavy, introspective, quietly
         devastating
-    tags: &ref_90
-      - '#horizonsound'
-      - '#1thequietafterperformedbylydiaellington'
-      - '#vibeslowcinematicemotionalreflective'
-      - '#vocalswarmfemaleleadrichtonesmoothvibratointimatephrasing'
-      - '#productionsoftpianowarmstringssubtledrumsatmosphericreverb'
-      - '#moodheartbreakafterthestormheavyintrospectivequietlydevastating'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6461,7 +6368,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_90
   - song_id: >-
       2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: BrZ1VWJ2lso
@@ -6485,19 +6391,28 @@ songs:
       - '🎤 Vocals: warm female lead, smooth vibrato, emotional phrasing'
       - '🎛️ Production: warm piano, soft strings, light drums, cinematic glow'
       - '⚡ Mood: reflective, aching, quietly hopeful'
-    tags: &ref_91
-      - '#horizonsound'
-      - '#2borrowedtimeperformedbylydiaellington'
-      - '#vibetendernostalgicbittersweet'
-      - '#vocalswarmfemaleleadsmoothvibratoemotionalphrasing'
-      - '#productionwarmpianosoftstringslightdrumscinematicglow'
-      - '#moodreflectiveachingquietlyhopeful'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6552,7 +6467,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_91
   - song_id: >-
       3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: 8QgA5YL9nIA
@@ -6576,19 +6490,28 @@ songs:
       - '🎤 Vocals: warm female lead, intimate phrasing, emotional tone'
       - '🎛️ Production: gentle piano, warm pads, subtle strings, airy reverb'
       - '⚡ Mood: longing, introspective, quietly emotional'
-    tags: &ref_92
-      - '#horizonsound'
-      - '#3homesickforyouperformedbylydiaellington'
-      - '#vibesoftnostalgicreflective'
-      - '#vocalswarmfemaleleadintimatephrasingemotionaltone'
-      - '#productiongentlepianowarmpadssubtlestringsairyreverb'
-      - '#moodlongingintrospectivequietlyemotional'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6642,7 +6565,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_92
   - song_id: >-
       4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: ZPqhUzybOIg
@@ -6669,19 +6591,28 @@ songs:
         🎛️ Production: soft piano, warm strings, light drums, atmospheric
         reverb
       - '⚡ Mood: aching, reflective, quietly devastating'
-    tags: &ref_93
-      - '#horizonsound'
-      - '#4thewayweliedperformedbylydiaellington'
-      - '#vibeslowheavyemotional'
-      - '#vocalswarmfemaleleadrichtoneintimatedelivery'
-      - '#productionsoftpianowarmstringslightdrumsatmosphericreverb'
-      - '#moodachingreflectivequietlydevastating'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6735,7 +6666,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_93
   - song_id: 5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: hYWaf4MIfM0
     title: >-
@@ -6760,19 +6690,28 @@ songs:
       - '🎤 Vocals: warm female lead, smooth vibrato, emotional phrasing'
       - '🎛️ Production: soft piano, warm strings, airy pads, light drums'
       - '⚡ Mood: fragile‑to‑soaring, honest, cathartic'
-    tags: &ref_94
-      - '#horizonsound'
-      - '#5paperwallsperformedbylydiaellington'
-      - '#vibevulnerableintimatecinematic'
-      - '#vocalswarmfemaleleadsmoothvibratoemotionalphrasing'
-      - '#productionsoftpianowarmstringsairypadslightdrums'
-      - '#moodfragiletosoaringhonestcathartic'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6825,7 +6764,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_94
   - song_id: 6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: GEIYkYA5Dfk
     title: >-
@@ -6849,19 +6787,28 @@ songs:
       - '🎤 Vocals: warm female lead, expressive phrasing, powerful lift'
       - '🎛️ Production: piano, warm strings, steady drums, cinematic rise'
       - '⚡ Mood: empowering, self‑reclaiming, triumphant'
-    tags: &ref_95
-      - '#horizonsound'
-      - '#6halfofmeperformedbylydiaellington'
-      - '#viberisingboldemotional'
-      - '#vocalswarmfemaleleadexpressivephrasingpowerfullift'
-      - '#productionpianowarmstringssteadydrumscinematicrise'
-      - '#moodempoweringselfreclaimingtriumphant'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -6915,7 +6862,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_95
   - song_id: >-
       7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: YgcaebCs-LY
@@ -6941,19 +6887,28 @@ songs:
         🎛️ Production: soft piano, warm strings, subtle drums, atmospheric
         reverb
       - '⚡ Mood: regretful, tender, heartbreaking'
-    tags: &ref_96
-      - '#horizonsound'
-      - '#7ifyoudaskedperformedbylydiaellington'
-      - '#vibeslowcinematicemotional'
-      - '#vocalswarmfemaleleadintimatedeliveryachingtone'
-      - '#productionsoftpianowarmstringssubtledrumsatmosphericreverb'
-      - '#moodregretfultenderheartbreaking'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7007,7 +6962,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_96
   - song_id: 8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: dmJyCGDSQa8
     title: >-
@@ -7033,19 +6987,28 @@ songs:
         🎛️ Production: soft piano, warm strings, subtle percussion, atmospheric
         reverb
       - '⚡ Mood: nostalgic, theatrical, bittersweet'
-    tags: &ref_97
-      - '#horizonsound'
-      - '#8ghostlightperformedbylydiaellington'
-      - '#vibehauntingglowingcinematic'
-      - '#vocalswarmfemaleleadrichtoneemotionalphrasing'
-      - '#productionsoftpianowarmstringssubtlepercussionatmosphericreverb'
-      - '#moodnostalgictheatricalbittersweet'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7099,7 +7062,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_97
   - song_id: >-
       9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: kmQsqEg8ryA
@@ -7123,19 +7085,28 @@ songs:
       - '🎤 Vocals: warm female lead, smooth vibrato, intimate phrasing'
       - '🎛️ Production: soft piano, warm strings, airy pads, gentle drums'
       - '⚡ Mood: healing, uplifting, quietly powerful'
-    tags: &ref_98
-      - '#horizonsound'
-      - '#9afterthesilenceperformedbylydiaellington'
-      - '#vibecalmreflectivecinematic'
-      - '#vocalswarmfemaleleadsmoothvibratointimatephrasing'
-      - '#productionsoftpianowarmstringsairypadsgentledrums'
-      - '#moodhealingupliftingquietlypowerful'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7188,7 +7159,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_98
   - song_id: 10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: '-yaZGULOHA0'
     title: >-
@@ -7210,19 +7180,28 @@ songs:
       - '🎤 Vocals: warm female lead, rich tone, expressive phrasing'
       - '🎛️ Production: soft piano, warm strings, airy pads, gentle drums'
       - '⚡ Mood: cathartic, cleansing, tender'
-    tags: &ref_99
-      - '#horizonsound'
-      - '#10saltwaterperformedbylydiaellington'
-      - '#vibeflowingemotionalcinematic'
-      - '#vocalswarmfemaleleadrichtoneexpressivephrasing'
-      - '#productionsoftpianowarmstringsairypadsgentledrums'
-      - '#moodcatharticcleansingtender'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7274,7 +7253,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_99
   - song_id: >-
       11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: S40NUKvFhAc
@@ -7299,19 +7277,28 @@ songs:
       - '🎤 Vocals: warm female lead, smooth vibrato, intimate delivery'
       - '🎛️ Production: soft piano, warm strings, light drums, airy pads'
       - '⚡ Mood: reflective, tender, bittersweet'
-    tags: &ref_100
-      - '#horizonsound'
-      - '#11thedressineverworeperformedbylydiaellington'
-      - '#vibeslowemotionalcinematic'
-      - '#vocalswarmfemaleleadsmoothvibratointimatedelivery'
-      - '#productionsoftpianowarmstringslightdrumsairypads'
-      - '#moodreflectivetenderbittersweet'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7365,7 +7352,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_100
   - song_id: >-
       12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: H4y2StKkPyw
@@ -7391,19 +7377,28 @@ songs:
       - '🎤 Vocals: warm female lead, smooth vibrato, emotional phrasing'
       - '🎛️ Production: soft piano, warm strings, airy pads, subtle drums'
       - '⚡ Mood: tender, reflective, quietly cathartic'
-    tags: &ref_101
-      - '#horizonsound'
-      - '#12unsentlettersperformedbylydiaellington'
-      - '#vibeintimateconfessionallatenight'
-      - '#vocalswarmfemaleleadsmoothvibratoemotionalphrasing'
-      - '#productionsoftpianowarmstringsairypadssubtledrums'
-      - '#moodtenderreflectivequietlycathartic'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7456,7 +7451,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_101
   - song_id: 13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound
     youtube_id: e5zhSTx7Kas
     title: >-
@@ -7485,19 +7479,28 @@ songs:
         phrasing
       - '🎛️ Production: piano, strings, steady drums, airy pads, cinematic build'
       - '⚡ Mood: empowering, victorious, resilient, transformative'
-    tags: &ref_102
-      - '#horizonsound'
-      - '#13riseagainperformedbylydiaellington'
-      - '#vibecinematicpopemotionalupliftingtriumphant'
-      - '#vocalswarmexpressivefemaleleadsmoothvibratointimatephrasing'
-      - '#productionpianostringssteadydrumsairypadscinematicbuild'
-      - '#moodempoweringvictoriousresilienttransformative'
-      - '#after-the-silence-performed-by-lydia-ellington'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
+      - lydiaellington
+      - afterthesilence
+      - cinematicpop
+      - popballad
+      - emotionalpop
+      - indiepop
+      - songwriter
+      - popalbum
+      - cinematicmusic
+      - femalevocalist
+      - emotionalballad
+      - atmosphericpop
+      - storytellingmusic
     url: >-
       /music/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: >-
@@ -7551,7 +7554,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_102
   - song_id: lost-in-silence-from-a-way-back-horizon-sound
     youtube_id: 59teEpeHah8
     title: Lost in Silence (From A Way Back) – Horizon Sound
@@ -7575,20 +7577,15 @@ songs:
         🎛️ Production: bright acoustic guitar, light indie‑pop percussion, warm
         bass, clean modern polish
       - '⚡ Mood: bittersweet, honest, gentle, quietly hopeful'
-    tags: &ref_103
-      - '#horizonsound'
-      - '#lostinsilence'
-      - '#vibeacousticpopwarmemotionalreflective'
-      - '#vocalsexpressivefemaleleadsoftmaleduetairyharmonies'
-      - >-
-        #productionbrightacousticguitarlightindiepoppercussionwarmbasscleanmodernpolish
-      - '#moodbittersweethonestgentlequietlyhopeful'
-      - '#a-way-back-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/lost-in-silence-from-a-way-back-horizon-sound/
     thumbnail: /assets/thumbnails/lost-in-silence-from-a-way-back-horizon-sound.jpeg
     videostatus: public
@@ -7640,7 +7637,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_103
   - song_id: choosing-me-her-version-acoustic-pop-horizon-sound
     youtube_id: ddDkZl0GrWU
     title: Choosing Me - Her Version (Acoustic Pop) – Horizon Sound
@@ -7663,19 +7659,15 @@ songs:
         🎛️ Production: bright acoustic guitar, brushed snare, subtle shaker,
         clean modern polish
       - '⚡ Mood: hopeful, light, self‑reclaiming, fresh'
-    tags: &ref_104
-      - '#horizonsound'
-      - '#choosingme-herversion'
-      - '#vibecoastalacousticpopbreezywarmuplifting'
-      - '#vocalssoftfemaleleadairyharmoniessmileinthevoicedelivery'
-      - '#productionbrightacousticguitarbrushedsnaresubtleshakercleanmodernpolish'
-      - '#moodhopefullightselfreclaimingfresh'
-      - '#a-way-back-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/choosing-me-her-version-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/choosing-me-her-version-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -7727,7 +7719,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_104
   - song_id: choosing-me-his-version-pop-horizon-sound
     youtube_id: nudUc7DezM0
     title: Choosing Me - His Version (Pop) – Horizon Sound
@@ -7749,19 +7740,15 @@ songs:
         🎛️ Production: bright electric guitars, punchy drums, groovy bass,
         polished mix
       - '⚡ Mood: honest, determined, optimistic, empowering'
-    tags: &ref_105
-      - '#horizonsound'
-      - '#choosingme-hisversion'
-      - '#vibemodernpoprockenergeticheartfeltuplifting'
-      - '#vocalscleanmaleleadwarmtonetightharmonies'
-      - '#productionbrightelectricguitarspunchydrumsgroovybasspolishedmix'
-      - '#moodhonestdeterminedoptimisticempowering'
-      - '#a-way-back-trilogy'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/choosing-me-his-version-pop-horizon-sound/
     thumbnail: /assets/thumbnails/choosing-me-his-version-pop-horizon-sound.jpeg
     videostatus: public
@@ -7813,7 +7800,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_105
   - song_id: all-around-the-world-acoustic-pop-horizon-sound
     youtube_id: kIth3U12KeI
     title: All Around the World (Acoustic Pop) - Horizon Sound
@@ -7838,20 +7824,15 @@ songs:
         🎛️ Production: acoustic guitars, handclaps, tambourine, light
         percussion, wide stereo layers
       - '⚡ Mood: nostalgic, hopeful, adventurous, vulnerable'
-    tags: &ref_106
-      - '#horizonsound'
-      - '#allaroundtheworld'
-      - '#vibebrightacousticpopbreezyyouthfulheartfelt'
-      - '#vocalswarmfemaleleadairyharmoniesemotionaldelivery'
-      - >-
-        #productionacousticguitarshandclapstambourinelightpercussionwidestereolayers
-      - '#moodnostalgichopefuladventurousvulnerable'
-      - '#acoustic-singer-songwriter'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/all-around-the-world-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/all-around-the-world-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -7902,7 +7883,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_106
   - song_id: not-so-smart-home-folk-country-comedy-horizon-sound
     youtube_id: ii7gqcUMto4
     title: Not so Smart Home (Folk‑Country Comedy) - Horizon Sound
@@ -7929,19 +7909,15 @@ songs:
         🎛️ Production: acoustic guitar, light percussion, subtle tech sound
         effects, warm mix
       - '⚡ Mood: fun, chaotic, exasperated, clever'
-    tags: &ref_107
-      - '#horizonsound'
-      - '#notsosmarthome'
-      - '#vibeupbeatfolkcountryplayfulmischievousenergetic'
-      - '#vocalsexpressivemaleleadcomedictimingcrispdelivery'
-      - '#productionacousticguitarlightpercussionsubtletechsoundeffectswarmmix'
-      - '#moodfunchaoticexasperatedclever'
-      - '#acoustic-singer-songwriter'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/not-so-smart-home-folk-country-comedy-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/not-so-smart-home-folk-country-comedy-horizon-sound.jpeg
@@ -7992,7 +7968,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_107
   - song_id: fixed-it-mostly-right-country-comedy-horizon-sound
     youtube_id: KaEMFaNR40M
     title: Fixed it Mostly Right (Country Comedy) - Horizon Sound
@@ -8020,19 +7995,15 @@ songs:
         🎛️ Production: twangy electric guitars, lively drums, playful fiddle,
         barroom mix
       - '⚡ Mood: fun, reckless, lighthearted, mischievous'
-    tags: &ref_108
-      - '#horizonsound'
-      - '#fixeditmostlyright'
-      - '#viberowdyhonkytonkcomedicupbeatchaotic'
-      - '#vocalsexaggeratedmaleleadhumorousdeliveryhighenergypersonality'
-      - '#productiontwangyelectricguitarslivelydrumsplayfulfiddlebarroommix'
-      - '#moodfunrecklesslightheartedmischievous'
-      - '#acoustic-singer-songwriter'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/fixed-it-mostly-right-country-comedy-horizon-sound/
     thumbnail: /assets/thumbnails/fixed-it-mostly-right-country-comedy-horizon-sound.jpeg
     videostatus: public
@@ -8082,7 +8053,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_108
   - song_id: makin-our-way-to-california-pop-folk-horizon-sound
     youtube_id: cU4c2_3ITP8
     title: Makin’ Our Way to California (Pop-Folk) – Horizon Sound
@@ -8107,20 +8077,15 @@ songs:
         🎛️ Production: acoustic guitars, modern pop drums, shimmering
         harmonies, clean stereo mix
       - '⚡ Mood: adventurous, warm, reflective, joyful'
-    tags: &ref_109
-      - '#horizonsound'
-      - '#makinourwaytocalifornia'
-      - '#vibebrightpop-folksummerynostalgicupbeat'
-      - '#vocalsenergeticfemaleleadyouthfultoneemotionalclarity'
-      - >-
-        #productionacousticguitarsmodernpopdrumsshimmeringharmoniescleanstereomix
-      - '#moodadventurouswarmreflectivejoyful'
-      - '#acoustic-singer-songwriter'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/makin-our-way-to-california-pop-folk-horizon-sound/
     thumbnail: /assets/thumbnails/makin-our-way-to-california-pop-folk-horizon-sound.jpeg
     videostatus: public
@@ -8172,7 +8137,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_109
   - song_id: nineteen-summers-emotional-ballad-horizon-sound
     youtube_id: r16qSkxEcI4
     title: Nineteen Summers (Emotional Ballad) - Horizon Sound
@@ -8194,19 +8158,15 @@ songs:
     vibes:
       - '🎧 Vibe: emotional acoustic‑pop, nostalgic, bittersweet, heartfelt'
       - '🎤 Vocals: intimate, expressive, warm'
-    tags: &ref_110
-      - '#horizonsound'
-      - '#nineteensummers'
-      - '#vibeemotionalacousticpopnostalgicbittersweetheartfelt'
-      - '#vocalsintimateexpressivewarm'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/nineteen-summers-emotional-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/nineteen-summers-emotional-ballad-horizon-sound.jpeg
     videostatus: scheduled
@@ -8219,7 +8179,19 @@ songs:
       channel_id: UCiko-zjojbsoXrsEuBOPbSw
       channel_title: Horizon Sound
       category_id: '22'
-      tags: []
+      tags:
+        - '#emotional-ballads'
+        - '#horizonsound'
+        - '#indieartist'
+        - '#instrumentalmusic'
+        - '#musicvideo'
+        - '#newmusic'
+        - '#nineteensummers'
+        - '#originalmusic'
+        - '#popmusic'
+        - '#songwriter'
+        - '#vibeemotionalacousticpopnostalgicbittersweetheartfelt'
+        - '#vocalsintimateexpressivewarm'
       duration: PT5M28S
       definition: hd
       dimension: null
@@ -8242,7 +8214,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_110
   - song_id: im-holding-on-emotional-piano-ballad-horizon-sound
     youtube_id: Y97CNIAaBIA
     title: I'm Holding On (Emotional Piano Ballad) - Horizon Sound
@@ -8264,19 +8235,15 @@ songs:
     vibes:
       - '🎧 Vibe: emotional ballad, intimate, cinematic, heartfelt'
       - '🎤 Vocals: warm, expressive, vulnerable'
-    tags: &ref_111
-      - '#horizonsound'
-      - '#imholdingon'
-      - '#vibeemotionalballadintimatecinematicheartfelt'
-      - '#vocalswarmexpressivevulnerable'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/im-holding-on-emotional-piano-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/im-holding-on-emotional-piano-ballad-horizon-sound.jpeg
     videostatus: public
@@ -8327,7 +8294,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_111
   - song_id: oh-amber-emotional-pop-storytelling-horizon-sound
     youtube_id: J2AuQsiPz34
     title: Oh Amber (Emotional Pop Storytelling) - Horizon Sound
@@ -8355,20 +8321,15 @@ songs:
         🎛️ Production: acoustic guitar, soft piano, light drums, subtle
         country‑pop color, swelling chorus
       - '⚡ Mood: tender, bittersweet, comforting, reflective'
-    tags: &ref_112
-      - '#horizonsound'
-      - '#ohamber'
-      - '#vibeemotionalpopnostalgicacousticleaningcinematic'
-      - '#vocalswarmfemaleleadexpressivephrasingheartfeltdelivery'
-      - >-
-        #productionacousticguitarsoftpianolightdrumssubtlecountrypopcolorswellingchorus
-      - '#moodtenderbittersweetcomfortingreflective'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/oh-amber-emotional-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/oh-amber-emotional-pop-storytelling-horizon-sound.jpeg
     videostatus: public
@@ -8419,7 +8380,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_112
   - song_id: learning-to-live-again-pop-horizon-sound
     youtube_id: NVG_qw_51RQ
     title: Learning to Live Again (Pop) - Horizon Sound
@@ -8444,20 +8404,15 @@ songs:
         🎛️ Production: atmospheric pads, subtle synths, light percussion,
         smooth harmonies, spacious mix
       - '⚡ Mood: hopeful, vulnerable, uplifting, quietly powerful'
-    tags: &ref_113
-      - '#horizonsound'
-      - '#learningtoliveagain'
-      - '#vibesoftelectropopdreamyreflectiveemotional'
-      - '#vocalswarmbreathyfemaleleadgentlevibratointimatedelivery'
-      - >-
-        #productionatmosphericpadssubtlesynthslightpercussionsmoothharmoniesspaciousmix
-      - '#moodhopefulvulnerableupliftingquietlypowerful'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/learning-to-live-again-pop-horizon-sound/
     thumbnail: /assets/thumbnails/learning-to-live-again-pop-horizon-sound.jpeg
     videostatus: public
@@ -8508,7 +8463,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_113
   - song_id: a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound
     youtube_id: _YvJOMi6lP0
     title: A quiet Little Voice (Emotional Pop / Empowering Pop) - Horizon Sound
@@ -8528,19 +8482,15 @@ songs:
     vibes:
       - '🎧 Vibe: empowering pop, uplifting, emotional, modern'
       - '🎤 Vocals: bright, expressive female lead'
-    tags: &ref_114
-      - '#horizonsound'
-      - '#aquietlittlevoice'
-      - '#vibeempoweringpopupliftingemotionalmodern'
-      - '#vocalsbrightexpressivefemalelead'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound.jpeg
@@ -8591,7 +8541,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_114
   - song_id: nineteen-summers-emotional-acoustic-pop-horizon-sound
     youtube_id: HuGf30ChZkI
     title: Nineteen Summers (Emotional Acoustic Pop) - Horizon Sound
@@ -8613,19 +8562,15 @@ songs:
     vibes:
       - '🎧 Vibe: emotional acoustic‑pop, nostalgic, bittersweet, heartfelt'
       - '🎤 Vocals: intimate, expressive, warm'
-    tags: &ref_115
-      - '#horizonsound'
-      - '#nineteensummers'
-      - '#vibeemotionalacousticpopnostalgicbittersweetheartfelt'
-      - '#vocalsintimateexpressivewarm'
-      - '#emotional-ballads'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/nineteen-summers-emotional-acoustic-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/nineteen-summers-emotional-acoustic-pop-horizon-sound.jpeg
@@ -8677,7 +8622,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_115
   - song_id: wildfire-modern-country-power-anthem-horizon-sound
     youtube_id: Tc0wt00clNM
     title: Wildfire (Modern Country Power Anthem) – Horizon Sound
@@ -8704,19 +8648,15 @@ songs:
         🎛️ Production: big drums, electric guitars, dramatic lift, Nashville
         polish
       - '⚡ Mood: unstoppable, fiery, defiant, triumphant'
-    tags: &ref_116
-      - '#horizonsound'
-      - '#wildfire'
-      - '#vibefierceempoweringmoderncountrycinematic'
-      - '#vocalsboldfemaleleademotionalgritpowerhousedelivery'
-      - '#productionbigdrumselectricguitarsdramaticliftnashvillepolish'
-      - '#moodunstoppablefierydefianttriumphant'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/wildfire-modern-country-power-anthem-horizon-sound/
     thumbnail: /assets/thumbnails/wildfire-modern-country-power-anthem-horizon-sound.jpeg
     videostatus: public
@@ -8767,7 +8707,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_116
   - song_id: vegas-in-the-sky-country-pop-party-anthem-horizon-sound
     youtube_id: n87_yKJTcUw
     title: Vegas in the Sky (Country‑Pop Party Anthem) – Horizon Sound
@@ -8792,19 +8731,15 @@ songs:
         🎛️ Production: acoustic guitar, stomps, claps, fiddle accents, bright
         modern mix
       - '⚡ Mood: energetic, comedic, feel‑good, high‑spirited'
-    tags: &ref_117
-      - '#horizonsound'
-      - '#vegasinthesky'
-      - '#vibecountrypoppartyrowdyfunchaotic'
-      - '#vocalsmaleleadswaggerhumorstorytelling'
-      - '#productionacousticguitarstompsclapsfiddleaccentsbrightmodernmix'
-      - '#moodenergeticcomedicfeelgoodhighspirited'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/vegas-in-the-sky-country-pop-party-anthem-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/vegas-in-the-sky-country-pop-party-anthem-horizon-sound.jpeg
@@ -8856,7 +8791,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_117
   - song_id: the-man-behind-the-bar-90s-country-horizon-sound
     youtube_id: 3EOLlL-P120
     title: The Man Behind the Bar (90s Country) - Horizon Sound
@@ -8882,20 +8816,15 @@ songs:
         🎛️ Production: acoustic guitars, fiddle, pedal steel, brushed drums,
         clean electric fills, simple bass groove
       - '⚡ Mood: comforting, reflective, grounded, quietly uplifting'
-    tags: &ref_118
-      - '#horizonsound'
-      - '#themanbehindthebar'
-      - '#vibe90scountrywarmnostalgicsmalltown'
-      - '#vocalsconversationalmaleleadheartfeltsteadyandsincere'
-      - >-
-        #productionacousticguitarsfiddlepedalsteelbrusheddrumscleanelectricfillssimplebassgroove
-      - '#moodcomfortingreflectivegroundedquietlyuplifting'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/the-man-behind-the-bar-90s-country-horizon-sound/
     thumbnail: /assets/thumbnails/the-man-behind-the-bar-90s-country-horizon-sound.jpeg
     videostatus: public
@@ -8946,7 +8875,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_118
   - song_id: time-capsule-emotional-country-nostalgic-storytelling-horizon-sound
     youtube_id: '-zbAWN1M_qo'
     title: Time Capsule (Emotional Country / Nostalgic Storytelling) – Horizon Sound
@@ -8980,19 +8908,15 @@ songs:
         🎛️ Production: acoustic foundation, gentle pop elements, subtle
         cinematic lift
       - '⚡ Mood: tender, memory‑rich, quietly romantic, heartfelt'
-    tags: &ref_119
-      - '#horizonsound'
-      - '#timecapsule'
-      - '#vibenostalgicwarmemotionalreflective'
-      - '#vocalsintimatemaleleadsoftdeliverystorytellingtone'
-      - '#productionacousticfoundationgentlepopelementssubtlecinematiclift'
-      - '#moodtendermemoryrichquietlyromanticheartfelt'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: >-
       /music/time-capsule-emotional-country-nostalgic-storytelling-horizon-sound/
     thumbnail: >-
@@ -9046,7 +8970,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_119
   - song_id: already-out-the-door-modern-country-horizon-sound
     youtube_id: EfXB-Yv_XSY
     title: Already Out the Door (Modern Country) - Horizon Sound
@@ -9073,19 +8996,15 @@ songs:
         🎛️ Production: acoustic‑driven, subtle electric fills, clean Nashville
         mix
       - '⚡ Mood: wounded, resigned, honest, quietly powerful'
-    tags: &ref_120
-      - '#horizonsound'
-      - '#alreadyoutthedoor'
-      - '#vibemoderncountrymidtempoemotionalreflective'
-      - '#vocalssinceremaleleadwarmtonesoftharmoniesinthechorus'
-      - '#productionacousticdrivensubtleelectricfillscleannashvillemix'
-      - '#moodwoundedresignedhonestquietlypowerful'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/already-out-the-door-modern-country-horizon-sound/
     thumbnail: /assets/thumbnails/already-out-the-door-modern-country-horizon-sound.jpeg
     videostatus: public
@@ -9135,7 +9054,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_120
   - song_id: she-s-so-into-me-modern-country-love-song-horizon-sound
     youtube_id: 81IXyVEd7PQ
     title: She’s So Into Me (Modern Country Love Song) – Horizon Sound
@@ -9164,19 +9082,15 @@ songs:
         🎛️ Production: acoustic guitars, snaps, soft electric layers, smooth
         upbeat groove
       - '⚡ Mood: sweet, flirty, uplifting, radio‑ready'
-    tags: &ref_121
-      - '#horizonsound'
-      - '#shessointome'
-      - '#vibemoderncountrywarmromanticfeelgood'
-      - '#vocalscharmingmaleleadflirtyexpressiveslightlyselfdeprecating'
-      - '#productionacousticguitarssnapssoftelectriclayerssmoothupbeatgroove'
-      - '#moodsweetflirtyupliftingradioready'
-      - '#modern-country'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/she-s-so-into-me-modern-country-love-song-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/she-s-so-into-me-modern-country-love-song-horizon-sound.jpeg
@@ -9225,7 +9139,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_121
   - song_id: put-you-down-electro-pop-dance-pop-horizon-sound
     youtube_id: niNtLrtDcBs
     title: Put You Down (Electro-Pop / Dance-Pop) - Horizon Sound
@@ -9251,19 +9164,15 @@ songs:
         🎛️ Production: distorted synth bass, punchy drums, stutter FX,
         explosive drops
       - '⚡ Mood: wild, unfiltered, confident, late‑night adrenaline'
-    tags: &ref_122
-      - '#horizonsound'
-      - '#putyoudown'
-      - '#vibehighenergyelectropopchaoticboldrebellious'
-      - '#vocalsfiercefemaleleadtalksingswaggerglitchyvocalchops'
-      - '#productiondistortedsynthbasspunchydrumsstutterfxexplosivedrops'
-      - '#moodwildunfilteredconfidentlatenightadrenaline'
-      - '#electro-pop-dance-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/put-you-down-electro-pop-dance-pop-horizon-sound/
     thumbnail: /assets/thumbnails/put-you-down-electro-pop-dance-pop-horizon-sound.jpeg
     videostatus: public
@@ -9314,7 +9223,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_122
   - song_id: midnight-mayhem-electro-pop-horizon-sound
     youtube_id: 1B1nGWaWgD0
     title: Midnight Mayhem (Electro Pop) - Horizon Sound
@@ -9337,14 +9245,7 @@ songs:
       - '🎤 Vocals: talk‑sing swagger, raspy edges, attitude‑heavy'
       - '🎛️ Production: rubbery synths, heavy bass, stomp‑claps, cosmic FX'
       - '⚡ Mood: explosive, reckless, glossy, late‑night'
-    tags: &ref_123
-      - '#horizonsound'
-      - '#midnightmayhem'
-      - '#vibechaoticelectropopneonhighenergywild'
-      - '#vocalstalksingswaggerraspyedgesattitudeheavy'
-      - '#productionrubberysynthsheavybassstompclapscosmicfx'
-      - '#moodexplosiverecklessglossylatenight'
-      - '#electro-pop-dance-pop'
+    tags: []
     url: /music/midnight-mayhem-electro-pop-horizon-sound/
     thumbnail: /assets/thumbnails/midnight-mayhem-electro-pop-horizon-sound.jpeg
     videostatus: private
@@ -9387,7 +9288,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_123
   - song_id: new-again-90s-pop-revival-horizon-sound
     youtube_id: y4pym_HVGJA
     title: New Again (90s Pop Revival) - Horizon Sound
@@ -9414,19 +9314,15 @@ songs:
         🎛️ Production: bright synths, tight drums, rhythmic build, modern pop
         polish
       - '⚡ Mood: sad‑to‑strong, cathartic, bold, self‑reclaiming'
-    tags: &ref_124
-      - '#horizonsound'
-      - '#newagain'
-      - '#vibe90spoprevivalhighenergyemotionalempowering'
-      - '#vocalsstrongfemaleleadexpressivephrasingconfidentdelivery'
-      - '#productionbrightsynthstightdrumsrhythmicbuildmodernpoppolish'
-      - '#moodsadtostrongcatharticboldselfreclaiming'
-      - '#90s-pop-pop-rock'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/new-again-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/new-again-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -9476,7 +9372,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_124
   - song_id: heres-to-us-90s-rock-anthem-horizon-sound
     youtube_id: aY8-o0Scmjg
     title: Here's To Us (90s Rock Anthem) - Horizon Sound
@@ -9502,19 +9397,15 @@ songs:
         🎛️ Production: soaring guitars, punchy drums, crowd‑chant bridge, raw
         but polished mix
       - '⚡ Mood: triumphant, resilient, heartfelt, uplifting'
-    tags: &ref_125
-      - '#horizonsound'
-      - '#herestous'
-      - '#vibeanthemic90srockgrittyemotionalcommunal'
-      - '#vocalscontrolledfemalegritgangvocalsspokenintroshoutalongchorus'
-      - '#productionsoaringguitarspunchydrumscrowdchantbridgerawbutpolishedmix'
-      - '#moodtriumphantresilientheartfeltuplifting'
-      - '#90s-pop-pop-rock'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/heres-to-us-90s-rock-anthem-horizon-sound/
     thumbnail: /assets/thumbnails/heres-to-us-90s-rock-anthem-horizon-sound.jpeg
     videostatus: public
@@ -9565,7 +9456,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_125
   - song_id: one-hell-of-a-ride-gritty-southern-rock-horizon-sound
     youtube_id: 3iAmG5GLC7k
     title: One Hell of a Ride (Gritty Southern Rock) - Horizon Sound
@@ -9584,19 +9474,15 @@ songs:
     vibes:
       - '🎧 Vibe: southern rock, blues‑rock, gritty, energetic, rebellious'
       - '🎤 Vocals: raw, swagger‑filled male lead'
-    tags: &ref_126
-      - '#horizonsound'
-      - '#onehellofaride'
-      - '#vibesouthernrockbluesrockgrittyenergeticrebellious'
-      - '#vocalsrawswaggerfilledmalelead'
-      - '#southern-rock'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/one-hell-of-a-ride-gritty-southern-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/one-hell-of-a-ride-gritty-southern-rock-horizon-sound.jpeg
@@ -9648,7 +9534,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_126
   - song_id: gimme-three-steps-and-im-gone-southern-rock-horizon-sound
     youtube_id: YVOzEcUdS9E
     title: Gimme Three Steps and I'm Gone (Southern Rock) - Horizon Sound
@@ -9673,20 +9558,15 @@ songs:
         🎛️ Production: bluesy electric guitars, shuffle drums, swaggering bass,
         harmonized leads
       - '⚡ Mood: urgent, humorous, cinematic, chaotic‑night‑gone‑wrong'
-    tags: &ref_127
-      - '#horizonsound'
-      - '#gimmethreestepsandimgone'
-      - '#vibe70ssouthernrockrowdygrittyhighenergy'
-      - '#vocalsmaleleadstorytellinggritplayfultension'
-      - >-
-        #productionbluesyelectricguitarsshuffledrumsswaggeringbassharmonizedleads
-      - '#moodurgenthumorouscinematicchaoticnightgonewrong'
-      - '#southern-rock'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/gimme-three-steps-and-im-gone-southern-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/gimme-three-steps-and-im-gone-southern-rock-horizon-sound.jpeg
@@ -9739,7 +9619,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_127
   - song_id: barroom-brawl-southern-rock-grit-horizon-sound
     youtube_id: 2gZPJnFPQZs
     title: Barroom Brawl (Southern Rock Grit) – Horizon Sound
@@ -9766,19 +9645,15 @@ songs:
         🎛️ Production: bluesy guitars, driving drums, barroom textures, modern
         rock polish
       - '⚡ Mood: chaotic‑to‑connected, rowdy, defiant, emotionally charged'
-    tags: &ref_128
-      - '#horizonsound'
-      - '#barroombrawl'
-      - '#vocalsrawmaleleadattitudedrivenphrasingemotionalgrit'
-      - '#productionbluesyguitarsdrivingdrumsbarroomtexturesmodernrockpolish'
-      - '#moodchaotictoconnectedrowdydefiantemotionallycharged'
-      - '#southern-rock'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/barroom-brawl-southern-rock-grit-horizon-sound/
     thumbnail: /assets/thumbnails/barroom-brawl-southern-rock-grit-horizon-sound.jpeg
     videostatus: public
@@ -9831,7 +9706,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_128
   - song_id: becoming-me-emotional-pop-upbeat-love-song-horizon-sound
     youtube_id: hIh_5AX4Gek
     title: Becoming Me (Emotional Pop / Upbeat Love Song) - Horizon Sound
@@ -9851,19 +9725,15 @@ songs:
     vibes:
       - '🎧 Vibe: emotional pop, romantic, bright, energetic'
       - '🎤 Vocals: expressive female lead with layered harmonies'
-    tags: &ref_129
-      - '#horizonsound'
-      - '#becomingme'
-      - '#vibeemotionalpopromanticbrightenergetic'
-      - '#vocalsexpressivefemaleleadwithlayeredharmonies'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/becoming-me-emotional-pop-upbeat-love-song-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/becoming-me-emotional-pop-upbeat-love-song-horizon-sound.jpeg
@@ -9914,7 +9784,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_129
   - song_id: rising-up-energetic-pop-rock-horizon-sound
     youtube_id: miFZlNNAriw
     title: Rising Up (Energetic Pop-Rock) - Horizon Sound
@@ -9935,19 +9804,15 @@ songs:
     vibes:
       - '🎧 Vibe: energetic pop‑rock, emotional, uplifting, anthemic'
       - '🎤 Vocals: soaring male + female leads, expressive harmonies'
-    tags: &ref_130
-      - '#horizonsound'
-      - '#risingup'
-      - '#vibeenergeticpoprockemotionalupliftinganthemic'
-      - '#vocalssoaringmalefemaleleadsexpressiveharmonies'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/rising-up-energetic-pop-rock-horizon-sound/
     thumbnail: /assets/thumbnails/rising-up-energetic-pop-rock-horizon-sound.jpeg
     videostatus: public
@@ -9998,7 +9863,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_130
   - song_id: hold-on-pop-nostalgic-90s-energy-horizon-sound
     youtube_id: RpuAQzywuWM
     title: Hold On (Pop / Nostalgic 90s energy) - Horizon Sound
@@ -10019,19 +9883,15 @@ songs:
     vibes:
       - '🎧 Vibe: upbeat pop, nostalgic 90s energy, motivational, bright'
       - '🎤 Vocals: warm, expressive, confident'
-    tags: &ref_131
-      - '#horizonsound'
-      - '#holdon'
-      - '#vibeupbeatpopnostalgic90senergymotivationalbright'
-      - '#vocalswarmexpressiveconfident'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/hold-on-pop-nostalgic-90s-energy-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-pop-nostalgic-90s-energy-horizon-sound.jpeg
     videostatus: private
@@ -10079,7 +9939,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_131
   - song_id: dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound
     youtube_id: g61655Q2_mw
     title: Don't Let the Summer End (Upbeat 1990s style Pop) - Horizon Sound
@@ -10099,19 +9958,15 @@ songs:
     vibes:
       - '🎧 Vibe: bright pop, summery, nostalgic, romantic'
       - '🎤 Vocals: emotional, warm, expressive'
-    tags: &ref_132
-      - '#horizonsound'
-      - '#dontletthesummerend'
-      - '#vibebrightpopsummerynostalgicromantic'
-      - '#vocalsemotionalwarmexpressive'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound.jpeg
@@ -10163,7 +10018,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_132
   - song_id: kaleidoscope-emotional-acoustic-pop-horizon-sound
     youtube_id: YpUFnf6Ke_A
     title: Kaleidoscope (Emotional Acoustic‑Pop) – Horizon Sound
@@ -10189,20 +10043,15 @@ songs:
         🎛️ Production: piano‑led, light acoustic guitar, gentle percussion,
         modern singer‑songwriter polish
       - '⚡ Mood: hopeful, introspective, poetic, quietly empowering'
-    tags: &ref_133
-      - '#horizonsound'
-      - '#kaleidoscope'
-      - '#vibeemotionalacousticpopwarmreflectiveuplifting'
-      - '#vocalsintimatefemaleleadexpressivephrasingsoftharmonies'
-      - >-
-        #productionpianoledlightacousticguitargentlepercussionmodernsingersongwriterpolish
-      - '#moodhopefulintrospectivepoeticquietlyempowering'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/kaleidoscope-emotional-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/kaleidoscope-emotional-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -10254,7 +10103,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_133
   - song_id: hold-on-revised-horizon-sound
     youtube_id: uFxPkq2B0D0
     title: Hold On (Revised) – Horizon Sound
@@ -10282,19 +10130,15 @@ songs:
         🎛️ Production: warm acoustics, rhythmic drums, smooth synths, light
         guitar textures
       - '⚡ Mood: hopeful, determined, empowering, forward‑moving'
-    tags: &ref_134
-      - '#horizonsound'
-      - '#holdon'
-      - '#vibeupbeat90spoprevivalacousticpopwarmthmotivationalenergy'
-      - '#vocalsbrightfemaleleadexpressivephrasingupliftingdelivery'
-      - '#productionwarmacousticsrhythmicdrumssmoothsynthslightguitartextures'
-      - '#moodhopefuldeterminedempoweringforwardmoving'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/hold-on-revised-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-revised-horizon-sound.jpeg
     videostatus: public
@@ -10345,7 +10189,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_134
   - song_id: keep-the-light-on-90s-pop-revival-horizon-sound
     youtube_id: f25XTQKjq7Q
     title: Keep the Light On (90s Pop Revival) – Horizon Sound
@@ -10370,19 +10213,15 @@ songs:
         🎛️ Production: acoustic layers, steady drums, shimmering synths, modern
         pop clarity
       - '⚡ Mood: hopeful, energetic, uplifting, resilient'
-    tags: &ref_135
-      - '#horizonsound'
-      - '#keepthelighton'
-      - '#vibe90spoprevivalupbeatmotivationalfeelgood'
-      - '#vocalsbrightfemaleleadwarmtoneexpressivephrasing'
-      - '#productionacousticlayerssteadydrumsshimmeringsynthsmodernpopclarity'
-      - '#moodhopefulenergeticupliftingresilient'
-      - '#pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/keep-the-light-on-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/keep-the-light-on-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -10433,7 +10272,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_135
   - song_id: total-eclipse-years-later-80s-piano-power-ballad-horizon-sound
     youtube_id: vlB58WPvjns
     title: Total Eclipse - Years Later (80s Piano Power Ballad) - Horizon Sound
@@ -10455,19 +10293,15 @@ songs:
     vibes:
       - '🎧 Vibe: 80s ballad, emotional, cinematic, empowering'
       - '🎤 Vocals: warm, expressive female rock vocal with controlled rasp'
-    tags: &ref_136
-      - '#horizonsound'
-      - '#totaleclipse-yearslater'
-      - '#vibe80sballademotionalcinematicempowering'
-      - '#vocalswarmexpressivefemalerockvocalwithcontrolledrasp'
-      - '#80s-rock-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound.jpeg
@@ -10518,7 +10352,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_136
   - song_id: >-
       until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound
     youtube_id: gDkCGYOpWU0
@@ -10539,18 +10372,15 @@ songs:
       standing together even when the sky turns red.</p>
     vibes:
       - 🎧 About the Song
-    tags: &ref_137
-      - '#horizonsound'
-      - '#untilthenightmareends'
-      - '#aboutthesong'
-      - '#80s-rock-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: >-
       /music/until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound/
     thumbnail: >-
@@ -10566,7 +10396,17 @@ songs:
       channel_title: Horizon Sound
       category_id: '22'
       tags:
-        - '#horizonsound #untilthenightmareends(epic80ssynthwave'
+        - '#80s-rock-pop'
+        - '#aboutthesong'
+        - '#horizonsound'
+        - '#indieartist'
+        - '#instrumentalmusic'
+        - '#musicvideo'
+        - '#newmusic'
+        - '#originalmusic'
+        - '#popmusic'
+        - '#songwriter'
+        - '#untilthenightmareends'
       duration: PT5M36S
       definition: hd
       dimension: null
@@ -10591,7 +10431,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_137
   - song_id: rise-like-thunder-80s-arena-rock-anthem-horizon-sound
     youtube_id: g_AZ5B9ssFQ
     title: Rise Like Thunder (80s Arena Rock Anthem) - Horizon Sound
@@ -10611,19 +10450,15 @@ songs:
     vibes:
       - '🎧 Vibe: 80s arena rock, energetic, triumphant'
       - '🎤 Vocals: powerful, raspy, harmony‑rich'
-    tags: &ref_138
-      - '#horizonsound'
-      - '#riselikethunder'
-      - '#vibe80sarenarockenergetictriumphant'
-      - '#vocalspowerfulraspyharmonyrich'
-      - '#80s-rock-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
-      - '#instrumentalmusic'
-      - '#songwriter'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/rise-like-thunder-80s-arena-rock-anthem-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/rise-like-thunder-80s-arena-rock-anthem-horizon-sound.jpeg
@@ -10675,7 +10510,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_138
   - song_id: never-let-each-other-down-80s-synth-rock-horizon-sound
     youtube_id: 2uKHo8dtINQ
     title: Never Let Each Other Down (80s Synth-Rock) - Horizon Sound
@@ -10701,20 +10535,15 @@ songs:
         🎛️ Production: pulsing synth bass, gated‑reverb drums, melodic electric
         fills, wide arena mix
       - '⚡ Mood: triumphant, passionate, determined, hopeful'
-    tags: &ref_139
-      - '#horizonsound'
-      - '#neverleteachotherdown'
-      - '#vibeuptempo80ssynthrockenergeticbolduplifting'
-      - '#vocalsconfidentfemaleleadcleandeliveryemotionalclarity'
-      - >-
-        #productionpulsingsynthbassgatedreverbdrumsmelodicelectricfillswidearenamix
-      - '#moodtriumphantpassionatedeterminedhopeful'
-      - '#80s-rock-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/never-let-each-other-down-80s-synth-rock-horizon-sound/
     thumbnail: >-
       /assets/thumbnails/never-let-each-other-down-80s-synth-rock-horizon-sound.jpeg
@@ -10767,7 +10596,6 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_139
   - song_id: rusty-80s-emotional-pop-ballad-horizon-sound
     youtube_id: Z8VipNxTybQ
     title: Rusty (80s Emotional Pop Ballad) – Horizon Sound
@@ -10794,20 +10622,15 @@ songs:
         🎛️ Production: shimmering synth pads, chorus‑washed guitars, steady
         pulse, cinematic reverb
       - '⚡ Mood: hopeful, tender, comforting, quietly triumphant'
-    tags: &ref_140
-      - '#horizonsound'
-      - '#rusty'
-      - '#vibeemotional80spopwarmnostalgicuplifting'
-      - '#vocalsheartfeltfemaleleadairyharmoniesexpressivedelivery'
-      - >-
-        #productionshimmeringsynthpadschoruswashedguitarssteadypulsecinematicreverb
-      - '#moodhopefultendercomfortingquietlytriumphant'
-      - '#80s-rock-pop'
-      - '#originalmusic'
-      - '#newmusic'
-      - '#musicvideo'
-      - '#indieartist'
-      - '#popmusic'
+    tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
     url: /music/rusty-80s-emotional-pop-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/rusty-80s-emotional-pop-ballad-horizon-sound.jpeg
     videostatus: public
@@ -10859,4 +10682,3 @@ songs:
       license: ''
       embeddable: true
       public_stats_viewable: true
-    hashtags: *ref_140
