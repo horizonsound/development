@@ -2,6 +2,10 @@ settings:
   coming_soon_window_days: 90
   horizon_window_days: 9999
   youtube_update:
-    mode: "single"   # single | multiple | playlist | all
+    mode: "multiple"   # single | multiple | playlist | all
     single:
       youtube_id: "r16qSkxEcI4"
+  multiple:
+    youtube_ids:
+      - r16qSkxEcI4
+      - XyZ123AbCdE
