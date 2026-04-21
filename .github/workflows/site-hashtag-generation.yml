@@ -1,5 +1,8 @@
 name: Site Hashtag Generation
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   push:
