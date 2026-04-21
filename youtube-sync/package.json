@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "generate-hashtags": "node youtube-sync/site-hashtag-generation.js"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +18,6 @@
     "axios": "^1.6.0"
   },
   "devDependencies": {}
-  "scripts": {
-    "generate-hashtags": "node youtube-sync/site-hashtag-generation.js"
-  }
 }
 
 
