@@ -62,7 +62,7 @@ const yamlStr = yaml.dump(
   }
 );
 
-fs.writeFileSync("./_data/youtube_feed.yml", yamlStr, "utf8");
+fs.writeFileSync("../_data/youtube_feed.yml", yamlStr, "utf8");
 
 console.log("✓ Tag generation complete.");
 console.log("✓ YAML updated.");
