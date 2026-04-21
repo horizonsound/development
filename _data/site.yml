@@ -1,6 +1,16 @@
 settings:
   coming_soon_window_days: 90
   horizon_window_days: 9999
+  seo:
+    base_tags:
+      - horizonsound
+      - originalmusic
+      - newmusic
+      - musicvideo
+      - indieartist
+      - popmusic
+      - instrumentalmusic
+      - songwriter
   youtube_update:
     mode: "multiple"   # single | multiple | playlist | all
     single:
