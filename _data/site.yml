@@ -5,7 +5,7 @@ settings:
     mode: "multiple"   # single | multiple | playlist | all
     single:
       youtube_id: "r16qSkxEcI4"
-  multiple:
-    youtube_ids:
-      - r16qSkxEcI4
-      - oMSIQ5Gv2ZI
+    multiple:
+      youtube_ids:
+        - r16qSkxEcI4
+        - oMSIQ5Gv2ZI
