@@ -53,9 +53,18 @@ async function main() {
 
   const updated = songs.map(song => {
     const hashtags = buildHashtags(song);
-    return { ...song, hashtags };
+  
+    console.log(`\n=== ${song.title} ===`);
+    console.log(`Existing tags:`, song.tags);
+    console.log(`Generated hashtags:`, hashtags);
+  
+    return { 
+      ...song, 
+      hashtags,
+      tags: hashtags   // optional — only if you want to overwrite tags too
+    };
   });
-
+  
   console.log("Writing updated hashtags back to YAML...");
   writeSongsYaml(updated);
 
