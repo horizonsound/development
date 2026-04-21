@@ -40,13 +40,13 @@ async function main() {
     console.log(`Checking: ${song.title} (${song.youtube_id})`);
 
     // Fetch current YouTube metadata (cheap call)
-    // const current = await fetchYoutubeMetadata(song.youtube_id);
-    const current = { tags: [] }; // TEMP STUB
+    const current = await fetchYoutubeMetadata(song.youtube_id);
+    //const current = { tags: [] }; // TEMP STUB
 
-    //if (!current) {
-    //  console.log(`  ERROR: Could not fetch metadata for ${song.youtube_id}`);
-    //  continue;
-    //}
+    if (!current) {
+      console.log(`  ERROR: Could not fetch metadata for ${song.youtube_id}`);
+      continue;
+    }
 
     const intended = {
       tags: song.hashtags
