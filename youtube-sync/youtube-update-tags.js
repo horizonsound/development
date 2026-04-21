@@ -37,6 +37,23 @@ export async function updateYoutubeTags(videoId, tags) {
 
     const snippet = existing.data.items[0].snippet;
 
+    //
+    // STEP 2 — FORCE CLEAR TAGS
+    //
+    console.log("    → Clearing existing YouTube tags...");
+    await youtube.videos.update({
+      part: "snippet",
+      requestBody: {
+        id: videoId,
+        snippet: {
+          ...snippet,
+          tags: []   // ← THIS CLEARS ALL TAGS
+        }
+      }
+    });
+
+    console.log("      ✓ Tags cleared");
+
     // Apply new tags
     snippet.tags = tags;
 
