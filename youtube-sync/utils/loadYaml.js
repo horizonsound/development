@@ -1,13 +1,8 @@
 import fs from "fs";
 import yaml from "js-yaml";
 
-const mode = process.env.MODE || "prod";
-
 // Choose YAML file based on mode
-const FEED_PATH =
-  mode === "dev"
-    ? "../_data/youtube_feed_dev.yml"
-    : "../_data/youtube_feed.yml";
+const FEED_PATH = "../_data/youtube_feed.yml";
 
 export function loadSongsYaml() {
   console.log(`Reading YAML from ${FEED_PATH}`);
