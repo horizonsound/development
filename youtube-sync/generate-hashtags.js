@@ -40,10 +40,16 @@ export function generateHashtags(songs) {
 
 // --- HASHTAG BUILDER ------------------------------------------------------
 function buildHashtags(song) {
-  // Base tags
+  // Clean title tag (no descriptors, no commas)
+  const cleanTitle = sanitizeTag(
+    song.title
+      .split("(")[0]        // remove anything after "("
+      .replace(/\s+/g, "")  // remove spaces
+  );
+
   const base = [
     "#horizonsound",
-    "#" + sanitizeTag(song.title.replace(/\s+/g, ""))
+    "#" + cleanTitle
   ];
 
   // Vibe tags
@@ -54,9 +60,10 @@ function buildHashtags(song) {
   const playlistTags = (song.playlists || [])
     .map(pl => "#" + sanitizeTag(pl));
 
-  // Existing tags from YAML
+  // Existing tags from YAML (but sanitized)
   const existingTags = (song.tags || [])
-    .map(t => "#" + sanitizeTag(t));
+    .map(t => "#" + sanitizeTag(t))
+    .filter(t => t !== "#aboutthesong"); // remove useless tag
 
   // Merge + dedupe + limit
   const all = [...base, ...vibeTags, ...playlistTags, ...existingTags];
