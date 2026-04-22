@@ -5,6 +5,16 @@ permissions:
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Tag generation mode"
+        required: true
+        type: choice
+        options:
+          - only-empty
+          - full-regen
+        default: only-empty
+
   push:
     paths:
       - "_data/youtube_feed.yml"
@@ -29,7 +39,14 @@ jobs:
         working-directory: youtube-sync
 
       - name: Generate hashtags
-        run: npm run generate-hashtags
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "full-regen" ]; then
+            echo "Running in FULL REGEN mode"
+            node site-hashtag-generation.js --all
+          else
+            echo "Running in ONLY EMPTY TAGS mode"
+            node site-hashtag-generation.js
+          fi
         working-directory: youtube-sync
 
       - name: Commit and push changes
