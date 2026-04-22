@@ -65,9 +65,12 @@ function normalizeVideo(video) {
   const ym = video.youtube_metadata || {};
 
   return {
+    // ⭐ These three stay at the top in YAML
     youtube_id: video.id,
-    slug: video.slug || null,
     title: video.title || "",
+    slug: video.slug || null,
+
+    // ⭐ Everything below will be alphabetized by YAML
     description: ym.description || "",
     tags: ym.tags || [],
     playlists: video.playlists || [],
