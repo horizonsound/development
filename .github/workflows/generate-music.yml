@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add music.yml || true
+          git add _data/music.yml || true
           git commit -m "Generated music.yml" || echo "No changes to commit"
           git push || echo "No changes to push"
+
