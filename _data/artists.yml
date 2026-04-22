@@ -4,6 +4,7 @@ artists:
       full: Ascension Youth Choir
       first:
       last:
+      initials: ayc
     tagline: Voices rising with purpose, unity, and heart
     primary_color: "#2A4C8F"
     secondary_color: "#E8EAF3"
@@ -45,6 +46,7 @@ artists:
       full: Cody Sails
       first: Cody
       last: Sails
+      initials: cs
     tagline: Sun‑soaked coastal storyteller with a barefoot spirit
     primary_color: "#F6B35A"
     secondary_color: "#1C6E8C"
@@ -96,6 +98,7 @@ artists:
       full: Ellie Hale
       first: Ellie
       last: Hale
+      initials: eh
     tagline: Dream‑lit indie pop with a soft, shimmering edge
     primary_color: "#D8A7FF"
     secondary_color: "#4A3C8C"
@@ -150,6 +153,7 @@ artists:
       full: Lydia Ellington
       first: Lydia
       last: Ellington
+      initials: le
     tagline: Cinematic pop with a glowing, emotional core
     primary_color: "#F4B5D8"
     secondary_color: "#5C3B8C"
@@ -199,6 +203,7 @@ artists:
       full: Lucas Allen
       first: Lucas
       last: Allen
+      initials: la
     tagline: Modern country heart with a storyteller’s edge
     primary_color: "#C48A4A"
     secondary_color: "#3A2A1A"
@@ -247,6 +252,7 @@ artists:
       full: Ravyn
       first: Ravyn
       last:
+      initials: r
     tagline: A wild heart with a taste for the edge
     primary_color: "#F6B35A"
     secondary_color: "#1C6E8C"
