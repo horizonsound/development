@@ -1,12 +1,11 @@
-import { loadSongsYaml /* writeSongsYaml */ } from "./utils/loadYaml.js";
+import { loadSongsYaml } from "./utils/loadYaml.js";
 import { loadSiteYaml } from "./utils/loadSiteYaml.js";
-import { generateHashtags } from "./generate-hashtags.js";
 import { updateYoutubeTags, fetchYoutubeMetadata } from "./youtube-update-tags.js";
 
-const DRY_RUN = false; // Safety lock — no real updates until you flip this
+const DRY_RUN = false; // Flip to true for safety testing
 
 async function main() {
-  console.log("=== Horizon Sound Metadata Pipeline ===\n");
+  console.log("=== Horizon Sound YouTube Metadata Sync ===\n");
 
   // -----------------------------
   // Load YAML (READ-ONLY)
@@ -14,17 +13,8 @@ async function main() {
   const siteConfig = loadSiteYaml().settings.youtube_update;
 
   console.log("Loading songs from YAML...");
-  let songs = loadSongsYaml();
+  const songs = loadSongsYaml();
   console.log(`Loaded ${songs.length} songs\n`);
-
-  console.log("Generating hashtags...");
-  songs = generateHashtags(songs);
-  console.log("Hashtag generation complete.\n");
-
-  // ❌ WRITE DISABLED — catalog is read-only
-  // console.log("Writing updated YAML...");
-  // writeSongsYaml(songs);
-  // console.log("YAML write complete.\n");
 
   // -----------------------------
   // Select target songs
@@ -40,7 +30,7 @@ async function main() {
   for (const song of targetSongs) {
     console.log(`\n=== ${song.title} (${song.youtube_id}) ===`);
 
-    // Fetch current YouTube metadata (cheap call)
+    // Fetch current YouTube metadata
     const current = await fetchYoutubeMetadata(song.youtube_id);
 
     if (!current) {
@@ -48,9 +38,9 @@ async function main() {
       continue;
     }
 
-    const intended = { tags: song.hashtags };
+    // YAML → intended tags
+    const intended = { tags: song.tags || [] };
 
-    // Essential logging only
     console.log(`  YouTube tags:   ${current.tags.join(", ") || "(none)"}`);
     console.log(`  Intended tags:  ${intended.tags.join(", ")}`);
 
@@ -74,7 +64,7 @@ async function main() {
     console.log("  ✓ YouTube update successful");
   }
 
-  console.log("\n=== Pipeline Complete ===");
+  console.log("\n=== Sync Complete ===");
 }
 
 // --------------------------------------------------
