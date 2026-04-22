@@ -52,7 +52,7 @@ function writeYaml(filepath, data) {
   const yamlStr = yaml.dump(data, {
     lineWidth: -1,
     noRefs: true,
-    sortKeys: true
+    sortKeys: false
   });
   fs.writeFileSync(filepath, yamlStr, "utf8");
 }
