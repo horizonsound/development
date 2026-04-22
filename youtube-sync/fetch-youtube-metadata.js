@@ -181,6 +181,7 @@ export async function fetchAllVideos() {
           tags: snippet.tags || [],
           duration: content.duration || "",
           definition: content.definition || "",
+          dimension: content.dimension || null,
           region_allowed: content.regionRestriction?.allowed || [],
           region_blocked: content.regionRestriction?.blocked || [],
           content_rating: content.contentRating?.ytRating || "",
