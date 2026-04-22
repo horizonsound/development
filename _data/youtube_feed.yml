@@ -4705,6 +4705,7 @@ songs:
       - '🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
       - '⚡ Mood: humorous, dusty‑trail, tall‑tale, cinematic'
     tags:
+      - 1950swesternswing
       - acousticguitar
       - brusheddrums
       - cinematic
@@ -4721,6 +4722,7 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - sheriffforanight50swesterntalltalehorizonsound
       - smoothmalebaritone
       - songwriter
       - storytellingdelivery
@@ -4792,7 +4794,9 @@ songs:
       - '🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
       - '⚡ Mood: romantic, dusty‑trail, heartfelt, cinematic'
     tags:
+      - 1950swesternballad
       - acousticguitar
+      - backtoamarillo50scountrywesternromancehorizonsound
       - brusheddrums
       - cinematic
       - classiccountry
@@ -5699,12 +5703,14 @@ songs:
       - '🎧 Full track: https://youtu.be/g_AZ5B9ssFQ'
     tags:
       - horizonsound
+      - httpsyoutubegaz5b9ssfq
       - indieartist
       - instrumentalmusic
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - riselikethunder80srockanthemshorthorizonsound
       - shorts
       - songwriter
     url: /music/rise-like-thunder-80s-rock-anthem-short-horizon-sound/
@@ -5766,6 +5772,7 @@ songs:
       - '🎧 Full track: https://youtu.be/r16qSkxEcI4'
     tags:
       - horizonsound
+      - httpsyoutuber16qskxeci4
       - indieartist
       - instrumentalmusic
       - musicvideo
@@ -5836,6 +5843,7 @@ songs:
     tags:
       - anticipatory
       - atmospheric
+      - beforemidnightthemidnightsagachapter1horizonsound
       - cinematicpop
       - curious
       - electric
@@ -5931,6 +5939,7 @@ songs:
       - indieartist
       - instrumentalmusic
       - latenightadrenaline
+      - midnightmayhemthemidnightsagachapter2horizonsound
       - midnightsaga
       - musicvideo
       - neonchaos
@@ -6017,6 +6026,7 @@ songs:
       - immersivetextures
       - indieartist
       - instrumentalmusic
+      - midnightmadnessthemidnightsagachapter3horizonsound
       - midnightsaga
       - musicvideo
       - neonswirl
@@ -6089,6 +6099,7 @@ songs:
       - '🎛️ Production: warm pads, soft synths, steady drums'
       - '⚡ Mood: peaceful, introspective, resolved, sunrise‑ready'
     tags:
+      - aftermidnightthemidnightsagachapter4horizonsound
       - cinematicpop
       - heartfeltfemalelead
       - horizonsound
@@ -6174,6 +6185,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, subtle drums, atmospheric reverb'
       - '⚡ Mood: heartbreak‑after‑the‑storm, heavy, introspective, quietly devastating'
     tags:
+      - 1thequietafterperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - atmosphericreverb
       - cinematic
@@ -6262,6 +6274,7 @@ songs:
       - '🎛️ Production: warm piano, soft strings, light drums, cinematic glow'
       - '⚡ Mood: reflective, aching, quietly hopeful'
     tags:
+      - 2borrowedtimeperformedbylydiaellingtonafterthesilencehorizonsound
       - aching
       - afterthesilenceperformedbylydiaellington
       - bittersweet
@@ -6347,6 +6360,7 @@ songs:
       - '🎛️ Production: gentle piano, warm pads, subtle strings, airy reverb'
       - '⚡ Mood: longing, introspective, quietly emotional'
     tags:
+      - 3homesickforyouperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airyreverb
       - emotionaltone
@@ -6431,6 +6445,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, light drums, atmospheric reverb'
       - '⚡ Mood: aching, reflective, quietly devastating'
     tags:
+      - 4thewayweliedperformedbylydiaellingtonafterthesilencehorizonsound
       - aching
       - afterthesilenceperformedbylydiaellington
       - atmosphericreverb
@@ -6515,6 +6530,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, airy pads, light drums'
       - '⚡ Mood: fragile‑to‑soaring, honest, cathartic'
     tags:
+      - 5paperwallsperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - cathartic
@@ -6599,6 +6615,7 @@ songs:
       - '🎛️ Production: piano, warm strings, steady drums, cinematic rise'
       - '⚡ Mood: empowering, self‑reclaiming, triumphant'
     tags:
+      - 6halfofmeperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - bold
       - cinematicrise
@@ -6684,6 +6701,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, subtle drums, atmospheric reverb'
       - '⚡ Mood: regretful, tender, heartbreaking'
     tags:
+      - 7ifyoudaskedperformedbylydiaellingtonafterthesilencehorizonsound
       - achingtone
       - afterthesilenceperformedbylydiaellington
       - atmosphericreverb
@@ -6768,6 +6786,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, subtle percussion, atmospheric reverb'
       - '⚡ Mood: nostalgic, theatrical, bittersweet'
     tags:
+      - 8ghostlightperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - atmosphericreverb
       - bittersweet
@@ -6853,6 +6872,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, airy pads, gentle drums'
       - '⚡ Mood: healing, uplifting, quietly powerful'
     tags:
+      - 9afterthesilenceperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - calm
@@ -6936,6 +6956,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, airy pads, gentle drums'
       - '⚡ Mood: cathartic, cleansing, tender'
     tags:
+      - 10saltwaterperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - cathartic
@@ -7019,6 +7040,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, light drums, airy pads'
       - '⚡ Mood: reflective, tender, bittersweet'
     tags:
+      - 11thedressineverworeperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - bittersweet
@@ -7103,6 +7125,7 @@ songs:
       - '🎛️ Production: soft piano, warm strings, airy pads, subtle drums'
       - '⚡ Mood: tender, reflective, quietly cathartic'
     tags:
+      - 12unsentlettersperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - confessional
@@ -7186,6 +7209,7 @@ songs:
       - '🎛️ Production: piano, strings, steady drums, airy pads, cinematic build'
       - '⚡ Mood: empowering, victorious, resilient, transformative'
     tags:
+      - 13riseagainperformedbylydiaellingtonafterthesilencehorizonsound
       - afterthesilenceperformedbylydiaellington
       - airypads
       - cinematicbuild
@@ -8534,6 +8558,7 @@ songs:
       - '🎛️ Production: acoustic guitars, fiddle, pedal steel, brushed drums, clean electric fills, simple bass groove'
       - '⚡ Mood: comforting, reflective, grounded, quietly uplifting'
     tags:
+      - 90scountry
       - acousticguitars
       - brusheddrums
       - cleanelectricfills
@@ -8558,6 +8583,7 @@ songs:
       - smalltown
       - songwriter
       - steadyandsincere
+      - themanbehindthebar90scountryhorizonsound
       - warm
     url: /music/the-man-behind-the-bar-90s-country-horizon-sound/
     thumbnail: /assets/thumbnails/the-man-behind-the-bar-90s-country-horizon-sound.jpeg
@@ -9041,6 +9067,8 @@ songs:
       - '🎛️ Production: bright synths, tight drums, rhythmic build, modern pop polish'
       - '⚡ Mood: sad‑to‑strong, cathartic, bold, self‑reclaiming'
     tags:
+      - 90spoppoprock
+      - 90spoprevival
       - bold
       - brightsynths
       - cathartic
@@ -9054,6 +9082,7 @@ songs:
       - instrumentalmusic
       - modernpoppolish
       - musicvideo
+      - newagain90spoprevivalhorizonsound
       - newmusic
       - originalmusic
       - popmusic
@@ -9124,6 +9153,8 @@ songs:
       - '🎛️ Production: soaring guitars, punchy drums, crowd‑chant bridge, raw but polished mix'
       - '⚡ Mood: triumphant, resilient, heartfelt, uplifting'
     tags:
+      - 90spoppoprock
+      - anthemic90srock
       - communal
       - controlledfemalegrit
       - crowdchantbridge
@@ -9131,6 +9162,7 @@ songs:
       - gangvocals
       - gritty
       - heartfelt
+      - herestous90srockanthemhorizonsound
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9285,6 +9317,7 @@ songs:
       - '🎛️ Production: bluesy electric guitars, shuffle drums, swaggering bass, harmonized leads'
       - '⚡ Mood: urgent, humorous, cinematic, chaotic‑night‑gone‑wrong'
     tags:
+      - 70ssouthernrock
       - bluesyelectricguitars
       - chaoticnightgonewrong
       - cinematic
@@ -9607,12 +9640,14 @@ songs:
       - bright
       - confident
       - expressive
+      - holdonpopnostalgic90senergyhorizonsound
       - horizonsound
       - indieartist
       - instrumentalmusic
       - motivational
       - musicvideo
       - newmusic
+      - nostalgic90senergy
       - originalmusic
       - pop
       - popmusic
@@ -9677,6 +9712,7 @@ songs:
       - '🎤 Vocals: emotional, warm, expressive'
     tags:
       - brightpop
+      - dontletthesummerendupbeat1990sstylepophorizonsound
       - emotional
       - expressive
       - horizonsound
@@ -9862,6 +9898,7 @@ songs:
       - rhythmicdrums
       - smoothsynths
       - songwriter
+      - upbeat90spoprevival
       - upliftingdelivery
       - warmacoustics
     url: /music/hold-on-revised-horizon-sound/
@@ -9926,6 +9963,7 @@ songs:
       - '🎛️ Production: acoustic layers, steady drums, shimmering synths, modern pop clarity'
       - '⚡ Mood: hopeful, energetic, uplifting, resilient'
     tags:
+      - 90spoprevival
       - acousticlayers
       - brightfemalelead
       - energetic
@@ -9935,6 +9973,7 @@ songs:
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - keepthelighton90spoprevivalhorizonsound
       - modernpopclarity
       - motivational
       - musicvideo
@@ -10009,6 +10048,8 @@ songs:
       - '🎧 Vibe: 80s ballad, emotional, cinematic, empowering'
       - '🎤 Vocals: warm, expressive female rock vocal with controlled rasp'
     tags:
+      - 80sballad
+      - 80srockpop
       - cinematic
       - emotional
       - empowering
@@ -10021,6 +10062,7 @@ songs:
       - originalmusic
       - popmusic
       - songwriter
+      - totaleclipseyearslater80spianopowerballadhorizonsound
       - warm
     url: /music/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound/
     thumbnail: /assets/thumbnails/total-eclipse-years-later-80s-piano-power-ballad-horizon-sound.jpeg
@@ -10080,6 +10122,7 @@ songs:
     vibes:
       - 🎧 About the Song
     tags:
+      - 80srockpop
       - aboutthesong
       - horizonsound
       - indieartist
@@ -10089,6 +10132,7 @@ songs:
       - originalmusic
       - popmusic
       - songwriter
+      - untilthenightmareendsepic80ssynthwavestrangerthingsinspiredhorizonsound
     url: /music/until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound/
     thumbnail: /assets/thumbnails/until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound.jpeg
     videostatus: public
@@ -10147,6 +10191,8 @@ songs:
       - '🎧 Vibe: 80s arena rock, energetic, triumphant'
       - '🎤 Vocals: powerful, raspy, harmony‑rich'
     tags:
+      - 80sarenarock
+      - 80srockpop
       - energetic
       - harmonyrich
       - horizonsound
@@ -10158,6 +10204,7 @@ songs:
       - popmusic
       - powerful
       - raspy
+      - riselikethunder80sarenarockanthemhorizonsound
       - songwriter
       - triumphant
     url: /music/rise-like-thunder-80s-arena-rock-anthem-horizon-sound/
@@ -10222,6 +10269,7 @@ songs:
       - '🎛️ Production: pulsing synth bass, gated‑reverb drums, melodic electric fills, wide arena mix'
       - '⚡ Mood: triumphant, passionate, determined, hopeful'
     tags:
+      - 80srockpop
       - bold
       - cleandelivery
       - confidentfemalelead
@@ -10235,6 +10283,7 @@ songs:
       - instrumentalmusic
       - melodicelectricfills
       - musicvideo
+      - neverleteachotherdown80ssynthrockhorizonsound
       - newmusic
       - originalmusic
       - passionate
@@ -10243,6 +10292,7 @@ songs:
       - songwriter
       - triumphant
       - uplifting
+      - uptempo80ssynthrock
       - widearenamix
     url: /music/never-let-each-other-down-80s-synth-rock-horizon-sound/
     thumbnail: /assets/thumbnails/never-let-each-other-down-80s-synth-rock-horizon-sound.jpeg
@@ -10306,10 +10356,12 @@ songs:
       - '🎛️ Production: shimmering synth pads, chorus‑washed guitars, steady pulse, cinematic reverb'
       - '⚡ Mood: hopeful, tender, comforting, quietly triumphant'
     tags:
+      - 80srockpop
       - airyharmonies
       - choruswashedguitars
       - cinematicreverb
       - comforting
+      - emotional80spop
       - expressivedelivery
       - heartfeltfemalelead
       - hopeful
@@ -10322,6 +10374,7 @@ songs:
       - originalmusic
       - popmusic
       - quietlytriumphant
+      - rusty80semotionalpopballadhorizonsound
       - shimmeringsynthpads
       - songwriter
       - steadypulse
