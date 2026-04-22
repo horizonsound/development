@@ -2,7 +2,10 @@ import fs from "fs";
 import yaml from "js-yaml";
 import { loadSongsYaml, loadSiteYaml } from "./utils/loadYaml.js";
 
-console.log("=== Horizon Sound: SEO Tag Generation (B2 Smart Extraction) ===");
+console.log("=== Horizon Sound: SEO Tag Generation (Phase 1 Structured Extraction) ===");
+
+// CLI flag: --all = regenerate tags for ALL songs
+const PROCESS_ALL = process.argv.includes("--all");
 
 // Load YAML
 const songs = loadSongsYaml();
@@ -10,13 +13,11 @@ const siteConfig = loadSiteYaml();
 const BASE_TAGS = siteConfig.settings.seo.base_tags || [];
 
 console.log("Base tags loaded:", BASE_TAGS);
+console.log(PROCESS_ALL ? "Mode: FULL REGEN" : "Mode: ONLY EMPTY TAGS");
 
 // ---------------------------------------------
-// TAG GENERATOR — DROP-IN REPLACEMENT
-// Phase 1: Structured fields only (vibes, title, playlists)
+// STOPWORDS (exact-match only)
 // ---------------------------------------------
-
-// Use BASE_TAGS from site.yml (already loaded above)
 const STOPWORDS = new Set([
   "the","and","for","with","from","this","that","into","your","you",
   "looking","breaking","saving","staring","blending","corralling",
@@ -24,6 +25,9 @@ const STOPWORDS = new Set([
   "makes","made","like","even","though","just","more","less"
 ]);
 
+// ---------------------------------------------
+// Extractors
+// ---------------------------------------------
 function extractFromVibes(vibesArray) {
   if (!Array.isArray(vibesArray)) return [];
 
@@ -35,7 +39,7 @@ function extractFromVibes(vibesArray) {
     .map(s => s.replace(/\s+/g, ""))          // merge multi-word descriptors
     .map(s => s.replace(/-/g, ""))            // remove hyphens
     .filter(s => s.length > 2)
-    .filter(s => !["vibe","vocals","production","mood"].includes(s)) // remove labels
+    .filter(s => !["vibe","vocals","production","mood"].includes(s))
     .filter(s => !STOPWORDS.has(s));          // exact match only
 }
 
@@ -61,10 +65,13 @@ function extractFromPlaylists(playlists) {
     .filter(w => w.length > 2);
 }
 
+// ---------------------------------------------
+// Clean + Build Tags
+// ---------------------------------------------
 function clean(words) {
   return [...new Set(words)] // dedupe
     .filter(w => !STOPWORDS.has(w))
-    .filter(w => /^[a-z]+$/.test(w)); // letters only
+    .filter(w => /^[a-z0-9]+$/.test(w)); // letters/numbers only
 }
 
 function buildTags(song) {
@@ -76,20 +83,26 @@ function buildTags(song) {
     ...vibeWords,
     ...titleWords,
     ...playlistWords,
-    ...BASE_TAGS.map(t => t.toLowerCase())  // <-- use site.yml base tags
+    ...BASE_TAGS.map(t => t.toLowerCase())
   ];
 
-  const cleaned = clean(combined);
-
-  return cleaned.sort();
+  return clean(combined).sort();
 }
 
 // ---------------------------------------------
-// Process songs
+// Process Songs
 // ---------------------------------------------
 console.log("Generating SEO tags...");
 
 const updatedSongs = songs.map(song => {
+  const shouldProcess =
+    PROCESS_ALL || !song.tags || song.tags.length === 0;
+
+  if (!shouldProcess) {
+    console.log(`Skipping (tags exist): ${song.title}`);
+    return song;
+  }
+
   const tags = buildTags(song);
 
   console.log(`\n=== ${song.title} ===`);
