@@ -17,9 +17,9 @@ function writeYAML(path, data) {
 // 1. Load source YAML files
 // ---------------------------------------------------------
 
-const youtubeFeed = loadYAML("./youtube_feed.yml");
-const musicOverrides = loadYAML("./music_overrides.yml");
-const artistMap = loadYAML("./artist_to_track_mapping.yml");
+const youtubeFeed = loadYAML("../_data/youtube_feed.yml");
+const musicOverrides = loadYAML("../_data/music_overrides.yml");
+const artistMap = loadYAML("../_data/artist_to_track_mapping.yml");
 
 // Build lookup tables
 const artistLookup = {};
