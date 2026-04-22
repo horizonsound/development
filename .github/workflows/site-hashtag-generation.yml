@@ -15,12 +15,6 @@ on:
           - full-regen
         default: only-empty
 
-  push:
-    paths:
-      - "_data/youtube_feed.yml"
-      - "youtube-sync/site-hashtag-generation.js"
-      - "youtube-sync/utils/**"
-
 jobs:
   generate:
     runs-on: ubuntu-latest
