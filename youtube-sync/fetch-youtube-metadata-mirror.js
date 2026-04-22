@@ -102,8 +102,8 @@ function normalizeVideo(video) {
     self_declared_made_for_kids: ym.self_declared_made_for_kids || false,
     topic_categories: ym.topic_categories || [],
 
-    privacy_status: ym.privacyStatus || null,
-    upload_status: ym.uploadStatus || null,
+    privacy_status: ym.privacy_status || null,
+    upload_status: ym.upload_status || null,
     publish_at: video.publishAt || null,
     license: ym.license || "",
     embeddable: ym.embeddable ?? true,
