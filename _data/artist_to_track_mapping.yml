@@ -1,0 +1,707 @@
+tracks:
+  - slug: kaleidoscope-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: all-around-the-world-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: rusty-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: rising-up-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: hold-on-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: keep-the-light-on-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: better-than-before-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: the-things-that-stayed-with-me-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: total-eclipse-years-later-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: wind-in-your-sails-ascension-youth-choir-official-video-horizon-sound
+    initials: ayc
+    artist_slug: art_ayc
+    artist_name: Ascension Youth Choir
+
+  - slug: across-the-emerald-coast
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: fire-in-the-fiddle
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-chase-through-galway
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-path-to-dunmore-head
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: journey-to-skellig-bay
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: fiddlers-at-dawn
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: rum-soaked-paradise-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: salt-on-the-rim-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: barefoot-and-buzzed-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: island-girl-trouble-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: leilani-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: high-tide-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: sunburned-and-smiling-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: wind-in-your-sails-cody-sails-horizon-sound
+    initials: cs
+    artist_slug: art_codysails
+    artist_name: Cody Sails
+
+  - slug: color-the-sky
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: better-days-ahead
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: golden-hour-groove
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: soft-light
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: open-heart-city
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: brightest-part-of-you
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: retrodrive
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: nightfall-circuit
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: dreamwave-avenue
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: memory-loop
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: midnight-ascension
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: neon-vanguard
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: winterfire
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-frozen-overture
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-rising-storm
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: fire-in-the-choir
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: glacierstorm
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-winter-requiem
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: holding-the-light
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-quiet-between-us
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: still-waters
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: breathing-slow
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: a-place-to-rest
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: falling-toward-the-light
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: electric-pulse
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: break-the-gravity
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: shine-through
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: light-up-the-runway
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: midnight-velocity
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: neon-runner
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: neon-skyline
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: running-through-the-night
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: fire-in-the-wires
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: chasing-the-sparks
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: waves-of-blue
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: after-the-static
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: sunlight-on-the-strings
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: wanderers-heart
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: running-toward-the-sun
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-way-home
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: letters-in-the-wind
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: chasing-the-daylight
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: moments-between-moments
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: where-the-air-glows
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: echoes-of-tomorrow
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-space-we-keep
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: breathing-in-color
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: quiet-horizons
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: sheriff-for-a-night-50s-western-tall-tale-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: back-to-amarillo-50s-country-western-romance-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: bottle-on-the-table-country-western-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: a-touch-of-light-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: forever-in-a-moment-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: held-in-the-moment-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: lines-of-light-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-moment-you-breathe-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-way-water-moves-cinematic-instrumental-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: someday-acoustic-pop-storytelling-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: missing-stamp-emotional-acoustic-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: rise-like-thunder-80s-rock-anthem-short-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: nineteen-summers-emotional-acoustic-pop-short-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: before-midnight-the-midnight-saga-chapter-1-horizon-sound
+    initials: r
+    artist_slug: art_ravyn
+    artist_name: Ravyn
+
+  - slug: midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
+    initials: r
+    artist_slug: art_ravyn
+    artist_name: Ravyn
+
+  - slug: midnight-madness-the-midnight-saga-chapter-3-horizon-sound
+    initials: r
+    artist_slug: art_ravyn
+    artist_name: Ravyn
+
+  - slug: after-midnight-the-midnight-saga-chapter-4-horizon-sound
+    initials: r
+    artist_slug: art_ravyn
+    artist_name: Ravyn
+
+  - slug: 1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: 13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    initials: le
+    artist_slug: art_lydiaellington
+    artist_name: Lydia Ellington
+
+  - slug: lost-in-silence-from-a-way-back-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: choosing-me-her-version-acoustic-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: choosing-me-his-version-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: all-around-the-world-acoustic-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: not-so-smart-home-folk-country-comedy-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: fixed-it-mostly-right-country-comedy-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: makin-our-way-to-california-pop-folk-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: nineteen-summers-emotional-ballad-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: im-holding-on-emotional-piano-ballad-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: oh-amber-emotional-pop-storytelling-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: learning-to-live-again-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: a-quiet-little-voice-emotional-pop-empowering-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: nineteen-summers-emotional-acoustic-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: wildfire-modern-country-power-anthem-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: vegas-in-the-sky-country-pop-party-anthem-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: the-man-behind-the-bar-90s-country-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: time-capsule-emotional-country-nostalgic-storytelling-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: already-out-the-door-modern-country-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: she-s-so-into-me-modern-country-love-song-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: put-you-down-electro-pop-dance-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: midnight-mayhem-electro-pop-horizon-sound
+    initials: r
+    artist_slug: art_ravyn
+    artist_name: Ravyn
+
+  - slug: new-again-90s-pop-revival-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: heres-to-us-90s-rock-anthem-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: one-hell-of-a-ride-gritty-southern-rock-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: gimme-three-steps-and-im-gone-southern-rock-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: barroom-brawl-southern-rock-grit-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: becoming-me-emotional-pop-upbeat-love-song-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: rising-up-energetic-pop-rock-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: hold-on-pop-nostalgic-90s-energy-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: dont-let-the-summer-end-upbeat-1990s-style-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: kaleidoscope-emotional-acoustic-pop-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: hold-on-revised-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: keep-the-light-on-90s-pop-revival-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: total-eclipse-years-later-80s-piano-power-ballad-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: until-the-nightmare-ends-epic-80s-synthwave-stranger-things-inspired-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: rise-like-thunder-80s-arena-rock-anthem-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: never-let-each-other-down-80s-synth-rock-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+  - slug: rusty-80s-emotional-pop-ballad-horizon-sound
+    initials: hs
+    artist_slug: art_horizonsound
+    artist_name: Horizon Sound
+
+
