@@ -28,6 +28,7 @@ function extractFromVibes(vibesArray) {
   if (!Array.isArray(vibesArray)) return [];
 
   return vibesArray
+    .map(v => v.replace(/^[^:]+:/, ""))       // remove "Vibe:", "Vocals:", etc.
     .flatMap(v => v.split(/[,:]/))            // split on commas/colons
     .map(s => s.replace(/^[^a-zA-Z]+/, ""))   // strip emojis/symbols
     .map(s => s.trim().toLowerCase())
