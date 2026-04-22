@@ -34,7 +34,7 @@ import {
    CONSTANTS & PATHS
 ------------------------------------------------------------- */
 
-const DATA_DIR = "./_data";
+const DATA_DIR = "../_data";
 const METADATA_PATH = path.join(DATA_DIR, "youtube_metadata.yml");
 
 /* -------------------------------------------------------------
