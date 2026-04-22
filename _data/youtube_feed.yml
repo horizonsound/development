@@ -12,19 +12,27 @@ songs:
       - '🎛️ Production: Hand Claps, acoustic guitars, light drums'
       - '⚡ Mood: nostalgic, uplifting, feel‑good, celebratory'
     tags:
+      - acousticguitars
+      - bigharmonies
       - celebratory
+      - colorchoirstyle
+      - feelgood
+      - handclaps
       - horizonsound
       - indieartist
       - instrumentalmusic
       - kaleidoscopeascensionyouthchoirofficialvideohorizonsound
       - lifesakaleidoscopeascensionyouthchoir
+      - lightdrums
       - musicvideo
       - newmusic
       - nostalgic
       - originalmusic
       - popmusic
       - songwriter
+      - upbeatvibrantpop
       - uplifting
+      - vibrantenergy
     url: /music/kaleidoscope-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/kaleidoscope-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: public
@@ -75,19 +83,26 @@ songs:
       - '🎛️ Production: Acoustic guitars, hand percussion, upbeat drums'
       - '⚡ Mood: joyful, adventurous, uplifting, connected'
     tags:
+      - acousticguitars
       - adventurous
       - allaroundtheworldascensionyouthchoirofficialvideohorizonsound
+      - brightglobalpop
+      - colorchoirstyle
       - connected
+      - energeticgroupvocals
+      - handpercussion
       - horizonsound
       - indieartist
       - instrumentalmusic
       - joyful
+      - layeredharmonies
       - lifesakaleidoscopeascensionyouthchoir
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
       - songwriter
+      - upbeatdrums
       - uplifting
     url: /music/all-around-the-world-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/all-around-the-world-ascension-youth-choir-official-video-horizon-sound.jpeg
@@ -140,7 +155,11 @@ songs:
       - '🎛️ Production: Acoustic guitars, soft percussion, warm pads'
       - '⚡ Mood: sentimental, comforting, reflective, hopeful'
     tags:
+      - acousticguitars
+      - colorchoirstyle
       - comforting
+      - gentleharmonies
+      - heartfeltdelivery
       - hopeful
       - horizonsound
       - indieartist
@@ -148,12 +167,15 @@ songs:
       - lifesakaleidoscopeascensionyouthchoir
       - musicvideo
       - newmusic
+      - nostalgicpop
       - originalmusic
       - popmusic
       - reflective
       - rustyascensionyouthchoirofficialvideohorizonsound
       - sentimental
+      - softpercussion
       - songwriter
+      - warmpads
     url: /music/rusty-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/rusty-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: scheduled
@@ -203,11 +225,15 @@ songs:
       - '⚡ Mood: determined, hopeful, bold, triumphant'
     tags:
       - bold
+      - brightkeys
+      - colorchoirstyle
       - determined
       - hopeful
       - horizonsound
       - indieartist
+      - inspirationalpop
       - instrumentalmusic
+      - layeredclaps
       - lifesakaleidoscopeascensionyouthchoir
       - musicvideo
       - newmusic
@@ -215,7 +241,10 @@ songs:
       - popmusic
       - risingupascensionyouthchoirofficialvideohorizonsound
       - songwriter
+      - steadydrums
+      - stronggroupvocals
       - triumphant
+      - upliftingharmonies
     url: /music/rising-up-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/rising-up-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: scheduled
@@ -264,8 +293,11 @@ songs:
       - '🎛️ Production: Acoustic guitar, soft drums, warm pads'
       - '⚡ Mood: reassuring, heartfelt, steady, optimistic'
     tags:
+      - acousticguitar
+      - colorchoirstyle
       - heartfelt
       - holdonascensionyouthchoirofficialvideohorizonsound
+      - hopefultone
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -276,8 +308,12 @@ songs:
       - originalmusic
       - popmusic
       - reassuring
+      - softdrums
       - songwriter
       - steady
+      - supportiveharmonies
+      - upliftingpop
+      - warmpads
     url: /music/hold-on-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: scheduled
@@ -326,6 +362,10 @@ songs:
       - '🎛️ Production: Piano, light percussion, airy synths'
       - '⚡ Mood: warm, reassuring, gentle, hopeful'
     tags:
+      - airysynths
+      - colorchoirstyle
+      - comfortingtone
+      - emotionalpop
       - gentle
       - hopeful
       - horizonsound
@@ -333,12 +373,14 @@ songs:
       - instrumentalmusic
       - keepthelightonascensionyouthchoirofficialvideohorizonsound
       - lifesakaleidoscopeascensionyouthchoir
+      - lightpercussion
       - musicvideo
       - newmusic
       - originalmusic
       - piano
       - popmusic
       - reassuring
+      - softharmonies
       - songwriter
       - warm
     url: /music/keep-the-light-on-ascension-youth-choir-official-video-horizon-sound/
@@ -389,7 +431,12 @@ songs:
       - '🎛️ Production: Acoustic guitar, upbeat drums, shimmering pads'
       - '⚡ Mood: renewed, joyful, optimistic, forward‑looking'
     tags:
+      - acousticguitar
       - betterthanbeforeascensionyouthchoirofficialvideohorizonsound
+      - brightharmonies
+      - colorchoirstyle
+      - energeticdelivery
+      - forwardlooking
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -401,7 +448,10 @@ songs:
       - originalmusic
       - popmusic
       - renewed
+      - shimmeringpads
       - songwriter
+      - upbeatdrums
+      - upliftingpop
     url: /music/better-than-before-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/better-than-before-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: scheduled
@@ -450,7 +500,11 @@ songs:
       - '🎛️ Production: Acoustic guitar, warm pads, gentle percussion'
       - '⚡ Mood: nostalgic, heartfelt, thoughtful, emotional'
     tags:
+      - acousticguitar
+      - colorchoirstyle
       - emotional
+      - emotionalstorytellingpop
+      - gentlepercussion
       - heartfelt
       - horizonsound
       - indieartist
@@ -461,9 +515,12 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - reflectivetone
+      - softharmonies
       - songwriter
       - thethingsthatstayedwithmeascensionyouthchoirofficialvideohorizonsound
       - thoughtful
+      - warmpads
     url: /music/the-things-that-stayed-with-me-ascension-youth-choir-official-video-horizon-sound/
     thumbnail: /assets/thumbnails/the-things-that-stayed-with-me-ascension-youth-choir-official-video-horizon-sound.jpeg
     videostatus: scheduled
@@ -512,8 +569,15 @@ songs:
       - '🎛️ Production: Big drums, atmospheric synths, glowing textures'
       - '⚡ Mood: epic, awe‑struck, powerful, emotional'
     tags:
+      - atmosphericsynths
+      - awestruck
+      - bigdrums
+      - cinematicpop
+      - colorchoirstyle
       - emotional
       - epic
+      - expansiveharmonies
+      - glowingtextures
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -523,6 +587,7 @@ songs:
       - originalmusic
       - popmusic
       - powerful
+      - soaringenergy
       - songwriter
       - totaleclipseyearslaterascensionyouthchoirofficialvideohorizonsound
     url: /music/total-eclipse-years-later-ascension-youth-choir-official-video-horizon-sound/
@@ -573,12 +638,20 @@ songs:
       - '🎛️ Production: Acoustic guitar, light drums, airy textures'
       - '⚡ Mood: free‑spirited, adventurous, uplifting, hopeful'
     tags:
+      - acousticguitar
       - adventurous
+      - airytextures
+      - breezyharmonies
+      - coastalinspiredpop
+      - colorchoirstyle
+      - freespirited
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - joyfultone
       - lifesakaleidoscopeascensionyouthchoir
+      - lightdrums
       - musicvideo
       - newmusic
       - originalmusic
@@ -959,6 +1032,7 @@ songs:
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - islandpercussion
       - mellow
       - musicvideo
       - newmusic
@@ -968,7 +1042,11 @@ songs:
       - rumsoakedparadisecodysails
       - rumsoakedparadisecodysailshorizonsound
       - smooth
+      - softambience
       - songwriter
+      - sunsetwarm
+      - tropicalpop
+      - warmguitar
     url: /music/rum-soaked-paradise-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/rum-soaked-paradise-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1028,11 +1106,16 @@ songs:
       - '🎛️ Production: acoustic guitar, light percussion, gentle groove'
       - '⚡ Mood: unwound, easy, content'
     tags:
+      - acousticguitar
+      - beachbar
+      - coastalpop
       - content
       - easy
+      - gentlegroove
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightpercussion
       - mellow
       - musicvideo
       - newmusic
@@ -1043,6 +1126,7 @@ songs:
       - saltontherimcodysailshorizonsound
       - smooth
       - songwriter
+      - sunworn
       - unwound
     url: /music/salt-on-the-rim-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/salt-on-the-rim-cody-sails-horizon-sound.jpeg
@@ -1103,9 +1187,13 @@ songs:
       - '🎛️ Production: acoustic guitar, soft percussion, gentle lift'
       - '⚡ Mood: carefree, nostalgic, peaceful'
     tags:
+      - acousticguitar
       - barefootandbuzzedcodysailshorizonsound
       - breezy
       - carefree
+      - coastalpop
+      - gentlelift
+      - goldenhour
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -1118,7 +1206,9 @@ songs:
       - popmusic
       - relaxed
       - rumsoakedparadisecodysails
+      - softpercussion
       - songwriter
+      - sunsoftdelivery
       - warm
     url: /music/barefoot-and-buzzed-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/barefoot-and-buzzed-cody-sails-horizon-sound.jpeg
@@ -1179,7 +1269,9 @@ songs:
       - '🎛️ Production: bright guitars, rhythmic percussion, coastal bounce'
       - '⚡ Mood: fun, chaotic, romantic'
     tags:
+      - brightguitars
       - chaotic
+      - coastalbounce
       - flirty
       - fun
       - horizonsound
@@ -1192,9 +1284,12 @@ songs:
       - playful
       - popmusic
       - relaxed
+      - rhythmicpercussion
       - romantic
       - rumsoakedparadisecodysails
       - songwriter
+      - sunsoaked
+      - tropicalpop
       - upbeat
       - warm
     url: /music/island-girl-trouble-cody-sails-horizon-sound/
@@ -1256,7 +1351,10 @@ songs:
       - '🎛️ Production: acoustic layers, gentle percussion, warm harmonies'
       - '⚡ Mood: nostalgic, romantic, reflective'
     tags:
+      - acousticlayers
+      - coastalballad
       - emotional
+      - gentlepercussion
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -1275,6 +1373,7 @@ songs:
       - songwriter
       - tender
       - warm
+      - warmharmonies
     url: /music/leilani-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/leilani-cody-sails-horizon-sound.jpeg
     videostatus: scheduled
@@ -1334,14 +1433,18 @@ songs:
       - '🎛️ Production: mellow guitar, gentle percussion, glowing ambience'
       - '⚡ Mood: peaceful, romantic, reflective'
     tags:
+      - gentlepercussion
+      - glowingambience
       - heartfelt
       - hightidecodysailshorizonsound
       - horizonsound
       - indieartist
       - instrumentalmusic
       - intimate
+      - mellowguitar
       - musicvideo
       - newmusic
+      - nighttimecoastalpop
       - originalmusic
       - peaceful
       - popmusic
@@ -1411,6 +1514,8 @@ songs:
       - '🎛️ Production: acoustic guitar, light percussion, breezy lift'
       - '⚡ Mood: happy, carefree, radiant'
     tags:
+      - acousticguitar
+      - breezylift
       - bright
       - carefree
       - happy
@@ -1418,6 +1523,7 @@ songs:
       - indieartist
       - instrumentalmusic
       - joyful
+      - lightpercussion
       - musicvideo
       - newmusic
       - originalmusic
@@ -1428,6 +1534,7 @@ songs:
       - songwriter
       - sunburnedandsmilingcodysailshorizonsound
       - sunny
+      - upbeatcoastalpop
       - warm
     url: /music/sunburned-and-smiling-cody-sails-horizon-sound/
     thumbnail: /assets/thumbnails/sunburned-and-smiling-cody-sails-horizon-sound.jpeg
@@ -1488,7 +1595,10 @@ songs:
       - '🎛️ Production: acoustic guitar, soft percussion, emotional lift'
       - '⚡ Mood: hopeful, supportive, heartfelt'
     tags:
+      - acousticguitar
+      - coastalfolkpop
       - comforting
+      - emotionallift
       - heartfelt
       - hopeful
       - horizonsound
@@ -1500,6 +1610,7 @@ songs:
       - popmusic
       - rumsoakedparadisecodysails
       - sincere
+      - softpercussion
       - songwriter
       - steady
       - supportive
@@ -4594,9 +4705,13 @@ songs:
       - '🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
       - '⚡ Mood: humorous, dusty‑trail, tall‑tale, cinematic'
     tags:
+      - acousticguitar
+      - brusheddrums
       - cinematic
       - classiccountry
+      - classicphrasing
       - comedic
+      - dustytrail
       - horizonsound
       - humorous
       - indieartist
@@ -4606,7 +4721,12 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - smoothmalebaritone
       - songwriter
+      - storytellingdelivery
+      - talltale
+      - uprightbass
+      - vintagereverb
       - warm
     url: /music/sheriff-for-a-night-50s-western-tall-tale-horizon-sound/
     thumbnail: /assets/thumbnails/sheriff-for-a-night-50s-western-tall-tale-horizon-sound.jpeg
@@ -4672,8 +4792,13 @@ songs:
       - '🎛️ Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
       - '⚡ Mood: romantic, dusty‑trail, heartfelt, cinematic'
     tags:
+      - acousticguitar
+      - brusheddrums
       - cinematic
       - classiccountry
+      - classicphrasing
+      - dustytrail
+      - gentlevibrato
       - heartfelt
       - horizonsound
       - indieartist
@@ -4684,7 +4809,10 @@ songs:
       - originalmusic
       - popmusic
       - romantic
+      - smoothmalebaritone
       - songwriter
+      - uprightbass
+      - vintagereverb
       - warm
     url: /music/back-to-amarillo-50s-country-western-romance-horizon-sound/
     thumbnail: /assets/thumbnails/back-to-amarillo-50s-country-western-romance-horizon-sound.jpeg
@@ -4749,13 +4877,17 @@ songs:
     tags:
       - bottleonthetablecountrywesternhorizonsound
       - classiccountry
+      - classicearlycountrydelivery
       - dusty
       - emotional
+      - gentlewesternswingrhythm
       - heartbroken
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lighttapehiss
       - lonely
+      - monorecording
       - musicvideo
       - newmusic
       - originalmusic
@@ -4763,7 +4895,12 @@ songs:
       - reflective
       - slow
       - songwriter
+      - steelguitar
       - timeless
+      - tubemicwarmth
+      - uprightbass
+      - vintagecountrywestern
+      - warmbaritonemale
     url: /music/bottle-on-the-table-country-western-horizon-sound/
     thumbnail: /assets/thumbnails/bottle-on-the-table-country-western-horizon-sound.jpeg
     videostatus: public
@@ -4823,10 +4960,14 @@ songs:
       - '🎛️ Production: glowing pads, soft textures, gentle lift'
       - '✨ Mood: hopeful, comforting, serene'
     tags:
+      - ambientinstrumental
       - atouchoflightcinematicinstrumentalhorizonsound
       - calmcinematichorizonsoundinstrumentals
       - cinematic
       - comforting
+      - emotionalscore
+      - gentlelift
+      - glowingpads
       - hopeful
       - horizonsound
       - indieartist
@@ -4836,6 +4977,7 @@ songs:
       - originalmusic
       - popmusic
       - serene
+      - softtextures
       - songwriter
       - uplifting
       - warm
@@ -4898,10 +5040,13 @@ songs:
       - '🎛️ Production: soft pads, glowing textures, slow movement'
       - '✨ Mood: nostalgic, peaceful, timeless'
     tags:
+      - ambientinstrumental
       - calmcinematichorizonsoundinstrumentals
       - cinematic
       - dreamy
+      - emotionalscore
       - foreverinamomentcinematicinstrumentalhorizonsound
+      - glowingtextures
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -4911,6 +5056,8 @@ songs:
       - originalmusic
       - peaceful
       - popmusic
+      - slowmovement
+      - softpads
       - songwriter
       - timeless
       - warm
@@ -4973,9 +5120,11 @@ songs:
       - '🎛️ Production: soft textures, warm pads, subtle movement'
       - '✨ Mood: reflective, grounding, serene'
     tags:
+      - ambientinstrumental
       - atmospheric
       - calm
       - calmcinematichorizonsoundinstrumentals
+      - cinematicminimalism
       - grounding
       - heldinthemomentcinematicinstrumentalhorizonsound
       - horizonsound
@@ -4988,7 +5137,10 @@ songs:
       - popmusic
       - reflective
       - serene
+      - softtextures
       - songwriter
+      - subtlemovement
+      - warmpads
     url: /music/held-in-the-moment-cinematic-instrumental-horizon-sound/
     thumbnail: /assets/thumbnails/held-in-the-moment-cinematic-instrumental-horizon-sound.jpeg
     videostatus: public
@@ -5048,12 +5200,16 @@ songs:
       - '🎛️ Production: light pulses, airy pads, soft contrast'
       - '✨ Mood: hopeful, spacious, uplifting'
     tags:
+      - airypads
+      - ambientinstrumental
       - atmospheric
       - calmcinematichorizonsoundinstrumentals
+      - cinematictexture
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightpulses
       - linesoflightcinematicinstrumentalhorizonsound
       - luminous
       - modern
@@ -5061,6 +5217,7 @@ songs:
       - newmusic
       - originalmusic
       - popmusic
+      - softcontrast
       - songwriter
       - spacious
       - uplifting
@@ -5123,6 +5280,8 @@ songs:
       - '🎛️ Production: soft pads, airy textures, subtle motion, warm tonal palette'
       - '✨ Mood: peaceful, introspective, luminous, grounding'
     tags:
+      - airytextures
+      - ambientinstrumental
       - atmospheric
       - calm
       - calmcinematichorizonsoundinstrumentals
@@ -5133,14 +5292,18 @@ songs:
       - instrumentalmusic
       - introspective
       - luminous
+      - modernscore
       - musicvideo
       - newmusic
       - originalmusic
       - peaceful
       - popmusic
       - reflective
+      - softpads
       - songwriter
+      - subtlemotion
       - themomentyoubreathecinematicinstrumentalhorizonsound
+      - warmtonalpalette
     url: /music/the-moment-you-breathe-cinematic-instrumental-horizon-sound/
     thumbnail: /assets/thumbnails/the-moment-you-breathe-cinematic-instrumental-horizon-sound.jpeg
     videostatus: public
@@ -5200,11 +5363,13 @@ songs:
       - '🎛️ Production: soft pads, gentle motion, warm tonal palette'
       - '✨ Mood: peaceful, meditative, soothing'
     tags:
+      - ambientinstrumental
       - atmospheric
       - calm
       - calmcinematichorizonsoundinstrumentals
       - cinematic
       - fluid
+      - gentlemotion
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -5215,9 +5380,11 @@ songs:
       - peaceful
       - popmusic
       - reflective
+      - softpads
       - songwriter
       - soothing
       - thewaywatermovescinematicinstrumentalhorizonsound
+      - warmtonalpalette
     url: /music/the-way-water-moves-cinematic-instrumental-horizon-sound/
     thumbnail: /assets/thumbnails/the-way-water-moves-cinematic-instrumental-horizon-sound.jpeg
     videostatus: public
@@ -5279,13 +5446,19 @@ songs:
       - '🎛️ Production: acoustic guitars, light percussion, gentle lift, cinematic warmth'
       - '⚡ Mood: innocent, dreamy, heartfelt, reflective'
     tags:
+      - acousticguitars
+      - brightfemalelead
+      - cinematicwarmth
       - dreamy
+      - expressivephrasing
+      - gentlelift
       - heartfelt
       - hopeful
       - horizonsound
       - indieartist
       - innocent
       - instrumentalmusic
+      - lightpercussion
       - missingstampvenicetrilogy
       - musicvideo
       - newmusic
@@ -5293,8 +5466,10 @@ songs:
       - originalmusic
       - popmusic
       - reflective
+      - softharmonies
       - somedayacousticpopstorytellinghorizonsound
       - songwriter
+      - warmacousticpop
     url: /music/someday-acoustic-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/someday-acoustic-pop-storytelling-horizon-sound.jpeg
     videostatus: public
@@ -5358,11 +5533,16 @@ songs:
       - '⚡ Mood: nostalgic, aching, honest, bittersweet'
     tags:
       - aching
+      - acousticguitar
       - bittersweet
+      - cinematicmelancholy
+      - emotionalacousticpop
+      - heartfeltphrasing
       - honest
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatedelivery
       - missingstampemotionalacousticpophorizonsound
       - missingstampvenicetrilogy
       - musicvideo
@@ -5373,7 +5553,9 @@ songs:
       - popmusic
       - reflective
       - soft
+      - softstrings
       - songwriter
+      - warmfemalelead
     url: /music/missing-stamp-emotional-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/missing-stamp-emotional-acoustic-pop-horizon-sound.jpeg
     videostatus: public
@@ -5436,13 +5618,18 @@ songs:
       - '🎛️ Production: acoustic guitars, light drums, piano, cinematic strings'
       - '⚡ Mood: nostalgic, uplifting, feel‑good, celebratory'
     tags:
+      - acousticguitars
       - adventurous
+      - brightfemalelead
       - celebratory
+      - cinematicstrings
       - expressive
+      - feelgood
       - horizonsound
       - indieartist
       - instrumentalmusic
       - joyful
+      - lightdrums
       - missingstampvenicetrilogy
       - musicvideo
       - newmusic
@@ -5451,6 +5638,7 @@ songs:
       - piano
       - popmusic
       - songwriter
+      - upbeatacousticpop
       - uplifting
       - venicewatersupbeatacousticpopadventurehorizonsound
       - warm
@@ -5511,7 +5699,6 @@ songs:
       - '🎧 Full track: https://youtu.be/g_AZ5B9ssFQ'
     tags:
       - horizonsound
-      - https
       - indieartist
       - instrumentalmusic
       - musicvideo
@@ -5579,7 +5766,6 @@ songs:
       - '🎧 Full track: https://youtu.be/r16qSkxEcI4'
     tags:
       - horizonsound
-      - https
       - indieartist
       - instrumentalmusic
       - musicvideo
@@ -5650,18 +5836,27 @@ songs:
     tags:
       - anticipatory
       - atmospheric
+      - cinematicpop
       - curious
       - electric
+      - glowingtextures
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - latenighttone
       - midnightsaga
       - musicvideo
+      - neonlit
       - newmusic
       - originalmusic
       - popmusic
+      - readytoignite
+      - smoothfemalelead
+      - softintensity
       - songwriter
+      - steadydrums
       - suspended
+      - warmsynths
     url: /music/before-midnight-the-midnight-saga-chapter-1-horizon-sound/
     thumbnail: /assets/thumbnails/before-midnight-the-midnight-saga-chapter-1-horizon-sound.jpeg
     videostatus: public
@@ -5725,16 +5920,26 @@ songs:
       - '🎛️ Production: bright synths, sharp drums, rhythmic drive'
       - '⚡ Mood: wild, reckless, euphoric, fast‑moving'
     tags:
+      - boldfemalelead
+      - brightsynths
+      - electricdelivery
+      - energeticphrasing
       - euphoric
+      - fastmoving
+      - highenergypop
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - latenightadrenaline
       - midnightsaga
       - musicvideo
+      - neonchaos
       - newmusic
       - originalmusic
       - popmusic
       - reckless
+      - rhythmicdrive
+      - sharpdrums
       - songwriter
       - wild
     url: /music/midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound/
@@ -5800,16 +6005,25 @@ songs:
       - '🎛️ Production: glowing synths, pulsing drums, immersive textures'
       - '⚡ Mood: dizzy, electric, surreal, all‑consuming'
     tags:
+      - allconsuming
       - dizzy
+      - dreamlikeintensity
+      - driftingandpowerful
       - electric
+      - expressivefemalelead
+      - glowingsynths
       - horizonsound
+      - hypnoticpop
+      - immersivetextures
       - indieartist
       - instrumentalmusic
       - midnightsaga
       - musicvideo
+      - neonswirl
       - newmusic
       - originalmusic
       - popmusic
+      - pulsingdrums
       - songwriter
       - surreal
     url: /music/midnight-madness-the-midnight-saga-chapter-3-horizon-sound/
@@ -5875,10 +6089,13 @@ songs:
       - '🎛️ Production: warm pads, soft synths, steady drums'
       - '⚡ Mood: peaceful, introspective, resolved, sunrise‑ready'
     tags:
+      - cinematicpop
+      - heartfeltfemalelead
       - horizonsound
       - indieartist
       - instrumentalmusic
       - introspective
+      - latenightcalm
       - midnightsaga
       - musicvideo
       - newmusic
@@ -5887,8 +6104,13 @@ songs:
       - popmusic
       - reflective
       - resolved
+      - softandsteady
+      - softsynths
       - songwriter
+      - steadydrums
+      - sunriseready
       - warm
+      - warmpads
     url: /music/after-midnight-the-midnight-saga-chapter-4-horizon-sound/
     thumbnail: /assets/thumbnails/after-midnight-the-midnight-saga-chapter-4-horizon-sound.jpeg
     videostatus: public
@@ -5953,20 +6175,30 @@ songs:
       - '⚡ Mood: heartbreak‑after‑the‑storm, heavy, introspective, quietly devastating'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - atmosphericreverb
       - cinematic
       - emotional
+      - heartbreakafterthestorm
       - heavy
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatephrasing
       - introspective
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlydevastating
       - reflective
+      - richtone
       - slow
+      - smoothvibrato
+      - softpiano
       - songwriter
+      - subtledrums
+      - warmfemalelead
+      - warmstrings
     url: /music/1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6033,17 +6265,25 @@ songs:
       - aching
       - afterthesilenceperformedbylydiaellington
       - bittersweet
+      - cinematicglow
+      - emotionalphrasing
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightdrums
       - musicvideo
       - newmusic
       - nostalgic
       - originalmusic
       - popmusic
+      - quietlyhopeful
       - reflective
+      - smoothvibrato
+      - softstrings
       - songwriter
       - tender
+      - warmfemalelead
+      - warmpiano
     url: /music/2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6108,9 +6348,13 @@ songs:
       - '⚡ Mood: longing, introspective, quietly emotional'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airyreverb
+      - emotionaltone
+      - gentlepiano
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatephrasing
       - introspective
       - longing
       - musicvideo
@@ -6118,9 +6362,13 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - quietlyemotional
       - reflective
       - soft
       - songwriter
+      - subtlestrings
+      - warmfemalelead
+      - warmpads
     url: /music/3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6185,18 +6433,26 @@ songs:
     tags:
       - aching
       - afterthesilenceperformedbylydiaellington
+      - atmosphericreverb
       - emotional
       - heavy
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatedelivery
+      - lightdrums
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlydevastating
       - reflective
+      - richtone
       - slow
+      - softpiano
       - songwriter
+      - warmfemalelead
+      - warmstrings
     url: /music/4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6260,19 +6516,27 @@ songs:
       - '⚡ Mood: fragile‑to‑soaring, honest, cathartic'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
       - cathartic
       - cinematic
+      - emotionalphrasing
+      - fragiletosoaring
       - honest
       - horizonsound
       - indieartist
       - instrumentalmusic
       - intimate
+      - lightdrums
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - smoothvibrato
+      - softpiano
       - songwriter
       - vulnerable
+      - warmfemalelead
+      - warmstrings
     url: /music/5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6337,8 +6601,10 @@ songs:
     tags:
       - afterthesilenceperformedbylydiaellington
       - bold
+      - cinematicrise
       - emotional
       - empowering
+      - expressivephrasing
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -6347,9 +6613,14 @@ songs:
       - originalmusic
       - piano
       - popmusic
+      - powerfullift
       - rising
+      - selfreclaiming
       - songwriter
+      - steadydrums
       - triumphant
+      - warmfemalelead
+      - warmstrings
     url: /music/6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6413,21 +6684,28 @@ songs:
       - '🎛️ Production: soft piano, warm strings, subtle drums, atmospheric reverb'
       - '⚡ Mood: regretful, tender, heartbreaking'
     tags:
+      - achingtone
       - afterthesilenceperformedbylydiaellington
+      - atmosphericreverb
       - cinematic
       - emotional
       - heartbreaking
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatedelivery
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
       - regretful
       - slow
+      - softpiano
       - songwriter
+      - subtledrums
       - tender
+      - warmfemalelead
+      - warmstrings
     url: /music/7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6491,8 +6769,10 @@ songs:
       - '⚡ Mood: nostalgic, theatrical, bittersweet'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - atmosphericreverb
       - bittersweet
       - cinematic
+      - emotionalphrasing
       - glowing
       - haunting
       - horizonsound
@@ -6503,8 +6783,13 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - richtone
+      - softpiano
       - songwriter
+      - subtlepercussion
       - theatrical
+      - warmfemalelead
+      - warmstrings
     url: /music/8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6569,19 +6854,27 @@ songs:
       - '⚡ Mood: healing, uplifting, quietly powerful'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
       - calm
       - cinematic
+      - gentledrums
       - healing
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatephrasing
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlypowerful
       - reflective
+      - smoothvibrato
+      - softpiano
       - songwriter
       - uplifting
+      - warmfemalelead
+      - warmstrings
     url: /music/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6644,11 +6937,14 @@ songs:
       - '⚡ Mood: cathartic, cleansing, tender'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
       - cathartic
       - cinematic
       - cleansing
       - emotional
+      - expressivephrasing
       - flowing
+      - gentledrums
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -6656,8 +6952,12 @@ songs:
       - newmusic
       - originalmusic
       - popmusic
+      - richtone
+      - softpiano
       - songwriter
       - tender
+      - warmfemalelead
+      - warmstrings
     url: /music/10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6720,20 +7020,27 @@ songs:
       - '⚡ Mood: reflective, tender, bittersweet'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
       - bittersweet
       - cinematic
       - emotional
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatedelivery
+      - lightdrums
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
       - reflective
       - slow
+      - smoothvibrato
+      - softpiano
       - songwriter
       - tender
+      - warmfemalelead
+      - warmstrings
     url: /music/11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6797,18 +7104,27 @@ songs:
       - '⚡ Mood: tender, reflective, quietly cathartic'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
       - confessional
+      - emotionalphrasing
       - horizonsound
       - indieartist
       - instrumentalmusic
       - intimate
+      - latenight
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlycathartic
       - reflective
+      - smoothvibrato
+      - softpiano
       - songwriter
+      - subtledrums
       - tender
+      - warmfemalelead
+      - warmstrings
     url: /music/12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6871,23 +7187,30 @@ songs:
       - '⚡ Mood: empowering, victorious, resilient, transformative'
     tags:
       - afterthesilenceperformedbylydiaellington
+      - airypads
+      - cinematicbuild
+      - cinematicpop
       - emotional
       - empowering
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatephrasing
       - musicvideo
       - newmusic
       - originalmusic
       - piano
       - popmusic
       - resilient
+      - smoothvibrato
       - songwriter
+      - steadydrums
       - strings
       - transformative
       - triumphant
       - uplifting
       - victorious
+      - warmexpressivefemalelead
     url: /music/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound/
     thumbnail: /assets/thumbnails/13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound.jpeg
     videostatus: public
@@ -6951,22 +7274,30 @@ songs:
       - '🎛️ Production: bright acoustic guitar, light indie‑pop percussion, warm bass, clean modern polish'
       - '⚡ Mood: bittersweet, honest, gentle, quietly hopeful'
     tags:
+      - acousticpop
+      - airyharmonies
       - awaybacktrilogy
       - bittersweet
+      - brightacousticguitar
+      - cleanmodernpolish
       - emotional
+      - expressivefemaleleadsoftmaleduet
       - gentle
       - honest
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightindiepoppercussion
       - lostinsilencefromawaybackhorizonsound
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlyhopeful
       - reflective
       - songwriter
       - warm
+      - warmbass
     url: /music/lost-in-silence-from-a-way-back-horizon-sound/
     thumbnail: /assets/thumbnails/lost-in-silence-from-a-way-back-horizon-sound.jpeg
     videostatus: public
@@ -7029,9 +7360,14 @@ songs:
       - '🎛️ Production: bright acoustic guitar, brushed snare, subtle shaker, clean modern polish'
       - '⚡ Mood: hopeful, light, self‑reclaiming, fresh'
     tags:
+      - airyharmonies
       - awaybacktrilogy
       - breezy
+      - brightacousticguitar
+      - brushedsnare
       - choosingmeherversionacousticpophorizonsound
+      - cleanmodernpolish
+      - coastalacousticpop
       - fresh
       - hopeful
       - horizonsound
@@ -7042,7 +7378,11 @@ songs:
       - newmusic
       - originalmusic
       - popmusic
+      - selfreclaiming
+      - smileinthevoicedelivery
+      - softfemalelead
       - songwriter
+      - subtleshaker
       - uplifting
       - warm
     url: /music/choosing-me-her-version-acoustic-pop-horizon-sound/
@@ -7108,22 +7448,30 @@ songs:
       - '⚡ Mood: honest, determined, optimistic, empowering'
     tags:
       - awaybacktrilogy
+      - brightelectricguitars
       - choosingmehisversionpophorizonsound
+      - cleanmalelead
       - determined
       - empowering
       - energetic
+      - groovybass
       - heartfelt
       - honest
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - modernpoprock
       - musicvideo
       - newmusic
       - optimistic
       - originalmusic
+      - polishedmix
       - popmusic
+      - punchydrums
       - songwriter
+      - tightharmonies
       - uplifting
+      - warmtone
     url: /music/choosing-me-his-version-pop-horizon-sound/
     thumbnail: /assets/thumbnails/choosing-me-his-version-pop-horizon-sound.jpeg
     videostatus: public
@@ -7187,16 +7535,21 @@ songs:
       - '🎛️ Production: acoustic guitars, handclaps, tambourine, light percussion, wide stereo layers'
       - '⚡ Mood: nostalgic, hopeful, adventurous, vulnerable'
     tags:
+      - acousticguitars
       - acousticsingersongwriter
       - adventurous
+      - airyharmonies
       - allaroundtheworldacousticpophorizonsound
       - breezy
+      - brightacousticpop
+      - emotionaldelivery
       - handclaps
       - heartfelt
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightpercussion
       - musicvideo
       - newmusic
       - nostalgic
@@ -7205,6 +7558,8 @@ songs:
       - songwriter
       - tambourine
       - vulnerable
+      - warmfemalelead
+      - widestereolayers
       - youthful
     url: /music/all-around-the-world-acoustic-pop-horizon-sound/
     thumbnail: /assets/thumbnails/all-around-the-world-acoustic-pop-horizon-sound.jpeg
@@ -7267,15 +7622,20 @@ songs:
       - '🎛️ Production: acoustic guitar, light percussion, subtle tech sound effects, warm mix'
       - '⚡ Mood: fun, chaotic, exasperated, clever'
     tags:
+      - acousticguitar
       - acousticsingersongwriter
       - chaotic
       - clever
+      - comedictiming
+      - crispdelivery
       - energetic
       - exasperated
+      - expressivemalelead
       - fun
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightpercussion
       - mischievous
       - musicvideo
       - newmusic
@@ -7284,6 +7644,9 @@ songs:
       - playful
       - popmusic
       - songwriter
+      - subtletechsoundeffects
+      - upbeatfolkcountry
+      - warmmix
     url: /music/not-so-smart-home-folk-country-comedy-horizon-sound/
     thumbnail: /assets/thumbnails/not-so-smart-home-folk-country-comedy-horizon-sound.jpeg
     videostatus: public
@@ -7346,21 +7709,29 @@ songs:
       - '⚡ Mood: fun, reckless, lighthearted, mischievous'
     tags:
       - acousticsingersongwriter
+      - barroommix
       - chaotic
       - comedic
+      - exaggeratedmalelead
       - fixeditmostlyrightcountrycomedyhorizonsound
       - fun
+      - highenergypersonality
       - horizonsound
+      - humorousdelivery
       - indieartist
       - instrumentalmusic
       - lighthearted
+      - livelydrums
       - mischievous
       - musicvideo
       - newmusic
       - originalmusic
+      - playfulfiddle
       - popmusic
       - reckless
+      - rowdyhonkytonk
       - songwriter
+      - twangyelectricguitars
       - upbeat
     url: /music/fixed-it-mostly-right-country-comedy-horizon-sound/
     thumbnail: /assets/thumbnails/fixed-it-mostly-right-country-comedy-horizon-sound.jpeg
@@ -7423,23 +7794,31 @@ songs:
       - '🎛️ Production: acoustic guitars, modern pop drums, shimmering harmonies, clean stereo mix'
       - '⚡ Mood: adventurous, warm, reflective, joyful'
     tags:
+      - acousticguitars
       - acousticsingersongwriter
       - adventurous
+      - brightpopfolk
+      - cleanstereomix
+      - emotionalclarity
+      - energeticfemalelead
       - horizonsound
       - indieartist
       - instrumentalmusic
       - joyful
       - makinourwaytocaliforniapopfolkhorizonsound
+      - modernpopdrums
       - musicvideo
       - newmusic
       - nostalgic
       - originalmusic
       - popmusic
       - reflective
+      - shimmeringharmonies
       - songwriter
       - summery
       - upbeat
       - warm
+      - youthfultone
     url: /music/makin-our-way-to-california-pop-folk-horizon-sound/
     thumbnail: /assets/thumbnails/makin-our-way-to-california-pop-folk-horizon-sound.jpeg
     videostatus: public
@@ -7501,6 +7880,7 @@ songs:
       - '🎤 Vocals: intimate, expressive, warm'
     tags:
       - bittersweet
+      - emotionalacousticpop
       - emotionalballads
       - expressive
       - heartfelt
@@ -7574,6 +7954,7 @@ songs:
       - '🎤 Vocals: warm, expressive, vulnerable'
     tags:
       - cinematic
+      - emotionalballad
       - emotionalballads
       - expressive
       - heartfelt
@@ -7651,13 +8032,19 @@ songs:
       - '🎛️ Production: acoustic guitar, soft piano, light drums, subtle country‑pop color, swelling chorus'
       - '⚡ Mood: tender, bittersweet, comforting, reflective'
     tags:
+      - acousticguitar
+      - acousticleaning
       - bittersweet
       - cinematic
       - comforting
       - emotionalballads
+      - emotionalpop
+      - expressivephrasing
+      - heartfeltdelivery
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightdrums
       - musicvideo
       - newmusic
       - nostalgic
@@ -7665,8 +8052,12 @@ songs:
       - originalmusic
       - popmusic
       - reflective
+      - softpiano
       - songwriter
+      - subtlecountrypopcolor
+      - swellingchorus
       - tender
+      - warmfemalelead
     url: /music/oh-amber-emotional-pop-storytelling-horizon-sound/
     thumbnail: /assets/thumbnails/oh-amber-emotional-pop-storytelling-horizon-sound.jpeg
     videostatus: public
@@ -7728,20 +8119,30 @@ songs:
       - '🎛️ Production: atmospheric pads, subtle synths, light percussion, smooth harmonies, spacious mix'
       - '⚡ Mood: hopeful, vulnerable, uplifting, quietly powerful'
     tags:
+      - atmosphericpads
+      - breathyfemalelead
       - dreamy
       - emotional
       - emotionalballads
+      - gentlevibrato
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatedelivery
       - learningtoliveagainpophorizonsound
+      - lightpercussion
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlypowerful
       - reflective
+      - smoothharmonies
+      - softelectropop
       - songwriter
+      - spaciousmix
+      - subtlesynths
       - uplifting
       - vulnerable
       - warm
@@ -7808,6 +8209,8 @@ songs:
       - bright
       - emotional
       - emotionalballads
+      - empoweringpop
+      - expressivefemalelead
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -7878,6 +8281,7 @@ songs:
       - '🎤 Vocals: intimate, expressive, warm'
     tags:
       - bittersweet
+      - emotionalacousticpop
       - emotionalballads
       - expressive
       - heartfelt
@@ -7955,8 +8359,13 @@ songs:
       - '🎛️ Production: big drums, electric guitars, dramatic lift, Nashville polish'
       - '⚡ Mood: unstoppable, fiery, defiant, triumphant'
     tags:
+      - bigdrums
+      - boldfemalelead
       - cinematic
       - defiant
+      - dramaticlift
+      - electricguitars
+      - emotionalgrit
       - empowering
       - fierce
       - fiery
@@ -7965,9 +8374,11 @@ songs:
       - instrumentalmusic
       - moderncountry
       - musicvideo
+      - nashvillepolish
       - newmusic
       - originalmusic
       - popmusic
+      - powerhousedelivery
       - songwriter
       - triumphant
       - unstoppable
@@ -8034,15 +8445,22 @@ songs:
       - '🎛️ Production: acoustic guitar, stomps, claps, fiddle accents, bright modern mix'
       - '⚡ Mood: energetic, comedic, feel‑good, high‑spirited'
     tags:
+      - acousticguitar
+      - brightmodernmix
       - chaotic
       - claps
       - comedic
+      - countrypopparty
       - energetic
+      - feelgood
+      - fiddleaccents
       - fun
+      - highspirited
       - horizonsound
       - humor
       - indieartist
       - instrumentalmusic
+      - malelead
       - moderncountry
       - musicvideo
       - newmusic
@@ -8116,7 +8534,11 @@ songs:
       - '🎛️ Production: acoustic guitars, fiddle, pedal steel, brushed drums, clean electric fills, simple bass groove'
       - '⚡ Mood: comforting, reflective, grounded, quietly uplifting'
     tags:
+      - acousticguitars
+      - brusheddrums
+      - cleanelectricfills
       - comforting
+      - conversationalmalelead
       - fiddle
       - grounded
       - heartfelt
@@ -8128,9 +8550,14 @@ songs:
       - newmusic
       - nostalgic
       - originalmusic
+      - pedalsteel
       - popmusic
+      - quietlyuplifting
       - reflective
+      - simplebassgroove
+      - smalltown
       - songwriter
+      - steadyandsincere
       - warm
     url: /music/the-man-behind-the-bar-90s-country-horizon-sound/
     thumbnail: /assets/thumbnails/the-man-behind-the-bar-90s-country-horizon-sound.jpeg
@@ -8194,19 +8621,27 @@ songs:
       - '🎛️ Production: acoustic foundation, gentle pop elements, subtle cinematic lift'
       - '⚡ Mood: tender, memory‑rich, quietly romantic, heartfelt'
     tags:
+      - acousticfoundation
       - emotional
+      - gentlepopelements
       - heartfelt
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatemalelead
+      - memoryrich
       - moderncountry
       - musicvideo
       - newmusic
       - nostalgic
       - originalmusic
       - popmusic
+      - quietlyromantic
       - reflective
+      - softdelivery
       - songwriter
+      - storytellingtone
+      - subtlecinematiclift
       - tender
       - timecapsuleemotionalcountrynostalgicstorytellinghorizonsound
       - warm
@@ -8273,20 +8708,28 @@ songs:
       - '🎛️ Production: acoustic‑driven, subtle electric fills, clean Nashville mix'
       - '⚡ Mood: wounded, resigned, honest, quietly powerful'
     tags:
+      - acousticdriven
       - alreadyoutthedoormoderncountryhorizonsound
+      - cleannashvillemix
       - emotional
       - honest
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - midtempo
       - moderncountry
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - quietlypowerful
       - reflective
       - resigned
+      - sinceremalelead
+      - softharmoniesinthechorus
       - songwriter
+      - subtleelectricfills
+      - warmtone
       - wounded
     url: /music/already-out-the-door-modern-country-horizon-sound/
     thumbnail: /assets/thumbnails/already-out-the-door-modern-country-horizon-sound.jpeg
@@ -8349,7 +8792,10 @@ songs:
       - '🎛️ Production: acoustic guitars, snaps, soft electric layers, smooth upbeat groove'
       - '⚡ Mood: sweet, flirty, uplifting, radio‑ready'
     tags:
+      - acousticguitars
+      - charmingmalelead
       - expressive
+      - feelgood
       - flirty
       - horizonsound
       - indieartist
@@ -8359,9 +8805,13 @@ songs:
       - newmusic
       - originalmusic
       - popmusic
+      - radioready
       - romantic
       - shessointomemoderncountrylovesonghorizonsound
+      - slightlyselfdeprecating
+      - smoothupbeatgroove
       - snaps
+      - softelectriclayers
       - songwriter
       - sweet
       - uplifting
@@ -8428,17 +8878,26 @@ songs:
       - bold
       - chaotic
       - confident
+      - distortedsynthbass
       - electropopdancepop
+      - explosivedrops
+      - fiercefemalelead
+      - glitchyvocalchops
+      - highenergyelectropop
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - latenightadrenaline
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - punchydrums
       - putyoudownelectropopdancepophorizonsound
       - rebellious
       - songwriter
+      - stutterfx
+      - talksingswagger
       - unfiltered
       - wild
     url: /music/put-you-down-electro-pop-dance-pop-horizon-sound/
@@ -8503,20 +8962,30 @@ songs:
       - '🎛️ Production: rubbery synths, heavy bass, stomp‑claps, cosmic FX'
       - '⚡ Mood: explosive, reckless, glossy, late‑night'
     tags:
+      - attitudeheavy
+      - chaoticelectropop
+      - cosmicfx
       - electropopdancepop
       - explosive
       - glossy
+      - heavybass
+      - highenergy
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - latenight
       - midnightmayhemelectropophorizonsound
       - musicvideo
       - neon
       - newmusic
       - originalmusic
       - popmusic
+      - raspyedges
       - reckless
+      - rubberysynths
       - songwriter
+      - stompclaps
+      - talksingswagger
       - wild
     url: /music/midnight-mayhem-electro-pop-horizon-sound/
     thumbnail: /assets/thumbnails/midnight-mayhem-electro-pop-horizon-sound.jpeg
@@ -8573,17 +9042,27 @@ songs:
       - '⚡ Mood: sad‑to‑strong, cathartic, bold, self‑reclaiming'
     tags:
       - bold
+      - brightsynths
       - cathartic
+      - confidentdelivery
       - emotional
       - empowering
+      - expressivephrasing
+      - highenergy
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - modernpoppolish
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - rhythmicbuild
+      - sadtostrong
+      - selfreclaiming
       - songwriter
+      - strongfemalelead
+      - tightdrums
     url: /music/new-again-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/new-again-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -8646,7 +9125,10 @@ songs:
       - '⚡ Mood: triumphant, resilient, heartfelt, uplifting'
     tags:
       - communal
+      - controlledfemalegrit
+      - crowdchantbridge
       - emotional
+      - gangvocals
       - gritty
       - heartfelt
       - horizonsound
@@ -8656,8 +9138,13 @@ songs:
       - newmusic
       - originalmusic
       - popmusic
+      - punchydrums
+      - rawbutpolishedmix
       - resilient
+      - shoutalongchorus
+      - soaringguitars
       - songwriter
+      - spokenintro
       - triumphant
       - uplifting
     url: /music/heres-to-us-90s-rock-anthem-horizon-sound/
@@ -8720,6 +9207,7 @@ songs:
       - '🎧 Vibe: southern rock, blues‑rock, gritty, energetic, rebellious'
       - '🎤 Vocals: raw, swagger‑filled male lead'
     tags:
+      - bluesrock
       - energetic
       - gritty
       - horizonsound
@@ -8734,6 +9222,7 @@ songs:
       - rebellious
       - songwriter
       - southernrock
+      - swaggerfilledmalelead
     url: /music/one-hell-of-a-ride-gritty-southern-rock-horizon-sound/
     thumbnail: /assets/thumbnails/one-hell-of-a-ride-gritty-southern-rock-horizon-sound.jpeg
     videostatus: public
@@ -8796,20 +9285,29 @@ songs:
       - '🎛️ Production: bluesy electric guitars, shuffle drums, swaggering bass, harmonized leads'
       - '⚡ Mood: urgent, humorous, cinematic, chaotic‑night‑gone‑wrong'
     tags:
+      - bluesyelectricguitars
+      - chaoticnightgonewrong
       - cinematic
       - gimmethreestepsandimgonesouthernrockhorizonsound
       - gritty
+      - harmonizedleads
+      - highenergy
       - horizonsound
       - humorous
       - indieartist
       - instrumentalmusic
+      - malelead
       - musicvideo
       - newmusic
       - originalmusic
+      - playfultension
       - popmusic
       - rowdy
+      - shuffledrums
       - songwriter
       - southernrock
+      - storytellinggrit
+      - swaggeringbass
       - urgent
     url: /music/gimme-three-steps-and-im-gone-southern-rock-horizon-sound/
     thumbnail: /assets/thumbnails/gimme-three-steps-and-im-gone-southern-rock-horizon-sound.jpeg
@@ -8873,15 +9371,24 @@ songs:
       - '🎛️ Production: bluesy guitars, driving drums, barroom textures, modern rock polish'
       - '⚡ Mood: chaotic‑to‑connected, rowdy, defiant, emotionally charged'
     tags:
+      - attitudedrivenphrasing
       - barroombrawlsouthernrockgrithorizonsound
+      - barroomtextures
+      - bluesyguitars
+      - chaotictoconnected
       - defiant
+      - drivingdrums
+      - emotionalgrit
+      - emotionallycharged
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - modernrockpolish
       - musicvideo
       - newmusic
       - originalmusic
       - popmusic
+      - rawmalelead
       - rowdy
       - songwriter
       - southernrock
@@ -8949,7 +9456,9 @@ songs:
     tags:
       - becomingmeemotionalpopupbeatlovesonghorizonsound
       - bright
+      - emotionalpop
       - energetic
+      - expressivefemaleleadwithlayeredharmonies
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9021,6 +9530,8 @@ songs:
     tags:
       - anthemic
       - emotional
+      - energeticpoprock
+      - expressiveharmonies
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9030,6 +9541,7 @@ songs:
       - pop
       - popmusic
       - risingupenergeticpoprockhorizonsound
+      - soaringmalefemaleleads
       - songwriter
       - uplifting
     url: /music/rising-up-energetic-pop-rock-horizon-sound/
@@ -9105,6 +9617,7 @@ songs:
       - pop
       - popmusic
       - songwriter
+      - upbeatpop
       - warm
     url: /music/hold-on-pop-nostalgic-90s-energy-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-pop-nostalgic-90s-energy-horizon-sound.jpeg
@@ -9163,6 +9676,7 @@ songs:
       - '🎧 Vibe: bright pop, summery, nostalgic, romantic'
       - '🎤 Vocals: emotional, warm, expressive'
     tags:
+      - brightpop
       - emotional
       - expressive
       - horizonsound
@@ -9240,19 +9754,28 @@ songs:
       - '🎛️ Production: piano‑led, light acoustic guitar, gentle percussion, modern singer‑songwriter polish'
       - '⚡ Mood: hopeful, introspective, poetic, quietly empowering'
     tags:
+      - emotionalacousticpop
+      - expressivephrasing
+      - gentlepercussion
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - intimatefemalelead
       - introspective
       - kaleidoscopeemotionalacousticpophorizonsound
+      - lightacousticguitar
+      - modernsingersongwriterpolish
       - musicvideo
       - newmusic
       - originalmusic
+      - pianoled
       - poetic
       - pop
       - popmusic
+      - quietlyempowering
       - reflective
+      - softharmonies
       - songwriter
       - uplifting
       - warm
@@ -9318,19 +9841,29 @@ songs:
       - '🎛️ Production: warm acoustics, rhythmic drums, smooth synths, light guitar textures'
       - '⚡ Mood: hopeful, determined, empowering, forward‑moving'
     tags:
+      - acousticpopwarmth
+      - brightfemalelead
       - determined
       - empowering
+      - expressivephrasing
+      - forwardmoving
       - holdonrevisedhorizonsound
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - lightguitartextures
+      - motivationalenergy
       - musicvideo
       - newmusic
       - originalmusic
       - pop
       - popmusic
+      - rhythmicdrums
+      - smoothsynths
       - songwriter
+      - upliftingdelivery
+      - warmacoustics
     url: /music/hold-on-revised-horizon-sound/
     thumbnail: /assets/thumbnails/hold-on-revised-horizon-sound.jpeg
     videostatus: public
@@ -9393,11 +9926,16 @@ songs:
       - '🎛️ Production: acoustic layers, steady drums, shimmering synths, modern pop clarity'
       - '⚡ Mood: hopeful, energetic, uplifting, resilient'
     tags:
+      - acousticlayers
+      - brightfemalelead
       - energetic
+      - expressivephrasing
+      - feelgood
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - modernpopclarity
       - motivational
       - musicvideo
       - newmusic
@@ -9405,9 +9943,12 @@ songs:
       - pop
       - popmusic
       - resilient
+      - shimmeringsynths
       - songwriter
+      - steadydrums
       - upbeat
       - uplifting
+      - warmtone
     url: /music/keep-the-light-on-90s-pop-revival-horizon-sound/
     thumbnail: /assets/thumbnails/keep-the-light-on-90s-pop-revival-horizon-sound.jpeg
     videostatus: public
@@ -9471,6 +10012,7 @@ songs:
       - cinematic
       - emotional
       - empowering
+      - expressivefemalerockvocalwithcontrolledrasp
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9538,6 +10080,7 @@ songs:
     vibes:
       - 🎧 About the Song
     tags:
+      - aboutthesong
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9605,6 +10148,7 @@ songs:
       - '🎤 Vocals: powerful, raspy, harmony‑rich'
     tags:
       - energetic
+      - harmonyrich
       - horizonsound
       - indieartist
       - instrumentalmusic
@@ -9679,20 +10223,27 @@ songs:
       - '⚡ Mood: triumphant, passionate, determined, hopeful'
     tags:
       - bold
+      - cleandelivery
+      - confidentfemalelead
       - determined
+      - emotionalclarity
       - energetic
+      - gatedreverbdrums
       - hopeful
       - horizonsound
       - indieartist
       - instrumentalmusic
+      - melodicelectricfills
       - musicvideo
       - newmusic
       - originalmusic
       - passionate
       - popmusic
+      - pulsingsynthbass
       - songwriter
       - triumphant
       - uplifting
+      - widearenamix
     url: /music/never-let-each-other-down-80s-synth-rock-horizon-sound/
     thumbnail: /assets/thumbnails/never-let-each-other-down-80s-synth-rock-horizon-sound.jpeg
     videostatus: public
@@ -9755,7 +10306,12 @@ songs:
       - '🎛️ Production: shimmering synth pads, chorus‑washed guitars, steady pulse, cinematic reverb'
       - '⚡ Mood: hopeful, tender, comforting, quietly triumphant'
     tags:
+      - airyharmonies
+      - choruswashedguitars
+      - cinematicreverb
       - comforting
+      - expressivedelivery
+      - heartfeltfemalelead
       - hopeful
       - horizonsound
       - indieartist
@@ -9765,7 +10321,10 @@ songs:
       - nostalgic
       - originalmusic
       - popmusic
+      - quietlytriumphant
+      - shimmeringsynthpads
       - songwriter
+      - steadypulse
       - tender
       - uplifting
       - warm
