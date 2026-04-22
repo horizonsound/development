@@ -135,6 +135,6 @@ tracks.sort((a, b) => {
 // 5. Write final music.yml
 // ---------------------------------------------------------
 
-writeYAML("./music.yml", { tracks });
+writeYAML("../_data/music.yml", { tracks });
 
 console.log("✅ music.yml generated successfully.");
