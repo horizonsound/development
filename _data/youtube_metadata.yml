@@ -60,8 +60,8 @@ videos:
     category_id: '22'
     duration: PT3M46S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -142,8 +142,8 @@ videos:
     category_id: '22'
     duration: PT3M10S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -226,8 +226,8 @@ videos:
     category_id: '22'
     duration: PT3M28S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -305,8 +305,8 @@ videos:
     category_id: '22'
     duration: PT3M42S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -384,8 +384,8 @@ videos:
     category_id: '22'
     duration: PT3M44S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -463,8 +463,8 @@ videos:
     category_id: '22'
     duration: PT3M6S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -542,8 +542,8 @@ videos:
     category_id: '22'
     duration: PT2M54S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -622,8 +622,8 @@ videos:
     category_id: '22'
     duration: PT3M24S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -703,8 +703,8 @@ videos:
     category_id: '22'
     duration: PT4M22S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -784,8 +784,8 @@ videos:
     category_id: '22'
     duration: PT2M4S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -854,8 +854,8 @@ videos:
     category_id: '22'
     duration: PT2M25S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -934,8 +934,8 @@ videos:
     category_id: '22'
     duration: PT2M28S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1004,8 +1004,8 @@ videos:
     category_id: '22'
     duration: PT2M32S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1074,8 +1074,8 @@ videos:
     category_id: '22'
     duration: PT2M48S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1144,8 +1144,8 @@ videos:
     category_id: '22'
     duration: PT2M50S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1217,8 +1217,8 @@ videos:
     category_id: '22'
     duration: PT2M
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1305,8 +1305,8 @@ videos:
     category_id: '22'
     duration: PT2M40S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1393,8 +1393,8 @@ videos:
     category_id: '22'
     duration: PT2M32S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1481,8 +1481,8 @@ videos:
     category_id: '22'
     duration: PT2M34S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1569,8 +1569,8 @@ videos:
     category_id: '22'
     duration: PT2M53S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1657,8 +1657,8 @@ videos:
     category_id: '22'
     duration: PT2M58S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1745,8 +1745,8 @@ videos:
     category_id: '22'
     duration: PT3M7S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1833,8 +1833,8 @@ videos:
     category_id: '22'
     duration: PT2M5S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -1921,8 +1921,8 @@ videos:
     category_id: '22'
     duration: PT2M46S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2001,8 +2001,8 @@ videos:
     category_id: '22'
     duration: PT2M49S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2081,8 +2081,8 @@ videos:
     category_id: '22'
     duration: PT3M6S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2161,8 +2161,8 @@ videos:
     category_id: '22'
     duration: PT4M20S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2241,8 +2241,8 @@ videos:
     category_id: '22'
     duration: PT4M25S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2321,8 +2321,8 @@ videos:
     category_id: '22'
     duration: PT3M41S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2400,8 +2400,8 @@ videos:
     category_id: '22'
     duration: PT3M19S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2480,8 +2480,8 @@ videos:
     category_id: '22'
     duration: PT3M53S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2560,8 +2560,8 @@ videos:
     category_id: '22'
     duration: PT4M41S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2640,8 +2640,8 @@ videos:
     category_id: '22'
     duration: PT3M35S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2720,8 +2720,8 @@ videos:
     category_id: '22'
     duration: PT2M50S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2800,8 +2800,8 @@ videos:
     category_id: '22'
     duration: PT4M26S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2880,8 +2880,8 @@ videos:
     category_id: '22'
     duration: PT3M44S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -2960,8 +2960,8 @@ videos:
     category_id: '22'
     duration: PT4M36S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3040,8 +3040,8 @@ videos:
     category_id: '22'
     duration: PT4M10S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3120,8 +3120,8 @@ videos:
     category_id: '22'
     duration: PT3M24S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3200,8 +3200,8 @@ videos:
     category_id: '22'
     duration: PT4M31S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3280,8 +3280,8 @@ videos:
     category_id: '22'
     duration: PT4M37S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3360,8 +3360,8 @@ videos:
     category_id: '22'
     duration: PT4M6S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3440,8 +3440,8 @@ videos:
     category_id: '22'
     duration: PT4M21S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3521,8 +3521,8 @@ videos:
     category_id: '22'
     duration: PT4M11S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3601,8 +3601,8 @@ videos:
     category_id: '22'
     duration: PT4M29S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3681,8 +3681,8 @@ videos:
     category_id: '22'
     duration: PT4M42S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3761,8 +3761,8 @@ videos:
     category_id: '22'
     duration: PT3M23S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3841,8 +3841,8 @@ videos:
     category_id: '22'
     duration: PT3M20S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -3921,8 +3921,8 @@ videos:
     category_id: '22'
     duration: PT2M19S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4003,8 +4003,8 @@ videos:
     category_id: '22'
     duration: PT2M13S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4083,8 +4083,8 @@ videos:
     category_id: '22'
     duration: PT3M5S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4163,8 +4163,8 @@ videos:
     category_id: '22'
     duration: PT3M43S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4243,8 +4243,8 @@ videos:
     category_id: '22'
     duration: PT2M58S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4323,8 +4323,8 @@ videos:
     category_id: '22'
     duration: PT3M4S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4403,8 +4403,8 @@ videos:
     category_id: '22'
     duration: PT4M6S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4485,8 +4485,8 @@ videos:
     category_id: '22'
     duration: PT3M38S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4565,8 +4565,8 @@ videos:
     category_id: '22'
     duration: PT3M52S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4645,8 +4645,8 @@ videos:
     category_id: '22'
     duration: PT7M3S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4725,8 +4725,8 @@ videos:
     category_id: '22'
     duration: PT7M
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4805,8 +4805,8 @@ videos:
     category_id: '22'
     duration: PT5M39S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4885,8 +4885,8 @@ videos:
     category_id: '22'
     duration: PT3M23S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -4967,8 +4967,8 @@ videos:
     category_id: '22'
     duration: PT3M33S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5047,8 +5047,8 @@ videos:
     category_id: '22'
     duration: PT2M32S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5127,8 +5127,8 @@ videos:
     category_id: '22'
     duration: PT2M50S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5207,8 +5207,8 @@ videos:
     category_id: '22'
     duration: PT3M46S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5287,8 +5287,8 @@ videos:
     category_id: '22'
     duration: PT2M52S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5367,8 +5367,8 @@ videos:
     category_id: '22'
     duration: PT4M24S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5447,8 +5447,8 @@ videos:
     category_id: '22'
     duration: PT4M13S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5527,8 +5527,8 @@ videos:
     category_id: '22'
     duration: PT3M29S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5607,8 +5607,8 @@ videos:
     category_id: '22'
     duration: PT4M15S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5687,8 +5687,8 @@ videos:
     category_id: '22'
     duration: PT3M52S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5767,8 +5767,8 @@ videos:
     category_id: '22'
     duration: PT4M5S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5868,8 +5868,8 @@ videos:
     category_id: '22'
     duration: PT2M39S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -5961,8 +5961,8 @@ videos:
     category_id: '22'
     duration: PT3M39S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6053,8 +6053,8 @@ videos:
     category_id: '22'
     duration: PT5M30S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6141,8 +6141,8 @@ videos:
     category_id: '22'
     duration: PT2M55S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6229,8 +6229,8 @@ videos:
     category_id: '22'
     duration: PT3M44S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6317,8 +6317,8 @@ videos:
     category_id: '22'
     duration: PT3M58S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6405,8 +6405,8 @@ videos:
     category_id: '22'
     duration: PT3M11S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6493,8 +6493,8 @@ videos:
     category_id: '22'
     duration: PT4M9S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6581,8 +6581,8 @@ videos:
     category_id: '22'
     duration: PT3M43S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6671,8 +6671,8 @@ videos:
     category_id: '22'
     duration: PT4M37S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6762,8 +6762,8 @@ videos:
     category_id: '22'
     duration: PT5M46S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6853,8 +6853,8 @@ videos:
     category_id: '22'
     duration: PT5M26S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -6938,8 +6938,8 @@ videos:
     category_id: '22'
     duration: PT18S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7025,8 +7025,8 @@ videos:
     category_id: '22'
     duration: PT14S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7113,8 +7113,8 @@ videos:
     category_id: '22'
     duration: PT3M50S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7205,8 +7205,8 @@ videos:
     category_id: '22'
     duration: PT3M55S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7297,8 +7297,8 @@ videos:
     category_id: '22'
     duration: PT3M56S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7389,8 +7389,8 @@ videos:
     category_id: '22'
     duration: PT4M14S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7481,8 +7481,8 @@ videos:
     category_id: '22'
     duration: PT5M12S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7573,8 +7573,8 @@ videos:
     category_id: '22'
     duration: PT4M36S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7665,8 +7665,8 @@ videos:
     category_id: '22'
     duration: PT4M58S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7756,8 +7756,8 @@ videos:
     category_id: '22'
     duration: PT4M26S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7847,8 +7847,8 @@ videos:
     category_id: '22'
     duration: PT4M50S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -7938,8 +7938,8 @@ videos:
     category_id: '22'
     duration: PT5M
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8030,8 +8030,8 @@ videos:
     category_id: '22'
     duration: PT5M18S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8121,8 +8121,8 @@ videos:
     category_id: '22'
     duration: PT4M33S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8213,8 +8213,8 @@ videos:
     category_id: '22'
     duration: PT5M46S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8303,8 +8303,8 @@ videos:
     category_id: '22'
     duration: PT4M51S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8393,8 +8393,8 @@ videos:
     category_id: '22'
     duration: PT4M36S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8484,8 +8484,8 @@ videos:
     category_id: '22'
     duration: PT4M18S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8574,8 +8574,8 @@ videos:
     category_id: '22'
     duration: PT5M49S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8666,8 +8666,8 @@ videos:
     category_id: '22'
     duration: PT3M52S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8757,8 +8757,8 @@ videos:
     category_id: '22'
     duration: PT4M29S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8848,8 +8848,8 @@ videos:
     category_id: '22'
     duration: PT3M55S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -8942,8 +8942,8 @@ videos:
     category_id: '22'
     duration: PT3M3S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9034,8 +9034,8 @@ videos:
     category_id: '22'
     duration: PT4M14S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9126,8 +9126,8 @@ videos:
     category_id: '22'
     duration: PT2M53S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9218,8 +9218,8 @@ videos:
     category_id: '22'
     duration: PT3M31S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9316,8 +9316,8 @@ videos:
     category_id: '22'
     duration: PT5M28S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9406,8 +9406,8 @@ videos:
     category_id: '22'
     duration: PT5M48S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9499,8 +9499,8 @@ videos:
     category_id: '22'
     duration: PT4M22S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9591,8 +9591,8 @@ videos:
     category_id: '22'
     duration: PT5M
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9683,8 +9683,8 @@ videos:
     category_id: '22'
     duration: PT3M30S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9775,8 +9775,8 @@ videos:
     category_id: '22'
     duration: PT5M37S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9866,8 +9866,8 @@ videos:
     category_id: '22'
     duration: PT4M53S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -9957,8 +9957,8 @@ videos:
     category_id: '22'
     duration: PT3M45S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10050,8 +10050,8 @@ videos:
     category_id: '22'
     duration: PT4M19S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10144,8 +10144,8 @@ videos:
     category_id: '22'
     duration: PT5M28S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10238,8 +10238,8 @@ videos:
     category_id: '22'
     duration: PT4M41S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10328,8 +10328,8 @@ videos:
     category_id: '22'
     duration: PT3M49S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10417,8 +10417,8 @@ videos:
     category_id: '22'
     duration: PT3M32S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10514,8 +10514,8 @@ videos:
     category_id: '22'
     duration: PT3M25S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10604,8 +10604,8 @@ videos:
     category_id: '22'
     duration: PT3M40S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10696,8 +10696,8 @@ videos:
     category_id: '22'
     duration: PT3M35S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10789,8 +10789,8 @@ videos:
     category_id: '22'
     duration: PT3M54S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10882,8 +10882,8 @@ videos:
     category_id: '22'
     duration: PT4M20S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -10973,8 +10973,8 @@ videos:
     category_id: '22'
     duration: PT5M3S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11068,8 +11068,8 @@ videos:
     category_id: '22'
     duration: PT5M51S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11160,8 +11160,8 @@ videos:
     category_id: '22'
     duration: PT4M26S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11253,8 +11253,8 @@ videos:
     category_id: '22'
     duration: PT4M15S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11343,8 +11343,8 @@ videos:
     category_id: '22'
     duration: PT2M51S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11434,8 +11434,8 @@ videos:
     category_id: '22'
     duration: PT4M4S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11525,8 +11525,8 @@ videos:
     category_id: '22'
     duration: PT4M19S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11616,8 +11616,8 @@ videos:
     category_id: '22'
     duration: PT3M33S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11709,8 +11709,8 @@ videos:
     category_id: '22'
     duration: PT5M4S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11802,8 +11802,8 @@ videos:
     category_id: '22'
     duration: PT5M36S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11894,8 +11894,8 @@ videos:
     category_id: '22'
     duration: PT4M20S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -11987,8 +11987,8 @@ videos:
     category_id: '22'
     duration: PT4M25S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
@@ -12078,8 +12078,8 @@ videos:
     category_id: '22'
     duration: PT4M4S
     definition: hd
-    dimension: null
-    caption: null
+    dimension: 2d
+    caption: 'false'
     licensed_content: false
     region_allowed: []
     region_blocked: []
