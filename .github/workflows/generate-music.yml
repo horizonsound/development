@@ -20,7 +20,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install --prefix youtube_sync
+        run: npm install --prefix youtube-sync
 
       - name: Generate music.yml
         run: node generate_music.js
