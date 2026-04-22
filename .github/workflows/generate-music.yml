@@ -25,7 +25,7 @@ jobs:
 
       - name: Generate music.yml
         run: node generate_music.js
-        working-directory: ./youtube_sync
+        working-directory: ./youtube-sync
 
       - name: Commit and push changes
         run: |
