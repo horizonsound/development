@@ -177,6 +177,7 @@ export async function fetchAllVideos() {
           channel_id: snippet.channelId || "",
           channel_title: snippet.channelTitle || "",
           category_id: snippet.categoryId || "",
+          caption: content.caption || null,
           tags: snippet.tags || [],
           duration: content.duration || "",
           definition: content.definition || "",
