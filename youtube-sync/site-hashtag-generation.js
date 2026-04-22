@@ -33,9 +33,10 @@ function extractFromVibes(vibesArray) {
     .map(s => s.trim().toLowerCase())
     .map(s => s.replace(/[^a-z0-9\s-]/g, "")) // remove emojis/punctuation
     .map(s => s.replace(/\s+/g, ""))          // merge multi-word descriptors
-    .map(s => s.replace(/-/g, ""))            // remove hyphens (dusty-trail)
+    .map(s => s.replace(/-/g, ""))            // remove hyphens
     .filter(s => s.length > 2)
-    .filter(s => !["vibe","vocals","production","mood"].includes(s));
+    .filter(s => !["vibe","vocals","production","mood"].includes(s)) // remove labels
+    .filter(s => !STOPWORDS.has(s));          // exact match only
 }
 
 function extractFromTitle(title) {
