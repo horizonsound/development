@@ -6,10 +6,12 @@ import yaml from "js-yaml";
 // ---------------------------------------------------------
 
 function loadYAML(path) {
+  console.log(`📄 Loading YAML: ${path}`);
   return yaml.load(fs.readFileSync(path, "utf8"));
 }
 
 function writeYAML(path, data) {
+  console.log(`💾 Writing YAML: ${path}`);
   fs.writeFileSync(path, yaml.dump(data, { sortKeys: false }), "utf8");
 }
 
@@ -36,35 +38,44 @@ const overrideLookup = {};
 // 2. Build unified track entries
 // ---------------------------------------------------------
 
-const tracks = youtubeFeed.songs.map(song => {
+console.log(`🎵 Total songs in youtube_feed: ${youtubeFeed.songs.length}`);
+
+const tracks = youtubeFeed.songs.map((song, index) => {
+  console.log(`\n----------------------------------------`);
+  console.log(`🔍 Processing song #${index + 1}`);
+  console.log(`🆔 song_id: ${song.song_id}`);
+  console.log(`🎶 title: ${song.title}`);
+  console.log(`🔑 slug: ${song.slug}`);
+
+  // Check for missing slug
+  if (!song.slug) {
+    console.error(`❌ ERROR: Missing slug for song_id=${song.song_id}, title="${song.title}"`);
+    return null; // continue processing others
+  }
+
   const slug = song.slug;
   const songId = song.song_id;
 
   const artist = artistLookup[slug];
+
+  // Check for missing artist mapping
   if (!artist) {
-    console.error(`❌ Missing artist mapping for slug: ${slug}`);
-    process.exit(1);
+    console.error(`❌ ERROR: Missing artist mapping for slug="${slug}" (song_id=${songId}, title="${song.title}")`);
+    return null;
   }
 
+  console.log(`👤 Artist found: ${artist.artist_name}`);
+
   const base = {
-    // -----------------------------------------------------
-    // Core identity
-    // -----------------------------------------------------
     id: songId,
     slug,
     title: song.title,
     subtitle: song.subtitle || null,
 
-    // -----------------------------------------------------
-    // Artist metadata
-    // -----------------------------------------------------
     initials: artist.initials,
     artist_slug: artist.artist_slug,
     artist_name: artist.artist_name,
 
-    // -----------------------------------------------------
-    // Audio / video / metadata
-    // -----------------------------------------------------
     description_html: song.description_html || null,
     vibes: song.vibes || [],
     tags: song.tags || [],
@@ -81,9 +92,6 @@ const tracks = youtubeFeed.songs.map(song => {
 
     playlists: song.playlists || [],
 
-    // -----------------------------------------------------
-    // Overrides block (filled below)
-    // -----------------------------------------------------
     overrides: {
       title: null,
       subtitle: null,
@@ -95,18 +103,16 @@ const tracks = youtubeFeed.songs.map(song => {
     }
   };
 
-  // ---------------------------------------------------------
-  // 3. Apply overrides
-  // ---------------------------------------------------------
+  // Apply overrides
   const ov = overrideLookup[songId];
   if (ov) {
+    console.log(`✨ Applying overrides for ${songId}`);
     Object.keys(base.overrides).forEach(key => {
       if (ov[key] !== undefined) {
         base.overrides[key] = ov[key];
       }
     });
 
-    // Apply top-level title/subtitle overrides
     if (ov.title) base.title = ov.title;
     if (ov.subtitle) base.subtitle = ov.subtitle;
   }
@@ -114,12 +120,14 @@ const tracks = youtubeFeed.songs.map(song => {
   return base;
 });
 
+// Filter out nulls (bad entries)
+const validTracks = tracks.filter(t => t !== null);
+
 // ---------------------------------------------------------
 // 4. Deterministic sorting
 // ---------------------------------------------------------
 
-tracks.sort((a, b) => {
-  // Null published_at goes last
+validTracks.sort((a, b) => {
   if (!a.published_at && b.published_at) return 1;
   if (a.published_at && !b.published_at) return -1;
 
@@ -134,6 +142,6 @@ tracks.sort((a, b) => {
 // 5. Write final music.yml
 // ---------------------------------------------------------
 
-writeYAML("./music.yml", { tracks });
+writeYAML("./music.yml", { tracks: validTracks });
 
 console.log("✅ music.yml generated successfully.");
