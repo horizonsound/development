@@ -29,10 +29,13 @@ function extractFromVibes(vibesArray) {
 
   return vibesArray
     .map(v => v.replace(/^[^:]+:/, ""))       // remove "Vibe:", "Vocals:", etc.
-    .flatMap(v => v.split(/[,:]/))            // split on commas/colons
-    .map(s => s.replace(/^[^a-zA-Z]+/, ""))   // strip emojis/symbols
+    .flatMap(v => v.split(","))               // split descriptors
     .map(s => s.trim().toLowerCase())
-    .filter(s => s.length > 2);
+    .map(s => s.replace(/[^a-z0-9\s-]/g, "")) // remove emojis/punctuation
+    .map(s => s.replace(/\s+/g, ""))          // merge multi-word descriptors
+    .map(s => s.replace(/-/g, ""))            // remove hyphens (dusty-trail)
+    .filter(s => s.length > 2)
+    .filter(s => !["vibe","vocals","production","mood"].includes(s));
 }
 
 function extractFromTitle(title) {
