@@ -12,7 +12,7 @@ settings:
       - instrumentalmusic
       - songwriter
   youtube_update:
-    mode: "single"   # single | multiple | playlist | all
+    mode: "multiple"   # single | multiple | playlist | all
     single:
       youtube_id: "r16qSkxEcI4"
     multiple:
