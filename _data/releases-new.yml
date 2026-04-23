@@ -1,0 +1,1040 @@
+releases:
+  - id: rel_one-hell-of-a-ride_scf
+    slug: one-hell-of-a-ride
+    title: "One Hell of a Ride"
+    subtitle:
+    type: single
+    status: public
+    description:
+    release_date: 2026-04-18
+    upload_date: 2026-04-18
+    preorder_date:
+    upc: "825393797326"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_southern_crossfire
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_onehellofaride_hs_001
+        track_number: 1
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Southern Crossfire."
+      priority:
+  
+  - id: rel_until-the-nightmare-ends_cm
+    slug: until-the-nightmare-ends
+    title: "Until the Nightmare Ends (Stranger Things Anthem)"
+    subtitle:
+    type: single
+    status: public
+    description:
+    release_date: 2026-04-18
+    upload_date: 2026-04-18
+    preorder_date:
+    upc: "825393810704"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_craig_mitchell
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_untilthenightma_hs_001
+        track_number: 1
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Craig Mitchell."
+      priority:
+  
+  - id: rel_wildfire_mr
+    slug: wildfire
+    title: "Wildfire"
+    subtitle:
+    type: single
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825500017941"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_maddie_rowan
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_wildfire_hs_001
+        track_number: 1
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Maddie Rowan."
+      priority:
+
+  - id: rel_lifes-a-kaleidoscope_ayc
+    slug: lifes-a-kaleidoscope
+    title: "Life’s a Kaleidoscope"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-17
+    upload_date: 2026-04-17
+    preorder_date:
+    upc: "825393994336"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_ascension_youth_choir
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_kaleidoscope_ayc_001
+        track_number: 1
+      - track_id: trk_allaroundthewor_ayc_001
+        track_number: 2
+      - track_id: trk_rusty_ayc_001
+        track_number: 3
+      - track_id: trk_risingup_ayc_001
+        track_number: 4
+      - track_id: trk_holdon_ayc_001
+        track_number: 5
+      - track_id: trk_keepthelighton_ayc_001
+        track_number: 6
+      - track_id: trk_betterthanbefor_ayc_001
+        track_number: 7
+      - track_id: trk_thethingsthatst_ayc_001
+        track_number: 8
+      - track_id: trk_totaleclipse_ayc_001
+        track_number: 9
+      - track_id: trk_windinyoursails_ayc_001
+        track_number: 10
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_irish-celtic_hs
+    slug: irish-celtic
+    title: "Irish Celtic"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486932474"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_fiddleresatdawn_hs_001
+        track_number: 1
+      - track_id: trk_journeytoskelli_hs_001
+        track_number: 2
+      - track_id: trk_thepathtodunmor_hs_001
+        track_number: 3
+      - track_id: trk_acrosstheemeral_hs_001
+        track_number: 4
+      - track_id: trk_fireinthefiddle_hs_001
+        track_number: 5
+      - track_id: trk_thechasethrough_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+
+  - id: rel_workout-electronic-dance-music_hs
+    slug: workout-electronic-dance-music
+    title: "Workout & Electronic Dance Music"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486959952"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_electricpulse_hs_001
+        track_number: 1
+      - track_id: trk_breakthegravity_hs_001
+        track_number: 2
+      - track_id: trk_shinethrough_hs_001
+        track_number: 3
+      - track_id: trk_lightuptherunwa_hs_001
+        track_number: 4
+      - track_id: trk_midnightvelocit_hs_001
+        track_number: 5
+      - track_id: trk_neonrunner_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_synthwave-retrowave_hs
+    slug: synthwave-retrowave
+    title: "Synthwave & Retrowave"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486962747"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_retrodrive_hs_001
+        track_number: 1
+      - track_id: trk_nightfallcircui_hs_001
+        track_number: 2
+      - track_id: trk_dreamwaveavenue_hs_001
+        track_number: 3
+      - track_id: trk_memoryloop_hs_001
+        track_number: 4
+      - track_id: trk_midnightascensi_hs_001
+        track_number: 5
+      - track_id: trk_neonvanguard_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+
+  - id: rel_pop-instrumentals_hs
+    slug: pop-instrumentals
+    title: "Pop Instrumentals"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486966028"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_colorthesky_hs_001
+        track_number: 1
+      - track_id: trk_betterdaysahead_hs_001
+        track_number: 2
+      - track_id: trk_goldenhourgroov_hs_001
+        track_number: 3
+      - track_id: trk_softlight_hs_001
+        track_number: 4
+      - track_id: trk_openheartcity_hs_001
+        track_number: 5
+      - track_id: trk_brightestpartof_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_piano-emotional_hs
+    slug: piano-emotional
+    title: "Piano Emotional"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486945573"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_holdingthelight_hs_001
+        track_number: 1
+      - track_id: trk_thequietbetween_hs_001
+        track_number: 2
+      - track_id: trk_stillwaters_hs_001
+        track_number: 3
+      - track_id: trk_breathingslow_hs_001
+        track_number: 4
+      - track_id: trk_aplacetorest_hs_001
+        track_number: 5
+      - track_id: trk_fallingtowardth_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_orchestral-rock_hs
+    slug: orchestral-rock
+    title: "Orchestral Rock"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486975518"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_winterfire_hs_001
+        track_number: 1
+      - track_id: trk_thefrozenovertu_hs_001
+        track_number: 2
+      - track_id: trk_therisingstorm_hs_001
+        track_number: 3
+      - track_id: trk_fireinthechoir_hs_001
+        track_number: 4
+      - track_id: trk_glacierstorm_hs_001
+        track_number: 5
+      - track_id: trk_thewinterrequie_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_electric-guitar-rock_hs
+    slug: electric-guitar-rock
+    title: "Electric Guitar Rock"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486979479"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_neonskyline_hs_001
+        track_number: 1
+      - track_id: trk_runningthroughth_hs_001
+        track_number: 2
+      - track_id: trk_fireinthewires_hs_001
+        track_number: 3
+      - track_id: trk_chasingthespark_hs_001
+        track_number: 4
+      - track_id: trk_wavesofblue_hs_001
+        track_number: 5
+      - track_id: trk_afterthestatic_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_cinematic-ambient_hs
+    slug: cinematic-ambient
+    title: "Cinematic & Ambient"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486987924"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_momentsbetweenmo_hs_001
+        track_number: 1
+      - track_id: trk_wheretheairglows_hs_001
+        track_number: 2
+      - track_id: trk_echoesoftomorro_hs_001
+        track_number: 3
+      - track_id: trk_thespacewekeep_hs_001
+        track_number: 4
+      - track_id: trk_breathingincolo_hs_001
+        track_number: 5
+      - track_id: trk_quietHorizons_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_calm-cinematic_hs
+    slug: calm-cinematic
+    title: "Calm & Cinematic"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486992430"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_atouchoflight_hs_001
+        track_number: 1
+      - track_id: trk_foreverinamomen_hs_001
+        track_number: 2
+      - track_id: trk_heldinthemoment_hs_001
+        track_number: 3
+      - track_id: trk_linesoflight_hs_001
+        track_number: 4
+      - track_id: trk_themomentyoubre_hs_001
+        track_number: 5
+      - track_id: trk_thewaywatermove_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_acoustic-guitar_hs
+    slug: acoustic-guitar
+    title: "Acoustic Guitar"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825486996056"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_sunlightonthest_hs_001
+        track_number: 1
+      - track_id: trk_wanderersheart_hs_001
+        track_number: 2
+      - track_id: trk_runningtowardth_hs_001
+        track_number: 3
+      - track_id: trk_thewayhome_hs_001
+        track_number: 4
+      - track_id: trk_lettersinthewin_hs_001
+        track_number: 5
+      - track_id: trk_chasingthedayli_hs_001
+        track_number: 6
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+
+  - id: rel_venice-trilogy_hs
+    slug: venice-trilogy
+    title: "Venice Trilogy"
+    subtitle:
+    type: collection
+    status: public
+    description:
+    release_date: 2026-04-11
+    upload_date: 2026-04-07
+    preorder_date:
+    upc: "825500019372"
+    label: "Horizon Sound"
+    genres:
+      primary: instrumental
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_someday_hs_001
+        track_number: 1
+      - track_id: trk_missingstamp_hs_001
+        track_number: 2
+      - track_id: trk_venicewaters_hs_001
+        track_number: 3
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_midnight-saga_r
+    slug: midnight-saga
+    title: "Midnight Saga"
+    subtitle:
+    type: collection
+    status: public
+    description:
+    release_date: 2026-04-07
+    upload_date: 2026-04-02
+    preorder_date: 2026-04-02
+    upc: "825626049970"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_ravyn
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_beforemidnight_r_001
+        track_number: 1
+      - track_id: trk_midnightmayhem_r_001
+        track_number: 2
+      - track_id: trk_midnightmadness_r_001
+        track_number: 3
+      - track_id: trk_aftermidnight_r_001
+        track_number: 4
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+    
+  - id: rel_rum-soaked-paradise_cs
+    slug: rum-soaked-paradise
+    title: "Rum Soaked Paradise"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-07
+    upload_date: 2026-04-02
+    preorder_date: 2026-04-02
+    upc: "825626063389"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_cody_sails
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_rumsoakedparadi_cs_001
+        track_number: 1
+      - track_id: trk_saltontherim_cs_001
+        track_number: 2
+      - track_id: trk_barefootandbuzz_cs_001
+        track_number: 3
+      - track_id: trk_islandgirltroub_cs_001
+        track_number: 4
+      - track_id: trk_leilani_cs_001
+        track_number: 5
+      - track_id: trk_hightide_cs_001
+        track_number: 6
+      - track_id: trk_sunburnedandsmi_cs_001
+        track_number: 7
+      - track_id: trk_windinyoursails_cs_001
+        track_number: 8
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+  
+  - id: rel_after-the-silence_le
+    slug: after-the-silence
+    title: "After the Silence"
+    subtitle:
+    type: album
+    status: public
+    description:
+    release_date: 2026-04-05
+    upload_date: 2026-03-30
+    preorder_date: 2026-03-30
+    upc: "825628461725"
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_lydia_ellington
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_thequietafter_le_001
+        track_number: 1
+      - track_id: trk_borrowedtime_le_001
+        track_number: 2
+      - track_id: trk_homesickforyou_le_001
+        track_number: 3
+      - track_id: trk_thewaywelied_le_001
+        track_number: 4
+      - track_id: trk_paperwalls_le_001
+        track_number: 5
+      - track_id: trk_halfofme_le_001
+        track_number: 6
+      - track_id: trk_ifyoudasked_le_001
+        track_number: 7
+      - track_id: trk_ghostlight_le_001
+        track_number: 8
+      - track_id: trk_afterthesilence_le_001
+        track_number: 9
+      - track_id: trk_saltwater_le_001
+        track_number: 10
+      - track_id: trk_thedressineverw_le_001
+        track_number: 11
+      - track_id: trk_unsentletters_le_001
+        track_number: 12
+      - track_id: trk_riseagain_le_001
+        track_number: 13
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes:
+      priority:
+
+  - id: rel_a-way-back_hs
+    slug: a-way-back
+    title: "A Way Back"
+    subtitle:
+    type: single
+    status: private
+    description:
+    release_date:
+    upload_date:
+    preorder_date:
+    upc:
+    label: "Horizon Sound"
+    genres:
+      primary:
+      secondary:
+      tertiary:
+    artwork:
+      cover:
+      banner:
+      gallery: []
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    primary_artist: art_horizon_sound
+    featuring_artists: []
+    tracklist:
+      - track_id: trk_a-way-back_hs_001
+        track_number: 1
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+    seo:
+      title:
+      description:
+      keywords: []
+    internal:
+      notes: "Private release. No UPC or ISRC assigned."
+      priority:
