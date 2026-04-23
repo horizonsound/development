@@ -1,7 +1,7 @@
 tracks:
   - id: trk_ascensiony_ayc
-    slug: kaleidoscope_ascension_youth_choir_official_video_horizon_sound
-    title: Kaleidoscope - Ascension Youth Choir (Official Video) | Horizon Sound
+    slug: kaleidoscope
+    title: Kaleidoscope
     subtitle: null
     status: public
     type: null
@@ -72,10 +72,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: all_around_the_world_ascension_youth_choir_official_video_horizon_sound
-    title: >-
-      All Around the World - Ascension Youth Choir (Official Video) | Horizon
-      Sound
+    slug: all_around_the_world
+    title: All Around the World
     subtitle: null
     status: public
     type: null
@@ -150,8 +148,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: rusty_ascension_youth_choir_official_video_horizon_sound
-    title: Rusty - Ascension Youth Choir (Official Video) | Horizon Sound
+    slug: rusty
+    title: Rusty
     subtitle: null
     status: scheduled
     type: null
@@ -222,8 +220,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: rising_up_ascension_youth_choir_official_video_horizon_sound
-    title: Rising Up - Ascension Youth Choir (Official Video) | Horizon Sound
+    slug: rising_up
+    title: Rising Up
     subtitle: null
     status: scheduled
     type: null
@@ -294,8 +292,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: hold_on_ascension_youth_choir_official_video_horizon_sound
-    title: Hold On - Ascension Youth Choir (Official Video) | Horizon Sound
+    slug: hold_on
+    title: Hold On
     subtitle: null
     status: scheduled
     type: null
@@ -366,8 +364,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: keep_the_light_on_ascension_youth_choir_official_video_horizon_sound
-    title: Keep the Light On - Ascension Youth Choir (Official Video) | Horizon Sound
+    slug: keep_the_light_on
+    title: Keep the Light On
     subtitle: null
     status: scheduled
     type: null
@@ -442,10 +440,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: better_than_before_ascension_youth_choir_official_video_horizon_sound
-    title: >-
-      Better than Before - Ascension Youth Choir (Official Video) | Horizon
-      Sound
+    slug: better_than_before
+    title: Better Than Before
     subtitle: null
     status: scheduled
     type: null
@@ -520,11 +516,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: >-
-      the_things_that_stayed_with_me_ascension_youth_choir_official_video_horizon_sound
-    title: >-
-      The Things That Stayed With Me - Ascension Youth Choir (Official Video) |
-      Horizon Sound
+    slug: the_things_that_stayed_with_me
+    title: The Things That Stayed With Me
     subtitle: null
     status: scheduled
     type: null
@@ -599,11 +592,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: >-
-      total_eclipse_years_later_ascension_youth_choir_official_video_horizon_sound
-    title: >-
-      Total Eclipse (Years Later) - Ascension Youth Choir (Official Video) |
-      Horizon Sound
+    slug: total_eclipse
+    title: Total Eclipse
     subtitle: null
     status: scheduled
     type: null
@@ -678,10 +668,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_ascensiony_ayc
-    slug: wind_in_your_sails_ascension_youth_choir_official_video_horizon_sound
-    title: >-
-      Wind in Your Sails - Ascension Youth Choir (Official Video) | Horizon
-      Sound
+    slug: wind_in_your_sails
+    title: Wind in Your Sails
     subtitle: null
     status: scheduled
     type: null
@@ -881,7 +869,7 @@ tracks:
       priority: null
   - id: trk_horizonsou_hs
     slug: the_chase_through_galway
-    title: The Chase through Galway
+    title: The Chase Through Galway
     subtitle: null
     status: scheduled
     type: null
@@ -1063,8 +1051,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_horizonsou_hs
-    slug: fiddlers_at_dawn
-    title: Fiddlers at Dawn
+    slug: fiddleres_at_dawn
+    title: Fiddleres at Dawn
     subtitle: null
     status: scheduled
     type: null
@@ -1123,8 +1111,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: rum_soaked_paradise_cody_sails_horizon_sound
-    title: Rum Soaked Paradise – Cody Sails | Horizon Sound
+    slug: rum_soaked_paradise
+    title: Rum Soaked Paradise
     subtitle: null
     status: scheduled
     type: null
@@ -1194,8 +1182,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: salt_on_the_rim_cody_sails_horizon_sound
-    title: Salt on the Rim – Cody Sails | Horizon Sound
+    slug: salt_on_the_rim
+    title: Salt on the Rim
     subtitle: null
     status: scheduled
     type: null
@@ -1267,8 +1255,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: barefoot_and_buzzed_cody_sails_horizon_sound
-    title: Barefoot and Buzzed – Cody Sails | Horizon Sound
+    slug: barefoot_and_buzzed
+    title: Barefoot and Buzzed
     subtitle: null
     status: scheduled
     type: null
@@ -1342,8 +1330,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: island_girl_trouble_cody_sails_horizon_sound
-    title: Island Girl Trouble – Cody Sails | Horizon Sound
+    slug: island_girl_trouble
+    title: Island Girl Trouble
     subtitle: null
     status: scheduled
     type: null
@@ -1417,8 +1405,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: leilani_cody_sails_horizon_sound
-    title: Leilani – Cody Sails | Horizon Sound
+    slug: leilani
+    title: Leilani
     subtitle: null
     status: scheduled
     type: null
@@ -1489,8 +1477,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: high_tide_cody_sails_horizon_sound
-    title: High Tide – Cody Sails | Horizon Sound
+    slug: high_tide
+    title: High Tide
     subtitle: null
     status: scheduled
     type: null
@@ -1561,8 +1549,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: sunburned_and_smiling_cody_sails_horizon_sound
-    title: Sunburned and Smiling – Cody Sails | Horizon Sound
+    slug: sunburned_and_smiling
+    title: Sunburned and Smiling
     subtitle: null
     status: scheduled
     type: null
@@ -1633,8 +1621,8 @@ tracks:
       notes: null
       priority: null
   - id: trk_codysails_cs
-    slug: wind_in_your_sails_cody_sails_horizon_sound
-    title: Wind in Your Sails – Cody Sails | Horizon Sound
+    slug: wind_in_your_sails
+    title: Wind in your Sails
     subtitle: null
     status: scheduled
     type: null
@@ -3047,7 +3035,7 @@ tracks:
       priority: null
   - id: trk_horizonsou_hs
     slug: a_place_to_rest
-    title: A Place To Rest
+    title: A Place to Rest
     subtitle: null
     status: scheduled
     type: null
@@ -3599,7 +3587,7 @@ tracks:
       priority: null
   - id: trk_horizonsou_hs
     slug: running_through_the_night
-    title: Running Through the Night
+    title: Running THrough the Night
     subtitle: null
     status: scheduled
     type: null
@@ -3966,7 +3954,7 @@ tracks:
       priority: null
   - id: trk_horizonsou_hs
     slug: wanderers_heart
-    title: Wanderer's Heart
+    title: Wanderers Heart
     subtitle: null
     status: scheduled
     type: null
