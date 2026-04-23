@@ -1,478 +1,503 @@
 artists:
-  - id: art_ascension_youth_choir
-    slug: ascension-youth-choir
-    name:
-      full: Ascension Youth Choir
-      first: null
-      last: null
-      initials: ayc
-    status: active
-    type: group
-    tagline: "Voices rising with purpose, unity, and heart"
-    bio_short: "A vibrant youth ensemble blending warm harmonies, expressive performances, and uplifting energy."
-    bio_long: |
-      Ascension Youth Choir is a vibrant ensemble of young singers ages eight to fifteen, united by a shared love of music and a spirit of encouragement. Because of this age range, the choir is always evolving, wonderful singers grow up and move on, and new voices step in to carry the sound forward. Together, they keep the spirit of Ascension Youth Choir alive from season to season.
-      Known for their warm harmonies, expressive performances, and genuine connection with one another, the choir brings an uplifting energy to every stage they step onto. Whether they are rehearsing in a sunlit room, laughing between takes, or delivering a heartfelt performance, the members of Ascension Youth Choir embody the joy and authenticity of youth. Their sound blends innocence with emerging confidence, creating a unique musical identity that feels both grounded and full of possibility.
-      As part of the Horizon Sound family, the choir represents growth, community, and the belief that every young voice has something meaningful to offer. Their performances celebrate unity, diversity, and the simple power of singing together.
-      Contact Ascension Youth Choir at AYC@HorizonSound.org
-    genres:
-      primary: "Pop"
-      secondary: "Youth Ensemble"
-      tertiary: null
-    images:
-      hero: "./assets/artists/ascension-youth-choir/AYC6.jpg"
-      profile: "./assets/artists/ascension-youth-choir/AYC6.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/ascension-youth-choir/AYC19.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC16.jpg"
-          span: 2
-        - src: "../assets/artists/ascension-youth-choir/AYC11.jpg"
-          span: 2
-        - src: "../assets/artists/ascension-youth-choir/AYC17.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC12.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC13.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC20.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC1.jpg"
-          span: 1
-        - src: "../assets/artists/ascension-youth-choir/AYC14.jpg"
-          span: 2
-    colors:
-      primary: "#2A4C8F"
-      secondary: "#E8EAF3"
-      accent: null
-    links:
-      website: null
-      spotify: null
-      apple_music: null
-      youtube: null
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: null
-      apple_music_id: null
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums: []
-      singles: []
-    featured_on: []
-    seo:
-      title: "Ascension Youth Choir"
-      description: "Youth ensemble blending warm harmonies and uplifting energy."
-      keywords: ["ascension youth choir", "youth choir", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
+- id: art_ascension_youth_choir
+  slug: ascension-youth-choir
+  name:
+    full: Ascension Youth Choir
+    first: null
+    last: null
+    initials: ayc
+  status: active
+  type: group
+  tagline: "Voices rising with purpose, unity, and heart"
+  bio_short: "A vibrant youth ensemble blending warm harmonies, expressive performances, and uplifting energy."
+  bio_long: |
+    Ascension Youth Choir is a vibrant ensemble of young singers ages eight to fifteen, united by a shared love of music and a spirit of encouragement. Because of this age range, the choir is always evolving, wonderful singers grow up and move on, and new voices step in to carry the sound forward. Together, they keep the spirit of Ascension Youth Choir alive from season to season.
+    Known for their warm harmonies, expressive performances, and genuine connection with one another, the choir brings an uplifting energy to every stage they step onto. Whether they are rehearsing in a sunlit room, laughing between takes, or delivering a heartfelt performance, the members of Ascension Youth Choir embody the joy and authenticity of youth. Their sound blends innocence with emerging confidence, creating a unique musical identity that feels both grounded and full of possibility.
+    As part of the Horizon Sound family, the choir represents growth, community, and the belief that every young voice has something meaningful to offer. Their performances celebrate unity, diversity, and the simple power of singing together.
+    Contact Ascension Youth Choir at AYC@HorizonSound.org
+  genres:
+    primary: "Pop"
+    secondary: "Youth Ensemble"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/ascension-youth-choir/AYC6.jpg"
+    profile: "./assets/artists/ascension-youth-choir/AYC6.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/ascension-youth-choir/AYC19.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC16.jpg"
+        span: 2
+      - src: "../assets/artists/ascension-youth-choir/AYC11.jpg"
+        span: 2
+      - src: "../assets/artists/ascension-youth-choir/AYC17.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC12.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC13.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC20.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC1.jpg"
+        span: 1
+      - src: "../assets/artists/ascension-youth-choir/AYC14.jpg"
+        span: 2
+  colors:
+    primary: "#2A4C8F"
+    secondary: "#E8EAF3"
+    accent: null
+  links:
+    website: null
+    spotify: null
+    apple_music: null
+    youtube: null
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: null
+    apple_music_id: null
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases: []
+  featured_on: []
+  seo:
+    title: "Ascension Youth Choir"
+    description: "Youth ensemble blending warm harmonies and uplifting energy."
+    keywords: ["ascension youth choir", "youth choir", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
+    
+- id: art_cody_sails
+  slug: cody-sails
+  name:
+    full: Cody Sails
+    first: Cody
+    last: Sails
+    initials: cs
+  status: active
+  type: solo
+  tagline: "Sun‑soaked coastal storyteller with a barefoot spirit"
+  bio_short: "Warm‑hearted coastal storyteller blending beach‑folk, mellow pop, and golden‑hour acoustic grooves."
+  bio_long: |
+    Cody Sails is a warm‑hearted coastal storyteller with a sun‑soaked voice and a barefoot, easygoing spirit.
+    His music blends beach‑folk, mellow pop, and golden‑hour acoustic grooves — always relaxed and inviting.
+    He sings about tides, friends, freedom, and the simple moments that make life feel lighter.
+    Within Horizon Sound, Cody anchors the Coastal Acoustic lane — warm, approachable, and emotionally grounded.
+    Contact Cody at Cody.Sails@HorizonSound.org
+  genres:
+    primary: "Coastal Acoustic"
+    secondary: "Folk Pop"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/cody-sails/Cody Sails 3000x3000.jpg"
+    profile: "./assets/artists/cody-sails/Cody Sails 3000x3000.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/cody-sails/cody19.jpg"
+        span: 2
+      - src: "../assets/artists/cody-sails/cody18.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody17.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody13.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody16.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody3.jpg"
+        span: 2
+      - src: "../assets/artists/cody-sails/cody6.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody12.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody7a.jpg"
+        span: 1
+      - src: "../assets/artists/cody-sails/cody1.jpg"
+        span: 1
+  colors:
+    primary: "#F6B35A"
+    secondary: "#1C6E8C"
+    accent: null
+  links:
+    website: "https://www.horizonsound.org/development/artists/cody-sails.html"
+    spotify: "https://open.spotify.com/artist/5JXSFheKggmlJJ3qUZPefn?si=nQJqpPSCQMqDe71C1rnW5A"
+    apple_music: "https://music.apple.com/us/artist/cody-sails/1890255704"
+    youtube: "https://www.youtube.com/channel/UCKrDH3xQ-iQkj6aNA1SI4qw"
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: "5JXSFheKggmlJJ3qUZPefn"
+    apple_music_id: "1890255704"
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases:
+    - release_rum_soaked_paradise_cody_sails
+  featured_on: []
+  seo:
+    title: "Cody Sails"
+    description: "Coastal acoustic storyteller with a warm, sun‑soaked sound."
+    keywords: ["cody sails", "coastal acoustic", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
 
-  - id: art_cody_sails
-    slug: cody-sails
-    name:
-      full: Cody Sails
-      first: Cody
-      last: Sails
-      initials: cs
-    status: active
-    type: solo
-    tagline: "Sun‑soaked coastal storyteller with a barefoot spirit"
-    bio_short: "Warm‑hearted coastal storyteller blending beach‑folk, mellow pop, and golden‑hour acoustic grooves."
-    bio_long: |
-      Cody Sails is a warm‑hearted coastal storyteller with a sun‑soaked voice and a barefoot, easygoing spirit.
-      His music blends beach‑folk, mellow pop, and golden‑hour acoustic grooves — always relaxed and inviting.
-      He sings about tides, friends, freedom, and the simple moments that make life feel lighter.
-      Within Horizon Sound, Cody anchors the Coastal Acoustic lane — warm, approachable, and emotionally grounded.
-      Contact Cody at Cody.Sails@HorizonSound.org
-    genres:
-      primary: "Coastal Acoustic"
-      secondary: "Folk Pop"
-      tertiary: null
-    images:
-      hero: "./assets/artists/cody-sails/Cody Sails 3000x3000.jpg"
-      profile: "./assets/artists/cody-sails/Cody Sails 3000x3000.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/cody-sails/cody19.jpg"
-          span: 2
-        - src: "../assets/artists/cody-sails/cody18.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody17.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody13.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody16.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody3.jpg"
-          span: 2
-        - src: "../assets/artists/cody-sails/cody6.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody12.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody7a.jpg"
-          span: 1
-        - src: "../assets/artists/cody-sails/cody1.jpg"
-          span: 1
-    colors:
-      primary: "#F6B35A"
-      secondary: "#1C6E8C"
-      accent: null
-    links:
-      website: "https://www.horizonsound.org/development/artists/cody-sails.html"
-      spotify: "https://open.spotify.com/artist/5JXSFheKggmlJJ3qUZPefn?si=nQJqpPSCQMqDe71C1rnW5A"
-      apple_music: "https://music.apple.com/us/artist/cody-sails/1890255704"
-      youtube: "https://www.youtube.com/channel/UCKrDH3xQ-iQkj6aNA1SI4qw"
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: "5JXSFheKggmlJJ3qUZPefn"
-      apple_music_id: "1890255704"
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums:
-        - release_rum_soaked_paradise_cody_sails
-      singles: []
-    featured_on: []
-    seo:
-      title: "Cody Sails"
-      description: "Coastal acoustic storyteller with a warm, sun‑soaked sound."
-      keywords: ["cody sails", "coastal acoustic", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
+- id: art_ellie_hale
+  slug: ellie-hale
+  name:
+    full: Ellie Hale
+    first: Ellie
+    last: Hale
+    initials: eh
+  status: active
+  type: solo
+  tagline: "Dream‑lit indie pop with a soft, shimmering edge"
+  bio_short: "Heartfelt indie‑pop storyteller blending soft synth‑pop, intimate textures, and warm cinematic production."
+  bio_long: |
+    Ellie Hale is a heartfelt indie‑pop storyteller with a dreamy, shimmering vocal style and a quietly powerful emotional core.
+    Her music blends soft synth‑pop, intimate acoustic textures, and warm, cinematic production — always honest, melodic, and deeply human.
+    She writes about longing, healing, late‑night thoughts, and the fragile moments that shape who we become.
+    Within Horizon Sound, Ellie anchors the Dream‑Pop / Indie‑Pop lane — atmospheric, vulnerable, and emotionally resonant.
+    Contact Ellie at Ellie.Hale@HorizonSound.org
+  genres:
+    primary: "Dream Pop"
+    secondary: "Indie Pop"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/ellie-hale/ellie-hale.jpg"
+    profile: "./assets/artists/ellie-hale/ellie-hale.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/ellie-hale/ellie-hale13.jpg"
+        span: 2
+      - src: "../assets/artists/ellie-hale/ellie-hale15.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale19.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale22.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale20.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale31.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale11.jpg"
+        span: 2
+      - src: "../assets/artists/ellie-hale/ellie-hale12.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale34.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale32.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale6.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale38.jpg"
+        span: 2
+      - src: "../assets/artists/ellie-hale/ellie-hale21.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale29.jpg"
+        span: 1
+      - src: "../assets/artists/ellie-hale/ellie-hale37.jpg"
+        span: 1
+  colors:
+    primary: "#D8A7FF"
+    secondary: "#4A3C8C"
+    accent: null
+  links:
+    website: "https://www.horizonsound.org/development/artists/ellie-hale.html"
+    spotify: null
+    apple_music: null
+    youtube: null
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: null
+    apple_music_id: null
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases: []
+  featured_on: []
+  seo:
+    title: "Ellie Hale"
+    description: "Dream‑lit indie pop with shimmering emotional depth."
+    keywords: ["ellie hale", "dream pop", "indie pop", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
 
-  - id: art_ellie_hale
-    slug: ellie-hale
-    name:
-      full: Ellie Hale
-      first: Ellie
-      last: Hale
-      initials: eh
-    status: active
-    type: solo
-    tagline: "Dream‑lit indie pop with a soft, shimmering edge"
-    bio_short: "Heartfelt indie‑pop storyteller blending soft synth‑pop, intimate textures, and warm cinematic production."
-    bio_long: |
-      Ellie Hale is a heartfelt indie‑pop storyteller with a dreamy, shimmering vocal style and a quietly powerful emotional core.
-      Her music blends soft synth‑pop, intimate acoustic textures, and warm, cinematic production — always honest, melodic, and deeply human.
-      She writes about longing, healing, late‑night thoughts, and the fragile moments that shape who we become.
-      Within Horizon Sound, Ellie anchors the Dream‑Pop / Indie‑Pop lane — atmospheric, vulnerable, and emotionally resonant.
-      Contact Ellie at Ellie.Hale@HorizonSound.org
-    genres:
-      primary: "Dream Pop"
-      secondary: "Indie Pop"
-      tertiary: null
-    images:
-      hero: "./assets/artists/ellie-hale/ellie-hale.jpg"
-      profile: "./assets/artists/ellie-hale/ellie-hale.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/ellie-hale/ellie-hale13.jpg"
-          span: 2
-        - src: "../assets/artists/ellie-hale/ellie-hale15.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale19.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale22.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale20.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale31.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale11.jpg"
-          span: 2
-        - src: "../assets/artists/ellie-hale/ellie-hale12.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale34.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale32.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale6.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale38.jpg"
-          span: 2
-        - src: "../assets/artists/ellie-hale/ellie-hale21.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale29.jpg"
-          span: 1
-        - src: "../assets/artists/ellie-hale/ellie-hale37.jpg"
-          span: 1
-    colors:
-      primary: "#D8A7FF"
-      secondary: "#4A3C8C"
-      accent: null
-    links:
-      website: "https://www.horizonsound.org/development/artists/ellie-hale.html"
-      spotify: null
-      apple_music: null
-      youtube: null
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: null
-      apple_music_id: null
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums: []
-      singles: []
-    featured_on: []
-    seo:
-      title: "Ellie Hale"
-      description: "Dream‑lit indie pop with shimmering emotional depth."
-      keywords: ["ellie hale", "dream pop", "indie pop", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
+- id: art_lydia_ellington
+  slug: lydia-ellington
+  name:
+    full: Lydia Ellington
+    first: Lydia
+    last: Ellington
+    initials: le
+  status: active
+  type: solo
+  tagline: "Cinematic pop with a glowing, emotional core"
+  bio_short: "Cinematic pop vocalist blending modern pop, orchestral textures, and emotional storytelling."
+  bio_long: |
+    Lydia Ellington is a cinematic pop vocalist with a glowing emotional core and a voice that feels like light breaking through clouds.
+    Her music blends modern pop, orchestral textures, and heartfelt storytelling, creating songs that feel both intimate and widescreen.
+    Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
+    Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
+    Contact Lydia at Lydia.Ellington@HorizonSound.org
+  genres:
+    primary: "Cinematic Pop"
+    secondary: "Pop"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/lydia-ellington/Lydia Ellington 3000x3000.jpg"
+    profile: "./assets/artists/lydia-ellington/Lydia Ellington 3000x3000.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/lydia-ellington/lydia2.jpg"
+        span: 2
+      - src: "../assets/artists/lydia-ellington/lydia40.jpg"
+        span: 1
+      - src: "../assets/artists/lydia-ellington/lydia26.jpg"
+        span: 1
+      - src: "../assets/artists/lydia-ellington/lydia27.jpg"
+        span: 2
+      - src: "../assets/artists/lydia-ellington/lydia15.jpg"
+        span: 2
+      - src: "../assets/artists/lydia-ellington/lydia45.jpg"
+        span: 1
+      - src: "../assets/artists/lydia-ellington/lydia37.jpg"
+        span: 1
+      - src: "../assets/artists/lydia-ellington/lydia7.jpg"
+        span: 1
+      - src: "../assets/artists/lydia-ellington/lydia39.jpg"
+        span: 1
+  colors:
+    primary: "#F4B5D8"
+    secondary: "#5C3C8C"
+    accent: null
+  links:
+    website: "https://www.horizonsound.org/development/artists/lydia-ellington.html"
+    spotify: "https://open.spotify.com/artist/6NmeEuax1ZPpDmSLfjSS7V"
+    apple_music: "https://music.apple.com/us/artist/lydia-ellington/1889073260"
+    youtube: "https://www.youtube.com/@LydiaEllington-hs"
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: "6NmeEuax1ZPpDmSLfjSS7V"
+    apple_music_id: "1889073260"
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases:
+    - release_after_the_silence_lydia_ellington
+  featured_on: []
+  seo:
+    title: "Lydia Ellington"
+    description: "Cinematic pop vocalist with emotional, widescreen storytelling."
+    keywords: ["lydia ellington", "cinematic pop", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
 
-  - id: art_lydia_ellington
-    slug: lydia-ellington
-    name:
-      full: Lydia Ellington
-      first: Lydia
-      last: Ellington
-      initials: le
-    status: active
-    type: solo
-    tagline: "Cinematic pop with a glowing, emotional core"
-    bio_short: "Cinematic pop vocalist blending modern pop, orchestral textures, and emotional storytelling."
-    bio_long: |
-      Lydia Ellington is a cinematic pop vocalist with a glowing emotional core and a voice that feels like light breaking through clouds.
-      Her music blends modern pop, orchestral textures, and heartfelt storytelling, creating songs that feel both intimate and widescreen.
-      Lydia writes about growth, resilience, love, and the quiet strength found in vulnerability.
-      Within Horizon Sound, Lydia defines the Cinematic Pop lane — glowing, emotional, and deeply expressive.
-      Contact Lydia at Lydia.Ellington@HorizonSound.org
-    genres:
-      primary: "Cinematic Pop"
-      secondary: "Pop"
-      tertiary: null
-    images:
-      hero: "./assets/artists/lydia-ellington/Lydia Ellington 3000x3000.jpg"
-      profile: "./assets/artists/lydia-ellington/Lydia Ellington 3000x3000.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/lydia-ellington/lydia2.jpg"
-          span: 2
-        - src: "../assets/artists/lydia-ellington/lydia40.jpg"
-          span: 1
-        - src: "../assets/artists/lydia-ellington/lydia26.jpg"
-          span: 1
-        - src: "../assets/artists/lydia-ellington/lydia27.jpg"
-          span: 2
-        - src: "../assets/artists/lydia-ellington/lydia15.jpg"
-          span: 2
-        - src: "../assets/artists/lydia-ellington/lydia45.jpg"
-          span: 1
-        - src: "../assets/artists/lydia-ellington/lydia37.jpg"
-          span: 1
-        - src: "../assets/artists/lydia-ellington/lydia7.jpg"
-          span: 1
-        - src: "../assets/artists/lydia-ellington/lydia39.jpg"
-          span: 1
-    colors:
-      primary: "#F4B5D8"
-      secondary: "#5C3B8C"
-      accent: null
-    links:
-      website: "https://www.horizonsound.org/development/artists/lydia-ellington.html"
-      spotify: "https://open.spotify.com/artist/6NmeEuax1ZPpDmSLfjSS7V"
-      apple_music: "https://music.apple.com/us/artist/lydia-ellington/1889073260"
-      youtube: "https://www.youtube.com/@LydiaEllington-hs"
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: "6NmeEuax1ZPpDmSLfjSS7V"
-      apple_music_id: "1889073260"
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums:
-        - release_after_the_silence_lydia_ellington
-      singles: []
-    featured_on: []
-    seo:
-      title: "Lydia Ellington"
-      description: "Cinematic pop vocalist with emotional, widescreen storytelling."
-      keywords: ["lydia ellington", "cinematic pop", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
 
-  - id: art_lucas_allen
-    slug: lucas-allen
-    name:
-      full: Lucas Allen
-      first: Lucas
-      last: Allen
-      initials: la
-    status: active
-    type: solo
-    tagline: "Modern country heart with a storyteller’s edge"
-    bio_short: "Modern country storyteller blending Americana grit, heartfelt vocals, and cinematic small‑town imagery."
-    bio_long: |
-      Lucas Allen is a modern country storyteller with a warm, lived‑in voice and a grounded, everyman charm.
-      His music blends contemporary country, Americana grit, and cinematic small‑town imagery — honest, melodic, and deeply human.
-      He writes about long drives, late nights, heartbreak, hope, and the moments that shape who we become.
-      Within Horizon Sound, Lucas anchors the Modern Country lane — heartfelt, relatable, and rich with narrative detail.
-      Contact Lucas at Lucas.Allen@HorizonSound.org
-    genres:
-      primary: "Modern Country"
-      secondary: "Americana"
-      tertiary: null
-    images:
-      hero: "./assets/artists/lucas-allen/lucas-allen.jpg"
-      profile: "./assets/artists/lucas-allen/lucas-allen.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/lucas-allen/lucas-allen10.jpg"
-          span: 2
-        - src: "../assets/artists/lucas-allen/lucas-allen5.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen22.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen24.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen26.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen21.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen11.jpg"
-          span: 2
-        - src: "../assets/artists/lucas-allen/lucas-allen6.jpg"
-          span: 2
-        - src: "../assets/artists/lucas-allen/lucas-allen16.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen15.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen17.jpg"
-          span: 1
-        - src: "../assets/artists/lucas-allen/lucas-allen18.jpg"
-          span: 1
-    colors:
-      primary: "#C48A4A"
-      secondary: "#3A2A1A"
-      accent: null
-    links:
-      website: "https://www.horizonsound.org/development/artists/lucas-allen.html"
-      spotify: null
-      apple_music: null
-      youtube: null
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: null
-      apple_music_id: null
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums: []
-      singles: []
-    featured_on: []
-    seo:
-      title: "Lucas Allen"
-      description: "Modern country storyteller with heartfelt, narrative‑driven songwriting."
-      keywords: ["lucas allen", "modern country", "americana", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
+- id: art_lucas_allen
+  slug: lucas-allen
+  name:
+    full: Lucas Allen
+    first: Lucas
+    last: Allen
+    initials: la
+  status: active
+  type: solo
+  tagline: "Modern country heart with a storyteller’s edge"
+  bio_short: "Modern country storyteller blending Americana grit, heartfelt vocals, and cinematic small‑town imagery."
+  bio_long: |
+    Lucas Allen is a modern country storyteller with a warm, lived‑in voice and a grounded, everyman charm.
+    His music blends contemporary country, Americana grit, and cinematic small‑town imagery — honest, melodic, and deeply human.
+    He writes about long drives, late nights, heartbreak, hope, and the moments that shape who we become.
+    Within Horizon Sound, Lucas anchors the Modern Country lane — heartfelt, relatable, and rich with narrative detail.
+    Contact Lucas at Lucas.Allen@HorizonSound.org
+  genres:
+    primary: "Modern Country"
+    secondary: "Americana"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/lucas-allen/lucas-allen.jpg"
+    profile: "./assets/artists/lucas-allen/lucas-allen.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/lucas-allen/lucas-allen10.jpg"
+        span: 2
+      - src: "../assets/artists/lucas-allen/lucas-allen5.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen22.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen24.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen26.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen21.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen11.jpg"
+        span: 2
+      - src: "../assets/artists/lucas-allen/lucas-allen6.jpg"
+        span: 2
+      - src: "../assets/artists/lucas-allen/lucas-allen16.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen15.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen17.jpg"
+        span: 1
+      - src: "../assets/artists/lucas-allen/lucas-allen18.jpg"
+        span: 1
+  colors:
+    primary: "#C48A4A"
+    secondary: "#3A2A1A"
+    accent: null
+  links:
+    website: "https://www.horizonsound.org/development/artists/lucas-allen.html"
+    spotify: null
+    apple_music: null
+    youtube: null
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: null
+    apple_music_id: null
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases: []
+  featured_on: []
+  seo:
+    title: "Lucas Allen"
+    description: "Modern country storyteller with heartfelt, narrative‑driven songwriting."
+    keywords: ["lucas allen", "modern country", "americana", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
 
-  - id: art_ravyn
-    slug: ravyn
-    name:
-      full: Ravyn
-      first: Ravyn
-      last: null
-      initials: r
-    status: active
-    type: solo
-    tagline: "A wild heart with a taste for the edge"
-    bio_short: "Unpredictable pop artist blending emotional pop, rebellious energy, and beautiful chaos."
-    bio_long: |
-      Ravyn is an unpredictable pop artist with a wild heart and a taste for the edge.
-      Her sound blends emotional pop, rebellious energy, and a spark of beautiful chaos — always bold, always alive.
-      She writes about risk, desire, impulsive choices, and the moments where confidence and vulnerability collide.
-      Within Horizon Sound, Ravyn stands as the fearless experimenter — equally at home in dark, cinematic eras like Midnight Saga or in bright, high‑energy pop built for movement and release.
-      Contact Ravyn at Ravyn@HorizonSound.org
-    genres:
-      primary: "Pop"
-      secondary: "Cinematic Pop"
-      tertiary: null
-    images:
-      hero: "./assets/artists/ravyn/Ravyn Headshot 1024x1024.jpg"
-      profile: "./assets/artists/ravyn/Ravyn Headshot 1024x1024.jpg"
-      banner: null
-      gallery:
-        - src: "../assets/artists/ravyn/ravyn26.jpg"
-          span: 2
-        - src: "../assets/artists/ravyn/ravyn14.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn24.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn5.jpg"
-          span: 2
-        - src: "../assets/artists/ravyn/ravyn17.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn1.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn7.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn23.jpg"
-          span: 2
-        - src: "../assets/artists/ravyn/ravyn3.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn19.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn4.jpg"
-          span: 1
-        - src: "../assets/artists/ravyn/ravyn25.jpg"
-          span: 1
-    colors:
-      primary: "#F6B35A"
-      secondary: "#1C6E8C"
-      accent: null
-    links:
-      website: "https://www.horizonsound.org/development/artists/ravyn.html"
-      spotify: "https://open.spotify.com/artist/36A7eQseX0fkXYyAuzG79r?si=eul5z_4sSH2HqHJet4ohuw"
-      apple_music: "https://music.apple.com/us/album/midnight-saga-ravyn-ep/1890661455"
-      youtube: "https://music.youtube.com/playlist?list=PLcKs1ONZE1PzhwIF1yE_gEUS1kZoW6oiH&si=DrzIeGgcZXb-7C12"
-      instagram: null
-      tiktok: null
-      twitter: null
-    platform_ids:
-      spotify_id: "36A7eQseX0fkXYyAuzG79r"
-      apple_music_id: "1890661455"
-      youtube_channel_id: null
-      youtube_topic_id: null
-      amazon_music_id: null
-      pandora_id: null
-    releases:
-      albums:
-        - release_midnight_saga_ravyn
-      singles: []
-    featured_on: []
-    seo:
-      title: "Ravyn"
-      description: "Unpredictable pop artist blending emotional pop, rebellious energy, and cinematic edge."
-      keywords: ["ravyn", "pop", "midnight saga", "horizon sound"]
-    internal:
-      notes: null
-      priority: null
+- id: art_ravyn
+  slug: ravyn
+  name:
+    full: Ravyn
+    first: Ravyn
+    last: null
+    initials: r
+  status: active
+  type: solo
+  tagline: "A wild heart with a taste for the edge"
+  bio_short: "Unpredictable pop artist blending emotional pop, rebellious energy, and beautiful chaos."
+  bio_long: |
+    Ravyn is an unpredictable pop artist with a wild heart and a taste for the edge.
+    Her sound blends emotional pop, rebellious energy, and a spark of beautiful chaos — always bold, always alive.
+    She writes about risk, desire, impulsive choices, and the moments where confidence and vulnerability collide.
+    Within Horizon Sound, Ravyn stands as the fearless experimenter — equally at home in dark, cinematic eras like Midnight Saga or in bright, high‑energy pop built for movement and release.
+    Contact Ravyn at Ravyn@HorizonSound.org
+  genres:
+    primary: "Pop"
+    secondary: "Cinematic Pop"
+    tertiary: null
+  vocal_identity:
+    simple: null
+    complex: null
+    models:
+      - model: null
+        prompt: null
+  images:
+    hero: "./assets/artists/ravyn/Ravyn Headshot 1024x1024.jpg"
+    profile: "./assets/artists/ravyn/Ravyn Headshot 1024x1024.jpg"
+    banner: null
+    gallery:
+      - src: "../assets/artists/ravyn/ravyn26.jpg"
+        span: 2
+      - src: "../assets/artists/ravyn/ravyn14.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn24.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn5.jpg"
+        span: 2
+      - src: "../assets/artists/ravyn/ravyn17.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn1.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn7.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn23.jpg"
+        span: 2
+      - src: "../assets/artists/ravyn/ravyn3.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn19.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn4.jpg"
+        span: 1
+      - src: "../assets/artists/ravyn/ravyn25.jpg"
+        span: 1
+  colors:
+    primary: "#F6B35A"
+    secondary: "#1C6E8C"
+    accent: null
+  links:
+    website: "https://www.horizonsound.org/development/artists/ravyn.html"
+    spotify: "https://open.spotify.com/artist/36A7eQseX0fkXYyAuzG79r?si=eul5z_4sSH2HqHJet4ohuw"
+    apple_music: "https://music.apple.com/us/album/midnight-saga-ravyn-ep/1890661455"
+    youtube: "https://music.youtube.com/playlist?list=PLcKs1ONZE1PzhwIF1yE_gEUS1kZoW6oiH&si=DrzIeGgcZXb-7C12"
+    instagram: null
+    tiktok: null
+    twitter: null
+  platform_ids:
+    spotify_id: "36A7eQseX0fkXYyAuzG79r"
+    apple_music_id: "1890661455"
+    youtube_channel_id: null
+    youtube_topic_id: null
+    amazon_music_id: null
+    pandora_id: null
+  releases:
+    - release_midnight_saga_ravyn
+  featured_on: []
+  seo:
+    title: "Ravyn"
+    description: "Unpredictable pop artist blending emotional pop, rebellious energy, and cinematic edge."
+    keywords: ["ravyn", "pop", "midnight saga", "horizon sound"]
+  internal:
+    notes: null
+    priority: null
