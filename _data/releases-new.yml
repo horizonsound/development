@@ -11,10 +11,6 @@ releases:
     preorder_date:
     upc: "825393797326"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -37,13 +33,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Southern Crossfire."
       priority:
+    genres:
+      primary: Rock
+      secondary: Country Rock
+      tertiary: null
+    seo:
+      title: "One Hell of a Ride — Southern Crossfire"
+      description: null
+      keywords: ["one hell of a ride", "southern crossfire"]
   
   - id: rel_until-the-nightmare-ends_cm
     slug: until-the-nightmare-ends
@@ -57,10 +57,6 @@ releases:
     preorder_date:
     upc: "825393810704"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -83,13 +79,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Craig Mitchell."
       priority:
+    genres:
+      primary: Pop
+      secondary: null
+      tertiary: null
+    seo:
+      title: "Until the Nightmare Ends — Craig Mitchell"
+      description: null
+      keywords: ["craig mitchell", "until the nightmare ends"]
   
   - id: rel_wildfire_mr
     slug: wildfire
@@ -103,10 +103,6 @@ releases:
     preorder_date:
     upc: "825500017941"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -129,13 +125,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes: "DistroKid metadata lists Horizon Sound as artist; catalog uses Maddie Rowan."
       priority:
+    genres:
+      primary: Pop
+      secondary: null
+      tertiary: null
+    seo:
+      title: "Wildfire — Maddie Rowan"
+      description: null
+      keywords: ["wildfire", "maddie rowan"]
 
   - id: rel_lifes-a-kaleidoscope_ayc
     slug: lifes-a-kaleidoscope
@@ -149,10 +149,6 @@ releases:
     preorder_date:
     upc: "825393994336"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -193,13 +189,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Pop
+      secondary: Youth Ensemble
+      tertiary: null
+    seo:
+      title: "Life’s a Kaleidoscope — Ascension Youth Choir"
+      description: null
+      keywords: ["ascension youth choir", "life’s a kaleidoscope"]
   
   - id: rel_irish-celtic_hs
     slug: irish-celtic
@@ -213,10 +213,6 @@ releases:
     preorder_date:
     upc: "825486932474"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -249,13 +245,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Celtic
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Irish Celtic — Horizon Sound"
+      description: null
+      keywords: ["irish celtic", "horizon sound"]
 
   - id: rel_workout-electronic-dance-music_hs
     slug: workout-electronic-dance-music
@@ -269,10 +269,6 @@ releases:
     preorder_date:
     upc: "825486959952"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -305,13 +301,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: EDM
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Workout & Electronic Dance Music — Horizon Sound"
+      description: null
+      keywords: ["workout", "edm", "horizon sound"]
   
   - id: rel_synthwave-retrowave_hs
     slug: synthwave-retrowave
@@ -325,10 +325,6 @@ releases:
     preorder_date:
     upc: "825486962747"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -361,13 +357,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Synthwave
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Synthwave & Retrowave — Horizon Sound"
+      description: null
+      keywords: ["synthwave", "retrowave", "horizon sound"]
 
   - id: rel_pop-instrumentals_hs
     slug: pop-instrumentals
@@ -381,10 +381,6 @@ releases:
     preorder_date:
     upc: "825486966028"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -417,13 +413,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Pop
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Pop Instrumentals — Horizon Sound"
+      description: null
+      keywords: ["pop instrumentals", "horizon sound"]
   
   - id: rel_piano-emotional_hs
     slug: piano-emotional
@@ -437,10 +437,6 @@ releases:
     preorder_date:
     upc: "825486945573"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -473,13 +469,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Piano
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Piano Emotional — Horizon Sound"
+      description: null
+      keywords: ["piano emotional", "horizon sound"]
   
   - id: rel_orchestral-rock_hs
     slug: orchestral-rock
@@ -493,10 +493,6 @@ releases:
     preorder_date:
     upc: "825486975518"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -529,13 +525,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Rock
+      secondary: Orchestral
+      tertiary: Instrumental
+    seo:
+      title: "Orchestral Rock — Horizon Sound"
+      description: null
+      keywords: ["orchestral rock", "horizon sound"]
   
   - id: rel_electric-guitar-rock_hs
     slug: electric-guitar-rock
@@ -549,10 +549,6 @@ releases:
     preorder_date:
     upc: "825486979479"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -585,13 +581,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Rock
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Electric Guitar Rock — Horizon Sound"
+      description: null
+      keywords: ["electric guitar rock", "horizon sound"]
   
   - id: rel_cinematic-ambient_hs
     slug: cinematic-ambient
@@ -605,10 +605,6 @@ releases:
     preorder_date:
     upc: "825486987924"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -641,13 +637,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Ambient
+      secondary: Cinematic
+      tertiary: Instrumental
+    seo:
+      title: "Cinematic & Ambient — Horizon Sound"
+      description: null
+      keywords: ["cinematic ambient", "horizon sound"]
   
   - id: rel_calm-cinematic_hs
     slug: calm-cinematic
@@ -661,10 +661,6 @@ releases:
     preorder_date:
     upc: "825486992430"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -697,14 +693,18 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
-  
+    genres:
+      primary: Ambient
+      secondary: Cinematic
+      tertiary: Instrumental
+    seo:
+      title: "Calm & Cinematic — Horizon Sound"
+      description: null
+      keywords: ["calm cinematic", "horizon sound"]
+
   - id: rel_acoustic-guitar_hs
     slug: acoustic-guitar
     title: "Acoustic Guitar"
@@ -717,10 +717,6 @@ releases:
     preorder_date:
     upc: "825486996056"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -753,13 +749,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Acoustic
+      secondary: Instrumental
+      tertiary: null
+    seo:
+      title: "Acoustic Guitar — Horizon Sound"
+      description: null
+      keywords: ["acoustic guitar", "horizon sound"]
 
   - id: rel_venice-trilogy_hs
     slug: venice-trilogy
@@ -773,10 +773,6 @@ releases:
     preorder_date:
     upc: "825500019372"
     label: "Horizon Sound"
-    genres:
-      primary: instrumental
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -803,13 +799,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Cinematic
+      secondary: Ambient
+      tertiary: Instrumental
+    seo:
+      title: "Venice Trilogy — Horizon Sound"
+      description: null
+      keywords: ["venice trilogy", "horizon sound"]
   
   - id: rel_midnight-saga_r
     slug: midnight-saga
@@ -823,10 +823,6 @@ releases:
     preorder_date: 2026-04-02
     upc: "825626049970"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -855,13 +851,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Pop
+      secondary: Cinematic Pop
+      tertiary: null
+    seo:
+      title: "Midnight Saga — Ravyn"
+      description: null
+      keywords: ["midnight saga", "ravyn"]
     
   - id: rel_rum-soaked-paradise_cs
     slug: rum-soaked-paradise
@@ -875,10 +875,6 @@ releases:
     preorder_date: 2026-04-02
     upc: "825626063389"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -915,13 +911,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Coastal Acoustic
+      secondary: Folk Pop
+      tertiary: null
+    seo:
+      title: "Rum Soaked Paradise — Cody Sails"
+      description: null
+      keywords: ["rum soaked paradise", "cody sails"]
   
   - id: rel_after-the-silence_le
     slug: after-the-silence
@@ -935,10 +935,6 @@ releases:
     preorder_date: 2026-03-30
     upc: "825628461725"
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -985,13 +981,17 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes:
       priority:
+    genres:
+      primary: Cinematic Pop
+      secondary: Pop
+      tertiary: null
+    seo:
+      title: "After the Silence — Lydia Ellington"
+      description: null
+      keywords: ["after the silence", "lydia ellington"]
 
   - id: rel_a-way-back_hs
     slug: a-way-back
@@ -1005,10 +1005,6 @@ releases:
     preorder_date:
     upc:
     label: "Horizon Sound"
-    genres:
-      primary:
-      secondary:
-      tertiary:
     artwork:
       cover:
       banner:
@@ -1031,10 +1027,14 @@ releases:
       mastering_engineers: []
       musicians: []
       engineers: []
-    seo:
-      title:
-      description:
-      keywords: []
     internal:
       notes: "Private release. No UPC or ISRC assigned."
       priority:
+    genres:
+      primary: null
+      secondary: null
+      tertiary: null
+    seo:
+      title: "A Way Back — Horizon Sound"
+      description: null
+      keywords: ["a way back", "horizon sound"]
