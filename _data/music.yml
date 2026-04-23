@@ -1,5 +1,5 @@
 tracks:
-  - id: trk_ascensiony_ayc
+  - id: trk_kaleidosco_ayc
     slug: kaleidoscope
     title: Kaleidoscope
     subtitle: null
@@ -10,17 +10,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M46S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, upbeat vibrant‑pop'
-      - 'Vocals: Big harmonies, vibrant energy'
-      - 'Production: Hand Claps, acoustic guitars, light drums'
-      - 'Mood: nostalgic, uplifting, feel‑good, celebratory'
+      - 'vibe: color choir style'
+      - upbeat vibrant‑pop
+      - 'vocals: big harmonies'
+      - vibrant energy
+      - 'production: hand claps'
+      - acoustic guitars
+      - light drums
+      - 'mood: nostalgic'
+      - uplifting
+      - feel‑good
+      - celebratory
     description_html: >-
       <p>Kaleidoscope is the debut release from the Ascension Youth Choir — a
       bright, harmony‑rich, Color Choir style anthem celebrating unity, joy, and
@@ -61,17 +68,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Kaleidoscope - Ascension Youth Choir (Official Video) | Horizon Sound -
-        Ascension Youth Choir
-      description: Kaleidoscope - Ascension Youth Choir (Official Video) | Horizon Sound
+      title: Kaleidoscope - Ascension Youth Choir
+      description: Kaleidoscope
       keywords:
-        - Kaleidoscope - Ascension Youth Choir (Official Video) | Horizon Sound
+        - Kaleidoscope
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_allaroundt_ayc
     slug: all_around_the_world
     title: All Around the World
     subtitle: null
@@ -82,17 +87,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M10S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, bright global‑pop'
-      - 'Vocals: Layered harmonies, energetic group vocals'
-      - 'Production: Acoustic guitars, hand percussion, upbeat drums'
-      - 'Mood: joyful, adventurous, uplifting, connected'
+      - 'vibe: color choir style'
+      - bright global‑pop
+      - 'vocals: layered harmonies'
+      - energetic group vocals
+      - 'production: acoustic guitars'
+      - hand percussion
+      - upbeat drums
+      - 'mood: joyful'
+      - adventurous
+      - uplifting
+      - connected
     description_html: >-
       <p>“All Around the World” is a joyful, globe‑spanning anthem from the
       Ascension Youth Choir — celebrating unity, connection, and the way young
@@ -133,21 +145,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        All Around the World - Ascension Youth Choir (Official Video) | Horizon
-        Sound - Ascension Youth Choir
-      description: >-
-        All Around the World - Ascension Youth Choir (Official Video) | Horizon
-        Sound
+      title: All Around the World - Ascension Youth Choir
+      description: All Around the World
       keywords:
-        - >-
-          All Around the World - Ascension Youth Choir (Official Video) |
-          Horizon Sound
+        - All Around the World
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_rusty_ayc
     slug: rusty
     title: Rusty
     subtitle: null
@@ -158,17 +164,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M28S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, nostalgic pop'
-      - 'Vocals: Gentle harmonies, heartfelt delivery'
-      - 'Production: Acoustic guitars, soft percussion, warm pads'
-      - 'Mood: sentimental, comforting, reflective, hopeful'
+      - 'vibe: color choir style'
+      - nostalgic pop
+      - 'vocals: gentle harmonies'
+      - heartfelt delivery
+      - 'production: acoustic guitars'
+      - soft percussion
+      - warm pads
+      - 'mood: sentimental'
+      - comforting
+      - reflective
+      - hopeful
     description_html: >-
       <p>“Rusty” is a warm, nostalgic anthem from the Ascension Youth Choir — a
       tribute to childhood imagination, loyal friends, and the way small moments
@@ -209,17 +222,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Rusty - Ascension Youth Choir (Official Video) | Horizon Sound -
-        Ascension Youth Choir
-      description: Rusty - Ascension Youth Choir (Official Video) | Horizon Sound
+      title: Rusty - Ascension Youth Choir
+      description: Rusty
       keywords:
-        - Rusty - Ascension Youth Choir (Official Video) | Horizon Sound
+        - Rusty
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_risingup_ayc
     slug: rising_up
     title: Rising Up
     subtitle: null
@@ -230,17 +241,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M42S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, inspirational pop'
-      - 'Vocals: Strong group vocals, uplifting harmonies'
-      - 'Production: Steady drums, bright keys, layered claps'
-      - 'Mood: determined, hopeful, bold, triumphant'
+      - 'vibe: color choir style'
+      - inspirational pop
+      - 'vocals: strong group vocals'
+      - uplifting harmonies
+      - 'production: steady drums'
+      - bright keys
+      - layered claps
+      - 'mood: determined'
+      - hopeful
+      - bold
+      - triumphant
     description_html: >-
       <p>“Rising Up” is an empowering anthem from the Ascension Youth Choir — a
       song about courage, resilience, and finding your voice even when the world
@@ -281,17 +299,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Rising Up - Ascension Youth Choir (Official Video) | Horizon Sound -
-        Ascension Youth Choir
-      description: Rising Up - Ascension Youth Choir (Official Video) | Horizon Sound
+      title: Rising Up - Ascension Youth Choir
+      description: Rising Up
       keywords:
-        - Rising Up - Ascension Youth Choir (Official Video) | Horizon Sound
+        - Rising Up
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_holdon_ayc
     slug: hold_on
     title: Hold On
     subtitle: null
@@ -302,17 +318,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M44S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, uplifting pop'
-      - 'Vocals: Supportive harmonies, hopeful tone'
-      - 'Production: Acoustic guitar, soft drums, warm pads'
-      - 'Mood: reassuring, heartfelt, steady, optimistic'
+      - 'vibe: color choir style'
+      - uplifting pop
+      - 'vocals: supportive harmonies'
+      - hopeful tone
+      - 'production: acoustic guitar'
+      - soft drums
+      - warm pads
+      - 'mood: reassuring'
+      - heartfelt
+      - steady
+      - optimistic
     description_html: >-
       <p>“Hold On” is an encouraging anthem from the Ascension Youth Choir — a
       reminder that even in tough moments, brighter days are ahead and you’re
@@ -353,17 +376,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Hold On - Ascension Youth Choir (Official Video) | Horizon Sound -
-        Ascension Youth Choir
-      description: Hold On - Ascension Youth Choir (Official Video) | Horizon Sound
+      title: Hold On - Ascension Youth Choir
+      description: Hold On
       keywords:
-        - Hold On - Ascension Youth Choir (Official Video) | Horizon Sound
+        - Hold On
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_keepthelig_ayc
     slug: keep_the_light_on
     title: Keep the Light On
     subtitle: null
@@ -374,17 +395,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M6S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, emotional pop'
-      - 'Vocals: Soft harmonies, comforting tone'
-      - 'Production: Piano, light percussion, airy synths'
-      - 'Mood: warm, reassuring, gentle, hopeful'
+      - 'vibe: color choir style'
+      - emotional pop
+      - 'vocals: soft harmonies'
+      - comforting tone
+      - 'production: piano'
+      - light percussion
+      - airy synths
+      - 'mood: warm'
+      - reassuring
+      - gentle
+      - hopeful
     description_html: >-
       <p>“Keep the Light On” is a heartfelt anthem from the Ascension Youth
       Choir — a promise of support, warmth, and guidance for anyone finding
@@ -425,21 +453,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Keep the Light On - Ascension Youth Choir (Official Video) | Horizon
-        Sound - Ascension Youth Choir
-      description: >-
-        Keep the Light On - Ascension Youth Choir (Official Video) | Horizon
-        Sound
+      title: Keep the Light On - Ascension Youth Choir
+      description: Keep the Light On
       keywords:
-        - >-
-          Keep the Light On - Ascension Youth Choir (Official Video) | Horizon
-          Sound
+        - Keep the Light On
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_betterthan_ayc
     slug: better_than_before
     title: Better Than Before
     subtitle: null
@@ -450,17 +472,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT2M54S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, uplifting pop'
-      - 'Vocals: Bright harmonies, energetic delivery'
-      - 'Production: Acoustic guitar, upbeat drums, shimmering pads'
-      - 'Mood: renewed, joyful, optimistic, forward‑looking'
+      - 'vibe: color choir style'
+      - uplifting pop
+      - 'vocals: bright harmonies'
+      - energetic delivery
+      - 'production: acoustic guitar'
+      - upbeat drums
+      - shimmering pads
+      - 'mood: renewed'
+      - joyful
+      - optimistic
+      - forward‑looking
     description_html: >-
       <p>“Better Than Before” is a sunrise‑bright anthem from the Ascension
       Youth Choir — celebrating growth, renewal, and the joy of becoming a
@@ -501,21 +530,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Better than Before - Ascension Youth Choir (Official Video) | Horizon
-        Sound - Ascension Youth Choir
-      description: >-
-        Better than Before - Ascension Youth Choir (Official Video) | Horizon
-        Sound
+      title: Better Than Before - Ascension Youth Choir
+      description: Better Than Before
       keywords:
-        - >-
-          Better than Before - Ascension Youth Choir (Official Video) | Horizon
-          Sound
+        - Better Than Before
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_thethingst_ayc
     slug: the_things_that_stayed_with_me
     title: The Things That Stayed With Me
     subtitle: null
@@ -526,17 +549,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT3M24S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, emotional storytelling pop'
-      - 'Vocals: Soft harmonies, reflective tone'
-      - 'Production: Acoustic guitar, warm pads, gentle percussion'
-      - 'Mood: nostalgic, heartfelt, thoughtful, emotional'
+      - 'vibe: color choir style'
+      - emotional storytelling pop
+      - 'vocals: soft harmonies'
+      - reflective tone
+      - 'production: acoustic guitar'
+      - warm pads
+      - gentle percussion
+      - 'mood: nostalgic'
+      - heartfelt
+      - thoughtful
+      - emotional
     description_html: >-
       <p>“The Things That Stayed With Me” is a nostalgic, reflective anthem from
       the Ascension Youth Choir — honoring the memories, lessons, and moments
@@ -577,21 +607,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        The Things That Stayed With Me - Ascension Youth Choir (Official Video)
-        | Horizon Sound - Ascension Youth Choir
-      description: >-
-        The Things That Stayed With Me - Ascension Youth Choir (Official Video)
-        | Horizon Sound
+      title: The Things That Stayed With Me - Ascension Youth Choir
+      description: The Things That Stayed With Me
       keywords:
-        - >-
-          The Things That Stayed With Me - Ascension Youth Choir (Official
-          Video) | Horizon Sound
+        - The Things That Stayed With Me
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_totaleclip_ayc
     slug: total_eclipse
     title: Total Eclipse
     subtitle: null
@@ -602,17 +626,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT4M22S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, cinematic pop'
-      - 'Vocals: Expansive harmonies, soaring energy'
-      - 'Production: Big drums, atmospheric synths, glowing textures'
-      - 'Mood: epic, awe‑struck, powerful, emotional'
+      - 'vibe: color choir style'
+      - cinematic pop
+      - 'vocals: expansive harmonies'
+      - soaring energy
+      - 'production: big drums'
+      - atmospheric synths
+      - glowing textures
+      - 'mood: epic'
+      - awe‑struck
+      - powerful
+      - emotional
     description_html: >-
       <p>“Total Eclipse (Years Later)” is a dramatic, cinematic anthem from the
       Ascension Youth Choir — capturing the awe, mystery, and wonder of watching
@@ -653,21 +684,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Total Eclipse (Years Later) - Ascension Youth Choir (Official Video) |
-        Horizon Sound - Ascension Youth Choir
-      description: >-
-        Total Eclipse (Years Later) - Ascension Youth Choir (Official Video) |
-        Horizon Sound
+      title: Total Eclipse - Ascension Youth Choir
+      description: Total Eclipse
       keywords:
-        - >-
-          Total Eclipse (Years Later) - Ascension Youth Choir (Official Video) |
-          Horizon Sound
+        - Total Eclipse
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_ascensiony_ayc
+  - id: trk_windinyour_ayc
     slug: wind_in_your_sails
     title: Wind in Your Sails
     subtitle: null
@@ -678,17 +703,24 @@ tracks:
     release_id: null
     primary_artist: art_ayc
     featuring_artists: []
-    duration: null
+    duration: PT2M4S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: Color Choir Style, coastal‑inspired pop'
-      - 'Vocals: Breezy harmonies, joyful tone'
-      - 'Production: Acoustic guitar, light drums, airy textures'
-      - 'Mood: free‑spirited, adventurous, uplifting, hopeful'
+      - 'vibe: color choir style'
+      - coastal‑inspired pop
+      - 'vocals: breezy harmonies'
+      - joyful tone
+      - 'production: acoustic guitar'
+      - light drums
+      - airy textures
+      - 'mood: free‑spirited'
+      - adventurous
+      - uplifting
+      - hopeful
     description_html: >-
       <p>“Wind in Your Sails” is a bright, uplifting anthem from the Ascension
       Youth Choir — celebrating freedom, adventure, and the courage to chase the
@@ -729,21 +761,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Wind in Your Sails - Ascension Youth Choir (Official Video) | Horizon
-        Sound - Ascension Youth Choir
-      description: >-
-        Wind in Your Sails - Ascension Youth Choir (Official Video) | Horizon
-        Sound
+      title: Wind in Your Sails - Ascension Youth Choir
+      description: Wind in Your Sails
       keywords:
-        - >-
-          Wind in Your Sails - Ascension Youth Choir (Official Video) | Horizon
-          Sound
+        - Wind in Your Sails
         - Ascension Youth Choir
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_acrossthee_hs
     slug: across_the_emerald_coast
     title: Across the Emerald Coast
     subtitle: null
@@ -754,10 +780,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M25S
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -806,7 +832,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fireinthef_hs
     slug: fire_in_the_fiddle
     title: Fire in the Fiddle
     subtitle: null
@@ -817,10 +843,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M28S
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -867,7 +893,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thechaseth_hs
     slug: the_chase_through_galway
     title: The Chase Through Galway
     subtitle: null
@@ -878,10 +904,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M32S
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -919,15 +945,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: The Chase through Galway - Horizon Sound
-      description: The Chase through Galway
+      title: The Chase Through Galway - Horizon Sound
+      description: The Chase Through Galway
       keywords:
-        - The Chase through Galway
+        - The Chase Through Galway
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thepathtod_hs
     slug: the_path_to_dunmore_head
     title: The Path to Dunmore Head
     subtitle: null
@@ -938,10 +964,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M48S
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -990,7 +1016,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_journeytos_hs
     slug: journey_to_skellig_bay
     title: Journey to Skellig Bay
     subtitle: null
@@ -1001,10 +1027,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M50S
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -1050,7 +1076,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fiddleresa_hs
     slug: fiddleres_at_dawn
     title: Fiddleres at Dawn
     subtitle: null
@@ -1061,10 +1087,10 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M
     isrc: null
     genres:
-      primary: null
+      primary: celtic
       secondary: null
       tertiary: null
     moods: []
@@ -1102,15 +1128,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Fiddlers at Dawn - Horizon Sound
-      description: Fiddlers at Dawn
+      title: Fiddleres at Dawn - Horizon Sound
+      description: Fiddleres at Dawn
       keywords:
-        - Fiddlers at Dawn
+        - Fiddleres at Dawn
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_rumsoakedp_cs
     slug: rum_soaked_paradise
     title: Rum Soaked Paradise
     subtitle: null
@@ -1121,17 +1147,25 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M40S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: tropical pop, mellow, sunset‑warm'
-      - 'Vocals: smooth, relaxed, coastal'
-      - 'Production: warm guitar, island percussion, soft ambience'
-      - 'Mood: calm, dreamy, escapist'
+      - 'vibe: tropical pop'
+      - mellow
+      - sunset‑warm
+      - 'vocals: smooth'
+      - relaxed
+      - coastal
+      - 'production: warm guitar'
+      - island percussion
+      - soft ambience
+      - 'mood: calm'
+      - dreamy
+      - escapist
     description_html: >-
       <p>“Rum Soaked Paradise” is a laid‑back tropical pop track built on warm
       guitar, soft island percussion, and a relaxed, sunset‑bar atmosphere. The
@@ -1173,15 +1207,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Rum Soaked Paradise – Cody Sails | Horizon Sound - Cody Sails
-      description: Rum Soaked Paradise – Cody Sails | Horizon Sound
+      title: Rum Soaked Paradise - Cody Sails
+      description: Rum Soaked Paradise
       keywords:
-        - Rum Soaked Paradise – Cody Sails | Horizon Sound
+        - Rum Soaked Paradise
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_saltonther_cs
     slug: salt_on_the_rim
     title: Salt on the Rim
     subtitle: null
@@ -1192,17 +1226,25 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M32S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: coastal pop, mellow, beach‑bar'
-      - 'Vocals: relaxed, smooth, sun‑worn'
-      - 'Production: acoustic guitar, light percussion, gentle groove'
-      - 'Mood: unwound, easy, content'
+      - 'vibe: coastal pop'
+      - mellow
+      - beach‑bar
+      - 'vocals: relaxed'
+      - smooth
+      - sun‑worn
+      - 'production: acoustic guitar'
+      - light percussion
+      - gentle groove
+      - 'mood: unwound'
+      - easy
+      - content
     description_html: >-
       <p>“Salt on the Rim” is a laid‑back coastal pop track built on warm
       acoustic guitar, easygoing percussion, and a smooth, beach‑bar groove. The
@@ -1246,15 +1288,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Salt on the Rim – Cody Sails | Horizon Sound - Cody Sails
-      description: Salt on the Rim – Cody Sails | Horizon Sound
+      title: Salt on the Rim - Cody Sails
+      description: Salt on the Rim
       keywords:
-        - Salt on the Rim – Cody Sails | Horizon Sound
+        - Salt on the Rim
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_barefootan_cs
     slug: barefoot_and_buzzed
     title: Barefoot and Buzzed
     subtitle: null
@@ -1265,17 +1307,26 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M34S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: coastal pop, warm, breezy, golden‑hour'
-      - 'Vocals: relaxed, intimate, sun‑soft delivery'
-      - 'Production: acoustic guitar, soft percussion, gentle lift'
-      - 'Mood: carefree, nostalgic, peaceful'
+      - 'vibe: coastal pop'
+      - warm
+      - breezy
+      - golden‑hour
+      - 'vocals: relaxed'
+      - intimate
+      - sun‑soft delivery
+      - 'production: acoustic guitar'
+      - soft percussion
+      - gentle lift
+      - 'mood: carefree'
+      - nostalgic
+      - peaceful
     description_html: >-
       <p>“Barefoot & Buzzed” is a warm, sun‑drenched coastal pop track built on
       breezy guitar strums, soft percussion, and a relaxed, late‑afternoon glow.
@@ -1321,15 +1372,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Barefoot and Buzzed – Cody Sails | Horizon Sound - Cody Sails
-      description: Barefoot and Buzzed – Cody Sails | Horizon Sound
+      title: Barefoot and Buzzed - Cody Sails
+      description: Barefoot and Buzzed
       keywords:
-        - Barefoot and Buzzed – Cody Sails | Horizon Sound
+        - Barefoot and Buzzed
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_islandgirl_cs
     slug: island_girl_trouble
     title: Island Girl Trouble
     subtitle: null
@@ -1340,17 +1391,26 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M53S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: tropical pop, upbeat, flirty, sun‑soaked'
-      - 'Vocals: playful, warm, relaxed'
-      - 'Production: bright guitars, rhythmic percussion, coastal bounce'
-      - 'Mood: fun, chaotic, romantic'
+      - 'vibe: tropical pop'
+      - upbeat
+      - flirty
+      - sun‑soaked
+      - 'vocals: playful'
+      - warm
+      - relaxed
+      - 'production: bright guitars'
+      - rhythmic percussion
+      - coastal bounce
+      - 'mood: fun'
+      - chaotic
+      - romantic
     description_html: >-
       <p>“Island Girl Trouble” is a playful, sun‑soaked coastal pop track full
       of flirtation, chaos, and warm tropical energy. Driven by bright guitars,
@@ -1396,15 +1456,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Island Girl Trouble – Cody Sails | Horizon Sound - Cody Sails
-      description: Island Girl Trouble – Cody Sails | Horizon Sound
+      title: Island Girl Trouble - Cody Sails
+      description: Island Girl Trouble
       keywords:
-        - Island Girl Trouble – Cody Sails | Horizon Sound
+        - Island Girl Trouble
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_leilani_cs
     slug: leilani
     title: Leilani
     subtitle: null
@@ -1415,17 +1475,26 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M58S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: coastal ballad, soft, emotional, warm'
-      - 'Vocals: tender, sincere, intimate'
-      - 'Production: acoustic layers, gentle percussion, warm harmonies'
-      - 'Mood: nostalgic, romantic, reflective'
+      - 'vibe: coastal ballad'
+      - soft
+      - emotional
+      - warm
+      - 'vocals: tender'
+      - sincere
+      - intimate
+      - 'production: acoustic layers'
+      - gentle percussion
+      - warm harmonies
+      - 'mood: nostalgic'
+      - romantic
+      - reflective
     description_html: >-
       <p>“Leilani” is a gentle, heartfelt coastal ballad built on soft acoustic
       textures, warm harmonies, and a tender melodic flow. The song feels like a
@@ -1468,15 +1537,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Leilani – Cody Sails | Horizon Sound - Cody Sails
-      description: Leilani – Cody Sails | Horizon Sound
+      title: Leilani - Cody Sails
+      description: Leilani
       keywords:
-        - Leilani – Cody Sails | Horizon Sound
+        - Leilani
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_hightide_cs
     slug: high_tide
     title: High Tide
     subtitle: null
@@ -1487,17 +1556,25 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT3M7S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: nighttime coastal pop, warm, slow, romantic'
-      - 'Vocals: soft, intimate, heartfelt'
-      - 'Production: mellow guitar, gentle percussion, glowing ambience'
-      - 'Mood: peaceful, romantic, reflective'
+      - 'vibe: nighttime coastal pop'
+      - warm
+      - slow
+      - romantic
+      - 'vocals: soft'
+      - intimate
+      - heartfelt
+      - 'production: mellow guitar'
+      - gentle percussion
+      - glowing ambience
+      - 'mood: peaceful'
+      - reflective
     description_html: >-
       <p>“High Tide” is a warm, romantic coastal pop track that blends soft
       guitar, mellow percussion, and a glowing nighttime atmosphere. The song
@@ -1540,15 +1617,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: High Tide – Cody Sails | Horizon Sound - Cody Sails
-      description: High Tide – Cody Sails | Horizon Sound
+      title: High Tide - Cody Sails
+      description: High Tide
       keywords:
-        - High Tide – Cody Sails | Horizon Sound
+        - High Tide
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_sunburneda_cs
     slug: sunburned_and_smiling
     title: Sunburned and Smiling
     subtitle: null
@@ -1559,17 +1636,25 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M5S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: upbeat coastal pop, sunny, joyful'
-      - 'Vocals: bright, warm, relaxed'
-      - 'Production: acoustic guitar, light percussion, breezy lift'
-      - 'Mood: happy, carefree, radiant'
+      - 'vibe: upbeat coastal pop'
+      - sunny
+      - joyful
+      - 'vocals: bright'
+      - warm
+      - relaxed
+      - 'production: acoustic guitar'
+      - light percussion
+      - breezy lift
+      - 'mood: happy'
+      - carefree
+      - radiant
     description_html: >-
       <p>“Sunburned & Smiling” is a bright, joyful coastal pop track full of
       sunshine, laughter, and carefree energy. With upbeat guitars, warm
@@ -1612,15 +1697,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Sunburned and Smiling – Cody Sails | Horizon Sound - Cody Sails
-      description: Sunburned and Smiling – Cody Sails | Horizon Sound
+      title: Sunburned and Smiling - Cody Sails
+      description: Sunburned and Smiling
       keywords:
-        - Sunburned and Smiling – Cody Sails | Horizon Sound
+        - Sunburned and Smiling
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_codysails_cs
+  - id: trk_windinyour_cs
     slug: wind_in_your_sails
     title: Wind in your Sails
     subtitle: null
@@ -1631,17 +1716,25 @@ tracks:
     release_id: null
     primary_artist: art_codysails
     featuring_artists: []
-    duration: null
+    duration: PT2M46S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: coastal folk‑pop, warm, uplifting'
-      - 'Vocals: sincere, comforting, steady'
-      - 'Production: acoustic guitar, soft percussion, emotional lift'
-      - 'Mood: hopeful, supportive, heartfelt'
+      - 'vibe: coastal folk‑pop'
+      - warm
+      - uplifting
+      - 'vocals: sincere'
+      - comforting
+      - steady
+      - 'production: acoustic guitar'
+      - soft percussion
+      - emotional lift
+      - 'mood: hopeful'
+      - supportive
+      - heartfelt
     description_html: >-
       <p>“Wind in Your Sails” is a heartfelt, uplifting coastal folk‑pop track
       built on warm acoustic guitar, gentle percussion, and a hopeful melodic
@@ -1683,15 +1776,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Wind in Your Sails – Cody Sails | Horizon Sound - Cody Sails
-      description: Wind in Your Sails – Cody Sails | Horizon Sound
+      title: Wind in your Sails - Cody Sails
+      description: Wind in your Sails
       keywords:
-        - Wind in Your Sails – Cody Sails | Horizon Sound
+        - Wind in your Sails
         - Cody Sails
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_colorthesk_hs
     slug: color_the_sky
     title: Color the Sky
     subtitle: null
@@ -1702,7 +1795,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M49S
     isrc: null
     genres:
       primary: null
@@ -1752,7 +1845,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_betterdays_hs
     slug: better_days_ahead
     title: Better Days Ahead
     subtitle: null
@@ -1763,7 +1856,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M6S
     isrc: null
     genres:
       primary: null
@@ -1813,7 +1906,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_goldenhour_hs
     slug: golden_hour_groove
     title: Golden Hour Groove
     subtitle: null
@@ -1824,7 +1917,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M20S
     isrc: null
     genres:
       primary: null
@@ -1874,7 +1967,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_softlight_hs
     slug: soft_light
     title: Soft Light
     subtitle: null
@@ -1885,7 +1978,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M25S
     isrc: null
     genres:
       primary: null
@@ -1935,7 +2028,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_openheartc_hs
     slug: open_heart_city
     title: Open Heart City
     subtitle: null
@@ -1946,7 +2039,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M41S
     isrc: null
     genres:
       primary: null
@@ -1996,7 +2089,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_brightestp_hs
     slug: brightest_part_of_you
     title: Brightest Part of You
     subtitle: null
@@ -2007,7 +2100,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M19S
     isrc: null
     genres:
       primary: null
@@ -2055,7 +2148,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_retrodrive_hs
     slug: retrodrive
     title: Retrodrive
     subtitle: null
@@ -2066,7 +2159,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M53S
     isrc: null
     genres:
       primary: null
@@ -2116,7 +2209,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_nightfallc_hs
     slug: nightfall_circuit
     title: Nightfall Circuit
     subtitle: null
@@ -2127,7 +2220,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M41S
     isrc: null
     genres:
       primary: null
@@ -2177,7 +2270,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_dreamwavea_hs
     slug: dreamwave_avenue
     title: Dreamwave Avenue
     subtitle: null
@@ -2188,7 +2281,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M35S
     isrc: null
     genres:
       primary: null
@@ -2238,7 +2331,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_memoryloop_hs
     slug: memory_loop
     title: Memory Loop
     subtitle: null
@@ -2249,7 +2342,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M50S
     isrc: null
     genres:
       primary: null
@@ -2299,7 +2392,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_midnightas_hs
     slug: midnight_ascension
     title: Midnight Ascension
     subtitle: null
@@ -2310,7 +2403,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M26S
     isrc: null
     genres:
       primary: null
@@ -2360,7 +2453,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_neonvangua_hs
     slug: neon_vanguard
     title: Neon Vanguard
     subtitle: null
@@ -2371,7 +2464,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M44S
     isrc: null
     genres:
       primary: null
@@ -2421,7 +2514,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_winterfire_hs
     slug: winterfire
     title: Winterfire
     subtitle: null
@@ -2432,7 +2525,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M36S
     isrc: null
     genres:
       primary: null
@@ -2482,7 +2575,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thefrozeno_hs
     slug: the_frozen_overture
     title: The Frozen Overture
     subtitle: null
@@ -2493,7 +2586,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M10S
     isrc: null
     genres:
       primary: null
@@ -2543,7 +2636,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_therisings_hs
     slug: the_rising_storm
     title: The Rising Storm
     subtitle: null
@@ -2554,7 +2647,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M24S
     isrc: null
     genres:
       primary: null
@@ -2604,7 +2697,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fireinthec_hs
     slug: fire_in_the_choir
     title: Fire in the Choir
     subtitle: null
@@ -2615,7 +2708,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M31S
     isrc: null
     genres:
       primary: null
@@ -2665,7 +2758,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_glaciersto_hs
     slug: glacierstorm
     title: Glacierstorm
     subtitle: null
@@ -2676,7 +2769,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M37S
     isrc: null
     genres:
       primary: null
@@ -2727,7 +2820,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thewinterr_hs
     slug: the_winter_requiem
     title: The Winter Requiem
     subtitle: null
@@ -2738,7 +2831,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M6S
     isrc: null
     genres:
       primary: null
@@ -2789,7 +2882,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_holdingthe_hs
     slug: holding_the_light
     title: Holding the Light
     subtitle: null
@@ -2800,7 +2893,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M21S
     isrc: null
     genres:
       primary: null
@@ -2850,7 +2943,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thequietbe_hs
     slug: the_quiet_between_us
     title: The Quiet Between Us
     subtitle: null
@@ -2861,7 +2954,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M11S
     isrc: null
     genres:
       primary: null
@@ -2911,7 +3004,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_stillwater_hs
     slug: still_waters
     title: Still Waters
     subtitle: null
@@ -2922,7 +3015,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M29S
     isrc: null
     genres:
       primary: null
@@ -2972,7 +3065,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_breathings_hs
     slug: breathing_slow
     title: Breathing Slow
     subtitle: null
@@ -2983,7 +3076,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M42S
     isrc: null
     genres:
       primary: null
@@ -3033,7 +3126,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_aplacetore_hs
     slug: a_place_to_rest
     title: A Place to Rest
     subtitle: null
@@ -3044,7 +3137,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M23S
     isrc: null
     genres:
       primary: null
@@ -3086,15 +3179,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: A Place To Rest - Horizon Sound
-      description: A Place To Rest
+      title: A Place to Rest - Horizon Sound
+      description: A Place to Rest
       keywords:
-        - A Place To Rest
+        - A Place to Rest
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fallingtow_hs
     slug: falling_toward_the_light
     title: Falling Toward the Light
     subtitle: null
@@ -3105,7 +3198,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M20S
     isrc: null
     genres:
       primary: null
@@ -3155,7 +3248,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_electricpu_hs
     slug: electric_pulse
     title: Electric Pulse
     subtitle: null
@@ -3166,7 +3259,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M19S
     isrc: null
     genres:
       primary: null
@@ -3217,7 +3310,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_breakthegr_hs
     slug: break_the_gravity
     title: Break the Gravity
     subtitle: null
@@ -3228,7 +3321,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M13S
     isrc: null
     genres:
       primary: null
@@ -3279,7 +3372,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_shinethrou_hs
     slug: shine_through
     title: Shine Through
     subtitle: null
@@ -3290,7 +3383,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M5S
     isrc: null
     genres:
       primary: null
@@ -3340,7 +3433,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_lightupthe_hs
     slug: light_up_the_runway
     title: Light Up the Runway
     subtitle: null
@@ -3351,7 +3444,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M43S
     isrc: null
     genres:
       primary: null
@@ -3401,7 +3494,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_midnightve_hs
     slug: midnight_velocity
     title: Midnight Velocity
     subtitle: null
@@ -3412,7 +3505,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M58S
     isrc: null
     genres:
       primary: null
@@ -3462,7 +3555,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_neonrunner_hs
     slug: neon_runner
     title: Neon Runner
     subtitle: null
@@ -3473,7 +3566,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M4S
     isrc: null
     genres:
       primary: null
@@ -3523,7 +3616,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_neonskylin_hs
     slug: neon_skyline
     title: Neon Skyline
     subtitle: null
@@ -3534,7 +3627,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M6S
     isrc: null
     genres:
       primary: null
@@ -3585,7 +3678,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_runningthr_hs
     slug: running_through_the_night
     title: Running THrough the Night
     subtitle: null
@@ -3596,7 +3689,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M38S
     isrc: null
     genres:
       primary: null
@@ -3639,15 +3732,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Running Through the Night - Horizon Sound
-      description: Running Through the Night
+      title: Running THrough the Night - Horizon Sound
+      description: Running THrough the Night
       keywords:
-        - Running Through the Night
+        - Running THrough the Night
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fireinthew_hs
     slug: fire_in_the_wires
     title: Fire in the Wires
     subtitle: null
@@ -3658,7 +3751,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M52S
     isrc: null
     genres:
       primary: null
@@ -3708,7 +3801,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_chasingthe_hs
     slug: chasing_the_sparks
     title: Chasing the Sparks
     subtitle: null
@@ -3719,7 +3812,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT7M3S
     isrc: null
     genres:
       primary: null
@@ -3769,7 +3862,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_wavesofblu_hs
     slug: waves_of_blue
     title: Waves of Blue
     subtitle: null
@@ -3780,7 +3873,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT7M
     isrc: null
     genres:
       primary: null
@@ -3830,7 +3923,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_afterthest_hs
     slug: after_the_static
     title: After the Static
     subtitle: null
@@ -3841,7 +3934,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M39S
     isrc: null
     genres:
       primary: null
@@ -3891,7 +3984,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_sunlighton_hs
     slug: sunlight_on_the_strings
     title: Sunlight on the Strings
     subtitle: null
@@ -3902,7 +3995,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M23S
     isrc: null
     genres:
       primary: null
@@ -3952,7 +4045,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_wanderersh_hs
     slug: wanderers_heart
     title: Wanderers Heart
     subtitle: null
@@ -3963,7 +4056,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M33S
     isrc: null
     genres:
       primary: null
@@ -4005,15 +4098,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Wanderer's Heart - Horizon Sound
-      description: Wanderer's Heart
+      title: Wanderers Heart - Horizon Sound
+      description: Wanderers Heart
       keywords:
-        - Wanderer's Heart
+        - Wanderers Heart
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_runningtow_hs
     slug: running_toward_the_sun
     title: Running Toward the Sun
     subtitle: null
@@ -4024,7 +4117,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M32S
     isrc: null
     genres:
       primary: null
@@ -4075,7 +4168,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thewayhome_hs
     slug: the_way_home
     title: The Way Home
     subtitle: null
@@ -4086,7 +4179,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M50S
     isrc: null
     genres:
       primary: null
@@ -4136,7 +4229,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_lettersint_hs
     slug: letters_in_the_wind
     title: Letters in the Wind
     subtitle: null
@@ -4147,7 +4240,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M46S
     isrc: null
     genres:
       primary: null
@@ -4197,7 +4290,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_chasingthe_hs_2
     slug: chasing_the_daylight
     title: Chasing the Daylight
     subtitle: null
@@ -4208,7 +4301,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M52S
     isrc: null
     genres:
       primary: null
@@ -4259,7 +4352,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_momentsbet_hs
     slug: moments_between_moments
     title: Moments Between Moments
     subtitle: null
@@ -4270,7 +4363,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M24S
     isrc: null
     genres:
       primary: null
@@ -4321,7 +4414,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_wheretheai_hs
     slug: where_the_air_glows
     title: Where the Air Glows
     subtitle: null
@@ -4332,7 +4425,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M13S
     isrc: null
     genres:
       primary: null
@@ -4383,7 +4476,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_echoesofto_hs
     slug: echoes_of_tomorrow
     title: Echoes of Tomorrow
     subtitle: null
@@ -4394,7 +4487,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M29S
     isrc: null
     genres:
       primary: null
@@ -4445,7 +4538,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thespacewe_hs
     slug: the_space_we_keep
     title: The Space We Keep
     subtitle: null
@@ -4456,7 +4549,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M15S
     isrc: null
     genres:
       primary: null
@@ -4507,7 +4600,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_breathingi_hs
     slug: breathing_in_color
     title: Breathing in Color
     subtitle: null
@@ -4518,7 +4611,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M52S
     isrc: null
     genres:
       primary: null
@@ -4569,7 +4662,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_quiethoriz_hs
     slug: quiet_horizons
     title: Quiet Horizons
     subtitle: null
@@ -4580,7 +4673,7 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M5S
     isrc: null
     genres:
       primary: null
@@ -4631,7 +4724,7 @@ tracks:
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_sherifffor_hs
     slug: sheriff_for_a_night
     title: Sheriff for a Night
     subtitle: null
@@ -4642,17 +4735,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M39S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 1950s Western swing, warm, nostalgic, comedic'
-      - 'Vocals: smooth male baritone, classic phrasing, storytelling delivery'
-      - 'Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
-      - 'Mood: humorous, dusty‑trail, tall‑tale, cinematic'
+      - 'vibe: 1950s western swing'
+      - warm
+      - nostalgic
+      - comedic
+      - 'vocals: smooth male baritone'
+      - classic phrasing
+      - storytelling delivery
+      - 'production: acoustic guitar'
+      - upright bass
+      - brushed drums
+      - vintage reverb
+      - 'mood: humorous'
+      - dusty‑trail
+      - tall‑tale
+      - cinematic
     description_html: >-
       <p>“Sheriff for a Night” is a playful, vintage‑inspired 1950s Western tune
       built on twangy guitars, upright bass, brushed drums, and a warm baritone
@@ -4751,17 +4855,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Sheriff for a Night (50s Western Tall‑Tale) – Horizon Sound - Horizon
-        Sound
-      description: Sheriff for a Night (50s Western Tall‑Tale) – Horizon Sound
+      title: Sheriff for a Night - Horizon Sound
+      description: Sheriff for a Night
       keywords:
-        - Sheriff for a Night (50s Western Tall‑Tale) – Horizon Sound
+        - Sheriff for a Night
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_backtoamar_hs
     slug: back_to_amarillo
     title: Back to Amarillo
     subtitle: null
@@ -4772,17 +4874,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M39S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 1950s western ballad, warm, nostalgic'
-      - 'Vocals: smooth male baritone, gentle vibrato, classic phrasing'
-      - 'Production: acoustic guitar, upright bass, brushed drums, vintage reverb'
-      - 'Mood: romantic, dusty‑trail, heartfelt, cinematic'
+      - 'vibe: 1950s western ballad'
+      - warm
+      - nostalgic
+      - 'vocals: smooth male baritone'
+      - gentle vibrato
+      - classic phrasing
+      - 'production: acoustic guitar'
+      - upright bass
+      - brushed drums
+      - vintage reverb
+      - 'mood: romantic'
+      - dusty‑trail
+      - heartfelt
+      - cinematic
     description_html: >-
       <p>“Back to Amarillo” is a warm, vintage‑inspired 1950s country‑western
       track built on twangy acoustic guitars, upright bass, and a smooth
@@ -4878,17 +4990,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Back to Amarillo (50s Country‑Western Romance) – Horizon Sound - Horizon
-        Sound
-      description: Back to Amarillo (50s Country‑Western Romance) – Horizon Sound
+      title: Back to Amarillo - Horizon Sound
+      description: Back to Amarillo
       keywords:
-        - Back to Amarillo (50s Country‑Western Romance) – Horizon Sound
+        - Back to Amarillo
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_bottleonth_hs
     slug: bottle_on_the_table
     title: Bottle on the Table
     subtitle: null
@@ -4899,19 +5009,29 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M30S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: vintage country‑western, slow, dusty, emotional'
-      - 'Vocals: warm baritone male, classic early‑country delivery'
-      - >-
-        Production: mono recording, tube mic warmth, light tape hiss, steel
-        guitar, upright bass, gentle western swing rhythm
-      - 'Mood: heartbroken, reflective, lonely, timeless'
+      - 'vibe: vintage country‑western'
+      - slow
+      - dusty
+      - emotional
+      - 'vocals: warm baritone male'
+      - classic early‑country delivery
+      - 'production: mono recording'
+      - tube mic warmth
+      - light tape hiss
+      - steel guitar
+      - upright bass
+      - gentle western swing rhythm
+      - 'mood: heartbroken'
+      - reflective
+      - lonely
+      - timeless
     description_html: >-
       <p>“Bottle on the Table” is a classic 1950s country‑western ballad steeped
       in heartbreak, dusty barroom atmosphere, and old‑school storytelling.
@@ -5032,15 +5152,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Bottle on the Table (Country-Western) - Horizon Sound - Horizon Sound
-      description: Bottle on the Table (Country-Western) - Horizon Sound
+      title: Bottle on the Table - Horizon Sound
+      description: Bottle on the Table
       keywords:
-        - Bottle on the Table (Country-Western) - Horizon Sound
+        - Bottle on the Table
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_atouchofli_hs
     slug: a_touch_of_light
     title: A Touch of Light
     subtitle: Instrumental / Ambient
@@ -5051,17 +5171,24 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M55S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: warm, uplifting, cinematic'
-      - 'Style: ambient instrumental, emotional score'
-      - 'Production: glowing pads, soft textures, gentle lift'
-      - 'Mood: hopeful, comforting, serene'
+      - 'vibe: warm'
+      - uplifting
+      - cinematic
+      - 'style: ambient instrumental'
+      - emotional score
+      - 'production: glowing pads'
+      - soft textures
+      - gentle lift
+      - 'mood: hopeful'
+      - comforting
+      - serene
     description_html: >-
       <p>“A Touch of Light” is a gentle, uplifting instrumental built around
       soft glow, warm ambience, and a sense of quiet hope. Subtle chords and
@@ -5099,17 +5226,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        A Touch of Light (Cinematic Instrumental) – Horizon Sound - Horizon
-        Sound
-      description: Track 2 - A Touch of Light (Cinematic Instrumental) – Horizon Sound
+      title: A Touch of Light - Horizon Sound
+      description: Track 2 - A Touch of Light
       keywords:
-        - A Touch of Light (Cinematic Instrumental) – Horizon Sound
+        - A Touch of Light
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_foreverina_hs
     slug: forever_in_a_moment
     title: Forever in a Moment
     subtitle: Instrumental / Ambient
@@ -5120,17 +5245,24 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M44S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: dreamy, warm, cinematic'
-      - 'Style: ambient instrumental, emotional score'
-      - 'Production: soft pads, glowing textures, slow movement'
-      - 'Mood: nostalgic, peaceful, timeless'
+      - 'vibe: dreamy'
+      - warm
+      - cinematic
+      - 'style: ambient instrumental'
+      - emotional score
+      - 'production: soft pads'
+      - glowing textures
+      - slow movement
+      - 'mood: nostalgic'
+      - peaceful
+      - timeless
     description_html: >-
       <p>“Forever in a Moment” is a warm, cinematic instrumental built around
       soft light, drifting textures, and a sense of timeless stillness. Gentle
@@ -5168,17 +5300,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Forever in a Moment (Cinematic Instrumental) – Horizon Sound - Horizon
-        Sound
-      description: Track 6 - Forever in a Moment (Cinematic Instrumental) – Horizon Sound
+      title: Forever in a Moment - Horizon Sound
+      description: Track 6 - Forever in a Moment
       keywords:
-        - Forever in a Moment (Cinematic Instrumental) – Horizon Sound
+        - Forever in a Moment
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_heldinthem_hs
     slug: held_in_the_moment
     title: Held in the Moment
     subtitle: Instrumental / Ambient
@@ -5189,17 +5319,24 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M58S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: intimate, calm, atmospheric'
-      - 'Style: ambient instrumental, cinematic minimalism'
-      - 'Production: soft textures, warm pads, subtle movement'
-      - 'Mood: reflective, grounding, serene'
+      - 'vibe: intimate'
+      - calm
+      - atmospheric
+      - 'style: ambient instrumental'
+      - cinematic minimalism
+      - 'production: soft textures'
+      - warm pads
+      - subtle movement
+      - 'mood: reflective'
+      - grounding
+      - serene
     description_html: >-
       <p>“Held in the Moment” is a quiet, intimate instrumental built around
       soft ambience and gentle emotional lift. Light filters through the sound
@@ -5237,17 +5374,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Held in the Moment (Cinematic Instrumental) – Horizon Sound - Horizon
-        Sound
-      description: Track 1 - Held in the Moment (Cinematic Instrumental) – Horizon Sound
+      title: Held in the Moment - Horizon Sound
+      description: Track 1 - Held in the Moment
       keywords:
-        - Held in the Moment (Cinematic Instrumental) – Horizon Sound
+        - Held in the Moment
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_linesoflig_hs
     slug: lines_of_light
     title: Lines of Light
     subtitle: Instrumental / Ambient
@@ -5258,17 +5393,24 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M11S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: luminous, modern, atmospheric'
-      - 'Style: ambient instrumental, cinematic texture'
-      - 'Production: light pulses, airy pads, soft contrast'
-      - 'Mood: hopeful, spacious, uplifting'
+      - 'vibe: luminous'
+      - modern
+      - atmospheric
+      - 'style: ambient instrumental'
+      - cinematic texture
+      - 'production: light pulses'
+      - airy pads
+      - soft contrast
+      - 'mood: hopeful'
+      - spacious
+      - uplifting
     description_html: >-
       <p>“Lines of Light” is a modern, atmospheric instrumental built around
       beams of soft brightness cutting through gentle haze. The track blends
@@ -5306,15 +5448,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Lines of Light (Cinematic Instrumental) – Horizon Sound - Horizon Sound
-      description: Track 5 - Lines of Light (Cinematic Instrumental) – Horizon Sound
+      title: Lines of Light - Horizon Sound
+      description: Track 5 - Lines of Light
       keywords:
-        - Lines of Light (Cinematic Instrumental) – Horizon Sound
+        - Lines of Light
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_themomenty_hs
     slug: the_moment_you_breathe
     title: The Moment You Breathe
     subtitle: Instrumental / Ambient
@@ -5325,17 +5467,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M9S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: calm, reflective, cinematic'
-      - 'Style: ambient instrumental, atmospheric, modern score'
-      - 'Production: soft pads, airy textures, subtle motion, warm tonal palette'
-      - 'Mood: peaceful, introspective, luminous, grounding'
+      - 'vibe: calm'
+      - reflective
+      - cinematic
+      - 'style: ambient instrumental'
+      - atmospheric
+      - modern score
+      - 'production: soft pads'
+      - airy textures
+      - subtle motion
+      - warm tonal palette
+      - 'mood: peaceful'
+      - introspective
+      - luminous
+      - grounding
     description_html: >-
       <p>“The Moment You Breathe” is a calm, cinematic instrumental built around
       soft ambient textures, gentle movement, and a quiet emotional lift. Warm
@@ -5375,19 +5527,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        The Moment You Breathe (Cinematic Instrumental) – Horizon Sound -
-        Horizon Sound
-      description: >-
-        Track 3 - The Moment You Breathe (Cinematic Instrumental) – Horizon
-        Sound
+      title: The Moment You Breathe - Horizon Sound
+      description: Track 3 - The Moment You Breathe
       keywords:
-        - The Moment You Breathe (Cinematic Instrumental) – Horizon Sound
+        - The Moment You Breathe
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_thewaywate_hs
     slug: the_way_water_moves
     title: The Way Water Moves
     subtitle: Instrumental / Ambient
@@ -5398,17 +5546,25 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M43S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: calm, fluid, atmospheric'
-      - 'Style: ambient instrumental, cinematic, reflective'
-      - 'Production: soft pads, gentle motion, warm tonal palette'
-      - 'Mood: peaceful, meditative, soothing'
+      - 'vibe: calm'
+      - fluid
+      - atmospheric
+      - 'style: ambient instrumental'
+      - cinematic
+      - reflective
+      - 'production: soft pads'
+      - gentle motion
+      - warm tonal palette
+      - 'mood: peaceful'
+      - meditative
+      - soothing
     description_html: >-
       <p>“The Way Water Moves” is a calm, flowing instrumental built around soft
       textures, gentle motion, and a warm, reflective atmosphere. Subtle waves
@@ -5447,17 +5603,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        The Way Water Moves (Cinematic Instrumental) – Horizon Sound - Horizon
-        Sound
-      description: Track 4 - The Way Water Moves (Cinematic Instrumental) – Horizon Sound
+      title: The Way Water Moves - Horizon Sound
+      description: Track 4 - The Way Water Moves
       keywords:
-        - The Way Water Moves (Cinematic Instrumental) – Horizon Sound
+        - The Way Water Moves
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_someday_hs
     slug: someday
     title: Someday
     subtitle: Venice | Part 1
@@ -5468,19 +5622,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M37S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: warm acoustic‑pop, nostalgic, hopeful'
-      - 'Vocals: bright female lead, soft harmonies, expressive phrasing'
-      - >-
-        Production: acoustic guitars, light percussion, gentle lift, cinematic
-        warmth
-      - 'Mood: innocent, dreamy, heartfelt, reflective'
+      - 'vibe: warm acoustic‑pop'
+      - nostalgic
+      - hopeful
+      - 'vocals: bright female lead'
+      - soft harmonies
+      - expressive phrasing
+      - 'production: acoustic guitars'
+      - light percussion
+      - gentle lift
+      - cinematic warmth
+      - 'mood: innocent'
+      - dreamy
+      - heartfelt
+      - reflective
     description_html: >-
       <p>“Someday” is a warm, nostalgic acoustic‑pop track built on gentle
       guitars, soft drums, and bright female vocals. The production leans
@@ -5584,15 +5746,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Someday (Acoustic Pop Storytelling) – Horizon Sound - Horizon Sound
-      description: Track 1 - Someday (Acoustic Pop Storytelling) – Horizon Sound
+      title: Someday - Horizon Sound
+      description: Track 1 - Someday
       keywords:
-        - Someday (Acoustic Pop Storytelling) – Horizon Sound
+        - Someday
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_missingsta_hs
     slug: missing_stamp
     title: Missing Stamp
     subtitle: Venice | Part 2
@@ -5603,17 +5765,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M46S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional acoustic‑pop, soft, reflective'
-      - 'Vocals: warm female lead, intimate delivery, heartfelt phrasing'
-      - 'Production: piano, acoustic guitar, soft strings, cinematic melancholy'
-      - 'Mood: nostalgic, aching, honest, bittersweet'
+      - 'vibe: emotional acoustic‑pop'
+      - soft
+      - reflective
+      - 'vocals: warm female lead'
+      - intimate delivery
+      - heartfelt phrasing
+      - 'production: piano'
+      - acoustic guitar
+      - soft strings
+      - cinematic melancholy
+      - 'mood: nostalgic'
+      - aching
+      - honest
+      - bittersweet
     description_html: >-
       <p>“Missing Stamp” is an emotional acoustic‑pop ballad with soft piano,
       warm guitars, and expressive female vocals. The production leans intimate
@@ -5728,15 +5900,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Missing Stamp (Emotional Acoustic Pop) – Horizon Sound - Horizon Sound
-      description: Track 2 - Missing Stamp (Emotional Acoustic Pop) – Horizon Sound
+      title: Missing Stamp - Horizon Sound
+      description: Track 2 - Missing Stamp
       keywords:
-        - Missing Stamp (Emotional Acoustic Pop) – Horizon Sound
+        - Missing Stamp
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_venicewate_hs
     slug: venice_waters
     title: Venice Waters
     subtitle: Venice | Part 3
@@ -5747,17 +5919,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M26S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: upbeat acoustic‑pop, warm, adventurous'
-      - 'Vocals: bright female lead, expressive, joyful'
-      - 'Production: acoustic guitars, light drums, piano, cinematic strings'
-      - 'Mood: nostalgic, uplifting, feel‑good, celebratory'
+      - 'vibe: upbeat acoustic‑pop'
+      - warm
+      - adventurous
+      - 'vocals: bright female lead'
+      - expressive
+      - joyful
+      - 'production: acoustic guitars'
+      - light drums
+      - piano
+      - cinematic strings
+      - 'mood: nostalgic'
+      - uplifting
+      - feel‑good
+      - celebratory
     description_html: >-
       <p>“Venice Waters” is a warm, upbeat acoustic‑pop track with bright female
       vocals, energetic guitars, light drums, and cinematic strings. The
@@ -5876,17 +6058,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Venice Waters (Upbeat Acoustic‑Pop Adventure) – Horizon Sound - Horizon
-        Sound
-      description: Track 3 - Venice Waters (Upbeat Acoustic‑Pop Adventure) – Horizon Sound
+      title: Venice Waters - Horizon Sound
+      description: Track 3 - Venice Waters
       keywords:
-        - Venice Waters (Upbeat Acoustic‑Pop Adventure) – Horizon Sound
+        - Venice Waters
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_riseliketh_hs
     slug: rise_like_thunder_short
     title: Rise Like Thunder - Short
     subtitle: null
@@ -5897,14 +6077,14 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT18S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Full track: https://youtu.be/g_AZ5B9ssFQ'
+      - 'full track: https://youtu.be/g_az5b9ssfq'
     description_html: >-
       <p>A 17-second chorus moment from Rise Like Thunder - cinematic rock
       energy and emotional lift.</p>
@@ -5939,17 +6119,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Rise Like Thunder - 80s Rock Anthem (Short) Horizon Sound - Horizon
-        Sound
-      description: Rise Like Thunder - 80s Rock Anthem (Short) Horizon Sound
+      title: Rise Like Thunder - Short - Horizon Sound
+      description: Rise Like Thunder - Short
       keywords:
-        - Rise Like Thunder - 80s Rock Anthem (Short) Horizon Sound
+        - Rise Like Thunder - Short
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_nineteensu_hs
     slug: nineteen_summers_short
     title: Nineteen Summers - Short
     subtitle: null
@@ -5960,14 +6138,14 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT14S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Full track: https://youtu.be/r16qSkxEcI4'
+      - 'full track: https://youtu.be/r16qskxeci4'
     description_html: <p>A 14-second moment from Nineteen Summers - Emotional Acoustic Pop.</p>
     lyrics_html: null
     lyrics_excerpt: null
@@ -6000,17 +6178,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Nineteen Summers - Emotional Acoustic Pop (Short) Horizon Sound -
-        Horizon Sound
-      description: Nineteen Summers - Emotional Acoustic Pop (Short) Horizon Sound
+      title: Nineteen Summers - Short - Horizon Sound
+      description: Nineteen Summers - Short
       keywords:
-        - Nineteen Summers - Emotional Acoustic Pop (Short) Horizon Sound
+        - Nineteen Summers - Short
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_ravyn_r
+  - id: trk_beforemidn_r
     slug: before_midnight
     title: Before Midnight
     subtitle: Midnight Saga | Part 1
@@ -6021,17 +6197,27 @@ tracks:
     release_id: null
     primary_artist: art_ravyn
     featuring_artists: []
-    duration: null
+    duration: PT3M50S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: cinematic pop, neon‑lit, atmospheric, anticipatory'
-      - 'Vocals: smooth female lead, soft intensity, late‑night tone'
-      - 'Production: warm synths, steady drums, glowing textures'
-      - 'Mood: curious, electric, suspended, ready‑to‑ignite'
+      - 'vibe: cinematic pop'
+      - neon‑lit
+      - atmospheric
+      - anticipatory
+      - 'vocals: smooth female lead'
+      - soft intensity
+      - late‑night tone
+      - 'production: warm synths'
+      - steady drums
+      - glowing textures
+      - 'mood: curious'
+      - electric
+      - suspended
+      - ready‑to‑ignite
     description_html: >-
       <p>“Before Midnight” opens The Midnight Saga with a warm, cinematic blend
       of pop, synth, and late‑night atmosphere. Soft neon textures, steady
@@ -6143,17 +6329,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Before Midnight (The Midnight Saga – Chapter 1) – Horizon Sound - Ravyn
-      description: >-
-        Track 1 - Before Midnight (The Midnight Saga – Chapter 1) – Horizon
-        Sound
+      title: Before Midnight - Ravyn
+      description: Track 1 - Before Midnight
       keywords:
-        - Before Midnight (The Midnight Saga – Chapter 1) – Horizon Sound
+        - Before Midnight
         - Ravyn
     internal:
       notes: null
       priority: null
-  - id: trk_ravyn_r
+  - id: trk_midnightma_r
     slug: midnight_mayhem
     title: Midnight Mayhem
     subtitle: Midnight Saga | Part 2
@@ -6164,17 +6348,26 @@ tracks:
     release_id: null
     primary_artist: art_ravyn
     featuring_artists: []
-    duration: null
+    duration: PT3M55S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: high‑energy pop, neon chaos, late‑night adrenaline'
-      - 'Vocals: bold female lead, energetic phrasing, electric delivery'
-      - 'Production: bright synths, sharp drums, rhythmic drive'
-      - 'Mood: wild, reckless, euphoric, fast‑moving'
+      - 'vibe: high‑energy pop'
+      - neon chaos
+      - late‑night adrenaline
+      - 'vocals: bold female lead'
+      - energetic phrasing
+      - electric delivery
+      - 'production: bright synths'
+      - sharp drums
+      - rhythmic drive
+      - 'mood: wild'
+      - reckless
+      - euphoric
+      - fast‑moving
     description_html: >-
       <p>“Midnight Mayhem” explodes into the second chapter of The Midnight Saga
       with high‑energy pop, pulsing rhythm, and neon‑drenched chaos. Bright
@@ -6277,17 +6470,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Midnight Mayhem (The Midnight Saga – Chapter 2) – Horizon Sound - Ravyn
-      description: >-
-        Track 2 - Midnight Mayhem (The Midnight Saga – Chapter 2) – Horizon
-        Sound
+      title: Midnight Mayhem - Ravyn
+      description: Track 2 - Midnight Mayhem
       keywords:
-        - Midnight Mayhem (The Midnight Saga – Chapter 2) – Horizon Sound
+        - Midnight Mayhem
         - Ravyn
     internal:
       notes: null
       priority: null
-  - id: trk_ravyn_r
+  - id: trk_midnightma_r_2
     slug: midnight_madness
     title: Midnight Madness
     subtitle: Midnight Saga | Part 3
@@ -6298,17 +6489,25 @@ tracks:
     release_id: null
     primary_artist: art_ravyn
     featuring_artists: []
-    duration: null
+    duration: PT3M56S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: hypnotic pop, neon swirl, dreamlike intensity'
-      - 'Vocals: expressive female lead, drifting and powerful'
-      - 'Production: glowing synths, pulsing drums, immersive textures'
-      - 'Mood: dizzy, electric, surreal, all‑consuming'
+      - 'vibe: hypnotic pop'
+      - neon swirl
+      - dreamlike intensity
+      - 'vocals: expressive female lead'
+      - drifting and powerful
+      - 'production: glowing synths'
+      - pulsing drums
+      - immersive textures
+      - 'mood: dizzy'
+      - electric
+      - surreal
+      - all‑consuming
     description_html: >-
       <p>“Midnight Madness” dives into the third chapter of The Midnight Saga
       with a hypnotic blend of pop, synth, and swirling late‑night energy. The
@@ -6411,17 +6610,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Midnight Madness (The Midnight Saga – Chapter 3) – Horizon Sound - Ravyn
-      description: >-
-        Track 3 - Midnight Madness (The Midnight Saga – Chapter 3) – Horizon
-        Sound
+      title: Midnight Madness - Ravyn
+      description: Track 3 - Midnight Madness
       keywords:
-        - Midnight Madness (The Midnight Saga – Chapter 3) – Horizon Sound
+        - Midnight Madness
         - Ravyn
     internal:
       notes: null
       priority: null
-  - id: trk_ravyn_r
+  - id: trk_aftermidni_r
     slug: after_midnight
     title: After Midnight
     subtitle: Midnight Saga | Part 4
@@ -6432,17 +6629,26 @@ tracks:
     release_id: null
     primary_artist: art_ravyn
     featuring_artists: []
-    duration: null
+    duration: PT4M14S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: cinematic pop, reflective, warm, late‑night calm'
-      - 'Vocals: heartfelt female lead, soft and steady'
-      - 'Production: warm pads, soft synths, steady drums'
-      - 'Mood: peaceful, introspective, resolved, sunrise‑ready'
+      - 'vibe: cinematic pop'
+      - reflective
+      - warm
+      - late‑night calm
+      - 'vocals: heartfelt female lead'
+      - soft and steady
+      - 'production: warm pads'
+      - soft synths
+      - steady drums
+      - 'mood: peaceful'
+      - introspective
+      - resolved
+      - sunrise‑ready
     description_html: >-
       <p>“After Midnight” closes The Midnight Saga with a reflective, cinematic
       pop sound that feels like the quiet after the storm. Soft synths, warm
@@ -6550,15 +6756,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: After Midnight (The Midnight Saga – Chapter 4) – Horizon Sound - Ravyn
-      description: Track 4 - After Midnight (The Midnight Saga – Chapter 4) – Horizon Sound
+      title: After Midnight - Ravyn
+      description: Track 4 - After Midnight
       keywords:
-        - After Midnight (The Midnight Saga – Chapter 4) – Horizon Sound
+        - After Midnight
         - Ravyn
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_thequietaf_le
     slug: the_quiet_after
     title: The Quiet After
     subtitle: After the Silence | Part 1
@@ -6569,19 +6775,29 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT5M12S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: slow, cinematic, emotional, reflective'
-      - 'Vocals: warm female lead, rich tone, smooth vibrato, intimate phrasing'
-      - 'Production: soft piano, warm strings, subtle drums, atmospheric reverb'
-      - >-
-        Mood: heartbreak‑after‑the‑storm, heavy, introspective, quietly
-        devastating
+      - 'vibe: slow'
+      - cinematic
+      - emotional
+      - reflective
+      - 'vocals: warm female lead'
+      - rich tone
+      - smooth vibrato
+      - intimate phrasing
+      - 'production: soft piano'
+      - warm strings
+      - subtle drums
+      - atmospheric reverb
+      - 'mood: heartbreak‑after‑the‑storm'
+      - heavy
+      - introspective
+      - quietly devastating
     description_html: >-
       <p>“The Quiet After” is a slow, cinematic pop‑soul ballad built around
       warm expressive female vocals, intimate close‑mic delivery, and a soft,
@@ -6701,21 +6917,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        1. The Quiet After – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 1 - 1. The Quiet After – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: The Quiet After - Lydia Ellington
+      description: Track 1 - The Quiet After
       keywords:
-        - >-
-          1. The Quiet After – Performed by Lydia Ellington (After the Silence)
-          | Horizon Sound
+        - The Quiet After
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_borrowedti_le
     slug: borrowed_time
     title: Borrowed Time
     subtitle: After the Silence | Part 2
@@ -6726,17 +6936,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M36S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: tender, nostalgic, bittersweet'
-      - 'Vocals: warm female lead, smooth vibrato, emotional phrasing'
-      - 'Production: warm piano, soft strings, light drums, cinematic glow'
-      - 'Mood: reflective, aching, quietly hopeful'
+      - 'vibe: tender'
+      - nostalgic
+      - bittersweet
+      - 'vocals: warm female lead'
+      - smooth vibrato
+      - emotional phrasing
+      - 'production: warm piano'
+      - soft strings
+      - light drums
+      - cinematic glow
+      - 'mood: reflective'
+      - aching
+      - quietly hopeful
     description_html: >-
       <p>“Borrowed Time” is a tender, mid‑tempo emotional pop ballad shaped by
       warm expressive female vocals, soft piano, gentle strings, and a nostalgic
@@ -6853,21 +7072,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        2. Borrowed Time – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 2 - 2. Borrowed Time – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Borrowed Time - Lydia Ellington
+      description: Track 2 - Borrowed Time
       keywords:
-        - >-
-          2. Borrowed Time – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Borrowed Time
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_homesickfo_le
     slug: homesick_for_you
     title: Homesick For You
     subtitle: After the Silence | Part 3
@@ -6878,17 +7091,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M58S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: soft, nostalgic, reflective'
-      - 'Vocals: warm female lead, intimate phrasing, emotional tone'
-      - 'Production: gentle piano, warm pads, subtle strings, airy reverb'
-      - 'Mood: longing, introspective, quietly emotional'
+      - 'vibe: soft'
+      - nostalgic
+      - reflective
+      - 'vocals: warm female lead'
+      - intimate phrasing
+      - emotional tone
+      - 'production: gentle piano'
+      - warm pads
+      - subtle strings
+      - airy reverb
+      - 'mood: longing'
+      - introspective
+      - quietly emotional
     description_html: >-
       <p>“Homesick for You” is a soft, reflective emotional pop ballad built
       around gentle piano, warm pads, subtle strings, and a spacious, nostalgic
@@ -7004,21 +7226,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        3. Homesick for You – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 3 - 3. Homesick for You – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Homesick For You - Lydia Ellington
+      description: Track 3 - Homesick For You
       keywords:
-        - >-
-          3. Homesick for You – Performed by Lydia Ellington (After the Silence)
-          | Horizon Sound
+        - Homesick For You
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_thewayweli_le
     slug: the_way_we_lied
     title: The Way We Lied
     subtitle: After the Silence | Part 4
@@ -7029,17 +7245,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M26S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: slow, heavy, emotional'
-      - 'Vocals: warm female lead, rich tone, intimate delivery'
-      - 'Production: soft piano, warm strings, light drums, atmospheric reverb'
-      - 'Mood: aching, reflective, quietly devastating'
+      - 'vibe: slow'
+      - heavy
+      - emotional
+      - 'vocals: warm female lead'
+      - rich tone
+      - intimate delivery
+      - 'production: soft piano'
+      - warm strings
+      - light drums
+      - atmospheric reverb
+      - 'mood: aching'
+      - reflective
+      - quietly devastating
     description_html: >-
       <p>“The Way We Lied” is a slow, aching emotional pop ballad shaped by warm
       expressive female vocals, soft piano, warm strings, and spacious reverb.
@@ -7155,21 +7380,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        4. The Way We Lied – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 4 - 4. The Way We Lied – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: The Way We Lied - Lydia Ellington
+      description: Track 4 - The Way We Lied
       keywords:
-        - >-
-          4. The Way We Lied – Performed by Lydia Ellington (After the Silence)
-          | Horizon Sound
+        - The Way We Lied
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_paperwalls_le
     slug: paper_walls
     title: Paper Walls
     subtitle: After the Silence | Part 5
@@ -7180,17 +7399,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M50S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: vulnerable, intimate, cinematic'
-      - 'Vocals: warm female lead, smooth vibrato, emotional phrasing'
-      - 'Production: soft piano, warm strings, airy pads, light drums'
-      - 'Mood: fragile‑to‑soaring, honest, cathartic'
+      - 'vibe: vulnerable'
+      - intimate
+      - cinematic
+      - 'vocals: warm female lead'
+      - smooth vibrato
+      - emotional phrasing
+      - 'production: soft piano'
+      - warm strings
+      - airy pads
+      - light drums
+      - 'mood: fragile‑to‑soaring'
+      - honest
+      - cathartic
     description_html: >-
       <p>“Paper Walls” is a vulnerable emotional pop ballad built around warm
       expressive female vocals, soft piano, warm strings, airy pads, and a
@@ -7310,21 +7538,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        5. Paper Walls – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 5 - 5. Paper Walls – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Paper Walls - Lydia Ellington
+      description: Track 5 - Paper Walls
       keywords:
-        - >-
-          5. Paper Walls – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Paper Walls
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_halfofme_le
     slug: half_of_me
     title: Half of Me
     subtitle: After the Silence | Part 6
@@ -7335,17 +7557,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT5M
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: rising, bold, emotional'
-      - 'Vocals: warm female lead, expressive phrasing, powerful lift'
-      - 'Production: piano, warm strings, steady drums, cinematic rise'
-      - 'Mood: empowering, self‑reclaiming, triumphant'
+      - 'vibe: rising'
+      - bold
+      - emotional
+      - 'vocals: warm female lead'
+      - expressive phrasing
+      - powerful lift
+      - 'production: piano'
+      - warm strings
+      - steady drums
+      - cinematic rise
+      - 'mood: empowering'
+      - self‑reclaiming
+      - triumphant
     description_html: >-
       <p>“Half of Me” is an empowering emotional pop ballad built on warm
       expressive female vocals, bold piano, rising strings, steady drums, and a
@@ -7462,21 +7693,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        6. Half of Me – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 6 - 6. Half of Me – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Half of Me - Lydia Ellington
+      description: Track 6 - Half of Me
       keywords:
-        - >-
-          6. Half of Me – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Half of Me
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_ifyoudaske_le
     slug: if_youd_asked
     title: If You'd Asked
     subtitle: After the Silence | Part 7
@@ -7487,17 +7712,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT5M18S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: slow, cinematic, emotional'
-      - 'Vocals: warm female lead, intimate delivery, aching tone'
-      - 'Production: soft piano, warm strings, subtle drums, atmospheric reverb'
-      - 'Mood: regretful, tender, heartbreaking'
+      - 'vibe: slow'
+      - cinematic
+      - emotional
+      - 'vocals: warm female lead'
+      - intimate delivery
+      - aching tone
+      - 'production: soft piano'
+      - warm strings
+      - subtle drums
+      - atmospheric reverb
+      - 'mood: regretful'
+      - tender
+      - heartbreaking
     description_html: >-
       <p>“If You’d Asked” is a slow, aching emotional pop ballad shaped by warm
       expressive female vocals, soft piano, warm strings, subtle drums, and
@@ -7686,21 +7920,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        7. If You’d Asked – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 7 - 7. If You’d Asked – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: If You'd Asked - Lydia Ellington
+      description: Track 7 - If You'd Asked
       keywords:
-        - >-
-          7. If You’d Asked – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - If You'd Asked
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_ghostlight_le
     slug: ghostlight
     title: Ghostlight
     subtitle: After the Silence | Part 8
@@ -7711,19 +7939,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M33S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: haunting, glowing, cinematic'
-      - 'Vocals: warm female lead, rich tone, emotional phrasing'
-      - >-
-        Production: soft piano, warm strings, subtle percussion, atmospheric
-        reverb
-      - 'Mood: nostalgic, theatrical, bittersweet'
+      - 'vibe: haunting'
+      - glowing
+      - cinematic
+      - 'vocals: warm female lead'
+      - rich tone
+      - emotional phrasing
+      - 'production: soft piano'
+      - warm strings
+      - subtle percussion
+      - atmospheric reverb
+      - 'mood: nostalgic'
+      - theatrical
+      - bittersweet
     description_html: >-
       <p>“Ghostlight” is a haunting, theatrical emotional pop ballad built
       around warm expressive female vocals, soft piano, warm strings, subtle
@@ -7841,21 +8076,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        8. Ghostlight – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 8 - 8. Ghostlight – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Ghostlight - Lydia Ellington
+      description: Track 8 - Ghostlight
       keywords:
-        - >-
-          8. Ghostlight – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Ghostlight
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_afterthesi_le
     slug: after_the_silence
     title: After the Silence
     subtitle: After the Silence | Part 9
@@ -7866,17 +8095,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT5M46S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: calm, reflective, cinematic'
-      - 'Vocals: warm female lead, smooth vibrato, intimate phrasing'
-      - 'Production: soft piano, warm strings, airy pads, gentle drums'
-      - 'Mood: healing, uplifting, quietly powerful'
+      - 'vibe: calm'
+      - reflective
+      - cinematic
+      - 'vocals: warm female lead'
+      - smooth vibrato
+      - intimate phrasing
+      - 'production: soft piano'
+      - warm strings
+      - airy pads
+      - gentle drums
+      - 'mood: healing'
+      - uplifting
+      - quietly powerful
     description_html: >-
       <p>“After the Silence” is a calm, reflective emotional pop ballad shaped
       by warm expressive female vocals, soft piano, warm strings, airy pads, and
@@ -7989,21 +8227,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        9. After the Silence – Performed by Lydia Ellington (After the Silence)
-        | Horizon Sound - Lydia Ellington
-      description: >-
-        Track 9 - 9. After the Silence – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: After the Silence - Lydia Ellington
+      description: Track 9 - After the Silence
       keywords:
-        - >-
-          9. After the Silence – Performed by Lydia Ellington (After the
-          Silence) | Horizon Sound
+        - After the Silence
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_saltwater_le
     slug: saltwater
     title: Saltwater
     subtitle: After the Silence | Part 10
@@ -8014,17 +8246,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M51S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: flowing, emotional, cinematic'
-      - 'Vocals: warm female lead, rich tone, expressive phrasing'
-      - 'Production: soft piano, warm strings, airy pads, gentle drums'
-      - 'Mood: cathartic, cleansing, tender'
+      - 'vibe: flowing'
+      - emotional
+      - cinematic
+      - 'vocals: warm female lead'
+      - rich tone
+      - expressive phrasing
+      - 'production: soft piano'
+      - warm strings
+      - airy pads
+      - gentle drums
+      - 'mood: cathartic'
+      - cleansing
+      - tender
     description_html: >-
       <p>“Saltwater” is a flowing, tidal emotional pop ballad built on warm
       expressive female vocals, soft piano, warm strings, airy pads, and gentle
@@ -8140,21 +8381,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        10. Saltwater – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 10 - 10. Saltwater – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Saltwater - Lydia Ellington
+      description: Track 10 - Saltwater
       keywords:
-        - >-
-          10. Saltwater – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Saltwater
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_thedressin_le
     slug: the_dress_i_never_wore
     title: The Dress I Never Wore
     subtitle: After the Silence | Part 11
@@ -8165,17 +8400,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M36S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: slow, emotional, cinematic'
-      - 'Vocals: warm female lead, smooth vibrato, intimate delivery'
-      - 'Production: soft piano, warm strings, light drums, airy pads'
-      - 'Mood: reflective, tender, bittersweet'
+      - 'vibe: slow'
+      - emotional
+      - cinematic
+      - 'vocals: warm female lead'
+      - smooth vibrato
+      - intimate delivery
+      - 'production: soft piano'
+      - warm strings
+      - light drums
+      - airy pads
+      - 'mood: reflective'
+      - tender
+      - bittersweet
     description_html: >-
       <p>“The Dress I Never Wore” is a slow, aching emotional pop ballad shaped
       by warm expressive female vocals, soft piano, warm strings, light drums,
@@ -8291,21 +8535,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        11. The Dress I Never Wore – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound - Lydia Ellington
-      description: >-
-        Track 11 - 11. The Dress I Never Wore – Performed by Lydia Ellington
-        (After the Silence) | Horizon Sound
+      title: The Dress I Never Wore - Lydia Ellington
+      description: Track 11 - The Dress I Never Wore
       keywords:
-        - >-
-          11. The Dress I Never Wore – Performed by Lydia Ellington (After the
-          Silence) | Horizon Sound
+        - The Dress I Never Wore
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_unsentlett_le
     slug: unsent_letters
     title: Unsent Letters
     subtitle: After the Silence | Part 12
@@ -8316,17 +8554,26 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT4M18S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: intimate, confessional, late‑night'
-      - 'Vocals: warm female lead, smooth vibrato, emotional phrasing'
-      - 'Production: soft piano, warm strings, airy pads, subtle drums'
-      - 'Mood: tender, reflective, quietly cathartic'
+      - 'vibe: intimate'
+      - confessional
+      - late‑night
+      - 'vocals: warm female lead'
+      - smooth vibrato
+      - emotional phrasing
+      - 'production: soft piano'
+      - warm strings
+      - airy pads
+      - subtle drums
+      - 'mood: tender'
+      - reflective
+      - quietly cathartic
     description_html: >-
       <p>“Unsent Letters” is an intimate, confessional emotional pop ballad
       built around warm expressive female vocals, soft piano, gentle strings,
@@ -8445,21 +8692,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        12. Unsent Letters – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 12 - 12. Unsent Letters – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Unsent Letters - Lydia Ellington
+      description: Track 12 - Unsent Letters
       keywords:
-        - >-
-          12. Unsent Letters – Performed by Lydia Ellington (After the Silence)
-          | Horizon Sound
+        - Unsent Letters
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_lydiaellin_le
+  - id: trk_riseagain_le
     slug: rise_again
     title: Rise Again
     subtitle: After the Silence | Part 13
@@ -8470,17 +8711,29 @@ tracks:
     release_id: null
     primary_artist: art_lydiaellington
     featuring_artists: []
-    duration: null
+    duration: PT5M49S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: cinematic pop, emotional, uplifting, triumphant'
-      - 'Vocals: warm expressive female lead, smooth vibrato, intimate phrasing'
-      - 'Production: piano, strings, steady drums, airy pads, cinematic build'
-      - 'Mood: empowering, victorious, resilient, transformative'
+      - 'vibe: cinematic pop'
+      - emotional
+      - uplifting
+      - triumphant
+      - 'vocals: warm expressive female lead'
+      - smooth vibrato
+      - intimate phrasing
+      - 'production: piano'
+      - strings
+      - steady drums
+      - airy pads
+      - cinematic build
+      - 'mood: empowering'
+      - victorious
+      - resilient
+      - transformative
     description_html: >-
       <p>“Rise Again” is a cinematic, empowering emotional pop ballad built
       around warm expressive female vocals, rich tone, smooth vibrato, and
@@ -8601,21 +8854,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        13. Rise Again – Performed by Lydia Ellington (After the Silence) |
-        Horizon Sound - Lydia Ellington
-      description: >-
-        Track 13 - 13. Rise Again – Performed by Lydia Ellington (After the
-        Silence) | Horizon Sound
+      title: Rise Again - Lydia Ellington
+      description: Track 13 - Rise Again
       keywords:
-        - >-
-          13. Rise Again – Performed by Lydia Ellington (After the Silence) |
-          Horizon Sound
+        - Rise Again
         - Lydia Ellington
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_lostinsile_hs
     slug: lost_in_silence
     title: Lost in Silence
     subtitle: A Way Back | Part 1
@@ -8626,19 +8873,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M52S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: acoustic‑pop, warm, emotional, reflective'
-      - 'Vocals: expressive female lead + soft male duet, airy harmonies'
-      - >-
-        Production: bright acoustic guitar, light indie‑pop percussion, warm
-        bass, clean modern polish
-      - 'Mood: bittersweet, honest, gentle, quietly hopeful'
+      - 'vibe: acoustic‑pop'
+      - warm
+      - emotional
+      - reflective
+      - 'vocals: expressive female lead + soft male duet'
+      - airy harmonies
+      - 'production: bright acoustic guitar'
+      - light indie‑pop percussion
+      - warm bass
+      - clean modern polish
+      - 'mood: bittersweet'
+      - honest
+      - gentle
+      - quietly hopeful
     description_html: >-
       <p>“Lost in Silence” is a warm, modern acoustic‑pop duet built on bright
       guitar, soft indie‑pop percussion, and a smooth, uplifting groove. The
@@ -8738,15 +8993,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Lost in Silence (From A Way Back) – Horizon Sound - Horizon Sound
-      description: Track 1 - Lost in Silence (From A Way Back) – Horizon Sound
+      title: Lost in Silence - Horizon Sound
+      description: Track 1 - Lost in Silence
       keywords:
-        - Lost in Silence (From A Way Back) – Horizon Sound
+        - Lost in Silence
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_choosingme_hs
     slug: choosing_me_her_version
     title: Choosing Me (Her Version)
     subtitle: A Way Back | Part 2
@@ -8757,19 +9012,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M29S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: coastal acoustic‑pop, breezy, warm, uplifting'
-      - 'Vocals: soft female lead, airy harmonies, smile‑in‑the‑voice delivery'
-      - >-
-        Production: bright acoustic guitar, brushed snare, subtle shaker, clean
-        modern polish
-      - 'Mood: hopeful, light, self‑reclaiming, fresh'
+      - 'vibe: coastal acoustic‑pop'
+      - breezy
+      - warm
+      - uplifting
+      - 'vocals: soft female lead'
+      - airy harmonies
+      - smile‑in‑the‑voice delivery
+      - 'production: bright acoustic guitar'
+      - brushed snare
+      - subtle shaker
+      - clean modern polish
+      - 'mood: hopeful'
+      - light
+      - self‑reclaiming
+      - fresh
     description_html: >-
       <p>“Choosing Me (Her Version)” is a warm, breezy acoustic‑pop track with
       soft female vocals, bright rhythmic guitar, and a sunny coastal‑pop
@@ -8873,15 +9137,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Choosing Me - Her Version (Acoustic Pop) – Horizon Sound - Horizon Sound
-      description: Track 2 - Choosing Me - Her Version (Acoustic Pop) – Horizon Sound
+      title: Choosing Me (Her Version) - Horizon Sound
+      description: Track 2 - Choosing Me (Her Version)
       keywords:
-        - Choosing Me - Her Version (Acoustic Pop) – Horizon Sound
+        - Choosing Me (Her Version)
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_choosingme_hs_2
     slug: choosing_me_his_version
     title: Choosing Me (His Version)
     subtitle: A Way Back | Part 3
@@ -8892,19 +9156,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M55S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: modern pop‑rock, energetic, heartfelt, uplifting'
-      - 'Vocals: clean male lead, warm tone, tight harmonies'
-      - >-
-        Production: bright electric guitars, punchy drums, groovy bass, polished
-        mix
-      - 'Mood: honest, determined, optimistic, empowering'
+      - 'vibe: modern pop‑rock'
+      - energetic
+      - heartfelt
+      - uplifting
+      - 'vocals: clean male lead'
+      - warm tone
+      - tight harmonies
+      - 'production: bright electric guitars'
+      - punchy drums
+      - groovy bass
+      - polished mix
+      - 'mood: honest'
+      - determined
+      - optimistic
+      - empowering
     description_html: >-
       <p>“Choosing Me (His Version)” is an upbeat modern pop track with bright
       electric guitars, punchy drums, and a confident male vocal. The production
@@ -9006,15 +9279,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Choosing Me - His Version (Pop) – Horizon Sound - Horizon Sound
-      description: Track 3 - Choosing Me - His Version (Pop) – Horizon Sound
+      title: Choosing Me (His Version) - Horizon Sound
+      description: Track 3 - Choosing Me (His Version)
       keywords:
-        - Choosing Me - His Version (Pop) – Horizon Sound
+        - Choosing Me (His Version)
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_allaroundt_hs
     slug: all_around_the_world
     title: All Around the World
     subtitle: null
@@ -9025,19 +9298,29 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M3S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: bright acoustic pop, breezy, youthful, heartfelt'
-      - 'Vocals: warm female lead, airy harmonies, emotional delivery'
-      - >-
-        Production: acoustic guitars, handclaps, tambourine, light percussion,
-        wide stereo layers
-      - 'Mood: nostalgic, hopeful, adventurous, vulnerable'
+      - 'vibe: bright acoustic pop'
+      - breezy
+      - youthful
+      - heartfelt
+      - 'vocals: warm female lead'
+      - airy harmonies
+      - emotional delivery
+      - 'production: acoustic guitars'
+      - handclaps
+      - tambourine
+      - light percussion
+      - wide stereo layers
+      - 'mood: nostalgic'
+      - hopeful
+      - adventurous
+      - vulnerable
     description_html: >-
       <p>“All Around the World” is a high‑energy acoustic‑pop journey with
       bright guitars, handclaps, warm harmonies, and youthful female vocals.
@@ -9141,15 +9424,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: All Around the World (Acoustic Pop) - Horizon Sound - Horizon Sound
-      description: All Around the World (Acoustic Pop) - Horizon Sound
+      title: All Around the World - Horizon Sound
+      description: All Around the World
       keywords:
-        - All Around the World (Acoustic Pop) - Horizon Sound
+        - All Around the World
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_notsosmart_hs
     slug: not_so_smart_home
     title: Not So Smart Home
     subtitle: null
@@ -9160,19 +9443,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M14S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: upbeat folk‑country, playful, mischievous, energetic'
-      - 'Vocals: expressive male lead, comedic timing, crisp delivery'
-      - >-
-        Production: acoustic guitar, light percussion, subtle tech sound
-        effects, warm mix
-      - 'Mood: fun, chaotic, exasperated, clever'
+      - 'vibe: upbeat folk‑country'
+      - playful
+      - mischievous
+      - energetic
+      - 'vocals: expressive male lead'
+      - comedic timing
+      - crisp delivery
+      - 'production: acoustic guitar'
+      - light percussion
+      - subtle tech sound effects
+      - warm mix
+      - 'mood: fun'
+      - chaotic
+      - exasperated
+      - clever
     description_html: >-
       <p>“Not So Smart Home” is an upbeat, humorous folk‑country romp packed
       with playful acoustic guitar, light percussion, and a bouncy, mischievous
@@ -9340,15 +9632,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Not so Smart Home (Folk‑Country Comedy) - Horizon Sound - Horizon Sound
-      description: Not so Smart Home (Folk‑Country Comedy) - Horizon Sound
+      title: Not So Smart Home - Horizon Sound
+      description: Not So Smart Home
       keywords:
-        - Not so Smart Home (Folk‑Country Comedy) - Horizon Sound
+        - Not So Smart Home
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_fixeditmos_hs
     slug: fixed_it_mostly_right
     title: Fixed it Mostly Right
     subtitle: null
@@ -9359,21 +9651,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M53S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: rowdy honky‑tonk, comedic, upbeat, chaotic'
-      - >-
-        Vocals: exaggerated male lead, humorous delivery, high‑energy
-        personality
-      - >-
-        Production: twangy electric guitars, lively drums, playful fiddle,
-        barroom mix
-      - 'Mood: fun, reckless, lighthearted, mischievous'
+      - 'vibe: rowdy honky‑tonk'
+      - comedic
+      - upbeat
+      - chaotic
+      - 'vocals: exaggerated male lead'
+      - humorous delivery
+      - high‑energy personality
+      - 'production: twangy electric guitars'
+      - lively drums
+      - playful fiddle
+      - barroom mix
+      - 'mood: fun'
+      - reckless
+      - lighthearted
+      - mischievous
     description_html: >-
       <p>“Fixed It Mostly Right” is a fast, rowdy country‑comedy romp packed
       with honky‑tonk swagger, twangy electric guitars, lively drums, and
@@ -9472,15 +9771,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Fixed it Mostly Right (Country Comedy) - Horizon Sound - Horizon Sound
-      description: Fixed it Mostly Right (Country Comedy) - Horizon Sound
+      title: Fixed it Mostly Right - Horizon Sound
+      description: Fixed it Mostly Right
       keywords:
-        - Fixed it Mostly Right (Country Comedy) - Horizon Sound
+        - Fixed it Mostly Right
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_makinourwa_hs
     slug: makin_our_way_to_california
     title: Makin' our way to California
     subtitle: null
@@ -9491,19 +9790,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M31S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: bright pop-folk, summery, nostalgic, upbeat'
-      - 'Vocals: energetic female lead, youthful tone, emotional clarity'
-      - >-
-        Production: acoustic guitars, modern pop drums, shimmering harmonies,
-        clean stereo mix
-      - 'Mood: adventurous, warm, reflective, joyful'
+      - 'vibe: bright pop-folk'
+      - summery
+      - nostalgic
+      - upbeat
+      - 'vocals: energetic female lead'
+      - youthful tone
+      - emotional clarity
+      - 'production: acoustic guitars'
+      - modern pop drums
+      - shimmering harmonies
+      - clean stereo mix
+      - 'mood: adventurous'
+      - warm
+      - reflective
+      - joyful
     description_html: >-
       <p>“Makin’ Our Way to California” is a bright, upbeat pop-folk anthem full
       of movement, memory, and sunlit emotion. Crisp acoustic guitars,
@@ -9602,15 +9910,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Makin’ Our Way to California (Pop-Folk) – Horizon Sound - Horizon Sound
-      description: Makin’ Our Way to California (Pop-Folk) – Horizon Sound
+      title: Makin' our way to California - Horizon Sound
+      description: Makin' our way to California
       keywords:
-        - Makin’ Our Way to California (Pop-Folk) – Horizon Sound
+        - Makin' our way to California
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_nineteensu_hs_2
     slug: nineteen_summers_revised
     title: Nineteen Summers Revised
     subtitle: null
@@ -9621,15 +9929,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M28S
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional acoustic‑pop, nostalgic, bittersweet, heartfelt'
-      - 'Vocals: intimate, expressive, warm'
+      - 'vibe: emotional acoustic‑pop'
+      - nostalgic
+      - bittersweet
+      - heartfelt
+      - 'vocals: intimate'
+      - expressive
+      - warm
     description_html: >-
       <p>“Nineteen Summers” is a warm acoustic‑pop track filled with emotional
       storytelling, nostalgic imagery, and a bittersweet, heartfelt tone. Bright
@@ -9766,15 +10079,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Nineteen Summers (Emotional Ballad) - Horizon Sound - Horizon Sound
-      description: Nineteen Summers (Emotional Ballad) - Horizon Sound
+      title: Nineteen Summers Revised - Horizon Sound
+      description: Nineteen Summers Revised
       keywords:
-        - Nineteen Summers (Emotional Ballad) - Horizon Sound
+        - Nineteen Summers Revised
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_imholdingo_hs
     slug: im_holding_on
     title: I'm Holding On
     subtitle: null
@@ -9785,15 +10098,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M48S
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional ballad, intimate, cinematic, heartfelt'
-      - 'Vocals: warm, expressive, vulnerable'
+      - 'vibe: emotional ballad'
+      - intimate
+      - cinematic
+      - heartfelt
+      - 'vocals: warm'
+      - expressive
+      - vulnerable
     description_html: >-
       <p>“I’m Holding On” is an emotional piano ballad built on warm, intimate
       vocals, soft dynamics, and a heartbeat‑like rhythm that grows with each
@@ -9892,15 +10210,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: I'm Holding On (Emotional Piano Ballad) - Horizon Sound - Horizon Sound
-      description: I'm Holding On (Emotional Piano Ballad) - Horizon Sound
+      title: I'm Holding On - Horizon Sound
+      description: I'm Holding On
       keywords:
-        - I'm Holding On (Emotional Piano Ballad) - Horizon Sound
+        - I'm Holding On
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_ohamber_hs
     slug: oh_amber
     title: Oh, Amber
     subtitle: null
@@ -9911,19 +10229,29 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M22S
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional pop, nostalgic, acoustic‑leaning, cinematic'
-      - 'Vocals: warm female lead, expressive phrasing, heartfelt delivery'
-      - >-
-        Production: acoustic guitar, soft piano, light drums, subtle country‑pop
-        color, swelling chorus
-      - 'Mood: tender, bittersweet, comforting, reflective'
+      - 'vibe: emotional pop'
+      - nostalgic
+      - acoustic‑leaning
+      - cinematic
+      - 'vocals: warm female lead'
+      - expressive phrasing
+      - heartfelt delivery
+      - 'production: acoustic guitar'
+      - soft piano
+      - light drums
+      - subtle country‑pop color
+      - swelling chorus
+      - 'mood: tender'
+      - bittersweet
+      - comforting
+      - reflective
     description_html: >-
       <p>“Oh, Amber” is a nostalgic emotional‑pop story built on warm acoustic
       textures, gentle piano, light drums, and a swelling, heartfelt chorus.
@@ -10036,15 +10364,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Oh Amber (Emotional Pop Storytelling) - Horizon Sound - Horizon Sound
-      description: Oh Amber (Emotional Pop Storytelling) - Horizon Sound
+      title: Oh, Amber - Horizon Sound
+      description: Oh, Amber
       keywords:
-        - Oh Amber (Emotional Pop Storytelling) - Horizon Sound
+        - Oh, Amber
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_learningto_hs
     slug: learning_to_live_again
     title: Learning to Live Again
     subtitle: null
@@ -10055,19 +10383,30 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: soft electro‑pop, dreamy, reflective, emotional'
-      - 'Vocals: warm, breathy female lead, gentle vibrato, intimate delivery'
-      - >-
-        Production: atmospheric pads, subtle synths, light percussion, smooth
-        harmonies, spacious mix
-      - 'Mood: hopeful, vulnerable, uplifting, quietly powerful'
+      - 'vibe: soft electro‑pop'
+      - dreamy
+      - reflective
+      - emotional
+      - 'vocals: warm'
+      - breathy female lead
+      - gentle vibrato
+      - intimate delivery
+      - 'production: atmospheric pads'
+      - subtle synths
+      - light percussion
+      - smooth harmonies
+      - spacious mix
+      - 'mood: hopeful'
+      - vulnerable
+      - uplifting
+      - quietly powerful
     description_html: >-
       <p>“Learning to Live Again” is a soft, emotional electro‑pop ballad shaped
       by warm synth textures, airy pads, and a breathy, intimate female vocal.
@@ -10182,15 +10521,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Learning to Live Again (Pop) - Horizon Sound - Horizon Sound
-      description: Learning to Live Again (Pop) - Horizon Sound
+      title: Learning to Live Again - Horizon Sound
+      description: Learning to Live Again
       keywords:
-        - Learning to Live Again (Pop) - Horizon Sound
+        - Learning to Live Again
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_aquietlitt_hs
     slug: a_quiet_little_voice
     title: A Quiet Little Voice
     subtitle: null
@@ -10201,15 +10540,19 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M30S
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: empowering pop, uplifting, emotional, modern'
-      - 'Vocals: bright, expressive female lead'
+      - 'vibe: empowering pop'
+      - uplifting
+      - emotional
+      - modern
+      - 'vocals: bright'
+      - expressive female lead
     description_html: >-
       <p>“A Quiet Little Voice” is an upbeat, empowering pop track with a
       bright, confident female vocal and modern, energetic production. Crisp
@@ -10329,17 +10672,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        A quiet Little Voice (Emotional Pop / Empowering Pop) - Horizon Sound -
-        Horizon Sound
-      description: A quiet Little Voice (Emotional Pop / Empowering Pop) - Horizon Sound
+      title: A Quiet Little Voice - Horizon Sound
+      description: A Quiet Little Voice
       keywords:
-        - A quiet Little Voice (Emotional Pop / Empowering Pop) - Horizon Sound
+        - A Quiet Little Voice
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_nineteensu_hs_3
     slug: nineteen_summers_original
     title: Nineteen Summers Original
     subtitle: null
@@ -10350,15 +10691,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M37S
     isrc: null
     genres:
       primary: emotional-ballads
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional acoustic‑pop, nostalgic, bittersweet, heartfelt'
-      - 'Vocals: intimate, expressive, warm'
+      - 'vibe: emotional acoustic‑pop'
+      - nostalgic
+      - bittersweet
+      - heartfelt
+      - 'vocals: intimate'
+      - expressive
+      - warm
     description_html: >-
       <p>“Nineteen Summers” is a warm acoustic‑pop track filled with emotional
       storytelling, nostalgic imagery, and a bittersweet, heartfelt tone. Bright
@@ -10496,17 +10842,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Nineteen Summers (Emotional Acoustic Pop) - Horizon Sound - Horizon
-        Sound
-      description: Nineteen Summers (Emotional Acoustic Pop) - Horizon Sound
+      title: Nineteen Summers Original - Horizon Sound
+      description: Nineteen Summers Original
       keywords:
-        - Nineteen Summers (Emotional Acoustic Pop) - Horizon Sound
+        - Nineteen Summers Original
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_wildfire_hs
     slug: wildfire
     title: Wildfire
     subtitle: null
@@ -10517,17 +10861,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M53S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: fierce, empowering, modern country, cinematic'
-      - 'Vocals: bold female lead, emotional grit, powerhouse delivery'
-      - 'Production: big drums, electric guitars, dramatic lift, Nashville polish'
-      - 'Mood: unstoppable, fiery, defiant, triumphant'
+      - 'vibe: fierce'
+      - empowering
+      - modern country
+      - cinematic
+      - 'vocals: bold female lead'
+      - emotional grit
+      - powerhouse delivery
+      - 'production: big drums'
+      - electric guitars
+      - dramatic lift
+      - nashville polish
+      - 'mood: unstoppable'
+      - fiery
+      - defiant
+      - triumphant
     description_html: >-
       <p>“Wildfire” is a fierce, modern‑country power anthem driven by bold
       female vocals, big drums, electric guitars, and a cinematic, high‑octane
@@ -10653,15 +11008,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Wildfire (Modern Country Power Anthem) – Horizon Sound - Horizon Sound
-      description: Wildfire (Modern Country Power Anthem) – Horizon Sound
+      title: Wildfire - Horizon Sound
+      description: Wildfire
       keywords:
-        - Wildfire (Modern Country Power Anthem) – Horizon Sound
+        - Wildfire
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_vegasinthe_hs
     slug: vegas_in_the_sky
     title: Vegas in the Sky
     subtitle: null
@@ -10672,19 +11027,30 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M45S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: country‑pop party, rowdy, fun, chaotic'
-      - 'Vocals: male lead, swagger, humor, storytelling'
-      - >-
-        Production: acoustic guitar, stomps, claps, fiddle accents, bright
-        modern mix
-      - 'Mood: energetic, comedic, feel‑good, high‑spirited'
+      - 'vibe: country‑pop party'
+      - rowdy
+      - fun
+      - chaotic
+      - 'vocals: male lead'
+      - swagger
+      - humor
+      - storytelling
+      - 'production: acoustic guitar'
+      - stomps
+      - claps
+      - fiddle accents
+      - bright modern mix
+      - 'mood: energetic'
+      - comedic
+      - feel‑good
+      - high‑spirited
     description_html: >-
       <p>“Vegas in the Sky” is an upbeat country‑pop party anthem that turns a
       routine flight into a full‑blown mid‑air celebration. Acoustic guitar,
@@ -10730,17 +11096,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Vegas in the Sky (Country‑Pop Party Anthem) – Horizon Sound - Horizon
-        Sound
-      description: Vegas in the Sky (Country‑Pop Party Anthem) – Horizon Sound
+      title: Vegas in the Sky - Horizon Sound
+      description: Vegas in the Sky
       keywords:
-        - Vegas in the Sky (Country‑Pop Party Anthem) – Horizon Sound
+        - Vegas in the Sky
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_themanbehi_hs
     slug: the_man_behind_the_bar
     title: The Man Behind the Bar
     subtitle: null
@@ -10751,19 +11115,30 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M19S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 90s country, warm, nostalgic, small‑town'
-      - 'Vocals: conversational male lead, heartfelt, steady and sincere'
-      - >-
-        Production: acoustic guitars, fiddle, pedal steel, brushed drums, clean
-        electric fills, simple bass groove
-      - 'Mood: comforting, reflective, grounded, quietly uplifting'
+      - 'vibe: 90s country'
+      - warm
+      - nostalgic
+      - small‑town
+      - 'vocals: conversational male lead'
+      - heartfelt
+      - steady and sincere
+      - 'production: acoustic guitars'
+      - fiddle
+      - pedal steel
+      - brushed drums
+      - clean electric fills
+      - simple bass groove
+      - 'mood: comforting'
+      - reflective
+      - grounded
+      - quietly uplifting
     description_html: >-
       <p>“The Man Behind the Bar” is a heartfelt 90s‑country story song filled
       with warm acoustic guitars, light twang, steady brushed drums, and the
@@ -10909,15 +11284,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: The Man Behind the Bar (90s Country) - Horizon Sound - Horizon Sound
-      description: The Man Behind the Bar (90s Country) - Horizon Sound
+      title: The Man Behind the Bar - Horizon Sound
+      description: The Man Behind the Bar
       keywords:
-        - The Man Behind the Bar (90s Country) - Horizon Sound
+        - The Man Behind the Bar
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_timecapsul_hs
     slug: time_capsule
     title: Time Capsule
     subtitle: null
@@ -10928,19 +11303,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M28S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: nostalgic, warm, emotional, reflective'
-      - 'Vocals: intimate male lead, soft delivery, storytelling tone'
-      - >-
-        Production: acoustic foundation, gentle pop elements, subtle cinematic
-        lift
-      - 'Mood: tender, memory‑rich, quietly romantic, heartfelt'
+      - 'vibe: nostalgic'
+      - warm
+      - emotional
+      - reflective
+      - 'vocals: intimate male lead'
+      - soft delivery
+      - storytelling tone
+      - 'production: acoustic foundation'
+      - gentle pop elements
+      - subtle cinematic lift
+      - 'mood: tender'
+      - memory‑rich
+      - quietly romantic
+      - heartfelt
     description_html: >-
       <p>“Time Capsule” is a warm, nostalgic storytelling track built around
       acoustic textures, soft pop production, and an intimate male vocal. The
@@ -11070,21 +11453,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Time Capsule (Emotional Country / Nostalgic Storytelling) – Horizon
-        Sound - Horizon Sound
-      description: >-
-        Time Capsule (Emotional Country / Nostalgic Storytelling) – Horizon
-        Sound
+      title: Time Capsule - Horizon Sound
+      description: Time Capsule
       keywords:
-        - >-
-          Time Capsule (Emotional Country / Nostalgic Storytelling) – Horizon
-          Sound
+        - Time Capsule
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_alreadyout_hs
     slug: already_out_the_door
     title: Already out the door
     subtitle: null
@@ -11095,17 +11472,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M41S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: modern country, mid‑tempo, emotional, reflective'
-      - 'Vocals: sincere male lead, warm tone, soft harmonies in the chorus'
-      - 'Production: acoustic‑driven, subtle electric fills, clean Nashville mix'
-      - 'Mood: wounded, resigned, honest, quietly powerful'
+      - 'vibe: modern country'
+      - mid‑tempo
+      - emotional
+      - reflective
+      - 'vocals: sincere male lead'
+      - warm tone
+      - soft harmonies in the chorus
+      - 'production: acoustic‑driven'
+      - subtle electric fills
+      - clean nashville mix
+      - 'mood: wounded'
+      - resigned
+      - honest
+      - quietly powerful
     description_html: >-
       <p>“Already Out the Door” is a modern country heartbreak story built on
       warm acoustic guitars, steady mid‑tempo drums, and clean Nashville‑style
@@ -11224,15 +11611,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Already Out the Door (Modern Country) - Horizon Sound - Horizon Sound
-      description: Already Out the Door (Modern Country) - Horizon Sound
+      title: Already out the door - Horizon Sound
+      description: Already out the door
       keywords:
-        - Already Out the Door (Modern Country) - Horizon Sound
+        - Already out the door
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_shessointo_hs
     slug: shes_so_into_me
     title: She's So Into Me
     subtitle: null
@@ -11243,21 +11630,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M49S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: modern country, warm, romantic, feel‑good'
-      - >-
-        Vocals: charming male lead, flirty, expressive, slightly
-        self‑deprecating
-      - >-
-        Production: acoustic guitars, snaps, soft electric layers, smooth upbeat
-        groove
-      - 'Mood: sweet, flirty, uplifting, radio‑ready'
+      - 'vibe: modern country'
+      - warm
+      - romantic
+      - feel‑good
+      - 'vocals: charming male lead'
+      - flirty
+      - expressive
+      - slightly self‑deprecating
+      - 'production: acoustic guitars'
+      - snaps
+      - soft electric layers
+      - smooth upbeat groove
+      - 'mood: sweet'
+      - uplifting
+      - radio‑ready
     description_html: >-
       <p>“She’s So Into Me” is a warm, modern country love song built on breezy
       acoustic guitars, light snaps, soft electric layers, and a smooth, upbeat
@@ -11305,17 +11699,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        She’s So Into Me (Modern Country Love Song) – Horizon Sound - Horizon
-        Sound
-      description: She’s So Into Me (Modern Country Love Song) – Horizon Sound
+      title: She's So Into Me - Horizon Sound
+      description: She's So Into Me
       keywords:
-        - She’s So Into Me (Modern Country Love Song) – Horizon Sound
+        - She's So Into Me
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_putyoudown_hs
     slug: put_you_down
     title: Put You Down
     subtitle: null
@@ -11326,19 +11718,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M32S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: high‑energy electro‑pop, chaotic, bold, rebellious'
-      - 'Vocals: fierce female lead, talk‑sing swagger, glitchy vocal chops'
-      - >-
-        Production: distorted synth bass, punchy drums, stutter FX, explosive
-        drops
-      - 'Mood: wild, unfiltered, confident, late‑night adrenaline'
+      - 'vibe: high‑energy electro‑pop'
+      - chaotic
+      - bold
+      - rebellious
+      - 'vocals: fierce female lead'
+      - talk‑sing swagger
+      - glitchy vocal chops
+      - 'production: distorted synth bass'
+      - punchy drums
+      - stutter fx
+      - explosive drops
+      - 'mood: wild'
+      - unfiltered
+      - confident
+      - late‑night adrenaline
     description_html: >-
       <p>“Put You Down” is a wild, high‑voltage electro‑pop banger packed with
       fierce attitude, distorted synth bass, and chaotic late‑night party
@@ -11458,15 +11859,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Put You Down (Electro-Pop / Dance-Pop) - Horizon Sound - Horizon Sound
-      description: Put You Down (Electro-Pop / Dance-Pop) - Horizon Sound
+      title: Put You Down - Horizon Sound
+      description: Put You Down
       keywords:
-        - Put You Down (Electro-Pop / Dance-Pop) - Horizon Sound
+        - Put You Down
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_ravyn_r
+  - id: trk_midnightma_r_3
     slug: midnight_mayhem_original
     title: Midnight Mayhem Original
     subtitle: null
@@ -11477,17 +11878,28 @@ tracks:
     release_id: null
     primary_artist: art_ravyn
     featuring_artists: []
-    duration: null
+    duration: PT3M25S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: chaotic electro‑pop, neon, high‑energy, wild'
-      - 'Vocals: talk‑sing swagger, raspy edges, attitude‑heavy'
-      - 'Production: rubbery synths, heavy bass, stomp‑claps, cosmic FX'
-      - 'Mood: explosive, reckless, glossy, late‑night'
+      - 'vibe: chaotic electro‑pop'
+      - neon
+      - high‑energy
+      - wild
+      - 'vocals: talk‑sing swagger'
+      - raspy edges
+      - attitude‑heavy
+      - 'production: rubbery synths'
+      - heavy bass
+      - stomp‑claps
+      - cosmic fx
+      - 'mood: explosive'
+      - reckless
+      - glossy
+      - late‑night
     description_html: >-
       <p>“Midnight Mayhem” is a high‑energy electro‑pop riot with bold,
       attitude‑soaked female vocals, talk‑sing swagger, and chaotic vocal chops.
@@ -11589,15 +12001,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Midnight Mayhem (Electro Pop) - Horizon Sound - Ravyn
-      description: Midnight Mayhem (Electro Pop) - Horizon Sound
+      title: Midnight Mayhem Original - Ravyn
+      description: Midnight Mayhem Original
       keywords:
-        - Midnight Mayhem (Electro Pop) - Horizon Sound
+        - Midnight Mayhem Original
         - Ravyn
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_newagain_hs
     slug: new_again
     title: New Again
     subtitle: null
@@ -11608,19 +12020,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M40S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 90s pop revival, high‑energy, emotional, empowering'
-      - 'Vocals: strong female lead, expressive phrasing, confident delivery'
-      - >-
-        Production: bright synths, tight drums, rhythmic build, modern pop
-        polish
-      - 'Mood: sad‑to‑strong, cathartic, bold, self‑reclaiming'
+      - 'vibe: 90s pop revival'
+      - high‑energy
+      - emotional
+      - empowering
+      - 'vocals: strong female lead'
+      - expressive phrasing
+      - confident delivery
+      - 'production: bright synths'
+      - tight drums
+      - rhythmic build
+      - modern pop polish
+      - 'mood: sad‑to‑strong'
+      - cathartic
+      - bold
+      - self‑reclaiming
     description_html: >-
       <p>“New Again” is a high‑energy 90s‑inspired pop track driven by strong
       female vocals, pulsing rhythm, and a bold emotional edge. Bright synths,
@@ -11721,15 +12142,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: New Again (90s Pop Revival) - Horizon Sound - Horizon Sound
-      description: New Again (90s Pop Revival) - Horizon Sound
+      title: New Again - Horizon Sound
+      description: New Again
       keywords:
-        - New Again (90s Pop Revival) - Horizon Sound
+        - New Again
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_herestous_hs
     slug: heres_to_us
     title: Here's to Us!
     subtitle: null
@@ -11740,21 +12161,29 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M35S
     isrc: null
     genres:
       primary: null
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: anthemic 90s rock, gritty, emotional, communal'
-      - >-
-        Vocals: controlled female grit, gang vocals, spoken intro, shout‑along
-        chorus
-      - >-
-        Production: soaring guitars, punchy drums, crowd‑chant bridge, raw but
-        polished mix
-      - 'Mood: triumphant, resilient, heartfelt, uplifting'
+      - 'vibe: anthemic 90s rock'
+      - gritty
+      - emotional
+      - communal
+      - 'vocals: controlled female grit'
+      - gang vocals
+      - spoken intro
+      - shout‑along chorus
+      - 'production: soaring guitars'
+      - punchy drums
+      - crowd‑chant bridge
+      - raw but polished mix
+      - 'mood: triumphant'
+      - resilient
+      - heartfelt
+      - uplifting
     description_html: >-
       <p>“Here’s to Us!” is a gritty, emotional 90s‑rock anthem with soaring
       guitars, punchy drums, and powerful female vocals. Raw but polished, the
@@ -11867,15 +12296,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Here's To Us (90s Rock Anthem) - Horizon Sound - Horizon Sound
-      description: Here's To Us (90s Rock Anthem) - Horizon Sound
+      title: Here's to Us! - Horizon Sound
+      description: Here's to Us!
       keywords:
-        - Here's To Us (90s Rock Anthem) - Horizon Sound
+        - Here's to Us!
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_onehellofa_hs
     slug: one_hell_of_a_ride
     title: One Hell of a Ride
     subtitle: null
@@ -11886,15 +12315,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M54S
     isrc: null
     genres:
       primary: southern-rock
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: southern rock, blues‑rock, gritty, energetic, rebellious'
-      - 'Vocals: raw, swagger‑filled male lead'
+      - 'vibe: southern rock'
+      - blues‑rock
+      - gritty
+      - energetic
+      - rebellious
+      - 'vocals: raw'
+      - swagger‑filled male lead
     description_html: >-
       <p>“One Hell of a Ride” is a gritty southern‑rock anthem packed with
       swagger, highway‑freedom energy, and live‑show intensity. Crunchy
@@ -11987,17 +12421,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        One Hell of a Ride (Gritty Southern Rock) - Horizon Sound - Horizon
-        Sound
-      description: One Hell of a Ride (Gritty Southern Rock) - Horizon Sound
+      title: One Hell of a Ride - Horizon Sound
+      description: One Hell of a Ride
       keywords:
-        - One Hell of a Ride (Gritty Southern Rock) - Horizon Sound
+        - One Hell of a Ride
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_gimmethree_hs
     slug: gimme_three_steps_and_im_gone
     title: Gimme Three Steps, and I'm Gone
     subtitle: null
@@ -12008,19 +12440,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M20S
     isrc: null
     genres:
       primary: southern-rock
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 70s Southern rock, rowdy, gritty, high‑energy'
-      - 'Vocals: male lead, storytelling grit, playful tension'
-      - >-
-        Production: bluesy electric guitars, shuffle drums, swaggering bass,
-        harmonized leads
-      - 'Mood: urgent, humorous, cinematic, chaotic‑night‑gone‑wrong'
+      - 'vibe: 70s southern rock'
+      - rowdy
+      - gritty
+      - high‑energy
+      - 'vocals: male lead'
+      - storytelling grit
+      - playful tension
+      - 'production: bluesy electric guitars'
+      - shuffle drums
+      - swaggering bass
+      - harmonized leads
+      - 'mood: urgent'
+      - humorous
+      - cinematic
+      - chaotic‑night‑gone‑wrong
     description_html: >-
       <p>“Gimme Three Steps, and I’m Gone” is a high‑energy 70s‑style
       Southern‑rock chase through barroom chaos, gritty electric guitars, and
@@ -12141,17 +12582,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Gimme Three Steps and I'm Gone (Southern Rock) - Horizon Sound - Horizon
-        Sound
-      description: Gimme Three Steps and I'm Gone (Southern Rock) - Horizon Sound
+      title: Gimme Three Steps, and I'm Gone - Horizon Sound
+      description: Gimme Three Steps, and I'm Gone
       keywords:
-        - Gimme Three Steps and I'm Gone (Southern Rock) - Horizon Sound
+        - Gimme Three Steps, and I'm Gone
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_imetherata_hs
     slug: i_met_her_at_a_barroom_brawl
     title: I Met Her at a Barroom Brawl
     subtitle: null
@@ -12162,18 +12601,24 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M3S
     isrc: null
     genres:
       primary: southern-rock
       secondary: null
       tertiary: null
     moods:
-      - 'Vocals: raw male lead, attitude‑driven phrasing, emotional grit'
-      - >-
-        Production: bluesy guitars, driving drums, barroom textures, modern rock
-        polish
-      - 'Mood: chaotic‑to‑connected, rowdy, defiant, emotionally charged'
+      - 'vocals: raw male lead'
+      - attitude‑driven phrasing
+      - emotional grit
+      - 'production: bluesy guitars'
+      - driving drums
+      - barroom textures
+      - modern rock polish
+      - 'mood: chaotic‑to‑connected'
+      - rowdy
+      - defiant
+      - emotionally charged
     description_html: >-
       <p>“Barroom Brawl” is a gritty, high‑energy Southern rock track packed
       with swaggering guitars, driving drums, and cinematic outlaw tension.
@@ -12305,15 +12750,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Barroom Brawl (Southern Rock Grit) – Horizon Sound - Horizon Sound
-      description: Barroom Brawl (Southern Rock Grit) – Horizon Sound
+      title: I Met Her at a Barroom Brawl - Horizon Sound
+      description: I Met Her at a Barroom Brawl
       keywords:
-        - Barroom Brawl (Southern Rock Grit) – Horizon Sound
+        - I Met Her at a Barroom Brawl
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_becomingme_hs
     slug: becoming_me
     title: Becoming Me
     subtitle: null
@@ -12324,15 +12769,18 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M51S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional pop, romantic, bright, energetic'
-      - 'Vocals: expressive female lead with layered harmonies'
+      - 'vibe: emotional pop'
+      - romantic
+      - bright
+      - energetic
+      - 'vocals: expressive female lead with layered harmonies'
     description_html: >-
       <p>“Becoming Me” is a fast, upbeat emotional‑pop track with bright
       expressive female vocals, driving drums, rhythmic bass, shimmering synths,
@@ -12437,17 +12885,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Becoming Me (Emotional Pop / Upbeat Love Song) - Horizon Sound - Horizon
-        Sound
-      description: Becoming Me (Emotional Pop / Upbeat Love Song) - Horizon Sound
+      title: Becoming Me - Horizon Sound
+      description: Becoming Me
       keywords:
-        - Becoming Me (Emotional Pop / Upbeat Love Song) - Horizon Sound
+        - Becoming Me
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_risingup_hs
     slug: rising_up
     title: Rising Up
     subtitle: null
@@ -12458,15 +12904,19 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M26S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: energetic pop‑rock, emotional, uplifting, anthemic'
-      - 'Vocals: soaring male + female leads, expressive harmonies'
+      - 'vibe: energetic pop‑rock'
+      - emotional
+      - uplifting
+      - anthemic
+      - 'vocals: soaring male + female leads'
+      - expressive harmonies
     description_html: >-
       <p>“Rising Up” is an energetic emotional pop‑rock duet driven by bright
       synths, clean electric guitar, and powerful male/female vocals. The track
@@ -12570,15 +13020,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Rising Up (Energetic Pop-Rock) - Horizon Sound - Horizon Sound
-      description: Rising Up (Energetic Pop-Rock) - Horizon Sound
+      title: Rising Up - Horizon Sound
+      description: Rising Up
       keywords:
-        - Rising Up (Energetic Pop-Rock) - Horizon Sound
+        - Rising Up
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_holdon_hs
     slug: hold_on
     title: Hold On
     subtitle: Original
@@ -12589,15 +13039,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M15S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: upbeat pop, nostalgic 90s energy, motivational, bright'
-      - 'Vocals: warm, expressive, confident'
+      - 'vibe: upbeat pop'
+      - nostalgic 90s energy
+      - motivational
+      - bright
+      - 'vocals: warm'
+      - expressive
+      - confident
     description_html: >-
       <p>“Hold On” is a bright, 90s‑inspired pop track built on warm acoustic
       layers, steady rhythmic drums, and uplifting female vocals. Smooth synths,
@@ -12694,15 +13149,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Hold On (Pop / Nostalgic 90s energy) - Horizon Sound - Horizon Sound
-      description: Hold On (Pop / Nostalgic 90s energy) - Horizon Sound
+      title: Hold On - Horizon Sound
+      description: Hold On
       keywords:
-        - Hold On (Pop / Nostalgic 90s energy) - Horizon Sound
+        - Hold On
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_dontletthe_hs
     slug: dont_let_the_summer_end
     title: Don't Let the Summer End
     subtitle: null
@@ -12713,15 +13168,20 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT2M51S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: bright pop, summery, nostalgic, romantic'
-      - 'Vocals: emotional, warm, expressive'
+      - 'vibe: bright pop'
+      - summery
+      - nostalgic
+      - romantic
+      - 'vocals: emotional'
+      - warm
+      - expressive
     description_html: >-
       <p>“Don’t Let the Summer End” is a bright pop track with warm acoustic
       elements, upbeat summer energy, and emotional female vocals. Catchy,
@@ -12811,17 +13271,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Don't Let the Summer End (Upbeat 1990s style Pop) - Horizon Sound -
-        Horizon Sound
-      description: Don't Let the Summer End (Upbeat 1990s style Pop) - Horizon Sound
+      title: Don't Let the Summer End - Horizon Sound
+      description: Don't Let the Summer End
       keywords:
-        - Don't Let the Summer End (Upbeat 1990s style Pop) - Horizon Sound
+        - Don't Let the Summer End
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_kaleidosco_hs
     slug: kaleidoscope
     title: Kaleidoscope
     subtitle: null
@@ -12832,19 +13290,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M4S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional acoustic‑pop, warm, reflective, uplifting'
-      - 'Vocals: intimate female lead, expressive phrasing, soft harmonies'
-      - >-
-        Production: piano‑led, light acoustic guitar, gentle percussion, modern
-        singer‑songwriter polish
-      - 'Mood: hopeful, introspective, poetic, quietly empowering'
+      - 'vibe: emotional acoustic‑pop'
+      - warm
+      - reflective
+      - uplifting
+      - 'vocals: intimate female lead'
+      - expressive phrasing
+      - soft harmonies
+      - 'production: piano‑led'
+      - light acoustic guitar
+      - gentle percussion
+      - modern singer‑songwriter polish
+      - 'mood: hopeful'
+      - introspective
+      - poetic
+      - quietly empowering
     description_html: >-
       <p>“Kaleidoscope” is a warm, heartfelt acoustic‑pop track built on gentle
       piano, light guitar, and intimate female vocals. The production stays soft
@@ -12938,15 +13405,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Kaleidoscope (Emotional Acoustic‑Pop) – Horizon Sound - Horizon Sound
-      description: Kaleidoscope (Emotional Acoustic‑Pop) – Horizon Sound
+      title: Kaleidoscope - Horizon Sound
+      description: Kaleidoscope
       keywords:
-        - Kaleidoscope (Emotional Acoustic‑Pop) – Horizon Sound
+        - Kaleidoscope
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_holdonrevi_hs
     slug: hold_on_revised
     title: Hold On Revised
     subtitle: Revised
@@ -12957,19 +13424,27 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M19S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: upbeat 90s‑pop revival, acoustic‑pop warmth, motivational energy'
-      - 'Vocals: bright female lead, expressive phrasing, uplifting delivery'
-      - >-
-        Production: warm acoustics, rhythmic drums, smooth synths, light guitar
-        textures
-      - 'Mood: hopeful, determined, empowering, forward‑moving'
+      - 'vibe: upbeat 90s‑pop revival'
+      - acoustic‑pop warmth
+      - motivational energy
+      - 'vocals: bright female lead'
+      - expressive phrasing
+      - uplifting delivery
+      - 'production: warm acoustics'
+      - rhythmic drums
+      - smooth synths
+      - light guitar textures
+      - 'mood: hopeful'
+      - determined
+      - empowering
+      - forward‑moving
     description_html: >-
       <p>“Hold On (Revised)” is an upbeat 90s‑inspired pop track driven by
       bright female vocals, steady rhythmic drums, warm acoustic layers, and a
@@ -13070,15 +13545,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Hold On (Revised) – Horizon Sound - Horizon Sound
-      description: Hold On (Revised) – Horizon Sound
+      title: Hold On Revised - Horizon Sound
+      description: Hold On Revised
       keywords:
-        - Hold On (Revised) – Horizon Sound
+        - Hold On Revised
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_keepthelig_hs
     slug: keep_the_light_on
     title: Keep the Light On
     subtitle: null
@@ -13089,19 +13564,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT3M33S
     isrc: null
     genres:
       primary: pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 90s pop revival, upbeat, motivational, feel‑good'
-      - 'Vocals: bright female lead, warm tone, expressive phrasing'
-      - >-
-        Production: acoustic layers, steady drums, shimmering synths, modern pop
-        clarity
-      - 'Mood: hopeful, energetic, uplifting, resilient'
+      - 'vibe: 90s pop revival'
+      - upbeat
+      - motivational
+      - feel‑good
+      - 'vocals: bright female lead'
+      - warm tone
+      - expressive phrasing
+      - 'production: acoustic layers'
+      - steady drums
+      - shimmering synths
+      - modern pop clarity
+      - 'mood: hopeful'
+      - energetic
+      - uplifting
+      - resilient
     description_html: >-
       <p>“Keep the Light On” is an upbeat 90s‑inspired pop track built on bright
       female vocals, steady rhythmic drums, warm acoustic guitar layers, and
@@ -13199,15 +13683,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Keep the Light On (90s Pop Revival) – Horizon Sound - Horizon Sound
-      description: Keep the Light On (90s Pop Revival) – Horizon Sound
+      title: Keep the Light On - Horizon Sound
+      description: Keep the Light On
       keywords:
-        - Keep the Light On (90s Pop Revival) – Horizon Sound
+        - Keep the Light On
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_totaleclip_hs
     slug: total_eclipse_years_later
     title: Total Eclipse (Years Later)
     subtitle: null
@@ -13218,15 +13702,19 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M4S
     isrc: null
     genres:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 80s ballad, emotional, cinematic, empowering'
-      - 'Vocals: warm, expressive female rock vocal with controlled rasp'
+      - 'vibe: 80s ballad'
+      - emotional
+      - cinematic
+      - empowering
+      - 'vocals: warm'
+      - expressive female rock vocal with controlled rasp
     description_html: >-
       <p>“Total Eclipse - Years Later” is paying tribute to the story in a Total
       Eclipse of the Heart. It tries to imagine where she might be years later.
@@ -13356,17 +13844,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Total Eclipse - Years Later (80s Piano Power Ballad) - Horizon Sound -
-        Horizon Sound
-      description: Total Eclipse - Years Later (80s Piano Power Ballad) - Horizon Sound
+      title: Total Eclipse (Years Later) - Horizon Sound
+      description: Total Eclipse (Years Later)
       keywords:
-        - Total Eclipse - Years Later (80s Piano Power Ballad) - Horizon Sound
+        - Total Eclipse (Years Later)
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_untiltheni_hs
     slug: until_the_nightmare_ends
     title: Until the Nightmare Ends
     subtitle: null
@@ -13377,14 +13863,14 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT5M36S
     isrc: null
     genres:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
     moods:
-      - About the Song
+      - about the song
     description_html: >-
       <p>"Until the Nightmare Ends" is a cinematic 80s‑inspired synthwave track
       built for fans of dark nostalgia, neon tension, and the Stranger Things
@@ -13515,21 +14001,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Until the Nightmare Ends (Epic 80s Synthwave, Stranger Things Inspired)
-        - Horizon Sound - Horizon Sound
-      description: >-
-        Until the Nightmare Ends (Epic 80s Synthwave, Stranger Things Inspired)
-        - Horizon Sound
+      title: Until the Nightmare Ends - Horizon Sound
+      description: Until the Nightmare Ends
       keywords:
-        - >-
-          Until the Nightmare Ends (Epic 80s Synthwave, Stranger Things
-          Inspired) - Horizon Sound
+        - Until the Nightmare Ends
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_riseliketh_hs_2
     slug: rise_like_thunder
     title: Rise Like Thunder
     subtitle: null
@@ -13540,15 +14020,19 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M20S
     isrc: null
     genres:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: 80s arena rock, energetic, triumphant'
-      - 'Vocals: powerful, raspy, harmony‑rich'
+      - 'vibe: 80s arena rock'
+      - energetic
+      - triumphant
+      - 'vocals: powerful'
+      - raspy
+      - harmony‑rich
     description_html: >-
       <p>“Rise Like Thunder” is an electrifying 1980s‑inspired rock anthem
       featuring powerful raspy female vocals, soaring harmonies, and driving
@@ -13653,17 +14137,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Rise Like Thunder (80s Arena Rock Anthem) - Horizon Sound - Horizon
-        Sound
-      description: Rise Like Thunder (80s Arena Rock Anthem) - Horizon Sound
+      title: Rise Like Thunder - Horizon Sound
+      description: Rise Like Thunder
       keywords:
-        - Rise Like Thunder (80s Arena Rock Anthem) - Horizon Sound
+        - Rise Like Thunder
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_neverletea_hs
     slug: never_let_each_other_down
     title: Never Let Each Other Down
     subtitle: null
@@ -13674,19 +14156,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M25S
     isrc: null
     genres:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: up‑tempo 80s synth‑rock, energetic, bold, uplifting'
-      - 'Vocals: confident female lead, clean delivery, emotional clarity'
-      - >-
-        Production: pulsing synth bass, gated‑reverb drums, melodic electric
-        fills, wide arena mix
-      - 'Mood: triumphant, passionate, determined, hopeful'
+      - 'vibe: up‑tempo 80s synth‑rock'
+      - energetic
+      - bold
+      - uplifting
+      - 'vocals: confident female lead'
+      - clean delivery
+      - emotional clarity
+      - 'production: pulsing synth bass'
+      - gated‑reverb drums
+      - melodic electric fills
+      - wide arena mix
+      - 'mood: triumphant'
+      - passionate
+      - determined
+      - hopeful
     description_html: >-
       <p>“Never Let Each Other Down” is an up‑tempo 80s‑inspired synth‑rock
       anthem driven by energetic drums, pulsing synth bass, and wide arena‑style
@@ -13796,17 +14287,15 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: >-
-        Never Let Each Other Down (80s Synth-Rock) - Horizon Sound - Horizon
-        Sound
-      description: Never Let Each Other Down (80s Synth-Rock) - Horizon Sound
+      title: Never Let Each Other Down - Horizon Sound
+      description: Never Let Each Other Down
       keywords:
-        - Never Let Each Other Down (80s Synth-Rock) - Horizon Sound
+        - Never Let Each Other Down
         - Horizon Sound
     internal:
       notes: null
       priority: null
-  - id: trk_horizonsou_hs
+  - id: trk_rusty_hs
     slug: rusty
     title: Rusty
     subtitle: null
@@ -13817,19 +14306,28 @@ tracks:
     release_id: null
     primary_artist: art_horizonsound
     featuring_artists: []
-    duration: null
+    duration: PT4M4S
     isrc: null
     genres:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
     moods:
-      - 'Vibe: emotional 80s pop, warm, nostalgic, uplifting'
-      - 'Vocals: heartfelt female lead, airy harmonies, expressive delivery'
-      - >-
-        Production: shimmering synth pads, chorus‑washed guitars, steady pulse,
-        cinematic reverb
-      - 'Mood: hopeful, tender, comforting, quietly triumphant'
+      - 'vibe: emotional 80s pop'
+      - warm
+      - nostalgic
+      - uplifting
+      - 'vocals: heartfelt female lead'
+      - airy harmonies
+      - expressive delivery
+      - 'production: shimmering synth pads'
+      - chorus‑washed guitars
+      - steady pulse
+      - cinematic reverb
+      - 'mood: hopeful'
+      - tender
+      - comforting
+      - quietly triumphant
     description_html: >-
       <p>“Rusty” is an emotional 80s‑inspired pop ballad built on warm
       shimmering synth pads, bright chorus‑soaked guitars, and a steady,
@@ -13924,10 +14422,10 @@ tracks:
       musicians: []
       engineers: []
     seo:
-      title: Rusty (80s Emotional Pop Ballad) – Horizon Sound - Horizon Sound
-      description: Rusty (80s Emotional Pop Ballad) – Horizon Sound
+      title: Rusty - Horizon Sound
+      description: Rusty
       keywords:
-        - Rusty (80s Emotional Pop Ballad) – Horizon Sound
+        - Rusty
         - Horizon Sound
     internal:
       notes: null
