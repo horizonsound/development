@@ -2,7 +2,7 @@ overrides:
   - playlist_id: pop-instrumental-horizon-sound-instrumentals
     is_collection: false
     is_instrumental: true
-    title: Pop Instrumental – Instrumentals
+    title: Pop - Instrumentals
     subtitle: null
     description: ''
     thumbnail: /assets/playlist thumbnails/playlist - pop instrumental.jpg
@@ -104,7 +104,7 @@ overrides:
   - playlist_id: classic-country
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Classic Country
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - classic country.jpg
@@ -124,7 +124,7 @@ overrides:
   - playlist_id: missing-stamp-venice-trilogy
     is_collection: true
     is_instrumental: false
-    title: Venice Trilogy - Missing Stamp
+    title: Venice Trilogy
     subtitle: null
     description: >
       A three‑chapter journey through memory, longing, and the magic of a city
@@ -144,7 +144,7 @@ overrides:
   - playlist_id: shorts
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Shorts
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - shorts.jpg
@@ -231,7 +231,7 @@ overrides:
   - playlist_id: acoustic-singer-songwriter
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Acoustic Singer-Songwriter
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - acoustic-singer‑songwriter.jpg
@@ -241,7 +241,7 @@ overrides:
   - playlist_id: emotional-ballads
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Emotional Ballads
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - emotional ballads.jpg
@@ -251,7 +251,7 @@ overrides:
   - playlist_id: modern-country
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Modern Country
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - modern country.jpg
@@ -261,7 +261,7 @@ overrides:
   - playlist_id: electro-pop-dance-pop
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Electro Pop, Dance Pop
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - electro‑pop & dance‑pop.jpg
@@ -271,7 +271,7 @@ overrides:
   - playlist_id: 90s-pop-pop-rock
     is_collection: false
     is_instrumental: false
-    title: null
+    title: 90's Pop-Rock
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - 90s pop & pop‑rock.jpg
@@ -281,7 +281,7 @@ overrides:
   - playlist_id: southern-rock
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Southern Rock
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - southern rock.jpg
@@ -291,7 +291,7 @@ overrides:
   - playlist_id: pop
     is_collection: false
     is_instrumental: false
-    title: null
+    title: Pop
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - pop.jpg
@@ -301,7 +301,7 @@ overrides:
   - playlist_id: 80s-rock-pop
     is_collection: false
     is_instrumental: false
-    title: null
+    title: 80's Pop-Rock
     subtitle: null
     description: null
     thumbnail: /assets/playlist thumbnails/playlist - 80s rock & pop.jpg
@@ -311,7 +311,7 @@ overrides:
   - playlist_id: rum-soaked-paradise-cody-sails
     is_collection: false
     is_instrumental: false
-    title: ''
+    title: Rum Soacked Paradise
     subtitle: ''
     description: ''
     thumbnail: /assets/thumbnails/playlist-rum-soaked-paradise-cody-sails.jpeg
@@ -321,7 +321,7 @@ overrides:
   - playlist_id: irish-celtic-horizon-sound-instrumentals
     is_collection: false
     is_instrumental: false
-    title: ''
+    title: Irish Celtic
     subtitle: ''
     description: ''
     thumbnail: ''
@@ -331,7 +331,7 @@ overrides:
   - playlist_id: lifes-a-kaleidoscope-ascension-youth-choir
     is_collection: false
     is_instrumental: false
-    title: ''
+    title: Life's a Kaleidoscope
     subtitle: ''
     description: ''
     thumbnail: ''
