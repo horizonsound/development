@@ -564,7 +564,7 @@ releases:
     tracklist:
       - track_id: trk_neonskyline_hs_001
         track_number: 1
-      - track_id: trk_runningthroughth_hs_001
+      - track_id: trk_runningthrought_hs_001
         track_number: 2
       - track_id: trk_fireinthewires_hs_001
         track_number: 3
@@ -618,9 +618,9 @@ releases:
     primary_artist: art_horizon_sound
     featuring_artists: []
     tracklist:
-      - track_id: trk_momentsbetweenmo_hs_001
+      - track_id: trk_momentsbetweenm_hs_001
         track_number: 1
-      - track_id: trk_wheretheairglows_hs_001
+      - track_id: trk_wheretheairglow_hs_001
         track_number: 2
       - track_id: trk_echoesoftomorro_hs_001
         track_number: 3
@@ -628,7 +628,7 @@ releases:
         track_number: 4
       - track_id: trk_breathingincolo_hs_001
         track_number: 5
-      - track_id: trk_quietHorizons_hs_001
+      - track_id: trk_quiethorizons_hs_001
         track_number: 6
     credits:
       producers: []
@@ -1018,8 +1018,12 @@ releases:
     primary_artist: art_horizon_sound
     featuring_artists: []
     tracklist:
-      - track_id: trk_a-way-back_hs_001
+      - track_id: trk_lostinsilence_hs_001
         track_number: 1
+      - track_id: trk_choosingmeherve_hs_001
+        track_number: 2
+      - track_id: trk_choosingmehisve_hs_001
+        track_number: 3
     credits:
       producers: []
       writers: []
