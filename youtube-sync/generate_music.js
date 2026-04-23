@@ -32,20 +32,56 @@ function slugifyTitle(title) {
 
 // Moods mapping from vibes
 function vibesToMoods(vibes = []) {
+  // Curated emotional vocabulary
+  const EMOTIONAL_MOODS = new Set([
+    "uplifting",
+    "nostalgic",
+    "joyful",
+    "adventurous",
+    "hopeful",
+    "triumphant",
+    "emotional",
+    "heartfelt",
+    "cinematic",
+    "powerful",
+    "gentle",
+    "warm",
+    "reflective",
+    "bold",
+    "comforting",
+    "free-spirited",
+    "celebratory",
+    "sentimental",
+    "thoughtful",
+    "epic",
+    "awe-struck",
+    "renewed",
+    "optimistic",
+    "forward-looking"
+  ]);
+
   const results = [];
+
   for (const v of vibes) {
     if (typeof v !== "string") continue;
 
-    // Remove leading emoji + label
-    const cleaned = v.replace(/^[^\w]+/u, "").trim();
+    // Remove emoji
+    let cleaned = v.replace(/^[^\w]+/u, "").trim();
+
+    // Remove prefixes like "vibe:", "vocals:", "production:", "mood:"
+    cleaned = cleaned.replace(/^(vibe|vocals|production|mood)\s*:\s*/i, "");
 
     // Split on commas
     const parts = cleaned.split(",").map(p => p.trim().toLowerCase());
 
     for (const p of parts) {
-      if (p && !results.includes(p)) results.push(p);
+      // Keep only emotional descriptors
+      if (EMOTIONAL_MOODS.has(p) && !results.includes(p)) {
+        results.push(p);
+      }
     }
   }
+
   return results;
 }
 
