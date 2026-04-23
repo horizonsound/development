@@ -17,15 +17,15 @@ function writeYAML(path, data) {
 function normalizeTitleForId(title) {
   return title
     .toLowerCase()
-    .replace(/[^a-z0-9]/g, "") // remove all non-alphanumeric
-    .slice(0, 15);             // first 15 chars only
+    .replace(/[^a-z0-9]/g, "")
+    .slice(0, 15);
 }
 
 // Slugify clean override title
 function slugifyTitle(title) {
   return title
     .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, "") // remove special chars
+    .replace(/[^a-z0-9\s]/g, "")
     .trim()
     .replace(/\s+/g, "_");
 }
@@ -45,39 +45,12 @@ function formatDurationDisplay(iso) {
 
 // Curated emotional vocabulary
 const EMOTIONAL_MOODS = new Set([
-  "uplifting",
-  "nostalgic",
-  "joyful",
-  "adventurous",
-  "hopeful",
-  "triumphant",
-  "emotional",
-  "heartfelt",
-  "cinematic",
-  "powerful",
-  "gentle",
-  "warm",
-  "reflective",
-  "bold",
-  "comforting",
-  "free-spirited",
-  "celebratory",
-  "sentimental",
-  "thoughtful",
-  "epic",
-  "awe-struck",
-  "renewed",
-  "optimistic",
-  "forward-looking",
-  "longing",
-  "melancholic",
-  "melancholy",
-  "tender",
-  "soft",
-  "expressive",
-  "aching",
-  "sad",
-  "sadness"
+  "uplifting", "nostalgic", "joyful", "adventurous", "hopeful", "triumphant",
+  "emotional", "heartfelt", "cinematic", "powerful", "gentle", "warm",
+  "reflective", "bold", "comforting", "free-spirited", "celebratory",
+  "sentimental", "thoughtful", "epic", "awe-struck", "renewed", "optimistic",
+  "forward-looking", "longing", "melancholic", "melancholy", "tender",
+  "soft", "expressive", "aching", "sad", "sadness"
 ]);
 
 // Moods mapping from vibes
@@ -87,13 +60,9 @@ function vibesToMoods(vibes = []) {
   for (const v of vibes) {
     if (typeof v !== "string") continue;
 
-    // Remove emoji
     let cleaned = v.replace(/^[^\w]+/u, "").trim();
-
-    // Remove prefixes like "vibe:", "vocals:", "production:", "mood:"
     cleaned = cleaned.replace(/^(vibe|vocals|production|mood)\s*:\s*/i, "");
 
-    // Split on commas
     const parts = cleaned.split(",").map(p => p.trim().toLowerCase());
 
     for (const p of parts) {
@@ -149,12 +118,14 @@ const overrideLookup = {};
 const usedIds = new Set();
 
 function generateUniqueId(base) {
-  let id = base;
-  let counter = 2;
+  let counter = 1;
+  let id = `${base}_${String(counter).padStart(3, "0")}`;
+
   while (usedIds.has(id)) {
-    id = `${base}_${counter}`;
     counter++;
+    id = `${base}_${String(counter).padStart(3, "0")}`;
   }
+
   usedIds.add(id);
   return id;
 }
@@ -177,7 +148,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
   const cleanTitle = ov.title;
   const subtitle = ov.subtitle || null;
 
-  // ID generation (15 chars)
+  // ID generation
   const titleKey = normalizeTitleForId(cleanTitle);
   const baseId = `trk_${titleKey}_${artist.initials}`;
   const id = generateUniqueId(baseId);
@@ -197,7 +168,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
   const durationDisplay = formatDurationDisplay(duration);
 
   // -----------------------------------------------------
-  // Build track object in EXACT schema
+  // Build track object in EXACT final SOR schema
   // -----------------------------------------------------
   return {
     id,
@@ -206,16 +177,44 @@ const tracks = (youtubeFeed.songs || []).map(song => {
     subtitle,
     status: song.videostatus || null,
     type: null,
-    track_number: ov.order || null,
-    disc_number: null,
-    release_id: null,
 
     primary_artist: artist.artist_slug,
     featuring_artists: [],
 
+    release_ids: [],
+
+    is_instrumental: false,
+
+    lyrics_html: ov.lyrics_html || null,
+    lyrics_excerpt: null,
+
+    suno: {
+      vocal: {
+        model: null,
+        prompt: null
+      },
+      production: {
+        model: null,
+        prompt: null
+      },
+      style_prompt: null
+    },
+
+    audio: {
+      preview_mp3: null,
+      full_mp3: null,
+      wav: null,
+      stems_zip: null,
+      instrumental_mp3: null,
+      instrumental_wav: null
+    },
+
+    bpm: null,
+    key: null,
     duration,
     duration_display: durationDisplay,
     isrc: null,
+    version: "original",
 
     genres: {
       primary: primaryGenre,
@@ -225,26 +224,16 @@ const tracks = (youtubeFeed.songs || []).map(song => {
 
     moods,
     description_html: song.description_html || null,
-    lyrics_html: ov.lyrics_html || null,
-    lyrics_excerpt: null,
     context_title: ov.extra_title || null,
     context_html: ov.extra_html || null,
-
-    audio: {
-      preview_mp3: null,
-      full_mp3: null
-    },
-
-    video: {
-      youtube_id: song.youtube_id || song.youtube_metadata?.youtube_id || null,
-      thumbnail: song.thumbnail || null
-    },
 
     artwork: {
       cover: null,
       banner: null,
       gallery: []
     },
+
+    videos: [],
 
     links: {
       spotify: null,
@@ -267,14 +256,8 @@ const tracks = (youtubeFeed.songs || []).map(song => {
 
     seo: {
       title: `${cleanTitle} - ${artist.artist_name}`,
-      description:
-        ov.order && ov.order > 0
-          ? `Track ${ov.order} - ${cleanTitle}`
-          : cleanTitle,
-      keywords: [
-        cleanTitle,
-        artist.artist_name
-      ]
+      description: cleanTitle,
+      keywords: [cleanTitle, artist.artist_name]
     },
 
     internal: {
@@ -290,4 +273,4 @@ const tracks = (youtubeFeed.songs || []).map(song => {
 
 writeYAML("../_data/music.yml", { tracks });
 
-console.log("✅ music.yml generated in SOR schema.");
+console.log("✅ music.yml generated in FINAL SOR schema.");
