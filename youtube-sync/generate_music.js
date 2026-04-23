@@ -13,12 +13,12 @@ function writeYAML(path, data) {
   fs.writeFileSync(path, yaml.dump(data, { sortKeys: false }), "utf8");
 }
 
-// Clean title for ID generation
+// Clean title for ID generation (15 chars)
 function normalizeTitleForId(title) {
   return title
     .toLowerCase()
     .replace(/[^a-z0-9]/g, "") // remove all non-alphanumeric
-    .slice(0, 10);             // first 10 chars only
+    .slice(0, 15);             // first 15 chars only
 }
 
 // Slugify clean override title
@@ -30,36 +30,58 @@ function slugifyTitle(title) {
     .replace(/\s+/g, "_");
 }
 
+// Convert ISO8601 duration to "M:SS"
+function formatDurationDisplay(iso) {
+  if (!iso) return null;
+
+  const match = iso.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!match) return null;
+
+  const minutes = parseInt(match[1] || "0", 10);
+  const seconds = parseInt(match[2] || "0", 10);
+
+  return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+}
+
+// Curated emotional vocabulary
+const EMOTIONAL_MOODS = new Set([
+  "uplifting",
+  "nostalgic",
+  "joyful",
+  "adventurous",
+  "hopeful",
+  "triumphant",
+  "emotional",
+  "heartfelt",
+  "cinematic",
+  "powerful",
+  "gentle",
+  "warm",
+  "reflective",
+  "bold",
+  "comforting",
+  "free-spirited",
+  "celebratory",
+  "sentimental",
+  "thoughtful",
+  "epic",
+  "awe-struck",
+  "renewed",
+  "optimistic",
+  "forward-looking",
+  "longing",
+  "melancholic",
+  "melancholy",
+  "tender",
+  "soft",
+  "expressive",
+  "aching",
+  "sad",
+  "sadness"
+]);
+
 // Moods mapping from vibes
 function vibesToMoods(vibes = []) {
-  // Curated emotional vocabulary
-  const EMOTIONAL_MOODS = new Set([
-    "uplifting",
-    "nostalgic",
-    "joyful",
-    "adventurous",
-    "hopeful",
-    "triumphant",
-    "emotional",
-    "heartfelt",
-    "cinematic",
-    "powerful",
-    "gentle",
-    "warm",
-    "reflective",
-    "bold",
-    "comforting",
-    "free-spirited",
-    "celebratory",
-    "sentimental",
-    "thoughtful",
-    "epic",
-    "awe-struck",
-    "renewed",
-    "optimistic",
-    "forward-looking"
-  ]);
-
   const results = [];
 
   for (const v of vibes) {
@@ -75,7 +97,6 @@ function vibesToMoods(vibes = []) {
     const parts = cleaned.split(",").map(p => p.trim().toLowerCase());
 
     for (const p of parts) {
-      // Keep only emotional descriptors
       if (EMOTIONAL_MOODS.has(p) && !results.includes(p)) {
         results.push(p);
       }
@@ -156,7 +177,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
   const cleanTitle = ov.title;
   const subtitle = ov.subtitle || null;
 
-  // ID generation
+  // ID generation (15 chars)
   const titleKey = normalizeTitleForId(cleanTitle);
   const baseId = `trk_${titleKey}_${artist.initials}`;
   const id = generateUniqueId(baseId);
@@ -173,6 +194,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
 
   // Duration
   const duration = song.youtube_metadata?.duration || null;
+  const durationDisplay = formatDurationDisplay(duration);
 
   // -----------------------------------------------------
   // Build track object in EXACT schema
@@ -192,6 +214,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
     featuring_artists: [],
 
     duration,
+    duration_display: durationDisplay,
     isrc: null,
 
     genres: {
