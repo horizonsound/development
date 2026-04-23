@@ -1,0 +1,870 @@
+releases:
+
+  # -------------------------------------------------------
+  # Craig Mitchell
+  # -------------------------------------------------------
+  - id: rel_until_the_nightmare_ends_cm
+    slug: until-the-nightmare-ends
+    title: "Until the Nightmare Ends (Stranger Things Anthem)"
+    subtitle: null
+    type: single
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Pop
+      secondary: null
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_craig_mitchell
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Until the Nightmare Ends — Craig Mitchell"
+      description: null
+      keywords: ["craig mitchell", "until the nightmare ends"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Ascension Youth Choir
+  # -------------------------------------------------------
+  - id: rel_lifes_a_kaleidoscope_ayc
+    slug: lifes-a-kaleidoscope
+    title: "Life’s a Kaleidoscope"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Pop
+      secondary: Youth Ensemble
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_ascension_youth_choir
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Life’s a Kaleidoscope — Ascension Youth Choir"
+      description: null
+      keywords: ["ascension youth choir", "life’s a kaleidoscope"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Horizon Sound — Instrumental Albums
+  # -------------------------------------------------------
+  - id: rel_irish_celtic_hs
+    slug: irish-celtic
+    title: "Irish Celtic"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Celtic
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Irish Celtic — Horizon Sound"
+      description: null
+      keywords: ["irish celtic", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_workout_edm_hs
+    slug: workout-edm
+    title: "Workout & Electronic Dance Music"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: EDM
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Workout & Electronic Dance Music — Horizon Sound"
+      description: null
+      keywords: ["workout", "edm", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_synthwave_retrowave_hs
+    slug: synthwave-retrowave
+    title: "Synthwave & Retrowave"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Synthwave
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Synthwave & Retrowave — Horizon Sound"
+      description: null
+      keywords: ["synthwave", "retrowave", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_pop_instrumentals_hs
+    slug: pop-instrumentals
+    title: "Pop Instrumentals"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Pop
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Pop Instrumentals — Horizon Sound"
+      description: null
+      keywords: ["pop instrumentals", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_piano_emotional_hs
+    slug: piano-emotional
+    title: "Piano Emotional"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Piano
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Piano Emotional — Horizon Sound"
+      description: null
+      keywords: ["piano emotional", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_orchestral_rock_hs
+    slug: orchestral-rock
+    title: "Orchestral Rock"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Rock
+      secondary: Orchestral
+      tertiary: Instrumental
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Orchestral Rock — Horizon Sound"
+      description: null
+      keywords: ["orchestral rock", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_electric_guitar_rock_hs
+    slug: electric-guitar-rock
+    title: "Electric Guitar Rock"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Rock
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Electric Guitar Rock — Horizon Sound"
+      description: null
+      keywords: ["electric guitar rock", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_cinematic_ambient_hs
+    slug: cinematic-ambient
+    title: "Cinematic & Ambient"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Ambient
+      secondary: Cinematic
+      tertiary: Instrumental
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Cinematic & Ambient — Horizon Sound"
+      description: null
+      keywords: ["cinematic ambient", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_calm_cinematic_hs
+    slug: calm-cinematic
+    title: "Calm & Cinematic"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Ambient
+      secondary: Cinematic
+      tertiary: Instrumental
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Calm & Cinematic — Horizon Sound"
+      description: null
+      keywords: ["calm cinematic", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  - id: rel_acoustic_guitar_hs
+    slug: acoustic-guitar
+    title: "Acoustic Guitar"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Acoustic
+      secondary: Instrumental
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Acoustic Guitar — Horizon Sound"
+      description: null
+      keywords: ["acoustic guitar", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Maddie Rowan
+  # -------------------------------------------------------
+  - id: rel_wildfile_mr
+    slug: wildfile
+    title: "Wildfile"
+    subtitle: null
+    type: single
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Pop
+      secondary: null
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_maddie_rowan
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Wildfile — Maddie Rowan"
+      description: null
+      keywords: ["wildfile", "maddie rowan"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Horizon Sound — Saga
+  # -------------------------------------------------------
+  - id: rel_venice_trilogy_hs
+    slug: venice-trilogy
+    title: "Venice Trilogy"
+    subtitle: null
+    type: saga
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Cinematic
+      secondary: Ambient
+      tertiary: Instrumental
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_horizonsound
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Venice Trilogy — Horizon Sound"
+      description: null
+      keywords: ["venice trilogy", "horizon sound"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Ravyn — Saga
+  # -------------------------------------------------------
+  - id: rel_midnight_saga_ravyn
+    slug: midnight-saga
+    title: "Midnight Saga"
+    subtitle: null
+    type: saga
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Pop
+      secondary: Cinematic Pop
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_ravyn
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Midnight Saga — Ravyn"
+      description: null
+      keywords: ["midnight saga", "ravyn"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Cody Sails
+  # -------------------------------------------------------
+  - id: rel_rum_soaked_paradise_cs
+    slug: rum-soaked-paradise
+    title: "Rum Soaked Paradise"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Coastal Acoustic
+      secondary: Folk Pop
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_cody_sails
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "Rum Soaked Paradise — Cody Sails"
+      description: null
+      keywords: ["rum soaked paradise", "cody sails"]
+
+    internal:
+      notes: null
+      priority: null
+
+
+  # -------------------------------------------------------
+  # Lydia Ellington
+  # -------------------------------------------------------
+  - id: rel_after_the_silence_le
+    slug: after-the-silence
+    title: "After the Silence"
+    subtitle: null
+    type: album
+    status: public
+    description: null
+    release_date: null
+    upc: null
+
+    genres:
+      primary: Cinematic Pop
+      secondary: Pop
+      tertiary: null
+
+    artwork:
+      cover: null
+      banner: null
+      gallery: []
+
+    links:
+      spotify: null
+      apple_music: null
+      youtube_music: null
+      amazon_music: null
+      tidal: null
+
+    primary_artist: art_lydia_ellington
+    featuring_artists: []
+
+    tracklist: []
+
+    credits:
+      producers: []
+      writers: []
+      mixers: []
+      mastering_engineers: []
+      musicians: []
+      engineers: []
+
+    seo:
+      title: "After the Silence — Lydia Ellington"
+      description: null
+      keywords: ["after the silence", "ly
