@@ -13,48 +13,57 @@ function writeYAML(path, data) {
   fs.writeFileSync(path, yaml.dump(data, { sortKeys: false }), "utf8");
 }
 
+// Clean title for ID generation
+function normalizeTitleForId(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "") // remove all non-alphanumeric
+    .slice(0, 10);             // first 10 chars only
+}
+
+// Slugify clean override title
 function slugifyTitle(title) {
   return title
     .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, "")   // remove special chars
+    .replace(/[^a-z0-9\s]/g, "") // remove special chars
     .trim()
-    .replace(/\s+/g, "_");         // spaces → underscores
+    .replace(/\s+/g, "_");
 }
 
-function normalizeArtistId(artistName, initials) {
-  const base = (artistName || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, "");    // strip non-alphanum
-  const firstTen = base.slice(0, 10);
-  return `trk_${firstTen}_${initials}`;
+// Moods mapping from vibes
+function vibesToMoods(vibes = []) {
+  const results = [];
+  for (const v of vibes) {
+    if (typeof v !== "string") continue;
+
+    // Remove leading emoji + label
+    const cleaned = v.replace(/^[^\w]+/u, "").trim();
+
+    // Split on commas
+    const parts = cleaned.split(",").map(p => p.trim().toLowerCase());
+
+    for (const p of parts) {
+      if (p && !results.includes(p)) results.push(p);
+    }
+  }
+  return results;
 }
 
-// crude genre detection from playlists (you can refine later)
-const GENRE_PLAYLISTS = new Set([
-  "pop",
-  "edm",
-  "southern-rock",
-  "emotional-ballads",
-  "80s-rock-pop",
-  // add more as you formalize them
-]);
+// Genre detection from playlist slugs
+const GENRE_MAP = {
+  "pop": "pop",
+  "edm": "edm",
+  "southern-rock": "southern-rock",
+  "80s-rock-pop": "80s-rock-pop",
+  "emotional-ballads": "emotional-ballads",
+  "irish-celtic-horizon-sound-instrumentals": "celtic"
+};
 
 function derivePrimaryGenre(playlists = []) {
   for (const p of playlists) {
-    if (GENRE_PLAYLISTS.has(p)) return p;
+    if (GENRE_MAP[p]) return GENRE_MAP[p];
   }
   return null;
-}
-
-// simple moods mapping: take vibes that “make sense” by stripping emoji prefixes
-function vibesToMoods(vibes = []) {
-  return vibes
-    .map(v => {
-      if (typeof v !== "string") return null;
-      // remove leading emoji + label like "🎧 Vibe: "
-      return v.replace(/^[^\w]+/u, "").trim();
-    })
-    .filter(Boolean);
 }
 
 // ---------------------------------------------------------
@@ -68,7 +77,6 @@ const artistMap = loadYAML("../_data/artist_to_track_mapping.yml");
 // Build lookup tables
 const artistLookup = {};
 (artistMap.tracks || []).forEach(t => {
-  // we keyed this by song_id earlier today
   artistLookup[t.song_id] = t;
 });
 
@@ -81,9 +89,22 @@ const overrideLookup = {};
 // 2. Build SOR tracks
 // ---------------------------------------------------------
 
+const usedIds = new Set();
+
+function generateUniqueId(base) {
+  let id = base;
+  let counter = 2;
+  while (usedIds.has(id)) {
+    id = `${base}_${counter}`;
+    counter++;
+  }
+  usedIds.add(id);
+  return id;
+}
+
 const tracks = (youtubeFeed.songs || []).map(song => {
   const songId = song.song_id;
-  const ov = overrideLookup[songId] || {};
+  const ov = overrideLookup[songId];
   const artist = artistLookup[songId];
 
   if (!artist) {
@@ -91,34 +112,50 @@ const tracks = (youtubeFeed.songs || []).map(song => {
     process.exit(1);
   }
 
-  const title = ov.title || song.title;
+  if (!ov || !ov.title) {
+    console.error(`❌ Missing override.title for song_id: ${songId}`);
+    process.exit(1);
+  }
+
+  const cleanTitle = ov.title;
   const subtitle = ov.subtitle || null;
 
-  const id = normalizeArtistId(artist.artist_name, artist.initials);
-  const slug = slugifyTitle(title);
+  // ID generation
+  const titleKey = normalizeTitleForId(cleanTitle);
+  const baseId = `trk_${titleKey}_${artist.initials}`;
+  const id = generateUniqueId(baseId);
 
+  // Slug generation
+  const slug = slugifyTitle(cleanTitle);
+
+  // Moods
+  const moods = vibesToMoods(song.vibes || []);
+
+  // Genre
   const playlists = song.playlists || [];
   const primaryGenre = derivePrimaryGenre(playlists);
-  const moods = vibesToMoods(song.vibes || []);
+
+  // Duration
+  const duration = song.youtube_metadata?.duration || null;
 
   // -----------------------------------------------------
   // Build track object in EXACT schema
   // -----------------------------------------------------
   return {
-    id,                          // "trk_" + artistName10 + "_" + initials
-    slug,                        // derived from title
-    title,                       // overrides.title → YouTubeFeed.title
-    subtitle,                    // overrides.subtitle
+    id,
+    slug,
+    title: cleanTitle,
+    subtitle,
     status: song.videostatus || null,
-    type: null,                  // unpopulated
+    type: null,
     track_number: ov.order || null,
     disc_number: null,
     release_id: null,
 
     primary_artist: artist.artist_slug,
-    featuring_artists: [],       // unpopulated
+    featuring_artists: [],
 
-    duration: null,              // spec: unpopulated at this stage
+    duration,
     isrc: null,
 
     genres: {
@@ -127,7 +164,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
       tertiary: null
     },
 
-    moods,                       // from YouTubeFeed.vibes (mapped)
+    moods,
     description_html: song.description_html || null,
     lyrics_html: ov.lyrics_html || null,
     lyrics_excerpt: null,
@@ -140,7 +177,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
     },
 
     video: {
-      youtube_id: song.youtube_id || (song.youtube_metadata && song.youtube_metadata.youtube_id) || null,
+      youtube_id: song.youtube_id || song.youtube_metadata?.youtube_id || null,
       thumbnail: song.thumbnail || null
     },
 
@@ -158,7 +195,7 @@ const tracks = (youtubeFeed.songs || []).map(song => {
       tidal: null
     },
 
-    playlists,                   // move all that are listed
+    playlists,
 
     credits: {
       producers: [],
@@ -170,13 +207,13 @@ const tracks = (youtubeFeed.songs || []).map(song => {
     },
 
     seo: {
-      title: `${song.title} - ${artist.artist_name}`,
+      title: `${cleanTitle} - ${artist.artist_name}`,
       description:
         ov.order && ov.order > 0
-          ? `Track ${ov.order} - ${song.title}`
-          : song.title,
+          ? `Track ${ov.order} - ${cleanTitle}`
+          : cleanTitle,
       keywords: [
-        song.title,
+        cleanTitle,
         artist.artist_name
       ]
     },
