@@ -15,7 +15,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_colorthesky_hs_001
       - trk_betterdaysahead_hs_001
       - trk_goldenhourgroov_hs_001
@@ -48,7 +48,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_retrodrive_hs_001
       - trk_nightfallcircui_hs_001
       - trk_dreamwaveavenue_hs_001
@@ -81,7 +81,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_winterfire_hs_001
       - trk_thefrozenovertu_hs_001
       - trk_therisingstorm_hs_001
@@ -114,7 +114,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_holdingthelight_hs_001
       - trk_thequietbetween_hs_001
       - trk_stillwaters_hs_001
@@ -147,7 +147,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_electricpulse_hs_001
       - trk_breakthegravity_hs_001
       - trk_shinethrough_hs_001
@@ -180,7 +180,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_momentsbetweenm_hs_001
       - trk_wheretheairglow_hs_001
       - trk_echoesoftomorro_hs_001
@@ -213,7 +213,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_neonskyline_hs_001
       - trk_runningthrought_hs_001
       - trk_fireinthewires_hs_001
@@ -246,7 +246,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_sunlightonthest_hs_001
       - trk_wanderersheart_hs_001
       - trk_runningtowardth_hs_001
@@ -279,7 +279,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_sheriffforanigh_hs_001
       - trk_backtoamarillo_hs_001
       - trk_bottleonthetabl_hs_001
@@ -309,7 +309,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_atouchoflight_hs_001
       - trk_foreverinamomen_hs_001
       - trk_heldinthemoment_hs_001
@@ -342,7 +342,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_someday_hs_001
       - trk_missingstamp_hs_001
       - trk_venicewaters_hs_001
@@ -373,7 +373,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_riselikethunder_hs_001
       - trk_nineteensummers_hs_001
     featured_artists: []
@@ -402,7 +402,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_beforemidnight_r_001
       - trk_midnightmayhem_r_001
       - trk_midnightmadness_r_001
@@ -434,7 +434,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_thequietafter_le_001
       - trk_borrowedtime_le_001
       - trk_homesickforyou_le_001
@@ -475,7 +475,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_lostinsilence_hs_001
       - trk_choosingmeherve_hs_001
       - trk_choosingmehisve_hs_001
@@ -506,7 +506,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_allaroundthewor_hs_001
       - trk_notsosmarthome_hs_001
       - trk_fixeditmostlyri_hs_001
@@ -537,7 +537,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_nineteensummers_hs_001
       - trk_imholdingon_hs_001
       - trk_ohamber_hs_001
@@ -570,7 +570,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_wildfire_hs_001
       - trk_vegasinthesky_hs_001
       - trk_themanbehindthe_hs_001
@@ -603,7 +603,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_putyoudown_hs_001
       - trk_midnightmayhem_r_001
     featured_artists: []
@@ -632,7 +632,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_newagain_hs_001
       - trk_herestous_hs_001
     featured_artists: []
@@ -661,7 +661,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_onehellofaride_hs_001
       - trk_gimmethreesteps_hs_001
       - trk_imetheratabarro_hs_001
@@ -691,7 +691,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_becomingme_hs_001
       - trk_risingup_hs_001
       - trk_holdon_hs_001
@@ -725,7 +725,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_totaleclipseyea_hs_001
       - trk_untilthenightma_hs_001
       - trk_riselikethunder_hs_001
@@ -757,7 +757,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_rumsoakedparadi_cs_001
       - trk_saltontherim_cs_001
       - trk_barefootandbuzz_cs_001
@@ -792,7 +792,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_acrosstheemeral_hs_001
       - trk_fireinthefiddle_hs_001
       - trk_thechasethrough_hs_001
@@ -825,7 +825,7 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs:
+    tracks:
       - trk_kaleidoscope_ayc_001
       - trk_allaroundthewor_ayc_001
       - trk_rusty_ayc_001
