@@ -1,0 +1,747 @@
+playlists:
+  - id: ply_pop-instrumentals_001
+    slug: pop-instrumentals
+    title: Pop - Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - pop instrumental.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Pop Instrumentals | Horizon Sound"
+      description: "A curated collection of polished pop instrumentals featuring modern production, clean hooks, and radio-ready energy."
+      keywords: "pop instrumentals, pop backing tracks, horizon sound instrumentals"
+    status: active
+    internal:
+      priority: 1
+      notes: null
+
+  - id: ply_synth-retrowave-instrumentals_001
+    slug: synth-retrowave-instrumentals
+    title: Synth & Retrowave – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - synthwave & retrowave instrumental.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Synth & Retrowave Instrumentals | Horizon Sound"
+      description: "Retro-inspired synth instrumentals with neon-soaked textures, analog warmth, and cinematic 80s energy."
+      keywords: "synthwave instrumentals, retrowave instrumentals, 80s synth"
+    status: active
+    internal:
+      priority: 2
+      notes: null
+
+  - id: ply_orchestral-rock-instrumentals_001
+    slug: orchestral-rock-instrumentals
+    title: Orchestral Rock – Instrumentals
+    subtitle: "Trans Siberian Orchestra Style"
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - orchestral rock (tso-style).jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Orchestral Rock Instrumentals | Horizon Sound"
+      description: "Epic orchestral rock instrumentals blending symphonic power with electric guitar intensity."
+      keywords: "orchestral rock, tso style, symphonic rock instrumentals"
+    status: active
+    internal:
+      priority: 3
+      notes: null
+
+  - id: ply_piano-emotional-instrumentals_001
+    slug: piano-emotional-instrumentals
+    title: Piano Emotional – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - emotional piano.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Emotional Piano Instrumentals | Horizon Sound"
+      description: "Intimate, reflective piano instrumentals designed for storytelling, calm, and emotional depth."
+      keywords: "emotional piano, cinematic piano, piano instrumentals"
+    status: active
+    internal:
+      priority: 4
+      notes: null
+
+  - id: ply_workout-edm-instrumentals_001
+    slug: workout-edm-instrumentals
+    title: Workout & EDM – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - workout & edm - intrumental.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Workout & EDM Instrumentals | Horizon Sound"
+      description: "High-energy EDM and workout instrumentals built for movement, motivation, and momentum."
+      keywords: "edm instrumentals, workout music, fitness instrumentals"
+    status: active
+    internal:
+      priority: 5
+      notes: null
+
+  - id: ply_cinematic-ambient-instrumentals_001
+    slug: cinematic-ambient-instrumentals
+    title: Cinematic & Ambient – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - cinematic & ambient.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_moments-between-moments
+      - trk_where-the-air-glows
+      - trk_echoes-of-tomorrow
+      - trk_the-space-we-keep
+      - trk_breathing-in-color
+      - trk_quiet-horizons
+    featured_artists: []
+    seo:
+      title: "Cinematic & Ambient Instrumentals | Horizon Sound"
+      description: "Atmospheric, spacious instrumentals blending cinematic textures with ambient soundscapes."
+      keywords: "cinematic ambient, ambient instrumentals, soundtrack instrumentals"
+    status: active
+    internal:
+      priority: 6
+      notes: null
+
+  - id: ply_electric-guitar-rock-instrumentals_001
+    slug: electric-guitar-rock-instrumentals
+    title: Electric Guitar Rock – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - electric guitar rock – instrumental.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_neon-skyline
+      - trk_running-through-the-night
+      - trk_fire-in-the-wires
+      - trk_chasing-the-sparks
+      - trk_waves-of-blue
+      - trk_after-the-static
+    featured_artists: []
+    seo:
+      title: "Electric Guitar Rock Instrumentals | Horizon Sound"
+      description: "High‑octane guitar‑driven instrumentals with modern rock energy and cinematic edge."
+      keywords: "guitar instrumentals, rock instrumentals, electric guitar tracks"
+    status: active
+    internal:
+      priority: 7
+      notes: null
+
+  - id: ply_acoustic-guitar-instrumentals_001
+    slug: acoustic-guitar-instrumentals
+    title: Acoustic Guitar – Instrumentals
+    subtitle: null
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - acoustic guitar – instrumental.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_sunlight-on-the-strings
+      - trk_wanderers-heart
+      - trk_chasing-the-daylight
+      - trk_running-toward-the-sun
+      - trk_the-way-home
+      - trk_letters-in-the-wind
+    featured_artists: []
+    seo:
+      title: "Acoustic Guitar Instrumentals | Horizon Sound"
+      description: "Warm, organic acoustic guitar instrumentals with storytelling textures and natural tone."
+      keywords: "acoustic guitar instrumentals, folk instrumentals, acoustic tracks"
+    status: active
+    internal:
+      priority: 8
+      notes: null
+
+  - id: ply_classic-country_001
+    slug: classic-country
+    title: Classic Country
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - classic country.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Classic Country | Horizon Sound"
+      description: "Timeless country storytelling with acoustic roots, heartfelt vocals, and traditional charm."
+      keywords: "classic country, traditional country, country playlist"
+    status: active
+    internal:
+      priority: 9
+      notes: null
+
+  - id: ply_calm-cinematic-instrumentals_001
+    slug: calm-cinematic-instrumentals
+    title: Calm & Cinematic – Instrumentals
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - calm & cinematic.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Calm & Cinematic Instrumentals | Horizon Sound"
+      description: "Soft, atmospheric cinematic instrumentals designed for focus, calm, and emotional clarity."
+      keywords: "calm cinematic, ambient cinematic, instrumental soundtrack"
+    status: active
+    internal:
+      priority: 10
+      notes: null
+
+  - id: ply_venice-trilogy_001
+    slug: venice-trilogy
+    title: Venice Trilogy
+    subtitle: null
+    description: "A three‑chapter journey through memory, longing, and the magic of a city that changes everything. The Venice Trilogy follows two lifelong friends as a single trip blurs the line between nostalgia and possibility."
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - missing-stamp–venice-trilogy.jpeg"
+      banner: "/assets/thumbnails/playlist-hero-venice-trilogy.jpeg"
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_someday-acoustic-pop-storytelling-horizon-sound
+      - trk_missing-stamp-emotional-acoustic-pop-horizon-sound
+      - trk_venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
+    featured_artists:
+      - art_horizon-sound
+    seo:
+      title: "Venice Trilogy | Horizon Sound"
+      description: "A nostalgic, emotional three‑part story told through acoustic pop and cinematic songwriting."
+      keywords: "venice trilogy, acoustic storytelling, emotional pop"
+    status: active
+    internal:
+      priority: 11
+      notes: null
+
+  - id: ply_shorts_001
+    slug: shorts
+    title: Shorts
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - shorts.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Short Songs | Horizon Sound"
+      description: "A collection of short-form tracks built for quick inspiration, fast ideas, and rapid-fire creativity."
+      keywords: "short songs, micro tracks, quick inspiration"
+    status: active
+    internal:
+      priority: 12
+      notes: null
+
+  - id: ply_midnight-saga_001
+    slug: midnight-saga
+    title: Midnight Saga
+    subtitle: "Ravyn"
+    description: "A cinematic late-night journey through identity, chaos, temptation, and transformation."
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - midnight saga.jpeg"
+      banner: "/assets/thumbnails/playlist-hero-midnight-saga.jpeg"
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_before-midnight-the-midnight-saga-chapter-1-horizon-sound
+      - trk_midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
+      - trk_midnight-madness-the-midnight-saga-chapter-3-horizon-sound
+      - trk_after-midnight-the-midnight-saga-chapter-4-horizon-sound
+    featured_artists:
+      - art_ravyn
+    seo:
+      title: "Midnight Saga | Horizon Sound"
+      description: "A four‑chapter cinematic pop journey through chaos, temptation, and emotional transformation."
+      keywords: "midnight saga, ravyn, cinematic pop"
+    status: active
+    internal:
+      priority: 13
+      notes: null
+
+  - id: ply_after-the-silence_001
+    slug: after-the-silence
+    title: After the Silence
+    subtitle: "Lydia Ellington"
+    description: "A reflective pop‑soul journey about healing, clarity, and finding your voice again."
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/thumbnails/playlist-after-the-silence-performed-by-lydia-ellington.jpeg"
+      banner: "/assets/playlist thumbnails/playlist - after the silence – lydia ellington.jpeg"
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound
+    featured_artists:
+      - art_lydia-ellington
+    seo:
+      title: "After the Silence | Lydia Ellington"
+      description: "A full-length emotional pop-soul album exploring healing, clarity, and rediscovery."
+      keywords: "lydia ellington, after the silence, emotional pop"
+    status: active
+    internal:
+      priority: 14
+      notes: null
+
+  - id: ply_a-way-back-trilogy_001
+    slug: a-way-back-trilogy
+    title: A Way Back Trilogy
+    subtitle: "A breakup told from different perspectives"
+    description: "A three-part emotional arc exploring silence, self-worth, and the courage to choose yourself — or choose your way back home."
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - a-way-back - trilogy.jpeg"
+      banner: "/assets/thumbnails/playlist-hero-a-way-back.jpeg"
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs:
+      - trk_lost-in-silence-from-a-way-back-horizon-sound
+      - trk_choosing-me-her-version-acoustic-pop-horizon-sound
+      - trk_choosing-me-his-version-pop-horizon-sound
+    featured_artists:
+      - art_lydia-ellington
+    seo:
+      title: "A Way Back Trilogy | Horizon Sound"
+      description: "A dual‑perspective emotional journey through heartbreak, identity, and reconciliation."
+      keywords: "a way back trilogy, emotional pop, breakup story"
+    status: active
+    internal:
+      priority: 15
+      notes: null
+
+  - id: ply_acoustic-singer-songwriter_001
+    slug: acoustic-singer-songwriter
+    title: Acoustic Singer-Songwriter
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - acoustic-singer‑songwriter.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Acoustic Singer-Songwriter | Horizon Sound"
+      description: "Honest, intimate acoustic storytelling with warm vocals and emotional depth."
+      keywords: "acoustic singer-songwriter, acoustic pop, storytelling songs"
+    status: active
+    internal:
+      priority: 16
+      notes: null
+
+  - id: ply_emotional-ballads_001
+    slug: emotional-ballads
+    title: Emotional Ballads
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - emotional ballads.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Emotional Ballads | Horizon Sound"
+      description: "Heartfelt ballads filled with vulnerability, soaring melodies, and emotional storytelling."
+      keywords: "emotional ballads, sad pop, emotional songs"
+    status: active
+    internal:
+      priority: 17
+      notes: null
+
+  - id: ply_modern-country_001
+    slug: modern-country
+    title: Modern Country
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - modern country.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Modern Country | Horizon Sound"
+      description: "Contemporary country with big hooks, heartfelt lyrics, and polished Nashville production."
+      keywords: "modern country, country pop, country playlist"
+    status: active
+    internal:
+      priority: 18
+      notes: null
+
+  - id: ply_electro-pop-dance-pop_001
+    slug: electro-pop-dance-pop
+    title: Electro Pop, Dance Pop
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - electro‑pop & dance‑pop.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Electro Pop & Dance Pop | Horizon Sound"
+      description: "High-energy pop with bright synths, dancefloor rhythms, and modern production."
+      keywords: "electro pop, dance pop, upbeat pop"
+    status: active
+    internal:
+      priority: 19
+      notes: null
+
+  - id: ply_90s-pop-rock_001
+    slug: 90s-pop-rock
+    title: 90's Pop-Rock
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - 90s pop & pop‑rock.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "90s Pop-Rock | Horizon Sound"
+      description: "Throwback pop-rock energy inspired by the iconic sound of the 1990s."
+      keywords: "90s pop rock, nostalgic pop, retro pop rock"
+    status: active
+    internal:
+      priority: 20
+      notes: null
+
+  - id: ply_southern-rock_001
+    slug: southern-rock
+    title: Southern Rock
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - southern rock.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Southern Rock | Horizon Sound"
+      description: "Gritty guitars, bold vocals, and the unmistakable swagger of southern rock."
+      keywords: "southern rock, gritty rock, americana rock"
+    status: active
+    internal:
+      priority: 21
+      notes: null
+
+  - id: ply_pop_001
+    slug: pop
+    title: Pop
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - pop.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Pop | Horizon Sound"
+      description: "Modern pop with catchy hooks, polished production, and wide emotional range."
+      keywords: "pop music, modern pop, pop playlist"
+    status: active
+    internal:
+      priority: 22
+      notes: null
+
+  - id: ply_80s-pop-rock_001
+    slug: 80s-pop-rock
+    title: 80's Pop-Rock
+    subtitle: null
+    description: null
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/playlist thumbnails/playlist - 80s rock & pop.jpg"
+      banner: null
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "80s Pop-Rock | Horizon Sound"
+      description: "Big drums, bright synths, and anthemic melodies inspired by the golden era of pop-rock."
+      keywords: "80s pop rock, retro pop, 80s playlist"
+    status: active
+    internal:
+      priority: 23
+      notes: null
+
+  - id: ply_rum-soaked-paradise_001
+    slug: rum-soaked-paradise
+    title: Rum Soacked Paradise
+    subtitle: ''
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: "/assets/thumbnails/playlist-rum-soaked-paradise-cody-sails.jpeg"
+      banner: ''
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Rum Soaked Paradise | Cody Sails"
+      description: "Sun‑drenched island vibes with Cody Sails’ signature tropical country-pop energy."
+      keywords: "cody sails, island country, tropical pop"
+    status: active
+    internal:
+      priority: 24
+      notes: null
+
+  - id: ply_irish-celtic_001
+    slug: irish-celtic
+    title: Irish Celtic
+    subtitle: ''
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: ''
+      banner: ''
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Irish Celtic | Horizon Sound"
+      description: "Traditional Celtic melodies blended with modern folk and cinematic influences."
+      keywords: "irish celtic, celtic folk, traditional irish music"
+    status: active
+    internal:
+      priority: 25
+      notes: null
+
+  - id: ply_lifes-a-kaleidoscope_001
+    slug: lifes-a-kaleidoscope
+    title: Life's a Kaleidoscope
+    subtitle: ''
+    description: ''
+    mood: []
+    genre_focus: []
+    artwork:
+      cover: ''
+      banner: ''
+    links:
+      spotify:
+      apple_music:
+      youtube_music:
+      amazon_music:
+      tidal:
+    songs: []
+    featured_artists: []
+    seo:
+      title: "Life’s a Kaleidoscope | Ascension Youth Choir"
+      description: "Bright, colorful, uplifting pop from the Ascension Youth Choir."
+      keywords: "ascension youth choir, uplifting pop, youth choir music"
+    status: active
+    internal:
+      priority: 26
+      notes: null
