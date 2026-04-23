@@ -15,7 +15,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_colorthesky_hs_001
+      - trk_betterdaysahead_hs_001
+      - trk_goldenhourgroov_hs_001
+      - trk_softlight_hs_001
+      - trk_openheartcity_hs_001
+      - trk_brightestpartof_hs_001
     featured_artists: []
     seo:
       title: "Pop Instrumentals | Horizon Sound"
@@ -42,7 +48,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_retrodrive_hs_001
+      - trk_nightfallcircui_hs_001
+      - trk_dreamwaveavenue_hs_001
+      - trk_memoryloop_hs_001
+      - trk_midnightascensi_hs_001
+      - trk_neonvanguard_hs_001
     featured_artists: []
     seo:
       title: "Synth & Retrowave Instrumentals | Horizon Sound"
@@ -69,7 +81,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_winterfire_hs_001
+      - trk_thefrozenovertu_hs_001
+      - trk_therisingstorm_hs_001
+      - trk_fireinthechoir_hs_001
+      - trk_glacierstorm_hs_001
+      - trk_thewinterrequie_hs_001
     featured_artists: []
     seo:
       title: "Orchestral Rock Instrumentals | Horizon Sound"
@@ -96,7 +114,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_holdingthelight_hs_001
+      - trk_thequietbetween_hs_001
+      - trk_stillwaters_hs_001
+      - trk_breathingslow_hs_001
+      - trk_aplacetorest_hs_001
+      - trk_fallingtowardth_hs_001
     featured_artists: []
     seo:
       title: "Emotional Piano Instrumentals | Horizon Sound"
@@ -123,7 +147,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_electricpulse_hs_001
+      - trk_breakthegravity_hs_001
+      - trk_shinethrough_hs_001
+      - trk_lightuptherunwa_hs_001
+      - trk_midnightvelocit_hs_001
+      - trk_neonrunner_hs_001
     featured_artists: []
     seo:
       title: "Workout & EDM Instrumentals | Horizon Sound"
@@ -151,12 +181,12 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_moments-between-moments
-      - trk_where-the-air-glows
-      - trk_echoes-of-tomorrow
-      - trk_the-space-we-keep
-      - trk_breathing-in-color
-      - trk_quiet-horizons
+      - trk_momentsbetweenm_hs_001
+      - trk_wheretheairglow_hs_001
+      - trk_echoesoftomorro_hs_001
+      - trk_thespacewekeep_hs_001
+      - trk_breathingincolo_hs_001
+      - trk_quiethorizons_hs_001
     featured_artists: []
     seo:
       title: "Cinematic & Ambient Instrumentals | Horizon Sound"
@@ -184,12 +214,12 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_neon-skyline
-      - trk_running-through-the-night
-      - trk_fire-in-the-wires
-      - trk_chasing-the-sparks
-      - trk_waves-of-blue
-      - trk_after-the-static
+      - trk_neonskyline_hs_001
+      - trk_runningthrought_hs_001
+      - trk_fireinthewires_hs_001
+      - trk_chasingthespark_hs_001
+      - trk_wavesofblue_hs_001
+      - trk_afterthestatic_hs_001
     featured_artists: []
     seo:
       title: "Electric Guitar Rock Instrumentals | Horizon Sound"
@@ -217,12 +247,12 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_sunlight-on-the-strings
-      - trk_wanderers-heart
-      - trk_chasing-the-daylight
-      - trk_running-toward-the-sun
-      - trk_the-way-home
-      - trk_letters-in-the-wind
+      - trk_sunlightonthest_hs_001
+      - trk_wanderersheart_hs_001
+      - trk_runningtowardth_hs_001
+      - trk_thewayhome_hs_001
+      - trk_lettersinthewin_hs_001
+      - trk_chasingthedayli_hs_001
     featured_artists: []
     seo:
       title: "Acoustic Guitar Instrumentals | Horizon Sound"
@@ -249,7 +279,10 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_sheriffforanigh_hs_001
+      - trk_backtoamarillo_hs_001
+      - trk_bottleonthetabl_hs_001
     featured_artists: []
     seo:
       title: "Classic Country | Horizon Sound"
@@ -276,7 +309,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_atouchoflight_hs_001
+      - trk_foreverinamomen_hs_001
+      - trk_heldinthemoment_hs_001
+      - trk_linesoflight_hs_001
+      - trk_themomentyoubre_hs_001
+      - trk_thewaywatermove_hs_001
     featured_artists: []
     seo:
       title: "Calm & Cinematic Instrumentals | Horizon Sound"
@@ -304,9 +343,9 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_someday-acoustic-pop-storytelling-horizon-sound
-      - trk_missing-stamp-emotional-acoustic-pop-horizon-sound
-      - trk_venice-waters-upbeat-acoustic-pop-adventure-horizon-sound
+      - trk_someday_hs_001
+      - trk_missingstamp_hs_001
+      - trk_venicewaters_hs_001
     featured_artists:
       - art_horizon-sound
     seo:
@@ -334,7 +373,9 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_riselikethunder_hs_001
+      - trk_nineteensummers_hs_001
     featured_artists: []
     seo:
       title: "Short Songs | Horizon Sound"
@@ -362,10 +403,10 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_before-midnight-the-midnight-saga-chapter-1-horizon-sound
-      - trk_midnight-mayhem-the-midnight-saga-chapter-2-horizon-sound
-      - trk_midnight-madness-the-midnight-saga-chapter-3-horizon-sound
-      - trk_after-midnight-the-midnight-saga-chapter-4-horizon-sound
+      - trk_beforemidnight_r_001
+      - trk_midnightmayhem_r_001
+      - trk_midnightmadness_r_001
+      - trk_aftermidnight_r_001
     featured_artists:
       - art_ravyn
     seo:
@@ -394,19 +435,19 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_1-the-quiet-after-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_2-borrowed-time-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_3-homesick-for-you-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_4-the-way-we-lied-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_5-paper-walls-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_6-half-of-me-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_7-if-you-d-asked-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_8-ghostlight-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_9-after-the-silence-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_10-saltwater-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_11-the-dress-i-never-wore-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_12-unsent-letters-performed-by-lydia-ellington-after-the-silence-horizon-sound
-      - trk_13-rise-again-performed-by-lydia-ellington-after-the-silence-horizon-sound
+      - trk_thequietafter_le_001
+      - trk_borrowedtime_le_001
+      - trk_homesickforyou_le_001
+      - trk_thewaywelied_le_001
+      - trk_paperwalls_le_001
+      - trk_halfofme_le_001
+      - trk_ifyoudasked_le_001
+      - trk_ghostlight_le_001
+      - trk_afterthesilence_le_001
+      - trk_saltwater_le_001
+      - trk_thedressineverw_le_001
+      - trk_unsentletters_le_001
+      - trk_riseagain_le_001
     featured_artists:
       - art_lydia-ellington
     seo:
@@ -435,9 +476,9 @@ playlists:
       amazon_music:
       tidal:
     songs:
-      - trk_lost-in-silence-from-a-way-back-horizon-sound
-      - trk_choosing-me-her-version-acoustic-pop-horizon-sound
-      - trk_choosing-me-his-version-pop-horizon-sound
+      - trk_lostinsilence_hs_001
+      - trk_choosingmeherve_hs_001
+      - trk_choosingmehisve_hs_001
     featured_artists:
       - art_lydia-ellington
     seo:
@@ -465,7 +506,11 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_allaroundthewor_hs_001
+      - trk_notsosmarthome_hs_001
+      - trk_fixeditmostlyri_hs_001
+      - trk_makinourwaytoca_hs_001
     featured_artists: []
     seo:
       title: "Acoustic Singer-Songwriter | Horizon Sound"
@@ -492,7 +537,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_nineteensummers_hs_001
+      - trk_imholdingon_hs_001
+      - trk_ohamber_hs_001
+      - trk_learningtolivea_hs_001
+      - trk_aquietlittlevoi_hs_001
+      - trk_nineteensummers_hs_001
     featured_artists: []
     seo:
       title: "Emotional Ballads | Horizon Sound"
@@ -519,7 +570,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_wildfire_hs_001
+      - trk_vegasinthesky_hs_001
+      - trk_themanbehindthe_hs_001
+      - trk_timecapsule_hs_001
+      - trk_alreadyoutthedo_hs_001
+      - trk_shessointome_hs_001
     featured_artists: []
     seo:
       title: "Modern Country | Horizon Sound"
@@ -546,7 +603,9 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_putyoudown_hs_001
+      - trk_midnightmayhem_r_001
     featured_artists: []
     seo:
       title: "Electro Pop & Dance Pop | Horizon Sound"
@@ -573,7 +632,9 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_newagain_hs_001
+      - trk_herestous_hs_001
     featured_artists: []
     seo:
       title: "90s Pop-Rock | Horizon Sound"
@@ -600,7 +661,10 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_onehellofaride_hs_001
+      - trk_gimmethreesteps_hs_001
+      - trk_imetheratabarro_hs_001
     featured_artists: []
     seo:
       title: "Southern Rock | Horizon Sound"
@@ -627,7 +691,14 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_becomingme_hs_001
+      - trk_risingup_hs_001
+      - trk_holdon_hs_001
+      - trk_dontletthesumme_hs_001
+      - trk_kaleidoscope_hs_001
+      - trk_holdonrevised_hs_001
+      - trk_keepthelighton_hs_001
     featured_artists: []
     seo:
       title: "Pop | Horizon Sound"
@@ -654,7 +725,12 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_totaleclipseyea_hs_001
+      - trk_untilthenightma_hs_001
+      - trk_riselikethunder_hs_001
+      - trk_neverleteachoth_hs_001
+      - trk_rusty_hs_001
     featured_artists: []
     seo:
       title: "80s Pop-Rock | Horizon Sound"
@@ -667,7 +743,7 @@ playlists:
 
   - id: ply_rum-soaked-paradise_001
     slug: rum-soaked-paradise
-    title: Rum Soacked Paradise
+    title: Rum Soaked Paradise
     subtitle: ''
     description: ''
     mood: []
@@ -681,7 +757,15 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_rumsoakedparadi_cs_001
+      - trk_saltontherim_cs_001
+      - trk_barefootandbuzz_cs_001
+      - trk_islandgirltroub_cs_001
+      - trk_leilani_cs_001
+      - trk_hightide_cs_001
+      - trk_sunburnedandsmi_cs_001
+      - trk_windinyoursails_cs_001
     featured_artists: []
     seo:
       title: "Rum Soaked Paradise | Cody Sails"
@@ -708,7 +792,13 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_acrosstheemeral_hs_001
+      - trk_fireinthefiddle_hs_001
+      - trk_thechasethrough_hs_001
+      - trk_thepathtodunmor_hs_001
+      - trk_journeytoskelli_hs_001
+      - trk_fiddleresatdawn_hs_001
     featured_artists: []
     seo:
       title: "Irish Celtic | Horizon Sound"
@@ -735,7 +825,17 @@ playlists:
       youtube_music:
       amazon_music:
       tidal:
-    songs: []
+    songs:
+      - trk_kaleidoscope_ayc_001
+      - trk_allaroundthewor_ayc_001
+      - trk_rusty_ayc_001
+      - trk_risingup_ayc_001
+      - trk_holdon_ayc_001
+      - trk_keepthelighton_ayc_001
+      - trk_betterthanbefor_ayc_001
+      - trk_thethingsthatst_ayc_001
+      - trk_totaleclipse_ayc_001
+      - trk_windinyoursails_ayc_001
     featured_artists: []
     seo:
       title: "Life’s a Kaleidoscope | Ascension Youth Choir"
