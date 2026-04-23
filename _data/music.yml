@@ -17,16 +17,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - upbeat vibrant‑pop
-      - 'vocals: big harmonies'
-      - vibrant energy
-      - 'production: hand claps'
-      - acoustic guitars
-      - light drums
-      - 'mood: nostalgic'
+      - nostalgic
       - uplifting
-      - feel‑good
       - celebratory
     description_html: >-
       <p>Kaleidoscope is the debut release from the Ascension Youth Choir — a
@@ -94,17 +86,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - bright global‑pop
-      - 'vocals: layered harmonies'
-      - energetic group vocals
-      - 'production: acoustic guitars'
-      - hand percussion
-      - upbeat drums
-      - 'mood: joyful'
+      - joyful
       - adventurous
       - uplifting
-      - connected
     description_html: >-
       <p>“All Around the World” is a joyful, globe‑spanning anthem from the
       Ascension Youth Choir — celebrating unity, connection, and the way young
@@ -171,14 +155,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - nostalgic pop
-      - 'vocals: gentle harmonies'
-      - heartfelt delivery
-      - 'production: acoustic guitars'
-      - soft percussion
-      - warm pads
-      - 'mood: sentimental'
+      - sentimental
       - comforting
       - reflective
       - hopeful
@@ -248,14 +225,6 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - inspirational pop
-      - 'vocals: strong group vocals'
-      - uplifting harmonies
-      - 'production: steady drums'
-      - bright keys
-      - layered claps
-      - 'mood: determined'
       - hopeful
       - bold
       - triumphant
@@ -325,16 +294,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - uplifting pop
-      - 'vocals: supportive harmonies'
-      - hopeful tone
-      - 'production: acoustic guitar'
-      - soft drums
-      - warm pads
-      - 'mood: reassuring'
       - heartfelt
-      - steady
       - optimistic
     description_html: >-
       <p>“Hold On” is an encouraging anthem from the Ascension Youth Choir — a
@@ -402,15 +362,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - emotional pop
-      - 'vocals: soft harmonies'
-      - comforting tone
-      - 'production: piano'
-      - light percussion
-      - airy synths
-      - 'mood: warm'
-      - reassuring
+      - warm
       - gentle
       - hopeful
     description_html: >-
@@ -479,17 +431,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - uplifting pop
-      - 'vocals: bright harmonies'
-      - energetic delivery
-      - 'production: acoustic guitar'
-      - upbeat drums
-      - shimmering pads
-      - 'mood: renewed'
+      - renewed
       - joyful
       - optimistic
-      - forward‑looking
     description_html: >-
       <p>“Better Than Before” is a sunrise‑bright anthem from the Ascension
       Youth Choir — celebrating growth, renewal, and the joy of becoming a
@@ -556,14 +500,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - emotional storytelling pop
-      - 'vocals: soft harmonies'
-      - reflective tone
-      - 'production: acoustic guitar'
-      - warm pads
-      - gentle percussion
-      - 'mood: nostalgic'
+      - nostalgic
       - heartfelt
       - thoughtful
       - emotional
@@ -633,15 +570,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - cinematic pop
-      - 'vocals: expansive harmonies'
-      - soaring energy
-      - 'production: big drums'
-      - atmospheric synths
-      - glowing textures
-      - 'mood: epic'
-      - awe‑struck
+      - epic
       - powerful
       - emotional
     description_html: >-
@@ -710,14 +639,6 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: color choir style'
-      - coastal‑inspired pop
-      - 'vocals: breezy harmonies'
-      - joyful tone
-      - 'production: acoustic guitar'
-      - light drums
-      - airy textures
-      - 'mood: free‑spirited'
       - adventurous
       - uplifting
       - hopeful
@@ -1153,19 +1074,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: tropical pop'
-      - mellow
-      - sunset‑warm
-      - 'vocals: smooth'
-      - relaxed
-      - coastal
-      - 'production: warm guitar'
-      - island percussion
-      - soft ambience
-      - 'mood: calm'
-      - dreamy
-      - escapist
+    moods: []
     description_html: >-
       <p>“Rum Soaked Paradise” is a laid‑back tropical pop track built on warm
       guitar, soft island percussion, and a relaxed, sunset‑bar atmosphere. The
@@ -1232,19 +1141,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: coastal pop'
-      - mellow
-      - beach‑bar
-      - 'vocals: relaxed'
-      - smooth
-      - sun‑worn
-      - 'production: acoustic guitar'
-      - light percussion
-      - gentle groove
-      - 'mood: unwound'
-      - easy
-      - content
+    moods: []
     description_html: >-
       <p>“Salt on the Rim” is a laid‑back coastal pop track built on warm
       acoustic guitar, easygoing percussion, and a smooth, beach‑bar groove. The
@@ -1314,19 +1211,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: coastal pop'
       - warm
-      - breezy
-      - golden‑hour
-      - 'vocals: relaxed'
-      - intimate
-      - sun‑soft delivery
-      - 'production: acoustic guitar'
-      - soft percussion
-      - gentle lift
-      - 'mood: carefree'
       - nostalgic
-      - peaceful
     description_html: >-
       <p>“Barefoot & Buzzed” is a warm, sun‑drenched coastal pop track built on
       breezy guitar strums, soft percussion, and a relaxed, late‑afternoon glow.
@@ -1398,19 +1284,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: tropical pop'
-      - upbeat
-      - flirty
-      - sun‑soaked
-      - 'vocals: playful'
       - warm
-      - relaxed
-      - 'production: bright guitars'
-      - rhythmic percussion
-      - coastal bounce
-      - 'mood: fun'
-      - chaotic
-      - romantic
     description_html: >-
       <p>“Island Girl Trouble” is a playful, sun‑soaked coastal pop track full
       of flirtation, chaos, and warm tropical energy. Driven by bright guitars,
@@ -1482,18 +1356,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: coastal ballad'
-      - soft
       - emotional
       - warm
-      - 'vocals: tender'
-      - sincere
-      - intimate
-      - 'production: acoustic layers'
-      - gentle percussion
-      - warm harmonies
-      - 'mood: nostalgic'
-      - romantic
+      - nostalgic
       - reflective
     description_html: >-
       <p>“Leilani” is a gentle, heartfelt coastal ballad built on soft acoustic
@@ -1563,17 +1428,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: nighttime coastal pop'
       - warm
-      - slow
-      - romantic
-      - 'vocals: soft'
-      - intimate
       - heartfelt
-      - 'production: mellow guitar'
-      - gentle percussion
-      - glowing ambience
-      - 'mood: peaceful'
       - reflective
     description_html: >-
       <p>“High Tide” is a warm, romantic coastal pop track that blends soft
@@ -1643,18 +1499,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: upbeat coastal pop'
-      - sunny
       - joyful
-      - 'vocals: bright'
       - warm
-      - relaxed
-      - 'production: acoustic guitar'
-      - light percussion
-      - breezy lift
-      - 'mood: happy'
-      - carefree
-      - radiant
     description_html: >-
       <p>“Sunburned & Smiling” is a bright, joyful coastal pop track full of
       sunshine, laughter, and carefree energy. With upbeat guitars, warm
@@ -1723,17 +1569,10 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: coastal folk‑pop'
       - warm
       - uplifting
-      - 'vocals: sincere'
       - comforting
-      - steady
-      - 'production: acoustic guitar'
-      - soft percussion
-      - emotional lift
-      - 'mood: hopeful'
-      - supportive
+      - hopeful
       - heartfelt
     description_html: >-
       <p>“Wind in Your Sails” is a heartfelt, uplifting coastal folk‑pop track
@@ -4742,20 +4581,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 1950s western swing'
       - warm
       - nostalgic
-      - comedic
-      - 'vocals: smooth male baritone'
-      - classic phrasing
-      - storytelling delivery
-      - 'production: acoustic guitar'
-      - upright bass
-      - brushed drums
-      - vintage reverb
-      - 'mood: humorous'
-      - dusty‑trail
-      - tall‑tale
       - cinematic
     description_html: >-
       <p>“Sheriff for a Night” is a playful, vintage‑inspired 1950s Western tune
@@ -4881,18 +4708,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 1950s western ballad'
       - warm
       - nostalgic
-      - 'vocals: smooth male baritone'
-      - gentle vibrato
-      - classic phrasing
-      - 'production: acoustic guitar'
-      - upright bass
-      - brushed drums
-      - vintage reverb
-      - 'mood: romantic'
-      - dusty‑trail
       - heartfelt
       - cinematic
     description_html: >-
@@ -5016,22 +4833,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: vintage country‑western'
-      - slow
-      - dusty
       - emotional
-      - 'vocals: warm baritone male'
-      - classic early‑country delivery
-      - 'production: mono recording'
-      - tube mic warmth
-      - light tape hiss
-      - steel guitar
-      - upright bass
-      - gentle western swing rhythm
-      - 'mood: heartbroken'
       - reflective
-      - lonely
-      - timeless
     description_html: >-
       <p>“Bottle on the Table” is a classic 1950s country‑western ballad steeped
       in heartbreak, dusty barroom atmosphere, and old‑school storytelling.
@@ -5178,17 +4981,11 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: warm'
+      - warm
       - uplifting
       - cinematic
-      - 'style: ambient instrumental'
-      - emotional score
-      - 'production: glowing pads'
-      - soft textures
-      - gentle lift
-      - 'mood: hopeful'
+      - hopeful
       - comforting
-      - serene
     description_html: >-
       <p>“A Touch of Light” is a gentle, uplifting instrumental built around
       soft glow, warm ambience, and a sense of quiet hope. Subtle chords and
@@ -5252,17 +5049,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: dreamy'
       - warm
       - cinematic
-      - 'style: ambient instrumental'
-      - emotional score
-      - 'production: soft pads'
-      - glowing textures
-      - slow movement
-      - 'mood: nostalgic'
-      - peaceful
-      - timeless
+      - nostalgic
     description_html: >-
       <p>“Forever in a Moment” is a warm, cinematic instrumental built around
       soft light, drifting textures, and a sense of timeless stillness. Gentle
@@ -5326,17 +5115,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: intimate'
-      - calm
-      - atmospheric
-      - 'style: ambient instrumental'
-      - cinematic minimalism
-      - 'production: soft textures'
-      - warm pads
-      - subtle movement
-      - 'mood: reflective'
-      - grounding
-      - serene
+      - reflective
     description_html: >-
       <p>“Held in the Moment” is a quiet, intimate instrumental built around
       soft ambience and gentle emotional lift. Light filters through the sound
@@ -5400,16 +5179,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: luminous'
-      - modern
-      - atmospheric
-      - 'style: ambient instrumental'
-      - cinematic texture
-      - 'production: light pulses'
-      - airy pads
-      - soft contrast
-      - 'mood: hopeful'
-      - spacious
+      - hopeful
       - uplifting
     description_html: >-
       <p>“Lines of Light” is a modern, atmospheric instrumental built around
@@ -5474,20 +5244,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: calm'
       - reflective
       - cinematic
-      - 'style: ambient instrumental'
-      - atmospheric
-      - modern score
-      - 'production: soft pads'
-      - airy textures
-      - subtle motion
-      - warm tonal palette
-      - 'mood: peaceful'
-      - introspective
-      - luminous
-      - grounding
     description_html: >-
       <p>“The Moment You Breathe” is a calm, cinematic instrumental built around
       soft ambient textures, gentle movement, and a quiet emotional lift. Warm
@@ -5553,18 +5311,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: calm'
-      - fluid
-      - atmospheric
-      - 'style: ambient instrumental'
       - cinematic
       - reflective
-      - 'production: soft pads'
-      - gentle motion
-      - warm tonal palette
-      - 'mood: peaceful'
-      - meditative
-      - soothing
     description_html: >-
       <p>“The Way Water Moves” is a calm, flowing instrumental built around soft
       textures, gentle motion, and a warm, reflective atmosphere. Subtle waves
@@ -5629,18 +5377,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: warm acoustic‑pop'
       - nostalgic
       - hopeful
-      - 'vocals: bright female lead'
-      - soft harmonies
-      - expressive phrasing
-      - 'production: acoustic guitars'
-      - light percussion
-      - gentle lift
-      - cinematic warmth
-      - 'mood: innocent'
-      - dreamy
       - heartfelt
       - reflective
     description_html: >-
@@ -5772,20 +5510,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional acoustic‑pop'
-      - soft
       - reflective
-      - 'vocals: warm female lead'
-      - intimate delivery
-      - heartfelt phrasing
-      - 'production: piano'
-      - acoustic guitar
-      - soft strings
-      - cinematic melancholy
-      - 'mood: nostalgic'
-      - aching
-      - honest
-      - bittersweet
+      - nostalgic
     description_html: >-
       <p>“Missing Stamp” is an emotional acoustic‑pop ballad with soft piano,
       warm guitars, and expressive female vocals. The production leans intimate
@@ -5926,19 +5652,11 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: upbeat acoustic‑pop'
       - warm
       - adventurous
-      - 'vocals: bright female lead'
-      - expressive
       - joyful
-      - 'production: acoustic guitars'
-      - light drums
-      - piano
-      - cinematic strings
-      - 'mood: nostalgic'
+      - nostalgic
       - uplifting
-      - feel‑good
       - celebratory
     description_html: >-
       <p>“Venice Waters” is a warm, upbeat acoustic‑pop track with bright female
@@ -6083,8 +5801,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'full track: https://youtu.be/g_az5b9ssfq'
+    moods: []
     description_html: >-
       <p>A 17-second chorus moment from Rise Like Thunder - cinematic rock
       energy and emotional lift.</p>
@@ -6144,8 +5861,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'full track: https://youtu.be/r16qskxeci4'
+    moods: []
     description_html: <p>A 14-second moment from Nineteen Summers - Emotional Acoustic Pop.</p>
     lyrics_html: null
     lyrics_excerpt: null
@@ -6203,21 +5919,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: cinematic pop'
-      - neon‑lit
-      - atmospheric
-      - anticipatory
-      - 'vocals: smooth female lead'
-      - soft intensity
-      - late‑night tone
-      - 'production: warm synths'
-      - steady drums
-      - glowing textures
-      - 'mood: curious'
-      - electric
-      - suspended
-      - ready‑to‑ignite
+    moods: []
     description_html: >-
       <p>“Before Midnight” opens The Midnight Saga with a warm, cinematic blend
       of pop, synth, and late‑night atmosphere. Soft neon textures, steady
@@ -6354,20 +6056,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: high‑energy pop'
-      - neon chaos
-      - late‑night adrenaline
-      - 'vocals: bold female lead'
-      - energetic phrasing
-      - electric delivery
-      - 'production: bright synths'
-      - sharp drums
-      - rhythmic drive
-      - 'mood: wild'
-      - reckless
-      - euphoric
-      - fast‑moving
+    moods: []
     description_html: >-
       <p>“Midnight Mayhem” explodes into the second chapter of The Midnight Saga
       with high‑energy pop, pulsing rhythm, and neon‑drenched chaos. Bright
@@ -6495,19 +6184,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: hypnotic pop'
-      - neon swirl
-      - dreamlike intensity
-      - 'vocals: expressive female lead'
-      - drifting and powerful
-      - 'production: glowing synths'
-      - pulsing drums
-      - immersive textures
-      - 'mood: dizzy'
-      - electric
-      - surreal
-      - all‑consuming
+    moods: []
     description_html: >-
       <p>“Midnight Madness” dives into the third chapter of The Midnight Saga
       with a hypnotic blend of pop, synth, and swirling late‑night energy. The
@@ -6636,19 +6313,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: cinematic pop'
       - reflective
       - warm
-      - late‑night calm
-      - 'vocals: heartfelt female lead'
-      - soft and steady
-      - 'production: warm pads'
-      - soft synths
-      - steady drums
-      - 'mood: peaceful'
-      - introspective
-      - resolved
-      - sunrise‑ready
     description_html: >-
       <p>“After Midnight” closes The Midnight Saga with a reflective, cinematic
       pop sound that feels like the quiet after the storm. Soft synths, warm
@@ -6782,22 +6448,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: slow'
       - cinematic
       - emotional
       - reflective
-      - 'vocals: warm female lead'
-      - rich tone
-      - smooth vibrato
-      - intimate phrasing
-      - 'production: soft piano'
-      - warm strings
-      - subtle drums
-      - atmospheric reverb
-      - 'mood: heartbreak‑after‑the‑storm'
-      - heavy
-      - introspective
-      - quietly devastating
     description_html: >-
       <p>“The Quiet After” is a slow, cinematic pop‑soul ballad built around
       warm expressive female vocals, intimate close‑mic delivery, and a soft,
@@ -6943,19 +6596,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: tender'
       - nostalgic
-      - bittersweet
-      - 'vocals: warm female lead'
-      - smooth vibrato
-      - emotional phrasing
-      - 'production: warm piano'
-      - soft strings
-      - light drums
-      - cinematic glow
-      - 'mood: reflective'
-      - aching
-      - quietly hopeful
+      - reflective
     description_html: >-
       <p>“Borrowed Time” is a tender, mid‑tempo emotional pop ballad shaped by
       warm expressive female vocals, soft piano, gentle strings, and a nostalgic
@@ -7098,19 +6740,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: soft'
       - nostalgic
       - reflective
-      - 'vocals: warm female lead'
-      - intimate phrasing
-      - emotional tone
-      - 'production: gentle piano'
-      - warm pads
-      - subtle strings
-      - airy reverb
-      - 'mood: longing'
-      - introspective
-      - quietly emotional
     description_html: >-
       <p>“Homesick for You” is a soft, reflective emotional pop ballad built
       around gentle piano, warm pads, subtle strings, and a spacious, nostalgic
@@ -7252,19 +6883,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: slow'
-      - heavy
       - emotional
-      - 'vocals: warm female lead'
-      - rich tone
-      - intimate delivery
-      - 'production: soft piano'
-      - warm strings
-      - light drums
-      - atmospheric reverb
-      - 'mood: aching'
       - reflective
-      - quietly devastating
     description_html: >-
       <p>“The Way We Lied” is a slow, aching emotional pop ballad shaped by warm
       expressive female vocals, soft piano, warm strings, and spacious reverb.
@@ -7406,19 +7026,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: vulnerable'
-      - intimate
       - cinematic
-      - 'vocals: warm female lead'
-      - smooth vibrato
-      - emotional phrasing
-      - 'production: soft piano'
-      - warm strings
-      - airy pads
-      - light drums
-      - 'mood: fragile‑to‑soaring'
-      - honest
-      - cathartic
     description_html: >-
       <p>“Paper Walls” is a vulnerable emotional pop ballad built around warm
       expressive female vocals, soft piano, warm strings, airy pads, and a
@@ -7564,18 +7172,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: rising'
       - bold
       - emotional
-      - 'vocals: warm female lead'
-      - expressive phrasing
-      - powerful lift
-      - 'production: piano'
-      - warm strings
-      - steady drums
-      - cinematic rise
-      - 'mood: empowering'
-      - self‑reclaiming
       - triumphant
     description_html: >-
       <p>“Half of Me” is an empowering emotional pop ballad built on warm
@@ -7719,19 +7317,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: slow'
       - cinematic
       - emotional
-      - 'vocals: warm female lead'
-      - intimate delivery
-      - aching tone
-      - 'production: soft piano'
-      - warm strings
-      - subtle drums
-      - atmospheric reverb
-      - 'mood: regretful'
-      - tender
-      - heartbreaking
     description_html: >-
       <p>“If You’d Asked” is a slow, aching emotional pop ballad shaped by warm
       expressive female vocals, soft piano, warm strings, subtle drums, and
@@ -7946,19 +7533,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: haunting'
-      - glowing
       - cinematic
-      - 'vocals: warm female lead'
-      - rich tone
-      - emotional phrasing
-      - 'production: soft piano'
-      - warm strings
-      - subtle percussion
-      - atmospheric reverb
-      - 'mood: nostalgic'
-      - theatrical
-      - bittersweet
+      - nostalgic
     description_html: >-
       <p>“Ghostlight” is a haunting, theatrical emotional pop ballad built
       around warm expressive female vocals, soft piano, warm strings, subtle
@@ -8102,19 +7678,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: calm'
       - reflective
       - cinematic
-      - 'vocals: warm female lead'
-      - smooth vibrato
-      - intimate phrasing
-      - 'production: soft piano'
-      - warm strings
-      - airy pads
-      - gentle drums
-      - 'mood: healing'
       - uplifting
-      - quietly powerful
     description_html: >-
       <p>“After the Silence” is a calm, reflective emotional pop ballad shaped
       by warm expressive female vocals, soft piano, warm strings, airy pads, and
@@ -8253,19 +7819,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: flowing'
       - emotional
       - cinematic
-      - 'vocals: warm female lead'
-      - rich tone
-      - expressive phrasing
-      - 'production: soft piano'
-      - warm strings
-      - airy pads
-      - gentle drums
-      - 'mood: cathartic'
-      - cleansing
-      - tender
     description_html: >-
       <p>“Saltwater” is a flowing, tidal emotional pop ballad built on warm
       expressive female vocals, soft piano, warm strings, airy pads, and gentle
@@ -8407,19 +7962,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: slow'
       - emotional
       - cinematic
-      - 'vocals: warm female lead'
-      - smooth vibrato
-      - intimate delivery
-      - 'production: soft piano'
-      - warm strings
-      - light drums
-      - airy pads
-      - 'mood: reflective'
-      - tender
-      - bittersweet
+      - reflective
     description_html: >-
       <p>“The Dress I Never Wore” is a slow, aching emotional pop ballad shaped
       by warm expressive female vocals, soft piano, warm strings, light drums,
@@ -8561,19 +8106,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: intimate'
-      - confessional
-      - late‑night
-      - 'vocals: warm female lead'
-      - smooth vibrato
-      - emotional phrasing
-      - 'production: soft piano'
-      - warm strings
-      - airy pads
-      - subtle drums
-      - 'mood: tender'
       - reflective
-      - quietly cathartic
     description_html: >-
       <p>“Unsent Letters” is an intimate, confessional emotional pop ballad
       built around warm expressive female vocals, soft piano, gentle strings,
@@ -8718,22 +8251,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: cinematic pop'
       - emotional
       - uplifting
       - triumphant
-      - 'vocals: warm expressive female lead'
-      - smooth vibrato
-      - intimate phrasing
-      - 'production: piano'
-      - strings
-      - steady drums
-      - airy pads
-      - cinematic build
-      - 'mood: empowering'
-      - victorious
-      - resilient
-      - transformative
     description_html: >-
       <p>“Rise Again” is a cinematic, empowering emotional pop ballad built
       around warm expressive female vocals, rich tone, smooth vibrato, and
@@ -8880,20 +8400,10 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: acoustic‑pop'
       - warm
       - emotional
       - reflective
-      - 'vocals: expressive female lead + soft male duet'
-      - airy harmonies
-      - 'production: bright acoustic guitar'
-      - light indie‑pop percussion
-      - warm bass
-      - clean modern polish
-      - 'mood: bittersweet'
-      - honest
       - gentle
-      - quietly hopeful
     description_html: >-
       <p>“Lost in Silence” is a warm, modern acoustic‑pop duet built on bright
       guitar, soft indie‑pop percussion, and a smooth, uplifting groove. The
@@ -9019,21 +8529,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: coastal acoustic‑pop'
-      - breezy
       - warm
       - uplifting
-      - 'vocals: soft female lead'
-      - airy harmonies
-      - smile‑in‑the‑voice delivery
-      - 'production: bright acoustic guitar'
-      - brushed snare
-      - subtle shaker
-      - clean modern polish
-      - 'mood: hopeful'
-      - light
-      - self‑reclaiming
-      - fresh
+      - hopeful
     description_html: >-
       <p>“Choosing Me (Her Version)” is a warm, breezy acoustic‑pop track with
       soft female vocals, bright rhythmic guitar, and a sunny coastal‑pop
@@ -9163,21 +8661,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: modern pop‑rock'
-      - energetic
       - heartfelt
       - uplifting
-      - 'vocals: clean male lead'
-      - warm tone
-      - tight harmonies
-      - 'production: bright electric guitars'
-      - punchy drums
-      - groovy bass
-      - polished mix
-      - 'mood: honest'
-      - determined
       - optimistic
-      - empowering
     description_html: >-
       <p>“Choosing Me (His Version)” is an upbeat modern pop track with bright
       electric guitars, punchy drums, and a confident male vocal. The production
@@ -9305,22 +8791,10 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: bright acoustic pop'
-      - breezy
-      - youthful
       - heartfelt
-      - 'vocals: warm female lead'
-      - airy harmonies
-      - emotional delivery
-      - 'production: acoustic guitars'
-      - handclaps
-      - tambourine
-      - light percussion
-      - wide stereo layers
-      - 'mood: nostalgic'
+      - nostalgic
       - hopeful
       - adventurous
-      - vulnerable
     description_html: >-
       <p>“All Around the World” is a high‑energy acoustic‑pop journey with
       bright guitars, handclaps, warm harmonies, and youthful female vocals.
@@ -9449,22 +8923,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: upbeat folk‑country'
-      - playful
-      - mischievous
-      - energetic
-      - 'vocals: expressive male lead'
-      - comedic timing
-      - crisp delivery
-      - 'production: acoustic guitar'
-      - light percussion
-      - subtle tech sound effects
-      - warm mix
-      - 'mood: fun'
-      - chaotic
-      - exasperated
-      - clever
+    moods: []
     description_html: >-
       <p>“Not So Smart Home” is an upbeat, humorous folk‑country romp packed
       with playful acoustic guitar, light percussion, and a bouncy, mischievous
@@ -9657,22 +9116,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: rowdy honky‑tonk'
-      - comedic
-      - upbeat
-      - chaotic
-      - 'vocals: exaggerated male lead'
-      - humorous delivery
-      - high‑energy personality
-      - 'production: twangy electric guitars'
-      - lively drums
-      - playful fiddle
-      - barroom mix
-      - 'mood: fun'
-      - reckless
-      - lighthearted
-      - mischievous
+    moods: []
     description_html: >-
       <p>“Fixed It Mostly Right” is a fast, rowdy country‑comedy romp packed
       with honky‑tonk swagger, twangy electric guitars, lively drums, and
@@ -9797,18 +9241,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: bright pop-folk'
-      - summery
       - nostalgic
-      - upbeat
-      - 'vocals: energetic female lead'
-      - youthful tone
-      - emotional clarity
-      - 'production: acoustic guitars'
-      - modern pop drums
-      - shimmering harmonies
-      - clean stereo mix
-      - 'mood: adventurous'
+      - adventurous
       - warm
       - reflective
       - joyful
@@ -9936,12 +9370,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional acoustic‑pop'
       - nostalgic
-      - bittersweet
       - heartfelt
-      - 'vocals: intimate'
-      - expressive
       - warm
     description_html: >-
       <p>“Nineteen Summers” is a warm acoustic‑pop track filled with emotional
@@ -10105,13 +9535,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional ballad'
-      - intimate
       - cinematic
       - heartfelt
-      - 'vocals: warm'
-      - expressive
-      - vulnerable
+      - warm
     description_html: >-
       <p>“I’m Holding On” is an emotional piano ballad built on warm, intimate
       vocals, soft dynamics, and a heartbeat‑like rhythm that grows with each
@@ -10236,20 +9662,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional pop'
       - nostalgic
-      - acoustic‑leaning
       - cinematic
-      - 'vocals: warm female lead'
-      - expressive phrasing
-      - heartfelt delivery
-      - 'production: acoustic guitar'
-      - soft piano
-      - light drums
-      - subtle country‑pop color
-      - swelling chorus
-      - 'mood: tender'
-      - bittersweet
       - comforting
       - reflective
     description_html: >-
@@ -10390,23 +9804,11 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: soft electro‑pop'
-      - dreamy
       - reflective
       - emotional
-      - 'vocals: warm'
-      - breathy female lead
-      - gentle vibrato
-      - intimate delivery
-      - 'production: atmospheric pads'
-      - subtle synths
-      - light percussion
-      - smooth harmonies
-      - spacious mix
-      - 'mood: hopeful'
-      - vulnerable
+      - warm
+      - hopeful
       - uplifting
-      - quietly powerful
     description_html: >-
       <p>“Learning to Live Again” is a soft, emotional electro‑pop ballad shaped
       by warm synth textures, airy pads, and a breathy, intimate female vocal.
@@ -10547,12 +9949,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: empowering pop'
       - uplifting
       - emotional
-      - modern
-      - 'vocals: bright'
-      - expressive female lead
     description_html: >-
       <p>“A Quiet Little Voice” is an upbeat, empowering pop track with a
       bright, confident female vocal and modern, energetic production. Crisp
@@ -10698,12 +10096,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional acoustic‑pop'
       - nostalgic
-      - bittersweet
       - heartfelt
-      - 'vocals: intimate'
-      - expressive
       - warm
     description_html: >-
       <p>“Nineteen Summers” is a warm acoustic‑pop track filled with emotional
@@ -10868,20 +10262,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: fierce'
-      - empowering
-      - modern country
       - cinematic
-      - 'vocals: bold female lead'
-      - emotional grit
-      - powerhouse delivery
-      - 'production: big drums'
-      - electric guitars
-      - dramatic lift
-      - nashville polish
-      - 'mood: unstoppable'
-      - fiery
-      - defiant
       - triumphant
     description_html: >-
       <p>“Wildfire” is a fierce, modern‑country power anthem driven by bold
@@ -11033,24 +10414,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: country‑pop party'
-      - rowdy
-      - fun
-      - chaotic
-      - 'vocals: male lead'
-      - swagger
-      - humor
-      - storytelling
-      - 'production: acoustic guitar'
-      - stomps
-      - claps
-      - fiddle accents
-      - bright modern mix
-      - 'mood: energetic'
-      - comedic
-      - feel‑good
-      - high‑spirited
+    moods: []
     description_html: >-
       <p>“Vegas in the Sky” is an upbeat country‑pop party anthem that turns a
       routine flight into a full‑blown mid‑air celebration. Acoustic guitar,
@@ -11122,23 +10486,11 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 90s country'
       - warm
       - nostalgic
-      - small‑town
-      - 'vocals: conversational male lead'
       - heartfelt
-      - steady and sincere
-      - 'production: acoustic guitars'
-      - fiddle
-      - pedal steel
-      - brushed drums
-      - clean electric fills
-      - simple bass groove
-      - 'mood: comforting'
+      - comforting
       - reflective
-      - grounded
-      - quietly uplifting
     description_html: >-
       <p>“The Man Behind the Bar” is a heartfelt 90s‑country story song filled
       with warm acoustic guitars, light twang, steady brushed drums, and the
@@ -11310,19 +10662,10 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: nostalgic'
+      - nostalgic
       - warm
       - emotional
       - reflective
-      - 'vocals: intimate male lead'
-      - soft delivery
-      - storytelling tone
-      - 'production: acoustic foundation'
-      - gentle pop elements
-      - subtle cinematic lift
-      - 'mood: tender'
-      - memory‑rich
-      - quietly romantic
       - heartfelt
     description_html: >-
       <p>“Time Capsule” is a warm, nostalgic storytelling track built around
@@ -11479,20 +10822,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: modern country'
-      - mid‑tempo
       - emotional
       - reflective
-      - 'vocals: sincere male lead'
-      - warm tone
-      - soft harmonies in the chorus
-      - 'production: acoustic‑driven'
-      - subtle electric fills
-      - clean nashville mix
-      - 'mood: wounded'
-      - resigned
-      - honest
-      - quietly powerful
     description_html: >-
       <p>“Already Out the Door” is a modern country heartbreak story built on
       warm acoustic guitars, steady mid‑tempo drums, and clean Nashville‑style
@@ -11637,21 +10968,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: modern country'
       - warm
-      - romantic
-      - feel‑good
-      - 'vocals: charming male lead'
-      - flirty
-      - expressive
-      - slightly self‑deprecating
-      - 'production: acoustic guitars'
-      - snaps
-      - soft electric layers
-      - smooth upbeat groove
-      - 'mood: sweet'
       - uplifting
-      - radio‑ready
     description_html: >-
       <p>“She’s So Into Me” is a warm, modern country love song built on breezy
       acoustic guitars, light snaps, soft electric layers, and a smooth, upbeat
@@ -11725,21 +11043,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: high‑energy electro‑pop'
-      - chaotic
       - bold
-      - rebellious
-      - 'vocals: fierce female lead'
-      - talk‑sing swagger
-      - glitchy vocal chops
-      - 'production: distorted synth bass'
-      - punchy drums
-      - stutter fx
-      - explosive drops
-      - 'mood: wild'
-      - unfiltered
-      - confident
-      - late‑night adrenaline
     description_html: >-
       <p>“Put You Down” is a wild, high‑voltage electro‑pop banger packed with
       fierce attitude, distorted synth bass, and chaotic late‑night party
@@ -11884,22 +11188,7 @@ tracks:
       primary: null
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: chaotic electro‑pop'
-      - neon
-      - high‑energy
-      - wild
-      - 'vocals: talk‑sing swagger'
-      - raspy edges
-      - attitude‑heavy
-      - 'production: rubbery synths'
-      - heavy bass
-      - stomp‑claps
-      - cosmic fx
-      - 'mood: explosive'
-      - reckless
-      - glossy
-      - late‑night
+    moods: []
     description_html: >-
       <p>“Midnight Mayhem” is a high‑energy electro‑pop riot with bold,
       attitude‑soaked female vocals, talk‑sing swagger, and chaotic vocal chops.
@@ -12027,21 +11316,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 90s pop revival'
-      - high‑energy
       - emotional
-      - empowering
-      - 'vocals: strong female lead'
-      - expressive phrasing
-      - confident delivery
-      - 'production: bright synths'
-      - tight drums
-      - rhythmic build
-      - modern pop polish
-      - 'mood: sad‑to‑strong'
-      - cathartic
       - bold
-      - self‑reclaiming
     description_html: >-
       <p>“New Again” is a high‑energy 90s‑inspired pop track driven by strong
       female vocals, pulsing rhythm, and a bold emotional edge. Bright synths,
@@ -12168,20 +11444,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: anthemic 90s rock'
-      - gritty
       - emotional
-      - communal
-      - 'vocals: controlled female grit'
-      - gang vocals
-      - spoken intro
-      - shout‑along chorus
-      - 'production: soaring guitars'
-      - punchy drums
-      - crowd‑chant bridge
-      - raw but polished mix
-      - 'mood: triumphant'
-      - resilient
+      - triumphant
       - heartfelt
       - uplifting
     description_html: >-
@@ -12321,14 +11585,7 @@ tracks:
       primary: southern-rock
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: southern rock'
-      - blues‑rock
-      - gritty
-      - energetic
-      - rebellious
-      - 'vocals: raw'
-      - swagger‑filled male lead
+    moods: []
     description_html: >-
       <p>“One Hell of a Ride” is a gritty southern‑rock anthem packed with
       swagger, highway‑freedom energy, and live‑show intensity. Crunchy
@@ -12447,21 +11704,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 70s southern rock'
-      - rowdy
-      - gritty
-      - high‑energy
-      - 'vocals: male lead'
-      - storytelling grit
-      - playful tension
-      - 'production: bluesy electric guitars'
-      - shuffle drums
-      - swaggering bass
-      - harmonized leads
-      - 'mood: urgent'
-      - humorous
       - cinematic
-      - chaotic‑night‑gone‑wrong
     description_html: >-
       <p>“Gimme Three Steps, and I’m Gone” is a high‑energy 70s‑style
       Southern‑rock chase through barroom chaos, gritty electric guitars, and
@@ -12607,18 +11850,7 @@ tracks:
       primary: southern-rock
       secondary: null
       tertiary: null
-    moods:
-      - 'vocals: raw male lead'
-      - attitude‑driven phrasing
-      - emotional grit
-      - 'production: bluesy guitars'
-      - driving drums
-      - barroom textures
-      - modern rock polish
-      - 'mood: chaotic‑to‑connected'
-      - rowdy
-      - defiant
-      - emotionally charged
+    moods: []
     description_html: >-
       <p>“Barroom Brawl” is a gritty, high‑energy Southern rock track packed
       with swaggering guitars, driving drums, and cinematic outlaw tension.
@@ -12775,12 +12007,7 @@ tracks:
       primary: pop
       secondary: null
       tertiary: null
-    moods:
-      - 'vibe: emotional pop'
-      - romantic
-      - bright
-      - energetic
-      - 'vocals: expressive female lead with layered harmonies'
+    moods: []
     description_html: >-
       <p>“Becoming Me” is a fast, upbeat emotional‑pop track with bright
       expressive female vocals, driving drums, rhythmic bass, shimmering synths,
@@ -12911,12 +12138,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: energetic pop‑rock'
       - emotional
       - uplifting
-      - anthemic
-      - 'vocals: soaring male + female leads'
-      - expressive harmonies
     description_html: >-
       <p>“Rising Up” is an energetic emotional pop‑rock duet driven by bright
       synths, clean electric guitar, and powerful male/female vocals. The track
@@ -13046,13 +12269,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: upbeat pop'
-      - nostalgic 90s energy
-      - motivational
-      - bright
-      - 'vocals: warm'
-      - expressive
-      - confident
+      - warm
     description_html: >-
       <p>“Hold On” is a bright, 90s‑inspired pop track built on warm acoustic
       layers, steady rhythmic drums, and uplifting female vocals. Smooth synths,
@@ -13175,13 +12392,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: bright pop'
-      - summery
       - nostalgic
-      - romantic
-      - 'vocals: emotional'
+      - emotional
       - warm
-      - expressive
     description_html: >-
       <p>“Don’t Let the Summer End” is a bright pop track with warm acoustic
       elements, upbeat summer energy, and emotional female vocals. Catchy,
@@ -13297,21 +12510,10 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional acoustic‑pop'
       - warm
       - reflective
       - uplifting
-      - 'vocals: intimate female lead'
-      - expressive phrasing
-      - soft harmonies
-      - 'production: piano‑led'
-      - light acoustic guitar
-      - gentle percussion
-      - modern singer‑songwriter polish
-      - 'mood: hopeful'
-      - introspective
-      - poetic
-      - quietly empowering
+      - hopeful
     description_html: >-
       <p>“Kaleidoscope” is a warm, heartfelt acoustic‑pop track built on gentle
       piano, light guitar, and intimate female vocals. The production stays soft
@@ -13431,20 +12633,7 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: upbeat 90s‑pop revival'
-      - acoustic‑pop warmth
-      - motivational energy
-      - 'vocals: bright female lead'
-      - expressive phrasing
-      - uplifting delivery
-      - 'production: warm acoustics'
-      - rhythmic drums
-      - smooth synths
-      - light guitar textures
-      - 'mood: hopeful'
-      - determined
-      - empowering
-      - forward‑moving
+      - hopeful
     description_html: >-
       <p>“Hold On (Revised)” is an upbeat 90s‑inspired pop track driven by
       bright female vocals, steady rhythmic drums, warm acoustic layers, and a
@@ -13571,21 +12760,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 90s pop revival'
-      - upbeat
-      - motivational
-      - feel‑good
-      - 'vocals: bright female lead'
-      - warm tone
-      - expressive phrasing
-      - 'production: acoustic layers'
-      - steady drums
-      - shimmering synths
-      - modern pop clarity
-      - 'mood: hopeful'
-      - energetic
+      - hopeful
       - uplifting
-      - resilient
     description_html: >-
       <p>“Keep the Light On” is an upbeat 90s‑inspired pop track built on bright
       female vocals, steady rhythmic drums, warm acoustic guitar layers, and
@@ -13709,12 +12885,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 80s ballad'
       - emotional
       - cinematic
-      - empowering
-      - 'vocals: warm'
-      - expressive female rock vocal with controlled rasp
+      - warm
     description_html: >-
       <p>“Total Eclipse - Years Later” is paying tribute to the story in a Total
       Eclipse of the Heart. It tries to imagine where she might be years later.
@@ -13869,8 +13042,7 @@ tracks:
       primary: 80s-rock-pop
       secondary: null
       tertiary: null
-    moods:
-      - about the song
+    moods: []
     description_html: >-
       <p>"Until the Nightmare Ends" is a cinematic 80s‑inspired synthwave track
       built for fans of dark nostalgia, neon tension, and the Stranger Things
@@ -14027,12 +13199,8 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: 80s arena rock'
-      - energetic
       - triumphant
-      - 'vocals: powerful'
-      - raspy
-      - harmony‑rich
+      - powerful
     description_html: >-
       <p>“Rise Like Thunder” is an electrifying 1980s‑inspired rock anthem
       featuring powerful raspy female vocals, soaring harmonies, and driving
@@ -14163,20 +13331,9 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: up‑tempo 80s synth‑rock'
-      - energetic
       - bold
       - uplifting
-      - 'vocals: confident female lead'
-      - clean delivery
-      - emotional clarity
-      - 'production: pulsing synth bass'
-      - gated‑reverb drums
-      - melodic electric fills
-      - wide arena mix
-      - 'mood: triumphant'
-      - passionate
-      - determined
+      - triumphant
       - hopeful
     description_html: >-
       <p>“Never Let Each Other Down” is an up‑tempo 80s‑inspired synth‑rock
@@ -14313,21 +13470,11 @@ tracks:
       secondary: null
       tertiary: null
     moods:
-      - 'vibe: emotional 80s pop'
       - warm
       - nostalgic
       - uplifting
-      - 'vocals: heartfelt female lead'
-      - airy harmonies
-      - expressive delivery
-      - 'production: shimmering synth pads'
-      - chorus‑washed guitars
-      - steady pulse
-      - cinematic reverb
-      - 'mood: hopeful'
-      - tender
+      - hopeful
       - comforting
-      - quietly triumphant
     description_html: >-
       <p>“Rusty” is an emotional 80s‑inspired pop ballad built on warm
       shimmering synth pads, bright chorus‑soaked guitars, and a steady,
