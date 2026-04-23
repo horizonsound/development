@@ -33,8 +33,8 @@ artists:
         span: 1
       - src: ../assets/artists/ascension-youth-choir/AYC14.jpg
         span: 2
-    albums: []
-    singles: []
+    releases: 
+      - rel_lifes-a-kaleidoscope_ayc
     links:
       website:
       apple_music:
@@ -78,15 +78,8 @@ artists:
         span: 1
       - src: ../assets/artists/cody-sails/cody1.jpg
         span: 1
-    albums:
-      - slug: rum-soaked-paradise-cody-sails
-        year: 2025
-        description: 
-        links:
-          apple_music: 
-          spotify: 
-          youtube_music:     
-    singles: []
+    releases: 
+      - rel_rum-soaked-paradise_cs
     links:
       website: https://www.horizonsound.org/development/artists/cody-sails.html
       apple_music: https://music.apple.com/us/artist/cody-sails/1890255704
@@ -140,8 +133,7 @@ artists:
         span: 1
       - src: ../assets/artists/ellie-hale/ellie-hale37.jpg
         span: 1
-    albums:
-    singles: []
+    releases: []
     links:
       website: https://www.horizonsound.org/development/artists/ellie-hale.html
       apple_music: 
@@ -183,15 +175,8 @@ artists:
         span: 1
       - src: ../assets/artists/lydia-ellington/lydia39.jpg
         span: 1  
-    albums:
-      - slug: after-the-silence-performed-by-lydia-ellington
-        year: 2025
-        description: Cinematic pop moments about growth, hope, and emotional clarity.
-        links:
-          apple_music: https://music.apple.com/us/album/after-the-silence/1889528896
-          spotify: https://open.spotify.com/album/2mP8NXfE8Uhp68raM2iNM1?si=eVZAzRckQ6inVch5bjJNfw
-          youtube_music: https://www.youtube.com/watch?v=GtGKAZdE0Do&list=OLAK5uy_mgHIFz_S2uiQ40O_uey8gXUTG8NmVeh3k
-    singles: []
+    releases: 
+      - rel_after-the-silence_le
     links:
       website: https://www.horizonsound.org/development/artists/lydia-ellington.html
       apple_music: https://music.apple.com/us/artist/lydia-ellington/1889073260
@@ -239,8 +224,7 @@ artists:
         span: 1
       - src: ../assets/artists/lucas-allen/lucas-allen18.jpg
         span: 1
-    albums:
-    singles: []
+    releases: []
     links:
       website: https://www.horizonsound.org/development/artists/lucas-allen.html
       apple_music: 
@@ -288,15 +272,8 @@ artists:
         span: 1
       - src: ../assets/artists/ravyn/ravyn25.jpg
         span: 1  
-    albums: 
-      - slug: midnight-saga
-        year: 2025
-        description: Cinematic pop moments about growth, hope, and emotional clarity.
-        links:
-          apple_music: 
-          spotify: 
-          youtube_music: 
-    singles: []
+    releases: 
+      - rel_midnight-saga_r
     links:
       website: https://www.horizonsound.org/development/artists/ravyn.html
       apple_music: https://music.apple.com/us/album/midnight-saga-ravyn-ep/1890661455
