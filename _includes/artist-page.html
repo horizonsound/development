@@ -279,7 +279,7 @@
 
 </style>
 
-<div class="artist-hero" style="background-image: url('.{{ artist.headshot }}')">
+<div class="artist-hero" style="background-image: url('.{{ artist.artwork.banner }}')">
   <div class="artist-hero-overlay">
     <h1 class="artist-name">{{ artist.name.full }}</h1>
     <p class="artist-tagline">{{ artist.tagline }}</p>
@@ -321,6 +321,11 @@
   <section class="wall-title">
     <h2>Behind the Scenes</h2>
   </section>
+{% if artist.photo_wall %}
+  <section class="wall-title">
+    <h2>Behind the Scenes</h2>
+  </section>
+
   <section class="artist-photo-wall">
     {% for photo in artist.photo_wall %}
       {% assign span = photo.span | default: 1 %}
