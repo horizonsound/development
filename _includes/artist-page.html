@@ -333,13 +333,15 @@
   </section>
 {% endif %}
 
-{% if artist.releases and artist.releases.size > 0 %}
+{% assign artist_releases = site.data.releases.releases | where: "primary_artist", artist.id %}
+
+{% if artist_releases and artist_releases.size > 0 %}
   <section class="artist-albums">
     <h2>Albums</h2>
 
     <div class="playlist-premium-grid">
-      {% for album in artist.releases %}
-        {% include artist-album-tiles.html artist=artist %}
+      {% for release in artist_releases %}
+        {% include artist-album-tiles.html release=release artist=artist %}
       {% endfor %}
     </div>
   </section>
@@ -350,4 +352,3 @@
     </div>
   </section>
 {% endif %}
-
