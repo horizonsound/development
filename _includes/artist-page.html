@@ -327,7 +327,7 @@
      </section>
    
      <section class="artist-photo-wall">
-       {% for photo in artist.photo_wall %}
+       {% for photo in artist.images.gallary %}
          {% assign span = photo.span | default: 1 %}
          <img 
            src="{{ photo.src }}" 
