@@ -99,37 +99,37 @@
   {%- assign display_thumbnail = override_thumbnail | default: playlist.thumbnail | default: playlist.hero | default: playlist.youtube_thumbnail -%}
   {%- assign first_song_id = playlist_song_ids | first -%}
 
-<div class="playlist-premium-tile-wrapper">
+  <div class="playlist-premium-tile-wrapper">
 
-  {% if release.links.spotify or release.links.apple_music or release.links.youtube_music %}
-    <div class="album-links">
-      {% if release.links.spotify %}
-        <a href="{{ release.links.spotify }}" target="_blank">
-          <svg class="icon" viewBox="0 0 24 24"><path d="..."/></svg>
-        </a>
-      {% endif %}
-      {% if release.links.apple_music %}
-        <a href="{{ release.links.apple_music }}" target="_blank">
-          <svg class="icon" viewBox="0 0 24 24"><path d="..."/></svg>
-        </a>
-      {% endif %}
-      {% if release.links.youtube_music %}
-        <a href="{{ release.links.youtube_music }}" target="_blank">
-          <svg class="icon" viewBox="0 0 24 24"><path d="..."/></svg>
-        </a>
-      {% endif %}
-    </div>
-  {% endif %}
+    {% if artist.links.spotify or artist.links.apple_music or artist.links.youtube_music %}
+      <div class="album-links">
+        {% if artist.links.spotify %}
+          <a href="{{ artist.links.spotify }}" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 6.64 5.37 12 12 12s12-5.36 12-12C24 5.37 18.63 0 12 0zm5.52 17.28c-.23.37-.71.49-1.08.26-2.97-1.82-6.7-2.23-11.11-1.22-.43.1-.86-.17-.96-.6-.1-.43.17-.86.6-.96 4.82-1.11 9.02-.64 12.33 1.36.37.23.49.71.26 1.08z"/></svg>
+          </a>
+        {% endif %}
+        {% if artist.links.apple_music %}
+          <a href="{{ artist.links.apple_music }}" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M16.365 1.43c-.96.04-2.12.68-2.81 1.53-.61.75-1.14 1.93-.94 3.06 1.08.08 2.2-.55 2.88-1.4.67-.83 1.17-2.03.87-3.19z"/></svg>
+          </a>
+        {% endif %}
+        {% if artist.links.youtube %}
+          <a href="{{ artist.links.youtube }}" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.7-.9-2.1-1C17.3 2.5 12 2.5 12 2.5h-.1s-5.3 0-8.6.3c-.4.1-1.3.1-2.1 1-.6.7-.8 2.4-.8 2.4S0 8.1 0 10v1.9c0 1.9.2 3.8.2 3.8s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1 1.8.2 7.6.3 7.6.3s5.3 0 8.6-.3c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.4.8-2.4s.2-1.9.2-3.8V10c0-1.9-.2-3.8-.2-3.8zM9.6 14.9V8.1l6.4 3.4-6.4 3.4z"/></svg>
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
 
-  <a class="playlist-premium-tile" href="{{ site.baseurl }}/music/releases/{{ release.slug }}.html">
-    <div class="playlist-premium-image-wrapper">
-      <img src="{{ release.artwork.cover }}" class="playlist-premium-image">
-      <div class="playlist-premium-gradient"></div>
-      <div class="playlist-premium-title">{{ release.title }}</div>
-    </div>
-  </a>
+    <a class="playlist-premium-tile" href="{{ site.baseurl }}/music/playlists/{{ playlist.playlist_id }}/?song_id={{ first_song_id }}">
+      <div class="playlist-premium-image-wrapper">
+        <img src="{{ site.baseurl }}{{ display_thumbnail }}" class="playlist-premium-image">
+        <div class="playlist-premium-gradient"></div>
+        <div class="playlist-premium-title">{{ display_title }}</div>
+      </div>
+    </a>
 
-</div>
+  </div>
 {%- endfor -%}
 
 {%- comment -%}
