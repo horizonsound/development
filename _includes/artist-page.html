@@ -321,21 +321,22 @@
   <section class="wall-title">
     <h2>Behind the Scenes</h2>
   </section>
-{% if artist.photo_wall %}
-  <section class="wall-title">
-    <h2>Behind the Scenes</h2>
-  </section>
-
-  <section class="artist-photo-wall">
-    {% for photo in artist.photo_wall %}
-      {% assign span = photo.span | default: 1 %}
-      <img 
-        src="{{ photo.src }}" 
-        class="span-{{ span }}"
-        alt="{{ artist.name.full }} photo"
-      >
-    {% endfor %}
-  </section>
+   {% if artist.photo_wall %}
+     <section class="wall-title">
+       <h2>Behind the Scenes</h2>
+     </section>
+   
+     <section class="artist-photo-wall">
+       {% for photo in artist.photo_wall %}
+         {% assign span = photo.span | default: 1 %}
+         <img 
+           src="{{ photo.src }}" 
+           class="span-{{ span }}"
+           alt="{{ artist.name.full }} photo"
+         >
+       {% endfor %}
+     </section>
+   {% endif %}
 {% endif %}
 
 {% if artist.albums and artist.albums.size > 0 %}
