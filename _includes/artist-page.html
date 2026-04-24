@@ -312,39 +312,33 @@
 </div>
 
 <section class="artist-bio">
-  {% for paragraph in artist.bio %}
+  {% for paragraph in artist.bio_long %}
     <p>{{ paragraph }}</p>
   {% endfor %}
 </section>
 
-{% if artist.images.gallary %}
+{% if artist.images.gallery %}
   <section class="wall-title">
     <h2>Behind the Scenes</h2>
+  </section>   
+  <section class="artist-photo-wall">
+    {% for photo in artist.images.gallery %}
+      {% assign span = photo.span | default: 1 %}
+      <img 
+        src="{{ photo.src }}" 
+        class="span-{{ span }}"
+        alt="{{ artist.name.full }} photo"
+      >
+    {% endfor %}
   </section>
-   {% if artist.photo_wall %}
-     <section class="wall-title">
-       <h2>Behind the Scenes</h2>
-     </section>
-   
-     <section class="artist-photo-wall">
-       {% for photo in artist.images.gallary %}
-         {% assign span = photo.span | default: 1 %}
-         <img 
-           src="{{ photo.src }}" 
-           class="span-{{ span }}"
-           alt="{{ artist.name.full }} photo"
-         >
-       {% endfor %}
-     </section>
-   {% endif %}
 {% endif %}
 
-{% if artist.albums and artist.albums.size > 0 %}
+{% if artist.releases and artist.releases.size > 0 %}
   <section class="artist-albums">
     <h2>Albums</h2>
 
     <div class="playlist-premium-grid">
-      {% for album in artist.albums %}
+      {% for album in artist.releases %}
         {% include artist-album-tiles.html artist=artist %}
       {% endfor %}
     </div>
